@@ -5,33 +5,33 @@
 </div>
 
 <script>
-    let bubbles = [
-        {"left": 25, "size": 80, "delay": 0},
-        {"left": 10, "size": 20, "delay": 2, "duration": 12},
-        {"left": 70, "size": 20, "delay": 4},
-        {"left": 40, "size": 60, "delay": 0, "duration": 18},
-        {"left": 65, "size": 20, "delay": 0},
-        {"left": 75, "size": 110, "delay": 3},
-        {"left": 35, "size": 150, "delay": 7},
-        {"left": 50, "size": 25, "delay": 15, "duration": 45},
-        {"left": 20, "size": 15, "delay": 2, "duration": 35},
-        {"left": 85, "size": 150, "delay": 0, "duration": 11}
+  const bubbles = [
+    { left: 25, size: 80, delay: 0 },
+    { left: 10, size: 20, delay: 2, duration: 12 },
+    { left: 70, size: 20, delay: 4 },
+    { left: 40, size: 60, delay: 0, duration: 18 },
+    { left: 65, size: 20, delay: 0 },
+    { left: 75, size: 110, delay: 3 },
+    { left: 35, size: 150, delay: 7 },
+    { left: 50, size: 25, delay: 15, duration: 45 },
+    { left: 20, size: 15, delay: 2, duration: 35 },
+    { left: 85, size: 150, delay: 0, duration: 11 }
+  ]
+
+  function getStyle (bubble) {
+    const styles = [
+      'left:' + bubble.left + '%',
+      'width:' + bubble.size + 'px',
+      'height:' + bubble.size + 'px',
+      'animation-delay:' + bubble.delay + 's'
     ]
 
-    function getStyle(bubble) {
-        let styles = [
-            "left:" + bubble.left + "%",
-            "width:" + bubble.size + "px",
-            "height:" + bubble.size + "px",
-            "animation-delay:" + bubble.delay + "s",
-        ]
-
-        if (bubble.duration) {
-            styles.push("animation-duration:" + bubble.duration + "s")
-        }
-
-        return styles.join(";")
+    if (bubble.duration) {
+      styles.push('animation-duration:' + bubble.duration + 's')
     }
+
+    return styles.join(';')
+  }
 </script>
 
 <style>

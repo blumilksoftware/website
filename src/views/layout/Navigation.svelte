@@ -8,12 +8,16 @@
     <div class="flex-1 flex justify-end items-center">
         {#each items as item}
             <div class="ml-8">
-                <a href="#/{ item.link }">{ item.label }</a>
+                {#if !item.external}
+                    <a href="#/{ item.link }">{ item.label }</a>
+                {:else}
+                    <a href="{ item.link }" target="_blank">{ item.label }</a>
+                {/if}
             </div>
         {/each}
     </div>
 </div>
 
 <script>
-    export let items
+  export let items
 </script>

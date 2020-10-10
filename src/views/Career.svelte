@@ -1,4 +1,4 @@
-<div class="container mx-auto w-1/3 mb-24">
+<div class="container mx-auto w-1/3">
     <div class="text-2xl opacity-75 font-bold">We are sorry.</div>
     <div class="opacity-75">We are not looking for any new developers at this moment.</div>
     <div class="opacity-75 mt-12">
@@ -9,5 +9,5 @@
 </div>
 
 <script>
-    export let email = "career@blumilk.pl"
+  export let email = 'career@blumilk.pl'
 </script>
