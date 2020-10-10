@@ -1,21 +1,20 @@
 <div class="circles">
     {#each bubbles as bubble}
-        <div style="{getStyle(bubble)}"></div>
+        <div style="{ getStyle(bubble) }"></div>
     {/each}
 </div>
 
 <script>
   const bubbles = [
-    { left: 25, size: 80, delay: 0 },
-    { left: 10, size: 20, delay: 2, duration: 12 },
-    { left: 70, size: 20, delay: 4 },
-    { left: 40, size: 60, delay: 0, duration: 18 },
-    { left: 65, size: 20, delay: 0 },
-    { left: 75, size: 110, delay: 3 },
-    { left: 35, size: 150, delay: 7 },
-    { left: 50, size: 25, delay: 15, duration: 45 },
-    { left: 20, size: 15, delay: 2, duration: 35 },
-    { left: 85, size: 150, delay: 0, duration: 11 }
+    { left: 20, size: 32, delay: 1, duration: 6 },
+    { left: 25, size: 40, delay: 0, duration: 7 },
+    { left: 36, size: 36, delay: 2, duration: 5 },
+    { left: 5, size: 64, delay: 0, duration: 10 },
+    { left: 56, size: 72, delay: 0, duration: 5 },
+    { left: 70, size: 144, delay: 3, duration: 7 },
+    { left: 72, size: 36, delay: 7, duration: 5 },
+    { left: 75, size: 24, delay: 6, duration: 6 },
+    { left: 92, size: 108, delay: 0, duration: 8 }
   ]
 
   function getStyle (bubble) {
@@ -49,7 +48,7 @@
         position: absolute;
         background: #a8bedc;
         opacity: .1;
-        animation: animate 40s linear infinite;
+        animation: animate linear infinite;
         bottom: -150px;
         border-radius: 100%;
     }
@@ -61,7 +60,7 @@
         }
 
         100% {
-            transform: translateY(-1000px);
+            transform: translateY(-100vh);
             opacity: 0;
         }
     }
