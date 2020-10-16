@@ -1,7 +1,8 @@
 module.exports = {
   env: {
     browser: true,
-    node: true
+    node: true,
+    mocha: true
   },
   extends: ['standard'],
   parserOptions: {
@@ -13,7 +14,8 @@ module.exports = {
     'no-multiple-empty-lines': ['error', { max: 1, maxBOF: 2, maxEOF: 0 }]
   },
   plugins: [
-    'svelte3'
+    'svelte3',
+    'mocha'
   ],
   overrides: [
     {
