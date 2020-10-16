@@ -12,7 +12,12 @@ docker-compose run -u "$(id -u):$(id -g)" node npm run dev
 
 Run ESLint:
 ```
-docker-compose run -u "$(id -u):$(id -g)" node npx eslint .eslintrc.js rollup.config.js src
+docker-compose run -u "$(id -u):$(id -g)" node npm run lint
+```
+
+Run Mocha tests:
+```
+docker-compose run -u "$(id -u):$(id -g)" node npm test
 ```
 
 Please add issue number to all your commits.
