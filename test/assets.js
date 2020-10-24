@@ -3,6 +3,7 @@ import assert from 'assert'
 
 import navigationItems from '../src/assets/navigation'
 import socialLinks from '../src/assets/socials'
+import careerData from '../src/assets/careers'
 
 function testDefaultAssetsArray (array, name, className) {
   describe('src/assets/' + name + '.js', () => {
@@ -21,4 +22,17 @@ function testDefaultAssetsArray (array, name, className) {
 describe('testing assets', () => {
   testDefaultAssetsArray(navigationItems, 'navigation', 'NavigationItem')
   testDefaultAssetsArray(socialLinks, 'social', 'SocialMedia')
+
+  describe('src/assets/careers.js', () => {
+    it('module is exporting requirements array of proper objects', () => {
+      for (const item of careerData.requirements) {
+        assert.strictEqual(item.constructor.name, 'Requirement')
+      }
+    })
+    it('module is exporting stack array of proper objects', () => {
+      for (const item of careerData.stack) {
+        assert.strictEqual(item.constructor.name, 'Stack')
+      }
+    })
+  })
 })

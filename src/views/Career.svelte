@@ -1,13 +1,46 @@
-<div class="container mx-auto w-1/3">
-    <div class="text-2xl opacity-75 font-bold">We are sorry.</div>
-    <div class="opacity-75">We are not looking for any new developers at this moment.</div>
-    <div class="opacity-75 mt-12">
-        If you would like to send us a spontaneous application, write an e-mail to
-        <a href="mailto:{email}" class="font-bold">{email}</a> with your CV,
-        Github account link and a few words about yourself attached.
+<ContentSection title="work at Blumilk">
+    <div class="opacity-75 text-lg">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, blanditiis commodi culpa debitis deleniti
+        eum ex facilis ipsum maxime minima non quaerat quas quo reiciendis repellendus saepe sint suscipit
+        voluptatum.
     </div>
-</div>
+
+    <div class="w-full grid grid-cols-2">
+        <ContentSection title="requirements">
+            We would like you to:
+            <ul class="list-disc leading-loose pl-4 pt-2">
+                {#each careers.requirements as career}
+                <li>{ career.requirement }</li>
+                {/each}
+            </ul>
+        </ContentSection>
+
+        <ContentSection title="our stack">
+            We are using:
+            <ul class="leading-loose pl-4 pt-2">
+                {#each careers.stack as stack}
+                    <li>
+                        <i class="{ stack.icon }"></i>
+                        { stack.name }
+                        <span class="text-gray-700">{ stack.description }</span>
+                    </li>
+                {/each}
+            </ul>
+        </ContentSection>
+    </div>
+</ContentSection>
+
+<ContentSection title="application">
+    <div class="opacity-75 text-lg">
+        If you would like to send us application, write an e-mail to
+        <a href="mailto:{email}" class="font-bold">{email}</a> with your CV,
+        Github profile link and a few words about yourself attached.
+    </div>
+</ContentSection>
 
 <script>
+  import ContentSection from './components/Section.svelte'
+  import careers from '../assets/careers'
+
   export let email = 'career@blumilk.pl'
 </script>
