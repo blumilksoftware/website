@@ -8,7 +8,7 @@ class SocialMedia {
 
 export default [
   new SocialMedia('Github', 'github square icon', 'https://github.com/blumilksoftware'),
-  new SocialMedia('LinkedIn', 'linkedin icon', 'https://linedin.com/company/blumilksoftware'),
+  new SocialMedia('LinkedIn', 'linkedin icon', 'https://linkedin.com/company/blumilksoftware'),
   new SocialMedia('Facebook', 'facebook square icon', 'https://facebook.com/blumilksoftware'),
   new SocialMedia('Twitter', 'twitter square icon', 'https://github.com/blumilksoftware')
 ]
