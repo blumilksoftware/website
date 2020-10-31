@@ -1,4 +1,4 @@
-<ContentSection title="work at Blumilk">
+<ContentSection title="Work at Blumilk">
     <div class="opacity-75 text-lg">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, blanditiis commodi culpa debitis deleniti
         eum ex facilis ipsum maxime minima non quaerat quas quo reiciendis repellendus saepe sint suscipit
@@ -6,7 +6,7 @@
     </div>
 
     <div class="w-full grid grid-cols-2">
-        <ContentSection title="requirements">
+        <ContentSection title="Requirements">
             We would like you to:
             <ul class="list-disc leading-loose pl-4 pt-2">
                 {#each careers.requirements as career}
@@ -15,7 +15,7 @@
             </ul>
         </ContentSection>
 
-        <ContentSection title="our stack">
+        <ContentSection title="Our stack">
             We are using:
             <ul class="leading-loose pl-4 pt-2">
                 {#each careers.stack as stack}
@@ -30,7 +30,7 @@
     </div>
 </ContentSection>
 
-<ContentSection title="application">
+<ContentSection title="Application">
     <div class="opacity-75 text-lg">
         If you would like to send us application, write an e-mail to
         <a href="mailto:{email}" class="font-bold">{email}</a> with your CV,

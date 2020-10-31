@@ -10,6 +10,5 @@ export default [
   new NavigationItem('about', 'About'),
   new NavigationItem('services', 'Services'),
   new NavigationItem('career', 'Career'),
-  new NavigationItem('contact', 'Contact'),
-  new NavigationItem('https://blog.blumilk.pl/', 'Blog', true)
+  new NavigationItem('contact', 'Contact')
 ]

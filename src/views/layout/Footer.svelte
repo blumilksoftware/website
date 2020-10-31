@@ -11,8 +11,8 @@
             {/each}
         </div>
         <div class="flex flex-col mb-4">
-            <span>hello@blumilk.pl</span>
-            <span>+48 555 555 555</span>
+            <span><a href="mailto: { contact.email }">{ contact.email }</a></span>
+            <span>{ contact.phone }</span>
             <hr class="my-3 opacity-0">
             <div class="text-3xl">
                 {#each socials as social}
@@ -23,12 +23,12 @@
             </div>
         </div>
         <div class="flex flex-col">
-            <span><strong class="font-bold">Blumilk</strong> sp. z o.o.</span>
-            <span>NIP 0000000000</span>
+            <span><strong class="font-bold">{ contact.name }</strong> { contact.form }</span>
+            <span>NIP { contact.nip }</span>
             <hr class="my-3 opacity-0">
-            <span>ul. Sejmowa 5A/303</span>
-            <span>59-220 Legnica</span>
-            <span>Poland</span>
+            <span>{ contact.address }</span>
+            <span>{ contact.city }</span>
+            <span>{ contact.country }</span>
         </div>
     </div>
 </div>
@@ -36,4 +36,14 @@
 <script>
   export let items
   export let socials
+  export let contact = {
+    name: 'Blumilk',
+    form: 'sp. z o.o.',
+    email: 'hello@blumilk.pl',
+    phone: '+48 555 555 555',
+    nip: '6912551135',
+    address: 'ul. rtm. Witolda Pileckiego 14',
+    city: '59-220 Legnica',
+    country: 'Poland'
+  }
 </script>
