@@ -5,5 +5,5 @@
 </ContentSection>
 
 <script>
-  import ContentSection from './components/Section.svelte'
+  import ContentSection from '../components/section.svelte'
 </script>

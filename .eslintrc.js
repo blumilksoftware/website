@@ -11,7 +11,8 @@ module.exports = {
   },
   rules: {
     indent: ['error', 2],
-    'no-multiple-empty-lines': ['error', { max: 1, maxBOF: 2, maxEOF: 0 }]
+    'no-multiple-empty-lines': ['error', { max: 1, maxBOF: 2, maxEOF: 0 }],
+    'import/first': ['off']
   },
   plugins: [
     'svelte3',

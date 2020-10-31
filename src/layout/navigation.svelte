@@ -1,6 +1,6 @@
 <div class="container mx-auto mt-6 mb-24 flex items-center">
-    <div class="font-bold text-xl">
-        <a href="#/" class="flex items-center">
+    <div class="font-bold text-2xl">
+        <a href="{ $url('/') }" class="flex items-center">
             Blumilk
         </a>
     </div>
@@ -8,7 +8,7 @@
         {#each items as item}
             <div class="ml-8">
                 {#if !item.external}
-                    <a href="#/{ item.link }">{ item.label }</a>
+                    <a href="{ $url(item.link) }">{ item.label }</a>
                 {:else}
                     <a href="{ item.link }" target="_blank">{ item.label }</a>
                 {/if}
@@ -18,5 +18,7 @@
 </div>
 
 <script>
+  import { url } from '@sveltech/routify'
+
   export let items
 </script>

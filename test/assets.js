@@ -4,6 +4,7 @@ import assert from 'assert'
 import navigationItems from '../src/assets/navigation'
 import socialLinks from '../src/assets/socials'
 import careerData from '../src/assets/careers'
+import contactData from '../src/assets/contact'
 
 function testDefaultAssetsArray (array, name, className) {
   describe('src/assets/' + name + '.js', () => {
@@ -32,6 +33,25 @@ describe('testing assets', () => {
     it('module is exporting stack array of proper objects', () => {
       for (const item of careerData.stack) {
         assert.strictEqual(item.constructor.name, 'Stack')
+      }
+    })
+  })
+
+  describe('src/assets/contact.js', () => {
+    it('module is exporting object with expected fields', () => {
+      const fields = [
+        'name',
+        'form',
+        'email',
+        'phone',
+        'nip',
+        'address',
+        'city',
+        'country'
+      ]
+
+      for (const field of fields) {
+        assert(contactData[field])
       }
     })
   })
