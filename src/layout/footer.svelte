@@ -1,10 +1,10 @@
 <div class="bg-gray-800 text-white mt-24 p-12 text-sm leading-relaxed z-30">
     <div class="container mx-auto grid grid-cols-3 gap-4">
         <div class="flex flex-col">
-            <a href="#/">Home</a>
+            <a href="{ $url('/') }">Home</a>
             {#each items as item}
                 {#if !item.external}
-                    <a href="#/{ item.link }">{ item.label }</a>
+                    <a href="{ $url(item.link) }">{ item.label }</a>
                 {:else}
                     <a href="{ item.link }" target="_blank">{ item.label }</a>
                 {/if}
@@ -34,16 +34,9 @@
 </div>
 
 <script>
+  import { url } from '@sveltech/routify'
+
   export let items
   export let socials
-  export let contact = {
-    name: 'Blumilk',
-    form: 'sp. z o.o.',
-    email: 'hello@blumilk.pl',
-    phone: '+48 555 555 555',
-    nip: '6912551135',
-    address: 'ul. rtm. Witolda Pileckiego 14',
-    city: '59-220 Legnica',
-    country: 'Poland'
-  }
+  export let contact
 </script>
