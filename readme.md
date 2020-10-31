@@ -5,6 +5,11 @@ docker compose up -d
 docker-compose run -u "$(id -u):$(id -g)" node npm install
 ```
 
+Create `.env` file based on example and fill values:
+```
+cp .env.example .env
+```
+
 Run Svelte dev mode:
 ```
 docker-compose run -u "$(id -u):$(id -g)" node npm run dev
