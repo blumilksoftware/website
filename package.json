@@ -38,10 +38,8 @@
     "sirv-cli": "^1.0.0",
     "slugify": "^1.4.5",
     "svelte": "^3.0.0",
-    "tailwindcss": "^1.9.6",
-    "semantic-ui-icon": "^2.3.3",
-    "svelte-preprocess": "^4.5.2"
+    "svelte-preprocess": "^4.5.2",
+    "tailwindcss": "^1.9.6"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }
