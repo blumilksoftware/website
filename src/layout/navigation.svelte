@@ -1,6 +1,7 @@
 <div class="container mx-auto mt-6 mb-24 flex items-center">
     <div class="font-bold text-2xl">
         <a href="{ $url('/') }" class="flex items-center">
+            <img src="./logo.png" alt="Blumilk" class="w-12 mr-3">
             Blumilk
         </a>
     </div>
