@@ -1,4 +1,4 @@
-<div class="bg-gray-800 text-white mt-24 p-12 text-sm leading-relaxed z-30">
+<div class="bg-blue-500 text-white mt-24 p-12 text-sm leading-relaxed z-30">
     <div class="container mx-auto grid grid-cols-3 gap-4">
         <div class="flex flex-col">
             <a href="{ $url('/') }">Home</a>
@@ -27,8 +27,7 @@
             <span>NIP { contact.nip }</span>
             <hr class="my-3 opacity-0">
             <span>{ contact.address }</span>
-            <span>{ contact.city }</span>
-            <span>{ contact.country }</span>
+            <span>{ contact.city }, { contact.country }</span>
         </div>
     </div>
 </div>

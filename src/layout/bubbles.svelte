@@ -46,8 +46,8 @@
 
     .circles div {
         position: absolute;
-        background: #a8bedc;
-        opacity: .1;
+        background: #4299e1;
+        opacity: .15;
         animation: animate linear infinite;
         bottom: -150px;
         border-radius: 100%;
