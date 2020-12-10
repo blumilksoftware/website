@@ -3,7 +3,7 @@ version: "3.7"
 services:
   node:
     container_name: blumilk-node
-    image: node:alpine3.11
+    image: node:15.2.1-alpine3.12
     working_dir: /application
     volumes:
       - .:/application
