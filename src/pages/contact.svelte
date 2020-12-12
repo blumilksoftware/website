@@ -3,13 +3,15 @@
         <ContentSection title="{ $_('pages.contact.header') }">
             <form target="_blank" id="contact" action="{ url }">
                 <div class="px-12 py-4">
-                    <label for="{ emailName }" class="block text-gray-700">E-mail address</label>
-                    <input type="text" name="{ emailName }" id="{ emailName }" placeholder="E-mail address"
+                    <label for="{ emailName }" class="block text-gray-700">{ $_('pages.contact.email') }</label>
+                    <input type="text" name="{ emailName }" id="{ emailName }"
+                           placeholder="{ $_('pages.contact.email') }"
                            class="px-4 py-2 mt-1 block w-full shadow-sm border-gray-300 rounded-md">
                 </div>
                 <div class="px-12 py-4">
-                    <label for="{ questionName }" class="block text-gray-700">Message</label>
-                    <textarea rows="8" name="{ questionName }" id="{ questionName }" placeholder="Message"
+                    <label for="{ questionName }" class="block text-gray-700">{ $_('pages.contact.message') }</label>
+                    <textarea rows="8" name="{ questionName }" id="{ questionName }"
+                              placeholder="{ $_('pages.contact.message') }"
                               class="px-4 py-2 mt-1 block w-full shadow-sm border-gray-300 rounded-md"></textarea>
                 </div>
                 <div class="px-12 py-4">
@@ -21,20 +23,19 @@
             </form>
         </ContentSection>
 
-        <ContentSection title="Visit us">
-            <p class="text-lg text-justify px-8 py-2">
-                We are working from the office located in the heart of Legnica, Poland.
-                In the closest neighbourhood you can dine in nice restaurants, grab a beer in local pubs or shop in
-                shopping malls.
-                The railway station is less than 10 minutes by foot. City park is even closer.
+        <ContentSection title="{ $_('pages.contact.visit-us') }">
+            <p class="text-lg opacity-75 text-justify px-8 py-2">
+                { $_('pages.contact.about.1') }
             </p>
-            <p class="text-lg text-justify px-8 py-2">
-                Our address is Najświętszej Marii Panny 5F/5.
+            <p class="text-lg opacity-75 text-justify px-8 py-2">
+                { $_('pages.contact.about.2') }
             </p>
         </ContentSection>
     </div>
     <div class="flex-1">
-        <img src="/map.png" alt="Map" class="border">
+        <a href="https://goo.gl/maps/hweeVn4WfxL3ACXx8" target="_blank">
+            <img src="/map.png" alt="Map" class="border">
+        </a>
     </div>
 </div>
 

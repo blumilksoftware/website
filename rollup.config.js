@@ -2,7 +2,7 @@ import svelte from 'rollup-plugin-svelte'
 import resolve from '@rollup/plugin-node-resolve'
 import replace from '@rollup/plugin-replace'
 import commonjs from '@rollup/plugin-commonjs'
-import json from '@rollup/plugin-json';
+import json from '@rollup/plugin-json'
 import preprocess from 'svelte-preprocess'
 import livereload from 'rollup-plugin-livereload'
 import { terser } from 'rollup-plugin-terser'

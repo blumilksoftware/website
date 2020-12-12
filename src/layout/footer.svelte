@@ -1,18 +1,19 @@
 <div class="bg-blue-500 text-white mt-24 p-12 text-sm leading-relaxed z-30">
     <div class="container mx-auto grid grid-cols-3 gap-4">
         <div class="flex flex-col">
-            <a href="{ $url('/') }">Home</a>
+            <a href="{ $url('/') }">{ $_('navigation.home') }</a>
             {#each items as item}
                 {#if !item.external}
-                    <a href="{ $url(item.link) }">{ item.label }</a>
+                    <a href="{ $url(item.link) }">{ $_(item.label) }</a>
                 {:else}
-                    <a href="{ item.link }" target="_blank">{ item.label }</a>
+                    <a href="{ item.link }" target="_blank">{ $_(item.label) }</a>
                 {/if}
             {/each}
         </div>
         <div class="flex flex-col mb-4">
-            <span><a href="mailto: { contact.email }">{ contact.email }</a></span>
-            <span>{ contact.phone }</span>
+            {#each contact.emails as email}
+                <span><a href="mailto: { email }">{ email }</a></span>
+            {/each}
             <hr class="my-3 opacity-0">
             <div class="text-3xl">
                 {#each socials as social}
@@ -34,6 +35,7 @@
 
 <script>
   import { url } from '@sveltech/routify'
+  import { _ } from 'svelte-i18n'
 
   export let items
   export let socials

@@ -13,6 +13,6 @@ function assertHaveSameKeys (...objects) {
 
 describe('testing locale', () => {
   it('application localization files has the same key structure', () => {
-    assert.strictEqual(assertHaveSameKeys(flatten(en), flatten(pl)), true)
+    assert.ok(assertHaveSameKeys(flatten(en), flatten(pl)))
   })
 })

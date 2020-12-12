@@ -12,7 +12,7 @@ addMessages('pl', pl)
 
 init({
   fallbackLocale: 'en',
-  initialLocale: getLocaleFromNavigator(),
+  initialLocale: getLocaleFromNavigator()
 })
 
 export default app

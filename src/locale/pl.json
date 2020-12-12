@@ -4,10 +4,87 @@
     "flag": "https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/gb.png",
     "language": "English"
   },
+  "navigation": {
+    "home": "Strona główna",
+    "about": "O firmie",
+    "services": "Usługi",
+    "career": "Praca",
+    "contact": "Kontakt"
+  },
   "pages": {
+    "career": {
+      "header": "Pracuj z nami",
+      "lead": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, blanditiis commodi culpa debitis deleniti eum ex facilis ipsum maxime minima non quaerat quas quo reiciendis repellendus saepe sint suscipit voluptatum.",
+      "requirements-header": "Wymagania",
+      "requirements-label": "Od wszystkich naszych programistów wymagamy pewnego poziomu rzemieślniczego przygotowania. Programowanie dla hecy to jedno, ale praca w zespole dla międzynarodowych klientów w najnowszych technologiach to drugie. Oczekujemy, abyś:",
+      "requirements": {
+        "docker": "wiedział jak używać PHP w skonteneryzowanym środowisku",
+        "di": "korzystał ze wstrzykiwania zależności w każdym swoim projekcie",
+        "testing": "testował swój kod (nawet przed napisaniem pierwszej linijki)",
+        "composer": "znał różnicę między poleceniami composer install i update",
+        "oop": "rozumiał PHP zorientowane obiektowo",
+        "eloquent": "widział jak uniknąć problemu n+1 zapytań w Eloquencie",
+        "tools": "korzystał ze zautomatyzowanych narzędzi do utrzymania jakości kodu",
+        "xdebug": "debugował swoje aplikacje z Xdebugiem",
+        "processes": "mógł dołączyć do Github Flow, CR-ek i procesów CI/CD"
+      },
+      "stack-header": "Nasz stack",
+      "stack-label": "W pełni rozumiemy, że każdy inżynier sam dobiera swoje narzędzia, więc nie chcemy tworzyć żadnych nieporozumień. Budujemy głównie systemy internetowe w PHP i Laravelu, a pracę zespołową prowadzimy w konkretnych narzędziach, żeby wszyscy wiedzieli na czym stoją. A więc:",
+      "stack": {
+        "php": {
+          "name": "PHP",
+          "description": "w najnowszej wersji jeżeli jest to możliwe"
+        },
+        "laravel": {
+          "name": "Laravel",
+          "description": "domyślnie i gdy jest to najlepsza opcja"
+        },
+        "databases": {
+          "name": "bazy danych",
+          "description": "wedle specyfiki każdego projektu"
+        },
+        "behat": {
+          "name": "Behat",
+          "description": "do Behaviour-driven developmentu"
+        },
+        "ecs": {
+          "name": "ECS i Psalm",
+          "description": "do utrzymania jakości kodu"
+        },
+        "docker": {
+          "name": "Docker",
+          "description": "aby wszystko zamknąć w konternerach"
+        },
+        "github": {
+          "name": "Github",
+          "description": "do kontroli wersji, CR-ek i CI/CD"
+        },
+        "google": {
+          "name": "Google Workspace",
+          "description": "do dokumentów, mejli, kalendarzy i innych rzeczy"
+        },
+        "slack": {
+          "name": "Slack",
+          "description": "do wewnętrznej komunikacji"
+        }
+      },
+      "application-header": "Aplikacja",
+      "application": {
+        "1": "Jeżeli chciałbyś aplikować, wystarczy, że napiszesz mejla na",
+        "2": "z dołączonym CV, linkiem do profilu na Githubie i kilkoma słowami o sobie."
+      },
+      "gdpr": "Zgodnie z art. 13 ust. 1-2 Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o ochronie danych) (dalej \"RODO\") informujemy, że..."
+    },
     "contact": {
       "header": "Kontakt",
-      "send": "Wyślij przez"
+      "send": "Wyślij przez",
+      "email": "Adres e-mail",
+      "message": "Wiadomość",
+      "visit-us": "Odwiedź nas",
+      "about": {
+        "1": "Pracujemy w biurze ulokowanym w samym centrum Legnicy. W najbliższej okolicy można zjeść w fajnych knajpach, wypić piwo czy zrobić zakupy w galerii handlowej. Stacja kolejowa jest położona dziesięć minut spacerkiem; miejski park nawet bliżej.",
+        "2": "Nasz adres to Najświętszej Marii Panny 5F/5."
+      }
     }
   }
 }
