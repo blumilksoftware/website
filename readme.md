@@ -1,7 +1,7 @@
 ## Local development
 Start containers and install dependencies:
 ```
-docker compose up -d
+docker-compose up -d
 docker-compose run -u "$(id -u):$(id -g)" node npm install
 ```
 

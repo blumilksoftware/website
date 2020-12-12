@@ -1,13 +1,14 @@
-<div class="container mx-auto mt-6 mb-24 flex items-center">
-    <div class="font-bold text-2xl">
+<div class="container mx-auto mt-6 mb-36 flex items-center">
+    <div class="text-2xl">
         <a href="{ $url('/') }" class="flex items-center">
             <img src="./logo.png" alt="Blumilk" class="w-12 mr-3">
             Blumilk
+            <span class="ml-2 text-blue-500">software development</span>
         </a>
     </div>
     <div class="flex-1 flex justify-end items-center">
         {#each items as item}
-            <div class="ml-8">
+            <div class="lowercase ml-8">
                 {#if !item.external}
                     <a href="{ $url(item.link) }">{ item.label }</a>
                 {:else}
@@ -15,6 +16,9 @@
                 {/if}
             </div>
         {/each}
+        <div class="ml-8">
+            <img class="w-8" src="https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/pl.png" alt="">
+        </div>
     </div>
 </div>
 
