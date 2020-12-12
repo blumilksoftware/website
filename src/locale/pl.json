@@ -23,7 +23,7 @@
         "testing": "testował swój kod (nawet przed napisaniem pierwszej linijki)",
         "composer": "znał różnicę między poleceniami composer install i update",
         "oop": "rozumiał PHP zorientowane obiektowo",
-        "eloquent": "widział jak uniknąć problemu n+1 zapytań w Eloquencie",
+        "eloquent": "wiedział jak uniknąć problemu n+1 zapytań w Eloquencie",
         "tools": "korzystał ze zautomatyzowanych narzędzi do utrzymania jakości kodu",
         "xdebug": "debugował swoje aplikacje z Xdebugiem",
         "processes": "mógł dołączyć do Github Flow, CR-ek i procesów CI/CD"
@@ -61,7 +61,7 @@
         },
         "google": {
           "name": "Google Workspace",
-          "description": "do dokumentów, mejli, kalendarzy i innych rzeczy"
+          "description": "do dokumentów, mejli, kalendarzy i innych"
         },
         "slack": {
           "name": "Slack",

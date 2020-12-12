@@ -18,7 +18,7 @@
                     <li>
                         <i class="{ stack.icon }"></i>
                         { $_(stack.name) }
-                        <span class="text-gray-700">{ $_(stack.description) }</span>
+                        <span class="opacity-50">{ $_(stack.description) }</span>
                     </li>
                 {/each}
             </ul>
