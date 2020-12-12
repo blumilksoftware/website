@@ -77,6 +77,7 @@
     },
     "contact": {
       "header": "Contact us",
+      "lead": "Please use the form below to contact us. Do not forget to provide your e-mail address so we could write back!",
       "send": "Send via",
       "email": "E-mail address",
       "message": "Message",

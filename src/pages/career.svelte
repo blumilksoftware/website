@@ -29,7 +29,7 @@
 </ContentSection>
 
 <div class="w-full bg-blue-500 text-white my-12 p-12 shadow-lg">
-    <div class="opacity-75 text-lg pl-8 text-center">
+    <div class="text-lg pl-8 text-center">
         { $_('pages.career.application.1') }
         <a href="mailto:{email}" class="font-bold">{email}</a>
         { $_('pages.career.application.2') }

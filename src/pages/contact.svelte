@@ -1,6 +1,9 @@
 <div class="container mx-auto flex">
     <div class="flex-1">
         <ContentSection title="{ $_('pages.contact.header') }">
+            <p class="text-lg text-justify px-8 py-2">
+                { $_('pages.contact.lead') }
+            </p>
             <form target="_blank" id="contact" action="{ url }">
                 <div class="px-12 py-4">
                     <label for="{ emailName }" class="block text-gray-700">{ $_('pages.contact.email') }</label>
@@ -24,10 +27,10 @@
         </ContentSection>
 
         <ContentSection title="{ $_('pages.contact.visit-us') }">
-            <p class="text-lg opacity-75 text-justify px-8 py-2">
+            <p class="text-lg text-justify px-8 py-2">
                 { $_('pages.contact.about.1') }
             </p>
-            <p class="text-lg opacity-75 text-justify px-8 py-2">
+            <p class="text-lg text-justify px-8 py-2">
                 { $_('pages.contact.about.2') }
             </p>
         </ContentSection>
