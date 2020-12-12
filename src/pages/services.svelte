@@ -1,5 +1,5 @@
 <ContentSection title="Research & development projects">
-    <p class="text-lg pl-12">
+    <p class="py-4">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, blanditiis commodi culpa debitis deleniti
         eum ex facilis ipsum maxime minima non quaerat quas quo reiciendis repellendus saepe sint suscipit
         voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deleniti eaque labore maxime,
@@ -10,7 +10,7 @@
 </ContentSection>
 
 <ContentSection title="Complex and scalable web applications">
-    <p class="text-lg pl-12">
+    <p class="py-4">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, blanditiis commodi culpa debitis deleniti
         eum ex facilis ipsum maxime minima non quaerat quas quo reiciendis repellendus saepe sint suscipit
         voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cumque ex odit rem? Adipisci
@@ -20,7 +20,7 @@
 </ContentSection>
 
 <ContentSection title="Moving your business to cloud">
-    <p class="text-lg pl-12">
+    <p class="py-4">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, blanditiis commodi culpa debitis deleniti
         eum ex facilis ipsum maxime minima non quaerat quas quo reiciendis repellendus saepe sint suscipit
         voluptatum.

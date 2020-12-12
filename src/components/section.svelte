@@ -3,7 +3,9 @@
         <a class="opacity-25" href="#{ id }">#</a>
         { title }
     </div>
-    <slot></slot>
+    <div class="text-lg text-justify mx-1 px-{ padding }">
+        <slot></slot>
+    </div>
 </div>
 
 <script>
@@ -11,4 +13,5 @@
 
   export let title
   export let id = slugify(title, { lower: true })
+  export let padding = 6
 </script>
