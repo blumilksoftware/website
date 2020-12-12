@@ -17,13 +17,18 @@
             </div>
         {/each}
         <div class="ml-8">
-            <img class="w-8" src="https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/pl.png" alt="">
+            <img class="w-8" on:click={ switchLocale } src="{ $_('locale.flag') }" alt="$_('locale.label')">
         </div>
     </div>
 </div>
 
 <script>
   import { url } from '@sveltech/routify'
+  import { _, locale } from 'svelte-i18n'
+
+  function switchLocale () {
+    locale.set($_('locale.code'))
+  }
 
   export let items
 </script>

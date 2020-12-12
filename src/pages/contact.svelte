@@ -1,6 +1,6 @@
 <div class="container mx-auto flex">
     <div class="flex-1">
-        <ContentSection title="Contact us">
+        <ContentSection title="{ $_('pages.contact.header') }">
             <form target="_blank" id="contact" action="{ url }">
                 <div class="px-12 py-4">
                     <label for="{ emailName }" class="block text-gray-700">E-mail address</label>
@@ -15,7 +15,7 @@
                 <div class="px-12 py-4">
                     <div on:click={handleFormSubmit}
                          class="text-center px-4 py-2 mt-1 block w-full rounded-md bg-blue-500 text-white cursor-pointer">
-                        Send with <i class="fitted google icon"></i> Forms
+                        { $_('pages.contact.send') } <i class="fitted google icon"></i> Forms
                     </div>
                 </div>
             </form>
@@ -40,6 +40,7 @@
 
 <script>
   import ContentSection from '../components/section.svelte'
+  import { _ } from 'svelte-i18n'
 
   function handleFormSubmit () {
     document.getElementById('contact').submit()

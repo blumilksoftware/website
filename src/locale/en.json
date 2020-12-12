@@ -1,0 +1,13 @@
+{
+  "locale": {
+    "code": "pl",
+    "flag": "https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/pl.png",
+    "language": "polski"
+  },
+  "pages": {
+    "contact": {
+      "header": "Contact us",
+      "send": "Send via"
+    }
+  }
+}
