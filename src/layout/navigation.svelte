@@ -3,27 +3,32 @@
         <a href="{ $url('/') }" class="flex items-center">
             <img src="./logo.png" alt="Blumilk" class="w-12 mr-3">
             Blumilk
-            <span class="ml-2 text-blue-500">software development</span>
         </a>
     </div>
     <div class="flex-1 flex justify-end items-center">
         {#each items as item}
             <div class="lowercase ml-8">
                 {#if !item.external}
-                    <a href="{ $url(item.link) }">{ item.label }</a>
+                    <a href="{ $url(item.link) }">{ $_(item.label) }</a>
                 {:else}
-                    <a href="{ item.link }" target="_blank">{ item.label }</a>
+                    <a href="{ item.link }" target="_blank">{ $_(item.label) }</a>
                 {/if}
             </div>
         {/each}
         <div class="ml-8">
-            <img class="w-8" src="https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/pl.png" alt="">
+            <img class="w-8 cursor-pointer" on:click={ switchLocale } src="{ $_('locale.flag') }" alt="$_('locale.language')"
+                 title="{ $_('locale.language') }">
         </div>
     </div>
 </div>
 
 <script>
   import { url } from '@sveltech/routify'
+  import { _, locale } from 'svelte-i18n'
+
+  function switchLocale () {
+    locale.set($_('locale.code'))
+  }
 
   export let items
 </script>

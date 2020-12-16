@@ -1,0 +1,91 @@
+{
+  "locale": {
+    "code": "pl",
+    "flag": "https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/pl.png",
+    "language": "polski"
+  },
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "career": "Career",
+    "contact": "Contact"
+  },
+  "pages": {
+    "career": {
+      "header": "Work at Blumilk",
+      "lead": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, blanditiis commodi culpa debitis deleniti eum ex facilis ipsum maxime minima non quaerat quas quo reiciendis repellendus saepe sint suscipit voluptatum.",
+      "requirements-header": "Requirements",
+      "requirements-label": "We require a certain level of craftsmanship from all our developers. Programming for fun is one thing, but working in a team for international clients in the latest technologies is something different. We would like you to:",
+      "requirements": {
+        "docker": "know how to use PHP in dockerized environment",
+        "di": "use dependency injection in your Laravel applications by default",
+        "testing": "test your code (even before you write any LOC)",
+        "composer": "know the difference between composer install and update",
+        "oop": "have a good knowledge about object-oriented PHP",
+        "eloquent": "know how to avoid n+1 selects problem in Eloquent",
+        "tools": "use automated tools to improve our code quality",
+        "xdebug": "debug your applications with Xdebug",
+        "processes": "join Github Flow, code reviews and CI/CD processes"
+      },
+      "stack-header": "Our stack",
+      "stack-label": "We understand that every engineer chooses his own tools, so we don't want to create any misunderstandings. We are crafting web applications in PHP and Laravel, and we are team-working in specific set of tools so that everyone knows what's going on. So:",
+      "stack": {
+        "php": {
+          "name": "PHP",
+          "description": "with the newest version if that's possible"
+        },
+        "laravel": {
+          "name": "Laravel framework",
+          "description": "when it's the best option for development"
+        },
+        "databases": {
+          "name": "databases",
+          "description": "tailored for specific needs"
+        },
+        "behat": {
+          "name": "Behat",
+          "description": "for Behaviour-driven development"
+        },
+        "ecs": {
+          "name": "ECS & Psalm",
+          "description": "to maintain code quality"
+        },
+        "docker": {
+          "name": "Docker",
+          "description": "to keep everything in manageable containers"
+        },
+        "github": {
+          "name": "Github",
+          "description": "for version control, code reviews and CI/CD"
+        },
+        "google": {
+          "name": "Google",
+          "description": "for docs, emails, calendar and other stuff"
+        },
+        "slack": {
+          "name": "Slack",
+          "description": "to internal communication"
+        }
+      },
+      "application-header": "Application",
+      "application": {
+        "1": "If you would like to send us application, write an e-mail to",
+        "2": "with your CV, Github profile link and a few words about yourself attached."
+      },
+      "gdpr": "According to Art. 13 sec. 1-2 of Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of individuals with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46 / EC (general regulation on data protection) (hereinafter \"GDPR\") we would like to inform you that..."
+    },
+    "contact": {
+      "header": "Contact us",
+      "lead": "Please use the form below to contact us. Do not forget to provide your e-mail address so we could write back!",
+      "send": "Send via",
+      "email": "E-mail address",
+      "message": "Message",
+      "visit-us": "Visit us",
+      "about": {
+        "1": "We are working from the office located in the heart of Legnica, Poland. In the closest neighbourhood you can dine in nice restaurants, grab a beer in local pubs or shop in shopping malls. The railway station is less than 10 minutes by foot. City park is even closer.",
+        "2": "Our address is Najświętszej Marii Panny 5F/5."
+      }
+    }
+  }
+}

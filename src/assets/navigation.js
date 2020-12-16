@@ -7,8 +7,8 @@ class NavigationItem {
 }
 
 export default [
-  new NavigationItem('about', 'About'),
-  new NavigationItem('services', 'Services'),
-  new NavigationItem('career', 'Career'),
-  new NavigationItem('contact', 'Contact')
+  new NavigationItem('about', 'navigation.about'),
+  new NavigationItem('services', 'navigation.services'),
+  new NavigationItem('career', 'navigation.career'),
+  new NavigationItem('contact', 'navigation.contact')
 ]

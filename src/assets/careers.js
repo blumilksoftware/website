@@ -1,13 +1,13 @@
 class Requirement {
-  constructor (requirement) {
-    this.requirement = requirement
+  constructor (index) {
+    this.requirement = 'pages.career.requirements.' + index
   }
 }
 
 class Stack {
-  constructor (name, description, icon = 'check square outline icon') {
-    this.name = name
-    this.description = description
+  constructor (index, icon = 'check square outline icon') {
+    this.name = 'pages.career.stack.' + index + '.name'
+    this.description = 'pages.career.stack.' + index + '.description'
     this.icon = icon
   }
 }
@@ -20,27 +20,27 @@ class CareerData {
 }
 
 const requirements = [
-  new Requirement('know how to use PHP in dockerized environment'),
-  new Requirement('use dependency injection in your Laravel applications by default'),
-  new Requirement('test your code (even before you write any LOC)'),
-  new Requirement('know the difference between composer install and update'),
-  new Requirement('have a good knowledge about object-oriented PHP'),
-  new Requirement('know how to avoid n+1 selects problem in Eloquent'),
-  new Requirement('use automated tools to improve our code quality'),
-  new Requirement('debug your applications with Xdebug'),
-  new Requirement('join Github Flow, code reviews and CI/CD processes')
+  new Requirement('docker'),
+  new Requirement('di'),
+  new Requirement('testing'),
+  new Requirement('composer'),
+  new Requirement('oop'),
+  new Requirement('eloquent'),
+  new Requirement('tools'),
+  new Requirement('xdebug'),
+  new Requirement('processes')
 ]
 
 const stack = [
-  new Stack('PHP', 'with the newest version if that\'s possible', 'php icon'),
-  new Stack('Laravel framework', 'when it\'s the best option for development', 'laravel icon'),
-  new Stack('databases', 'tailored for specific needs', 'database icon'),
-  new Stack('Behat', 'for Behaviour-driven development'),
-  new Stack('ECS & Psalm', 'to maintain code quality'),
-  new Stack('Docker', 'to keep everything in manageable containers', 'docker icon'),
-  new Stack('Github', 'for version control, code reviews and CI/CD', 'github icon'),
-  new Stack('Google', 'for docs, emails, calendar and other stuff', 'google icon'),
-  new Stack('Slack', 'to internal communication', 'slack icon')
+  new Stack('php', 'php icon'),
+  new Stack('laravel', 'laravel icon'),
+  new Stack('databases', 'database icon'),
+  new Stack('behat'),
+  new Stack('ecs'),
+  new Stack('docker', 'docker icon'),
+  new Stack('github', 'github icon'),
+  new Stack('google', 'google icon'),
+  new Stack('slack', 'slack icon')
 ]
 
 export default new CareerData(requirements, stack)

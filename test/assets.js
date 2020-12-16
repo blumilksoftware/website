@@ -42,8 +42,7 @@ describe('testing assets', () => {
       const fields = [
         'name',
         'form',
-        'email',
-        'phone',
+        'emails',
         'nip',
         'address',
         'city',
@@ -51,7 +50,7 @@ describe('testing assets', () => {
       ]
 
       for (const field of fields) {
-        assert(contactData[field])
+        assert.ok(Object.prototype.hasOwnProperty.call(contactData, field))
       }
     })
   })
