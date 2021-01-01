@@ -1,8 +1,9 @@
-<div class="container mx-auto mt-6 mb-36 flex items-center">
+<div class="container mx-auto mt-6 mb-36 flex items-center z-10">
     <div class="text-2xl">
-        <a href="{ $url('/') }" class="flex items-center">
+        <a href="{ $url('/') }" class="flex font-bold items-center">
             <img src="./logo.png" alt="Blumilk" class="w-12 mr-3">
             Blumilk
+            <span id="cursor" class="text-blue-500">_</span>
         </a>
     </div>
     <div class="flex-1 flex justify-end items-center">
@@ -32,3 +33,15 @@
 
   export let items
 </script>
+
+<style>
+    #cursor {
+        -webkit-animation: blink 1.5s infinite;
+    }
+
+    @-webkit-keyframes blink {
+        0% {opacity: 1}
+        50% {opacity: 0}
+        100% {opacity: 1}
+    }
+</style>
