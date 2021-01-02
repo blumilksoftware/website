@@ -1,7 +1,7 @@
 <div class="container mx-auto mt-6 mb-36 flex items-center z-10">
     <div class="text-2xl">
         <a href="{ $url('/') }" class="flex font-bold items-center">
-            <img src="./logo.png" alt="Blumilk" class="w-12 mr-3">
+            <img src="./logo.png" alt="Blumilk" class="w-12 mr-2">
             Blumilk
             <span id="cursor" class="text-blue-500">_</span>
         </a>
@@ -17,7 +17,8 @@
             </div>
         {/each}
         <div class="ml-8">
-            <img class="w-8 cursor-pointer" on:click={ switchLocale } src="{ $_('locale.flag') }" alt="$_('locale.language')"
+            <img class="w-8 cursor-pointer" on:click={ switchLocale } src="{ $_('locale.flag') }"
+                 alt="$_('locale.language')"
                  title="{ $_('locale.language') }">
         </div>
     </div>
@@ -40,8 +41,14 @@
     }
 
     @-webkit-keyframes blink {
-        0% {opacity: 1}
-        50% {opacity: 0}
-        100% {opacity: 1}
+        0% {
+            opacity: 1;
+        }
+        50% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
     }
 </style>

@@ -1,9 +1,10 @@
-<ContentSection title="404">
-    <p class="text-lg">
+<Section disableColumns="true" classes="text-center">
+    <div slot="header" class="text-6xl">404</div>
+    <div slot="description">
         Sorry, but the page you're looking for doesn't exist.
-    </p>
-</ContentSection>
+    </div>
+</Section>
 
 <script>
-  import ContentSection from '../components/section.svelte'
+  import Section from '../components/lead-section.svelte'
 </script>

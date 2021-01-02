@@ -12,10 +12,39 @@
     "contact": "Contact"
   },
   "pages": {
+    "home": {
+      "hero": {
+        "prefix": "Software tailored precisely for",
+        "focus": "your",
+        "suffix": "needs.",
+        "about": "We are a team of skilled software engineers with research and development background at the academical environment."
+      },
+      "academic": {
+        "header": "Close ties with academic environment",
+        "content": [
+          "Our company came directly from the academic environment.",
+          "Our engineers (including CEO and CTO) are working at the local university as teachers of Computer Science classes. We are partners of science conferences. We are conducting internship programme for the most gifted students.",
+          "We believe that our close cooperation with the university helps us maintain the quality of our software."
+        ]
+      },
+      "tools": {
+        "header": "State-of-the-art tools",
+        "content": [
+          "Our engineers are highly experienced with the most modern tools for software development.",
+          "We are building progressive, scalable and solid web applications on top of Laravel framework. This allows us to fully focus on client's business needs. For frontend and special cases we are using specialized tools for every specific task."
+        ]
+      },
+      "projects": {
+        "header": "Agile & solid",
+        "content": [
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut delectus ex harum, ipsa mollitia nisi suscipit ullam. Accusantium cum, error incidunt libero molestiae nihil quae quaerat rem soluta velit. Explicabo!"
+        ]
+      }
+    },
     "career": {
       "header": "Work at Blumilk",
       "lead": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, blanditiis commodi culpa debitis deleniti eum ex facilis ipsum maxime minima non quaerat quas quo reiciendis repellendus saepe sint suscipit voluptatum.",
-      "requirements-header": "Requirements",
+      "requirements-header": "What do we expect?",
       "requirements-label": "We require a certain level of craftsmanship from all our developers. Programming for fun is one thing, but working in a team for international clients in the latest technologies is something different. We would like you to:",
       "requirements": {
         "docker": "know how to use PHP in dockerized environment",

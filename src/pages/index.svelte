@@ -1,86 +1,73 @@
-<div class="container mx-auto h-screen flex justify-center items-center -mt-48">
-    <div class="flex-1">
-        <div class="text-6xl font-bold">
-            Software tailored precisely for
-            <span class="text-blue-500">your</span>
-            needs.
-        </div>
+<Section classes="-mt-48 h-screen">
+    <div slot="header" class="text-6xl">
+        { $_('pages.home.hero.prefix') }
+        <span class="text-blue-500">{ $_('pages.home.hero.focus') }</span>
+        { $_('pages.home.hero.suffix') }
+    </div>
+    <div slot="description" class="mt-16">
+        { $_('pages.home.hero.about') }
+    </div>
+    <div slot="content">
+        <img class="p-12" src="/images/software.png"
+             alt="{ $_('pages.home.hero.prefix') } { $_('pages.home.hero.focus') } { $_('pages.home.hero.suffix') }">
+    </div>
+</Section>
 
+<Section classes="flex-row-reverse">
+    <div slot="header">
+        { $_('pages.home.academic.header') }
+    </div>
+    <div slot="description">
         <div class="mt-16 text-xl text-gray-500">
-            We are a team of skilled software engineers with research and development background at the academical
-            environment.
+            {#each $_('pages.home.academic.content') as item}
+                <p class="pb-4">
+                    { item }
+                </p>
+            {/each}
         </div>
     </div>
-    <div class="flex-1">
-        <img class="p-12" src="/images/software.png" alt="Software tailored precisely for your needs">
+    <div slot="content">
+        <img class="p-12" src="/images/uni.png" alt="{ $_('pages.home.academic.header') }">
     </div>
-</div>
+</Section>
 
-<div class="container mx-auto flex justify-center items-center flex-row-reverse">
-    <div class="flex-1">
-        <div class="text-5xl font-bold">
-            Close ties with academic environment
-        </div>
-
+<Section>
+    <div slot="header">
+        { $_('pages.home.tools.header') }
+    </div>
+    <div slot="description">
         <div class="mt-16 text-xl text-gray-500">
-            <p class="pb-4">
-                Our company came directly from the academic environment.
-            </p>
-            <p class="pb-4">
-                Our engineers (including CEO and CTO) are working at the local university as teachers of Computer
-                Science classes. We are partners of science conferences. We are conducting internship programme for the
-                most gifted students.
-            </p>
-            <p class="pb-4">
-                We believe that our close cooperation with the university helps us maintain the quality of our software.
-            </p>
+            {#each $_('pages.home.tools.content') as item}
+                <p class="pb-4">
+                    { item }
+                </p>
+            {/each}
         </div>
     </div>
-    <div class="flex-1 p-12">
-        <img class="p-12" src="/images/uni.png" alt="Software tailored precisely for your needs">
+    <div slot="content">
+        <img class="p-12" src="/images/tools.png" alt="{ $_('pages.home.tools.header') }">
     </div>
-</div>
+</Section>
 
-<div class="container mx-auto flex justify-center items-center">
-    <div class="flex-1">
-        <div class="text-6xl font-bold">
-            State-of-the-art tools
-        </div>
-
+<Section classes="flex-row-reverse">
+    <div slot="header">
+        { $_('pages.home.projects.header') }
+    </div>
+    <div slot="description">
         <div class="mt-16 text-xl text-gray-500">
-            <p class="pb-4">
-                Our engineers are highly experienced with the most modern tools for software development.
-            </p>
-            <p class="pb-4">
-                We are building progressive, scalable and solid web applications on top of Laravel framework. This
-                allows us to fully focus on client's business needs. For frontend and special cases we are using
-                specialized tools for every specific task.
-            </p>
+            {#each $_('pages.home.projects.content') as item}
+                <p class="pb-4">
+                    { item }
+                </p>
+            {/each}
         </div>
     </div>
-    <div class="flex-1">
-        <img class="p-12" src="/images/tools.png" alt="Software tailored precisely for your needs">
+    <div slot="content">
+        <img class="p-12" src="/images/projects.png" alt="{ $_('pages.home.projects.header') }">
     </div>
-</div>
+</Section>
 
-<div class="container mx-auto flex justify-center items-center flex-row-reverse">
-    <div class="flex-1">
-        <div class="text-5xl font-bold">
-            Agile and solid
-        </div>
-
-        <div class="mt-16 text-xl text-gray-500">
-            <p class="pb-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-            </p>
-            <p class="pb-4">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque pariatur quidem repellat
-                voluptatibus. Doloribus, ducimus enim fugit illum, incidunt ipsa magnam, maiores odio officia
-                praesentium qui repellendus rerum unde voluptatibus.
-            </p>
-        </div>
-    </div>
-    <div class="flex-1 p-12">
-        <img class="p-12" src="/images/projects.png" alt="Software tailored precisely for your needs">
-    </div>
-</div>
+<script>
+  import { _ } from 'svelte-i18n'
+  import Section from '../components/lead-section.svelte'
+</script>
