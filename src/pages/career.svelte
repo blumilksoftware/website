@@ -6,7 +6,8 @@
         { $_('pages.career.lead') }
     </div>
     <div slot="content">
-        <img class="px-24" src="/images/cv.png" alt="{ $_('pages.career.header') }">
+        <img class="px-24" src="/images/cv.png" alt="{ $_('pages.career.header') }"
+             title="{ $_('pages.career.header') }">
     </div>
 </LeadSection>
 

@@ -9,7 +9,8 @@
     </div>
     <div slot="content">
         <img class="p-12" src="/images/software.png"
-             alt="{ $_('pages.home.hero.prefix') } { $_('pages.home.hero.focus') } { $_('pages.home.hero.suffix') }">
+             alt="{ $_('pages.home.hero.prefix') } { $_('pages.home.hero.focus') } { $_('pages.home.hero.suffix') }"
+             title="{ $_('pages.home.hero.prefix') } { $_('pages.home.hero.focus') } { $_('pages.home.hero.suffix') }">
     </div>
 </Section>
 
@@ -27,7 +28,8 @@
         </div>
     </div>
     <div slot="content">
-        <img class="p-12" src="/images/uni.png" alt="{ $_('pages.home.academic.header') }">
+        <img class="p-12" src="/images/uni.png" alt="{ $_('pages.home.academic.header') }"
+             title="{ $_('pages.home.academic.header') }">
     </div>
 </Section>
 
@@ -45,7 +47,8 @@
         </div>
     </div>
     <div slot="content">
-        <img class="p-12" src="/images/tools.png" alt="{ $_('pages.home.tools.header') }">
+        <img class="p-12" src="/images/tools.png" alt="{ $_('pages.home.tools.header') }"
+             title="{ $_('pages.home.tools.header') }">
     </div>
 </Section>
 
@@ -63,7 +66,8 @@
         </div>
     </div>
     <div slot="content">
-        <img class="p-12" src="/images/projects.png" alt="{ $_('pages.home.projects.header') }">
+        <img class="p-12" src="/images/projects.png" alt="{ $_('pages.home.projects.header') }"
+             title="{ $_('pages.home.projects.header') }">
     </div>
 </Section>
 

@@ -1,21 +1,23 @@
 <Section classes="items-start">
-    <div slot="header">Referencje</div>
+    <div slot="header">{ $_('pages.about.references.header') }</div>
     <div slot="description">
         <p class="pr-4">
-            Zależy nam na tym, aby wszyscy nasi partnerzy i klienci byli z nas stuprocentowo zadowoleni.
-            Oto kilka słów na temat naszych projektów.
+            { $_('pages.about.references.lead') }
         </p>
     </div>
     <div slot="content">
-        <ReferenceBalloon name="John Doe" position="CEO at XD Systems">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi cum facere facilis incidunt ipsa,
-            ipsum magni neque obcaecati quisquam reiciendis saepe sequi tempore temporibus ut vero voluptate voluptatem
-            voluptates.
-        </ReferenceBalloon>
+        {#each references as reference}
+            <ReferenceBalloon name="{ reference.name }" icon="{ reference.icon }"
+                              position="{ $_('pages.about.references.references.' + reference.id + '.position') }">
+                { $_('pages.about.references.references.' + reference.id + '.quote') }
+            </ReferenceBalloon>
+        {/each}
     </div>
 </Section>
 
 <script>
+  import { _ } from 'svelte-i18n'
   import Section from '../components/lead-section.svelte'
   import ReferenceBalloon from '../components/reference.svelte'
+  import references from '../assets/references'
 </script>

@@ -15,8 +15,8 @@
 </Section>
 
 <script>
-  import Section from "./section.svelte"
+  import Section from './section.svelte'
 
   export let disableColumns = false
-  export let classes = ""
+  export let classes = ''
 </script>

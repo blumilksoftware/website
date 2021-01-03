@@ -5,9 +5,10 @@ import navigationItems from '../src/assets/navigation'
 import socialLinks from '../src/assets/socials'
 import careerData from '../src/assets/careers'
 import contactData from '../src/assets/contact'
+import references from '../src/assets/references'
 
-function testDefaultAssetsArray (array, name, className) {
-  describe('src/assets/' + name + '.js', () => {
+function testDefaultAssetsArray (array, fileName, className) {
+  describe('src/assets/' + fileName + '.js', () => {
     it('module is exporting valid array', () => {
       assert.ok(Array.isArray(array))
     })
@@ -22,7 +23,8 @@ function testDefaultAssetsArray (array, name, className) {
 
 describe('testing assets', () => {
   testDefaultAssetsArray(navigationItems, 'navigation', 'NavigationItem')
-  testDefaultAssetsArray(socialLinks, 'social', 'SocialMedia')
+  testDefaultAssetsArray(socialLinks, 'socials', 'SocialMedia')
+  testDefaultAssetsArray(references, 'references', 'Reference')
 
   describe('src/assets/careers.js', () => {
     it('module is exporting requirements array of proper objects', () => {

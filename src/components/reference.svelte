@@ -13,8 +13,7 @@
                     <strong>{ name }</strong>,<br>
                     { position }
                </span>
-                <img src="https://eu.ui-avatars.com/api/?background=0D8ABC&color=fff&name=X&rounded=true"
-                     class="w-12 mx-3" alt="John Doe">
+                <img src="{ icon }" class="w-12 mx-3" alt="John Doe">
             </div>
         </div>
     </div>
@@ -33,4 +32,5 @@
 <script>
   export let name
   export let position
+  export let icon = 'https://eu.ui-avatars.com/api/?background=0D8ABC&color=fff&name=' + name + '&rounded=true'
 </script>

@@ -30,7 +30,8 @@
         </form>
     </div>
     <div slot="content">
-        <img class="px-24" src="/images/contact.png" alt="{ $_('pages.contact.header') }">
+        <img class="px-24" src="/images/contact.png" alt="{ $_('pages.contact.header') }"
+             title="{ $_('pages.contact.header') }">
     </div>
 </Section>
 
@@ -43,7 +44,8 @@
         <p class="py-2">{ $_('pages.contact.about.2') }</p>
     </div>
     <div slot="content">
-        <img src="/map.png" alt="Map" class="border">
+        <img src="/map.png" alt="{ $_('pages.contact.visit-us') }" title="{ $_('pages.contact.visit-us') }"
+             class="border">
     </div>
 </Section>
 
