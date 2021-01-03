@@ -1,4 +1,4 @@
-<Section>
+<Section classes="mb-24">
     <div slot="header">
         { $_('pages.contact.header') }
     </div>
@@ -35,21 +35,26 @@
     </div>
 </Section>
 
-<Section classes="mt-24 flex-row-reverse">
-    <div slot="header">
-        { $_('pages.contact.visit-us') }
+<div class="w-full -mb-24">
+    <div id="map">
+        <div class="mt-24 container mx-auto ">
+            <div class="relative z-10 flex w-1/2">
+                <div class="p-8 -m-8 bg-white bg-opacity-50 rounded-xl">
+                    <div class="text-4xl font-bold">
+                        { $_('pages.contact.visit-us') }
+                    </div>
+                    <div class="mt-8 text-xl text-gray-500">
+                        <p class="py-2">{ $_('pages.contact.about.1') }</p>
+                        <p class="py-2">{ $_('pages.contact.about.2') }</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div slot="description">
-        <p class="py-2">{ $_('pages.contact.about.1') }</p>
-        <p class="py-2">{ $_('pages.contact.about.2') }</p>
-    </div>
-    <div slot="content">
-        <img src="/map.png" alt="{ $_('pages.contact.visit-us') }" title="{ $_('pages.contact.visit-us') }"
-             class="border">
-    </div>
-</Section>
+</div>
 
 <script>
+  import { onMount } from 'svelte'
   import { _ } from 'svelte-i18n'
   import Section from '../components/lead-section.svelte'
 
@@ -57,7 +62,38 @@
     document.getElementById('contact').submit()
   }
 
+  const lat = 51.208719304013975
+  const lng = 16.163746516015646
+
+  onMount(async () => {
+    if (!mapboxgl.accessToken) {
+      mapboxgl.accessToken = global.env.MAPBOX_TOKEN
+
+      const map = new mapboxgl.Map({
+        container: 'map',
+        style: global.env.MAPBOX_STYLE,
+        center: [lng - window.innerWidth / 50000, lat],
+        zoom: 13
+      })
+
+      map.scrollZoom.disable()
+
+      const marker = document.createElement('img')
+      marker.src = '/marker.png'
+
+      new mapboxgl.Marker(marker)
+        .setLngLat([lng, lat])
+        .addTo(map)
+    }
+  })
+
   export let url = global.env.CONTACT_FORM_URL + '/formResponse'
   export let emailName = global.env.CONTACT_FORM_EMAIL_NAME
   export let questionName = global.env.CONTANT_FORM_QUESTION_NAME
 </script>
+
+<style>
+    #map {
+        min-height: 75vh !important;
+    }
+</style>

@@ -11,6 +11,16 @@
     "career": "Career",
     "contact": "Contact"
   },
+  "footer": {
+    "illustrated": "illustrated by",
+    "undraw": "unDraw",
+    "built": "built with",
+    "svelte": "Svelte",
+    "and": "and",
+    "tailwind": "Tailwind",
+    "hosted": "hosted on",
+    "github": "Github Pages"
+  },
   "pages": {
     "home": {
       "hero": {
