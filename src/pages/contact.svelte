@@ -37,8 +37,8 @@
 
 <div class="w-full -mb-24">
     <div id="map">
-        <div class="mt-24 container mx-auto ">
-            <div class="relative z-10 flex w-1/2">
+        <div class="mt-24 container mx-auto">
+            <div class="relative z-10 flex w-1/2 float-right">
                 <div class="p-8 -m-8 bg-white bg-opacity-50 rounded-xl">
                     <div class="text-4xl font-bold">
                         { $_('pages.contact.visit-us') }
@@ -66,25 +66,23 @@
   const lng = 16.163746516015646
 
   onMount(async () => {
-    if (!mapboxgl.accessToken) {
-      mapboxgl.accessToken = global.env.MAPBOX_TOKEN
+    mapboxgl.accessToken = global.env.MAPBOX_TOKEN
 
-      const map = new mapboxgl.Map({
-        container: 'map',
-        style: global.env.MAPBOX_STYLE,
-        center: [lng - window.innerWidth / 50000, lat],
-        zoom: 13
-      })
+    const map = new mapboxgl.Map({
+      container: 'map',
+      style: global.env.MAPBOX_STYLE,
+      center: [lng + window.innerWidth / 50000, lat],
+      zoom: 13
+    })
 
-      map.scrollZoom.disable()
+    map.scrollZoom.disable()
 
-      const marker = document.createElement('img')
-      marker.src = '/marker.png'
+    const marker = document.createElement('img')
+    marker.src = '/marker.png'
 
-      new mapboxgl.Marker(marker)
-        .setLngLat([lng, lat])
-        .addTo(map)
-    }
+    new mapboxgl.Marker(marker)
+      .setLngLat([lng, lat])
+      .addTo(map)
   })
 
   export let url = global.env.CONTACT_FORM_URL + '/formResponse'
