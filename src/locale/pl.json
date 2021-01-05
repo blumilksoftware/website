@@ -11,11 +11,76 @@
     "career": "Praca",
     "contact": "Kontakt"
   },
+  "footer": {
+    "illustrated": "zilustrowane przez",
+    "undraw": "unDraw",
+    "built": "zbudowane z",
+    "svelte": "Svelte",
+    "and": "i",
+    "tailwind": "Tailwindem",
+    "hosted": "hostowane na",
+    "github": "Github Pages"
+  },
   "pages": {
+    "home": {
+      "hero": {
+        "prefix": "Oprogramowanie dokładnie dopasowane do",
+        "focus": "Twoich",
+        "suffix": "potrzeb.",
+        "about": "Jesteśmy zespołem inżynierów oprogramowania z doświadczeniem w dziedzinie badań i rozwoju w środowisku akademickim."
+      },
+      "academic": {
+        "header": "Bliska współpraca ze środowiskiem akademickim",
+        "content": [
+          "Nasza firma wywodzi się bezpośrednio ze środowiska akademickiego.",
+          "Nasi inżynierowie (włącznie z CEO i CTO) pracują na lokalnej uczelni wyższej jako nauczyciele przedmiotów informatycznych. Jesteśmy partnerami w naukowych konferencjach. Prowadzimy program praktyk dla najlepszych studentów.",
+          "Wierzymy, że nasza bliska współpraca z uczelnią pomaga nam utrzymać najwyższą jakość naszego oprogramowania."
+        ]
+      },
+      "tools": {
+        "header": "Najlepsze narzędzia",
+        "content": [
+          "Nasi inżynierowie są doświadczeni w boju z najnowszymi narzędziami do wytwarzania oprogramowania.",
+          "Budujemy nowoczesne, skalowalne i solidne aplikacje webowe z wykorzystaniem frameworka Laravel. Pozwala nam to na pełne skupienie się na potrzebach klienta. Do frontendu oraz specjalnych przypadków używamy wyspecjalizowanych narzędzi skrojonych indywidualnie pod każde zadanie."
+        ]
+      },
+      "projects": {
+        "header": "Zwinni i rzetelni",
+        "content": [
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut delectus ex harum, ipsa mollitia nisi suscipit ullam. Accusantium cum, error incidunt libero molestiae nihil quae quaerat rem soluta velit. Explicabo!"
+        ]
+      }
+    },
+    "about": {
+      "references": {
+        "header": "Referencje",
+        "lead": "Zależy nam na tym, aby wszyscy nasi partnerzy i klienci byli z nas stuprocentowo zadowoleni. Oto kilka słów na temat naszych projektów.",
+        "references": {
+          "xd-systems": {
+            "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi cum facere facilis incidunt ipsa, ipsum magni neque obcaecati quisquam reiciendis saepe sequi tempore temporibus ut vero voluptate voluptatem voluptates.",
+            "position": "CEO w XD Systems"
+          }
+        }
+      }
+    },
+    "services": {
+      "r&d": {
+        "header": "Badania i rozwój",
+        "lead": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, blanditiis commodi culpa debitis deleniti eum ex facilis ipsum maxime minima non quaerat quas quo reiciendis repellendus saepe sint suscipit voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cumque ex odit rem? Adipisci atque aut corporis dolorem ea impedit maxime, modi natus necessitatibus nihil provident ratione repellat, temporibus, ut."
+      },
+      "web": {
+        "header": "Szyte na miarę aplikacje webowe",
+        "lead": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, blanditiis commodi culpa debitis deleniti eum ex facilis ipsum maxime minima non quaerat quas quo reiciendis repellendus saepe sint suscipit voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cumque ex odit rem? Adipisci atque aut corporis dolorem ea impedit maxime, modi natus necessitatibus nihil provident ratione repellat, temporibus, ut."
+      },
+      "business": {
+        "header": "Pomoc dla Twojego biznesu",
+        "lead": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, blanditiis commodi culpa debitis deleniti eum ex facilis ipsum maxime minima non quaerat quas quo reiciendis repellendus saepe sint suscipit voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cumque ex odit rem? Adipisci atque aut corporis dolorem ea impedit maxime, modi natus necessitatibus nihil provident ratione repellat, temporibus, ut."
+      }
+    },
     "career": {
       "header": "Pracuj z nami",
       "lead": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, blanditiis commodi culpa debitis deleniti eum ex facilis ipsum maxime minima non quaerat quas quo reiciendis repellendus saepe sint suscipit voluptatum.",
-      "requirements-header": "Wymagania",
+      "requirements-header": "Czego oczekujemy?",
       "requirements-label": "Od wszystkich naszych programistów wymagamy pewnego poziomu rzemieślniczego przygotowania. Programowanie dla hecy to jedno, ale praca w zespole dla międzynarodowych klientów w najnowszych technologiach to drugie. Oczekujemy, abyś:",
       "requirements": {
         "docker": "wiedział jak używać PHP w skonteneryzowanym środowisku",
@@ -29,7 +94,7 @@
         "processes": "mógł dołączyć do Github Flow, CR-ek i procesów CI/CD"
       },
       "stack-header": "Nasz stack",
-      "stack-label": "W pełni rozumiemy, że każdy inżynier sam dobiera swoje narzędzia, więc nie chcemy tworzyć żadnych nieporozumień. Budujemy głównie systemy internetowe w PHP i Laravelu, a pracę zespołową prowadzimy w konkretnych narzędziach, żeby wszyscy wiedzieli na czym stoją. A więc:",
+      "stack-label": "W pełni rozumiemy, że każdy inżynier sam dobiera swoje narzędzia, więc nie chcemy tworzyć żadnych nieporozumień. Budujemy głównie systemy internetowe w PHP i Laravelu, a pracę zespołową prowadzimy w konkretnych narzędziach, żeby wszyscy wiedzieli na czym stoją. Są to:",
       "stack": {
         "php": {
           "name": "PHP",
@@ -86,6 +151,10 @@
         "1": "Pracujemy w biurze ulokowanym w samym centrum Legnicy. W najbliższej okolicy można zjeść w fajnych knajpach, wypić piwo czy zrobić zakupy w galerii handlowej. Stacja kolejowa jest położona dziesięć minut spacerkiem; miejski park nawet bliżej.",
         "2": "Nasz adres to Najświętszej Marii Panny 5F/5."
       }
+    },
+    "404": {
+      "header": "404",
+      "lead": "Przykro nam, ale strona, której szukasz, nie istnieje."
     }
   }
 }

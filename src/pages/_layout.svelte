@@ -1,7 +1,7 @@
 <Navigation items={items}/>
 
 <div class="w-full flex-grow flex flex-col justify-center items-center text-gray-700">
-    <slot></slot>
+    <slot/>
 </div>
 
 <Footer items={items} socials={socials} contact={contact}/>

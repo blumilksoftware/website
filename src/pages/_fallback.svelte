@@ -1,9 +1,11 @@
-<ContentSection title="404">
-    <p class="text-lg">
-        Sorry, but the page you're looking for doesn't exist.
-    </p>
-</ContentSection>
+<Section disableColumns="true" classes="text-center">
+    <div slot="header" class="text-6xl">{ $_('pages.404.header') }</div>
+    <div slot="description">
+        { $_('pages.404.lead') }
+    </div>
+</Section>
 
 <script>
-  import ContentSection from '../components/section.svelte'
+  import { _ } from 'svelte-i18n'
+  import Section from '../components/lead-section.svelte'
 </script>

@@ -1,32 +1,43 @@
-<ContentSection title="Research & development projects">
-    <p class="py-4">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, blanditiis commodi culpa debitis deleniti
-        eum ex facilis ipsum maxime minima non quaerat quas quo reiciendis repellendus saepe sint suscipit
-        voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur deleniti eaque labore maxime,
-        modi nam sed soluta voluptatibus? Aut cum harum minus non rerum. Aliquid at atque aut libero natus. Lorem ipsum
-        dolor sit amet, consectetur adipisicing elit. Aliquam beatae commodi debitis nam neque quasi quos. Ab atque,
-        cupiditate dicta dignissimos ducimus, error fugiat harum laboriosam libero omnis quas ut?
-    </p>
-</ContentSection>
+<Section>
+    <div slot="header">
+        { $_('pages.services.r&d.header') }
+    </div>
+    <div slot="description">
+        { $_('pages.services.r&d.lead') }
+    </div>
+    <div slot="content">
+        <img class="p-12" src="/images/rnd.png" alt="{ $_('pages.services.r&d.header') }"
+             title="{ $_('pages.services.r&d.header') }">
+    </div>
+</Section>
 
-<ContentSection title="Complex and scalable web applications">
-    <p class="py-4">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, blanditiis commodi culpa debitis deleniti
-        eum ex facilis ipsum maxime minima non quaerat quas quo reiciendis repellendus saepe sint suscipit
-        voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cumque ex odit rem? Adipisci
-        atque aut corporis dolorem ea impedit maxime, modi natus necessitatibus nihil provident ratione repellat,
-        temporibus, ut.
-    </p>
-</ContentSection>
+<Section classes="flex-row-reverse">
+    <div slot="header">
+        { $_('pages.services.web.header') }
+    </div>
+    <div slot="description">
+        { $_('pages.services.web.lead') }
+    </div>
+    <div slot="content">
+        <img class="p-12" src="/images/web.png" alt="{ $_('pages.services.web.header') }"
+             title="{ $_('pages.services.web.header') }">
+    </div>
+</Section>
 
-<ContentSection title="Moving your business to cloud">
-    <p class="py-4">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, blanditiis commodi culpa debitis deleniti
-        eum ex facilis ipsum maxime minima non quaerat quas quo reiciendis repellendus saepe sint suscipit
-        voluptatum.
-    </p>
-</ContentSection>
+<Section>
+    <div slot="header">
+        { $_('pages.services.business.header') }
+    </div>
+    <div slot="description">
+        { $_('pages.services.business.lead') }
+    </div>
+    <div slot="content">
+        <img class="p-12" src="/images/data.png" alt="{ $_('pages.services.business.header') }"
+             title="{ $_('pages.services.business.header') }">
+    </div>
+</Section>
 
 <script>
-  import ContentSection from '../components/section.svelte'
+  import { _ } from 'svelte-i18n'
+  import Section from '../components/lead-section.svelte'
 </script>
