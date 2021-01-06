@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c",
+    "build": "routify -b && rollup -c",
     "dev": "run-p watch:routify watch:rollup",
     "watch:rollup": "rollup -c -w",
     "watch:routify": "routify",
@@ -17,7 +17,7 @@
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^10.0.0",
     "@rollup/plugin-replace": "^2.3.4",
-    "@sveltech/routify": "^1.9.10",
+    "@roxi/routify": "^2.8.5",
     "autoprefixer": "^10.0.2",
     "dotenv": "^8.2.0",
     "eslint": "^7.14.0",
