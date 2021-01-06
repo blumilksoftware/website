@@ -1,4 +1,5 @@
 import svelte from 'rollup-plugin-svelte'
+import postcss from 'rollup-plugin-postcss'
 import resolve from '@rollup/plugin-node-resolve'
 import replace from '@rollup/plugin-replace'
 import commonjs from '@rollup/plugin-commonjs'
@@ -42,11 +43,10 @@ export default {
   },
   plugins: [
     svelte({
-      dev: !production,
-      css: (css) => {
-        css.write('bundle.css')
-      },
       preprocess: preprocess({ postcss: true })
+    }),
+    postcss({
+      plugins: []
     }),
     resolve({
       browser: true,
