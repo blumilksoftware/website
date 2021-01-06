@@ -87,7 +87,7 @@
 
   export let url = global.env.CONTACT_FORM_URL + '/formResponse'
   export let emailName = global.env.CONTACT_FORM_EMAIL_NAME
-  export let questionName = global.env.CONTANT_FORM_QUESTION_NAME
+  export let questionName = global.env.CONTACT_FORM_QUESTION_NAME
 </script>
 
 <style>
