@@ -1,7 +1,7 @@
 <div class="bg-blue-500 text-white mt-24 p-12 text-sm leading-relaxed z-30 shadow-lg">
     <div class="container mx-auto grid grid-cols-4 gap-4">
         <div class="flex flex-col">
-            <a href="{ $url('/') }">{ $_('navigation.home') }</a>
+            <a href="{ $url('./') }">{ $_('navigation.home') }</a>
             {#each items as item}
                 {#if !item.external}
                     <a href="{ $url(item.link) }">{ $_(item.label) }</a>
@@ -52,7 +52,7 @@
 </div>
 
 <script>
-  import { url } from '@sveltech/routify'
+  import { url } from '@roxi/routify'
   import { _ } from 'svelte-i18n'
 
   export let items

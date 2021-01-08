@@ -1,6 +1,6 @@
 <div class="container mx-auto mt-6 mb-36 flex items-center z-10">
     <div class="text-2xl">
-        <a href="{ $url('/') }" class="flex font-bold items-center">
+        <a href="{ $url('./') }" class="flex font-bold items-center">
             <img src="./logo.png" alt="Blumilk" class="w-12 mr-2">
             Blumilk
             <span id="cursor" class="text-blue-500">_</span>
@@ -25,7 +25,7 @@
 </div>
 
 <script>
-  import { url } from '@sveltech/routify'
+  import { url } from '@roxi/routify'
   import { _, locale } from 'svelte-i18n'
 
   function switchLocale () {
