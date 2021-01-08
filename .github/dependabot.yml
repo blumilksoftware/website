@@ -6,5 +6,5 @@ updates:
       interval: "weekly"
       day: "monday"
       time: "06:30"
-    commit_message:
+    commit-message:
       prefix: "#27 - "
