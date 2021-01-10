@@ -84,22 +84,24 @@
     </div>
 </Section>
 
-<Section classes="my-24 items-start">
-    <div slot="header">{ $_('pages.about.references.header') }</div>
-    <div slot="description">
-        <p class="pr-4">
-            { $_('pages.about.references.lead') }
-        </p>
-    </div>
-    <div slot="content">
-        {#each references as reference}
-            <ReferenceBalloon name="{ reference.name }" icon="{ reference.icon }"
-                              position="{ $_('pages.about.references.references.' + reference.id + '.position') }">
-                { $_('pages.about.references.references.' + reference.id + '.quote') }
-            </ReferenceBalloon>
-        {/each}
-    </div>
-</Section>
+{#if references.length > 0}
+    <Section classes="my-24 items-start">
+        <div slot="header">{ $_('pages.about.references.header') }</div>
+        <div slot="description">
+            <p class="pr-4">
+                { $_('pages.about.references.lead') }
+            </p>
+        </div>
+        <div slot="content">
+            {#each references as reference}
+                <ReferenceBalloon name="{ reference.name }" icon="{ reference.icon }"
+                                  position="{ $_('pages.about.references.references.' + reference.id + '.position') }">
+                    { $_('pages.about.references.references.' + reference.id + '.quote') }
+                </ReferenceBalloon>
+            {/each}
+        </div>
+    </Section>
+{/if}
 
 <style>
     .hexagons {

@@ -1,3 +1,4 @@
+/* eslint no-unused-vars: "off" */
 class Reference {
   constructor (id, name, icon) {
     this.id = id
@@ -6,10 +7,4 @@ class Reference {
   }
 }
 
-export default [
-  new Reference(
-    'software-services',
-    'John Doe',
-    'https://images.generated.photos/XnhyviAggllFtxArhwy6b8kUr8TWUUYIEZBSWHPwEHM/rs:fit:256:256/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAyOTk0MzguanBn.jpg'
-  )
-]
+export default []
