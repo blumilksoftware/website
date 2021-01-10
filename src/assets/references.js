@@ -7,5 +7,9 @@ class Reference {
 }
 
 export default [
-  new Reference('xd-systems', 'John Doe', 'https://eu.ui-avatars.com/api/?background=3b82f6&font-size=0.33&color=fff&name=XD&rounded=true')
+  new Reference(
+    'xd-systems',
+    'John Doe',
+    'https://images.generated.photos/XnhyviAggllFtxArhwy6b8kUr8TWUUYIEZBSWHPwEHM/rs:fit:256:256/Z3M6Ly9nZW5lcmF0/ZWQtcGhvdG9zL3Yz/XzAyOTk0MzguanBn.jpg'
+  )
 ]

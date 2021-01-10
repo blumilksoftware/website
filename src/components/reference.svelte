@@ -13,7 +13,7 @@
                     <strong>{ name }</strong>,<br>
                     { position }
                </span>
-                <img src="{ icon }" class="w-12 mx-3" alt="John Doe">
+                <img src="{ icon }" class="rounded-full w-12 mx-3" alt="John Doe">
             </div>
         </div>
     </div>

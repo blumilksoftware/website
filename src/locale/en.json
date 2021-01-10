@@ -27,7 +27,7 @@
         "prefix": "Software tailored precisely for",
         "focus": "your",
         "suffix": "needs.",
-        "about": "We are a team of skilled software engineers with research and development background at the academical environment."
+        "about": "We are a team of skilled software engineers specialized in web applications and research and development projects."
       },
       "academic": {
         "header": "Close ties with academic environment",
@@ -47,18 +47,48 @@
       "projects": {
         "header": "Agile & solid",
         "content": [
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut delectus ex harum, ipsa mollitia nisi suscipit ullam. Accusantium cum, error incidunt libero molestiae nihil quae quaerat rem soluta velit. Explicabo!"
+          "We run our projects using agile methodologies that allow us to deliver the best product in the expected time. The basis of our work is communication: between programmers, with the client and with the end users. We are transparent.",
+          "We care about the quality of our software. We use automated code quality tools to ensure that the development of new functionalities and updates are carried out quickly and efficiently. We are artisans."
         ]
       }
     },
     "about": {
+      "blumilk": {
+        "header": "Who are we?",
+        "company": [
+          "Blumilk is a software house founded in Legnica, Poland in October 2020 by Piotr Nadybski and Krzysztof Rewak. They both previously worked together at a local university and on several IT projects.",
+          "Our developers and testers have gained their professional experience in corporations, software houses, freelance projects and creative agencies. We have worked for local and foreign clients. We have dealt with huge international projects, supporting a functioning business, promising startups and projects for the public sector.",
+          "We design, develop, deploy and maintain top-class tailor-made software. We specialize in web technologies and research and development projects.",
+          "Blumilk Spółka z ograniczoną odpowiedzialnością based in Legnica, Poland is entered by the District Court for Wrocław-Fabryczna in Wrocław, IX Commercial Division, into the register of entrepreneurs of the National Court Register under the number 0000866755. REGON number 387376260, NIP number 6912551135."
+        ],
+        "team": [
+          "Blumilk is the people.",
+          "We have different experiences, we studied at different universities, we worked with different technologies. We are of different ages, with different views and different ideas about life. However, we all want to work in a stable environment, with ambitious projects and in a cool atmosphere.",
+          "Legnica and its region: this is where we come from or live here. We want to professionally build the best software away from the hustle and bustle of the city. We do what we like and we like what we do.",
+          "After work, we practice dozens of different hobbies: we ride a bikes, hike in the mountains, play basketball, visit microbreweries, play board games, organize Jedi Academy tournaments and develop open source projects."
+        ]
+      },
+      "counters": {
+        "members": "team members",
+        "experience": "shared years of experience",
+        "projects": "projects",
+        "loc": "lines of code weekly"
+      },
+      "stack": {
+        "header": "Only the best tools",
+        "content": [
+          "Our primary work tools are PHP and Laravel. We have many years of experience with many projects on various scales, so we know how to optimally use this framework for your goals. We use Behat, PHPUnit, ECS and Psalm. We can also work with Lumen and Phalcon.",
+          "GitHub is our primary workplace. We use it as a version control system, we handle code review there, and we run CI/CD there via GitHub Actions. All our projects are containerized with Docker according to the client's requirements.",
+          "We build the frontend using JavaScript and CSS libraries and frameworks: Vue.js, React, Svelte, Tailwind and others. We work with MySQL, PostgreSQL and other database management systems. We have experience with Redis, Elasticsearch, RabbitMQ."
+        ]
+      },
       "references": {
         "header": "References",
         "lead": "We want all our partners and customers to be 100% satisfied with us. Here are a few words about our projects.",
         "references": {
           "xd-systems": {
             "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi cum facere facilis incidunt ipsa, ipsum magni neque obcaecati quisquam reiciendis saepe sequi tempore temporibus ut vero voluptate voluptatem voluptates.",
-            "position": "CEO at XD Systems"
+            "position": "CEO at Software Services Inc."
           }
         }
       }
@@ -79,7 +109,7 @@
     },
     "career": {
       "header": "Work at Blumilk",
-      "lead": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, blanditiis commodi culpa debitis deleniti eum ex facilis ipsum maxime minima non quaerat quas quo reiciendis repellendus saepe sint suscipit voluptatum.",
+      "lead": "At the moment, we do not have any open recruitment for any position. We are, however, opened to spontaneous applications.",
       "requirements-header": "What do we expect?",
       "requirements-label": "We require a certain level of craftsmanship from all our developers. Programming for fun is one thing, but working in a team for international clients in the latest technologies is something different. We would like you to:",
       "requirements": {
