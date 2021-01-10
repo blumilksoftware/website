@@ -1,31 +1,33 @@
-## Local development
-Start containers and install dependencies:
-```
-docker-compose up -d
-docker-compose run -u "$(id -u):$(id -g)" node npm install
-```
+# blumilk-website
+The source code of website hosted under [https://blumilk.pl/](https://blumilk.pl/)
 
-Create `.env` file based on example and fill values:
+![Homepage screenshot][screenshot.png]
+
+## Local development
+Install dependencies and create `.env` file based on example:
 ```
+dcr node npm install
 cp .env.example .env
 ```
 
-Run Svelte dev mode:
+Run ESLint and Mocha tests:
 ```
-docker-compose run -u "$(id -u):$(id -g)" node npm run dev
-```
-
-Run ESLint:
-```
-docker-compose run -u "$(id -u):$(id -g)" node npm run lint
+dcr node npm run lint
+dcr node npm test
 ```
 
-Run Mocha tests:
+Run Svelte development mode:
 ```
-docker-compose run -u "$(id -u):$(id -g)" node npm test
+dcr node npm run dev
 ```
 
-Please add issue number to all your commits.
+Please maintain our project guidelines:
+* keep Issues well described, labeled and in English
+* add issue number to all your commits
+* add issue number to your branch name
+* squash your commits into one commit with standardized name
+
+> `dcr` should be an alias to `docker-compose run -u "$(id -u):$(id -g)"`
 
 ## Deployment
-Github Actions should be configured to automatically publish all changes from `master` branch with all generated artifacts to public `gh-pages` branch.
+Github Actions are configured to automatically publish all changes from `master` branch with all generated artifacts to `public` branch. GitHub Pages are configured to host built website.
