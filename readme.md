@@ -1,7 +1,7 @@
 # blumilk-website
 The source code of website hosted under [https://blumilk.pl/](https://blumilk.pl/)
 
-![Homepage screenshot][screenshot.png]
+![Homepage screenshot](screenshot.png)
 
 ## Local development
 Install dependencies and create `.env` file based on example:
