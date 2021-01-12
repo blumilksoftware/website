@@ -27,7 +27,7 @@
         "prefix": "Oprogramowanie dokładnie dopasowane do",
         "focus": "Twoich",
         "suffix": "potrzeb.",
-        "about": "Jesteśmy zespołem inżynierów oprogramowania z doświadczeniem w dziedzinie badań i rozwoju w środowisku akademickim."
+        "about": "Jesteśmy zespołem inżynierów oprogramowania specjalizującym się w aplikacjach webowych oraz projektach badawczo-rozwojowych."
       },
       "academic": {
         "header": "Bliska współpraca ze środowiskiem akademickim",
@@ -47,18 +47,48 @@
       "projects": {
         "header": "Zwinni i rzetelni",
         "content": [
-          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut delectus ex harum, ipsa mollitia nisi suscipit ullam. Accusantium cum, error incidunt libero molestiae nihil quae quaerat rem soluta velit. Explicabo!"
+          "Prowadzimy nasze projekty z wykorzystaniem zwinnych metodyk, które pozwalają na dostarczenie najlepszego produktu w oczekiwanym czasie. Podstawą naszej pracy jest komunikacja: między programistami, z klientem oraz końcowymi użytkownikami. Jesteśmy transparentni.",
+          "Dbamy o jakość naszego oprogramowania. Korzystamy ze zautomatyzowanych narzędzi do utrzymania jakości kodu, aby rozwój nowych funkcjonalności oraz aktualizacje przebiegały szybko i sprawnie. Jesteśmy rzemieślnikami."
         ]
       }
     },
     "about": {
+      "blumilk": {
+        "header": "Kim jesteśmy?",
+        "company": [
+          "Blumilk to software house założony w Legnicy w październiku 2020 roku przez Piotra Nadybskiego i Krzysztofa Rewaka. Obaj pracowali wcześniej razem na lokalnej wyższej uczelni oraz przy kilku projektach informatycznych.",
+          "Nasi programiści i testerzy zdobywali swoje zawodowe doświadczenie zarówno w korporacjach, w firmach typu software house, we freelancerskich projektach czy też w agencjach kreatywnych. Pracowaliśmy dla klientów lokalnych oraz zagranicznych. Mieliśmy do czynienia z wielkimi międzynarodowymi projektami, wspieraniem funkcjonującego biznesu, obiecującymi startupami oraz projektami dla sektora publicznego.",
+          "Projektujemy, programujemy, wdrażamy i utrzymujemy najwyższej klasy oprogramowanie szyte na miarę. Specjalizujemy się w technologiach webowych oraz projektach badawczo-rozwojowych.",
+          "Blumilk Spółka z ograniczoną odpowiedzialnością z siedzibą w Legnicy wpisana jest przez Sąd Rejonowy dla Wrocławia-Fabrycznej we Wrocławiu IX Wydział Gospodarczy do rejestru przedsiębiorców KRS pod nr 0000866755. Nr REGON 387376260, nr NIP 6912551135."
+        ],
+        "team": [
+          "Blumilk to przede wszystkim ludzie.",
+          "Mamy różne doświadczenia, uczyliśmy się na różnych uczelniach, pracowaliśmy z różnymi technologiami. Jesteśmy w różnym wieku, z różnymi poglądami i różnymi pomysłami na życie. Wszyscy natomiast chcemy pracować w stabilnym środowisku, przy ambitnych projektach i w fajnej atmosferze.",
+          "Legnica i okolice: stąd pochodzimy lub tu mieszkamy. Chcemy w profesjonalny sposób budować najlepsze oprogramowanie z dala od wielkomiejskiego zgiełku. Robimy to, co lubimy i lubimy, to co robimy.",
+          "Po pracy uprawiamy dziesiątki różnych hobby: jeździmy na rowerze, chodzimy po górach, gramy w kosza, zwiedzamy mikrobrowary, gramy w planszówki, organizujemy turnieje Jedi Academy, rozwijamy open source."
+        ]
+      },
+      "counters": {
+        "members": "członków zespołu",
+        "experience": "lat wspólnego doświadczenia",
+        "projects": "projekty",
+        "loc": "linii kodu tygodniowo"
+      },
+      "stack": {
+        "header": "Tylko najlepsze narzędzia",
+        "content": [
+          "Naszym podstawowym narzędziem pracy jest PHP i Laravel. Mamy wieloletnie doświadczenie z wieloma projektami w różnej skali, więc wiemy jak optymalnie wykorzystać ten framework do wyznaczonych celów. Korzystamy z Behata, PHPUnita, ECS-a i Psalma. Umiemy też pracować z Lumenem i Phalconem.",
+          "GitHub jest naszym podstawowym miejscem pracy. Korzystamy z niego jako systemu kontroli wersji, umożliwia nam code review, a także uruchamiamy CI/CD za pomocą GitHub Actions. Wszystkie nasze projekty są skonteneryzowane zgodnie z wymaganiami klienta.",
+          "Frontend budujemy z wykorzystaniem bibliotek i frameworków JavaScript i CSS: Vue.js, React, Svelte, Tailwind i innych. Pracujemy z MySQL, PostgreSQL i innymi systemami zarządzania bazami danych. Mamy doświadczenie z Redisem, Elasticsearchem, RabbitMQ."
+        ]
+      },
       "references": {
         "header": "Referencje",
         "lead": "Zależy nam na tym, aby wszyscy nasi partnerzy i klienci byli z nas stuprocentowo zadowoleni. Oto kilka słów na temat naszych projektów.",
         "references": {
-          "xd-systems": {
+          "software-services": {
             "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi cum facere facilis incidunt ipsa, ipsum magni neque obcaecati quisquam reiciendis saepe sequi tempore temporibus ut vero voluptate voluptatem voluptates.",
-            "position": "CEO w XD Systems"
+            "position": "CEO w Software Services Inc."
           }
         }
       }
@@ -79,7 +109,7 @@
     },
     "career": {
       "header": "Pracuj z nami",
-      "lead": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, blanditiis commodi culpa debitis deleniti eum ex facilis ipsum maxime minima non quaerat quas quo reiciendis repellendus saepe sint suscipit voluptatum.",
+      "lead": "Na ten moment nie mamy otwartej rekrutacji na żadne stanowisko. Jesteśmy natomiast otwarci na spontaniczne aplikacje, chociaż niczego na chwilę obecną nie możemy obiecać.",
       "requirements-header": "Czego oczekujemy?",
       "requirements-label": "Od wszystkich naszych programistów wymagamy pewnego poziomu rzemieślniczego przygotowania. Programowanie dla hecy to jedno, ale praca w zespole dla międzynarodowych klientów w najnowszych technologiach to drugie. Oczekujemy, abyś:",
       "requirements": {

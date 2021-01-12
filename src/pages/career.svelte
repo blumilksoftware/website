@@ -44,23 +44,16 @@
     </LeadSection>
 </Section>
 
-<div class="w-full bg-blue-500 text-white mt-24 mb-12 p-12 shadow-lg">
+<Ribbon>
     <div class="text-lg pl-8 text-center">
         { $_('pages.career.application.1') }
         <a href="mailto:{email}" class="font-bold">{email}</a>
         { $_('pages.career.application.2') }
     </div>
-</div>
+</Ribbon>
 
 <div class="container mx-auto opacity-50 px-16 pt-12 text-sm">
     { $_('pages.career.gdpr') }
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dolore enim error exercitationem reiciendis
-    tenetur velit vitae voluptatum? Doloremque et laborum nulla provident recusandae reiciendis! Deleniti mollitia non
-    quod voluptatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus dolore enim error
-    exercitationem reiciendis tenetur velit vitae voluptatum? Doloremque et laborum nulla provident recusandae
-    reiciendis! Deleniti mollitia non quod voluptatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    Delectus dolore enim error exercitationem reiciendis tenetur velit vitae voluptatum? Doloremque et laborum nulla
-    provident recusandae reiciendis! Deleniti mollitia non quod voluptatibus?
 </div>
 
 <script>
@@ -68,6 +61,7 @@
   import careers from '../assets/careers'
   import LeadSection from '../components/lead-section.svelte'
   import Section from '../components/section.svelte'
+  import Ribbon from '../components/ribbon.svelte'
 
   export let email = 'career@blumilk.pl'
 </script>

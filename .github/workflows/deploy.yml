@@ -24,13 +24,16 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
+      - name: Make envfile
+        uses: SpicyPizza/create-envfile@v1
+        with:
+          envkey_CONTACT_FORM_URL: "${{ secrets.CONTACT_FORM_URL }}"
+          envkey_CONTACT_FORM_EMAIL_NAME: "${{ secrets.CONTACT_FORM_EMAIL_NAME }}"
+          envkey_CONTACT_FORM_QUESTION_NAME: "${{ secrets.CONTACT_FORM_QUESTION_NAME }}"
+          envkey_MAPBOX_STYLE: "${{ secrets.MAPBOX_STYLE }}"
+          envkey_MAPBOX_TOKEN: "${{ secrets.MAPBOX_TOKEN }}"
+
       - name: Install dependencies
-        env:
-          CONTACT_FORM_URL: "${{ secrets.CONTACT_FORM_URL }}"
-          CONTACT_FORM_EMAIL_NAME: "${{ secrets.CONTACT_FORM_EMAIL_NAME }}"
-          CONTACT_FORM_QUESTION_NAME: "${{ secrets.CONTACT_FORM_QUESTION_NAME }}"
-          MAPBOX_STYLE: "${{ secrets.MAPBOX_STYLE }}"
-          MAPBOX_TOKEN: "${{ secrets.MAPBOX_TOKEN }}"
         run: |
           npm install
           npm run build
