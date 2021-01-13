@@ -25,6 +25,7 @@ module.exports = {
     }
   ],
   globals: {
-    mapboxgl: 'readonly'
+    mapboxgl: 'readonly',
+    Autolinker: 'readonly'
   }
 }

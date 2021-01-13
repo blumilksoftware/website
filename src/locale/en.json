@@ -12,6 +12,7 @@
     "contact": "Contact"
   },
   "footer": {
+    "privacy": "Privacy Policy",
     "illustrated": "illustrated by",
     "undraw": "unDraw",
     "built": "built with",
@@ -181,6 +182,24 @@
         "1": "We are working from the office located in the heart of Legnica, Poland. In the closest neighbourhood you can dine in nice restaurants, grab a beer in local pubs or shop in shopping malls. The railway station is less than 10 minutes by foot. City park is even closer.",
         "2": "Our address is Najświętszej Marii Panny 5F/5."
       }
+    },
+    "privacy": {
+      "header": "Privacy policy",
+      "lead": "On our website, we use cookies to provide services at the highest level and use them specifically to your needs. Cookies are used for statistical purposes.",
+      "qa": [
+        {
+          "question": "Cookies - what is it?",
+          "answer": "Cookies are small files sent by the website you visit and saved on your end device (computer, laptop, smartphone)."
+        },
+        {
+          "question": "Why do we use cookies?",
+          "answer": "We use cookies for statistical purposes to get the number of users visiting our website. This data enables us to analyze and develop the website. We also use \"Google Analytics\" for this purpose. Importantly, \"Google Analytics\" only saves the IP address assigned to you on the day you visit this website, not your name or other identifying information. More details about \"Google Analytics\" you can found at https://policies.google.com/privacy and https://www.google.com/analytics/terms/."
+        },
+        {
+          "question": "Do you have any questions?",
+          "answer": "If you want to find out more about our Privacy Policy, use the contact form or write to us at: hello@blumilk.pl"
+        }
+      ]
     },
     "404": {
       "header": "404",
