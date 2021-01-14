@@ -12,6 +12,7 @@
     "contact": "Kontakt"
   },
   "footer": {
+    "privacy": "Polityka prywatności",
     "illustrated": "zilustrowane przez",
     "undraw": "unDraw",
     "built": "zbudowane z",
@@ -181,6 +182,24 @@
         "1": "Pracujemy w biurze ulokowanym w samym centrum Legnicy. W najbliższej okolicy można zjeść w fajnych knajpach, wypić piwo czy zrobić zakupy w galerii handlowej. Stacja kolejowa jest położona dziesięć minut spacerkiem; miejski park nawet bliżej.",
         "2": "Nasz adres to Najświętszej Marii Panny 5F/5."
       }
+    },
+    "privacy": {
+      "header": "Polityka prywatności",
+      "lead": "Na naszej stronie internetowej stosujemy pliki cookies w celu świadczenia usług na najwyższym poziomie i dostosowania ich specjalnie do Twoich potrzeb. Pliki cookies są wykorzystywane do celów statystycznych.",
+      "qa": [
+        {
+          "question": "Pliki cookies – czyli co?",
+          "answer": "Pliki cookies inaczej \"ciasteczka\" to małe pliki wysyłane przez stronę, którą odwiedzasz i zapisywane na twoim urządzeniu końcowym (komputerze, laptopie, smartfonie)."
+        },
+        {
+          "question": "Dlaczego używamy ciasteczek?",
+          "answer": "Stosujemy pliki cookies w celach szacunkowych, aby poznać ilość użytkowników odwiedzających naszą stronę internetową. Te dane umożliwiają nam analizę, a co za tym idzie stały rozwój strony. W tym celu korzystamy także z \"Google Analytics\". Co istotne \"Google Analytics\" zapisuje tylko adres IP przypisany do Ciebie w dniu wizyty na tej stronie, a nie Twoje imię i nazwisko lub inne informacje umożliwiające identyfikację. Szczegóły dotyczące działania \"Google Analytics\" znajdziesz pod adresem https://policies.google.com/privacy oraz https://www.google.com/analytics/terms/."
+        },
+        {
+          "question": "Masz pytania?",
+          "answer": "Jeśli chcesz dowiedzieć się więcej o naszej Polityce Prywatności skorzystaj z formularza kontaktowego lub napisz do nas na adres: hello@blumilk.pl"
+        }
+      ]
     },
     "404": {
       "header": "404",
