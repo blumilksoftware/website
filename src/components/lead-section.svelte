@@ -1,5 +1,5 @@
 <Section classes="{ classes }">
-    <div class="flex-1">
+    <div class="md:flex-1 { headerClasses }">
         <div class="text-4xl font-bold">
             <slot name="header"/>
         </div>
@@ -8,7 +8,7 @@
         </div>
     </div>
     {#if !disableColumns}
-        <div class="flex-1">
+        <div class="md:flex-1  { contentClasses }">
             <slot name="content"/>
         </div>
     {/if}
@@ -19,4 +19,6 @@
 
   export let disableColumns = false
   export let classes = ''
+  export let headerClasses = ''
+  export let contentClasses = ''
 </script>

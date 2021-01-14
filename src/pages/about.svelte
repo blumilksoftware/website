@@ -1,16 +1,19 @@
 <Section disableColumns="true">
     <div slot="header">{ $_('pages.about.blumilk.header') }</div>
-    <div slot="description" class="flex">
+    <div slot="description" class="lg:flex">
         <div class="flex-1">
             {#each $_('pages.about.blumilk.company') as item}
-                <p class="pr-12 pb-4">
+                <p class="lg:pr-12 pb-4">
                     { item }
                 </p>
             {/each}
         </div>
         <div class="flex-1">
+            <div class="lg:hidden text-center font-gray-100 py-4 mb-4">
+                <i class="asterisk icon"></i>
+            </div>
             {#each $_('pages.about.blumilk.team') as item}
-                <p class="pr-12 pb-4">
+                <p class="lg:pr-12 pb-4">
                     { item }
                 </p>
             {/each}
@@ -19,9 +22,9 @@
 </Section>
 
 <Ribbon>
-    <div class="pl-8 text-center flex">
+    <div class="pl-8 text-center grid grid-cols-2 gap-4 lg:flex">
         {#each counters as counter}
-            <div class="flex-1">
+            <div class="lg:flex-1">
                 <div class="text-6xl p-2">{ counter.number }</div>
                 <div>{ $_(counter.label) }</div>
             </div>
@@ -29,11 +32,11 @@
     </div>
 </Ribbon>
 
-<Section classes="flex-row-reverse">
+<Section classes="mt-12 flex-row-reverse" contentClasses="hidden xl:block">
     <div slot="header">{ $_('pages.about.stack.header') }</div>
     <div slot="description">
         {#each $_('pages.about.stack.content') as item}
-            <p class="pr-12 pb-4">
+            <p class="lg:pr-12 pb-4">
                 { item }
             </p>
         {/each}

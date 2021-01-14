@@ -11,7 +11,7 @@
         {/each}
     </div>
     <div slot="content">
-        <img class="p-24" src="/images/privacy.png" alt="{ $_('pages.privacy.header') }"
+        <img class="px-12 lg:p-12" src="/images/privacy.png" alt="{ $_('pages.privacy.header') }"
              title="{ $_('pages.privacy.header') }">
     </div>
 </LeadSection>

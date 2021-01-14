@@ -6,7 +6,7 @@
         { $_('pages.career.lead') }
     </div>
     <div slot="content">
-        <img class="px-24" src="/images/cv.png" alt="{ $_('pages.career.header') }"
+        <img class="px-12 lg:px-24" src="/images/cv.png" alt="{ $_('pages.career.header') }"
              title="{ $_('pages.career.header') }">
     </div>
 </LeadSection>
@@ -16,7 +16,7 @@
         <div slot="header">
             { $_('pages.career.requirements-header') }
         </div>
-        <div slot="description" class="text-base">
+        <div slot="description" class="text-lg lg:text-base">
             { $_('pages.career.requirements-label') }
             <ul class="list-disc leading-loose pl-4 pt-4">
                 {#each careers.requirements as career}
@@ -29,7 +29,7 @@
         <div slot="header">
             { $_('pages.career.stack-header') }
         </div>
-        <div slot="description" class="text-base">
+        <div slot="description" class="text-lg lg:text-base">
             { $_('pages.career.stack-label') }
             <ul class="leading-loose pl-4 pt-4">
                 {#each careers.stack as stack}

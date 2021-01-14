@@ -30,7 +30,7 @@
         </form>
     </div>
     <div slot="content">
-        <img class="px-24" src="/images/contact.png" alt="{ $_('pages.contact.header') }"
+        <img class="px-12 lg:p-12" src="/images/contact.png" alt="{ $_('pages.contact.header') }"
              title="{ $_('pages.contact.header') }">
     </div>
 </Section>
@@ -39,7 +39,7 @@
     <div id="map">
         <div class="mt-24 container mx-auto">
             <div class="relative z-10 flex w-1/2 float-right">
-                <div class="p-8 -m-8 bg-white bg-opacity-50 rounded-xl">
+                <div class="p-8 -m-8 bg-white bg-opacity-75 lg:bg-opacity-50 rounded-xl">
                     <div class="text-4xl font-bold">
                         { $_('pages.contact.visit-us') }
                     </div>
