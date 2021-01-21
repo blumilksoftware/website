@@ -11,7 +11,7 @@
     </div>
 </Section>
 
-<Section classes="flex-row-reverse">
+<Section classes="lg:flex-row-reverse">
     <div slot="header">
         { $_('pages.services.web.header') }
     </div>
