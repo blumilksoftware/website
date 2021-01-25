@@ -1,5 +1,5 @@
 import { describe, it } from 'mocha'
-import * as assert from 'assert'
+import chai from 'chai'
 import flatten from 'flat'
 
 import en from '../src/locale/en.json'
@@ -20,13 +20,13 @@ function assertHaveSameKeys (...objects) {
 
 function assertIndexesAreTranslated (locales, index) {
   for (const locale of locales) {
-    assert.ok(index.split('.').reduce((o, i) => o[i], locale))
+    chai.should().exist((index.split('.').reduce((o, i) => o[i], locale)))
   }
 }
 
 describe('testing locale', () => {
   it('application localization files has the same key structure', () => {
-    assert.ok(assertHaveSameKeys(flatten(en), flatten(pl)))
+    chai.should().equal(assertHaveSameKeys(flatten(en), flatten(pl)), true)
   })
 })
 
