@@ -1,5 +1,5 @@
 import { describe, it } from 'mocha'
-import assert from 'assert'
+import chai from 'chai'
 
 import navigationItems from '../src/assets/navigation'
 import socialLinks from '../src/assets/socials'
@@ -11,12 +11,12 @@ import counters from '../src/assets/counters'
 function testDefaultAssetsArray (array, fileName, className) {
   describe('src/assets/' + fileName + '.js', () => {
     it('module is exporting valid array', () => {
-      assert.ok(Array.isArray(array))
+      chai.should().exist(Array.isArray(array))
     })
 
     it('module is exporting array of proper objects', () => {
       for (const item of array) {
-        assert.strictEqual(item.constructor.name, className)
+        chai.should().equal(item.constructor.name, className)
       }
     })
   })
@@ -31,12 +31,12 @@ describe('testing assets', () => {
   describe('src/assets/careers.js', () => {
     it('module is exporting requirements array of proper objects', () => {
       for (const item of careerData.requirements) {
-        assert.strictEqual(item.constructor.name, 'Requirement')
+        chai.should().equal(item.constructor.name, 'Requirement')
       }
     })
     it('module is exporting stack array of proper objects', () => {
       for (const item of careerData.stack) {
-        assert.strictEqual(item.constructor.name, 'Stack')
+        chai.should().equal(item.constructor.name, 'Stack')
       }
     })
   })
@@ -54,7 +54,7 @@ describe('testing assets', () => {
       ]
 
       for (const field of fields) {
-        assert.ok(Object.prototype.hasOwnProperty.call(contactData, field))
+        chai.should().equal(Object.prototype.hasOwnProperty.call(contactData, field), true)
       }
     })
   })

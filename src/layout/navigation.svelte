@@ -2,7 +2,7 @@
     <div class="text-2xl">
         <a href="{ $url('./') }" class="flex font-bold items-center">
             <img src="./logo.png" alt="Blumilk" class="w-12 mr-2">
-            Blumilk
+            blumilk
             <span id="cursor" class="text-blue-500">_</span>
         </a>
     </div>
