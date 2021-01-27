@@ -32,5 +32,5 @@
 <script>
   export let name
   export let position
-  export let icon = 'https://eu.ui-avatars.com/api/?background=0D8ABC&color=fff&name=' + name + '&rounded=true'
+  export let icon = 'https://eu.ui-avatars.com/api/?background=0D8ABC&color=fff&name=' + name + '&rounded=true&font-size=.33'
 </script>

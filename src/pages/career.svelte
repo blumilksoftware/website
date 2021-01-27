@@ -6,13 +6,13 @@
         { $_('pages.career.lead') }
     </div>
     <div slot="content">
-        <img class="px-12 lg:px-24" src="/images/cv.png" alt="{ $_('pages.career.header') }"
+        <img class="px-12 lg:px-24" src="/images/illustrations/cv.png" alt="{ $_('pages.career.header') }"
              title="{ $_('pages.career.header') }">
     </div>
 </LeadSection>
 
 <Section classes="mt-12">
-    <LeadSection disableColumns="true">
+    <LeadSection disableColumns="true" classes="-ml-4">
         <div slot="header">
             { $_('pages.career.requirements-header') }
         </div>
@@ -25,7 +25,7 @@
             </ul>
         </div>
     </LeadSection>
-    <LeadSection disableColumns="true">
+    <LeadSection disableColumns="true" classes="-mr-4">
         <div slot="header">
             { $_('pages.career.stack-header') }
         </div>
@@ -34,9 +34,11 @@
             <ul class="leading-loose pl-4 pt-4">
                 {#each careers.stack as stack}
                     <li>
-                        <i class="large { stack.icon }"></i>
-                        { $_(stack.name) }
-                        <span class="opacity-75">{ $_(stack.description) }</span>
+                        <i class="big { stack.icon }"></i>
+                        <span class="ml-2">
+                            { $_(stack.name) }
+                            <span class="opacity-75">{ $_(stack.description) }</span>
+                        </span>
                     </li>
                 {/each}
             </ul>
@@ -53,7 +55,14 @@
 </Ribbon>
 
 <div class="container mx-auto opacity-50 px-16 pt-12 text-sm">
-    { $_('pages.career.gdpr') }
+    { $_('pages.career.gdpr') } lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequatur magni
+    pariatur! Ad error eum hic ipsum nam necessitatibus nesciunt, nostrum, obcaecati omnis, quibusdam quisquam rem saepe
+    temporibus veniam voluptates. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab iure maxime repudiandae
+    vel voluptatum. Alias dolore expedita hic labore, maxime officia quasi quo quod rem repellendus rerum sequi sit
+    voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto consequuntur delectus deleniti
+    dolore doloremque ea illum in iure laborum laudantium maiores necessitatibus obcaecati optio quia quod, repellendus
+    tempore veniam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid atque, blanditiis cum
+    cupiditate dolore enim est illum iste minus modi mollitia, non provident sed ut vel velit voluptate voluptates?
 </div>
 
 <script>

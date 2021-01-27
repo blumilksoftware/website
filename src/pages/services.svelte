@@ -6,7 +6,7 @@
         { $_('pages.services.r&d.lead') }
     </div>
     <div slot="content">
-        <img class="p-12" src="/images/rnd.png" alt="{ $_('pages.services.r&d.header') }"
+        <img class="p-12" src="/images/illustrations/rnd.png" alt="{ $_('pages.services.r&d.header') }"
              title="{ $_('pages.services.r&d.header') }">
     </div>
 </Section>
@@ -19,7 +19,7 @@
         { $_('pages.services.web.lead') }
     </div>
     <div slot="content">
-        <img class="p-12" src="/images/web.png" alt="{ $_('pages.services.web.header') }"
+        <img class="p-12" src="/images/illustrations/web.png" alt="{ $_('pages.services.web.header') }"
              title="{ $_('pages.services.web.header') }">
     </div>
 </Section>
@@ -32,7 +32,7 @@
         { $_('pages.services.business.lead') }
     </div>
     <div slot="content">
-        <img class="p-12" src="/images/data.png" alt="{ $_('pages.services.business.header') }"
+        <img class="p-12" src="/images/illustrations/data.png" alt="{ $_('pages.services.business.header') }"
              title="{ $_('pages.services.business.header') }">
     </div>
 </Section>

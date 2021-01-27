@@ -48,9 +48,10 @@ describe('testing assets', () => {
         'form',
         'emails',
         'nip',
-        'address',
-        'city',
-        'country'
+        'vat',
+        'regon',
+        'krs',
+        'addresses',
       ]
 
       for (const field of fields) {

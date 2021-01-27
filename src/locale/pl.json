@@ -13,6 +13,7 @@
   },
   "footer": {
     "privacy": "Polityka prywatności",
+    "company": "Dane firmy",
     "illustrated": "zilustrowane przez",
     "undraw": "unDraw",
     "built": "zbudowane z",
@@ -59,8 +60,7 @@
         "company": [
           "Blumilk to software house założony w Legnicy w październiku 2020 roku przez Piotra Nadybskiego i Krzysztofa Rewaka. Obaj pracowali wcześniej razem na lokalnej wyższej uczelni oraz przy kilku projektach informatycznych.",
           "Nasi programiści i testerzy zdobywali swoje zawodowe doświadczenie zarówno w korporacjach, w firmach typu software house, we freelancerskich projektach czy też w agencjach kreatywnych. Pracowaliśmy dla klientów lokalnych oraz zagranicznych. Mieliśmy do czynienia z wielkimi międzynarodowymi projektami, wspieraniem funkcjonującego biznesu, obiecującymi startupami oraz projektami dla sektora publicznego.",
-          "Projektujemy, programujemy, wdrażamy i utrzymujemy najwyższej klasy oprogramowanie szyte na miarę. Specjalizujemy się w technologiach webowych oraz projektach badawczo-rozwojowych.",
-          "Blumilk Spółka z ograniczoną odpowiedzialnością z siedzibą w Legnicy wpisana jest przez Sąd Rejonowy dla Wrocławia-Fabrycznej we Wrocławiu IX Wydział Gospodarczy do rejestru przedsiębiorców KRS pod nr 0000866755. Nr REGON 387376260, nr NIP 6912551135."
+          "Projektujemy, programujemy, wdrażamy i utrzymujemy najwyższej klasy oprogramowanie szyte na miarę. Specjalizujemy się w technologiach webowych oraz projektach badawczo-rozwojowych."
         ],
         "team": [
           "Blumilk to przede wszystkim ludzie.",
@@ -87,9 +87,9 @@
         "header": "Referencje",
         "lead": "Zależy nam na tym, aby wszyscy nasi partnerzy i klienci byli z nas stuprocentowo zadowoleni. Oto kilka słów na temat naszych projektów.",
         "references": {
-          "software-services": {
+          "wmd": {
             "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi cum facere facilis incidunt ipsa, ipsum magni neque obcaecati quisquam reiciendis saepe sequi tempore temporibus ut vero voluptate voluptatem voluptates.",
-            "position": "CEO w Software Services Inc."
+            "position": "właściciel WMD Software"
           }
         }
       }
@@ -200,6 +200,12 @@
           "answer": "Jeśli chcesz dowiedzieć się więcej o naszej Polityce Prywatności skorzystaj z formularza kontaktowego lub napisz do nas na adres: hello@blumilk.pl"
         }
       ]
+    },
+    "company": {
+      "header": "Dane firmy",
+      "content": "Blumilk Spółka z ograniczoną odpowiedzialnością z siedzibą w Legnicy wpisana jest przez Sąd Rejonowy dla Wrocławia-Fabrycznej we Wrocławiu IX Wydział Gospodarczy do rejestru przedsiębiorców KRS pod nr 0000866755.",
+      "address": "Adres urzędowy",
+      "office": "Adres biura"
     },
     "404": {
       "header": "404",

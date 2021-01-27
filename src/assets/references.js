@@ -7,4 +7,6 @@ class Reference {
   }
 }
 
-export default []
+export default [
+  new Reference('wmd', 'Michał Wołyniec')
+]

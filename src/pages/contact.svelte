@@ -30,12 +30,12 @@
         </form>
     </div>
     <div slot="content">
-        <img class="px-12 lg:p-12" src="/images/contact.png" alt="{ $_('pages.contact.header') }"
+        <img class="px-12 lg:p-12" src="/images/illustrations/contact.png" alt="{ $_('pages.contact.header') }"
              title="{ $_('pages.contact.header') }">
     </div>
 </Section>
 
-<div class="w-full -mb-24">
+<div class="w-full -mb-36">
     <div id="map">
         <div class="mt-24 container mx-auto">
             <div class="relative z-10 flex w-1/2 float-right">

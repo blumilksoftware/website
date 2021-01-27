@@ -17,7 +17,7 @@
             </div>
         {/each}
         <div class="ml-8">
-            <img class="w-8 cursor-pointer" on:click={ switchLocale } src="{ $_('locale.flag') }"
+            <img class="w-6 cursor-pointer" on:click={ switchLocale } src="{ $_('locale.flag') }"
                  alt="{ $_('locale.language') }"
                  title="{ $_('locale.language') }">
         </div>
