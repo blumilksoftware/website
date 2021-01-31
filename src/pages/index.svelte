@@ -1,7 +1,7 @@
 <Section>
     <div slot="header" class="text-5xl lg:text-6xl">
         { $_('pages.home.hero.prefix') }
-        <span class="text-blue-500">{ $_('pages.home.hero.focus') }</span>
+        <span class="text-brand">{ $_('pages.home.hero.focus') }</span>
         { $_('pages.home.hero.suffix') }
     </div>
     <div slot="description" class="mt-16 text-xl">

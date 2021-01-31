@@ -51,7 +51,7 @@ describe('testing assets', () => {
         'vat',
         'regon',
         'krs',
-        'addresses',
+        'addresses'
       ]
 
       for (const field of fields) {

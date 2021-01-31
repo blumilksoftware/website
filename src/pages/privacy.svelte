@@ -21,6 +21,6 @@
   import LeadSection from '../components/lead-section.svelte'
 
   export let linker = new Autolinker({
-    className: 'text-blue-500'
+    className: 'text-brand'
   })
 </script>

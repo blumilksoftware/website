@@ -55,14 +55,7 @@
 </Ribbon>
 
 <div class="container mx-auto opacity-50 px-16 pt-12 text-sm">
-    { $_('pages.career.gdpr') } lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequatur magni
-    pariatur! Ad error eum hic ipsum nam necessitatibus nesciunt, nostrum, obcaecati omnis, quibusdam quisquam rem saepe
-    temporibus veniam voluptates. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab iure maxime repudiandae
-    vel voluptatum. Alias dolore expedita hic labore, maxime officia quasi quo quod rem repellendus rerum sequi sit
-    voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad architecto consequuntur delectus deleniti
-    dolore doloremque ea illum in iure laborum laudantium maiores necessitatibus obcaecati optio quia quod, repellendus
-    tempore veniam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid atque, blanditiis cum
-    cupiditate dolore enim est illum iste minus modi mollitia, non provident sed ut vel velit voluptate voluptates?
+    { $_('pages.career.gdpr') }
 </div>
 
 <script>

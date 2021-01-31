@@ -22,7 +22,7 @@
                 </div>
                 <div class="flex-1 pr-12 pl-4 py-2">
                     <div on:click={ handleFormSubmit }
-                         class="text-center px-4 py-2 mt-1 block w-full rounded-md bg-blue-500 text-white cursor-pointer">
+                         class="text-center px-4 py-2 mt-1 block w-full rounded-md bg-brand text-white cursor-pointer">
                         { $_('pages.contact.send') } <i class="fitted google icon"></i> Forms
                     </div>
                 </div>

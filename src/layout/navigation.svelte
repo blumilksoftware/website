@@ -3,7 +3,7 @@
         <a href="{ $url('./') }" class="flex font-bold items-center">
             <img src="./logo.png" alt="Blumilk" class="w-12 mr-2">
             blumilk
-            <span id="cursor" class="text-blue-500">_</span>
+            <span id="cursor" class="text-brand">_</span>
         </a>
     </div>
     <div class="flex-1 justify-end items-center hidden md:flex">
