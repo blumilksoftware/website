@@ -1,14 +1,14 @@
-<Section classes="lg:-mt-48 lg:h-screen">
+<Section>
     <div slot="header" class="text-5xl lg:text-6xl">
         { $_('pages.home.hero.prefix') }
-        <span class="text-blue-500">{ $_('pages.home.hero.focus') }</span>
+        <span class="text-brand">{ $_('pages.home.hero.focus') }</span>
         { $_('pages.home.hero.suffix') }
     </div>
-    <div slot="description" class="mt-16">
+    <div slot="description" class="mt-16 text-xl">
         { $_('pages.home.hero.about') }
     </div>
     <div slot="content">
-        <img class="px-12 lg:p-12" src="/images/software.png"
+        <img class="px-12 lg:p-12" src="/images/illustrations/software.png"
              alt="{ $_('pages.home.hero.prefix') } { $_('pages.home.hero.focus') } { $_('pages.home.hero.suffix') }"
              title="{ $_('pages.home.hero.prefix') } { $_('pages.home.hero.focus') } { $_('pages.home.hero.suffix') }">
     </div>
@@ -28,7 +28,7 @@
         </div>
     </div>
     <div slot="content">
-        <img class="px-12 lg:p-12" src="/images/uni.png" alt="{ $_('pages.home.academic.header') }"
+        <img class="px-12 lg:p-12" src="/images/illustrations/uni.png" alt="{ $_('pages.home.academic.header') }"
              title="{ $_('pages.home.academic.header') }">
     </div>
 </Section>
@@ -47,7 +47,7 @@
         </div>
     </div>
     <div slot="content">
-        <img class="px-12 lg:p-12" src="/images/tools.png" alt="{ $_('pages.home.tools.header') }"
+        <img class="px-12 lg:p-12" src="/images/illustrations/tools.png" alt="{ $_('pages.home.tools.header') }"
              title="{ $_('pages.home.tools.header') }">
     </div>
 </Section>
@@ -66,7 +66,7 @@
         </div>
     </div>
     <div slot="content">
-        <img class="px-12 lg:p-12" src="/images/projects.png" alt="{ $_('pages.home.projects.header') }"
+        <img class="px-12 lg:p-12" src="/images/illustrations/projects.png" alt="{ $_('pages.home.projects.header') }"
              title="{ $_('pages.home.projects.header') }">
     </div>
 </Section>

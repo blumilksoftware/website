@@ -6,13 +6,13 @@
         { $_('pages.career.lead') }
     </div>
     <div slot="content">
-        <img class="px-12 lg:px-24" src="/images/cv.png" alt="{ $_('pages.career.header') }"
+        <img class="px-12 lg:px-24" src="/images/illustrations/cv.png" alt="{ $_('pages.career.header') }"
              title="{ $_('pages.career.header') }">
     </div>
 </LeadSection>
 
 <Section classes="mt-12">
-    <LeadSection disableColumns="true">
+    <LeadSection disableColumns="true" classes="-ml-4">
         <div slot="header">
             { $_('pages.career.requirements-header') }
         </div>
@@ -25,7 +25,7 @@
             </ul>
         </div>
     </LeadSection>
-    <LeadSection disableColumns="true">
+    <LeadSection disableColumns="true" classes="-mr-4">
         <div slot="header">
             { $_('pages.career.stack-header') }
         </div>
@@ -34,9 +34,11 @@
             <ul class="leading-loose pl-4 pt-4">
                 {#each careers.stack as stack}
                     <li>
-                        <i class="large { stack.icon }"></i>
-                        { $_(stack.name) }
-                        <span class="opacity-75">{ $_(stack.description) }</span>
+                        <i class="big { stack.icon }"></i>
+                        <span class="ml-2">
+                            { $_(stack.name) }
+                            <span class="opacity-75">{ $_(stack.description) }</span>
+                        </span>
                     </li>
                 {/each}
             </ul>

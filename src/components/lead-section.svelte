@@ -3,12 +3,12 @@
         <div class="text-4xl font-bold">
             <slot name="header"/>
         </div>
-        <div class="mt-8 text-xl text-gray-500">
+        <div class="mt-8 text-lg text-gray-500">
             <slot name="description"/>
         </div>
     </div>
     {#if !disableColumns}
-        <div class="md:flex-1  { contentClasses }">
+        <div class="md:flex-1 { contentClasses }">
             <slot name="content"/>
         </div>
     {/if}

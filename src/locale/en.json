@@ -13,6 +13,7 @@
   },
   "footer": {
     "privacy": "Privacy Policy",
+    "company": "Company info",
     "illustrated": "illustrated by",
     "undraw": "unDraw",
     "built": "built with",
@@ -59,8 +60,7 @@
         "company": [
           "Blumilk is a software house founded in Legnica, Poland in October 2020 by Piotr Nadybski and Krzysztof Rewak. They both previously worked together at a local university and on several IT projects.",
           "Our developers and testers have gained their professional experience in corporations, software houses, freelance projects and creative agencies. We have worked for local and foreign clients. We have dealt with huge international projects, supporting a functioning business, promising startups and projects for the public sector.",
-          "We design, develop, deploy and maintain top-class tailor-made software. We specialize in web technologies and research and development projects.",
-          "Blumilk Spółka z ograniczoną odpowiedzialnością based in Legnica, Poland is entered by the District Court for Wrocław-Fabryczna in Wrocław, IX Commercial Division, into the register of entrepreneurs of the National Court Register under the number 0000866755. REGON number 387376260, NIP number 6912551135."
+          "We design, develop, deploy and maintain top-class tailor-made software. We specialize in web technologies and research and development projects."
         ],
         "team": [
           "Blumilk is the people.",
@@ -87,9 +87,9 @@
         "header": "References",
         "lead": "We want all our partners and customers to be 100% satisfied with us. Here are a few words about our projects.",
         "references": {
-          "software-services": {
+          "wmd": {
             "quote": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam commodi cum facere facilis incidunt ipsa, ipsum magni neque obcaecati quisquam reiciendis saepe sequi tempore temporibus ut vero voluptate voluptatem voluptates.",
-            "position": "CEO at Software Services Inc."
+            "position": "owner of WMD Software"
           }
         }
       }
@@ -97,15 +97,15 @@
     "services": {
       "r&d": {
         "header": "Research & development",
-        "lead": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, blanditiis commodi culpa debitis deleniti eum ex facilis ipsum maxime minima non quaerat quas quo reiciendis repellendus saepe sint suscipit voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cumque ex odit rem? Adipisci atque aut corporis dolorem ea impedit maxime, modi natus necessitatibus nihil provident ratione repellat, temporibus, ut."
+        "lead": "We have experience in conducting research and development projects. Our engineers dealt with a cross-section of popular research issues, including big data processing, scheduling problems, the use of artificial intelligence or broadly understood optimization. Our team members also worked as R&D project coordinators, so we know exactly the processes and problems of such projects."
       },
       "web": {
         "header": "Custom web applications",
-        "lead": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, blanditiis commodi culpa debitis deleniti eum ex facilis ipsum maxime minima non quaerat quas quo reiciendis repellendus saepe sint suscipit voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cumque ex odit rem? Adipisci atque aut corporis dolorem ea impedit maxime, modi natus necessitatibus nihil provident ratione repellat, temporibus, ut."
+        "lead": "We all come from the web development environment. We use the best tools to deliver the best software for the client and his users. We use our extensive experience to make our applications convenient to use on any device, fast, easily expandable and secure. Our team can explore the product domain in order to best accomplish the tasks set; regardless of whether it is the insurance, educational, administrative, financial or other industries."
       },
       "business": {
         "header": "Improving your business",
-        "lead": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, blanditiis commodi culpa debitis deleniti eum ex facilis ipsum maxime minima non quaerat quas quo reiciendis repellendus saepe sint suscipit voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores cumque ex odit rem? Adipisci atque aut corporis dolorem ea impedit maxime, modi natus necessitatibus nihil provident ratione repellat, temporibus, ut."
+        "lead": "We fully understand that the software has to solve business problems: optimize tasks and resources, secure data, enable further scaling, and make life easier. Nowadays, most or practically all processes taking place in companies are often based on IT systems. We want to help make sure everything works as well as possible."
       }
     },
     "career": {
@@ -169,7 +169,7 @@
         "1": "If you would like to send us application, write an e-mail to",
         "2": "with your CV, Github profile link and a few words about yourself attached."
       },
-      "gdpr": "According to Art. 13 sec. 1-2 of Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of individuals with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46 / EC (general regulation on data protection) (hereinafter \"GDPR\") we would like to inform you that..."
+      "gdpr": "The administrator of your personal data is Blumilk Sp. z o.o. based in Legnica, e-mail: career@blumilk.pl. We process your personal data only for the purpose of current and future recruitment, if you have given your consent in the content of your application. We process your personal data provided in the application, indicated in the Labor Code or in other specific acts on the basis of legal provisions and their submission is necessary to participate in the recruitment. We process other personal data (e.g. your image) on the basis of your voluntary consent, which you have given by sending us your recruitment application. We do not transfer your personal data outside the European Economic Area. We process your personal data for the purpose of recruitment for a period of 1 year from the moment of receiving your application. We may provide your personal data to providers of job posting services, providers of recruitment management systems, providers of IT services such as hosting and IT system providers. You can withdraw your consent at any time by contacting us at the e-mail address career@blumilk.pl. Withdrawal of consent does not affect the lawfulness of the processing which was carried out on the basis of consent before its withdrawal. You also have the right to access your data, including obtaining a copy, rectifying data, requesting its removal, restriction of processing, objecting to processing and transferring the data provided (for which you consented) to another data administrator. In the event of any violations of your personal data, you have the right to lodge a complaint with the President of the Office for Personal Data Protection. If you want your CV to be used for our other recruitments, add the following consent in your CV: \"I consent to the processing of personal data contained in my recruitment application by Blumilk Sp.z o.o.with its registered office in Legnica for the purposes of future recruitment\". "
     },
     "contact": {
       "header": "Contact us",
@@ -200,6 +200,12 @@
           "answer": "If you want to find out more about our Privacy Policy, use the contact form or write to us at: hello@blumilk.pl"
         }
       ]
+    },
+    "company": {
+      "header": "Company information",
+      "content": "Blumilk Spółka z ograniczoną odpowiedzialnością based in Legnica, Poland is entered by the District Court for Wrocław-Fabryczna in Wrocław, IX Commercial Division, into the register of entrepreneurs of the National Court Register under the number 0000866755.",
+      "address": "Official address",
+      "office": "Office address"
     },
     "404": {
       "header": "404",

@@ -22,7 +22,7 @@
                 </div>
                 <div class="flex-1 pr-12 pl-4 py-2">
                     <div on:click={ handleFormSubmit }
-                         class="text-center px-4 py-2 mt-1 block w-full rounded-md bg-blue-500 text-white cursor-pointer">
+                         class="text-center px-4 py-2 mt-1 block w-full rounded-md bg-brand text-white cursor-pointer">
                         { $_('pages.contact.send') } <i class="fitted google icon"></i> Forms
                     </div>
                 </div>
@@ -30,12 +30,12 @@
         </form>
     </div>
     <div slot="content">
-        <img class="px-12 lg:p-12" src="/images/contact.png" alt="{ $_('pages.contact.header') }"
+        <img class="px-12 lg:p-12" src="/images/illustrations/contact.png" alt="{ $_('pages.contact.header') }"
              title="{ $_('pages.contact.header') }">
     </div>
 </Section>
 
-<div class="w-full -mb-24">
+<div class="w-full -mb-36">
     <div id="map">
         <div class="mt-24 container mx-auto">
             <div class="relative z-10 flex w-1/2 float-right">

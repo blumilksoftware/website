@@ -4,8 +4,14 @@ module.exports = {
     content: ['./src/**/*.svelte'],
   },
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        brand: '#527aba'
+      },
+    },
   },
   variants: {},
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }

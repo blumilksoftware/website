@@ -3,7 +3,7 @@
         <a href="{ $url('./') }" class="flex font-bold items-center">
             <img src="./logo.png" alt="Blumilk" class="w-12 mr-2">
             blumilk
-            <span id="cursor" class="text-blue-500">_</span>
+            <span id="cursor" class="text-brand">_</span>
         </a>
     </div>
     <div class="flex-1 justify-end items-center hidden md:flex">
@@ -17,7 +17,7 @@
             </div>
         {/each}
         <div class="ml-8">
-            <img class="w-8 cursor-pointer" on:click={ switchLocale } src="{ $_('locale.flag') }"
+            <img class="w-6 cursor-pointer" on:click={ switchLocale } src="{ $_('locale.flag') }"
                  alt="{ $_('locale.language') }"
                  title="{ $_('locale.language') }">
         </div>
