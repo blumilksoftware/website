@@ -35,7 +35,7 @@ export default function (map, center) {
     id: 'map-controls',
     controls: [
       {
-        title: 'Przywróć główny widok',
+        title: 'Restore the main view',
         icon: 'home icon',
         eventHandler: () => {
           map.flyTo(center)
