@@ -10,11 +10,18 @@ The source code of website hosted under [https://blumilk.pl/](https://blumilk.pl
 ![Homepage screenshot](screenshot.png)
 
 ## Local development
+Clone this repository with Git and go into the project's directory:
+```
+git clone https://github.com/blumilksoftware/website blumilk.pl
+cd blumilk.pl
+```
+
 Install dependencies and create `.env` file based on example:
 ```
 dcr node npm install
 cp .env.example .env
 ```
+Without the `.env` file properly filled, you won't be able to send a contact form and see the office location map.
 
 Run ESLint and Mocha tests:
 ```
@@ -33,7 +40,7 @@ Please maintain our project guidelines:
 * add issue number to your branch name
 * squash your commits into one commit with standardized name
 
-> `dcr` should be an alias to `docker-compose run -u "$(id -u):$(id -g)"`
+> `dcr` should be an alias to `docker-compose run --rm -u "$(id -u):$(id -g)"`
 
 ## Deployment
 Github Actions are configured to automatically publish all changes from `master` branch with all generated artifacts to `public` branch. GitHub Pages are configured to host built website.
