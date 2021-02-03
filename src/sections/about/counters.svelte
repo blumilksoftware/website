@@ -1,5 +1,5 @@
 <Ribbon>
-    <div class="pl-8 text-center grid grid-cols-2 gap-4 lg:flex">
+    <div class="pl-8 text-center grid grid-cols-1 md:grid-cols-2 gap-4 lg:flex">
         {#each counters as counter}
             <div class="lg:flex-1">
                 <div class="font-bold text-6xl p-2">{ counter.number }</div>

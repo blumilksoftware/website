@@ -1,4 +1,4 @@
-<div class="w-full -mb-36">
+<div class="w-full md:-mb-36">
     <div id="map">
         <div class="mt-24 container mx-auto">
             <div class="relative z-10 flex w-1/2 float-right">
