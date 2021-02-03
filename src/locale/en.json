@@ -161,7 +161,7 @@
         },
         "slack": {
           "name": "Slack",
-          "description": "to internal communication"
+          "description": "for internal communications"
         }
       },
       "application-header": "Application",
