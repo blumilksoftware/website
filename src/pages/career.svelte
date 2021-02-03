@@ -12,7 +12,7 @@
 </LeadSection>
 
 <Section classes="mt-12">
-    <LeadSection disableColumns="true" classes="-ml-4">
+    <LeadSection disableColumns="true" classes="md:-ml-4">
         <div slot="header">
             { $_('pages.career.requirements-header') }
         </div>
@@ -25,7 +25,7 @@
             </ul>
         </div>
     </LeadSection>
-    <LeadSection disableColumns="true" classes="-mr-4">
+    <LeadSection disableColumns="true" classes="md:-mr-4">
         <div slot="header">
             { $_('pages.career.stack-header') }
         </div>
@@ -47,14 +47,14 @@
 </Section>
 
 <Ribbon>
-    <div class="text-lg pl-8 text-center">
+    <div class="text-lg text-center">
         { $_('pages.career.application.1') }
         <a href="mailto:{email}" class="font-bold">{email}</a>
         { $_('pages.career.application.2') }
     </div>
 </Ribbon>
 
-<div class="container mx-auto opacity-50 px-16 pt-12 text-sm">
+<div class="container mx-auto opacity-50 px-16 pt-12 text-sm text-center md:text-left">
     { $_('pages.career.gdpr') }
 </div>
 

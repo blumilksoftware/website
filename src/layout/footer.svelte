@@ -9,11 +9,13 @@
             {/each}
         </div>
         <div class="mt-8 md:mt-0 md:order-1">
-            <p class="text-center text-base text-gray-700">
+            <div class="text-center text-base text-gray-700">
                 <span>&copy; { year } Blumilk</span>
-                <a href="{ $url('./privacy') }" class="hover:text-gray-900 mx-4">{ $_('footer.privacy') }</a>
-                <a href="{ $url('./company') }" class="hover:text-gray-900">{ $_('footer.company') }</a>
-            </p>
+                <div class="block md:inline">
+                    <a href="{ $url('./privacy') }" class="hover:text-gray-900 mx-4">{ $_('footer.privacy') }</a>
+                    <a href="{ $url('./company') }" class="hover:text-gray-900">{ $_('footer.company') }</a>
+                </div>
+            </div>
         </div>
     </div>
 </footer>
