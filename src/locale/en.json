@@ -35,7 +35,7 @@
         "header": "Close ties with academic environment",
         "content": [
           "Our company came directly from the academic environment.",
-          "Our engineers (including CEO and CTO) are working at the local university as teachers of Computer Science classes. We are partners of science conferences. We are conducting internship programme for the most gifted students.",
+          "Our engineers (including CEO and CTO) are working at the local university as teachers of Computer Science classes. We are partners in scientific conferences. We are conducting an internship programme for the most gifted students.",
           "We believe that our close cooperation with the university helps us maintain the quality of our software."
         ]
       },
@@ -43,7 +43,7 @@
         "header": "State-of-the-art tools",
         "content": [
           "Our engineers are highly experienced with the most modern tools for software development.",
-          "We are building progressive, scalable and solid web applications on top of Laravel framework. This allows us to fully focus on client's business needs. For frontend and special cases we are using specialized tools for every specific task."
+          "We are building progressive, scalable and solid web applications on top of Laravel framework. This allows us to fully focus on the client's business needs. For frontend and special cases we are using specialized tools for every specific task."
         ]
       },
       "projects": {
@@ -66,7 +66,7 @@
           "Blumilk is the people.",
           "We have different experiences, we studied at different universities, we worked with different technologies. We are of different ages, with different views and different ideas about life. However, we all want to work in a stable environment, with ambitious projects and in a cool atmosphere.",
           "Legnica and its region: this is where we come from or live here. We want to professionally build the best software away from the hustle and bustle of the city. We do what we like and we like what we do.",
-          "After work, we practice dozens of different hobbies: we ride a bikes, hike in the mountains, play basketball, visit microbreweries, play board games, organize Jedi Academy tournaments and develop open source projects."
+          "After work, we practice dozens of different hobbies: we ride bikes, hike in the mountains, play basketball, visit microbreweries, play board games, organize Jedi Academy tournaments and develop open source projects."
         ]
       },
       "counters": {
@@ -101,7 +101,7 @@
       },
       "web": {
         "header": "Custom web applications",
-        "lead": "We all come from the web development environment. We use the best tools to deliver the best software for the client and his users. We use our extensive experience to make our applications convenient to use on any device, fast, easily expandable and secure. Our team can explore the product domain in order to best accomplish the tasks set; regardless of whether it is the insurance, educational, administrative, financial or other industries."
+        "lead": "We all come from the web development environment. We use the best tools to deliver the best software for the client and his users. We use our extensive experience to make our applications convenient to use on any device, fast, easily expandable and secure. Our team can explore the product domain to best accomplish the tasks set; regardless of whether it is the insurance, educational, administrative, financial or other industries."
       },
       "business": {
         "header": "Improving your business",
@@ -114,7 +114,7 @@
       "requirements-header": "What do we expect?",
       "requirements-label": "We require a certain level of craftsmanship from all our developers. Programming for fun is one thing, but working in a team for international clients in the latest technologies is something different. We would like you to:",
       "requirements": {
-        "docker": "know how to use PHP in dockerized environment",
+        "docker": "know how to use PHP in a dockerized environment",
         "di": "use dependency injection in your Laravel applications by default",
         "testing": "test your code (even before you write any LOC)",
         "composer": "know the difference between composer install and update",
@@ -125,7 +125,7 @@
         "processes": "join Github Flow, code reviews and CI/CD processes"
       },
       "stack-header": "Our stack",
-      "stack-label": "We understand that every engineer chooses his own tools, so we don't want to create any misunderstandings. We are crafting web applications in PHP and Laravel, and we are team-working in specific set of tools so that everyone knows what's going on. So:",
+      "stack-label": "We understand that every engineer chooses his own tools, so we don't want to create any misunderstandings. We are crafting web applications in PHP and Laravel, and we are team-working in a specific set of tools so that everyone knows what's going on. So:",
       "stack": {
         "php": {
           "name": "PHP",
@@ -137,7 +137,7 @@
         },
         "databases": {
           "name": "databases",
-          "description": "tailored for specific needs"
+          "description": "tailored for a specific needs"
         },
         "behat": {
           "name": "Behat",
@@ -166,10 +166,10 @@
       },
       "application-header": "Application",
       "application": {
-        "1": "If you would like to send us application, write an e-mail to",
+        "1": "If you would like to send us an application, write an e-mail to",
         "2": "with your CV, Github profile link and a few words about yourself attached."
       },
-      "gdpr": "The administrator of your personal data is Blumilk Sp. z o.o. based in Legnica, e-mail: career@blumilk.pl. We process your personal data only for the purpose of current and future recruitment, if you have given your consent in the content of your application. We process your personal data provided in the application, indicated in the Labor Code or in other specific acts on the basis of legal provisions and their submission is necessary to participate in the recruitment. We process other personal data (e.g. your image) on the basis of your voluntary consent, which you have given by sending us your recruitment application. We do not transfer your personal data outside the European Economic Area. We process your personal data for the purpose of recruitment for a period of 1 year from the moment of receiving your application. We may provide your personal data to providers of job posting services, providers of recruitment management systems, providers of IT services such as hosting and IT system providers. You can withdraw your consent at any time by contacting us at the e-mail address career@blumilk.pl. Withdrawal of consent does not affect the lawfulness of the processing which was carried out on the basis of consent before its withdrawal. You also have the right to access your data, including obtaining a copy, rectifying data, requesting its removal, restriction of processing, objecting to processing and transferring the data provided (for which you consented) to another data administrator. In the event of any violations of your personal data, you have the right to lodge a complaint with the President of the Office for Personal Data Protection. If you want your CV to be used for our other recruitments, add the following consent in your CV: \"I consent to the processing of personal data contained in my recruitment application by Blumilk Sp.z o.o.with its registered office in Legnica for the purposes of future recruitment\". "
+      "gdpr": "The administrator of your personal data is Blumilk Sp. z o.o. based in Legnica, e-mail: career@blumilk.pl. We process your personal data only for the purpose of current and future recruitment, if you have given your consent to the content of your application. We process your personal data provided in the application, indicated in the Labor Code or other specific acts based on legal provisions and their submission is necessary to participate in the recruitment. We process other personal data (e.g. your image) based on your voluntary consent, which you have given by sending us your recruitment application. We do not transfer your personal data outside the European Economic Area. We process your personal data for recruitment for 1 year from the moment of receiving your application. We may provide your personal data to providers of job posting services, providers of recruitment management systems, providers of IT services such as hosting and IT system providers. You can withdraw your consent at any time by contacting us at the e-mail address career@blumilk.pl. Withdrawal of consent does not affect the lawfulness of the processing, which was carried out based on consent before its withdrawal. You also have the right to access your data, including obtaining a copy, rectifying data, requesting its removal, restriction of processing, object to processing and transferring the data provided (for which you consented) to another data administrator. In the event of any violations of your personal data, you have the right to lodge a complaint with the President of the Office for Personal Data Protection. If you want your CV to be used for our other recruitments, add the following consent in your CV: \"I consent to the processing of personal data contained in my recruitment application by Blumilk Sp. z o.o. with its registered office in Legnica for future recruitment\". "
     },
     "contact": {
       "header": "Contact us",
@@ -179,7 +179,7 @@
       "message": "Message",
       "visit-us": "Visit us",
       "about": {
-        "1": "We are working from the office located in the heart of Legnica, Poland. In the closest neighbourhood you can dine in nice restaurants, grab a beer in local pubs or shop in shopping malls. The railway station is less than 10 minutes by foot. City park is even closer.",
+        "1": "We are working from the office located in the heart of Legnica, Poland. In the closest neighbourhood, you can dine in nice restaurants, grab a beer in local pubs or shop in shopping malls. The railway station is less than 10 minutes by foot. The city park is even closer.",
         "2": "Our address is Najświętszej Marii Panny 5F/5."
       }
     },
@@ -193,11 +193,11 @@
         },
         {
           "question": "Why do we use cookies?",
-          "answer": "We use cookies for statistical purposes to get the number of users visiting our website. This data enables us to analyze and develop the website. We also use \"Google Analytics\" for this purpose. Importantly, \"Google Analytics\" only saves the IP address assigned to you on the day you visit this website, not your name or other identifying information. More details about \"Google Analytics\" you can found at https://policies.google.com/privacy and https://www.google.com/analytics/terms/."
+          "answer": "We use cookies for statistical purposes to get the number of users visiting our website. This data enables us to analyze and develop the website. We also use \"Google Analytics\" for this purpose. Importantly, \"Google Analytics\" only saves the IP address assigned to you on the day you visit this website, not your name or other identifying information. More details about \"Google Analytics\" you can find at https://policies.google.com/privacy and https://www.google.com/analytics/terms/."
         },
         {
           "question": "Do you have any questions?",
-          "answer": "If you want to find out more about our Privacy Policy, use the contact form or write to us at: hello@blumilk.pl"
+          "answer": "If you want to find out more about our Privacy Policy, use the contact form or write to us at hello@blumilk.pl"
         }
       ]
     },
