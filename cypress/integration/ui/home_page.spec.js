@@ -16,6 +16,7 @@ describe('home page', () => {
         cy.get('i')
             .first()
             .should('have.class', 'large bars icon')
+            .should('be.visible')
     })
 
     it('hamburger menu is not visible for desktop ', () => {

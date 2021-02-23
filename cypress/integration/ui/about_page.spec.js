@@ -17,4 +17,9 @@ describe('about page', () => {
             .find('img')
             .eq(3).should('have.attr', 'src').should('include', 'wmd')
     })
+
+    it('shows asterix on mobiles', () => {
+        // cy.viewport('iphone-xr')
+        cy.get('i').should('have.class', 'asterisk icon').should('be.visible')
+    })
 })
