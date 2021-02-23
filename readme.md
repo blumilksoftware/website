@@ -28,6 +28,10 @@ Run ESLint and Mocha tests:
 dcr node npm run lint
 dcr node npm test
 ```
+Run all Cypress tests:
+```
+cypress run
+```
 
 Run Svelte development mode:
 ```
