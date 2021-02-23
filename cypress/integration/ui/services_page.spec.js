@@ -1,5 +1,5 @@
 describe('service page', () => {
-    beforeEach(() => {
+    before(function () {
         cy.visit('/services')
     })
 
@@ -12,6 +12,5 @@ describe('service page', () => {
             .find('img')
             .should('have.attr', 'alt', 'Research & development')
             .should('have.attr', 'src').should('include', 'rnd')
-
     })
 })

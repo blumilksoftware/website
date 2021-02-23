@@ -1,5 +1,5 @@
 describe('career page', () => {
-    beforeEach(() => {
+    before(function () {
         cy.visit('/career')
     })
 

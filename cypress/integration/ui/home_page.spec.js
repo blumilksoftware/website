@@ -1,5 +1,5 @@
 describe('home page', () => {
-    beforeEach(() => {
+    before(function () {
         cy.visit('/')
     })
 
@@ -7,19 +7,8 @@ describe('home page', () => {
         cy.url().should('include', '/')
     })
 
-    it('change language to Polish', () => {
-        cy.get('img.w-6')
-            .should('have.attr', 'alt', 'polski').click()
-    })
-
     it('check if there are bubbles', () => {
         cy.get('.circles.svelte-f1rzqs div.svelte-f1rzqs')
-    })
-
-    it('clicking "services" navigates to a new url', () => {
-        cy.contains('Services').click()
-
-        cy.url().should('include', '/services')
     })
 
     it('check hamburger menu at iPhone 6', () => {
@@ -36,4 +25,13 @@ describe('home page', () => {
             .should('be.not.visible')
     })
 
+    it('clicking "services" navigates to a new url', () => {
+        cy.contains('Services').click()
+        cy.url().should('include', '/services')
+    })
+
+    it('change language to Polish', () => {
+        cy.get('img.w-6')
+            .should('have.attr', 'alt', 'polski').click()
+    })
 })

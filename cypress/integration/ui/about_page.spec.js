@@ -1,5 +1,5 @@
 describe('about page', () => {
-    beforeEach(() => {
+    before(function () {
         cy.visit('/about')
     })
 
@@ -16,7 +16,5 @@ describe('about page', () => {
         cy.get('.my-24 > :nth-child(1) > .mt-8 > [slot="description"]')
             .find('img')
             .eq(3).should('have.attr', 'src').should('include', 'wmd')
-
-
     })
 })
