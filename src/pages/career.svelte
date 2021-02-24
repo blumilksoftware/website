@@ -29,12 +29,12 @@
         <div slot="header">
             { $_('pages.career.stack-header') }
         </div>
-        <div slot="description" class="text-lg lg:text-base">
+        <div slot="description" class="text-lg lg:text-base" data-cy="stack-list">
             { $_('pages.career.stack-label') }
             <ul class="leading-loose pl-4 pt-4">
                 {#each careers.stack as stack}
                     <li>
-                        <i class="big { stack.icon }"></i>
+                        <i class="big { stack.icon }" data-cy="{ stack.icon }"></i>
                         <span class="ml-2">
                             { $_(stack.name) }
                             <span class="opacity-75">{ $_(stack.description) }</span>
@@ -59,11 +59,11 @@
 </div>
 
 <script>
-  import { _ } from 'svelte-i18n'
-  import careers from '../assets/careers'
-  import LeadSection from '../components/lead-section.svelte'
-  import Section from '../components/section.svelte'
-  import Ribbon from '../components/ribbon.svelte'
+    import {_} from 'svelte-i18n'
+    import careers from '../assets/careers'
+    import LeadSection from '../components/lead-section.svelte'
+    import Section from '../components/section.svelte'
+    import Ribbon from '../components/ribbon.svelte'
 
-  export let email = 'career@blumilk.pl'
+    export let email = 'career@blumilk.pl'
 </script>

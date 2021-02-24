@@ -1,5 +1,5 @@
 describe('privacy policy page', () => {
-    before(function () {
+    before(() => {
         cy.visit('/privacy')
     })
 
@@ -8,6 +8,7 @@ describe('privacy policy page', () => {
     })
 
     it('checks content of header', () => {
-        cy.get('.text-4xl > div').contains('Privacy policy')
+        cy.get('[data-cy="privacy-policy-header"]')
+            .contains('Privacy policy')
     })
 })

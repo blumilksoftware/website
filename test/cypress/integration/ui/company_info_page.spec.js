@@ -1,5 +1,5 @@
 describe('company info page', () => {
-    before(function () {
+    before(() => {
         cy.visit('/company')
     })
 
@@ -7,7 +7,8 @@ describe('company info page', () => {
         cy.url().should('include', '/company')
     })
 
-    it('checks number of large texts', () => {
-        cy.get('div').find('.text-5xl').should('have.length', 2)
+    it('checks NIP', () => {
+        cy.get('[data-cy="nip"]')
+            .should('have.length', 1)
     })
 })

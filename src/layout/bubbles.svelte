@@ -1,4 +1,4 @@
-<div class="circles">
+<div class="circles" data-cy="bubbles">
     {#each bubbles as bubble}
         <div style="{ getStyle(bubble) }"></div>
     {/each}

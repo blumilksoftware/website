@@ -25,7 +25,7 @@
     <div slot="content" class="lg:text-right lg:mr-24 font-bold">
         <div class="my-8">
             <div class="text-3xl opacity-75">NIP</div>
-            <div class="text-5xl">{ contact.nip }</div>
+            <div class="text-5xl" data-cy="nip">{ contact.nip }</div>
         </div>
         <div class="my-8">
             <div class="text-3xl opacity-75">VAT</div>
@@ -43,8 +43,7 @@
 </LeadSection>
 
 <script>
-  import { _ } from 'svelte-i18n'
-  import contact from '../assets/contact'
-
-  import LeadSection from '../components/lead-section.svelte'
+    import {_} from 'svelte-i18n'
+    import contact from '../assets/contact'
+    import LeadSection from '../components/lead-section.svelte'
 </script>
