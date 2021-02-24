@@ -59,7 +59,7 @@
 </div>
 
 <script>
-    import {_} from 'svelte-i18n'
+    import { _ } from 'svelte-i18n'
     import careers from '../assets/careers'
     import LeadSection from '../components/lead-section.svelte'
     import Section from '../components/section.svelte'

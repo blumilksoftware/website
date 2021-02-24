@@ -48,12 +48,12 @@
 </Map>
 
 <script>
-    import {_} from 'svelte-i18n'
+    import { _ } from 'svelte-i18n'
     import Section from '../components/lead-section.svelte'
     import Map from '../components/map.svelte'
 
-    function handleFormSubmit() {
-        document.getElementById('contact').submit()
+    function handleFormSubmit () {
+      document.getElementById('contact').submit()
     }
 
     export let url = global.env.CONTACT_FORM_URL + '/formResponse'

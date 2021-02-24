@@ -37,7 +37,7 @@
 {/if}
 
 <script>
-    import {_} from 'svelte-i18n'
+    import { _ } from 'svelte-i18n'
     import Section from '../../components/lead-section.svelte'
     import ReferenceBalloon from '../../components/reference.svelte'
     import references from '../../assets/references'

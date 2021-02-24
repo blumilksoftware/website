@@ -1,3 +1,4 @@
 {
-  "baseUrl":"http://172.19.0.2:5000"
+  "baseUrl": "http://172.19.0.2:5000/",
+  "integrationFolder": "test/cypress/integration"
 }
