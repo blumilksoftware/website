@@ -1,6 +1,6 @@
 describe('privacy policy page', () => {
   before(() => {
-    cy.visit('/privacy')
+    cy.apiUrl('/privacy')
   })
 
   it('loads successfully', () => {

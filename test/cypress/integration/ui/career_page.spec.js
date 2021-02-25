@@ -1,6 +1,6 @@
 describe('career page', () => {
   before(() => {
-    cy.visit('/career')
+    cy.apiUrl('/career')
   })
 
   it('loads successfully', () => {

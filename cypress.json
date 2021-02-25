@@ -1,4 +1,6 @@
 {
-  "baseUrl": "http://172.19.0.2:5000/",
-  "integrationFolder": "test/cypress/integration"
+  "integrationFolder": "test/cypress/integration",
+  "supportFile": "test/cypress/support/index.js",
+  "video": false,
+  "screenshotOnRunFailure": false
 }

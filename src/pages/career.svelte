@@ -59,11 +59,11 @@
 </div>
 
 <script>
-    import { _ } from 'svelte-i18n'
-    import careers from '../assets/careers'
-    import LeadSection from '../components/lead-section.svelte'
-    import Section from '../components/section.svelte'
-    import Ribbon from '../components/ribbon.svelte'
+  import { _ } from 'svelte-i18n'
+  import careers from '../assets/careers'
+  import LeadSection from '../components/lead-section.svelte'
+  import Section from '../components/section.svelte'
+  import Ribbon from '../components/ribbon.svelte'
 
-    export let email = 'career@blumilk.pl'
+  export let email = 'career@blumilk.pl'
 </script>

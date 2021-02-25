@@ -43,7 +43,7 @@
 </LeadSection>
 
 <script>
-    import { _ } from 'svelte-i18n'
-    import contact from '../assets/contact'
-    import LeadSection from '../components/lead-section.svelte'
+  import { _ } from 'svelte-i18n'
+  import contact from '../assets/contact'
+  import LeadSection from '../components/lead-section.svelte'
 </script>

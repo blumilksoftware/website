@@ -48,15 +48,15 @@
 </Map>
 
 <script>
-    import { _ } from 'svelte-i18n'
-    import Section from '../components/lead-section.svelte'
-    import Map from '../components/map.svelte'
+  import { _ } from 'svelte-i18n'
+  import Section from '../components/lead-section.svelte'
+  import Map from '../components/map.svelte'
 
-    function handleFormSubmit () {
-      document.getElementById('contact').submit()
-    }
+  function handleFormSubmit () {
+    document.getElementById('contact').submit()
+  }
 
-    export let url = global.env.CONTACT_FORM_URL + '/formResponse'
-    export let emailName = global.env.CONTACT_FORM_EMAIL_NAME
-    export let questionName = global.env.CONTACT_FORM_QUESTION_NAME
+  export let url = global.env.CONTACT_FORM_URL + '/formResponse'
+  export let emailName = global.env.CONTACT_FORM_EMAIL_NAME
+  export let questionName = global.env.CONTACT_FORM_QUESTION_NAME
 </script>

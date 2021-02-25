@@ -28,8 +28,9 @@ Run ESLint and Mocha tests:
 dcr node npm run lint
 dcr node npm test
 ```
-Run all Cypress tests:
+Set host address and run all Cypress tests:
 ```
+export CYPRESS_HOST=http://project-address
 cypress run
 ```
 
