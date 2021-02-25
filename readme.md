@@ -28,10 +28,9 @@ Run ESLint and Mocha tests:
 dcr node npm run lint
 dcr node npm test
 ```
-Set host address and run all Cypress tests:
+Run all Cypress tests:
 ```
-export CYPRESS_HOST=http://project-address
-cypress run
+docker-compose up cypress
 ```
 
 Run Svelte development mode:

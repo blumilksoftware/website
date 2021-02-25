@@ -1,6 +1,6 @@
 describe('contact page', () => {
   before(() => {
-    cy.apiUrl('/contact')
+    cy.visit('/contact')
   })
 
   it('loads successfully', () => {
@@ -18,8 +18,7 @@ describe('contact page', () => {
   })
 
   it('checks map', () => {
-    cy.get('.mapboxgl-marker')
-      .should('have.attr', 'href')
-      .and('equal', 'https://google.com/maps/search/?api=1&query=51.208719304013975,16.163746516015646')
+    cy.get('[data-cy="map"]')
+      .should('have.attr', 'data-cy', 'map')
   })
 })

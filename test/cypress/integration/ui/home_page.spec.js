@@ -1,6 +1,6 @@
 describe('home page', () => {
   before(() => {
-    cy.apiUrl('/')
+    cy.visit('/')
   })
 
   it('loads successfully', () => {

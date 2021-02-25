@@ -10,3 +10,14 @@ services:
     restart: always
     environment:
       - HOST=0.0.0.0
+
+  cypress:
+    container_name: blumilk-cypress
+    image: "cypress/included:3.4.0"
+    depends_on:
+      - node
+    environment:
+    - CYPRESS_baseUrl=http://0.0.0.0
+    working_dir: /e2e
+    volumes:
+    - ./:/e2e

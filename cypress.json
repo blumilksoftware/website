@@ -1,6 +1,5 @@
 {
   "integrationFolder": "test/cypress/integration",
-  "supportFile": "test/cypress/support/index.js",
   "video": false,
   "screenshotOnRunFailure": false
 }
