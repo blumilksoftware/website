@@ -17,7 +17,7 @@ services:
     depends_on:
       - node
     environment:
-    - CYPRESS_baseUrl=http://0.0.0.0
+    - CYPRESS_baseUrl=${BASE_URL}
     working_dir: /e2e
     volumes:
     - ./:/e2e
