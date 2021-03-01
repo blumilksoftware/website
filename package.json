@@ -46,6 +46,6 @@
     "svelte": "^3.31.2",
     "svelte-i18n": "^3.3.0",
     "svelte-preprocess": "^4.6.3",
-    "tailwindcss": "^2.0.2"
+    "tailwindcss": "^2.0.3"
   }
 }
