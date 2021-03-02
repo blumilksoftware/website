@@ -10,20 +10,20 @@
         {#each items as item}
             <div class="lowercase ml-8">
                 {#if !item.external}
-                    <a href="{ $url(item.link) }">{ $_(item.label) }</a>
+                    <a href="{ $url(item.link) }" data-cy={$_(item.label)}>{ $_(item.label) }</a>
                 {:else}
-                    <a href="{ item.link }" target="_blank">{ $_(item.label) }</a>
+                    <a href="{ item.link }" target="_blank" data-cy={$_(item.label)}>{ $_(item.label) }</a>
                 {/if}
             </div>
         {/each}
         <div class="ml-8">
-            <img class="w-6 cursor-pointer" on:click={ switchLocale } src="{ $_('locale.flag') }"
+            <img class="w-6 cursor-pointer" on:click={ switchLocale } src="{ $_('locale.flag') }" data-cy={$_('locale.language')}
                  alt="{ $_('locale.language') }"
                  title="{ $_('locale.language') }">
         </div>
     </div>
     <div class="flex-grow cursor-pointer text-right md:hidden" on:click={ switchMenu }>
-        <i class="large bars icon"></i>
+        <i class="large bars icon" data-cy="menu-bars"></i>
     </div>
 </div>
 
@@ -45,7 +45,7 @@
             {/each}
             <div class="flex text-center p-2 hover:bg-blue-400 hover:bg-opacity-25 items-center justify-center cursor-pointer"
                  on:click={ switchLocale }>
-                <img class="w-6 mx-2" src="{ $_('locale.flag') }" alt="{ $_('locale.language') }"
+                <img class="w-6 mx-2" src="{ $_('locale.flag') }" alt="{ $_('locale.language')}"
                      title="{ $_('locale.language') }"> { $_('locale.language') }
             </div>
         </div>

@@ -6,7 +6,7 @@
         { $_('pages.services.r&d.lead') }
     </div>
     <div slot="content">
-        <img class="p-12" src="/images/illustrations/rnd.png" alt="{ $_('pages.services.r&d.header') }"
+        <img class="p-12" src="/images/illustrations/rnd.png" alt="{ $_('pages.services.r&d.header') }" data-cy="rnd-image"
              title="{ $_('pages.services.r&d.header') }">
     </div>
 </Section>

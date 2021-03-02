@@ -1,5 +1,5 @@
 <div class="w-full md:-mb-36">
-    <div id="map">
+    <div id="map" data-cy="map">
         <div class="mt-24 container mx-auto">
             <div class="relative z-10 flex w-1/2 float-right">
                 <div class="p-8 -m-8 bg-white bg-opacity-75 lg:bg-opacity-50 rounded-xl">

@@ -1,0 +1,5 @@
+{
+  "integrationFolder": "test/cypress/integration",
+  "video": false,
+  "screenshotOnRunFailure": false
+}

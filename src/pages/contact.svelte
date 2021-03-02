@@ -11,14 +11,16 @@
                 <label for="{ questionName }" class="block text-gray-700"></label>
                 <textarea rows="8" name="{ questionName }" id="{ questionName }"
                           placeholder="{ $_('pages.contact.message') }"
-                          class="px-4 py-2 mt-1 block w-full shadow-sm border-gray-300 rounded-md"></textarea>
+                          class="px-4 py-2 mt-1 block w-full shadow-sm border-gray-300 rounded-md"
+                          data-cy="contact-form-question"></textarea>
             </div>
             <div class="md:flex">
                 <div class="flex-1 md:pl-12 md:pr-4 py-2">
                     <label for="{ emailName }" class="block text-gray-700"></label>
                     <input type="text" name="{ emailName }" id="{ emailName }"
                            placeholder="{ $_('pages.contact.email') }"
-                           class="px-4 py-2 my-1 block w-full shadow-sm border-gray-300 rounded-md">
+                           class="px-4 py-2 my-1 block w-full shadow-sm border-gray-300 rounded-md"
+                           data-cy="contact-form-email">
                 </div>
                 <div class="flex-1 md:pr-12 md:pl-4 py-2">
                     <div on:click={ handleFormSubmit }

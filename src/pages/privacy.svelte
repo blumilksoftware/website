@@ -1,5 +1,5 @@
 <LeadSection>
-    <div slot="header">
+    <div slot="header" data-cy="privacy-policy-header">
         { $_('pages.privacy.header') }
     </div>
     <div slot="description" class="text-base">

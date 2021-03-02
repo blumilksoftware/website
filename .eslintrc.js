@@ -4,7 +4,7 @@ module.exports = {
     node: true,
     mocha: true
   },
-  extends: ['standard'],
+  extends: ['standard', 'plugin:cypress/recommended'],
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module'

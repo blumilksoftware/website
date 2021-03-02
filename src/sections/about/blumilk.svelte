@@ -10,7 +10,7 @@
         </div>
         <div class="flex-1">
             <div class="lg:hidden text-center font-gray-100 py-4 mb-4">
-                <i class="asterisk icon"></i>
+                <i class="asterisk icon" data-cy="asterisk-icon"></i>
             </div>
             {#each $_('pages.about.blumilk.team') as item}
                 <p class="lg:pr-12 pb-4">
