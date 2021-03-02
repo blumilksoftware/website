@@ -57,7 +57,8 @@ export default {
         env: {
           ...config().parsed
         }
-      })
+      }),
+      preventAssignment: true
     }),
     commonjs(),
     json(),
