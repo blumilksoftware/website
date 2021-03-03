@@ -37,7 +37,14 @@
     </div>
 </Section>
 
+<Meta {metadata}/>
+
 <script>
   import { _ } from 'svelte-i18n'
   import Section from '../components/lead-section.svelte'
+  import Meta from '../components/meta-title.svelte'
+
+  const metadata = {
+    title: 'Services'
+  }
 </script>

@@ -42,8 +42,15 @@
     </div>
 </LeadSection>
 
+<Meta  {metadata}/>
+
 <script>
   import { _ } from 'svelte-i18n'
   import contact from '../assets/contact'
   import LeadSection from '../components/lead-section.svelte'
+  import Meta from '../components/meta-title.svelte'
+
+  const metadata = {
+    title: 'Company'
+  }
 </script>
