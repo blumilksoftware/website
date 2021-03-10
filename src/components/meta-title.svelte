@@ -1,12 +1,7 @@
-<script>
-    export let metadata = {}
-</script>
-
 <svelte:head>
-    {#if metadata.title !== 'Blumilk Software Development'}
-        <title>{metadata.title} | Blumilk </title>
-    {:else}
-        <title>{metadata.title}</title>
-    {/if}
-
+    <title>{title} | Blumilk </title>
 </svelte:head>
+
+<script>
+  export let title = 'Blumilk Software Development'
+</script>
