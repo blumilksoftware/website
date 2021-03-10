@@ -1,3 +1,4 @@
+<Meta title= { $_('title.career') } />
 <LeadSection>
     <div slot="header">
         { $_('pages.career.header') }
@@ -64,6 +65,7 @@
   import LeadSection from '../components/lead-section.svelte'
   import Section from '../components/section.svelte'
   import Ribbon from '../components/ribbon.svelte'
+  import Meta from '../components/meta-title.svelte'
 
   export let email = 'career@blumilk.pl'
 </script>

@@ -10,7 +10,6 @@
   import items from '../assets/navigation'
   import socials from '../assets/socials'
   import contact from '../assets/contact'
-
   import Navigation from '../layout/navigation.svelte'
   import Footer from '../layout/footer.svelte'
 </script>

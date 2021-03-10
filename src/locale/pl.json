@@ -4,6 +4,16 @@
     "flag": "https://raw.githubusercontent.com/krzysztofrewak/flat-flags-iconset/master/flags/gb.png",
     "language": "English"
   },
+  "title": {
+    "404": "Nie znaleziono strony",
+    "about": "O firmie",
+    "blumilk-software-development": "Blumilk Software Development",
+    "career": "Praca",
+    "company": "Dane firmy",
+    "contact": "Kontakt",
+    "privacy": "Polityka firmy",
+    "services": "Usługi"
+  },
   "navigation": {
     "home": "Strona główna",
     "about": "O firmie",

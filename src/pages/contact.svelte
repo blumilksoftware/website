@@ -1,3 +1,4 @@
+<Meta title={ $_('title.contact') }/>
 <Section classes="mb-24">
     <div slot="header">
         { $_('pages.contact.header') }
@@ -51,6 +52,7 @@
   import { _ } from 'svelte-i18n'
   import Section from '../components/lead-section.svelte'
   import Map from '../components/map.svelte'
+  import Meta from '../components/meta-title.svelte'
 
   function handleFormSubmit () {
     document.getElementById('contact').submit()
