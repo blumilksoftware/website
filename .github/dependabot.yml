@@ -7,3 +7,4 @@ updates:
       time: "06:30"
     commit-message:
       prefix: "#27 - "
+    open-pull-requests-limit: 1
