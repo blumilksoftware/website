@@ -47,7 +47,7 @@
     "slugify": "^1.4.6",
     "svelte": "^3.31.2",
     "svelte-i18n": "^3.3.0",
-    "svelte-preprocess": "^4.6.3",
+    "svelte-preprocess": "^4.7.0",
     "tailwindcss": "^2.0.2"
   }
 }
