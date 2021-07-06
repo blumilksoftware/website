@@ -82,7 +82,7 @@
       "counters": {
         "members": "team members",
         "experience": "shared years of experience",
-        "projects": "projects",
+        "projects": "completed projects",
         "loc": "lines of code weekly"
       },
       "stack": {
