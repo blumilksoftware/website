@@ -53,11 +53,7 @@ export default {
       dedupe: ['svelte']
     }),
     replace({
-      global: JSON.stringify({
-        env: {
-          ...config().parsed
-        }
-      }),
+      env: JSON.stringify(config().parsed),
       preventAssignment: true
     }),
     commonjs(),
