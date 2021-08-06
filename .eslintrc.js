@@ -22,9 +22,17 @@ module.exports = {
     {
       files: ['*.svelte'],
       processor: 'svelte3/svelte3'
+    },
+    {
+      files: ['src/pages/contact.svelte', 'src/components/map.svelte'],
+      processor: 'svelte3/svelte3',
+      rules: {
+        'dot-notation': 'off'
+      }
     }
   ],
   globals: {
+    env: 'readonly',
     mapboxgl: 'readonly',
     Autolinker: 'readonly'
   }
