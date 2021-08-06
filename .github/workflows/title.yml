@@ -1,0 +1,14 @@
+name: Check the PR title
+on:
+  pull_request:
+    types:
+      - opened
+      - edited
+      - synchronize
+
+jobs:
+  check-pr-title:
+    name: Check the PR title
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: blumilksoftware/action-pr-title@v1.2.0
