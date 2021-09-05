@@ -61,11 +61,12 @@
 
 <script>
   import { _ } from 'svelte-i18n'
-  import careers from '../assets/careers'
-  import LeadSection from '../components/lead-section.svelte'
-  import Section from '../components/section.svelte'
-  import Ribbon from '../components/ribbon.svelte'
-  import Meta from '../components/meta-title.svelte'
+
+  import careers from '@/assets/careers.js'
+  import LeadSection from '@/components/lead-section.svelte'
+  import Section from '@/components/section.svelte'
+  import Ribbon from '@/components/ribbon.svelte'
+  import Meta from '@/components/meta-title.svelte'
 
   export let email = 'career@blumilk.pl'
 </script>

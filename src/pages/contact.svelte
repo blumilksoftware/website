@@ -50,9 +50,9 @@
 
 <script>
   import { _ } from 'svelte-i18n'
-  import Section from '../components/lead-section.svelte'
-  import Map from '../components/map.svelte'
-  import Meta from '../components/meta-title.svelte'
+  import Section from '@/components/lead-section.svelte'
+  import Map from '@/components/map.svelte'
+  import Meta from '@/components/meta-title.svelte'
 
   function handleFormSubmit () {
     document.getElementById('contact').submit()

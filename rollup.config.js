@@ -1,5 +1,6 @@
 import svelte from 'rollup-plugin-svelte'
 import postcss from 'rollup-plugin-postcss'
+import alias from '@rollup/plugin-alias'
 import resolve from '@rollup/plugin-node-resolve'
 import replace from '@rollup/plugin-replace'
 import commonjs from '@rollup/plugin-commonjs'
@@ -32,6 +33,13 @@ function serve () {
   }
 }
 
+const aliases = alias({
+  resolve: ['.svelte', '.js'],
+  entries: [
+    { find: '@', replacement: 'src' }
+  ]
+})
+
 export default {
   input: 'src/main.js',
   output: {
@@ -58,6 +66,7 @@ export default {
     }),
     commonjs(),
     json(),
+    aliases,
     !production && serve(),
     !production && livereload('public'),
     production && terser()

@@ -1,5 +1,6 @@
 import App from './app.svelte'
 import { addMessages, getLocaleFromNavigator, init } from 'svelte-i18n'
+
 import en from './locale/en.json'
 import pl from './locale/pl.json'
 

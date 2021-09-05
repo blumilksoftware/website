@@ -11,6 +11,6 @@
 
 <script>
   import { _ } from 'svelte-i18n'
-  import Ribbon from '../../components/ribbon.svelte'
-  import counters from '../../assets/counters'
+  import Ribbon from '@/components/ribbon.svelte'
+  import counters from '@/assets/counters.js'
 </script>

@@ -1,6 +1,6 @@
 <Meta title={ $_('title.blumilk-software-development') }/>
 <Section>
-    <div slot="header" class="text-5xl lg:text-6xl">
+    <div slot="header" class="text-4xl md:text-5xl lg:text-6xl">
         { $_('pages.home.hero.prefix') }
         <span class="text-brand">{ $_('pages.home.hero.focus') }</span>
         { $_('pages.home.hero.suffix') }
@@ -9,7 +9,7 @@
         { $_('pages.home.hero.about') }
     </div>
     <div slot="content">
-        <img class="px-12 lg:p-12" src="/images/illustrations/software.png"
+        <img class="p-12" src="/images/illustrations/software.png"
              alt="{ $_('pages.home.hero.prefix') } { $_('pages.home.hero.focus') } { $_('pages.home.hero.suffix') }"
              title="{ $_('pages.home.hero.prefix') } { $_('pages.home.hero.focus') } { $_('pages.home.hero.suffix') }">
     </div>
@@ -74,6 +74,6 @@
 
 <script>
     import { _ } from 'svelte-i18n'
-    import Section from '../components/lead-section.svelte'
-    import Meta from '../components/meta-title.svelte'
+    import Section from '@/components/lead-section.svelte'
+    import Meta from '@/components/meta-title.svelte'
 </script>

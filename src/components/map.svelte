@@ -12,8 +12,8 @@
 
 <script>
   import { onMount } from 'svelte'
-  import addNavigation from './map/navigation'
-  import addMarker from './map/marker'
+  import addNavigation from '@/components/map/navigation.js'
+  import addMarker from '@/components/map/marker.js'
 
   const lat = 51.208719304013975
   const lng = 16.163746516015646

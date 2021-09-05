@@ -61,6 +61,6 @@
 
 <script>
   import { _ } from 'svelte-i18n'
-  import Section from '../../components/lead-section.svelte'
-  import Hexagon from '../../components/hexagon.svelte'
+  import Section from '@/components/lead-section.svelte'
+  import Hexagon from '@/components/hexagon.svelte'
 </script>

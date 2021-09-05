@@ -7,7 +7,7 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
 
     steps:
       - uses: actions/checkout@v2
@@ -25,13 +25,12 @@ jobs:
             ${{ runner.os }}-
 
       - name: Make envfile
-        uses: SpicyPizza/create-envfile@v1
-        with:
-          envkey_CONTACT_FORM_URL: "${{ secrets.CONTACT_FORM_URL }}"
-          envkey_CONTACT_FORM_EMAIL_NAME: "${{ secrets.CONTACT_FORM_EMAIL_NAME }}"
-          envkey_CONTACT_FORM_QUESTION_NAME: "${{ secrets.CONTACT_FORM_QUESTION_NAME }}"
-          envkey_MAPBOX_STYLE: "${{ secrets.MAPBOX_STYLE }}"
-          envkey_MAPBOX_TOKEN: "${{ secrets.MAPBOX_TOKEN }}"
+        run: |
+          echo 'CONTACT_FORM_URL="${{ secrets.CONTACT_FORM_URL }}"' > .env
+          echo 'CONTACT_FORM_EMAIL_NAME="${{ secrets.CONTACT_FORM_EMAIL_NAME }}"' >> .env
+          echo 'CONTACT_FORM_QUESTION_NAME="${{ secrets.CONTACT_FORM_QUESTION_NAME }}"' >> .env
+          echo 'MAPBOX_STYLE="${{ secrets.MAPBOX_STYLE }}"' >> .env
+          echo 'MAPBOX_TOKEN="${{ secrets.MAPBOX_TOKEN }}"' >> .env
 
       - name: Install dependencies
         run: |
