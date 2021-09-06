@@ -2,7 +2,7 @@
     <div class="container mx-auto py-8 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
         <div class="flex justify-center space-x-6 md:order-2 text-lg">
             {#each socials as social}
-                <a href="{ social.url }" target="_blank" class="text-gray-500 hover:text-gray-900">
+                <a href="{ social.url }" target="_blank" class="text-gray-500 hover:text-gray-900" title="{ social.name }">
                     <span class="sr-only">{ social.name }</span>
                     <i class="{ social.icon }"></i>
                 </a>
@@ -12,8 +12,9 @@
             <div class="text-center text-base text-gray-700">
                 <span>&copy; { year } Blumilk</span>
                 <div class="block md:inline">
-                    <a href="{ $url('./privacy') }" class="hover:text-gray-900 mx-4">{ $_('footer.privacy') }</a>
-                    <a href="{ $url('./company') }" class="hover:text-gray-900">{ $_('footer.company') }</a>
+                    <a href="{ $url('./privacy') }" class="hover:text-gray-900 ml-4">{ $_('footer.privacy') }</a>
+                    <a href="{ $url('./company') }" class="hover:text-gray-900 ml-4">{ $_('footer.company') }</a>
+                    <a href="https://github.com/blumilksoftware/website" target="_blank" class="hover:text-gray-900 ml-4">{ $_('footer.source') }</a>
                 </div>
             </div>
         </div>

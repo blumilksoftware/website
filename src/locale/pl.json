@@ -24,6 +24,7 @@
   "footer": {
     "privacy": "Polityka prywatności",
     "company": "Dane firmy",
+    "source": "Kod źródłowy",
     "illustrated": "zilustrowane przez",
     "undraw": "unDraw",
     "built": "zbudowane z",
@@ -82,7 +83,7 @@
       "counters": {
         "members": "członków zespołu",
         "experience": "lat wspólnego doświadczenia",
-        "projects": "zrealizowane projekty",
+        "repositories": "repozytoria na Githubie",
         "loc": "linii kodu tygodniowo"
       },
       "stack": {

@@ -8,7 +8,7 @@
     </div>
     <div slot="content">
         <img class="p-12" src="/images/illustrations/rnd.png" alt="{ $_('pages.services.r&d.header') }" data-cy="rnd-image"
-             title="{ $_('pages.services.r&d.header') }">
+                title="{ $_('pages.services.r&d.header') }">
     </div>
 </Section>
 
@@ -21,7 +21,7 @@
     </div>
     <div slot="content">
         <img class="p-12" src="/images/illustrations/web.png" alt="{ $_('pages.services.web.header') }"
-             title="{ $_('pages.services.web.header') }">
+                title="{ $_('pages.services.web.header') }">
     </div>
 </Section>
 
@@ -34,12 +34,12 @@
     </div>
     <div slot="content">
         <img class="p-12" src="/images/illustrations/data.png" alt="{ $_('pages.services.business.header') }"
-             title="{ $_('pages.services.business.header') }">
+                title="{ $_('pages.services.business.header') }">
     </div>
 </Section>
 
 <script>
   import { _ } from 'svelte-i18n'
-  import Section from '../components/lead-section.svelte'
-  import Meta from '../components/meta-title.svelte'
+  import Section from '@/components/lead-section.svelte'
+  import Meta from '@/components/meta-title.svelte'
 </script>

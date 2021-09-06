@@ -7,9 +7,10 @@
 <Footer items={items} socials={socials} contact={contact}/>
 
 <script>
-  import items from '../assets/navigation'
-  import socials from '../assets/socials'
-  import contact from '../assets/contact'
-  import Navigation from '../layout/navigation.svelte'
-  import Footer from '../layout/footer.svelte'
+  import items from '@/assets/navigation.js'
+  import socials from '@/assets/socials.js'
+  import contact from '@/assets/contact.js'
+
+  import Navigation from '@/layout/navigation.svelte'
+  import Footer from '@/layout/footer.svelte'
 </script>

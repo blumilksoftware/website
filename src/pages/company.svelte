@@ -46,7 +46,8 @@
 
 <script>
   import { _ } from 'svelte-i18n'
-  import contact from '../assets/contact'
-  import LeadSection from '../components/lead-section.svelte'
-  import Meta from '../components/meta-title.svelte'
+  import contact from '@/assets/contact.js'
+
+  import LeadSection from '@/components/lead-section.svelte'
+  import Meta from '@/components/meta-title.svelte'
 </script>

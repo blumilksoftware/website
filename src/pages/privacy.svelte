@@ -19,8 +19,8 @@
 
 <script>
   import { _ } from 'svelte-i18n'
-  import LeadSection from '../components/lead-section.svelte'
-  import Meta from '../components/meta-title.svelte'
+  import LeadSection from '@/components/lead-section.svelte'
+  import Meta from '@/components/meta-title.svelte'
 
   export let linker = new Autolinker({
     className: 'text-brand'

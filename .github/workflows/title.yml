@@ -1,4 +1,5 @@
-name: Check the PR title
+name: "Check the PR title"
+
 on:
   pull_request:
     types:

@@ -24,6 +24,7 @@
   "footer": {
     "privacy": "Privacy Policy",
     "company": "Company info",
+    "source": "Source code",
     "illustrated": "illustrated by",
     "undraw": "unDraw",
     "built": "built with",
@@ -82,7 +83,7 @@
       "counters": {
         "members": "team members",
         "experience": "shared years of experience",
-        "projects": "completed projects",
+        "repositories": "Github repositories",
         "loc": "lines of code weekly"
       },
       "stack": {

@@ -1,13 +1,11 @@
-{#if false}
-    <div class="mt-12 container mx-auto flex justify-evenly">
-        <div class="bg-white rounded-xl shadow-lg">
-            <img src="/images/photos/placeholder.jpg" alt="Team #1" class="w-96 p-3">
-        </div>
-        <div class="bg-white rounded-xl shadow-lg">
-            <img src="/images/photos/placeholder.jpg" alt="Team #2" class="w-96 p-3">
-        </div>
-        <div class="bg-white rounded-xl shadow-lg">
-            <img src="/images/photos/placeholder.jpg" alt="Team #3" class="w-96 p-3">
-        </div>
+<div class="md:mt-12 container mx-auto flex flex-col md:flex-row justify-evenly px-4 md:px-0">
+    <div class="bg-white rounded-xl shadow-lg">
+        <img src="/images/photos/meetup.jpg" alt="Laravel Poland Meetup oglądany w naszym legnickim biurze" class="w-96 p-2">
     </div>
-{/if}
+    <div class="bg-white rounded-xl shadow-lg">
+        <img src="/images/photos/lasertag.jpg" alt="Wypad integracyjny w formie lasertagu" class="w-96 p-2">
+    </div>
+    <div class="bg-white rounded-xl shadow-lg">
+        <img src="/images/photos/helsinki.jpg" alt="Delegacja służbowa w Helsinkach" class="w-96 p-2">
+    </div>
+</div>

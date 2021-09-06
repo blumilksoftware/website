@@ -4,11 +4,12 @@
         <p class="pr-4">
             { $_('pages.about.references.lead') }
         </p>
-        <div class="my-12 grid grid-cols-2 md:grid-cols-4 gap-4 md:mr-16 md:mb-0" data-cy="references-images">
+        <div class="my-12 grid grid-cols-2 md:grid-cols-5 gap-4 md:mr-16 md:mb-0" data-cy="references-images">
             <img src="/images/clients/pwsz.png" alt="Państwowa Wyższa Szkoła Zawodowa im. Witelona w Legnicy"
                  class="mx-auto">
             <img src="/images/clients/insly.png" alt="Insly Ltd." class="mx-auto">
             <img src="/images/clients/iizi.png" alt="Iizi Polska" class="mx-auto">
+            <img src="/images/clients/logo.png" alt="Logo Soft-Com" class="mx-auto">
             <img src="/images/clients/wmd.png" alt="WMD Software" class="mx-auto" data-cy="wmd-image">
         </div>
     </div>
@@ -38,7 +39,7 @@
 
 <script>
   import { _ } from 'svelte-i18n'
-  import Section from '../../components/lead-section.svelte'
-  import ReferenceBalloon from '../../components/reference.svelte'
-  import references from '../../assets/references'
+  import Section from '@/components/lead-section.svelte'
+  import ReferenceBalloon from '@/components/reference.svelte'
+  import references from '@/assets/references.js'
 </script>
