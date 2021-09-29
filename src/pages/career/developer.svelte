@@ -18,15 +18,13 @@
             { $_('pages.career.requirements-header') }
         </div>
         <div slot="description" class="text-lg lg:text-base">
-            { $_('pages.career.requirements-label') }
         </div>
     </LeadSection>
     <LeadSection disableColumns="true" classes="md:-mr-4">
         <div slot="header">
             { $_('pages.career.stack-header') }
         </div>
-        <div slot="description" class="text-lg lg:text-base" data-cy="stack-list">
-            { $_('pages.career.stack-label') }
+        <div slot="description" class="text-lg lg:text-base">
         </div>
     </LeadSection>
 </Section>
