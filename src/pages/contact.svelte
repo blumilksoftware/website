@@ -33,8 +33,7 @@
         </form>
     </div>
     <div slot="content">
-        <img class="px-12 lg:p-12" src="/images/illustrations/contact.png" alt="{ $_('pages.contact.header') }"
-                title="{ $_('pages.contact.header') }">
+        <img class="px-12 lg:p-12" src="/images/illustrations/contact.png" alt="{ $_('pages.contact.header') }" title="{ $_('pages.contact.header') }">
     </div>
 </Section>
 

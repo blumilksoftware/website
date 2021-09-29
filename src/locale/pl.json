@@ -121,7 +121,16 @@
     },
     "career": {
       "header": "Pracuj z nami",
-      "lead": "Na ten moment nie mamy otwartej rekrutacji na żadne stanowisko. Jesteśmy natomiast otwarci na spontaniczne aplikacje, chociaż niczego na chwilę obecną nie możemy obiecać.",
+      "lead": "Rekrutacja trwa! Poniżej znajdziesz szczegółowe oferty pracy na stanowiska, które zamierzamy obsadzić w najbliższej przyszłości. Jesteśmy też otwarci na spontaniczne aplikacje.",
+      "excuse": "Na ten moment nie mamy otwartej rekrutacji na żadne stanowisko. Jesteśmy natomiast otwarci na spontaniczne aplikacje, chociaż niczego na chwilę obecną nie możemy obiecać.",
+      "jobs": {
+        "developer": {
+          "name": "inżynier oprogramowania"
+        },
+        "intern": {
+          "name": "praktykant"
+        }
+      },
       "requirements-header": "Czego oczekujemy?",
       "requirements-label": "Od wszystkich naszych programistów wymagamy pewnego poziomu rzemieślniczego przygotowania. Programowanie dla hecy to jedno, ale praca w zespole dla międzynarodowych klientów w najnowszych technologiach to drugie. Oczekujemy, abyś:",
       "requirements": {

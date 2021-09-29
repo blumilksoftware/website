@@ -5,10 +5,9 @@ class Requirement {
 }
 
 class Stack {
-  constructor (index, icon = 'check square outline icon') {
+  constructor (index) {
     this.name = 'pages.career.stack.' + index + '.name'
     this.description = 'pages.career.stack.' + index + '.description'
-    this.icon = icon
   }
 }
 
@@ -32,15 +31,15 @@ const requirements = [
 ]
 
 const stack = [
-  new Stack('php', 'php icon'),
-  new Stack('laravel', 'laravel icon'),
-  new Stack('databases', 'database icon'),
+  new Stack('php'),
+  new Stack('laravel'),
+  new Stack('databases'),
   new Stack('behat'),
   new Stack('ecs'),
-  new Stack('docker', 'docker icon'),
-  new Stack('github', 'github icon'),
-  new Stack('google', 'google icon'),
-  new Stack('slack', 'slack icon')
+  new Stack('docker'),
+  new Stack('github'),
+  new Stack('google'),
+  new Stack('slack')
 ]
 
 export default new CareerData(requirements, stack)

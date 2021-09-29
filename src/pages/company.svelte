@@ -43,7 +43,6 @@
     </div>
 </LeadSection>
 
-
 <script>
   import { _ } from 'svelte-i18n'
   import contact from '@/assets/contact.js'
