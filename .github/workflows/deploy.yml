@@ -31,8 +31,6 @@ jobs:
           echo 'CONTACT_FORM_QUESTION_NAME="${{ secrets.CONTACT_FORM_QUESTION_NAME }}"' >> .env
           echo 'MAPBOX_STYLE="${{ secrets.MAPBOX_STYLE }}"' >> .env
           echo 'MAPBOX_TOKEN="${{ secrets.MAPBOX_TOKEN }}"' >> .env
-          echo 'G_TAG="${{ secrets.G_TAG }}"' >> .env
-          echo 'APP_ENV="${{ secrets.APP_ENV }}"' >> .env
 
       - name: Install dependencies
         run: |

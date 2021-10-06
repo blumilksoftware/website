@@ -4,9 +4,10 @@ import { addMessages, getLocaleFromNavigator, init } from 'svelte-i18n'
 import en from './locale/en.json'
 import pl from './locale/pl.json'
 
-if (env['APP_ENV'] === 'local') {
-  const disableGA = 'ga-disable-' + env['G_TAG']
-  window[disableGA] = true
+const GA_DISABLE = false
+
+if (GA_DISABLE) {
+  window['ga-disable-G-Y3WCJ1ZM46'] = true
 } else {
   window.dataLayer = window.dataLayer || []
 
@@ -15,7 +16,7 @@ if (env['APP_ENV'] === 'local') {
   }
 
   gtag('js', new Date())
-  gtag('config', env['G_TAG'])
+  gtag('config', 'G-Y3WCJ1ZM46')
 }
 
 const app = new App({
