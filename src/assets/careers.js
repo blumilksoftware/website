@@ -34,7 +34,7 @@ const stack = [
   new Stack('php'),
   new Stack('laravel'),
   new Stack('databases'),
-  new Stack('behat'),
+  new Stack('testing'),
   new Stack('ecs'),
   new Stack('docker'),
   new Stack('github'),

@@ -125,12 +125,23 @@
       "excuse": "Na ten moment nie mamy otwartej rekrutacji na żadne stanowisko. Jesteśmy natomiast otwarci na spontaniczne aplikacje, chociaż niczego na chwilę obecną nie możemy obiecać.",
       "jobs": {
         "developer": {
-          "name": "inżynier oprogramowania"
+          "name": "inżynier oprogramowania",
+          "header": "Inżynier oprogramowania",
+          "description": {
+            "1": "Poszukujemy programistów z doświadczeniem zawodowym w dziedzinie projektowania i wytwarzania aplikacji internetowych. Naszą podstawową technologią jest PHP i Laravel, ale jesteśmy otwarci na intertechnologiczny dialog."
+          }
         },
         "intern": {
-          "name": "praktykant"
+          "name": "praktykant",
+          "header": "Praktykant",
+          "description": {
+            "1": "W ramach współpracy z Państwową Wyższą Szkołą Zawodową im. Witelona w Legnicy poszukujemy studentów chcących odbyć praktyki w zakresie obowiązków inżyniera oprogramowania. Jest to świetna okazja, by poznać etos pracy programisty, spotkać profesjonalistów oraz nauczyć się praktycznych umiejętności.",
+            "2": "Jeżeli studiujesz na innej uczelni, oczywiście również zachęcamy do kontaktu.",
+            "3": "Oczekujemy znajomości programowania w języku PHP, wykorzystania paradygmatu obiektowego w aplikacjach internetowych, korzystania z gita i GitHuba, bycia komunikatywnym oraz chętnym do nauki i pracy w zespole."
+          }
         }
       },
+      "opening": "rekrutacja na stanowisko",
       "requirements-header": "Czego oczekujemy?",
       "requirements-label": "Od wszystkich naszych programistów wymagamy pewnego poziomu rzemieślniczego przygotowania. Programowanie dla hecy to jedno, ale praca w zespole dla międzynarodowych klientów w najnowszych technologiach to drugie. Oczekujemy, abyś:",
       "requirements": {
@@ -159,12 +170,12 @@
           "name": "bazy danych",
           "description": "wedle specyfiki każdego projektu"
         },
-        "behat": {
-          "name": "Behat",
-          "description": "do Behaviour-driven developmentu"
+        "testing": {
+          "name": "PHPUnit",
+          "description": "a także Behat, Dusk lub Cypress do testowania"
         },
         "ecs": {
-          "name": "ECS i Psalm",
+          "name": "ECS",
           "description": "do utrzymania jakości kodu"
         },
         "docker": {
