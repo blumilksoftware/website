@@ -35,6 +35,4 @@
   import LeadSection from '@/components/lead-section.svelte'
   import Meta from '@/components/meta-title.svelte'
   import Gdpr from '@/sections/gdpr.svelte'
-
-  export let email = 'career@blumilk.pl'
 </script>

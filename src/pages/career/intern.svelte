@@ -24,6 +24,4 @@
   import Meta from '@/components/meta-title.svelte'
   import Ribbon from '@/sections/contact.svelte'
   import Gdpr from '@/sections/gdpr.svelte'
-
-  export let email = 'career@blumilk.pl'
 </script>

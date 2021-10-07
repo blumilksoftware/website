@@ -58,6 +58,4 @@
   import Gdpr from '@/sections/gdpr.svelte'
   import Ribbon from '@/sections/contact.svelte'
   import careers from '@/assets/careers.js'
-
-  export let email = 'career@blumilk.pl'
 </script>
