@@ -121,7 +121,27 @@
     },
     "career": {
       "header": "Work at Blumilk",
-      "lead": "At the moment, we do not have any open recruitment for any position. We are, however, opened to spontaneous applications.",
+      "lead": "We are recruiting! Below you will find detailed job offers for the positions we intend to fill in the near future. We are also open to spontaneous applications.",
+      "excuse": "At the moment, we do not have any open recruitment for any position. We are, however, opened to spontaneous applications.",
+      "jobs": {
+        "developer": {
+          "name": "software engineer",
+          "header": "Software engineer",
+          "description": {
+            "1": "We are looking for programmers with professional experience in the field of designing and developing web applications. Our core technology is PHP and Laravel, but we are open to intertechnological dialogue."
+          }
+        },
+        "intern": {
+          "name": "intern",
+          "header": "Intern",
+          "description": {
+            "1": "As part of cooperation with The Witelon State University of Applied Sciences in Legnica, we are looking for students who want to take internships designed for future software engineer. It is a great opportunity to get to know the work ethos of a software engineer, meet professionals and learn practical skills.",
+            "2": "If you are studying at another university, we also encourage you to contact us.",
+            "3": "We expect some knowledge of PHP programming, using the object-oriented paradigm in web applications, using Git and GitHub and being communicative and willing to learn new things and work in a team."
+          }
+        }
+      },
+      "opening": "recruitment for the position",
       "requirements-header": "What do we expect?",
       "requirements-label": "We require a certain level of craftsmanship from all our developers. Programming for fun is one thing, but working in a team for international clients in the latest technologies is something different. We would like you to:",
       "requirements": {
@@ -150,12 +170,12 @@
           "name": "databases",
           "description": "tailored for a specific needs"
         },
-        "behat": {
-          "name": "Behat",
-          "description": "for Behaviour-driven development"
+        "testing": {
+          "name": "PHPUnit",
+          "description": "and Behat, Dusk or Cypress for testing"
         },
         "ecs": {
-          "name": "ECS & Psalm",
+          "name": "ECS",
           "description": "to maintain code quality"
         },
         "docker": {

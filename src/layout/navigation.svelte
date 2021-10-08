@@ -1,7 +1,7 @@
 <div class="w-full px-6 relative md:container mx-auto mt-6 mb-36 flex items-center z-10">
     <div class="text-2xl">
         <a href="{ $url('./') }" class="flex font-bold items-center">
-            <img src="./logo.png" alt="Blumilk" class="w-12 mr-2">
+            <img src="/logo.svg" alt="Blumilk" class="w-12 mr-3">
             blumilk
             <span id="cursor" class="text-brand">_</span>
         </a>
@@ -32,7 +32,7 @@
          on:click={ switchMenu }>
         <div class="flex flex-col w-full text-center">
             <a href="{ $url('./') }" class="mx-auto mb-12">
-                <img src="./logo.png" alt="Blumilk" class="w-24">
+                <img src="/logo.svg" alt="Blumilk" class="w-24">
             </a>
             {#each items as item}
                 <div class="lowercase text-center p-2 hover:bg-blue-400 hover:bg-opacity-25">
