@@ -8,7 +8,7 @@
         </div>
     </div>
     {#if !disableColumns}
-        <div class="md:flex-1 { contentClasses }">
+        <div class="md:flex-1 w-full { contentClasses }">
             <slot name="content"/>
         </div>
     {/if}

@@ -1,18 +1,18 @@
 <Meta title={ $_('title.career') }/>
 
-<LeadSection>
+<LeadSection class="w-full">
     <div slot="header">
         { $_('pages.career.header') }
     </div>
-    <div slot="description">
+    <div class="w-full" slot="description">
         {#if jobs.length === 0}
             { $_('pages.career.excuse') }
         {:else}
             { $_('pages.career.lead') }
 
-            <div class="m-12 flex flex-row gap-2">
+            <div class=" m-2 sm:m-12 flex flex-row gap-2">
                 {#each jobs as job}
-                    <a href="{ $url(job.url) }" class="text-center px-4 py-2 mt-1 block w-full rounded-md bg-brand hover:bg-blue-500 text-white">
+                    <a href="{ $url(job.url) }" class="flex justify-center items-center w-full py-2 px-4 rounded-md text-white bg-brand hover:bg-blue-500 text-white">
                         { $_(job.name) }
                     </a>
                 {/each}

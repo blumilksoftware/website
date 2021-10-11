@@ -1,4 +1,4 @@
-<div class="container px-6 mx-auto text-center lg:text-left flex justify-center items-center flex-col lg:flex-row py-4 lg:py-0 { classes }">
+<div class="container px-2 sm:px-6 mx-auto text-center lg:text-left flex justify-center items-center flex-col lg:flex-row py-4 lg:py-0 { classes }">
     <slot/>
 </div>
 
