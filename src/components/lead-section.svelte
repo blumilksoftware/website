@@ -1,5 +1,5 @@
 <Section classes="{ classes }">
-    <div class="md:flex-1 { headerClasses }">
+    <div class="md:flex-1 w-full { headerClasses }">
         <div class="text-4xl font-bold">
             <slot name="header"/>
         </div>
@@ -8,7 +8,7 @@
         </div>
     </div>
     {#if !disableColumns}
-        <div class="md:flex-1 { contentClasses }">
+        <div class="md:flex-1 w-full { contentClasses }">
             <slot name="content"/>
         </div>
     {/if}
