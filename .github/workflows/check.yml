@@ -9,7 +9,7 @@ jobs:
   check:
     runs-on: ubuntu-20.04
     container:
-      image: cypress/included:8.6.0
+      image: cypress/browsers:node14.17.0-chrome88-ff89
 
     steps:
       - uses: actions/checkout@v2
@@ -40,5 +40,3 @@ jobs:
         with:
           browser: chrome
           headless: true
-          build: npm run build
-          start: npm start
