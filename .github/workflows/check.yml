@@ -41,3 +41,5 @@ jobs:
           build: npm build
           start: npm start
           browser: chrome
+          wait-on: http://localhost:5000
+          headless: true
