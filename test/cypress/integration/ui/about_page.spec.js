@@ -1,5 +1,5 @@
 describe('About page', () => {
-  before(() => {
+  beforeEach(() => {
     cy.visit('/about')
   })
 

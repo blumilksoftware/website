@@ -2,8 +2,5 @@
   "integrationFolder": "test/cypress/integration",
   "video": false,
   "screenshotOnRunFailure": false,
-  "baseUrl": "http://localhost:5000",
-  "retries": {
-    "runMode": 2
-  }
+  "baseUrl": "http://localhost:5000"
 }
