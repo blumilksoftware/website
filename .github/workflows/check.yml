@@ -8,6 +8,8 @@ on:
 jobs:
   check:
     runs-on: ubuntu-20.04
+    container:
+      image: cypress/included:8.6.0
 
     steps:
       - uses: actions/checkout@v2
@@ -32,8 +34,6 @@ jobs:
 
       - name: Lint codebase
         run: npm run lint
-
-      container: cypress/included:8.6.0
 
       - name: Cypress run
         uses: cypress-io/github-action@v2
