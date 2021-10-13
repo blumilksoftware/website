@@ -32,3 +32,9 @@ jobs:
 
       - name: Lint codebase
         run: npm run lint
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          build: npm run build
+          start: npm start
