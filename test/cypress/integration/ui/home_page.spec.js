@@ -1,18 +1,18 @@
-describe('home page', () => {
+describe('Home page', () => {
   before(() => {
     cy.visit('/')
   })
 
-  it('loads successfully', () => {
+  it('Loads successfully', () => {
     cy.url().should('include', '/')
   })
 
-  it('checks if there are bubbles', () => {
+  it('Checks bubbles', () => {
     cy.get('[data-cy="bubbles"]')
       .should('have.attr', 'data-cy', 'bubbles')
   })
 
-  it('checks hamburger menu at iPhone 6', () => {
+  it('Displays hamburger menu at iPhone 6', () => {
     cy.viewport('iphone-6')
 
     cy.get('[data-cy="menu-bars"]')
@@ -20,18 +20,18 @@ describe('home page', () => {
       .should('be.visible')
   })
 
-  it('hamburger menu is not visible for desktop', () => {
+  it('Displays no hamburger menu for desktop', () => {
     cy.get('[data-cy="menu-bars"]')
       .should('have.attr', 'data-cy', 'menu-bars')
       .should('be.not.visible')
   })
 
-  it('clicking "services" navigates to a new url', () => {
+  it('Navigating to services page', () => {
     cy.get('[data-cy="Services"]').click()
     cy.url().should('include', '/services')
   })
 
-  it('changes language to Polish', () => {
+  it('Changes language to Polish', () => {
     cy.get('[data-cy="polski"]')
       .should('have.attr', 'data-cy', 'polski').click()
 

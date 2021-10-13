@@ -1,13 +1,13 @@
-describe('contact page', () => {
+describe('Contact page', () => {
   before(() => {
     cy.visit('/contact')
   })
 
-  it('loads successfully', () => {
+  it('Loads successfully', () => {
     cy.url().should('include', '/contact')
   })
 
-  it('fills contact form', () => {
+  it('Fills contact form', () => {
     cy.get('[data-cy="contact-form-question"]')
       .type('I would like to ask you about...')
       .should('have.value', 'I would like to ask you about...')
@@ -17,8 +17,8 @@ describe('contact page', () => {
       .should('have.value', 'email@example.com')
   })
 
-  it('checks map', () => {
+  it('Displays map', () => {
     cy.get('[data-cy="map"]')
-      .should('have.attr', 'data-cy', 'map')
+      .should('be.visible')
   })
 })
