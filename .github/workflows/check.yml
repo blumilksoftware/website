@@ -33,8 +33,12 @@ jobs:
       - name: Lint codebase
         run: npm run lint
 
+      container: cypress/included:8.6.0
+
       - name: Cypress run
         uses: cypress-io/github-action@v2
         with:
+          browser: chrome
+          headless: true
           build: npm run build
           start: npm start
