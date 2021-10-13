@@ -41,4 +41,3 @@ jobs:
           build: npm build
           start: npm start
           browser: chrome
-          headless: true
