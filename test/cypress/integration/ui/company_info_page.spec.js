@@ -1,5 +1,5 @@
 describe('Company info page', () => {
-  before(() => {
+  beforeEach(() => {
     cy.visit('/company')
   })
 

@@ -1,5 +1,5 @@
 describe('Privacy policy page', () => {
-  before(() => {
+  beforeEach(() => {
     cy.visit('/privacy')
   })
 
