@@ -57,7 +57,7 @@
     document.getElementById('contact').submit()
   }
 
-  export let url = ''
-  export let emailName = ''
-  export let questionName = ''
+  export let url = env['CONTACT_FORM_URL'] + '/formResponse'
+  export let emailName = env['CONTACT_FORM_EMAIL_NAME']
+  export let questionName = env['CONTACT_FORM_QUESTION_NAME']
 </script>
