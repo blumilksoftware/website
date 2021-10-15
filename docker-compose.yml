@@ -13,7 +13,7 @@ services:
 
   cypress:
     container_name: blumilk-cypress
-    image: "cypress/browsers:node14.17.0-chrome88-ff89"
+    image: "cypress/included:8.6.0"
     depends_on:
       - node
     environment:
