@@ -36,8 +36,7 @@ jobs:
         run: npm run lint
 
       - name: Cypress run
-        uses: cypress-io/github-action@v2
-        run: |
+        uses: cypress-io/github-action@v2 |
           echo 'CONTACT_FORM_URL="${{ secrets.CONTACT_FORM_URL }}"' > .env
           echo 'CONTACT_FORM_EMAIL_NAME="${{ secrets.CONTACT_FORM_EMAIL_NAME }}"' >> .env
           echo 'CONTACT_FORM_QUESTION_NAME="${{ secrets.CONTACT_FORM_QUESTION_NAME }}"' >> .env
