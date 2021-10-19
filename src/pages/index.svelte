@@ -1,4 +1,5 @@
-<Meta title={ $_('title.blumilk-software-development') }/>
+<MetaTitle title={ $_('title.blumilk-software-development') }/>
+<MetaDescription description={ $_('description.blumilk-software-development') } />
 <Section>
     <div slot="header" class="text-4xl md:text-5xl lg:text-6xl">
         { $_('pages.home.hero.prefix') }
@@ -75,5 +76,6 @@
 <script>
     import { _ } from 'svelte-i18n'
     import Section from '@/components/lead-section.svelte'
-    import Meta from '@/components/meta-title.svelte'
+    import MetaTitle from '@/components/meta-title.svelte'
+    import MetaDescription from '@/components/meta-description.svelte'
 </script>

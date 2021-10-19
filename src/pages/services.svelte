@@ -1,4 +1,5 @@
-<Meta title={ $_('title.services') }/>
+<MetaTitle title={ $_('title.services') }/>
+<MetaDescription description={ $_('description.services') } />
 <Section>
     <div slot="header">
         { $_('pages.services.r&d.header') }
@@ -41,5 +42,6 @@
 <script>
   import { _ } from 'svelte-i18n'
   import Section from '@/components/lead-section.svelte'
-  import Meta from '@/components/meta-title.svelte'
+  import MetaTitle from '@/components/meta-title.svelte'
+  import MetaDescription from '@/components/meta-description.svelte'
 </script>

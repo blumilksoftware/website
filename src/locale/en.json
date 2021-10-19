@@ -14,6 +14,16 @@
     "privacy": "Privacy Policy",
     "services": "Services"
   },
+  "description": {
+    "404": "Page not found",
+    "about": "Software tailored precisely for your needs. We are a team of skilled software engineers specialized in web applications and research and development projects.",
+    "blumilk-software-development": "Software tailored precisely for your needs. We are a team of skilled software engineers specialized in web applications and research and development projects.",
+    "career": "Software tailored precisely for your needs. We are a team of skilled software engineers specialized in web applications and research and development projects.",
+    "company": "Software tailored precisely for your needs. We are a team of skilled software engineers specialized in web applications and research and development projects.",
+    "contact": "Software tailored precisely for your needs. We are a team of skilled software engineers specialized in web applications and research and development projects.",
+    "privacy": "Software tailored precisely for your needs. We are a team of skilled software engineers specialized in web applications and research and development projects.",
+    "services": "Software tailored precisely for your needs. We are a team of skilled software engineers specialized in web applications and research and development projects."
+  },
   "navigation": {
     "home": "Home",
     "about": "About",

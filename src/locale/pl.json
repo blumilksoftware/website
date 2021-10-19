@@ -14,6 +14,16 @@
     "privacy": "Polityka firmy",
     "services": "Usługi"
   },
+  "description": {
+    "404": "Nie znaleziono strony",
+    "about": "Oprogramowanie dopasowane dokładnie do Twoich potrzeb. Jesteśmy zespołem wykwalifikowanych inżynierów oprogramowania specjalizujących się w aplikacjach internetowych oraz projektach badawczo-rozwojowych.",
+    "blumilk-software-development": "Oprogramowanie dopasowane dokładnie do Twoich potrzeb. Jesteśmy zespołem wykwalifikowanych inżynierów oprogramowania specjalizujących się w aplikacjach internetowych oraz projektach badawczo-rozwojowych.",
+    "career": "Oprogramowanie dopasowane dokładnie do Twoich potrzeb. Jesteśmy zespołem wykwalifikowanych inżynierów oprogramowania specjalizujących się w aplikacjach internetowych oraz projektach badawczo-rozwojowych.",
+    "company": "Oprogramowanie dopasowane dokładnie do Twoich potrzeb. Jesteśmy zespołem wykwalifikowanych inżynierów oprogramowania specjalizujących się w aplikacjach internetowych oraz projektach badawczo-rozwojowych.",
+    "contact": "Oprogramowanie dopasowane dokładnie do Twoich potrzeb. Jesteśmy zespołem wykwalifikowanych inżynierów oprogramowania specjalizujących się w aplikacjach internetowych oraz projektach badawczo-rozwojowych.",
+    "privacy": "Oprogramowanie dopasowane dokładnie do Twoich potrzeb. Jesteśmy zespołem wykwalifikowanych inżynierów oprogramowania specjalizujących się w aplikacjach internetowych oraz projektach badawczo-rozwojowych.",
+    "services": "Oprogramowanie dopasowane dokładnie do Twoich potrzeb. Jesteśmy zespołem wykwalifikowanych inżynierów oprogramowania specjalizujących się w aplikacjach internetowych oraz projektach badawczo-rozwojowych."
+  },
   "navigation": {
     "home": "Strona główna",
     "about": "O firmie",
