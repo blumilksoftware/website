@@ -1,35 +1,37 @@
-<div class="w-full px-6 relative md:container mx-auto mt-6 mb-36 flex items-center z-10">
-    <div class="text-2xl">
-        <a href="{ $url('./') }" class="flex font-bold items-center">
-            <img src="/logo.svg" alt="Blumilk" class="w-12 mr-3">
-            blumilk
-            <span id="cursor" class="text-brand">_</span>
-        </a>
-    </div>
-    <div class="flex-1 justify-end items-center hidden md:flex">
-        {#each items as item}
-            <div class="lowercase ml-8">
-                {#if !item.external}
-                    <a href="{ $url(item.link) }" data-cy={$_(item.label)}>{ $_(item.label) }</a>
-                {:else}
-                    <a href="{ item.link }" target="_blank" data-cy={$_(item.label)}>{ $_(item.label) }</a>
-                {/if}
+<svelte:window on:scroll={handleScroll}/>
+
+<div id="navigation" class="fixed left-0 right-0 py-4 z-10 bg-background duration-300">
+    <div class="md:container mx-auto flex items-center px-6">
+        <div class="text-2xl">
+            <a href="{ $url('./') }" class="flex lowercase font-bold items-center">
+                <img src="/logo.svg" alt="Blumilk" class="w-12 mr-3">
+                Blumilk
+                <span id="cursor" class="text-brand">_</span>
+            </a>
+        </div>
+        <div class="flex-1 justify-end items-center hidden md:flex">
+            {#each items as item}
+                <div class="lowercase ml-8">
+                    {#if !item.external}
+                        <a href="{ $url(item.link) }" data-cy={$_(item.label)}>{ $_(item.label) }</a>
+                    {:else}
+                        <a href="{ item.link }" target="_blank" data-cy={$_(item.label)}>{ $_(item.label) }</a>
+                    {/if}
+                </div>
+            {/each}
+            <div class="ml-8">
+                <img class="w-6 cursor-pointer" on:click={ switchLocale } src="{ $_('locale.flag') }" data-cy={$_('locale.language')} alt="{ $_('locale.language') }" title="{ $_('locale.language') }">
             </div>
-        {/each}
-        <div class="ml-8">
-            <img class="w-6 cursor-pointer" on:click={ switchLocale } src="{ $_('locale.flag') }" data-cy={$_('locale.language')}
-                 alt="{ $_('locale.language') }"
-                 title="{ $_('locale.language') }">
+        </div>
+        <div class="flex-grow cursor-pointer text-right md:hidden" on:click={ switchMenu }>
+            <i class="large bars icon" data-cy="menu-bars"></i>
         </div>
     </div>
-    <div class="flex-grow cursor-pointer text-right md:hidden" on:click={ switchMenu }>
-        <i class="large bars icon" data-cy="menu-bars"></i>
-    </div>
 </div>
+<div class="mb-48"></div>
 
 {#if show}
-    <div class="md:hidden fixed w-full h-full flex flex-col justify-center items-center bg-white bg-opacity-95 p-4 z-20"
-         on:click={ switchMenu }>
+    <div class="md:hidden fixed w-full h-full flex flex-col justify-center items-center bg-white bg-opacity-95 p-4 z-20" on:click={ switchMenu }>
         <div class="flex flex-col w-full text-center">
             <a href="{ $url('./') }" class="mx-auto mb-12">
                 <img src="/logo.svg" alt="Blumilk" class="w-24">
@@ -44,9 +46,8 @@
                 </div>
             {/each}
             <div class="flex text-center p-2 hover:bg-blue-400 hover:bg-opacity-25 items-center justify-center cursor-pointer"
-                 on:click={ switchLocale }>
-                <img class="w-6 mx-2" src="{ $_('locale.flag') }" alt="{ $_('locale.language')}"
-                     title="{ $_('locale.language') }"> { $_('locale.language') }
+                    on:click={ switchLocale }>
+                <img class="w-6 mx-2" src="{ $_('locale.flag') }" alt="{ $_('locale.language')}" title="{ $_('locale.language') }"> { $_('locale.language') }
             </div>
         </div>
     </div>
@@ -62,6 +63,17 @@
 
   function switchMenu () {
     show = !show
+  }
+
+  function handleScroll () {
+    const navigation = document.getElementById('navigation')
+    const shadowClass = 'shadow-lg'
+
+    if (window.scrollY > navigation.clientHeight) {
+      navigation.classList.add(shadowClass)
+    } else {
+      navigation.classList.remove(shadowClass)
+    }
   }
 
   export let items
