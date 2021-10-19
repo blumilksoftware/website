@@ -8,6 +8,8 @@ on:
 jobs:
   check:
     runs-on: ubuntu-20.04
+    container:
+      image: cypress/browsers:node14.17.0-chrome88-ff89
 
     steps:
       - uses: actions/checkout@v2
@@ -27,8 +29,22 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Add env values
+        run: |
+          echo 'CONTACT_FORM_URL="${{ secrets.CONTACT_FORM_URL }}"' > .env
+          echo 'CONTACT_FORM_EMAIL_NAME="${{ secrets.CONTACT_FORM_EMAIL_NAME }}"' >> .env
+          echo 'CONTACT_FORM_QUESTION_NAME="${{ secrets.CONTACT_FORM_QUESTION_NAME }}"' >> .env
+          echo 'MAPBOX_STYLE="${{ secrets.MAPBOX_STYLE }}"' >> .env
+          echo 'MAPBOX_TOKEN="${{ secrets.MAPBOX_TOKEN }}"' >> .env
+
       - name: Test application
         run: npm run test
 
       - name: Lint codebase
         run: npm run lint
+
+      - name: Cypress run
+        uses: cypress-io/github-action@v2
+        with:
+          start: npm run dev
+          wait-on: http://localhost:5000
