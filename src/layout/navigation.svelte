@@ -1,31 +1,34 @@
-<div class="w-full px-6 relative md:container mx-auto mt-6 mb-36 flex items-center z-10">
-    <div class="text-2xl">
-        <a href="{ $url('./') }" class="flex font-bold items-center">
-            <img src="/logo.svg" alt="Blumilk" class="w-12 mr-3">
-            blumilk
-            <span id="cursor" class="text-brand">_</span>
-        </a>
-    </div>
-    <div class="flex-1 justify-end items-center hidden md:flex">
-        {#each items as item}
-            <div class="lowercase ml-8">
-                {#if !item.external}
-                    <a href="{ $url(item.link) }" data-cy={$_(item.label)}>{ $_(item.label) }</a>
-                {:else}
-                    <a href="{ item.link }" target="_blank" data-cy={$_(item.label)}>{ $_(item.label) }</a>
-                {/if}
+<div class="fixed left-0 right-0 py-4 z-10 bg-background shadow-sm">
+    <div class="md:container mx-auto flex items-center px-6">
+        <div class="text-2xl">
+            <a href="{ $url('./') }" class="flex font-bold items-center">
+                <img src="/logo.svg" alt="Blumilk" class="w-12 mr-3">
+                blumilk
+                <span id="cursor" class="text-brand">_</span>
+            </a>
+        </div>
+        <div class="flex-1 justify-end items-center hidden md:flex">
+            {#each items as item}
+                <div class="lowercase ml-8">
+                    {#if !item.external}
+                        <a href="{ $url(item.link) }" data-cy={$_(item.label)}>{ $_(item.label) }</a>
+                    {:else}
+                        <a href="{ item.link }" target="_blank" data-cy={$_(item.label)}>{ $_(item.label) }</a>
+                    {/if}
+                </div>
+            {/each}
+            <div class="ml-8">
+                <img class="w-6 cursor-pointer" on:click={ switchLocale } src="{ $_('locale.flag') }" data-cy={$_('locale.language')}
+                     alt="{ $_('locale.language') }"
+                     title="{ $_('locale.language') }">
             </div>
-        {/each}
-        <div class="ml-8">
-            <img class="w-6 cursor-pointer" on:click={ switchLocale } src="{ $_('locale.flag') }" data-cy={$_('locale.language')}
-                 alt="{ $_('locale.language') }"
-                 title="{ $_('locale.language') }">
+        </div>
+        <div class="flex-grow cursor-pointer text-right md:hidden" on:click={ switchMenu }>
+            <i class="large bars icon" data-cy="menu-bars"></i>
         </div>
     </div>
-    <div class="flex-grow cursor-pointer text-right md:hidden" on:click={ switchMenu }>
-        <i class="large bars icon" data-cy="menu-bars"></i>
-    </div>
 </div>
+<div class="mb-48"></div>
 
 {#if show}
     <div class="md:hidden fixed w-full h-full flex flex-col justify-center items-center bg-white bg-opacity-95 p-4 z-20"
