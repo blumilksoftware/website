@@ -1,4 +1,4 @@
-<Meta title={ $_('title.privacy') }/>
+<Meta title={ $_('title.privacy') } description={ $_('description.privacy') }/>
 <LeadSection>
     <div slot="header" data-cy="privacy-policy-header">
         { $_('pages.privacy.header') }

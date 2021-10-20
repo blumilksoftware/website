@@ -1,5 +1,4 @@
-<Meta title={ $_('title.career') }/>
-
+<Meta title={ $_('title.career') } description={ $_('description.career') } />
 <LeadSection>
     <div slot="header">
         { $_('pages.career.header') }

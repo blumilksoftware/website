@@ -1,4 +1,4 @@
-<Meta title={ $_('title.about') }/>
+<Meta title={ $_('title.about') } description={ $_('description.about') }/>
 <BlumilkSection/>
 <PhotosSection/>
 <CountersSection/>

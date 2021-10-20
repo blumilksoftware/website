@@ -1,4 +1,4 @@
-<Meta title={ $_('title.services') }/>
+<Meta title={ $_('title.services') } description={ $_('description.services') }/>
 <Section>
     <div slot="header">
         { $_('pages.services.r&d.header') }

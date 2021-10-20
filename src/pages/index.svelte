@@ -1,4 +1,4 @@
-<Meta title={ $_('title.blumilk-software-development') }/>
+<Meta title={ $_('title.blumilk-software-development') } description={ $_('description.blumilk-software-development') }/>
 <Section>
     <div slot="header" class="text-4xl md:text-5xl lg:text-6xl">
         { $_('pages.home.hero.prefix') }
@@ -10,8 +10,8 @@
     </div>
     <div slot="content">
         <img class="p-12" src="/images/illustrations/software.png"
-             alt="{ $_('pages.home.hero.prefix') } { $_('pages.home.hero.focus') } { $_('pages.home.hero.suffix') }"
-             title="{ $_('pages.home.hero.prefix') } { $_('pages.home.hero.focus') } { $_('pages.home.hero.suffix') }">
+                alt="{ $_('pages.home.hero.prefix') } { $_('pages.home.hero.focus') } { $_('pages.home.hero.suffix') }"
+                title="{ $_('pages.home.hero.prefix') } { $_('pages.home.hero.focus') } { $_('pages.home.hero.suffix') }">
     </div>
 </Section>
 
@@ -30,7 +30,7 @@
     </div>
     <div slot="content">
         <img class="px-12 lg:p-12" src="/images/illustrations/uni.png" alt="{ $_('pages.home.academic.header') }"
-             title="{ $_('pages.home.academic.header') }">
+                title="{ $_('pages.home.academic.header') }">
     </div>
 </Section>
 
@@ -49,7 +49,7 @@
     </div>
     <div slot="content">
         <img class="px-12 lg:p-12" src="/images/illustrations/tools.png" alt="{ $_('pages.home.tools.header') }"
-             title="{ $_('pages.home.tools.header') }">
+                title="{ $_('pages.home.tools.header') }">
     </div>
 </Section>
 
@@ -68,12 +68,12 @@
     </div>
     <div slot="content">
         <img class="px-12 lg:p-12" src="/images/illustrations/projects.png" alt="{ $_('pages.home.projects.header') }"
-             title="{ $_('pages.home.projects.header') }">
+                title="{ $_('pages.home.projects.header') }">
     </div>
 </Section>
 
 <script>
-    import { _ } from 'svelte-i18n'
-    import Section from '@/components/lead-section.svelte'
-    import Meta from '@/components/meta-title.svelte'
+  import { _ } from 'svelte-i18n'
+  import Section from '@/components/lead-section.svelte'
+  import Meta from '@/components/meta-title.svelte'
 </script>
