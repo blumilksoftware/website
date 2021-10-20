@@ -1,5 +1,4 @@
-<MetaTitle title={ $_('title.career') }/>
-<MetaDescription description={ $_('description.career') } />
+<Meta title={ $_('title.career') } description={ $_('description.career') } />
 <LeadSection>
     <div slot="header">
         { $_('pages.career.header') }
@@ -33,7 +32,6 @@
 
   import jobs from '@/assets/jobs.js'
   import LeadSection from '@/components/lead-section.svelte'
-  import MetaTitle from '@/components/meta-title.svelte'
-  import MetaDescription from '@/components/meta-description.svelte'
+  import Meta from '@/components/meta-title.svelte'
   import Gdpr from '@/sections/gdpr.svelte'
 </script>

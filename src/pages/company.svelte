@@ -1,6 +1,4 @@
-<MetaTitle title={ $_('title.company') }/>
-<MetaDescription description={ $_('description.company') } />
-<MetaDescription />
+<Meta title={ $_('title.company') } description={ $_('description.company') }/>
 <LeadSection classes="lg:flex-row-reverse -mt-24">
     <div slot="header">
         { $_('pages.company.header') }
@@ -50,6 +48,5 @@
   import contact from '@/assets/contact.js'
 
   import LeadSection from '@/components/lead-section.svelte'
-  import MetaTitle from '@/components/meta-title.svelte'
-  import MetaDescription from '@/components/meta-description.svelte'
+  import Meta from '@/components/meta-title.svelte'
 </script>

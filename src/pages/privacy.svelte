@@ -1,5 +1,4 @@
-<MetaTitle title={ $_('title.privacy') }/>
-<MetaDescription description={ $_('description.privacy') } />
+<Meta title={ $_('title.privacy') } description={ $_('description.privacy') }/>
 <LeadSection>
     <div slot="header" data-cy="privacy-policy-header">
         { $_('pages.privacy.header') }
@@ -21,8 +20,7 @@
 <script>
   import { _ } from 'svelte-i18n'
   import LeadSection from '@/components/lead-section.svelte'
-  import MetaTitle from '@/components/meta-title.svelte'
-  import MetaDescription from '@/components/meta-description.svelte'
+  import Meta from '@/components/meta-title.svelte'
 
   export let linker = new Autolinker({
     className: 'text-brand'

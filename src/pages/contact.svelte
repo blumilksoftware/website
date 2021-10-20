@@ -1,5 +1,4 @@
-<MetaTitle title={ $_('title.contact') }/>
-<MetaDescription description={ $_('description.contact') } />
+<Meta title={ $_('title.contact') } description={ $_('description.contact') }/>
 <Section classes="mb-24">
     <div slot="header">
         { $_('pages.contact.header') }
@@ -52,8 +51,7 @@
   import { _ } from 'svelte-i18n'
   import Section from '@/components/lead-section.svelte'
   import Map from '@/components/map.svelte'
-  import MetaTitle from '@/components/meta-title.svelte'
-  import MetaDescription from '@/components/meta-description.svelte'
+  import Meta from '@/components/meta-title.svelte'
 
   function handleFormSubmit () {
     document.getElementById('contact').submit()
