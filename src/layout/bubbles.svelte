@@ -4,9 +4,10 @@
              on:click={ (event) => pop(event, index) }
              style="{ getStyle(bubble) }"
              class:popping="{ bubbles[index].popping }"
-             on:animationiteration={ bubbles[index].popping = false }
+             on:animationiteration={ (event) => animationEndHandler(event, index) }
         >
             <div class="inner"></div>
+            <div class="particles"></div>
         </div>
     {/each}
 </div>
@@ -26,14 +27,14 @@
 
   function getStyle (bubble) {
     const styles = [
-      'left:' + bubble.left + '%',
-      'width:' + bubble.size + 'px',
-      'height:' + bubble.size + 'px',
-      'animation-delay:' + bubble.delay + 's'
+      `left: ${bubble.left}%`,
+      `width: ${bubble.size}px`,
+      `height: ${bubble.size}px`,
+      `animation-delay: ${bubble.delay}s`
     ]
 
     if (bubble.duration) {
-      styles.push('animation-duration:' + bubble.duration + 's')
+      styles.push(`animation-duration: ${bubble.duration}s`)
     }
 
     return styles.join(';')
@@ -42,14 +43,65 @@
   function pop (event, index) {
     if (!bubbles[index].popping) {
       bubbles[index].popping = true
+      for (let i = 0; i < Math.random() * 10 + 2; i++) {
+        createParticle(event.target.parentElement.getElementsByClassName('particles')[0])
+      }
     }
+  }
+
+  function createParticle (parent) {
+    const particle = document.createElement('div')
+    const size = Math.floor(Math.random() * (parent.offsetWidth / 3) + 5)
+    particle.style.width = `${size}px`
+    particle.style.height = `${size}px`
+    particle.style.background = `hsl(${Math.random() * 20 + 210}, 70%, 60%)`
+    particle.style.margin = `-${size / 2}px 0 0 -${size / 2}px`
+    parent.appendChild(particle)
+
+    const destinationX = (parent.offsetWidth * 2) * (Math.random() - 0.5)
+    const destinationY = (parent.offsetWidth * 2) * (Math.random() - 0.5)
+
+    const animation = particle.animate([
+      {
+        transform: `translate(${destinationX / 3}px, ${destinationY / 3}px)`,
+        opacity: 0
+      },
+      {
+        opacity: 1,
+        offset: 0.2
+      },
+      {
+        transform: `translate(${destinationX}px, ${destinationY}px)`,
+        opacity: 0
+      }
+    ], {
+      duration: 300 + Math.random() * 1000,
+      easing: 'ease-out',
+      delay: Math.random() * 200
+    })
+
+    animation.onfinish = () => {
+      particle.remove()
+    }
+  }
+
+  function animationEndHandler (event, index) {
+    bubbles[index].popping = false
   }
 </script>
 
 <style>
+    .particles :global(div) {
+        border-radius: 50%;
+        pointer-events: none;
+        position: fixed;
+        left: 50%;
+        top: 50%;
+    }
+
     .bubble.popping .inner {
         animation-name: pop;
-        animation-duration: 4000ms;
+        animation-duration: 500ms;
         animation-iteration-count: 1;
         animation-fill-mode: forwards;
         animation-timing-function: cubic-bezier(.19, 1, .22, 1);
@@ -96,11 +148,9 @@
     }
 
     @keyframes pop {
-      0% {
-       clip-path: path('M0 0C8.33 -8.33 16.67 -12.5 25 -12.5C37.5 -12.5 36.57 -0.27 50 0C63.43 0.27 62.5 -34.37 75 -34.37C87.5 -34.37 87.5 -4.01 100 0C112.5 4.01 112.38 -18.34 125 -18.34C137.62 -18.34 138.09 1.66 150.48 0C162.86 -1.66 162.16 -25 174.54 -25C182.79 -25 191.28 -16.67 200 0L200 200L0 200L0 0Z');
-          }
-      100% {
-        clip-path: path('M0 200C8.33 270.83 16.67 306.25 25 306.25C37.5 306.25 36.57 230.98 50 231.25C63.43 231.52 62.5 284.38 75 284.38C87.5 284.38 87.5 208.49 100 212.5C112.5 216.51 112.38 300.41 125 300.41C137.62 300.41 138.09 239.16 150.48 237.5C162.86 235.84 162.16 293.75 174.54 293.75C182.79 293.75 191.28 262.5 200 200L200 200L0 200L0 200Z');
-      }
+        100% {
+            transform: scale(1.5);
+            opacity: 0;
+        }
     }
 </style>
