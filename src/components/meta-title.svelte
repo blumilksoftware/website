@@ -5,6 +5,9 @@
     <meta property="og:description" content="{description}" />
     <meta property="og:photo" content="https://www.blumilk.pl/logo.svg" />
     <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@blumilksoftware" />
+    <meta name="twitter:creator" content="@blumilksoftware" />
 </svelte:head>
 
 <script>
