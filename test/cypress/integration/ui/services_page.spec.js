@@ -1,13 +1,13 @@
-describe('service page', () => {
-  before(() => {
+describe('Service page', () => {
+  beforeEach(() => {
     cy.visit('/services')
   })
 
-  it('loads successfully', () => {
+  it('Loads successfully', () => {
     cy.url().should('include', '/services')
   })
 
-  it('loads "Research & development" image and checks alt text', () => {
+  it('Loads "Research & development" image', () => {
     cy.get('[data-cy="rnd-image"]')
       .should('have.attr', 'alt', 'Research & development')
       .should('have.attr', 'src').should('include', 'rnd')

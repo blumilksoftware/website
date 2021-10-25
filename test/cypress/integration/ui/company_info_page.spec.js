@@ -1,14 +1,14 @@
-describe('company info page', () => {
-  before(() => {
+describe('Company info page', () => {
+  beforeEach(() => {
     cy.visit('/company')
   })
 
-  it('loads successfully', () => {
+  it('Loads successfully', () => {
     cy.url().should('include', '/company')
   })
 
-  it('checks NIP', () => {
+  it('Checks NIP', () => {
     cy.get('[data-cy="nip"]')
-      .should('have.length', 1)
+      .should('be.visible')
   })
 })
