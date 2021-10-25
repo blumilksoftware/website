@@ -6,11 +6,11 @@
         </p>
         <div class="my-12 grid grid-cols-2 md:grid-cols-5 gap-4 md:mr-16 md:mb-0" data-cy="references-images">
             <img src="/images/clients/pwsz.png" alt="Państwowa Wyższa Szkoła Zawodowa im. Witelona w Legnicy"
-                 class="mx-auto">
-            <img src="/images/clients/insly.png" alt="Insly Ltd." class="mx-auto">
-            <img src="/images/clients/iizi.png" alt="Iizi Polska" class="mx-auto">
-            <img src="/images/clients/logo.png" alt="Logo Soft-Com" class="mx-auto">
-            <img src="/images/clients/wmd.png" alt="WMD Software" class="mx-auto" data-cy="wmd-image">
+                 class="mx-auto relative z-10">
+            <img src="/images/clients/insly.png" alt="Insly Ltd." class="mx-auto relative z-10">
+            <img src="/images/clients/iizi.png" alt="Iizi Polska" class="mx-auto relative z-10">
+            <img src="/images/clients/logo.png" alt="Logo Soft-Com" class="mx-auto relative z-10">
+            <img src="/images/clients/wmd.png" alt="WMD Software" class="mx-auto relative z-10" data-cy="wmd-image">
         </div>
     </div>
     <div slot="content">
@@ -26,13 +26,13 @@
 {#if false}
     <div class="mt-12 container mx-auto flex justify-evenly">
         <div class="bg-white rounded-xl shadow-lg">
-            <img src="/images/photos/placeholder.jpg" alt="Team #1" class="w-96 p-3">
+            <img src="/images/photos/placeholder.jpg" alt="Team #1" class="w-96 p-3 relative z-10">
         </div>
         <div class="bg-white rounded-xl shadow-lg">
-            <img src="/images/photos/placeholder.jpg" alt="Team #2" class="w-96 p-3">
+            <img src="/images/photos/placeholder.jpg" alt="Team #2" class="w-96 p-3 relative z-10">
         </div>
         <div class="bg-white rounded-xl shadow-lg">
-            <img src="/images/photos/placeholder.jpg" alt="Team #3" class="w-96 p-3">
+            <img src="/images/photos/placeholder.jpg" alt="Team #3" class="w-96 p-3 relative z-10">
         </div>
     </div>
 {/if}
