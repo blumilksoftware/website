@@ -15,14 +15,14 @@
     "services": "Services"
   },
   "description": {
-    "404": "Page not found",
-    "about": "Software tailored precisely for your needs. We are a team of skilled software engineers specialized in web applications and research and development projects.",
-    "blumilk-software-development": "Software tailored precisely for your needs. We are a team of skilled software engineers specialized in web applications and research and development projects.",
-    "career": "Software tailored precisely for your needs. We are a team of skilled software engineers specialized in web applications and research and development projects.",
-    "company": "Software tailored precisely for your needs. We are a team of skilled software engineers specialized in web applications and research and development projects.",
-    "contact": "Software tailored precisely for your needs. We are a team of skilled software engineers specialized in web applications and research and development projects.",
-    "privacy": "Software tailored precisely for your needs. We are a team of skilled software engineers specialized in web applications and research and development projects.",
-    "services": "Software tailored precisely for your needs. We are a team of skilled software engineers specialized in web applications and research and development projects."
+    "404": "Page not found.",
+    "about": "We are a team of qualified programmers specializing in web applications and research and development projects.",
+    "blumilk-software-development": "At Blumilk, we create software tailored to the needs of your company.",
+    "career": "Join our team of experts and develop your IT career with Blumilk.",
+    "company": "Blumilk’s data, such as KRS, NIP and REGON.",
+    "contact": "Do you have an idea for a project? Contact us via the form or visit us in the heart of Legnica!",
+    "privacy": "Find out how we process your data.",
+    "services": "We specialize in creating web applications to support your business."
   },
   "navigation": {
     "home": "Home",
