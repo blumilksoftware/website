@@ -39,7 +39,8 @@ jobs:
 
       - name: Handle 404s
         run: cp index.html 404.html
-        pages=about services career contact privacy company
+        pages=about services career contact privacy company career/developer career/intern
+
         for page in $pages
         do
           mkdir $page
