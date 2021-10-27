@@ -38,14 +38,15 @@ jobs:
           npm run build
 
       - name: Handle 404s
-        run: cp index.html 404.html
-        pages=about services career contact privacy company career/developer career/intern
+        run: |
+          cp index.html 404.html
+          pages=about services career contact privacy company career/developer career/intern
 
-        for page in $pages
-        do
-          mkdir $page
-          cp index.html $page/index.html
-        done
+          for page in $pages
+          do
+            mkdir $page
+            cp index.html $page/index.html
+          done
         working-directory: public
 
       - name: Deploy
