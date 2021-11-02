@@ -3,7 +3,7 @@ version: "3.7"
 services:
   node:
     container_name: blumilk-node
-    image: node:16.3.0-alpine3.13
+    image: node:17.0.1-alpine3.14
     working_dir: /application
     volumes:
       - .:/application
@@ -17,7 +17,7 @@ services:
     depends_on:
       - node
     environment:
-    - CYPRESS_baseUrl=${BASE_URL}
+      - CYPRESS_baseUrl=${BASE_URL}
     working_dir: /e2e
     volumes:
-    - ./:/e2e
+      - ./:/e2e
