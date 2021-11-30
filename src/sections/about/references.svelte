@@ -4,7 +4,7 @@
         <p class="pr-4">
             { $_('pages.about.references.lead') }
         </p>
-        <div class="my-12 grid grid-cols-2 md:grid-cols-5 gap-4 md:mr-16 md:mb-0" data-cy="references-images">
+        <div class="my-12 grid grid-cols-2 md:grid-cols-5 gap-4 md:mr-16 md:mb-0 items-center" data-cy="references-images">
             <img src="/images/clients/pwsz.png" alt="Państwowa Wyższa Szkoła Zawodowa im. Witelona w Legnicy"
                  class="mx-auto relative z-10">
             <img src="/images/clients/insly.png" alt="Insly Ltd." class="mx-auto relative z-10">

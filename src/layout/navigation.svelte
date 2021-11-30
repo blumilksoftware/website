@@ -1,6 +1,6 @@
 <svelte:window on:scroll={handleScroll}/>
 
-<div id="navigation" class="fixed left-0 right-0 py-4 z-10 bg-background duration-300">
+<div id="navigation" class="fixed left-0 right-0 py-4 z-50 bg-background duration-300">
     <div class="md:container mx-auto flex items-center px-6">
         <div class="text-2xl">
             <a href="{ $url('./') }" class="flex lowercase font-bold items-center">
