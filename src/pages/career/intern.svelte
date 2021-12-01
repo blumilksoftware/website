@@ -11,7 +11,7 @@
         <p class="py-2">{ $_('pages.career.jobs.intern.description.3') }</p>
     </div>
     <div slot="content">
-        <img class="px-12 lg:px-24 relative z-10" src="/images/illustrations/intern.svg" alt="{ $_('pages.career.header') }" title="{ $_('pages.career.header') }">
+        <img class="px-12 lg:px-24 relative z-10 pointer-events-none" src="/images/illustrations/intern.svg" alt="{ $_('pages.career.header') }" title="{ $_('pages.career.header') }">
     </div>
 </LeadSection>
 

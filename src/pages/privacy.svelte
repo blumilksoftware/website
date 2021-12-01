@@ -12,7 +12,7 @@
         {/each}
     </div>
     <div slot="content">
-        <img class="px-12 lg:p-12" src="/images/illustrations/privacy.svg" alt="{ $_('pages.privacy.header') }"
+        <img class="px-12 lg:p-12 relative z-10 pointer-events-none" src="/images/illustrations/privacy.svg" alt="{ $_('pages.privacy.header') }"
              title="{ $_('pages.privacy.header') }">
     </div>
 </LeadSection>
