@@ -4,7 +4,7 @@
         <p class="pr-4">
             { $_('pages.about.references.lead') }
         </p>
-        <div class="my-12 grid grid-cols-2 md:grid-cols-5 gap-4 md:mr-16 md:mb-0" data-cy="references-images">
+        <div class="my-12 grid grid-cols-2 md:grid-cols-5 gap-4 md:mr-16 md:mb-0 items-center" data-cy="references-images">
             <img src="/images/clients/pwsz.png" alt="Państwowa Wyższa Szkoła Zawodowa im. Witelona w Legnicy"
                  class="mx-auto relative z-10">
             <img src="/images/clients/insly.png" alt="Insly Ltd." class="mx-auto relative z-10">
@@ -22,20 +22,6 @@
         {/each}
     </div>
 </Section>
-
-{#if false}
-    <div class="mt-12 container mx-auto flex justify-evenly">
-        <div class="bg-white rounded-xl shadow-lg">
-            <img src="/images/photos/placeholder.jpg" alt="Team #1" class="w-96 p-3 relative z-10">
-        </div>
-        <div class="bg-white rounded-xl shadow-lg">
-            <img src="/images/photos/placeholder.jpg" alt="Team #2" class="w-96 p-3 relative z-10">
-        </div>
-        <div class="bg-white rounded-xl shadow-lg">
-            <img src="/images/photos/placeholder.jpg" alt="Team #3" class="w-96 p-3 relative z-10">
-        </div>
-    </div>
-{/if}
 
 <script>
   import { _ } from 'svelte-i18n'

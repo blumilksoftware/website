@@ -9,7 +9,7 @@
         { $_('pages.home.hero.about') }
     </div>
     <div slot="content">
-        <img class="p-12 relative z-10" src="/images/illustrations/software.png"
+        <img class="p-12 relative z-10 pointer-events-none" src="/images/illustrations/software.svg"
              alt="{ $_('pages.home.hero.prefix') } { $_('pages.home.hero.focus') } { $_('pages.home.hero.suffix') }"
              title="{ $_('pages.home.hero.prefix') } { $_('pages.home.hero.focus') } { $_('pages.home.hero.suffix') }">
     </div>
@@ -29,7 +29,7 @@
         </div>
     </div>
     <div slot="content">
-        <img class="px-12 lg:p-12 relative z-10" src="/images/illustrations/uni.png" alt="{ $_('pages.home.academic.header') }"
+        <img class="px-12 lg:p-12 relative z-10 pointer-events-none" src="/images/illustrations/uni.svg" alt="{ $_('pages.home.academic.header') }"
              title="{ $_('pages.home.academic.header') }">
     </div>
 </Section>
@@ -48,7 +48,7 @@
         </div>
     </div>
     <div slot="content">
-        <img class="px-12 lg:p-12 relative z-10" src="/images/illustrations/tools.png" alt="{ $_('pages.home.tools.header') }"
+        <img class="px-12 lg:p-12 relative z-10 pointer-events-none" src="/images/illustrations/tools.svg" alt="{ $_('pages.home.tools.header') }"
              title="{ $_('pages.home.tools.header') }">
     </div>
 </Section>
@@ -67,7 +67,7 @@
         </div>
     </div>
     <div slot="content">
-        <img class="px-12 lg:p-12 relative z-10" src="/images/illustrations/projects.png" alt="{ $_('pages.home.projects.header') }"
+        <img class="px-12 lg:p-12 relative z-10 pointer-events-none" src="/images/illustrations/projects.svg" alt="{ $_('pages.home.projects.header') }"
              title="{ $_('pages.home.projects.header') }">
     </div>
 </Section>
