@@ -9,7 +9,7 @@
         {:else}
             { $_('pages.career.lead') }
 
-            <div class="mt-12 sm:m-12 flex flex-row gap-2">
+            <div class="mt-12 sm:m-12 flex flex-row gap-2 relative z-10">
                 {#each jobs as job}
                     <a href="{ $url(job.url) }" class="flex justify-center text-center items-center w-full py-2 px-2 rounded-md text-white bg-brand hover:bg-blue-500">
                         { $_(job.name) }

@@ -1,4 +1,4 @@
-<div class="p-4">
+<div class="p-4 relative z-10 pointer-events-none">
     <div class="bg-gray-400 bg-opacity-25 p-8 rounded-xl italic">
         <slot/>
     </div>
