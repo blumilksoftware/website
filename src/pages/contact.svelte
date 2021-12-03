@@ -7,7 +7,7 @@
         <p class="pb-4">
             { $_('pages.contact.lead') }
         </p>
-        <form class="text-base relative z-10 pointer-events-none" target="_blank" id="contact" action="{ url }">
+        <form class="text-base relative z-10" target="_blank" id="contact" action="{ url }">
             <div class="md:px-12 py-4">
                 <label for="{ questionName }" class="block text-gray-700"></label>
                 <textarea rows="8" name="{ questionName }" id="{ questionName }"
