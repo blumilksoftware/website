@@ -7,7 +7,7 @@
             </p>
         {/each}
     </div>
-    <div slot="content" class="hexagons p-4">
+    <div slot="content" class="hexagons p-4 relative z-10 pointer-events-none">
         <div class="flex ml-16">
             <Hexagon background="bg-blue-100"/>
             <Hexagon title="PHP" image="/images/tech/php.png"/>
