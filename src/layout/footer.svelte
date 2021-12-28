@@ -15,6 +15,7 @@
                     <a href="{ $url('./privacy') }" class="hover:text-gray-900 ml-4">{ $_('footer.privacy') }</a>
                     <a href="{ $url('./company') }" class="hover:text-gray-900 ml-4">{ $_('footer.company') }</a>
                     <a href="https://github.com/blumilksoftware/website" target="_blank" class="hover:text-gray-900 ml-4">{ $_('footer.source') }</a>
+                    <a href="{ $url('./bubbles') }" target="_blank" class="hover:text-gray-900 ml-4">{ $_('footer.bubbles') }</a>
                 </div>
             </div>
         </div>

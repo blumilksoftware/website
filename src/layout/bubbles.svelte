@@ -13,7 +13,7 @@
 </div>
 
 <script>
-  const bubbles = [
+  let bubbles = [
     { left: 20, size: 32, delay: 1, duration: 6, popping: false },
     { left: 25, size: 40, delay: 0, duration: 7, popping: false },
     { left: 36, size: 36, delay: 2, duration: 5, popping: false },
@@ -24,6 +24,11 @@
     { left: 75, size: 24, delay: 6, duration: 6, popping: false },
     { left: 92, size: 108, delay: 0, duration: 8, popping: false }
   ]
+
+  if (window.location.pathname === '/bubbles') {
+    const times = prompt('Please enter number of bubbles (10 - 200):', 10)
+    bubbles = getGeneratedBubbles(checkTimes(parseInt(times)))
+  }
 
   function getStyle (bubble) {
     const styles = [
@@ -87,6 +92,27 @@
 
   function animationEndHandler (event, index) {
     bubbles[index].popping = false
+  }
+
+  function getGeneratedBubbles (times = 10) {
+    const generatedBubbles = []
+    for (let i = 0; i < times; i++) {
+      generatedBubbles.push(
+        { left: getRndInteger(1, 99), size: getRndInteger(20, 150), delay: getRndInteger(4, 10), duration: getRndInteger(5, 14), popping: false }
+      )
+    }
+    return generatedBubbles
+  }
+
+  function getRndInteger (min, max) {
+    return Math.floor(Math.random() * (max - min)) + min
+  }
+
+  function checkTimes (times) {
+    if (times > 0 && times < 200 && (typeof times === 'number')) {
+      return times
+    }
+    return 15
   }
 </script>
 
