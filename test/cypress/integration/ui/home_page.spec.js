@@ -9,7 +9,7 @@ describe('Home page', () => {
 
   it('Checks bubbles', () => {
     cy.get('[data-cy="bubbles"]')
-      .should('have.attr', 'data-cy', '_bubbles.svelte')
+      .should('have.attr', 'data-cy', 'bubbles')
   })
 
   it('Displays hamburger menu at iPhone 6', () => {

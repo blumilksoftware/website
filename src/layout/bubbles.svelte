@@ -11,6 +11,7 @@
         </div>
     {/each}
 </div>
+
 <script>
   const bubbles = [
     { left: 20, size: 32, delay: 1, duration: 6, popping: false },
