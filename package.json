@@ -24,7 +24,7 @@
     "@rollup/plugin-node-resolve": "^13.0.6",
     "@rollup/plugin-replace": "^3.0.0",
     "@roxi/routify": "^2.18.3",
-    "@tailwindcss/forms": "^0.3.4",
+    "@tailwindcss/forms": "^0.4.0",
     "autoprefixer": "^10.4.0",
     "chai": "^4.3.4",
     "cypress": "^9.1.0",
