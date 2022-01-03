@@ -11,6 +11,7 @@
         </div>
     {/each}
 </div>
+
 <script>
     import { params } from '@roxi/routify'
 
@@ -104,6 +105,7 @@
       return 15
     }
 </script>
+
 <style>
     .particles :global(div) {
         border-radius: 50%;
