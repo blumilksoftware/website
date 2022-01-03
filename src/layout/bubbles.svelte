@@ -13,81 +13,71 @@
 </div>
 
 <script>
-  const bubbles = [
-    { left: 20, size: 32, delay: 1, duration: 6, popping: false },
-    { left: 25, size: 40, delay: 0, duration: 7, popping: false },
-    { left: 36, size: 36, delay: 2, duration: 5, popping: false },
-    { left: 5, size: 64, delay: 0, duration: 10, popping: false },
-    { left: 56, size: 72, delay: 0, duration: 5, popping: false },
-    { left: 70, size: 144, delay: 3, duration: 7, popping: false },
-    { left: 72, size: 36, delay: 7, duration: 5, popping: false },
-    { left: 75, size: 24, delay: 6, duration: 6, popping: false },
-    { left: 92, size: 108, delay: 0, duration: 8, popping: false }
-  ]
+    export let bubbles
 
-  function getStyle (bubble) {
-    const styles = [
-      `left: ${bubble.left}%`,
-      `width: ${bubble.size}px`,
-      `height: ${bubble.size}px`,
-      `animation-delay: ${bubble.delay}s`
-    ]
+    function getStyle (bubble) {
+      const styles = [
+        `left: ${bubble.left}%`,
+        `width: ${bubble.size}px`,
+        `height: ${bubble.size}px`,
+        `animation-delay: ${bubble.delay}s`
+      ]
 
-    if (bubble.duration) {
-      styles.push(`animation-duration: ${bubble.duration}s`)
+      if (bubble.duration) {
+        styles.push(`animation-duration: ${bubble.duration}s`)
+      }
+
+      return styles.join(';')
     }
 
-    return styles.join(';')
-  }
-
-  function pop (event, index) {
-    if (!bubbles[index].popping) {
-      bubbles[index].popping = true
-      for (let i = 0; i < Math.random() * 10 + 2; i++) {
-        createParticle(event.target.parentElement.getElementsByClassName('particles')[0])
+    function pop (event, index) {
+      if (!bubbles[index].popping) {
+        bubbles[index].popping = true
+        for (let i = 0; i < Math.random() * 10 + 2; i++) {
+          createParticle(event.target.parentElement.getElementsByClassName('particles')[0])
+        }
       }
     }
-  }
 
-  function createParticle (parent) {
-    const particle = document.createElement('div')
-    const size = Math.floor(Math.random() * (parent.offsetWidth / 3) + 5)
-    particle.style.width = `${size}px`
-    particle.style.height = `${size}px`
-    particle.style.background = `hsl(${Math.random() * 20 + 210}, 70%, 60%)`
-    particle.style.margin = `-${size / 2}px 0 0 -${size / 2}px`
-    parent.appendChild(particle)
+    function createParticle (parent) {
+      const particle = document.createElement('div')
+      const size = Math.floor(Math.random() * (parent.offsetWidth / 3) + 5)
+      particle.style.width = `${size}px`
+      particle.style.height = `${size}px`
+      particle.style.background = `hsl(${Math.random() * 20 + 210}, 70%, 60%)`
+      particle.style.margin = `-${size / 2}px 0 0 -${size / 2}px`
+      parent.appendChild(particle)
 
-    const destinationX = (parent.offsetWidth * 2) * (Math.random() - 0.5)
-    const destinationY = (parent.offsetWidth * 2) * (Math.random() - 0.5)
+      const destinationX = (parent.offsetWidth * 2) * (Math.random() - 0.5)
+      const destinationY = (parent.offsetWidth * 2) * (Math.random() - 0.5)
 
-    const animation = particle.animate([
-      {
-        transform: `translate(${destinationX / 3}px, ${destinationY / 3}px)`,
-        opacity: 0
-      },
-      {
-        opacity: 1,
-        offset: 0.2
-      },
-      {
-        transform: `translate(${destinationX}px, ${destinationY}px)`,
-        opacity: 0
+      const animation = particle.animate([
+        {
+          transform: `translate(${destinationX / 3}px, ${destinationY / 3}px)`,
+          opacity: 0
+        },
+        {
+          opacity: 1,
+          offset: 0.2
+        },
+        {
+          transform: `translate(${destinationX}px, ${destinationY}px)`,
+          opacity: 0
+        }
+      ], {
+        duration: 300 + Math.random() * 1000,
+        easing: 'ease-out',
+        delay: Math.random() * 200
+      })
+
+      animation.onfinish = () => {
+        particle.remove()
       }
-    ], {
-      duration: 300 + Math.random() * 1000,
-      easing: 'ease-out',
-      delay: Math.random() * 200
-    })
-
-    animation.onfinish = () => {
-      particle.remove()
     }
-  }
 
-  function animationEndHandler (event, index) {
-    bubbles[index].popping = false
-  }
+    function animationEndHandler (event, index) {
+      bubbles[index].popping = false
+    }
 </script>
 
 <style>
