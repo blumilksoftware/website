@@ -1,10 +1,10 @@
 <div class="circles" data-cy="bubbles">
     {#each bubbles as bubble, index}
         <div class="bubble"
-             on:click={ (event) => pop(event, index) }
-             style="{ getStyle(bubble) }"
-             class:popping="{ bubbles[index].popping }"
-             on:animationiteration={ (event) => animationEndHandler(event, index) }
+                on:click={ (event) => pop(event, index) }
+                style="{ getStyle(bubble) }"
+                class:popping="{ bubbles[index].popping }"
+                on:animationiteration={ (event) => animationEndHandler(event, index) }
         >
             <div class="inner"></div>
             <div class="particles"></div>
@@ -13,17 +13,7 @@
 </div>
 
 <script>
-  const bubbles = [
-    { left: 20, size: 32, delay: 1, duration: 6, popping: false },
-    { left: 25, size: 40, delay: 0, duration: 7, popping: false },
-    { left: 36, size: 36, delay: 2, duration: 5, popping: false },
-    { left: 5, size: 64, delay: 0, duration: 10, popping: false },
-    { left: 56, size: 72, delay: 0, duration: 5, popping: false },
-    { left: 70, size: 144, delay: 3, duration: 7, popping: false },
-    { left: 72, size: 36, delay: 7, duration: 5, popping: false },
-    { left: 75, size: 24, delay: 6, duration: 6, popping: false },
-    { left: 92, size: 108, delay: 0, duration: 8, popping: false }
-  ]
+  export let bubbles
 
   function getStyle (bubble) {
     const styles = [
