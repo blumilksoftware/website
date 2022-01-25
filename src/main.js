@@ -10,6 +10,14 @@ function gtag () {
   window.dataLayer.push(arguments)
 }
 
+function getLocale () {
+  if (localStorage.getItem('locale')) {
+    return localStorage.getItem('locale')
+  }
+
+  return getLocaleFromNavigator()
+}
+
 gtag('js', new Date())
 gtag('config', 'G-Y3WCJ1ZM46')
 
@@ -22,7 +30,7 @@ addMessages('pl', pl)
 
 init({
   fallbackLocale: 'en',
-  initialLocale: getLocaleFromNavigator()
+  initialLocale: getLocale()
 })
 
 export default app
