@@ -58,6 +58,7 @@
   import { _, locale } from 'svelte-i18n'
 
   function switchLocale () {
+    localStorage.setItem('locale', $_('locale.code'))
     locale.set($_('locale.code'))
   }
 

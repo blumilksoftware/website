@@ -38,4 +38,17 @@ describe('Home page', () => {
     cy.get('[data-cy="English"]')
       .should('have.attr', 'data-cy', 'English')
   })
+
+  it('Selected locale will be remembered', () => {
+    cy.get('[data-cy="polski"]')
+      .should('have.attr', 'data-cy', 'polski').click()
+
+    cy.get('[data-cy="English"]')
+      .should('have.attr', 'data-cy', 'English')
+
+    cy.reload()
+
+    cy.get('[data-cy="English"]')
+      .should('have.attr', 'data-cy', 'English')
+  })
 })
