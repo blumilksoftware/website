@@ -129,6 +129,24 @@
         "lead": "W pełni rozumiemy, że oprogramowanie ma rozwiązywać problemy biznesu: optymalizować zadania i zasoby, zabezpieczać dane, umożliwiać dalsze skalowanie, ułatwiać życie. W obecnych czasach na systemach informatycznych opiera się często większość lub praktycznie wszystkie zachodzące w firmach procesy. Chcemy pomóc w tym, aby wszystko działało jak najlepiej."
       }
     },
+    "partnerships": {
+      "soda": {
+        "header": "Software Development Association Poland",
+        "lead": "Software Development Association Poland (SoDA) jest organizacją mającą na celu rozwijanie współpracy pomiędzy firmami tworzącymi oprogramowanie. Jest to najstarsza i największa w Polsce Organizacja Pracodawców Usług IT, która stanowi kopalnię kontaktów i wiedzy pomagającej rozwijać działalność firm działających w naszej branży. Tym samym jesteśmy w setce najbardziej liczących się na rynku firm o podobnym profilu do naszego."
+      },
+      "pwsz": {
+        "header": "Collegium Witelona Uczelnia Publiczna",
+        "lead": "W ramach współpracy dążymy do współdziałania w zakresie doskonalenia programów studiów kierunków Informatyka i Inżynieria produkcji i logistyki. Ponadto deklarujemy możliwość realizacji zajęć praktycznych (staże, projekty), stałą chęć przyjęcia na praktyki zawodowe studentów wybranych kierunków oraz możliwość współpracy przy opracowaniu i realizacji przedsięwzięć edukacyjnych."
+      },
+      "laravel-meetup": {
+        "header": "Laravel Poland Meetup",
+        "lead": "Aktywna społeczność programistów z całej Polski chcących poszerzać swoją wiedzę na temat Laravela i PHP. Razem tworzymy meetupy, które cyklicznie się odbywają co dwa miesiące, prezentujemy ciekawe tematy oraz fundujemy nagrody."
+      },
+      "phpers": {
+        "header": "PHPers",
+        "lead": "Społeczność, która fascynuje się, pracuje lub używa hobbistycznie języka programowania PHP. Razem tworzymy meetupy, które odbywają się cyklicznie we Wrocławiu oraz Poznaniu, współtworzymy interesujące prezentacje i sponsorujemy spotkania."
+      }
+    },
     "career": {
       "header": "Pracuj z nami",
       "lead": "Rekrutacja trwa! Poniżej znajdziesz szczegółowe oferty pracy na stanowiska, które zamierzamy obsadzić w najbliższej przyszłości. Jesteśmy też otwarci na spontaniczne aplikacje.",
