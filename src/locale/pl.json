@@ -29,6 +29,7 @@
     "about": "O firmie",
     "services": "Usługi",
     "career": "Praca",
+    "partnerships": "Partnerzy",
     "contact": "Kontakt"
   },
   "footer": {
@@ -135,7 +136,7 @@
         "lead": "Software Development Association Poland (SoDA) jest organizacją mającą na celu rozwijanie współpracy pomiędzy firmami tworzącymi oprogramowanie. Jest to najstarsza i największa w Polsce Organizacja Pracodawców Usług IT, która stanowi kopalnię kontaktów i wiedzy pomagającej rozwijać działalność firm działających w naszej branży. Tym samym jesteśmy w setce najbardziej liczących się na rynku firm o podobnym profilu do naszego."
       },
       "pwsz": {
-        "header": "Collegium Witelona Uczelnia Publiczna",
+        "header": "Collegium Witelona Uczelnia Państwowa",
         "lead": "W ramach współpracy dążymy do współdziałania w zakresie doskonalenia programów studiów kierunków Informatyka i Inżynieria produkcji i logistyki. Ponadto deklarujemy możliwość realizacji zajęć praktycznych (staże, projekty), stałą chęć przyjęcia na praktyki zawodowe studentów wybranych kierunków oraz możliwość współpracy przy opracowaniu i realizacji przedsięwzięć edukacyjnych."
       },
       "laravel-meetup": {

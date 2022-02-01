@@ -7,12 +7,12 @@
         { $_('pages.partnerships.soda.lead') }
     </div>
     <div slot="content">
-        <img class="p-12 relative z-10 pointer-events-none w-3/4 m-auto" src="/images/partnerships/soda-logo.png" alt="{ $_('pages.services.r&d.header') }" data-cy="rnd-image"
+        <img class="p-12 relative z-10 pointer-events-none w-4/5 sm:w-3/5 md:w-3/4 xl:w-1/2 m-auto" src="/images/partnerships/soda-logo.png" alt="{ $_('pages.services.r&d.header') }" data-cy="rnd-image"
                 title="{ $_('pages.services.r&d.header') }">
     </div>
 </Section>
 
-<Section classes="lg:flex-row-reverse">
+<Section classes="lg:flex-row-reverse lg:mt-12">
     <div slot="header">
         { $_('pages.partnerships.pwsz.header') }
     </div>
@@ -20,12 +20,12 @@
         { $_('pages.partnerships.pwsz.lead') }
     </div>
     <div slot="content">
-        <img class="p-12 relative z-10 pointer-events-none w-3/4 m-auto" src="/images/partnerships/pwsz.png" alt="{ $_('pages.services.web.header') }"
+        <img class="p-12 relative z-10 pointer-events-none w-4/5 sm:w-3/5 xl:w-1/2 m-auto" src="/images/partnerships/pwsz.png" alt="{ $_('pages.services.web.header') }"
                 title="{ $_('pages.services.web.header') }">
     </div>
 </Section>
 
-<Section>
+<Section classes="lg:mt-12">
     <div slot="header">
         { $_('pages.partnerships.laravel-meetup.header') }
     </div>
@@ -33,12 +33,12 @@
         { $_('pages.partnerships.laravel-meetup.lead') }
     </div>
     <div slot="content">
-        <img class="p-12 relative z-10 pointer-events-none w-3/4 m-auto" src="/images/partnerships/laravel-meetup.jpeg" alt="{ $_('pages.services.web.header') }"
+        <img class="p-6 relative z-10 pointer-events-none w-4/5 sm:w-3/5 md:w-3/4 xl:w-1/2 m-auto" src="/images/partnerships/laravel-meetup.png" alt="{ $_('pages.services.web.header') }"
                 title="{ $_('pages.services.web.header') }">
     </div>
 </Section>
 
-<Section classes="lg:flex-row-reverse">
+<Section classes="lg:flex-row-reverse lg:mt-12">
     <div slot="header">
         { $_('pages.partnerships.phpers.header') }
     </div>
@@ -46,7 +46,7 @@
         { $_('pages.partnerships.phpers.lead') }
     </div>
     <div slot="content">
-        <img class="p-12 relative z-10 pointer-events-none w-3/4 m-auto" src="/images/partnerships/phpers.png" alt="{ $_('pages.services.web.header') }"
+        <img class="p-12 relative z-10 pointer-events-none w-4/5 sm:w-3/5 md:w-3/4 xl:w-1/2 m-auto" src="/images/partnerships/phpers.png" alt="{ $_('pages.services.web.header') }"
                 title="{ $_('pages.services.web.header') }">
     </div>
 </Section>
