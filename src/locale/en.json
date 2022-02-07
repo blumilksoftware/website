@@ -137,7 +137,7 @@
       },
       "pwsz": {
         "header": "Collegium Witelona Uczelnia Państwowa",
-        "lead": "As part of the cooperation, we strive to cooperate in the improvement of study programs in the fields of Information Technology and Production and Logistics Engineering. In addition, we declare the possibility of carrying out practical classes (internships, projects), a constant willingness to accept students of selected fields of study for apprenticeships and the possibility of cooperation in the development and implementation of educational projects."
+        "lead": "As part of the cooperation, we strive to cooperate in the improvement of study programs in the fields of Information Technology and Production and Logistics Engineering. In addition, we declare the possibility of carrying out practical classes (internships, projects), a constant willingness to accept students of selected fields of study for apprenticeships, and the possibility of cooperation in the development and implementation of educational projects."
       },
       "laravel-meetup": {
         "header": "Laravel Poland Meetup",
@@ -145,7 +145,7 @@
       },
       "phpers": {
         "header": "PHPers",
-        "lead": "A community that is fascinated by, works with, or uses the PHP programming language as a hobby. Together, we create meetups that are held regularly in Wrocław and Poznań, we co-create interesting presentations and sponsor meetings."
+        "lead": "A community that is fascinated by works with, or uses the PHP programming language as a hobby. Together, we create meetups that are held regularly in Wrocław and Poznań, we co-create interesting presentations and sponsor meetings."
       }
     },
     "career": {
