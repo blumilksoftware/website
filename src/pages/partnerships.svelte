@@ -1,4 +1,4 @@
-<Meta title={ $_('title.services') } description={ $_('description.services') }/>
+<Meta title={ $_('title.partnerships') } description={ $_('description.partnerships') }/>
 <Section>
     <div slot="header">
         { $_('pages.partnerships.soda.header') }
@@ -14,10 +14,10 @@
 
 <Section classes="lg:flex-row-reverse lg:mt-12">
     <div slot="header">
-        { $_('pages.partnerships.pwsz.header') }
+        { $_('pages.partnerships.cwup.header') }
     </div>
     <div slot="description">
-        { $_('pages.partnerships.pwsz.lead') }
+        { $_('pages.partnerships.cwup.lead') }
     </div>
     <div slot="content">
         <img class="p-12 relative z-10 pointer-events-none w-4/5 sm:w-3/5 xl:w-1/2 m-auto" src="/images/partnerships/pwsz.png" alt="{ $_('pages.services.web.header') }"
