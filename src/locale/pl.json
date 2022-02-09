@@ -144,10 +144,6 @@
       "laravel-meetup": {
         "header": "Laravel Poland Meetup",
         "lead": "Aktywna społeczność programistów z całej Polski chcących poszerzać swoją wiedzę na temat Laravela i PHP. Razem tworzymy meetupy, które cyklicznie się odbywają co dwa miesiące, prezentujemy ciekawe tematy oraz fundujemy nagrody."
-      },
-      "phpers": {
-        "header": "PHPers",
-        "lead": "Społeczność, która fascynuje się, pracuje lub używa hobbistycznie języka programowania PHP. Razem tworzymy meetupy, które odbywają się cyklicznie we Wrocławiu oraz Poznaniu, współtworzymy interesujące prezentacje i sponsorujemy spotkania."
       }
     },
     "career": {
