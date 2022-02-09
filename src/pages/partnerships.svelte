@@ -38,19 +38,6 @@
     </div>
 </Section>
 
-<Section classes="lg:flex-row-reverse lg:mt-12">
-    <div slot="header">
-        { $_('pages.partnerships.phpers.header') }
-    </div>
-    <div slot="description">
-        { $_('pages.partnerships.phpers.lead') }
-    </div>
-    <div slot="content">
-        <img class="p-12 relative z-10 pointer-events-none w-4/5 sm:w-3/5 md:w-3/4 xl:w-1/2 m-auto" src="/images/partnerships/phpers.png" alt="{ $_('pages.services.web.header') }"
-                title="{ $_('pages.services.web.header') }">
-    </div>
-</Section>
-
 <script>
   import { _ } from 'svelte-i18n'
   import Section from '@/components/lead-section.svelte'
