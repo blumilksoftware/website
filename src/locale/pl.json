@@ -24,7 +24,7 @@
     "contact": "Masz pomysł na projekt? Skontaktuj się z nami poprzez formularz lub odwiedź nas w samym sercu Legnicy!",
     "privacy": "Dowiedz się, w jaki sposób przetwarzamy Twoje dane osobowe.",
     "services": "Specjalizujemy się w tworzeniu aplikacji internetowych, które mają wspomóc Twój biznes.",
-    "partnerships": "Współpracujemy m.in. z SoDA, Collegium Witelona Uczelnia Panśtwowa Laravel Poland Meetup tworząc wspólnie ciekawe i bogate w doświadcenie spotkania."
+    "partnerships": "Współpracujemy m.in. z SoDA, Collegium Witelona Uczelnia Państwowa oraz Laravel Poland Meetup tworząc wspólnie ciekawe i bogate w doświadczenie spotkania."
   },
   "navigation": {
     "home": "Strona główna",
@@ -147,7 +147,7 @@
       },
       "phpers": {
         "header": "PHPers",
-        "lead": "Społeczność, która fascynuje się, pracuje lub używa hobbistycznie języka programowania PHP. Razem tworzymy meetupy, które odbywają się cyklicznie we Wrocławiu oraz Poznaniu, współtworzymy interesujące prezentacje i sponsorujemy spotkania."
+        "lead": "Społeczność, która fascynuje się, pracuje lub używa hobbystycznie języka programowania PHP. Razem tworzymy meetupy, które odbywają się cyklicznie we Wrocławiu oraz Poznaniu, współtworzymy interesujące prezentacje i sponsorujemy spotkania."
       }
     },
     "career": {
