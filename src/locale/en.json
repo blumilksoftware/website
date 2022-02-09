@@ -141,9 +141,9 @@
         "header": "Collegium Witelona Uczelnia Państwowa",
         "lead": "As part of collaboration, we strive to cooperate in the improvement of study programs in the fields of Information Technology and Production and Logistics Engineering. In addition, we declare the possibility of carrying out practical classes (internships, projects), a constant willingness to accept students of selected fields of study for apprenticeships, and the possibility of cooperation in the development and implementation of educational projects."
       },
-      "laravel-meetup": {
+      "lpm": {
         "header": "Laravel Poland Meetup",
-        "lead": "An active community of programmers from all over Poland who want to expand their knowledge about Laravel and PHP. Together, we create meetups, which are held regularly every two months, we present interesting topics and fund prizes."
+        "lead": "An active community of programmers from all over Poland who want to expand their knowledge about Laravel and PHP. With other companies, we create tech meetups, which are held regularly every two months, we present interesting topics and fund prizes."
       }
     },
     "career": {

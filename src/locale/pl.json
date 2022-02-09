@@ -141,9 +141,9 @@
         "header": "Collegium Witelona Uczelnia Państwowa",
         "lead": "W ramach współpracy dążymy do współdziałania w zakresie doskonalenia programów studiów kierunków Informatyka i Inżynieria produkcji i logistyki. Ponadto deklarujemy możliwość realizacji zajęć praktycznych (staże, projekty), stałą chęć przyjęcia na praktyki zawodowe studentów wybranych kierunków oraz możliwość współpracy przy opracowaniu i realizacji przedsięwzięć edukacyjnych."
       },
-      "laravel-meetup": {
+      "lpm": {
         "header": "Laravel Poland Meetup",
-        "lead": "Aktywna społeczność programistów z całej Polski chcących poszerzać swoją wiedzę na temat Laravela i PHP. Razem tworzymy meetupy, które cyklicznie się odbywają co dwa miesiące, prezentujemy ciekawe tematy oraz fundujemy nagrody."
+        "lead": "Aktywna społeczność programistów z całej Polski chcących poszerzać swoją wiedzę na temat Laravela i PHP. Razem z innymi firmami tworzymy meetupy technologiczne, które cyklicznie odbywają się co dwa miesiące, prezentujemy ciekawe tematy oraz fundujemy nagrody."
       }
     },
     "career": {

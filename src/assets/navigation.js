@@ -9,7 +9,7 @@ class NavigationItem {
 export default [
   new NavigationItem('./about', 'navigation.about'),
   new NavigationItem('./services', 'navigation.services'),
-  new NavigationItem('./career', 'navigation.career'),
   new NavigationItem('./partnerships', 'navigation.partnerships'),
+  new NavigationItem('./career', 'navigation.career'),
   new NavigationItem('./contact', 'navigation.contact')
 ]
