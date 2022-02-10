@@ -12,7 +12,8 @@
     "company": "Dane firmy",
     "contact": "Kontakt",
     "privacy": "Polityka firmy",
-    "services": "Usługi"
+    "services": "Usługi",
+    "partnerships": "Partnerzy"
   },
   "description": {
     "404": "Nie znaleziono strony.",
@@ -22,13 +23,15 @@
     "company": "Blumilk spółka z ograniczoną odpowiedzialnością z siedzibą w Legnicy, NIP: 6912551135, KRS: 0000866755.",
     "contact": "Masz pomysł na projekt? Skontaktuj się z nami poprzez formularz lub odwiedź nas w samym sercu Legnicy!",
     "privacy": "Dowiedz się, w jaki sposób przetwarzamy Twoje dane osobowe.",
-    "services": "Specjalizujemy się w tworzeniu aplikacji internetowych, które mają wspomóc Twój biznes."
+    "services": "Specjalizujemy się w tworzeniu aplikacji internetowych, które mają wspomóc Twój biznes.",
+    "partnerships": "Współpracujemy m.in. z SoDA, Collegium Witelona Uczelnia Państwowa oraz Laravel Poland Meetup tworząc wspólnie ciekawe i bogate w doświadczenie spotkania."
   },
   "navigation": {
     "home": "Strona główna",
     "about": "O firmie",
     "services": "Usługi",
     "career": "Praca",
+    "partnerships": "Partnerzy",
     "contact": "Kontakt"
   },
   "footer": {
@@ -127,6 +130,20 @@
       "business": {
         "header": "Pomoc dla Twojego biznesu",
         "lead": "W pełni rozumiemy, że oprogramowanie ma rozwiązywać problemy biznesu: optymalizować zadania i zasoby, zabezpieczać dane, umożliwiać dalsze skalowanie, ułatwiać życie. W obecnych czasach na systemach informatycznych opiera się często większość lub praktycznie wszystkie zachodzące w firmach procesy. Chcemy pomóc w tym, aby wszystko działało jak najlepiej."
+      }
+    },
+    "partnerships": {
+      "soda": {
+        "header": "Software Development Association Poland",
+        "lead": "Software Development Association Poland (SoDA) jest organizacją mającą na celu rozwijanie współpracy pomiędzy firmami tworzącymi oprogramowanie. Jest to najstarsza i największa w Polsce Organizacja Pracodawców Usług IT, która stanowi kopalnię kontaktów i wiedzy pomagającej rozwijać działalność firm działających w naszej branży. Tym samym jesteśmy w setce najbardziej liczących się na rynku firm o podobnym profilu do naszego."
+      },
+      "cwup": {
+        "header": "Collegium Witelona Uczelnia Państwowa",
+        "lead": "W ramach współpracy dążymy do współdziałania w zakresie doskonalenia programów studiów kierunków Informatyka i Inżynieria produkcji i logistyki. Ponadto deklarujemy możliwość realizacji zajęć praktycznych (staże, projekty), stałą chęć przyjęcia na praktyki zawodowe studentów wybranych kierunków oraz możliwość współpracy przy opracowaniu i realizacji przedsięwzięć edukacyjnych."
+      },
+      "lpm": {
+        "header": "Laravel Poland Meetup",
+        "lead": "Aktywna społeczność programistów z całej Polski chcących poszerzać swoją wiedzę na temat Laravela i PHP. Razem z innymi firmami tworzymy meetupy technologiczne, które cyklicznie odbywają się co dwa miesiące, prezentujemy ciekawe tematy oraz fundujemy nagrody."
       }
     },
     "career": {

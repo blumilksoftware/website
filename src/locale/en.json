@@ -12,7 +12,8 @@
     "company": "Company info",
     "contact": "Contact",
     "privacy": "Privacy Policy",
-    "services": "Services"
+    "services": "Services",
+    "partnerships": "Partnerships"
   },
   "description": {
     "404": "Page not found.",
@@ -22,13 +23,15 @@
     "company": "Blumilk spółka z ograniczoną odpowiedzialnością based in Legnica, NIP: 6912551135, KRS: 0000866755.",
     "contact": "Do you have an idea for a project? Contact us via the form or visit us in the heart of Legnica!",
     "privacy": "Find out how we process your data.",
-    "services": "We specialize in creating web applications to support your business."
+    "services": "We specialize in creating web applications to support your business.",
+    "partnerships": "We cooperate with with SoDA, Witelon Collegium State University and Laravel Poland Meetup, creating together an interesting and experience-rich meeting."
   },
   "navigation": {
     "home": "Home",
     "about": "About",
     "services": "Services",
     "career": "Career",
+    "partnerships": "Partnerships",
     "contact": "Contact"
   },
   "footer": {
@@ -127,6 +130,20 @@
       "business": {
         "header": "Improving your business",
         "lead": "We fully understand that the software has to solve business problems: optimize tasks and resources, secure data, enable further scaling, and make life easier. Nowadays, most or practically all processes taking place in companies are often based on IT systems. We want to help make sure everything works as well as possible."
+      }
+    },
+    "partnerships": {
+      "soda": {
+        "header": "Software Development Association Poland",
+        "lead": "Software Development Association Poland (SoDA) is an organization aimed at developing cooperation between software companies. It is the oldest and the largest organization of IT Service Employers in Poland, which is a mine of contacts and knowledge helping to develop the activities of companies operating in our industry. Thus, we are among the hundred most important companies on the market with a profile similar to ours."
+      },
+      "cwup": {
+        "header": "Witelon Collegium State University",
+        "lead": "As part of collaboration, we strive to cooperate in the improvement of study programs in the fields of Information Technology and Production and Logistics Engineering. In addition, we declare the possibility of carrying out practical classes (internships, projects), a constant willingness to accept students of selected fields of study for apprenticeships, and the possibility of cooperation in the development and implementation of educational projects."
+      },
+      "lpm": {
+        "header": "Laravel Poland Meetup",
+        "lead": "An active community of programmers from all over Poland who want to expand their knowledge about Laravel and PHP. With other companies, we create tech meetups, which are held regularly every two months, we present interesting topics and fund prizes."
       }
     },
     "career": {
