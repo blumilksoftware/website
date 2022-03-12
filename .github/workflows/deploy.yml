@@ -3,11 +3,12 @@ name: "Deploying website to GitHub Pages"
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-20.04
+    name: "Deploying website to GitHub Pages"
 
     steps:
       - uses: actions/checkout@v2
