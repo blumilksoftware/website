@@ -3,11 +3,12 @@ name: "Checking app: testing and linting"
 on:
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   check:
     runs-on: ubuntu-20.04
+    name: "Checking app: testing and linting"
     container:
       image: cypress/browsers:node14.17.0-chrome88-ff89
 
