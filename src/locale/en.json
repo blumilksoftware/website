@@ -45,7 +45,7 @@
     "and": "and",
     "tailwind": "Tailwind",
     "hosted": "hosted on",
-    "github": "Github Pages"
+    "github": "GitHub Pages"
   },
   "pages": {
     "home": {
@@ -96,7 +96,7 @@
       "counters": {
         "members": "team members",
         "experience": "shared years of experience",
-        "repositories": "Github repositories",
+        "repositories": "GitHub repositories",
         "loc": "lines of code weekly"
       },
       "stack": {
@@ -162,7 +162,7 @@
           "name": "intern",
           "header": "Intern",
           "description": {
-            "1": "As part of cooperation with The Witelon State University of Applied Sciences in Legnica, we are looking for students who want to take internships designed for future software engineer. It is a great opportunity to get to know the work ethos of a software engineer, meet professionals and learn practical skills.",
+            "1": "As part of cooperation with Witelon Collegium State University, we are looking for students who want to take internships designed for future software engineer. It is a great opportunity to get to know the work ethos of a software engineer, meet professionals and learn practical skills.",
             "2": "If you are studying at another university, we also encourage you to contact us.",
             "3": "We expect some knowledge of PHP programming, using the object-oriented paradigm in web applications, using Git and GitHub and being communicative and willing to learn new things and work in a team."
           }
@@ -180,7 +180,7 @@
         "eloquent": "know how to avoid n+1 selects problem in Eloquent",
         "tools": "use automated tools to improve our code quality",
         "xdebug": "debug your applications with Xdebug",
-        "processes": "join Github Flow, code reviews and CI/CD processes"
+        "processes": "join GitHub Flow, code reviews and CI/CD processes"
       },
       "stack-header": "Our stack",
       "stack-label": "We understand that every engineer chooses his own tools, so we don't want to create any misunderstandings. We are crafting web applications in PHP and Laravel, and we are team-working in a specific set of tools so that everyone knows what's going on. So:",

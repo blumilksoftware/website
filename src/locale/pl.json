@@ -45,7 +45,7 @@
     "and": "i",
     "tailwind": "Tailwindem",
     "hosted": "hostowane na",
-    "github": "Github Pages"
+    "github": "GitHub Pages"
   },
   "pages": {
     "home": {
@@ -96,7 +96,7 @@
       "counters": {
         "members": "członków zespołu",
         "experience": "lat wspólnego doświadczenia",
-        "repositories": "repozytoria na Githubie",
+        "repositories": "repozytoria na GitHubie",
         "loc": "linii kodu tygodniowo"
       },
       "stack": {
@@ -162,7 +162,7 @@
           "name": "praktykant",
           "header": "Praktykant",
           "description": {
-            "1": "W ramach współpracy z Państwową Wyższą Szkołą Zawodową im. Witelona w Legnicy poszukujemy studentów chcących odbyć praktyki w zakresie obowiązków inżyniera oprogramowania. Jest to świetna okazja, by poznać etos pracy programisty, spotkać profesjonalistów oraz nauczyć się praktycznych umiejętności.",
+            "1": "W ramach współpracy z Collegium Witelona Uczelnia Państwowa poszukujemy studentów chcących odbyć praktyki w zakresie obowiązków inżyniera oprogramowania. Jest to świetna okazja, by poznać etos pracy programisty, spotkać profesjonalistów oraz nauczyć się praktycznych umiejętności.",
             "2": "Jeżeli studiujesz na innej uczelni, oczywiście również zachęcamy do kontaktu.",
             "3": "Oczekujemy znajomości programowania w języku PHP, wykorzystania paradygmatu obiektowego w aplikacjach internetowych, korzystania z gita i GitHuba, bycia komunikatywnym oraz chętnym do nauki i pracy w zespole."
           }
@@ -180,7 +180,7 @@
         "eloquent": "wiedział jak uniknąć problemu n+1 zapytań w Eloquencie",
         "tools": "korzystał ze zautomatyzowanych narzędzi do utrzymania jakości kodu",
         "xdebug": "debugował swoje aplikacje z Xdebugiem",
-        "processes": "mógł dołączyć do Github Flow, CR-ek i procesów CI/CD"
+        "processes": "mógł dołączyć do GitHub Flow, CR-ek i procesów CI/CD"
       },
       "stack-header": "Nasz stack",
       "stack-label": "W pełni rozumiemy, że każdy inżynier sam dobiera swoje narzędzia, więc nie chcemy tworzyć żadnych nieporozumień. Budujemy głównie systemy internetowe w PHP i Laravelu, a pracę zespołową prowadzimy w konkretnych narzędziach, żeby wszyscy wiedzieli na czym stoją. Są to:",
@@ -207,10 +207,10 @@
         },
         "docker": {
           "name": "Docker",
-          "description": "aby wszystko zamknąć w konternerach"
+          "description": "aby wszystko zamknąć w kontenerach"
         },
         "github": {
-          "name": "Github",
+          "name": "GitHub",
           "description": "do kontroli wersji, CR-ek i CI/CD"
         },
         "google": {
@@ -224,8 +224,8 @@
       },
       "application-header": "Aplikacja",
       "application": {
-        "1": "Jeżeli chciałbyś aplikować, wystarczy, że napiszesz mejla na",
-        "2": "z dołączonym CV, linkiem do profilu na Githubie i kilkoma słowami o sobie."
+        "1": "Jeżeli chcesz aplikować, wystarczy, że napiszesz mejla na",
+        "2": "z dołączonym CV, linkiem do profilu na GitHubie i kilkoma słowami o sobie."
       },
       "gdpr": "Administratorem Twoich danych osobowych jest Blumilk Sp. z o.o. z siedzibą w Legnicy, e-mail: career@blumilk.pl. Twoje dane osobowe przetwarzamy wyłącznie w celu przeprowadzenia rekrutacji obecnej i przyszłej, jeśli wyraziłeś stosowną zgodę w treści swojej aplikacji. Twoje dane osobowe podane w zgłoszeniu, wskazane w Kodeksie pracy lub w innych ustawach szczegółowych przetwarzamy w oparciu o przepisy prawa i ich podanie jest konieczne do wzięcia udziału w rekrutacji. Pozostałe dane osobowe (np. Twój wizerunek) przetwarzamy na podstawie Twojej dobrowolnej zgody, którą wyraziłaś/eś, wysyłając nam swoje zgłoszenie rekrutacyjne. Nie przekazujemy Twoich danych osobowych poza Europejski Obszar Gospodarczy. Twoje dane osobowe przetwarzamy w celu przeprowadzenia rekrutacji przez  okres 1 roku od momentu otrzymania od Ciebie aplikacji. Twoje dane osobowe możemy przekazać dostawcom usług publikacji ogłoszeń o pracę, dostawcom systemów do zarządzania rekrutacjami, dostawcom usług IT takich jak hosting oraz dostawcom systemów informatycznych. W każdym czasie możesz cofnąć zgodę, kontaktując się z nami pod adresem e-mail career@blumilk.pl. Cofnięcie zgody pozostaje bez wpływu na zgodność z prawem przetwarzania, którego dokonano na podstawie zgody przed jej cofnięciem. Masz również prawo dostępu do swoich danych, w tym uzyskania ich kopii, sprostowania danych, żądania ich usunięcia, ograniczenia przetwarzania, wniesienia sprzeciwu wobec przetwarzania oraz przeniesienia podanych danych (na których przetwarzanie wyraziłeś zgodę) do innego administratora danych. W razie naruszeń dotyczących Twoich danych osobowych masz prawo do wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych. Jeżeli chcesz, aby Twoje CV zostało wykorzystane do innych naszych rekrutacji, umieść dodatkowo w CV następującą zgodę: \"Zgadzam się na przetwarzanie przez Blumilk Sp. z o.o. z siedzibą w Legnicy danych osobowych zawartych w moim zgłoszeniu rekrutacyjnym dla celów przyszłych rekrutacji\"."
     },
