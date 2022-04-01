@@ -27,7 +27,7 @@
     "@tailwindcss/forms": "^0.5.0",
     "autoprefixer": "^10.4.4",
     "chai": "^4.3.6",
-    "cypress": "^9.5.2",
+    "cypress": "^9.5.3",
     "dotenv": "^16.0.0",
     "eslint": "^8.11.0",
     "eslint-config-standard": "^16.0.3",
