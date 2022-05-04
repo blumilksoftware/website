@@ -21,7 +21,7 @@
 
   const center = {
     center: [lng + window.innerWidth / 50000, lat],
-    zoom: zoom
+    zoom
   }
 
   onMount(async () => {
