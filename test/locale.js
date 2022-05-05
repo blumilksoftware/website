@@ -8,7 +8,6 @@ import pl from '../src/locale/pl.json'
 import careers from '../src/assets/careers'
 import counters from '../src/assets/counters'
 import navigation from '../src/assets/navigation'
-import references from '../src/assets/references'
 
 const locales = [en, pl]
 
@@ -49,11 +48,6 @@ describe('testing variables translations', () => {
   it('navigation', () => {
     for (const item of navigation) {
       assertIndexesAreTranslated(locales, item.label)
-    }
-  })
-  it('references', () => {
-    for (const item of references) {
-      assertIndexesAreTranslated(locales, 'pages.about.references.references.' + item.id)
     }
   })
 })
