@@ -7,7 +7,7 @@ class SocialMedia {
 }
 
 export default [
-  new SocialMedia('Clutch', 'copyright outline icon', 'https://clutch.co/profile/blumilk-0'),
+  new SocialMedia('Clutch', 'clutch icon', 'https://clutch.co/profile/blumilk-0'),
   new SocialMedia('Github', 'github icon', 'https://github.com/blumilksoftware'),
   new SocialMedia('LinkedIn', 'linkedin icon', 'https://linkedin.com/company/blumilksoftware'),
   new SocialMedia('Facebook', 'facebook icon', 'https://facebook.com/blumilksoftware'),

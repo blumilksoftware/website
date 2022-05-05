@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="layer" x="0px" y="0px" viewBox="0 0 128 128" xml:space="preserve" width="128" height="128">
+    <g id="g841" transform="translate(5.5254237,0.69067797)">
+        <path class="st0" d="m 86.6,88.200002 c -6,4.8 -14.4,8.4 -22.8,8.4 -19.2,0 -32.4,-14.4 -32.4,-33.6 0,-19.2 13.2,-32.4 32.4,-32.4 8.4,0 16.8,2.4 22.8,8.4 l 3.6,3.6 19.2,-18 -4.8,-3.6 C 93.8,11.400002 79.4,5.4000015 63.8,5.4000015 30.2,5.4000015 5,30.600002 5,64.200002 5,97.800002 30.2,123 63.8,123 c 15.6,0 30,-6 40.8,-15.6 l 4.8,-3.6 -19.2,-19.199998 z" id="path10" style="fill: currentColor"/>
+        <circle class="st1" cx="62.599998" cy="64.199997" r="19.200001" id="circle14" style="fill:#ef4335"/>
+    </g>
+</svg>
