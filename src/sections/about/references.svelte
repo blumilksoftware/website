@@ -1,31 +1,25 @@
-<Section classes="my-24 items-start">
+<Section classes="my-24 items-start" disableColumns="true">
     <div slot="header">{ $_('pages.about.references.header') }</div>
-    <div slot="description">
+    <div slot="description" class="w-2/3">
         <p class="pr-4">
             { $_('pages.about.references.lead') }
+            <a class="font-bold" href="https://clutch.co/profile/blumilk-0" target="_blank">Clutch</a>.
         </p>
-        <div class="my-12 grid grid-cols-2 md:grid-cols-5 gap-4 md:mr-16 md:mb-0 items-center" data-cy="references-images">
-            <img src="/images/clients/pwsz.png" alt="Państwowa Wyższa Szkoła Zawodowa im. Witelona w Legnicy"
-                 class="mx-auto relative z-10">
-            <img src="/images/clients/insly.png" alt="Insly Ltd." class="mx-auto relative z-10">
-            <img src="/images/clients/iizi.png" alt="Iizi Polska" class="mx-auto relative z-10">
-            <img src="/images/clients/logo.png" alt="Logo Soft-Com" class="mx-auto relative z-10">
-            <img src="/images/clients/wmd.png" alt="WMD Software" class="mx-auto relative z-10" data-cy="wmd-image">
+        <div class="my-12 grid grid-cols-2 md:grid-cols-5 gap-4 md:mr-16 md:mb-0 items-center">
         </div>
     </div>
-    <div slot="content">
-        {#each references as reference}
-            <ReferenceBalloon name="{ reference.name }" icon="{ reference.icon }"
-                              position="{ $_('pages.about.references.references.' + reference.id + '.position') }">
-                { $_('pages.about.references.references.' + reference.id + '.quote') }
-            </ReferenceBalloon>
-        {/each}
-    </div>
 </Section>
+
+<div class="container flex items-center justify-content w-full mx-auto text-gray-400 px-16 text-sm text-center md:text-left" data-cy="references-images">
+    {#each clients as client}
+        <div class="flex-1">
+            <img src="{ client.logo }" alt="{ client.name }" title="{ client.name }" class="mx-auto relative z-10 w-32">
+        </div>
+    {/each}
+</div>
 
 <script>
   import { _ } from 'svelte-i18n'
   import Section from '@/components/lead-section.svelte'
-  import ReferenceBalloon from '@/components/reference.svelte'
-  import references from '@/assets/references.js'
+  import clients from '@/assets/clients.js'
 </script>
