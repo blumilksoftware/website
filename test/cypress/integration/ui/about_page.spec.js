@@ -7,11 +7,6 @@ describe('About page', () => {
     cy.url().should('include', '/about')
   })
 
-  it('Contains WMD Software logo', () => {
-    cy.get('[data-cy="wmd-image"]')
-      .should('have.attr', 'data-cy', 'wmd-image')
-  })
-
   it('Shows no asterisk on Macbook 11', () => {
     cy.viewport('macbook-11')
 

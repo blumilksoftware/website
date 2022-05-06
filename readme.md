@@ -5,7 +5,7 @@
 ![package.json dependency version](https://img.shields.io/github/package-json/dependency-version/blumilksoftware/website/dev/tailwindcss?logo=npm&style=for-the-badge)
 
 # blumilk-website
-The source code of website hosted under [https://blumilk.pl/](https://blumilk.pl/)
+The source code of the website hosted under [https://blumilk.pl/](https://blumilk.pl/)
 
 ![Homepage screenshot](screenshot.png)
 

@@ -5,7 +5,7 @@ import navigationItems from '../src/assets/navigation'
 import socialLinks from '../src/assets/socials'
 import careerData from '../src/assets/careers'
 import contactData from '../src/assets/contact'
-import references from '../src/assets/references'
+import clients from '../src/assets/clients'
 import counters from '../src/assets/counters'
 
 function testDefaultAssetsArray (array, fileName, className) {
@@ -25,7 +25,7 @@ function testDefaultAssetsArray (array, fileName, className) {
 describe('testing assets', () => {
   testDefaultAssetsArray(navigationItems, 'navigation', 'NavigationItem')
   testDefaultAssetsArray(socialLinks, 'socials', 'SocialMedia')
-  testDefaultAssetsArray(references, 'references', 'Reference')
+  testDefaultAssetsArray(clients, 'clients', 'Client')
   testDefaultAssetsArray(counters, 'counters', 'Counter')
 
   describe('src/assets/careers.js', () => {

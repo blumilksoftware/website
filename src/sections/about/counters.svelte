@@ -2,7 +2,7 @@
     <div class="md:pl-8 text-center grid grid-cols-1 md:grid-cols-2 gap-4 lg:flex">
         {#each counters as counter}
             <div class="lg:flex-1">
-                <div class="font-bold text-6xl p-2">{ counter.number }</div>
+                <div class="tracking-tighter" style="font-size: 96px;">{ counter.number }</div>
                 <div>{ $_(counter.label) }</div>
             </div>
         {/each}

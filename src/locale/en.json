@@ -93,6 +93,18 @@
           "After work, we practice dozens of different hobbies: we ride bikes, hike in the mountains, play basketball, visit microbreweries, play board games, organize Jedi Academy tournaments and develop open source projects."
         ]
       },
+      "photos": {
+        "meetup3": "Laravel Poland Meetup #21, March 2022",
+        "birthday": "first Blumilk birthday, October 2021",
+        "lasertag": "lasertag integration trip, April 2021",
+        "helsinki": "Helsinki business trip, August 2021",
+        "meetup": "Laravel Poland Meetup #18, May 2021",
+        "quantum": "internal meetup, April 2022",
+        "energylandia": "Energylandia integration trip, October 2021",
+        "meetup2": "Laravel Poland Meetup #18, May 2021",
+        "rzeka": "outdoor programming sessions, Summer 2020",
+        "plane": "Warsaw-Tallinn flight, August 2021"
+      },
       "counters": {
         "members": "team members",
         "experience": "shared years of experience",
@@ -109,13 +121,7 @@
       },
       "references": {
         "header": "References",
-        "lead": "We want all our partners and customers to be 100% satisfied with us. Here are a few words about our projects.",
-        "references": {
-          "wmd": {
-            "quote": "Blumilk developers helped me with a project in the education industry. A quite specific problem was solved by them in no time, and all the tasks were delivered perfectly. I will be happy to cooperate in more projects with them.",
-            "position": "owner of WMD Software"
-          }
-        }
+        "lead": "We want all our partners and customers to be 100% satisfied with us. You can read a few words about our projects on the platform"
       }
     },
     "services": {
