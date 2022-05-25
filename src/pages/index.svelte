@@ -5,11 +5,11 @@
         <span class="text-brand">{ $_('pages.home.hero.focus') }</span>
         { $_('pages.home.hero.suffix') }
     </div>
-    <div slot="description" class="mt-16 text-xl">
+    <div slot="description" class="text-xl">
         { $_('pages.home.hero.about') }
     </div>
     <div slot="content">
-        <img class="p-24 relative z-10 pointer-events-none" src="/images/illustrations/software.svg"
+        <img class="px-4 py-8 sm:px-16 sm:py-8 md:px-24 lg:p-10 relative z-10 pointer-events-none" src="/images/illustrations/software.svg"
              alt="{ $_('pages.home.hero.prefix') } { $_('pages.home.hero.focus') } { $_('pages.home.hero.suffix') }"
              title="{ $_('pages.home.hero.prefix') } { $_('pages.home.hero.focus') } { $_('pages.home.hero.suffix') }">
     </div>
@@ -20,7 +20,7 @@
         { $_('pages.home.academic.header') }
     </div>
     <div slot="description">
-        <div class="mt-16 text-xl text-gray-500">
+        <div class="text-xl text-gray-500">
             {#each $_('pages.home.academic.content') as item}
                 <p class="pb-4">
                     { item }
@@ -29,7 +29,7 @@
         </div>
     </div>
     <div slot="content">
-        <img class="px-24 lg:p-24 relative z-10 pointer-events-none" src="/images/illustrations/uni.svg" alt="{ $_('pages.home.academic.header') }"
+        <img class="px-4 py-8 sm:px-16 sm:py-8 md:px-24 lg:p-10 relative z-10 pointer-events-none" src="/images/illustrations/uni.svg" alt="{ $_('pages.home.academic.header') }"
              title="{ $_('pages.home.academic.header') }">
     </div>
 </Section>
@@ -39,7 +39,7 @@
         { $_('pages.home.tools.header') }
     </div>
     <div slot="description">
-        <div class="mt-16 text-xl text-gray-500">
+        <div class="text-xl text-gray-500">
             {#each $_('pages.home.tools.content') as item}
                 <p class="pb-4">
                     { item }
@@ -48,7 +48,7 @@
         </div>
     </div>
     <div slot="content">
-        <img class="px-24 lg:p-24 relative z-10 pointer-events-none" src="/images/illustrations/tools.svg" alt="{ $_('pages.home.tools.header') }"
+        <img class="px-4 py-8 sm:px-16 sm:py-8 md:px-24 lg:p-10 relative z-10 pointer-events-none" src="/images/illustrations/tools.svg" alt="{ $_('pages.home.tools.header') }"
              title="{ $_('pages.home.tools.header') }">
     </div>
 </Section>
@@ -58,7 +58,7 @@
         { $_('pages.home.projects.header') }
     </div>
     <div slot="description">
-        <div class="mt-16 text-xl text-gray-500">
+        <div class="text-xl text-gray-500">
             {#each $_('pages.home.projects.content') as item}
                 <p class="pb-4">
                     { item }
@@ -67,7 +67,7 @@
         </div>
     </div>
     <div slot="content">
-        <img class="px-24 lg:p-24 relative z-10 pointer-events-none" src="/images/illustrations/projects.svg" alt="{ $_('pages.home.projects.header') }"
+        <img class="px-4 py-8 sm:px-16 sm:py-8 md:px-24 lg:p-10 relative z-10 pointer-events-none" src="/images/illustrations/projects.svg" alt="{ $_('pages.home.projects.header') }"
              title="{ $_('pages.home.projects.header') }">
     </div>
 </Section>
