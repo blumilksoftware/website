@@ -1,7 +1,7 @@
 <Section classes="md:my-12 items-start" disableColumns="true">
     <div slot="header">{ $_('pages.about.references.header') }</div>
     <div slot="description" class="text-center lg:text-left lg:w-2/3">
-        <p class="pr-4">
+        <p>
             { $_('pages.about.references.lead') }
             <a class="font-bold text-brand" href="https://clutch.co/profile/blumilk-0" target="_blank">Clutch</a>.
         </p>
