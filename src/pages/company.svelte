@@ -26,11 +26,11 @@
     <div slot="content" class="lg:text-right lg:mr-24 font-bold">
         <div class="my-8">
             <div class="text-3xl opacity-75">NIP</div>
-            <div class="text-5xl" data-cy="nip">{ contact.nip }</div>
+            <div class="text-4xl" data-cy="nip">{ contact.nip }</div>
         </div>
         <div class="my-8">
             <div class="text-3xl opacity-75">VAT</div>
-            <div class="text-5xl">{ contact.vat }</div>
+            <div class="text-4xl">{ contact.vat }</div>
         </div>
         <div class="my-8">
             <div class="text-xl opacity-75">REGON</div>
