@@ -1,6 +1,6 @@
 <Section classes="{ classes }">
     <div class="md:flex-1 w-full { headerClasses }">
-        <div class="text-4xl font-bold">
+        <div class="text-3xl sm:text-4xl font-bold">
             <slot name="header"/>
         </div>
         <div class="mt-8 text-lg text-gray-500">

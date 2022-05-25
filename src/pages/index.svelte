@@ -1,6 +1,6 @@
 <Meta title={ $_('title.blumilk-software-development') } description={ $_('description.blumilk-software-development') }/>
 <Section>
-    <div slot="header" class="text-4xl md:text-5xl lg:text-6xl">
+    <div slot="header" class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
         { $_('pages.home.hero.prefix') }
         <span class="text-brand">{ $_('pages.home.hero.focus') }</span>
         { $_('pages.home.hero.suffix') }
