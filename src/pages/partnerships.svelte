@@ -9,7 +9,7 @@
             { $_(partner.lead) }
         </div>
         <div slot="content">
-            <img class="p-12 relative z-10 pointer-events-none w-4/5 sm:w-3/5 md:w-3/4 xl:w-1/2 m-auto" src="{ partner.logo }" alt="{ $_(partner.header) }" title="{ $_(partner.header) }">
+            <img class="p-4 sm:p-12 relative z-10 pointer-events-none w-4/5 sm:w-3/5 md:w-3/4 m-auto" src="{ partner.logo }" alt="{ $_(partner.header) }" title="{ $_(partner.header) }">
         </div>
     </Section>
 {/each}

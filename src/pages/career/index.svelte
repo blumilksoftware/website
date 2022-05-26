@@ -9,7 +9,7 @@
         {:else}
             { $_('pages.career.lead') }
 
-            <div class="mt-12 sm:m-12 flex flex-row gap-2 relative z-10">
+            <div class="mt-12 sm:m-12 flex flex-col sm:flex-row gap-2 relative z-10">
                 {#each jobs as job}
                     <a href="{ $url(job.url) }" class="flex justify-center text-center items-center w-full py-2 px-2 rounded-md text-white bg-brand hover:bg-blue-500">
                         { $_(job.name) }
@@ -19,7 +19,7 @@
         {/if}
     </div>
     <div slot="content">
-        <img class="p-24 lg:px-24 relative z-10 pointer-events-none" src="/images/illustrations/cv.svg" alt="{ $_('pages.career.header') }"
+        <img class="px-4 py-8 sm:px-16 sm:py-8 md:px-24 lg:p-10 relative z-10 pointer-events-none" src="/images/illustrations/cv.svg" alt="{ $_('pages.career.header') }"
                 title="{ $_('pages.career.header') }">
     </div>
 </LeadSection>
