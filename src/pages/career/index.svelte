@@ -19,7 +19,7 @@
         {/if}
     </div>
     <div slot="content">
-        <img class="px-4 py-8 sm:px-16 sm:py-8 md:px-24 lg:p-10 relative z-10 pointer-events-none" src="/images/illustrations/cv.svg" alt="{ $_('pages.career.header') }"
+        <img class="px-4 py-8 sm:px-16 sm:py-8 md:px-12 xl:p-24 relative z-10 pointer-events-none" src="/images/illustrations/cv.svg" alt="{ $_('pages.career.header') }"
                 title="{ $_('pages.career.header') }">
     </div>
 </LeadSection>
