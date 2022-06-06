@@ -45,7 +45,7 @@ jobs:
         run: npm run lint
 
       - name: Cypress run
-        uses: cypress-io/github-action@v2.9.7
+        uses: cypress-io/github-action@v4
         with:
           start: npm run dev
           wait-on: http://localhost:8080
