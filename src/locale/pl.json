@@ -114,7 +114,7 @@
       "stack": {
         "header": "Tylko najlepsze narzędzia",
         "content": [
-          "Naszym podstawowym narzędziem pracy jest PHP i Laravel. Mamy wieloletnie doświadczenie z wieloma projektami w różnej skali, więc wiemy jak optymalnie wykorzystać ten framework do wyznaczonych celów. Korzystamy z Behata, PHPUnita, ECS-a i Psalma. Umiemy też pracować z Lumenem i Phalconem.",
+          "Naszym podstawowym narzędziem pracy jest PHP i Laravel. Mamy wieloletnie doświadczenie z wieloma projektami w różnej skali, więc wiemy jak optymalnie wykorzystać ten framework do wyznaczonych celów. Korzystamy z Behata, PHPUnita, PHP CS Fixera i Psalma. Umiemy też pracować z Lumenem i Phalconem.",
           "GitHub jest naszym podstawowym miejscem pracy. Korzystamy z niego jako systemu kontroli wersji, umożliwia nam code review, a także uruchamiamy CI/CD za pomocą GitHub Actions. Wszystkie nasze projekty są skonteneryzowane zgodnie z wymaganiami klienta.",
           "Frontend budujemy z wykorzystaniem bibliotek i frameworków JavaScript i CSS: Vue.js, React, Svelte, Tailwind i innych. Pracujemy z MySQL, PostgreSQL i innymi systemami zarządzania bazami danych. Mamy doświadczenie z Redisem, Elasticsearchem, RabbitMQ."
         ]
@@ -207,8 +207,8 @@
           "name": "PHPUnit",
           "description": "a także Behat, Dusk lub Cypress do testowania"
         },
-        "ecs": {
-          "name": "ECS",
+        "codestyle": {
+          "name": "PHP CS Fixer",
           "description": "do utrzymania jakości kodu"
         },
         "docker": {
