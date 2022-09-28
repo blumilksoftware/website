@@ -6,8 +6,8 @@ class Counter {
 }
 
 export default [
-  new Counter('members', 13),
-  new Counter('experience', 82),
-  new Counter('repositories', 32),
+  new Counter('members', 18),
+  new Counter('experience', 112),
+  new Counter('repositories', 45),
   new Counter('loc', '1000+')
 ]

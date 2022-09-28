@@ -114,7 +114,7 @@
       "stack": {
         "header": "Only the best tools",
         "content": [
-          "Our primary work tools are PHP and Laravel. We have many years of experience with many projects on various scales, so we know how to optimally use this framework for your goals. We use Behat, PHPUnit, ECS and Psalm. We can also work with Lumen and Phalcon.",
+          "Our primary work tools are PHP and Laravel. We have many years of experience with many projects on various scales, so we know how to optimally use this framework for your goals. We use Behat, PHPUnit, PHP CS Fixer and Psalm. We can also work with Lumen and Phalcon.",
           "GitHub is our primary workplace. We use it as a version control system, we handle code review there, and we run CI/CD there via GitHub Actions. All our projects are containerized with Docker according to the client's requirements.",
           "We build the frontend using JavaScript and CSS libraries and frameworks: Vue.js, React, Svelte, Tailwind and others. We work with MySQL, PostgreSQL and other database management systems. We have experience with Redis, Elasticsearch, RabbitMQ."
         ]
@@ -207,8 +207,8 @@
           "name": "PHPUnit",
           "description": "and Behat, Dusk or Cypress for testing"
         },
-        "ecs": {
-          "name": "ECS",
+        "codestyle": {
+          "name": "PHP CS Fixer",
           "description": "to maintain code quality"
         },
         "docker": {
