@@ -1,9 +1,10 @@
 import { describe, it } from 'mocha'
 import chai from 'chai'
 import flatten from 'flat'
+import fs from 'fs'
 
-import en from '../src/locale/en.json' assert { type: 'json' }
-import pl from '../src/locale/pl.json' assert { type: 'json' }
+const en = JSON.parse(fs.readFileSync('src/locale/en.json', 'utf8'))
+const pl = JSON.parse(fs.readFileSync('src/locale/pl.json', 'utf8'))
 
 import careers from '../src/assets/careers.js'
 import counters from '../src/assets/counters.js'
