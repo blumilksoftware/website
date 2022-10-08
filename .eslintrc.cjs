@@ -5,6 +5,7 @@ module.exports = {
     mocha: true
   },
   extends: ['standard', 'plugin:cypress/recommended'],
+  parser: "@babel/eslint-parser",
   parserOptions: {
     ecmaVersion: 2020,
     sourceType: 'module'
@@ -12,7 +13,8 @@ module.exports = {
   rules: {
     indent: ['error', 2],
     'no-multiple-empty-lines': ['error', { max: 1, maxBOF: 2, maxEOF: 0 }],
-    'import/first': ['off']
+    'import/first': ['off'],
+    'comma-dangle': ['error', 'always-multiline']
   },
   plugins: [
     'svelte3',

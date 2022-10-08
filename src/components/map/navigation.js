@@ -39,9 +39,9 @@ export default function (map, center) {
         icon: 'home icon',
         eventHandler: () => {
           map.flyTo(center)
-        }
-      }
-    ]
+        },
+      },
+    ],
   })
 
   map.addControl(home, 'top-left')

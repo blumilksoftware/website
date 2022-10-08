@@ -11,5 +11,5 @@ export default [
   new NavigationItem('./services', 'navigation.services'),
   new NavigationItem('./partnerships', 'navigation.partnerships'),
   new NavigationItem('./career', 'navigation.career'),
-  new NavigationItem('./contact', 'navigation.contact')
+  new NavigationItem('./contact', 'navigation.contact'),
 ]

@@ -23,6 +23,6 @@
   import Meta from '@/components/meta-title.svelte'
 
   export let linker = new Autolinker({
-    className: 'text-brand'
+    className: 'text-brand',
   })
 </script>

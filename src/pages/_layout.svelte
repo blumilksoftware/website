@@ -24,6 +24,6 @@
     { left: 70, size: 144, delay: 3, duration: 7, popping: false },
     { left: 72, size: 36, delay: 7, duration: 5, popping: false },
     { left: 75, size: 24, delay: 6, duration: 6, popping: false },
-    { left: 92, size: 108, delay: 0, duration: 8, popping: false }
+    { left: 92, size: 108, delay: 0, duration: 8, popping: false },
   ]
 </script>

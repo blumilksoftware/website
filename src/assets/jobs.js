@@ -8,5 +8,5 @@ class Job {
 
 export default [
   new Job('developer'),
-  new Job('intern')
+  new Job('intern'),
 ]

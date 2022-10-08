@@ -21,7 +21,7 @@
 
   const center = {
     center: [lng + window.innerWidth / 50000, lat],
-    zoom
+    zoom,
   }
 
   onMount(async () => {
@@ -30,7 +30,7 @@
     const map = new mapboxgl.Map({
       container: 'map',
       style: import.meta.env['VITE_MAPBOX_STYLE'],
-      ...center
+      ...center,
     })
 
     map.scrollZoom.disable()
