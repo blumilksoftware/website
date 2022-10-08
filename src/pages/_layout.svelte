@@ -1,16 +1,15 @@
-<Bubbles {bubbles}/>
-<Navigation items={items}/>
+<Bubbles {bubbles}></Bubbles>
+<Navigation items={items}></Navigation>
 
 <div class="w-full flex-grow flex flex-col justify-center items-center text-gray-700">
-    <slot/>
+    <slot></slot>
 </div>
 
-<Footer items={items} socials={socials} contact={contact}/>
+<Footer socials={socials}></Footer>
 
 <script>
   import items from '@/assets/navigation.js'
   import socials from '@/assets/socials.js'
-  import contact from '@/assets/contact.js'
 
   import Navigation from '@/layout/navigation.svelte'
   import Footer from '@/layout/footer.svelte'

@@ -58,7 +58,7 @@
     document.getElementById('contact').submit()
   }
 
-  export let url = env['CONTACT_FORM_URL'] + '/formResponse'
-  export let emailName = env['CONTACT_FORM_EMAIL_NAME']
-  export let questionName = env['CONTACT_FORM_QUESTION_NAME']
+  export let url = import.meta.env['VITE_CONTACT_FORM_URL'] + '/formResponse'
+  export let emailName = import.meta.env['VITE_CONTACT_FORM_EMAIL_NAME']
+  export let questionName = import.meta.env['VITE_CONTACT_FORM_QUESTION_NAME']
 </script>

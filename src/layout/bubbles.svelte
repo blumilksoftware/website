@@ -128,7 +128,7 @@
     @keyframes raise {
         0% {
             transform: translateY(0);
-            opacity: .75;
+            opacity: .5;
         }
 
         100% {

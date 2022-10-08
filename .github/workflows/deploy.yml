@@ -11,10 +11,10 @@ jobs:
     name: "Deploying website to GitHub Pages"
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@3.1.0
 
       - name: Cache node modules
-        uses: actions/cache@v2
+        uses: actions/cache@3.0.10
         env:
           cache-name: cache-node-modules
         with:
@@ -27,18 +27,18 @@ jobs:
 
       - name: Make envfile
         run: |
-          echo 'CONTACT_FORM_URL="${{ secrets.CONTACT_FORM_URL }}"' > .env
-          echo 'CONTACT_FORM_EMAIL_NAME="${{ secrets.CONTACT_FORM_EMAIL_NAME }}"' >> .env
-          echo 'CONTACT_FORM_QUESTION_NAME="${{ secrets.CONTACT_FORM_QUESTION_NAME }}"' >> .env
-          echo 'MAPBOX_STYLE="${{ secrets.MAPBOX_STYLE }}"' >> .env
-          echo 'MAPBOX_TOKEN="${{ secrets.MAPBOX_TOKEN }}"' >> .env
+          echo 'VITE_CONTACT_FORM_URL="${{ secrets.VITE_CONTACT_FORM_URL }}"' > .env
+          echo 'VITE_CONTACT_FORM_EMAIL_NAME="${{ secrets.VITE_CONTACT_FORM_EMAIL_NAME }}"' >> .env
+          echo 'VITE_CONTACT_FORM_QUESTION_NAME="${{ secrets.VITE_CONTACT_FORM_QUESTION_NAME }}"' >> .env
+          echo 'VITE_MAPBOX_STYLE="${{ secrets.VITE_MAPBOX_STYLE }}"' >> .env
+          echo 'VITE_MAPBOX_TOKEN="${{ secrets.VITE_MAPBOX_TOKEN }}"' >> .env
 
       - name: Install dependencies
         run: |
           npm install
           npm run build
 
-      - name: Handle 404s
+      - name: Handle SEO & 404s
         run: |
           cp index.html 404.html
 
@@ -47,10 +47,10 @@ jobs:
             mkdir $page
             cp index.html $page/index.html
           done
-        working-directory: public
+        working-directory: dist
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+        uses: JamesIves/github-pages-deploy-action@4.4.0
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: public

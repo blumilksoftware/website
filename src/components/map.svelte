@@ -25,11 +25,11 @@
   }
 
   onMount(async () => {
-    mapboxgl.accessToken = env['MAPBOX_TOKEN']
+    mapboxgl.accessToken = import.meta.env['VITE_MAPBOX_TOKEN']
 
     const map = new mapboxgl.Map({
       container: 'map',
-      style: env['MAPBOX_STYLE'],
+      style: import.meta.env['VITE_MAPBOX_STYLE'],
       ...center
     })
 
