@@ -4,8 +4,10 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "routify -c dev:vite",
-    "dev:vite": "vite --host",
+    "dev": "routify -c dev:vite:host",
+    "dev:cypress": "routify -c dev:vite",
+    "dev:vite": "vite",
+    "dev:vite:host": "vite --host",
     "build": "vite build",
     "preview": "vite preview",
     "test": "mocha --require @babel/register",
