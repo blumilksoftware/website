@@ -47,4 +47,4 @@ Please maintain our project guidelines:
 > `dcr` should be an alias to `docker-compose run --rm -u "$(id -u):$(id -g)"`
 
 ## Deployment
-Github Actions are configured to automatically publish all changes from `master` branch with all generated artifacts to `public` branch. GitHub Pages are configured to host built website.
+Github Actions are configured to automatically publish all changes from `main` branch with all generated artifacts to `public` branch. GitHub Pages are configured to host built website.
