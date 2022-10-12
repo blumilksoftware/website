@@ -57,41 +57,41 @@
       },
       "academic": {
         "header": "Bliska współpraca ze środowiskiem akademickim",
-        "content": [
-          "Nasza firma wywodzi się bezpośrednio ze środowiska akademickiego.",
-          "Nasi inżynierowie (włącznie z CEO i CTO) pracują na lokalnej uczelni wyższej jako nauczyciele przedmiotów informatycznych. Jesteśmy partnerami w naukowych konferencjach. Prowadzimy program praktyk dla najlepszych studentów.",
-          "Wierzymy, że nasza bliska współpraca z uczelnią pomaga nam utrzymać najwyższą jakość naszego oprogramowania."
-        ]
+        "content": {
+          "0": "Nasza firma wywodzi się bezpośrednio ze środowiska akademickiego.",
+          "1": "Nasi inżynierowie (włącznie z CEO i CTO) pracują na lokalnej uczelni wyższej jako nauczyciele przedmiotów informatycznych. Jesteśmy partnerami w naukowych konferencjach. Prowadzimy program praktyk dla najlepszych studentów.",
+          "2": "Wierzymy, że nasza bliska współpraca z uczelnią pomaga nam utrzymać najwyższą jakość naszego oprogramowania."
+        }
       },
       "tools": {
         "header": "Najlepsze narzędzia",
-        "content": [
-          "Nasi inżynierowie są doświadczeni w boju z najnowszymi narzędziami do wytwarzania oprogramowania.",
-          "Budujemy nowoczesne, skalowalne i solidne aplikacje webowe z wykorzystaniem frameworka Laravel. Pozwala nam to na pełne skupienie się na potrzebach klienta. Do frontendu oraz specjalnych przypadków używamy wyspecjalizowanych narzędzi skrojonych indywidualnie pod każde zadanie."
-        ]
+        "content": {
+          "0": "Nasi inżynierowie są doświadczeni w boju z najnowszymi narzędziami do wytwarzania oprogramowania.",
+          "1": "Budujemy nowoczesne, skalowalne i solidne aplikacje webowe z wykorzystaniem frameworka Laravel. Pozwala nam to na pełne skupienie się na potrzebach klienta. Do frontendu oraz specjalnych przypadków używamy wyspecjalizowanych narzędzi skrojonych indywidualnie pod każde zadanie."
+        }
       },
       "projects": {
         "header": "Zwinni i rzetelni",
-        "content": [
-          "Prowadzimy nasze projekty z wykorzystaniem zwinnych metodyk, które pozwalają na dostarczenie najlepszego produktu w oczekiwanym czasie. Podstawą naszej pracy jest komunikacja: między programistami, z klientem oraz końcowymi użytkownikami. Jesteśmy transparentni.",
-          "Dbamy o jakość naszego oprogramowania. Korzystamy ze zautomatyzowanych narzędzi do utrzymania jakości kodu, aby rozwój nowych funkcjonalności oraz aktualizacje przebiegały szybko i sprawnie. Jesteśmy rzemieślnikami."
-        ]
+        "content": {
+          "0": "Prowadzimy nasze projekty z wykorzystaniem zwinnych metodyk, które pozwalają na dostarczenie najlepszego produktu w oczekiwanym czasie. Podstawą naszej pracy jest komunikacja: między programistami, z klientem oraz końcowymi użytkownikami. Jesteśmy transparentni.",
+          "1": "Dbamy o jakość naszego oprogramowania. Korzystamy ze zautomatyzowanych narzędzi do utrzymania jakości kodu, aby rozwój nowych funkcjonalności oraz aktualizacje przebiegały szybko i sprawnie. Jesteśmy rzemieślnikami."
+        }
       }
     },
     "about": {
       "blumilk": {
         "header": "Kim jesteśmy?",
-        "company": [
-          "Blumilk to software house założony w Legnicy w październiku 2020 roku przez Piotra Nadybskiego i Krzysztofa Rewaka. Obaj pracowali wcześniej razem na lokalnej wyższej uczelni oraz przy kilku projektach informatycznych.",
-          "Nasi programiści i testerzy zdobywali swoje zawodowe doświadczenie zarówno w korporacjach, w firmach typu software house, we freelancerskich projektach czy też w agencjach kreatywnych. Pracowaliśmy dla klientów lokalnych oraz zagranicznych. Mieliśmy do czynienia z wielkimi międzynarodowymi projektami, wspieraniem funkcjonującego biznesu, obiecującymi startupami oraz projektami dla sektora publicznego.",
-          "Projektujemy, programujemy, wdrażamy i utrzymujemy najwyższej klasy oprogramowanie szyte na miarę. Specjalizujemy się w technologiach webowych oraz projektach badawczo-rozwojowych."
-        ],
-        "team": [
-          "Blumilk to przede wszystkim ludzie.",
-          "Mamy różne doświadczenia, uczyliśmy się na różnych uczelniach, pracowaliśmy z różnymi technologiami. Jesteśmy w różnym wieku, z różnymi poglądami i różnymi pomysłami na życie. Wszyscy natomiast chcemy pracować w stabilnym środowisku, przy ambitnych projektach i w fajnej atmosferze.",
-          "Legnica i okolice: stąd pochodzimy lub tu mieszkamy. Chcemy w profesjonalny sposób budować najlepsze oprogramowanie z dala od wielkomiejskiego zgiełku. Robimy to, co lubimy i lubimy, to co robimy.",
-          "Po pracy uprawiamy dziesiątki różnych hobby: jeździmy na rowerze, chodzimy po górach, gramy w kosza, zwiedzamy mikrobrowary, gramy w planszówki, organizujemy turnieje Jedi Academy, rozwijamy open source."
-        ]
+        "company": {
+          "0": "Blumilk to software house założony w Legnicy w październiku 2020 roku przez Piotra Nadybskiego i Krzysztofa Rewaka. Obaj pracowali wcześniej razem na lokalnej wyższej uczelni oraz przy kilku projektach informatycznych.",
+          "1": "Nasi programiści i testerzy zdobywali swoje zawodowe doświadczenie zarówno w korporacjach, w firmach typu software house, we freelancerskich projektach czy też w agencjach kreatywnych. Pracowaliśmy dla klientów lokalnych oraz zagranicznych. Mieliśmy do czynienia z wielkimi międzynarodowymi projektami, wspieraniem funkcjonującego biznesu, obiecującymi startupami oraz projektami dla sektora publicznego.",
+          "2": "Projektujemy, programujemy, wdrażamy i utrzymujemy najwyższej klasy oprogramowanie szyte na miarę. Specjalizujemy się w technologiach webowych oraz projektach badawczo-rozwojowych."
+        },
+        "team": {
+          "0": "Blumilk to przede wszystkim ludzie.",
+          "1": "Mamy różne doświadczenia, uczyliśmy się na różnych uczelniach, pracowaliśmy z różnymi technologiami. Jesteśmy w różnym wieku, z różnymi poglądami i różnymi pomysłami na życie. Wszyscy natomiast chcemy pracować w stabilnym środowisku, przy ambitnych projektach i w fajnej atmosferze.",
+          "2": "Legnica i okolice: stąd pochodzimy lub tu mieszkamy. Chcemy w profesjonalny sposób budować najlepsze oprogramowanie z dala od wielkomiejskiego zgiełku. Robimy to, co lubimy i lubimy, to co robimy.",
+          "3": "Po pracy uprawiamy dziesiątki różnych hobby: jeździmy na rowerze, chodzimy po górach, gramy w kosza, zwiedzamy mikrobrowary, gramy w planszówki, organizujemy turnieje Jedi Academy, rozwijamy open source."
+        }
       },
       "photos": {
         "meetup3": "Laravel Poland Meetup #21, marzec 2022",
@@ -113,11 +113,11 @@
       },
       "stack": {
         "header": "Tylko najlepsze narzędzia",
-        "content": [
-          "Naszym podstawowym narzędziem pracy jest PHP i Laravel. Mamy wieloletnie doświadczenie z wieloma projektami w różnej skali, więc wiemy jak optymalnie wykorzystać ten framework do wyznaczonych celów. Korzystamy z Behata, PHPUnita, PHP CS Fixera i Psalma. Umiemy też pracować z Lumenem i Phalconem.",
-          "GitHub jest naszym podstawowym miejscem pracy. Korzystamy z niego jako systemu kontroli wersji, umożliwia nam code review, a także uruchamiamy CI/CD za pomocą GitHub Actions. Wszystkie nasze projekty są skonteneryzowane zgodnie z wymaganiami klienta.",
-          "Frontend budujemy z wykorzystaniem bibliotek i frameworków JavaScript i CSS: Vue.js, React, Svelte, Tailwind i innych. Pracujemy z MySQL, PostgreSQL i innymi systemami zarządzania bazami danych. Mamy doświadczenie z Redisem, Elasticsearchem, RabbitMQ."
-        ]
+        "content": {
+          "0": "Naszym podstawowym narzędziem pracy jest PHP i Laravel. Mamy wieloletnie doświadczenie z wieloma projektami w różnej skali, więc wiemy jak optymalnie wykorzystać ten framework do wyznaczonych celów. Korzystamy z Behata, PHPUnita, PHP CS Fixera i Psalma. Umiemy też pracować z Lumenem i Phalconem.",
+          "1": "GitHub jest naszym podstawowym miejscem pracy. Korzystamy z niego jako systemu kontroli wersji, umożliwia nam code review, a także uruchamiamy CI/CD za pomocą GitHub Actions. Wszystkie nasze projekty są skonteneryzowane zgodnie z wymaganiami klienta.",
+          "2": "Frontend budujemy z wykorzystaniem bibliotek i frameworków JavaScript i CSS: Vue.js, React, Svelte, Tailwind i innych. Pracujemy z MySQL, PostgreSQL i innymi systemami zarządzania bazami danych. Mamy doświadczenie z Redisem, Elasticsearchem, RabbitMQ."
+        }
       },
       "references": {
         "header": "Referencje",
@@ -250,20 +250,20 @@
     "privacy": {
       "header": "Polityka prywatności",
       "lead": "Na naszej stronie internetowej stosujemy pliki cookies w celu świadczenia usług na najwyższym poziomie i dostosowania ich specjalnie do Twoich potrzeb. Pliki cookies są wykorzystywane do celów statystycznych.",
-      "qa": [
-        {
+      "qa": {
+        "general": {
           "question": "Pliki cookies – czyli co?",
           "answer": "Pliki cookies inaczej \"ciasteczka\" to małe pliki wysyłane przez stronę, którą odwiedzasz i zapisywane na twoim urządzeniu końcowym (komputerze, laptopie, smartfonie)."
         },
-        {
+        "purpose": {
           "question": "Dlaczego używamy ciasteczek?",
           "answer": "Stosujemy pliki cookies w celach szacunkowych, aby poznać ilość użytkowników odwiedzających naszą stronę internetową. Te dane umożliwiają nam analizę, a co za tym idzie stały rozwój strony. W tym celu korzystamy także z \"Google Analytics\". Co istotne \"Google Analytics\" zapisuje tylko adres IP przypisany do Ciebie w dniu wizyty na tej stronie, a nie Twoje imię i nazwisko lub inne informacje umożliwiające identyfikację. Szczegóły dotyczące działania \"Google Analytics\" znajdziesz pod adresem https://policies.google.com/privacy oraz https://www.google.com/analytics/terms/."
         },
-        {
+        "questions": {
           "question": "Masz pytania?",
           "answer": "Jeśli chcesz dowiedzieć się więcej o naszej Polityce Prywatności skorzystaj z formularza kontaktowego lub napisz do nas na adres: hello@blumilk.pl"
         }
-      ]
+      }
     },
     "company": {
       "header": "Dane firmy",

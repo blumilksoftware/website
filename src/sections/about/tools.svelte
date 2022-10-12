@@ -1,11 +1,9 @@
 <Section classes="flex-row-reverse" contentClasses="hidden xl:block">
     <div slot="header">{ $_('pages.about.stack.header') }</div>
     <div slot="description">
-        {#each $_('pages.about.stack.content') as item}
-            <p class="lg:pr-12 pb-4">
-                { item }
-            </p>
-        {/each}
+        <p class="lg:pr-12 pb-4">{ $_('pages.about.stack.content.0') }</p>
+        <p class="lg:pr-12 pb-4">{ $_('pages.about.stack.content.1') }</p>
+        <p class="lg:pr-12 pb-4">{ $_('pages.about.stack.content.2') }</p>
     </div>
     <div slot="content" class="hexagons p-4 relative z-10 pointer-events-none">
         <div class="flex ml-16">

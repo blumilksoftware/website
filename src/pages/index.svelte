@@ -21,11 +21,9 @@
     </div>
     <div slot="description">
         <div class="text-xl text-gray-500">
-            {#each $_('pages.home.academic.content') as item}
-                <p class="pb-4">
-                    { item }
-                </p>
-            {/each}
+            <p class="pb-4">{ $_('pages.home.academic.content.0') }</p>
+            <p class="pb-4">{ $_('pages.home.academic.content.1') }</p>
+            <p class="pb-4">{ $_('pages.home.academic.content.2') }</p>
         </div>
     </div>
     <div slot="content">
@@ -40,11 +38,8 @@
     </div>
     <div slot="description">
         <div class="text-xl text-gray-500">
-            {#each $_('pages.home.tools.content') as item}
-                <p class="pb-4">
-                    { item }
-                </p>
-            {/each}
+            <p class="pb-4">{ $_('pages.home.tool.content.0') }</p>
+            <p class="pb-4">{ $_('pages.home.tools.content.1') }</p>
         </div>
     </div>
     <div slot="content">
@@ -59,16 +54,12 @@
     </div>
     <div slot="description">
         <div class="text-xl text-gray-500">
-            {#each $_('pages.home.projects.content') as item}
-                <p class="pb-4">
-                    { item }
-                </p>
-            {/each}
+            <p class="pb-4">{ $_('pages.home.projects.content.0') }</p>
+            <p class="pb-4">{ $_('pages.home.projects.content.1') }</p>
         </div>
     </div>
     <div slot="content">
-        <img class="px-4 py-8 sm:px-16 sm:py-8 md:px-12 xl:p-24 relative z-10 pointer-events-none" src="/images/illustrations/projects.svg" alt="{ $_('pages.home.projects.header') }"
-             title="{ $_('pages.home.projects.header') }">
+        <img class="px-4 py-8 sm:px-16 sm:py-8 md:px-12 xl:p-24 relative z-10 pointer-events-none" src="/images/illustrations/projects.svg" alt="{ $_('pages.home.projects.header') }" title="{ $_('pages.home.projects.header') }">
     </div>
 </Section>
 

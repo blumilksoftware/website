@@ -6,10 +6,14 @@
     <div slot="description" class="text-base">
         { $_('pages.privacy.lead') }
 
-        {#each $_('pages.privacy.qa') as qa}
-            <h3 class="mt-4 mb-1 text-gray-600 font-bold text-lg">{ qa.question }</h3>
-            {@html linker.link(qa.answer) }
-        {/each}
+        <h3 class="mt-4 mb-1 text-gray-600 font-bold text-lg">{ $_('pages.privacy.qa.general.question') }</h3>
+        {@html linker.link($_('pages.privacy.qa.general.answer')) }
+
+        <h3 class="mt-4 mb-1 text-gray-600 font-bold text-lg">{ $_('pages.privacy.qa.purpose.question') }</h3>
+        {@html linker.link($_('pages.privacy.qa.purpose.answer')) }
+
+        <h3 class="mt-4 mb-1 text-gray-600 font-bold text-lg">{ $_('pages.privacy.qa.questions.question') }</h3>
+        {@html linker.link($_('pages.privacy.qa.questions.answer')) }
     </div>
     <div slot="content">
         <img class="px-4 py-8 sm:px-16 sm:py-8 md:px-12 xl:p-24 relative z-10 pointer-events-none" src="/images/illustrations/privacy.svg" alt="{ $_('pages.privacy.header') }"
