@@ -1,11 +1,9 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: {
-    enabled: !process.env.ROLLUP_WATCH,
-    content: [
-      './src/**/*.svelte',
-      './public/index.html',
-    ],
-  },
+  content: [
+    './src/**/*.svelte',
+    './index.html',
+  ],
   theme: {
     maxWidth: {
       '1/4': '25%',
@@ -20,8 +18,7 @@ module.exports = {
       },
     },
   },
-  variants: {},
   plugins: [
-    require('@tailwindcss/forms')
+    require('@tailwindcss/forms'),
   ],
 }

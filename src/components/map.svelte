@@ -21,16 +21,16 @@
 
   const center = {
     center: [lng + window.innerWidth / 50000, lat],
-    zoom
+    zoom,
   }
 
   onMount(async () => {
-    mapboxgl.accessToken = env['MAPBOX_TOKEN']
+    mapboxgl.accessToken = import.meta.env['VITE_MAPBOX_TOKEN']
 
     const map = new mapboxgl.Map({
       container: 'map',
-      style: env['MAPBOX_STYLE'],
-      ...center
+      style: import.meta.env['VITE_MAPBOX_STYLE'],
+      ...center,
     })
 
     map.scrollZoom.disable()

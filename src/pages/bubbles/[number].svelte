@@ -15,8 +15,8 @@
           size: getRandomInteger(20, 150),
           delay: getRandomInteger(4, 10),
           duration: getRandomInteger(5, 14),
-          popping: false
-        }
+          popping: false,
+        },
       )
     }
     return generatedBubbles

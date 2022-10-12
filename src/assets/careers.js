@@ -27,7 +27,7 @@ const requirements = [
   new Requirement('eloquent'),
   new Requirement('tools'),
   new Requirement('xdebug'),
-  new Requirement('processes')
+  new Requirement('processes'),
 ]
 
 const stack = [
@@ -39,7 +39,7 @@ const stack = [
   new Stack('docker'),
   new Stack('github'),
   new Stack('google'),
-  new Stack('slack')
+  new Stack('slack'),
 ]
 
 export default new CareerData(requirements, stack)

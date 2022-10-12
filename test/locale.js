@@ -1,19 +1,24 @@
 import { describe, it } from 'mocha'
 import chai from 'chai'
 import flatten from 'flat'
+import fs from 'fs'
 
-import en from '../src/locale/en.json'
-import pl from '../src/locale/pl.json'
+const en = JSON.parse(fs.readFileSync('src/locale/en.json', 'utf8'))
+const pl = JSON.parse(fs.readFileSync('src/locale/pl.json', 'utf8'))
 
-import careers from '../src/assets/careers'
-import counters from '../src/assets/counters'
-import navigation from '../src/assets/navigation'
+import careers from '../src/assets/careers.js'
+import counters from '../src/assets/counters.js'
+import navigation from '../src/assets/navigation.js'
 
 const locales = [en, pl]
 
 function assertHaveSameKeys (...objects) {
-  const allKeys = objects.reduce((keys, object) => keys.concat(Object.keys(object)), [])
+  const allKeys = objects.reduce(
+    (keys, object) => keys.concat(Object.keys(object)),
+    [],
+  )
   const union = new Set(allKeys)
+
   return objects.every(object => union.size === Object.keys(object).length)
 }
 

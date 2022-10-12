@@ -20,7 +20,7 @@
       `left: ${bubble.left}%`,
       `width: ${bubble.size}px`,
       `height: ${bubble.size}px`,
-      `animation-delay: ${bubble.delay}s`
+      `animation-delay: ${bubble.delay}s`,
     ]
 
     if (bubble.duration) {
@@ -54,20 +54,20 @@
     const animation = particle.animate([
       {
         transform: `translate(${destinationX / 3}px, ${destinationY / 3}px)`,
-        opacity: 0
+        opacity: 0,
       },
       {
         opacity: 1,
-        offset: 0.2
+        offset: 0.2,
       },
       {
         transform: `translate(${destinationX}px, ${destinationY}px)`,
-        opacity: 0
-      }
+        opacity: 0,
+      },
     ], {
       duration: 300 + Math.random() * 1000,
       easing: 'ease-out',
-      delay: Math.random() * 200
+      delay: Math.random() * 200,
     })
 
     animation.onfinish = () => {
@@ -128,7 +128,7 @@
     @keyframes raise {
         0% {
             transform: translateY(0);
-            opacity: .75;
+            opacity: .5;
         }
 
         100% {

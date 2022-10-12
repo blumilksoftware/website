@@ -1,12 +1,12 @@
 import { describe, it } from 'mocha'
 import chai from 'chai'
 
-import navigationItems from '../src/assets/navigation'
-import socialLinks from '../src/assets/socials'
-import careerData from '../src/assets/careers'
-import contactData from '../src/assets/contact'
-import clients from '../src/assets/clients'
-import counters from '../src/assets/counters'
+import navigationItems from '../src/assets/navigation.js'
+import socialLinks from '../src/assets/socials.js'
+import careerData from '../src/assets/careers.js'
+import contactData from '../src/assets/contact.js'
+import clients from '../src/assets/clients.js'
+import counters from '../src/assets/counters.js'
 
 function testDefaultAssetsArray (array, fileName, className) {
   describe('src/assets/' + fileName + '.js', () => {
@@ -51,7 +51,7 @@ describe('testing assets', () => {
         'vat',
         'regon',
         'krs',
-        'addresses'
+        'addresses',
       ]
 
       for (const field of fields) {

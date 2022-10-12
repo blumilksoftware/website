@@ -57,41 +57,41 @@
       },
       "academic": {
         "header": "Close ties with academic environment",
-        "content": [
-          "Our company came directly from the academic environment.",
-          "Our engineers (including CEO and CTO) are working at the local university as teachers of Computer Science classes. We are partners in scientific conferences. We conduct internship programme for the most gifted students.",
-          "We believe that our close cooperation with the university helps us maintain the quality of our software."
-        ]
+        "content": {
+          "0": "Our company came directly from the academic environment.",
+          "1": "Our engineers (including CEO and CTO) are working at the local university as teachers of Computer Science classes. We are partners in scientific conferences. We conduct internship programme for the most gifted students.",
+          "2": "We believe that our close cooperation with the university helps us maintain the quality of our software."
+        }
       },
       "tools": {
         "header": "State-of-the-art tools",
-        "content": [
-          "Our engineers are highly experienced with the most modern tools for software development.",
-          "We are building progressive, scalable and solid web applications on top of Laravel framework. This allows us to fully focus on the client's business needs. For frontend and special cases we are using specialized tools for every specific task."
-        ]
+        "content": {
+          "0": "Our engineers are highly experienced with the most modern tools for software development.",
+          "1": "We are building progressive, scalable and solid web applications on top of Laravel framework. This allows us to fully focus on the client's business needs. For frontend and special cases we are using specialized tools for every specific task."
+        }
       },
       "projects": {
         "header": "Agile & solid",
-        "content": [
-          "We run our projects using agile methodologies that allow us to deliver the best product in the expected time. The basis of our work is communication: between programmers, with the client and with the end users. We are transparent.",
-          "We care about the quality of our software. We use automated code quality tools to ensure that the development of new functionalities and updates are carried out quickly and efficiently. We are artisans."
-        ]
+        "content": {
+          "0": "We run our projects using agile methodologies that allow us to deliver the best product in the expected time. The basis of our work is communication: between programmers, with the client and with the end users. We are transparent.",
+          "1": "We care about the quality of our software. We use automated code quality tools to ensure that the development of new functionalities and updates are carried out quickly and efficiently. We are artisans."
+        }
       }
     },
     "about": {
       "blumilk": {
         "header": "Who are we?",
-        "company": [
-          "Blumilk is a software house founded in Legnica, Poland in October 2020 by Piotr Nadybski and Krzysztof Rewak. They both worked together previously at a local university and on several IT projects.",
-          "Our developers and testers have gained their professional experience in corporations, software houses, freelance projects and creative agencies. We have worked for local and foreign clients. We have dealt with huge international projects, supporting a functioning business, promising startups and projects for the public sector.",
-          "We design, develop, deploy and maintain top-class, tailor-made software. We specialize in web technologies and research and development projects."
-        ],
-        "team": [
-          "Blumilk is the people.",
-          "We have different experiences, we studied at different universities, we worked with different technologies. We are of different ages, with different views and different ideas about life. However, we all want to work in a stable environment, with ambitious projects and in a cool atmosphere.",
-          "Legnica and its region: this is where we come from or live. We want to build professionally the best software, away from the hustle and bustle of the city. We do what we like and we like what we do.",
-          "After work, we practice dozens of different hobbies: we ride bikes, hike in the mountains, play basketball, visit microbreweries, play board games, organize Jedi Academy tournaments and develop open source projects."
-        ]
+        "company": {
+          "0": "Blumilk is a software house founded in Legnica, Poland in October 2020 by Piotr Nadybski and Krzysztof Rewak. They both worked together previously at a local university and on several IT projects.",
+          "1": "Our developers and testers have gained their professional experience in corporations, software houses, freelance projects and creative agencies. We have worked for local and foreign clients. We have dealt with huge international projects, supporting a functioning business, promising startups and projects for the public sector.",
+          "2": "We design, develop, deploy and maintain top-class, tailor-made software. We specialize in web technologies and research and development projects."
+        },
+        "team": {
+          "0": "Blumilk is the people.",
+          "1": "We have different experiences, we studied at different universities, we worked with different technologies. We are of different ages, with different views and different ideas about life. However, we all want to work in a stable environment, with ambitious projects and in a cool atmosphere.",
+          "2": "Legnica and its region: this is where we come from or live. We want to build professionally the best software, away from the hustle and bustle of the city. We do what we like and we like what we do.",
+          "3": "After work, we practice dozens of different hobbies: we ride bikes, hike in the mountains, play basketball, visit microbreweries, play board games, organize Jedi Academy tournaments and develop open source projects."
+        }
       },
       "photos": {
         "meetup3": "Laravel Poland Meetup #21, March 2022",
@@ -113,11 +113,11 @@
       },
       "stack": {
         "header": "Only the best tools",
-        "content": [
-          "Our primary work tools are PHP and Laravel. We have many years of experience with many projects on various scales, so we know how to optimally use this framework for your goals. We use Behat, PHPUnit, PHP CS Fixer and Psalm. We can also work with Lumen and Phalcon.",
-          "GitHub is our primary workplace. We use it as a version control system, we handle code review there, and we run CI/CD there via GitHub Actions. All our projects are containerized with Docker according to the client's requirements.",
-          "We build the frontend using JavaScript and CSS libraries and frameworks: Vue.js, React, Svelte, Tailwind and others. We work with MySQL, PostgreSQL and other database management systems. We have experience with Redis, Elasticsearch, RabbitMQ."
-        ]
+        "content": {
+          "0": "Our primary work tools are PHP and Laravel. We have many years of experience with many projects on various scales, so we know how to optimally use this framework for your goals. We use Behat, PHPUnit, PHP CS Fixer and Psalm. We can also work with Lumen and Phalcon.",
+          "1": "GitHub is our primary workplace. We use it as a version control system, we handle code review there, and we run CI/CD there via GitHub Actions. All our projects are containerized with Docker according to the client's requirements.",
+          "2": "We build the frontend using JavaScript and CSS libraries and frameworks: Vue.js, React, Svelte, Tailwind and others. We work with MySQL, PostgreSQL and other database management systems. We have experience with Redis, Elasticsearch, RabbitMQ."
+        }
       },
       "references": {
         "header": "References",
@@ -250,20 +250,20 @@
     "privacy": {
       "header": "Privacy policy",
       "lead": "On our website, we use cookies to provide services at the highest level and use them specifically to your needs. Cookies are used for statistical purposes.",
-      "qa": [
-        {
+      "qa": {
+        "general": {
           "question": "Cookies - what is it?",
           "answer": "Cookies are small files sent by the website you visit and saved on your end device (computer, laptop, smartphone)."
         },
-        {
+        "purpose": {
           "question": "Why do we use cookies?",
           "answer": "We use cookies for statistical purposes to get the number of users visiting our website. This data enables us to analyze and develop the website. We also use \"Google Analytics\" for this purpose. Importantly, \"Google Analytics\" only saves the IP address assigned to you on the day you visit this website, not your name or other identifying information. More details about \"Google Analytics\" you can find at https://policies.google.com/privacy and https://www.google.com/analytics/terms/."
         },
-        {
+        "questions": {
           "question": "Do you have any questions?",
           "answer": "If you want to find out more about our Privacy Policy, use the contact form or write to us at hello@blumilk.pl"
         }
-      ]
+      }
     },
     "company": {
       "header": "Company information",

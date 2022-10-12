@@ -1,7 +1,8 @@
 {
   "presets": [
-    [
-      "@babel/preset-env"
-    ]
+    "@babel/preset-env"
+  ],
+  "plugins": [
+    "@babel/syntax-import-assertions"
   ]
 }

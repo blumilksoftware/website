@@ -4,7 +4,7 @@ export default {
   emails: [
     'hello@blumilk.pl',
     'office@blumilk.pl',
-    'career@blumilk.pl'
+    'career@blumilk.pl',
   ],
   nip: '6912551135',
   vat: 'PL6912551135',
@@ -14,12 +14,12 @@ export default {
     official: {
       address: 'ul. rtm. Witolda Pileckiego 14',
       city: '59-220 Legnica',
-      country: 'Poland'
+      country: 'Poland',
     },
     office: {
       address: 'ul. Najświętszej Marii Panny 5F/5',
       city: '59-220 Legnica',
-      country: 'Poland'
-    }
-  }
+      country: 'Poland',
+    },
+  },
 }

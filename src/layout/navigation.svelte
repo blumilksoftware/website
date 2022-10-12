@@ -84,17 +84,12 @@
 <style>
     #cursor {
         -webkit-animation: blink 1.5s infinite;
+        animation: blink 1.5s infinite;
     }
 
-    @-webkit-keyframes blink {
-        0% {
-            opacity: 1;
-        }
+    @keyframes blink {
         50% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
+            opacity: 0.0;
         }
     }
 </style>

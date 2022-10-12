@@ -11,5 +11,5 @@ class Partner {
 export default [
   new Partner('lpm', '/images/partnerships/lpm.png'),
   new Partner('soda', '/images/partnerships/soda.png'),
-  new Partner('cwup', '/images/partnerships/cwup.png')
+  new Partner('cwup', '/images/partnerships/cwup.png'),
 ]
