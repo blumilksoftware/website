@@ -8,7 +8,7 @@
     "dev:cypress": "routify -c dev:vite",
     "dev:vite": "vite",
     "dev:vite:host": "vite --host",
-    "build": "vite build",
+    "build": "routify -b && vite build",
     "preview": "vite preview",
     "test": "mocha --require @babel/register",
     "lint": "eslint src test"
