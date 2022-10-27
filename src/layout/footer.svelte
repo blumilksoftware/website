@@ -11,10 +11,10 @@
         <div class="mt-8 lg:mt-0 lg:order-1">
             <div class="text-center text-base text-gray-700">
                 <span>&copy; { year } Blumilk</span>
-                <div class="text-center block lg:inline">
-                    <a href="{ $url('./privacy') }" class="hover:text-gray-900 ml-4">{ $_('footer.privacy') }</a>
-                    <a href="{ $url('./company') }" class="hover:text-gray-900 ml-4">{ $_('footer.company') }</a>
-                    <a href="https://github.com/blumilksoftware/website" target="_blank" class="hover:text-gray-900 ml-4">{ $_('footer.source') }</a>
+                <div class="text-center block mt-8 lg:mt-0 lg:inline">
+                    <a href="{ $url('./privacy') }" class="block lg:inline hover:text-gray-900 ml-4">{ $_('footer.privacy') }</a>
+                    <a href="{ $url('./company') }" class="block lg:inline hover:text-gray-900 ml-4">{ $_('footer.company') }</a>
+                    <a href="https://github.com/blumilksoftware/website" target="_blank" class="block lg:inline hover:text-gray-900 ml-4">{ $_('footer.source') }</a>
                 </div>
             </div>
         </div>
@@ -32,7 +32,6 @@
 <style>
     .clutch.icon {
         margin-top: 5px;
-        margin-left: 24px;
         width: 18px;
         height: 18px;
         background-size: cover;
