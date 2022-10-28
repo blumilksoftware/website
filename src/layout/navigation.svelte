@@ -31,7 +31,7 @@
 <div class="mb-48"></div>
 
 {#if show}
-    <div class="md:hidden fixed w-full h-full flex flex-col justify-center items-center bg-white bg-opacity-95 p-4 z-20" on:click={ switchMenu }>
+    <div class="md:hidden fixed w-full h-full flex flex-col justify-center items-center bg-white bg-opacity-95 p-4 z-30" on:click={ switchMenu }>
         <div class="flex flex-col w-full text-center">
             <a href="{ $url('./') }" class="mx-auto mb-12">
                 <img src="/logo.svg" alt="Blumilk" class="w-24">

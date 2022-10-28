@@ -38,7 +38,7 @@
     </div>
     <div slot="description">
         <div class="text-xl text-gray-500">
-            <p class="pb-4">{ $_('pages.home.tool.content.0') }</p>
+            <p class="pb-4">{ $_('pages.home.tools.content.0') }</p>
             <p class="pb-4">{ $_('pages.home.tools.content.1') }</p>
         </div>
     </div>
