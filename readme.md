@@ -1,5 +1,4 @@
 ![deploy workflow status](https://img.shields.io/github/actions/workflow/status/blumilksoftware/website/deploy.yml?branch=main)
-![check workflow status](https://img.shields.io/github/actions/workflow/status/blumilksoftware/website/check.yml?branch=main)
 ![last commit](https://img.shields.io/github/last-commit/blumilksoftware/website?logo=github&style=for-the-badge)
 ![package.json dependency version](https://img.shields.io/github/package-json/dependency-version/blumilksoftware/website/dev/svelte?logo=npm&style=for-the-badge)
 ![package.json dependency version](https://img.shields.io/github/package-json/dependency-version/blumilksoftware/website/dev/tailwindcss?logo=npm&style=for-the-badge)
