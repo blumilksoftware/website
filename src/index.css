@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.icon {
+    height: 1em;
+    max-width: max-content;
+}
+
+.large-icon {
+    height: 1.5em;
+    max-width: max-content;
+}

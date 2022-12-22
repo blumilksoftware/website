@@ -25,8 +25,8 @@
                 </div>
                 <div class="flex-1 md:pr-12 md:pl-4 py-2">
                     <div on:click={ handleFormSubmit }
-                         class="text-center px-4 py-2 mt-1 block w-full rounded-md bg-brand text-white cursor-pointer">
-                        { $_('pages.contact.send') } <i class="fitted google icon"></i> Forms
+                         class="flex items-center justify-center px-4 py-2 mt-1 block w-full rounded-md bg-brand text-white cursor-pointer">
+                        { $_('pages.contact.send') } <div class="m-0 icon pl-1 pr-1"><FaGoogle /></div> Forms
                     </div>
                 </div>
             </div>
@@ -53,6 +53,7 @@
   import Section from '@/components/lead-section.svelte'
   import Map from '@/components/map.svelte'
   import Meta from '@/components/meta-title.svelte'
+  import FaGoogle from 'svelte-icons/fa/FaGoogle.svelte'
 
   function handleFormSubmit () {
     document.getElementById('contact').submit()

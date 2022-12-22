@@ -23,8 +23,10 @@
                 <img class="w-6 cursor-pointer" on:click={ switchLocale } src="{ $_('locale.flag') }" data-cy={$_('locale.language')} alt="{ $_('locale.language') }" title="{ $_('locale.language') }">
             </div>
         </div>
-        <div class="flex-grow cursor-pointer text-right md:hidden" on:click={ switchMenu }>
-            <i class="large bars icon" data-cy="menu-bars"></i>
+        <div class="flex-grow cursor-pointer md:hidden" on:click={ switchMenu }>
+            <div class="large-icon ml-auto">
+                <FaBars />
+            </div>
         </div>
     </div>
 </div>
@@ -56,6 +58,7 @@
 <script>
   import { url } from '@roxi/routify'
   import { _, locale } from 'svelte-i18n'
+  import FaBars from 'svelte-icons/fa/FaBars.svelte'
 
   function switchLocale () {
     localStorage.setItem('locale', $_('locale.code'))
@@ -80,7 +83,6 @@
   export let items
   export let show = false
 </script>
-
 <style>
     #cursor {
         -webkit-animation: blink 1.5s infinite;
