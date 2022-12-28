@@ -127,7 +127,7 @@
     "services": {
       "r&d": {
         "header": "Badania i rozwój",
-        "lead": "Mamy doświadczenie w prowadzeniu projektów badawczo-rozwojowych. Nasi inżynierowie mieli do czynienia z przekrojem popularnych zagadnień  badawczych: między innymi z przetwarzaniem big data, problemami szeregowania zadań, wykorzystaniem sztucznej inteligencji czy szeroko pojętą optymalizacją. Członkowie naszego zespołu pracowali również jako koordynatorzy projektów R&D, więc dokładnie znamy procesy i problemy takich projektów."
+        "lead": "Mamy doświadczenie w prowadzeniu projektów badawczo-rozwojowych. Nasi inżynierowie mieli do czynienia z szerokim zakresem popularnych zagadnień badawczych, takich jak przetwarzanie dużych zbiorów danych (big data), rozwiązywanie problemów szeregowania zadań, wykorzystywanie sztucznej inteligencji oraz optymalizacją. Członkowie naszego zespołu pracowali również jako koordynatorzy projektów R&D, dzięki czemu doskonale znamy procesy i wyzwania związane z tego typu projektami."
       },
       "web": {
         "header": "Szyte na miarę aplikacje webowe",
@@ -135,13 +135,13 @@
       },
       "business": {
         "header": "Pomoc dla Twojego biznesu",
-        "lead": "W pełni rozumiemy, że oprogramowanie ma rozwiązywać problemy biznesu: optymalizować zadania i zasoby, zabezpieczać dane, umożliwiać dalsze skalowanie, ułatwiać życie. W obecnych czasach na systemach informatycznych opiera się często większość lub praktycznie wszystkie zachodzące w firmach procesy. Chcemy pomóc w tym, aby wszystko działało jak najlepiej."
+        "lead": "W pełni rozumiemy, że oprogramowanie ma rozwiązywać problemy biznesu: optymalizować zadania i zasoby, chronić dane, umożliwiać dalsze skalowanie, ułatwiać życie. W obecnych czasach na systemach informatycznych opiera się często większość lub praktycznie wszystkie zachodzące w firmach procesy. Chcemy pomóc w tym, aby wszystko działało jak najlepiej."
       }
     },
     "partnerships": {
       "soda": {
         "header": "Software Development Association Poland",
-        "lead": "Software Development Association Poland (SoDA) jest organizacją mającą na celu rozwijanie współpracy pomiędzy firmami tworzącymi oprogramowanie. Jest to najstarsza i największa w Polsce Organizacja Pracodawców Usług IT, która stanowi kopalnię kontaktów i wiedzy pomagającej rozwijać działalność firm działających w naszej branży. Tym samym jesteśmy w setce najbardziej liczących się na rynku firm o podobnym profilu do naszego."
+        "lead": "Software Development Association Poland (SoDA) to organizacja zajmująca się rozwijaniem współpracy pomiędzy firmami tworzącymi oprogramowanie. Jest to najstarsza i największa w Polsce Organizacja Pracodawców Usług IT, oferująca szerokie możliwości nawiązania kontaktów i zdobycia wiedzy potrzebnej do rozwoju działalności firm z tej branży. Tym samym jesteśmy w setce najbardziej liczących się na rynku firm o podobnym profilu działalności do naszego."
       },
       "cwup": {
         "header": "Collegium Witelona Uczelnia Państwowa",
@@ -149,12 +149,12 @@
       },
       "lpm": {
         "header": "Laravel Poland Meetup",
-        "lead": "Aktywna społeczność programistów z całej Polski chcących poszerzać swoją wiedzę na temat Laravela i PHP. Razem z innymi firmami tworzymy meetupy technologiczne, które cyklicznie odbywają się co dwa miesiące, prezentujemy ciekawe tematy oraz fundujemy nagrody."
+        "lead": "Laravel Poland Meetup to przestrzeń dla programistów, którzy chcą poszerzać swoją wiedzę o frameworku Laravel i języku PHP. Razem z innymi firmami organizujemy regularne spotkania, na których prezentujemy ciekawe tematy i oferujemy atrakcyjne nagrody. Nasze meetupy to doskonała okazja do wymiany doświadczeń i poznawania nowych rozwiązań z branży IT."
       }
     },
     "career": {
       "header": "Pracuj z nami",
-      "lead": "Rekrutacja trwa! Poniżej znajdziesz szczegółowe oferty pracy na stanowiska, które zamierzamy obsadzić w najbliższej przyszłości. Jesteśmy też otwarci na spontaniczne aplikacje.",
+      "lead": "Poszukujemy nowych członków naszego zespołu! Sprawdź nasze aktualne oferty pracy i zobacz, czy znajdziesz coś dla siebie. Jeśli nie widzisz odpowiedniej dla Ciebie pozycji, nie wahaj się złożyć spontanicznej aplikacji - chętnie przyjrzymy się Twojej kandydaturze.",
       "excuse": "Na ten moment nie mamy otwartej rekrutacji na żadne stanowisko. Jesteśmy natomiast otwarci na spontaniczne aplikacje, chociaż niczego na chwilę obecną nie możemy obiecać.",
       "jobs": {
         "developer": {
@@ -236,14 +236,15 @@
       "gdpr": "Administratorem Twoich danych osobowych jest Blumilk Sp. z o.o. z siedzibą w Legnicy, e-mail: career@blumilk.pl. Twoje dane osobowe przetwarzamy wyłącznie w celu przeprowadzenia rekrutacji obecnej i przyszłej, jeśli wyraziłeś stosowną zgodę w treści swojej aplikacji. Twoje dane osobowe podane w zgłoszeniu, wskazane w Kodeksie pracy lub w innych ustawach szczegółowych przetwarzamy w oparciu o przepisy prawa i ich podanie jest konieczne do wzięcia udziału w rekrutacji. Pozostałe dane osobowe (np. Twój wizerunek) przetwarzamy na podstawie Twojej dobrowolnej zgody, którą wyraziłaś/eś, wysyłając nam swoje zgłoszenie rekrutacyjne. Nie przekazujemy Twoich danych osobowych poza Europejski Obszar Gospodarczy. Twoje dane osobowe przetwarzamy w celu przeprowadzenia rekrutacji przez  okres 1 roku od momentu otrzymania od Ciebie aplikacji. Twoje dane osobowe możemy przekazać dostawcom usług publikacji ogłoszeń o pracę, dostawcom systemów do zarządzania rekrutacjami, dostawcom usług IT takich jak hosting oraz dostawcom systemów informatycznych. W każdym czasie możesz cofnąć zgodę, kontaktując się z nami pod adresem e-mail career@blumilk.pl. Cofnięcie zgody pozostaje bez wpływu na zgodność z prawem przetwarzania, którego dokonano na podstawie zgody przed jej cofnięciem. Masz również prawo dostępu do swoich danych, w tym uzyskania ich kopii, sprostowania danych, żądania ich usunięcia, ograniczenia przetwarzania, wniesienia sprzeciwu wobec przetwarzania oraz przeniesienia podanych danych (na których przetwarzanie wyraziłeś zgodę) do innego administratora danych. W razie naruszeń dotyczących Twoich danych osobowych masz prawo do wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych. Jeżeli chcesz, aby Twoje CV zostało wykorzystane do innych naszych rekrutacji, umieść dodatkowo w CV następującą zgodę: \"Zgadzam się na przetwarzanie przez Blumilk Sp. z o.o. z siedzibą w Legnicy danych osobowych zawartych w moim zgłoszeniu rekrutacyjnym dla celów przyszłych rekrutacji\"."
     },
     "contact": {
-      "header": "Kontakt",
-      "lead": "Skorzystaj z formularza poniżej, aby się z nami skontaktować. Nie zapomnij podać swojego adresu e-mail, żebyśmy wiedzieli do kogo odpisać!",
+      "header": "Chętnie odpowiemy na Twoje pytania",
+      "lead": "Jeśli masz jakieś wątpliwości lub chcesz się dowiedzieć czegoś więcej, nie wahaj się napisać do nas. Z przyjemnością udzielimy Ci pomocy i odpowiemy na każde pytanie.",
       "send": "Wyślij przez",
       "email": "Adres e-mail",
+      "placeholder": "Co chcesz nam powiedzieć?",
       "message": "Wiadomość",
       "visit-us": "Odwiedź nas",
       "about": {
-        "1": "Pracujemy w biurze ulokowanym w samym centrum Legnicy. W najbliższej okolicy można zjeść w fajnych knajpach, wypić piwo czy zrobić zakupy w galerii handlowej. Stacja kolejowa jest położona dziesięć minut spacerkiem; park miejski nawet bliżej.",
+        "1": "Pracujemy w biurze ulokowanym w samym sercu Legnicy. W najbliższej okolicy można zjeść w fajnych knajpach, wypić piwo czy zrobić zakupy w galerii handlowej. Stacja kolejowa jest położona dziesięć minut spacerkiem, a park miejski jest jeszcze bliżej.",
         "2": "Nasz adres to Najświętszej Marii Panny 5F/5."
       }
     },

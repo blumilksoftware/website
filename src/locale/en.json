@@ -127,7 +127,7 @@
     "services": {
       "r&d": {
         "header": "Research & development",
-        "lead": "We have experience in conducting research and development projects. Our engineers dealt with a cross-section of popular research issues, including big data processing, scheduling problems, the use of artificial intelligence or broadly understood optimization. Our team members also worked as R&D project coordinators, so we know exactly the processes and problems of such projects."
+        "lead": "We have experience in conducting research and development projects. Our engineers dealt with a wide range of popular research issues, such as big data processing, task scheduling problems, artificial intelligence and optimization. Our team members also worked as R&D projects coordinators, so we are very familiar with the processes and challenges of such projects."
       },
       "web": {
         "header": "Custom web applications",
@@ -141,7 +141,7 @@
     "partnerships": {
       "soda": {
         "header": "Software Development Association Poland",
-        "lead": "Software Development Association Poland (SoDA) is an organization aimed at developing cooperation between software companies. It is the oldest and the largest organization of IT Service Employers in Poland, which is a mine of contacts and knowledge helping to develop the activities of companies operating in our industry. Thus, we are among the hundred most important companies on the market with a profile similar to ours."
+        "lead": "Software Development Association Poland (SoDA) is an organization that promotes cooperation between software development companies. As the oldest and largest organization of IT Services Employers in Poland, it offers a wide range of opportunities to establish contacts and gain knowledge necessary for the development of companies in this industry. As such, we are among the hundred most important companies on the market with a profile similar to ours."
       },
       "cwup": {
         "header": "Witelon Collegium State University",
@@ -149,12 +149,12 @@
       },
       "lpm": {
         "header": "Laravel Poland Meetup",
-        "lead": "An active community of programmers from all over Poland who want to expand their knowledge about Laravel and PHP. With other companies, we create tech meetups, which are held regularly every two months, we present interesting topics and fund prizes."
+        "lead": "Laravel Poland Meetup is a space for programmers who want to expand their knowledge of the Laravel framework and PHP language. Together with other companies, we organize regular meetings where we present interesting topics and offer attractive prizes. Our meetups are a great opportunity to share experiences and learn about new solutions in the IT industry."
       }
     },
     "career": {
       "header": "Work at Blumilk",
-      "lead": "We are recruiting! Below you will find detailed job offers for the positions we intend to fill in the near future. We are also open to spontaneous applications.",
+      "lead": "We are looking for new members of our team! Check out our current job openings and see if you can find something for yourself. If you don't see a position that suits you, don't hesitate to submit a spontaneous application - we would be happy to consider your candidacy.",
       "excuse": "At the moment, we do not have any open recruitment for any position. We are, however, opened to spontaneous applications.",
       "jobs": {
         "developer": {
@@ -236,14 +236,15 @@
       "gdpr": "The administrator of your personal data is Blumilk Sp. z o.o. based in Legnica, e-mail: career@blumilk.pl. We process your personal data only for the purpose of current and future recruitment, if you have given your consent to the content of your application. We process your personal data provided in the application, indicated in the Labor Code or other specific acts based on legal provisions and their submission is necessary to participate in the recruitment. We process other personal data (e.g. your image) based on your voluntary consent, which you have given by sending us your recruitment application. We do not transfer your personal data outside the European Economic Area. We process your personal data for recruitment for 1 year from the moment of receiving your application. We may provide your personal data to providers of job posting services, providers of recruitment management systems, providers of IT services such as hosting and IT system providers. You can withdraw your consent at any time by contacting us at the e-mail address career@blumilk.pl. Withdrawal of consent does not affect the lawfulness of the processing, which was carried out based on consent before its withdrawal. You also have the right to access your data, including obtaining a copy, rectifying data, requesting its removal, restriction of processing, object to processing and transferring the data provided (for which you consented) to another data administrator. In the event of any violations of your personal data, you have the right to lodge a complaint with the President of the Office for Personal Data Protection. If you want your CV to be used for our other recruitments, add the following consent in your CV: \"I consent to the processing of personal data contained in my recruitment application by Blumilk Sp. z o.o. with its registered office in Legnica for future recruitment\". "
     },
     "contact": {
-      "header": "Contact us",
-      "lead": "Please use the form below to contact us. Do not forget to provide your e-mail address so we could write back!",
+      "header": "We will be happy to answer your questions",
+      "lead": "If you have any doubts or want to know more, don't hesitate to contact us. We are always willing to help and answer any questions you may have.",
       "send": "Send via",
       "email": "E-mail address",
+      "placeholder": "What do you want to tell us?",
       "message": "Message",
       "visit-us": "Visit us",
       "about": {
-        "1": "We are working from the office located in the heart of Legnica, Poland. In the closest neighbourhood, you can dine in nice restaurants, grab a beer in local pubs or shop in shopping malls. The railway station is less than 10 minutes by foot. The city park is even closer.",
+        "1": "We work in an office located in the heart of Legnica, Poland. In the closest neighbourhood, you can dine in nice restaurants, grab a beer in local pubs or shop in shopping malls. The railway station is less than 10 minutes by foot and the city park is even closer.",
         "2": "Our address is Najświętszej Marii Panny 5F/5."
       }
     },
