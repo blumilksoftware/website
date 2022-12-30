@@ -19,6 +19,8 @@
   const lng = 16.163746516015646
   const zoom = 13
 
+  const url = "https://www.google.com/maps/place/Blumilk/@51.2087269,16.1637251,15z/data=!4m5!3m4!1s0x0:0x55f0988b232aadd0!8m2!3d51.2087269!4d16.1637251"
+
   const center = {
     center: [lng + window.innerWidth / 50000, lat],
     zoom,
@@ -36,7 +38,7 @@
     map.scrollZoom.disable()
 
     addNavigation(map, center)
-    addMarker(map, lat, lng)
+    addMarker(map, lat, lng, url)
   })
 </script>
 

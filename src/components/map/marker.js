@@ -1,11 +1,11 @@
-export default function (map, lat, lng) {
+export default function (map, lat, lng, url) {
   const link = document.createElement('a')
 
   const marker = document.createElement('img')
   marker.src = '/marker.png'
 
   link.appendChild(marker)
-  link.href = 'https://google.com/maps/search/?api=1&query=' + lat + ',' + lng
+  link.href = url
   link.target = '_blank'
 
   new mapboxgl.Marker(link)

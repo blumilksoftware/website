@@ -13,14 +13,14 @@
             {#each items as item}
                 <div class="lowercase ml-8">
                     {#if !item.external}
-                        <a href="{ $url(item.link) }" data-cy={$_(item.label)}>{ $_(item.label) }</a>
+                        <a href="{ $url(item.link) }" class:underline={ $isActive(item.link) } data-cy={ $_(item.label) } class="underline-offset-2">{ $_(item.label) }</a>
                     {:else}
-                        <a href="{ item.link }" target="_blank" data-cy={$_(item.label)}>{ $_(item.label) }</a>
+                        <a href="{ item.link }" target="_blank" data-cy={ $_(item.label) }>{ $_(item.label) }</a>
                     {/if}
                 </div>
             {/each}
             <div class="ml-8">
-                <img class="w-6 cursor-pointer" on:click={ switchLocale } src="{ $_('locale.flag') }" data-cy={$_('locale.language')} alt="{ $_('locale.language') }" title="{ $_('locale.language') }">
+                <img class="w-6 cursor-pointer" on:click={ switchLocale } src="{ $_('locale.flag') }" data-cy={ $_('locale.language') } alt="{ $_('locale.language') }" title="{ $_('locale.language') }">
             </div>
         </div>
         <div class="flex-grow cursor-pointer text-right md:hidden" on:click={ switchMenu }>
@@ -54,7 +54,7 @@
 {/if}
 
 <script>
-  import { url } from '@roxi/routify'
+  import { isActive, url } from '@roxi/routify'
   import { _, locale } from 'svelte-i18n'
 
   function switchLocale () {

@@ -1,4 +1,4 @@
-<Meta title={ $_('title.blumilk-software-development') } description={ $_('description.blumilk-software-development') }/>
+<Meta title={ $_('title.index') } description={ $_('description.index') }/>
 <Section>
     <div slot="header" class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
         { $_('pages.home.hero.prefix') }
@@ -9,7 +9,7 @@
         { $_('pages.home.hero.about') }
     </div>
     <div slot="content">
-        <img class="px-4 py-8 sm:px-16 sm:py-8 md:px-12 xl:p-24 relative z-10 pointer-events-none" src="/images/illustrations/software.svg"
+        <img class="px-4 py-8 sm:px-16 sm:py-8 md:px-12 xl:px-48 xl:py-24 relative z-10 pointer-events-none" src="/images/illustrations/software.svg"
              alt="{ $_('pages.home.hero.prefix') } { $_('pages.home.hero.focus') } { $_('pages.home.hero.suffix') }"
              title="{ $_('pages.home.hero.prefix') } { $_('pages.home.hero.focus') } { $_('pages.home.hero.suffix') }">
     </div>

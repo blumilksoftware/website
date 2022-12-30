@@ -11,7 +11,7 @@
             <div class="md:px-4 py-4 space-y-4">
                 <div>
                     <label for="{ emailName }" class="block text-left text-gray-700">{ $_('pages.contact.email') }</label>
-                    <input type="text" name="{ emailName }" id="{ emailName }"
+                    <input type="text" name="{ emailName }" id="{ emailName }" placeholder="{ $_('pages.contact.email') }"
                            class="px-4 py-2 my-1 block w-full shadow-sm border-gray-300 rounded-md"
                            data-cy="contact-form-email">
                 </div>
