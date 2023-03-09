@@ -18,14 +18,14 @@
     "@babel/eslint-parser": "^7.19.1",
     "@babel/plugin-syntax-import-assertions": "^7.20.0",
     "@babel/preset-env": "^7.20.2",
-    "@babel/register": "^7.18.9",
+    "@babel/register": "^7.21.0",
     "@roxi/routify": "^2.18.11",
-    "@sveltejs/vite-plugin-svelte": "^2.0.2",
+    "@sveltejs/vite-plugin-svelte": "^2.0.3",
     "@tailwindcss/forms": "^0.5.3",
     "autoprefixer": "^10.4.13",
     "chai": "^4.3.7",
-    "cypress": "^12.5.0",
-    "eslint": "^8.33.0",
+    "cypress": "^12.7.0",
+    "eslint": "^8.35.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-cypress": "^2.12.1",
     "eslint-plugin-import": "^2.27.5",
@@ -37,11 +37,11 @@
     "flat": "^5.0.2",
     "mocha": "^10.2.0",
     "postcss": "^8.4.21",
-    "sass": "^1.58.0",
+    "sass": "^1.58.3",
     "svelte": "^3.55.1",
     "svelte-i18n": "^3.6.0",
     "svelte-preprocess": "^5.0.1",
-    "tailwindcss": "^3.2.4",
-    "vite": "^4.0.4"
+    "tailwindcss": "^3.2.7",
+    "vite": "^4.1.4"
   }
 }
