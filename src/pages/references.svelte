@@ -1,7 +1,7 @@
 <Meta title={ $_('title.references') } description={ $_('description.references') }/>
 <CloudSection></CloudSection>
 <div data-aos="fade-right">
-<ClientsSection></ClientsSection>
+  <ClientsSection></ClientsSection>
 </div>
 
 <script>

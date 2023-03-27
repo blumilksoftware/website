@@ -15,9 +15,9 @@
   import addNavigation from '@/components/map/navigation.js'
   import addMarker from '@/components/map/marker.js'
 
-  const lat = 51.208719304013975
-  const lng = 16.163746516015646
-  const zoom = 13
+  export const lat = 51.208719304013975
+  export const lng = 16.163746516015646
+  export const zoom = 13
 
   const url = "https://www.google.com/maps/place/Blumilk/@51.2087269,16.1637251,15z/data=!4m5!3m4!1s0x0:0x55f0988b232aadd0!8m2!3d51.2087269!4d16.1637251"
 
