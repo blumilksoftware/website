@@ -9,7 +9,7 @@ describe('Contact page', () => {
 
   it('Fills contact form', () => {
     cy.get('[data-cy="contact-form-question"]').type('I would like to ask you about...')
-    cy.get('[data-cy="contact-form-email"]').should('have.value', 'I would like to ask you about...')
+    cy.get('[data-cy="contact-form-question"]').should('have.value', 'I would like to ask you about...')
 
     cy.get('[data-cy="contact-form-email"]').type('email@example.com')
     cy.get('[data-cy="contact-form-email"]').should('have.value', 'email@example.com')
