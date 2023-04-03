@@ -8,7 +8,7 @@
     </div>
 </Section>
 
-<div class="container px-6 mx-auto grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-5" data-cy="references-images">
+<div class="container px-6 mx-auto grid grid-cols-1 sm:grid-cols-3 xl:grid-cols-4" data-cy="references-images">
     {#each clients as client}
         <div class="text-center opacity-90 hover:opacity-100 transition duration-300">
             <img src="{ client.logo }" alt="{ client.name }" title="{ client.name }" class="mx-auto relative z-10 w-48">
