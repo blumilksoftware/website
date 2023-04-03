@@ -32,23 +32,23 @@ describe('Home page', () => {
   })
 
   it('Changes language to Polish', () => {
-    cy.get('[data-cy="polski"]')
-      .should('have.attr', 'data-cy', 'polski').click()
+    cy.get('#i18n-switch')
+      .should('have.attr', 'data-cy', 'polski').click({ force: true })
 
-    cy.get('[data-cy="English"]')
+    cy.get('#i18n-switch')
       .should('have.attr', 'data-cy', 'English')
   })
 
   it('Selected locale will be remembered', () => {
-    cy.get('[data-cy="polski"]')
-      .should('have.attr', 'data-cy', 'polski').click()
+    cy.get('#i18n-switch')
+      .should('have.attr', 'data-cy', 'polski').click({ force: true })
 
-    cy.get('[data-cy="English"]')
+    cy.get('#i18n-switch')
       .should('have.attr', 'data-cy', 'English')
 
     cy.reload()
 
-    cy.get('[data-cy="English"]')
+    cy.get('#i18n-switch')
       .should('have.attr', 'data-cy', 'English')
   })
 })

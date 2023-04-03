@@ -20,7 +20,7 @@
                 </div>
             {/each}
             <div class="ml-8">
-                <img class="w-6 cursor-pointer" on:click={ switchLocale } src="{ $_('locale.flag') }" data-cy={ $_('locale.language') } alt="{ $_('locale.language') }" title="{ $_('locale.language') }">
+                <img id="i18n-switch" class="w-6 cursor-pointer" on:click={ switchLocale } src="{ $_('locale.flag') }" data-cy={ $_('locale.language') } alt="{ $_('locale.language') }" title="{ $_('locale.language') }">
             </div>
         </div>
         <div class="flex-grow cursor-pointer text-right md:hidden" on:click={ switchMenu }>
