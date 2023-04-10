@@ -1,5 +1,6 @@
 import { addMessages, getLocaleFromNavigator, init } from 'svelte-i18n'
 import '@/index.css'
+
 import en from '@/locale/en.json'
 import pl from '@/locale/pl.json'
 

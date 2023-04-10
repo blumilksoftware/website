@@ -10,7 +10,7 @@
         </div>
         <div class="mt-8 lg:mt-0 lg:order-1">
             <div class="text-center text-base text-gray-700">
-                <span>&copy; { year } Blumilk</span>
+                <span>{ year } Blumilk</span>
                 <div class="text-center block mt-8 lg:mt-0 lg:inline">
                     <a href="{ $url('./privacy') }" class="block lg:inline hover:text-gray-900 ml-4">{ $_('footer.privacy') }</a>
                     <a href="{ $url('./company') }" class="block lg:inline hover:text-gray-900 ml-4">{ $_('footer.company') }</a>

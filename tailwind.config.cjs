@@ -21,4 +21,8 @@ module.exports = {
   plugins: [
     require('@tailwindcss/forms'),
   ],
+  safelist: [
+    'col-span-2',
+    'row-span-2',
+  ],
 }

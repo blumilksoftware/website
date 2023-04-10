@@ -7,22 +7,24 @@
   "title": {
     "404": "Nie znaleziono strony",
     "about": "O firmie",
-    "blumilk-software-development": "Blumilk Software Development",
+    "index": "Blumilk Software Development",
     "career": "Praca",
     "company": "Dane firmy",
     "contact": "Kontakt",
     "privacy": "Polityka firmy",
+    "references": "Referencje",
     "services": "Usługi",
     "partnerships": "Partnerzy"
   },
   "description": {
     "404": "Nie znaleziono strony.",
     "about": "Jesteśmy zespołem wykwalifikowanych programistów specjalizujących się w aplikacjach internetowych oraz projektach badawczo-rozwojowych.",
-    "blumilk-software-development": "W Blumilku tworzymy oprogramowanie skrojone dla potrzeb Twojej firmy.",
+    "index": "W Blumilku tworzymy oprogramowanie skrojone dla potrzeb Twojej firmy.",
     "career": "Dołącz do naszego zespołu ekspertów i rozwijaj swoją karierę w IT razem z Blumilk.",
     "company": "Blumilk spółka z ograniczoną odpowiedzialnością z siedzibą w Legnicy, NIP: 6912551135, KRS: 0000866755.",
     "contact": "Masz pomysł na projekt? Skontaktuj się z nami poprzez formularz lub odwiedź nas w samym sercu Legnicy!",
     "privacy": "Dowiedz się, w jaki sposób przetwarzamy Twoje dane osobowe.",
+    "references": "Referencje na temat naszych projektów.",
     "services": "Specjalizujemy się w tworzeniu aplikacji internetowych, które mają wspomóc Twój biznes.",
     "partnerships": "Współpracujemy m.in. z SoDA, Collegium Witelona Uczelnia Państwowa oraz Laravel Poland Meetup tworząc wspólnie ciekawe i bogate w doświadczenie spotkania."
   },
@@ -30,6 +32,7 @@
     "home": "Strona główna",
     "about": "O firmie",
     "services": "Usługi",
+    "references": "Referencje",
     "career": "Praca",
     "partnerships": "Partnerzy",
     "contact": "Kontakt"
@@ -118,10 +121,6 @@
           "1": "GitHub jest naszym podstawowym miejscem pracy. Korzystamy z niego jako systemu kontroli wersji, umożliwia nam code review, a także uruchamiamy CI/CD za pomocą GitHub Actions. Wszystkie nasze projekty są skonteneryzowane zgodnie z wymaganiami klienta.",
           "2": "Frontend budujemy z wykorzystaniem bibliotek i frameworków JavaScript i CSS: Vue.js, React, Svelte, Tailwind i innych. Pracujemy z MySQL, PostgreSQL i innymi systemami zarządzania bazami danych. Mamy doświadczenie z Redisem, Elasticsearchem, RabbitMQ."
         }
-      },
-      "references": {
-        "header": "Referencje",
-        "lead": "Zależy nam na tym, aby wszyscy nasi partnerzy i klienci byli z nas zawsze stuprocentowo zadowoleni. Kilka słów na temat naszych projektów można przeczytać na platformie"
       }
     },
     "services": {
@@ -133,9 +132,27 @@
         "header": "Szyte na miarę aplikacje webowe",
         "lead": "Prawie wszyscy wywodzimy się ze środowiska webdevelopmentu. Korzystamy z najlepszych narzędzi, aby dostarczać jak najlepsze oprogramowanie dla klienta i jego użytkowników. Wykorzystujemy rozległe doświadczenie, aby nasze aplikacje były wygodne w używaniu na każdym urządzeniu, szybkie, łatwo rozszerzalne oraz bezpieczne. Nasz zespół potrafi zgłębić domenę produktu, aby jak najlepiej zrealizować postawione zadania; bez względu czy to branża ubezpieczeniowa, edukacyjna, administracyjna, finansowa czy jeszcze inna."
       },
+      "audits": {
+        "header": "Audyty rozwiązań IT",
+        "lead": "Nasz zespół ekspertów może przeprowadzić audyt innych rozwiązań informatycznych. W zależności od wymagań klienta, jesteśmy w stanie przeanalizować dostarczony kod źródłowy pod względem bezpieczeństwa, realizacji punktów umowy, zachowania dobrych praktyk programistycznych oraz ogólnie rozumianej optymalizacji, w tym bazodanowej."
+      },
       "business": {
         "header": "Pomoc dla Twojego biznesu",
         "lead": "W pełni rozumiemy, że oprogramowanie ma rozwiązywać problemy biznesu: optymalizować zadania i zasoby, chronić dane, umożliwiać dalsze skalowanie, ułatwiać życie. W obecnych czasach na systemach informatycznych opiera się często większość lub praktycznie wszystkie zachodzące w firmach procesy. Chcemy pomóc w tym, aby wszystko działało jak najlepiej."
+      }
+    },
+    "references": {
+      "cloud": {
+        "header": "Zaufali nam",
+        "lead": "Zależy nam na tym, aby wszyscy nasi partnerzy i klienci byli z nas zawsze stuprocentowo zadowoleni. Kilka słów na temat naszych projektów można przeczytać na platformie"
+      },
+      "clients": {
+        "header": "Dla kogo pracujemy?",
+        "lead": "W portfolio naszych klientów można znaleźć zarówno międzynarodowe korporacje, wyższe uczelnie, firmy z sektora małych i średnich przedsiębiorstw, jak i technologiczne startupy. Część z nich wylistowaliśmy powyżej, ale niektórych nie możemy wspomnieć przez wzgląd na umowy o zachowaniu poufności."
+      },
+      "sectors": {
+        "header": "W jakich branżach się odnajdujemy?",
+        "lead": "Do tej pory najwięcej doświadczenia zdobyliśmy przy projektach typu edutech dla branży edukacyjnej. Nasz największy projekt jest natomiast insurtechem - jest osadzony w branży ubezpieczeniowej. Transport, finanse, automotive czy usługi medyczne też nie są nam obce. Jesteśmy specjalistami, którzy są w stanie dopasować się do wymagań i otoczenia każdego klienta."
       }
     },
     "partnerships": {

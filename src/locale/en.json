@@ -7,22 +7,24 @@
   "title": {
     "404": "Page not found",
     "about": "About",
-    "blumilk-software-development": "Blumilk Software Development",
+    "index": "Blumilk Software Development",
     "career": "Career",
     "company": "Company info",
     "contact": "Contact",
     "privacy": "Privacy Policy",
+    "references": "References",
     "services": "Services",
     "partnerships": "Partnerships"
   },
   "description": {
     "404": "Page not found.",
     "about": "We are a team of qualified programmers specializing in web applications and research and development projects.",
-    "blumilk-software-development": "At Blumilk, we create software tailored to the needs of your company.",
+    "index": "At Blumilk, we create software tailored to the needs of your company.",
     "career": "Join our team of experts and develop your IT career with Blumilk.",
     "company": "Blumilk spółka z ograniczoną odpowiedzialnością based in Legnica, NIP: 6912551135, KRS: 0000866755.",
     "contact": "Do you have an idea for a project? Contact us via the form or visit us in the heart of Legnica!",
     "privacy": "Find out how we process your data.",
+    "references": "References about our projects.",
     "services": "We specialize in creating web applications to support your business.",
     "partnerships": "We cooperate with with SoDA, Witelon Collegium State University and Laravel Poland Meetup, creating together an interesting and experience-rich meeting."
   },
@@ -30,6 +32,7 @@
     "home": "Home",
     "about": "About",
     "services": "Services",
+    "references": "References",
     "career": "Career",
     "partnerships": "Partnerships",
     "contact": "Contact"
@@ -118,10 +121,6 @@
           "1": "GitHub is our primary workplace. We use it as a version control system, we handle code review there, and we run CI/CD there via GitHub Actions. All our projects are containerized with Docker according to the client's requirements.",
           "2": "We build the frontend using JavaScript and CSS libraries and frameworks: Vue.js, React, Svelte, Tailwind and others. We work with MySQL, PostgreSQL and other database management systems. We have experience with Redis, Elasticsearch, RabbitMQ."
         }
-      },
-      "references": {
-        "header": "References",
-        "lead": "We want all our partners and customers to be 100% satisfied with us. You can read a few words about our projects on the platform"
       }
     },
     "services": {
@@ -133,9 +132,27 @@
         "header": "Custom web applications",
         "lead": "We all come from the web development environment. We use the best tools to deliver the best software for the client and his users. We use our extensive experience to make our applications convenient to use on any device, fast, easily expandable and secure. Our team can explore the product domain to best accomplish the tasks set; regardless of whether it is the insurance, educational, administrative, financial or other industries."
       },
+      "audits": {
+        "header": "Audits of IT solutions",
+        "lead": "When it comes to auditing IT solutions, our team of experts is highly skilled. We can analyze the source code provided by the client to ensure security, compliance with contracted requirements, good programming practices, and optimal database performance, depending on the client's needs."
+      },
       "business": {
         "header": "Improving your business",
         "lead": "We fully understand that the software has to solve business problems: optimize tasks and resources, secure data, enable further scaling, and make life easier. Nowadays, most or practically all processes taking place in companies are often based on IT systems. We want to help make sure everything works as well as possible."
+      }
+    },
+    "references": {
+      "cloud": {
+        "header": "They trusted us",
+        "lead": "We want all our partners and customers to be 100% satisfied with us. You can read a few words about our projects on the platform"
+      },
+      "clients": {
+        "header": "Who do we work for?",
+        "lead": "Our clients come from a variety of sectors, including international corporations, universities, small and medium-sized enterprises, and technological startups. While we have highlighted a few of our clients, there are others that we are unable to mention due to confidentiality agreements."
+      },
+      "sectors": {
+        "header": "What industries are we in?",
+        "lead": "Our experience has primarily been in edutech projects for the education industry, but we've also tackled some significant challenges in other sectors. We're especially proud of our largest project to date - an insurtech venture in the insurance industry. We've also worked on projects for transport, finance, automotive, and medical services. We're a team of specialists who pride ourselves on our ability to adapt to each client's unique needs and environment."
       }
     },
     "partnerships": {
