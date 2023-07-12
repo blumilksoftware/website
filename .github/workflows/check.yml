@@ -13,10 +13,10 @@ jobs:
       image: cypress/browsers:node14.17.0-chrome88-ff89
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Cache node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         env:
           cache-name: cache-node-modules
         with:
