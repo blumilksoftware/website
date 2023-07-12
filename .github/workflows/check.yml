@@ -10,13 +10,13 @@ jobs:
     runs-on: ubuntu-20.04
     name: "Checking app: testing and linting"
     container:
-      image: cypress/browsers:node14.17.0-chrome88-ff89
+      image: cypress/browsers:node18.12.0-chrome107
 
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
 
       - name: Cache node modules
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         env:
           cache-name: cache-node-modules
         with:
@@ -45,7 +45,7 @@ jobs:
         run: npm run lint
 
       - name: Cypress run
-        uses: cypress-io/github-action@v4
+        uses: cypress-io/github-action@v5
         with:
           start: npm run dev:cypress
           wait-on: http://localhost:5173
