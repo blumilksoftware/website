@@ -2,27 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="software house, Legnica, PHP, Laravel, software development, research and development projects, R&D, software engineering">
-    <meta name="author" content="https://github.com/blumilksoftware/website/contributors">
+    <link rel="icon" href="https://www.blumilk.pl/logo.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="QCB2LFVYnUSGvJgRjtceHW6LDr8p8ksYCWAVDTcYyTM"/>
-
-    <title>Blumilk Software Development</title>
-
-    <link rel="icon" href="/logo.png">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/icon.min.css" rel="stylesheet" integrity="sha512-8Tb+T7SKUFQWOPIQCaLDWWe1K/SY8hvHl7brOH8Nz5z1VT8fnf8B+9neoUzmFY3OzkWMMs3OjrwZALgB1oXFBg==" crossorigin="anonymous">
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css" rel="stylesheet" integrity="sha512-HqzzhtSjILrenT/BfPkIsw3IMdj9mAHd8rcvD4mwYmK5M7aMqCF5Q2zUkpBNovqkenSNmIV+U5OYnhv1c5cJ7A==" crossorigin="anonymous">
-    <style>
-        body {
-            background: #f4f8fd;
-        }
-    </style>
+    <title>Blumilk software house</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
   </head>
-
-  <body id="application" class="flex min-h-screen flex-col"></body>
-
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Y3WCJ1ZM46"></script>
-  <script defer src="https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js" integrity="sha512-1nZGB0LVmYum5Y09f0zfFdmCVSISsA6a9G7DpZTsBvHvsWDp0eV8zqSzxAgnLoLx+QNG9oWujGtaGuvI75p9Yg==" crossorigin="anonymous"></script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/autolinker/3.14.2/Autolinker.min.js" integrity="sha512-qyoXjTIJ69k6Ik7CxNVKFAsAibo8vW/s3WV3mBzvXz6Gq0yGup/UsdZBDqFwkRuevQaF2g7qhD3E4Fs+OwS4hw==" crossorigin="anonymous"></script>
-  <script type="module" src="/src/main.js"></script>
+  <body class="min-h-screen bg-white">
+    <div class="min-h-screen relative isolate overflow-hidden">
+      <div class="absolute inset-y-0 left-[0%] min-[1920px]:left-[0%] bg-sky-50 -z-10 -mr-36 w-[200%] origin-top-right skew-x-[-0deg] shadow-xl shadow-sky-600/20" aria-hidden="true"></div>
+      <div class="absolute inset-y-0 left-[15%] min-[1920px]:left-[15%] bg-sky-50 -z-10 -mr-36 w-[200%] bg-white origin-top-right skew-x-[-0deg] shadow-xl shadow-sky-600/20" aria-hidden="true"></div>
+      <div id="app"></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
 </html>

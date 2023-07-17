@@ -2,22 +2,13 @@ version: "3.7"
 
 services:
   node:
-    container_name: blumilk-node
-    image: node:19-alpine3.17
+    container_name: blumilkpl-node
+    image: node:20-alpine3.17
     working_dir: /application
+    user: ${CURRENT_UID:-1000}
     volumes:
       - .:/application
     restart: always
-    environment:
-      - HOST=0.0.0.0
-
-  cypress:
-    container_name: blumilk-cypress
-    image: "cypress/included:12.13.0"
-    depends_on:
-      - node
-    environment:
-      - CYPRESS_baseUrl=${BASE_URL}
-    working_dir: /e2e
-    volumes:
-      - ./:/e2e
+    ports:
+      - ${EXTERNAL_NODE_PORT:-14380}:${EXTERNAL_NODE_PORT:-14380}
+    tty: true
