@@ -25,7 +25,7 @@
     "autoprefixer": "^10.4.14",
     "chai": "^4.3.7",
     "cypress": "^12.13.0",
-    "eslint": "^8.41.0",
+    "eslint": "^8.46.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-cypress": "^2.13.3",
     "eslint-plugin-import": "^2.27.5",
