@@ -287,7 +287,9 @@
       "header": "Company information",
       "content": "Blumilk Spółka z ograniczoną odpowiedzialnością based in Legnica, Poland is entered by the District Court for Wrocław-Fabryczna in Wrocław, IX Commercial Division, into the register of entrepreneurs of the National Court Register under the number 0000866755.",
       "address": "Official address",
-      "office": "Office address"
+      "office": "Office address",
+      "phone": "Phone",
+      "email": "Email address"
     },
     "404": {
       "header": "404",
