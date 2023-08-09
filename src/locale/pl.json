@@ -287,7 +287,9 @@
       "header": "Dane firmy",
       "content": "Blumilk Spółka z ograniczoną odpowiedzialnością z siedzibą w Legnicy wpisana jest przez Sąd Rejonowy dla Wrocławia-Fabrycznej we Wrocławiu IX Wydział Gospodarczy do rejestru przedsiębiorców KRS pod nr 0000866755.",
       "address": "Adres urzędowy",
-      "office": "Adres biura"
+      "office": "Adres biura",
+      "phone": "Telefon",
+      "email": "Adres e-mail"
     },
     "404": {
       "header": "404",

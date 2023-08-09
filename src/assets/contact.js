@@ -10,6 +10,8 @@ export default {
   vat: 'PL6912551135',
   regon: '387376260',
   krs: '0000866755',
+  email: 'office@blumilk.pl',
+  phone: '+48 579 710 703',
   addresses: {
     official: {
       address: 'ul. rtm. Witolda Pileckiego 14',

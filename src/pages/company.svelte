@@ -40,6 +40,14 @@
             <div class="text-xl opacity-75">KRS</div>
             <div class="text-3xl">{ contact.krs }</div>
         </div>
+        <div class="my-8">
+            <div class="text-md opacity-75">{ $_('pages.company.phone') }</div>
+            <div class="text-3xl"><a href="tel:{ contact.phone }">{ contact.phone }</a></div>
+        </div>
+        <div class="my-8">
+            <div class="text-md opacity-75">{ $_('pages.company.email') }</div>
+            <div class="text-3xl"><a href="mailto:{ contact.email }">{ contact.email }</a></div>
+        </div>
     </div>
 </LeadSection>
 
