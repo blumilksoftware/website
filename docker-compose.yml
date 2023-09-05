@@ -13,7 +13,7 @@ services:
 
   cypress:
     container_name: blumilk-cypress
-    image: "cypress/included:12.17.2"
+    image: "cypress/included:13.1.0"
     depends_on:
       - node
     environment:
