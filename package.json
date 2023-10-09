@@ -37,7 +37,7 @@
     "flat": "^5.0.2",
     "mocha": "^10.2.0",
     "postcss": "^8.4.24",
-    "sass": "^1.62.1",
+    "sass": "^1.68.0",
     "svelte": "^3.59.1",
     "svelte-i18n": "^3.6.0",
     "svelte-preprocess": "^5.0.4",
