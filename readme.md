@@ -1,49 +1,41 @@
-![deploy workflow status](https://img.shields.io/github/actions/workflow/status/blumilksoftware/website/deploy.yml?branch=main&style=for-the-badge)
-![last commit](https://img.shields.io/github/last-commit/blumilksoftware/website?logo=github&style=for-the-badge)
-![package.json dependency version](https://img.shields.io/github/package-json/dependency-version/blumilksoftware/website/dev/svelte?logo=npm&style=for-the-badge)
-![package.json dependency version](https://img.shields.io/github/package-json/dependency-version/blumilksoftware/website/dev/tailwindcss?logo=npm&style=for-the-badge)
+## @blumilksoftware/website
+### About application
+> placeholder
 
-# blumilk-website
-The source code of the website hosted under [https://blumilk.pl/](https://blumilk.pl/)
-
-![Homepage screenshot](screenshot.png)
-
-## Local development
-Clone this repository with Git and go into the project's directory:
+### Local development
 ```
-git clone https://github.com/blumilksoftware/website blumilk.pl
-cd blumilk.pl
-```
-
-Install dependencies and create `.env` file based on example:
-```
-dcr node npm install
 cp .env.example .env
+make init
+make dev
 ```
-Without the `.env` file properly filled, you won't be able to send a contact form and see the office location map.
+Application will be running under [localhost:34620](localhost:34620) and [http://website.blumilk.localhost/](http://website.blumilk.localhost/) in Blumilk traefik environment. If you don't have a Blumilk traefik environment set up yet, follow the instructions from this [repository](https://github.com/blumilksoftware/environment).
 
-Run ESLint and Mocha tests:
+#### Commands
+Before running any of the commands below, you must run shell:
 ```
-dcr node npm run lint
-dcr node npm test
-```
-Run all Cypress tests:
-```
-docker-compose up cypress
+make shell
 ```
 
-Run Svelte development mode:
-```
-dcr node npm run dev
-```
+| Command                 | Task                                        |
+|:------------------------|:--------------------------------------------|
+| `composer <command>`    | Composer                                    |
+| `composer test`         | Runs backend tests                          |
+| `composer analyse`      | Runs Larastan analyse for backend files     |
+| `composer cs`           | Lints backend files                         |
+| `composer csf`          | Lints and fixes backend files               |
+| `php artisan <command>` | Artisan commands                            |
+| `npm run dev`           | Compiles and hot-reloads for development    |
+| `npm run build`         | Compiles and minifies for production        |
+| `npm run lint`          | Lints frontend files                        |
+| `npm run lintf`         | Lints and fixes frontend files              |
+| `npm run tsc`           | Runs TypeScript checker                     |
 
-Please maintain our project guidelines:
-* keep Issues well described, labeled and in English
-* add issue number to all your commits
-* add issue number to your branch name
-* squash your commits into one commit with standardized name
 
-> `dcr` should be an alias to `docker-compose run --rm -u "$(id -u):$(id -g)"`
+#### Containers
 
-## Deployment
-GitHub Actions are configured to automatically publish all changes from `main` branch with all generated artifacts to `public` branch. GitHub Pages are configured to host built website.
+| service    | container name            | default host port               |
+|:-----------|:--------------------------|:--------------------------------|
+| `app`      | `website-app-dev`     | [34620](http://localhost:34620) |
+| `database` | `website-db-dev`      | 34621                           |
+| `redis`    | `website-redis-dev`   | 34623                           |
+| `mailpit`  | `website-mailpit-dev` | 34622                           |

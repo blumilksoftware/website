@@ -1,0 +1,40 @@
+name: "Checking app: testing and linting PHP"
+
+on:
+  pull_request:
+    branches: [ "main" ]
+    types: [opened, synchronize, reopened, ready_for_review]
+    paths:
+      - '**.js'
+      - '**.ts'
+      - '**.vue'
+      - 'package.json'
+      - 'package.lock'
+
+jobs:
+  test-and-lint-js:
+    name: Test & lint JS codebase
+    timeout-minutes: 10
+    if: github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4.1.1 # https://github.com/actions/checkout
+
+      - name: Cache dependencies
+        uses: actions/cache@v3.3.2 # https://github.com/actions/cache
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-npm-dependencies-${{ hashFiles('package.lock') }}
+          restore-keys: ${{ runner.os }}-npm-dependencies
+
+      - name: Set up node
+        uses: actions/setup-node@v4.0.0 # https://github.com/actions/setup-node
+        with:
+          node-version: 21
+
+      - name: Instal npm dependencies
+        run: npm clean-install
+
+      - name: Run JS linter
+        run: npm run lint
