@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use BlumilkWebsite\Models\User;
+use Blumilk\Website\Models\User;
 
 return [
     "defaults" => [

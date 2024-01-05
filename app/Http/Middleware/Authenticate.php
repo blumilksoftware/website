@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BlumilkWebsite\Http\Middleware;
+namespace Blumilk\Website\Http\Middleware;
 
 use Illuminate\Auth\Middleware\Authenticate as Middleware;
 use Illuminate\Http\Request;

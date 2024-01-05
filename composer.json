@@ -7,6 +7,7 @@
     "require": {
         "php": "^8.2",
         "ext-pdo": "*",
+        "codezero/laravel-localized-routes": "^3.1",
         "guzzlehttp/guzzle": "^7.8.0",
         "inertiajs/inertia-laravel": "^0.6.11",
         "laravel/framework": "^10.32.1",
@@ -24,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "BlumilkWebsite\\": "app/",
+            "Blumilk\\Website\\": "app/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }
@@ -66,7 +67,8 @@
         "preferred-install": "dist",
         "sort-packages": true,
         "allow-plugins": {
-            "php-http/discovery": true
+            "php-http/discovery": true,
+            "codezero/composer-preload-files": true
         }
     },
     "minimum-stability": "stable",

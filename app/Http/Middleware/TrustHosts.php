@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BlumilkWebsite\Http\Middleware;
+namespace Blumilk\Website\Http\Middleware;
 
 use Illuminate\Http\Middleware\TrustHosts as Middleware;
 

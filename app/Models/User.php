@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BlumilkWebsite\Models;
+namespace Blumilk\Website\Models;
 
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;

@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace BlumilkWebsite\Http\Middleware;
+namespace Blumilk\Website\Http\Middleware;
 
+use Blumilk\Website\Providers\RouteServiceProvider;
 use Closure;
-use BlumilkWebsite\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Symfony\Component\HttpFoundation\Response;

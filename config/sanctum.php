@@ -2,8 +2,8 @@
 
 declare(strict_types=1);
 
-use BlumilkWebsite\Http\Middleware\EncryptCookies;
-use BlumilkWebsite\Http\Middleware\VerifyCsrfToken;
+use Blumilk\Website\Http\Middleware\EncryptCookies;
+use Blumilk\Website\Http\Middleware\VerifyCsrfToken;
 use Laravel\Sanctum\Sanctum;
 
 return [

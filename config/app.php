@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-use BlumilkWebsite\Providers\AppServiceProvider;
-use BlumilkWebsite\Providers\EventServiceProvider;
-use BlumilkWebsite\Providers\RouteServiceProvider;
+use Blumilk\Website\Providers\AppServiceProvider;
+use Blumilk\Website\Providers\EventServiceProvider;
+use Blumilk\Website\Providers\RouteServiceProvider;
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Support\ServiceProvider;
 
@@ -15,7 +15,7 @@ $providers = ServiceProvider::defaultProviders()->merge([
 ])->toArray();
 
 return [
-    "name" => env("APP_NAME", "Laravel"),
+    "name" => "Blumilk software development",
     "env" => env("APP_ENV", "production"),
     "debug" => (bool)env("APP_DEBUG", false),
     "url" => env("APP_URL", "http://localhost"),

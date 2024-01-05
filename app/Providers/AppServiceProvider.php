@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BlumilkWebsite\Providers;
+namespace Blumilk\Website\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

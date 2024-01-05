@@ -2,7 +2,14 @@
 
 declare(strict_types=1);
 
-use Illuminate\Support\Facades\Route;
-use Inertia\Response;
+use Blumilk\Website\Http\Controllers\ContactController;
+use Blumilk\Website\Http\Controllers\HomeController;
+use Illuminate\Routing\Router;
+use Illuminate\Translation\Translator;
 
-Route::get("/", fn(): Response => inertia("Welcome"));
+/** @var Router $router */
+$router = app(Router::class);
+$lang = app(Translator::class);
+
+$router->get("/", HomeController::class)->name("home");
+$router->get($lang->uri("contact"), ContactController::class)->name("contact");

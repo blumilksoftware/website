@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-use BlumilkWebsite\Console\Kernel as ConsoleKernel;
-use BlumilkWebsite\Exceptions\Handler;
-use BlumilkWebsite\Http\Kernel as HttpKernel;
+use Blumilk\Website\Console\Kernel as ConsoleKernel;
+use Blumilk\Website\Exceptions\Handler;
+use Blumilk\Website\Http\Kernel as HttpKernel;
 use Illuminate\Contracts\Console\Kernel as ConsoleKernelContract;
 use Illuminate\Contracts\Debug\ExceptionHandler;
 use Illuminate\Contracts\Http\Kernel as HttpKernelContract;
