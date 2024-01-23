@@ -5,25 +5,29 @@ declare(strict_types=1);
 namespace Blumilk\Website\Http\Controllers;
 
 use CodeZero\LocalizedRoutes\Controllers\FallbackController as OriginalFallbackController;
+use CodeZero\LocalizedRoutes\LocalizedUrlGenerator;
+use CodeZero\UriTranslator\UriTranslator;
 use Illuminate\Http\Request;
+use Illuminate\Routing\Route;
+use Illuminate\Routing\Router;
 use Illuminate\Support\Facades\Redirect;
-use Illuminate\Support\Facades\Route;
-use Illuminate\Translation\Translator;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 
 class FallbackController extends OriginalFallbackController
 {
     public function __construct(
-        protected Translator $translator,
-        protected Request $request,
+        protected Router $router,
+        protected LocalizedUrlGenerator $urlGenerator,
+        protected UriTranslator $translator,
     ) {}
 
-    protected function redirectResponse()
+    protected function redirectResponse(): RedirectResponse|false
     {
         if (!$this->shouldRedirect()) {
             return false;
         }
 
-        $localizedUrl = Route::localizedUrl();
+        $localizedUrl = $this->urlGenerator->generateFromRequest();
         $route = $this->findRouteByUrl($localizedUrl);
 
         if ($route->isFallback) {
@@ -34,14 +38,14 @@ class FallbackController extends OriginalFallbackController
             ->header("Cache-Control", "no-store, no-cache, must-revalidate");
     }
 
-    protected function findRouteByUrl(string $url): \Illuminate\Routing\Route
+    protected function findRouteByUrl(string $url): Route
     {
         $parts = explode("/", $url);
         $path = implode("/", array_splice($parts, 4));
-        $url = $this->translator->uri($path);
+        $url = $this->translator->translate($path);
 
         $domain = implode("/", array_splice($parts, -4));
 
-        return Route::getRoutes()->match(Request::create($domain . "/" . $url));
+        return $this->router->getRoutes()->match(Request::create($domain . "/" . $url));
     }
 }
