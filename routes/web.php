@@ -13,3 +13,4 @@ $lang = app(Translator::class);
 
 $router->get("/", HomeController::class)->name("home");
 $router->get($lang->uri("contact"), ContactController::class)->name("contact");
+$router->get($lang->uri("events/{id}"), ContactController::class)->name("event");

@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Blumilk\Website\Http\Controllers;
 
-use Inertia\Response;
-use Inertia\ResponseFactory;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
 
 class HomeController extends Controller
 {
-    public function __invoke(ResponseFactory $factory): Response
+    public function __invoke(Factory $factory): View
     {
-        return $factory->render("Home");
+        return $factory->make("home");
     }
 }

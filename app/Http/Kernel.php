@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Blumilk\Website\Http;
 
 use Blumilk\Website\Http\Middleware\Authenticate;
-use Blumilk\Website\Http\Middleware\Localize;
 use Blumilk\Website\Http\Middleware\RedirectIfAuthenticated;
 use Blumilk\Website\Http\Middleware\TrimStrings;
 use Blumilk\Website\Http\Middleware\TrustProxies;
@@ -29,12 +28,10 @@ use Illuminate\Routing\Middleware\ValidateSignature;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
-use Inertia\Middleware as HandleInertiaRequests;
 
 class Kernel extends HttpKernel
 {
     protected $middleware = [
-        Localize::class,
         TrustProxies::class,
         HandleCors::class,
         PreventRequestsDuringMaintenance::class,
@@ -51,7 +48,6 @@ class Kernel extends HttpKernel
             VerifyCsrfToken::class,
             SetLocale::class,
             SubstituteBindings::class,
-            HandleInertiaRequests::class,
         ],
         "api" => [
             ThrottleRequests::class . ":api",

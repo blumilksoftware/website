@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Blumilk\Website\Providers;
 
-use Blumilk\Website\Http\Controllers\FallbackController;
+use CodeZero\LocalizedRoutes\Controllers\FallbackController;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Foundation\Support\Providers\RouteServiceProvider as ServiceProvider;
 use Illuminate\Http\Request;

@@ -31,4 +31,10 @@ class LocalisedRoutingTest extends TestCase
         $response = $this->get("/pl/contact");
         $response->assertStatus(404);
     }
+
+    public function testNonExistingNonHandledLanguageLocalisedRoute(): void
+    {
+        $response = $this->get("/kz/contact");
+        $response->assertStatus(404);
+    }
 }
