@@ -12,10 +12,10 @@
 
         <div class="p-12 flex justify-center gap-4">
             <a href="{{ route("home") }}">{{ __("content.pages.home") }}</a>
-            <a href="{{ route("home") }}">{{ __("content.pages.about") }}</a>
-            <a href="{{ route("home") }}">{{ __("content.pages.case_study") }}</a>
-            <a href="{{ route("home") }}">{{ __("content.pages.partners") }}</a>
-            <a href="{{ route("home") }}">{{ __("content.pages.career") }}</a>
+            <a href="{{ route("about") }}">{{ __("content.pages.about") }}</a>
+            <a href="{{ route("case-studies") }}">{{ __("content.pages.case_study") }}</a>
+            <a href="{{ route("partners") }}">{{ __("content.pages.partners") }}</a>
+            <a href="{{ route("career") }}">{{ __("content.pages.career") }}</a>
             <a href="{{ route("contact") }}">{{ __("content.pages.contact") }}</a>
 
             <div class="flex-1 flex justify-end gap-4">

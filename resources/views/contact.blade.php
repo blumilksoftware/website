@@ -1,5 +1,5 @@
 @extends("layout.app")
 
 @section("content")
-    office@blumik.pl
+    office@blumilk.pl
 @endsection
