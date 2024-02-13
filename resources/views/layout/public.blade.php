@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ App::currentLocale() }}">
     <head>
         <title>Blumilk</title>
@@ -9,7 +9,6 @@
         @vite("resources/js/app.ts")
     </head>
     <body>
-
         <div class="p-12 flex justify-center gap-4">
             <a href="{{ route("home") }}">{{ __("content.pages.home") }}</a>
             <a href="{{ route("about") }}">{{ __("content.pages.about") }}</a>

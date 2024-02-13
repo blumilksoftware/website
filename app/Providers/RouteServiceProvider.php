@@ -13,16 +13,24 @@ use Illuminate\Support\Facades\Route;
 
 class RouteServiceProvider extends ServiceProvider
 {
-    public const HOME = "/home";
+    public const HOME = "/";
 
     public function boot(): void
     {
-        RateLimiter::for("api", fn(Request $request) => Limit::perMinute(60)->by($request->user()?->id ?: $request->ip()));
+        RateLimiter::for(
+            "api",
+            fn(Request $request): Limit => Limit::perMinute(60)
+                ->by($request->user()?->id ?: $request->ip()),
+        );
 
         $this->routes(function (): void {
             Route::middleware("api")
                 ->prefix("api")
                 ->group(base_path("routes/api.php"));
+
+            Route::middleware("web")
+                ->prefix("dashboard")
+                ->group(base_path("routes/dashboard.php"));
 
             Route::localized(function (): void {
                 Route::middleware("web")

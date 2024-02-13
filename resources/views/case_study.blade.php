@@ -1,5 +1,5 @@
 @extends("layout.public")
 
 @section("content")
-    office@blumilk.pl
+    case study
 @endsection
