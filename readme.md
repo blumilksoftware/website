@@ -1,6 +1,6 @@
 ## @blumilksoftware/website
 ### About application
-> placeholder
+> Blumilk official website.
 
 ### Local development
 ```
