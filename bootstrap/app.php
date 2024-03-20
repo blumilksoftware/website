@@ -2,18 +2,25 @@
 
 declare(strict_types=1);
 
-use Blumilk\Website\Console\Kernel as ConsoleKernel;
-use Blumilk\Website\Exceptions\Handler;
-use Blumilk\Website\Http\Kernel as HttpKernel;
-use Illuminate\Contracts\Console\Kernel as ConsoleKernelContract;
-use Illuminate\Contracts\Debug\ExceptionHandler;
-use Illuminate\Contracts\Http\Kernel as HttpKernelContract;
+use CodeZero\LocalizedRoutes\Controllers\FallbackController;
 use Illuminate\Foundation\Application;
+use Illuminate\Support\Facades\Route;
 
-$app = new Application($_ENV["APP_BASE_PATH"] ?? dirname(__DIR__));
+return Application::configure(basePath: dirname(__DIR__))
+    ->withRouting(
+        using: function (): void {
+            Route::middleware("web")
+                ->prefix("dashboard")
+                ->group(base_path("routes/dashboard.php"));
 
-$app->singleton(HttpKernelContract::class, HttpKernel::class);
-$app->singleton(ConsoleKernelContract::class, ConsoleKernel::class);
-$app->singleton(ExceptionHandler::class, Handler::class);
+            Route::localized(function (): void {
+                Route::middleware("web")
+                    ->group(base_path("routes/web.php"));
+            });
 
-return $app;
+            Route::fallback(FallbackController::class);
+        },
+    )
+    ->withMiddleware()
+    ->withExceptions()
+    ->create();
