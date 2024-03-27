@@ -1,4 +1,4 @@
-name: "Checking app: testing and linting PHP"
+name: "Checking app: testing and linting JS"
 
 on:
   pull_request:
