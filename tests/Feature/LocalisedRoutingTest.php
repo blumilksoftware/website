@@ -17,7 +17,6 @@ class LocalisedRoutingTest extends TestCase
     public function testExistingLocalisedRoute(): void
     {
         $response = $this->get("/pl/kontakt");
-        dd($response->getContent());
         $response->assertStatus(200);
     }
 
