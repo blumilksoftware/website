@@ -57,7 +57,7 @@ RUN apt-get update \
         redis
 
 # For other versions check: https://pecl.php.net/package/xdebug
-ARG XDEBUG_VERSION=3.2.2
+ARG XDEBUG_VERSION=3.3.1
 ARG INSTALL_XDEBUG=true
 
 RUN if [ ${INSTALL_XDEBUG} = true ]; then \
