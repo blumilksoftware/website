@@ -40,16 +40,16 @@ jobs:
         run: composer validate
 
       - name: Cache dependencies
-        uses: actions/cache@v3.3.2 # https://github.com/actions/cache
+        uses: actions/cache@v4.0.2 # https://github.com/actions/cache
         with:
           path: vendor
           key: ${{ runner.os }}-composer-dependencies-${{ hashFiles('composer.lock') }}
           restore-keys: ${{ runner.os }}-composer-dependencies
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@2.27.1 # https://github.com/shivammathur/setup-php
+        uses: shivammathur/setup-php@2.30.1 # https://github.com/shivammathur/setup-php
         with:
-          php-version: 8.2
+          php-version: 8.3
           extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, pdo_pgsql, intl
           coverage: none
 
