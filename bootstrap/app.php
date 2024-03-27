@@ -3,7 +3,10 @@
 declare(strict_types=1);
 
 use CodeZero\LocalizedRoutes\Controllers\FallbackController;
+use CodeZero\LocalizedRoutes\Middleware\SetLocale;
 use Illuminate\Foundation\Application;
+use Illuminate\Foundation\Configuration\Middleware;
+use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Support\Facades\Route;
 
 return Application::configure(basePath: dirname(__DIR__))
@@ -21,6 +24,13 @@ return Application::configure(basePath: dirname(__DIR__))
             Route::fallback(FallbackController::class);
         },
     )
-    ->withMiddleware()
+    ->withMiddleware(function (Middleware $middleware): void {
+        $middleware->web(remove: [
+            SubstituteBindings::class,
+        ])->web(append: [
+            SetLocale::class,
+            SubstituteBindings::class,
+        ]);
+    })
     ->withExceptions()
     ->create();
