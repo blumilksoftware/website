@@ -1,5 +1,6 @@
 {
     "name": "blumilksoftware/website",
+    "version": "1.0.0",
     "type": "project",
     "description": "website project.",
     "keywords": ["framework", "laravel"],
