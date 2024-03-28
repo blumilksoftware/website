@@ -1,0 +1,96 @@
+networks:
+    website-dev:
+        driver: bridge
+    traefik-proxy-blumilk-local:
+        external: true
+
+volumes:
+    website-postgres-data:
+        name: website-postgres-data
+    website-redis-data:
+        name: website-redis-data
+
+services:
+    app:
+        build:
+            context: ./environment/dev/app
+            dockerfile: Dockerfile
+            args:
+                - INSTALL_XDEBUG=${DOCKER_INSTALL_XDEBUG:-true}
+                - USER_ID=${DOCKER_HOST_USER_ID:-1000}
+        labels:
+            - "traefik.enable=true"
+            - "traefik.blumilk.environment=true"
+            - "traefik.http.routers.website-http-router.rule=Host(`website.blumilk.localhost`)"
+            - "traefik.http.routers.website-http-router.entrypoints=web"
+            - "traefik.http.routers.website-https-router.rule=Host(`website.blumilk.localhost`)"
+            - "traefik.http.routers.website-https-router.entrypoints=websecure"
+            - "traefik.http.routers.website-https-router.tls=true"
+        container_name: website-app-dev
+        working_dir: /application
+        volumes:
+            - ./environment/dev/app/nginx.conf:/etc/nginx/nginx.conf:ro
+            - ./environment/dev/app/php.ini:/usr/local/etc/php/conf.d/zzz-overrides.ini:ro
+            - ./environment/dev/app/php-fpm.conf:/usr/local/etc/php-fpm.d/zzz-overrides.conf:ro
+            - ./environment/dev/app/supervisord.conf:/etc/supervisor/custom-supervisord.conf:ro
+            - .:/application
+        ports:
+            - ${DOCKER_APP_HOST_PORT:-63851}:80
+        networks:
+            - website-dev
+            - traefik-proxy-blumilk-local
+        restart: unless-stopped
+        depends_on:
+            database:
+                condition: service_healthy
+
+    database:
+        image: postgres:16.1-alpine3.18
+        container_name: website-db-dev
+        environment:
+            - POSTGRES_USER=${DB_USERNAME}
+            - POSTGRES_PASSWORD=${DB_PASSWORD}
+            - POSTGRES_DB=${DB_DATABASE}
+            - PGDATA=/var/lib/postgresql/data
+        healthcheck:
+            test: [ "CMD-SHELL", "pg_isready --dbname ${DB_DATABASE} --username ${DB_USERNAME}"]
+            interval: 3s
+            timeout: 3s
+            retries: 5
+        ports:
+            - ${DOCKER_DATABASE_HOST_PORT:-63853}:5432
+        volumes:
+            - website-postgres-data:/var/lib/postgresql/data
+        networks:
+            - website-dev
+        restart: unless-stopped
+
+    mailpit:
+      image: axllent/mailpit:v1.10.0
+      container_name: website-mailpit-dev
+      labels:
+        - "traefik.enable=true"
+        - "traefik.blumilk.environment=true"
+        - "traefik.http.routers.website-mailpit-http-router.rule=Host(`website-mailpit.blumilk.localhost`)"
+        - "traefik.http.routers.website-mailpit-http-router.entrypoints=web"
+        - "traefik.http.routers.website-mailpit-https-router.rule=Host(`website-mailpit.blumilk.localhost`)"
+        - "traefik.http.routers.website-mailpit-https-router.entrypoints=websecure"
+        - "traefik.http.routers.website-mailpit-https-router.tls=true"
+        - "traefik.http.services.website-mailpit.loadbalancer.server.port=8025"
+      networks:
+        - website-dev
+        - traefik-proxy-blumilk-local
+      ports:
+        - ${DOCKER_MAILPIT_DASHBOARD_HOST_PORT:-63854}:8025
+      restart: unless-stopped
+
+    redis:
+        image: redis:7.2.3-alpine3.18
+        container_name: website-redis-dev
+        ports:
+            - ${DOCKER_REDIS_HOST_PORT:-63852}:6379
+        volumes:
+            - website-redis-data:/data
+        networks:
+            - website-dev
+        restart: unless-stopped

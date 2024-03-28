@@ -1,47 +1,29 @@
 {
-  "name": "blumilk-website",
-  "private": true,
-  "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "routify -c dev:vite:host",
-    "dev:cypress": "routify -c dev:vite",
-    "dev:vite": "vite",
-    "dev:vite:host": "vite --host",
-    "build": "routify -b && vite build",
-    "preview": "vite preview",
-    "test": "mocha --require @babel/register",
-    "lint": "eslint src test"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.22.11",
-    "@babel/eslint-parser": "^7.21.8",
-    "@babel/plugin-syntax-import-assertions": "^7.20.0",
-    "@babel/preset-env": "^7.22.5",
-    "@babel/register": "^7.21.0",
-    "@roxi/routify": "^2.18.12",
-    "@sveltejs/vite-plugin-svelte": "^2.4.1",
-    "@tailwindcss/forms": "^0.5.3",
-    "autoprefixer": "^10.4.14",
-    "chai": "^4.3.7",
-    "cypress": "^12.13.0",
-    "eslint": "^8.46.0",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-cypress": "^2.13.3",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-mocha": "^10.1.0",
-    "eslint-plugin-n": "^15.7.0",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-svelte3": "^4.0.0",
-    "flat": "^5.0.2",
-    "mocha": "^10.2.0",
-    "postcss": "^8.4.24",
-    "sass": "^1.68.0",
-    "svelte": "^3.59.1",
-    "svelte-i18n": "^3.6.0",
-    "svelte-preprocess": "^5.0.4",
-    "tailwindcss": "^3.3.2",
-    "vite": "^4.3.9"
-  }
+    "name": "website",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "lint": "eslint .",
+        "lintf": "eslint . --fix"
+    },
+    "dependencies": {
+        "@tailwindcss/forms": "^0.5.7",
+        "@tailwindcss/typography": "^0.5.10",
+        "alpinejs": "^3.13.5",
+        "laravel-vite-plugin": "^0.8.1",
+        "tailwindcss": "^3.3.5"
+    },
+    "devDependencies": {
+        "@blumilksoftware/eslint-config": "^2.0.0",
+        "@typescript-eslint/eslint-plugin": "^6.11.0",
+        "autoprefixer": "^10.4.16",
+        "eslint": "^8.53.0",
+        "eslint-config-prettier": "^9.0.0",
+        "eslint-plugin-tailwindcss": "^3.13.0",
+        "eslint-plugin-vue": "^9.18.1",
+        "postcss": "^8.4.31",
+        "vite": "^4.5.0"
+    }
 }
