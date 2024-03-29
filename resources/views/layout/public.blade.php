@@ -9,26 +9,12 @@
         @vite("resources/js/app.ts")
     </head>
     <body>
-        <div class="p-12 flex justify-center gap-4">
-            <a href="{{ route("home") }}">{{ __("content.pages.home") }}</a>
-            <a href="{{ route("about") }}">{{ __("content.pages.about") }}</a>
-            <a href="{{ route("case-studies") }}">{{ __("content.pages.case_study") }}</a>
-            <a href="{{ route("partners") }}">{{ __("content.pages.partners") }}</a>
-            <a href="{{ route("career") }}">{{ __("content.pages.career") }}</a>
-            <a href="{{ route("contact") }}">{{ __("content.pages.contact") }}</a>
-
-            <div class="flex-1 flex justify-end gap-4">
-                @foreach(LocaleConfig::getLocales() as $locale)
-                    @if (!App::isLocale($locale))
-                        <a href="{{ route(Route::currentRouteName(), Route::getCurrentRoute()->parameters(), true, $locale) }}">
-                            <i class="large {{ $locale === "en" ? "gb" : $locale }} flat flag"></i> </a>
-                    @endif
-                @endforeach
-            </div>
+    <div class="left-0 right-0 bg-background">
+        @include("layout.navigation")
+        <div class="min-height-100vh pl-52 pr-52">
+        @yield("content")
         </div>
-
-        <div class="p-12">
-            @yield("content")
-        </div>
+        @include("layout.footer")
+    </div>
     </body>
 </html>

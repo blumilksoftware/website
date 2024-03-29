@@ -9,4 +9,5 @@ return [
     "pages.partners" => "partnerzy",
     "pages.career" => "kariera",
     "pages.contact" => "kontakt",
+    "buttons.lets_talk" => "porozmawiajmy",
 ];
