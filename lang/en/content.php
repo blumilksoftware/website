@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 return [
-    "pages.home" => "home",
-    "pages.about" => "about",
-    "pages.case_study" => "case study",
-    "pages.partners" => "partners",
-    "pages.career" => "career",
-    "pages.contact" => "contact",
+    "pages.home" => "Home",
+    "pages.about" => "About",
+    "pages.case_study" => "Case Study",
+    "pages.partners" => "Partners",
+    "pages.career" => "Career",
+    "pages.contact" => "Contact",
 ];

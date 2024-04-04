@@ -3,11 +3,10 @@
 declare(strict_types=1);
 
 return [
-    "pages.home" => "strona główna",
-    "pages.about" => "o firmie",
-    "pages.case_study" => "case study",
-    "pages.partners" => "partnerzy",
-    "pages.career" => "kariera",
-    "pages.contact" => "kontakt",
-    "buttons.lets_talk" => "porozmawiajmy",
+    "pages.home" => "Strona Główna",
+    "pages.about" => "o Firmie",
+    "pages.case_study" => "Case Study",
+    "pages.partners" => "Partnerzy",
+    "pages.career" => "Kariera",
+    "pages.contact" => "Kontakt",
 ];

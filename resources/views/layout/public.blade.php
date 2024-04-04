@@ -9,9 +9,9 @@
         @vite("resources/js/app.ts")
     </head>
     <body>
-    <div class="left-0 right-0 bg-background">
+    <div class="left-0 right-0 bg-white">
         @include("layout.navigation")
-        <div class="min-height-100vh pl-52 pr-52">
+        <div class="min-height-100vh">
         @yield("content")
         </div>
         @include("layout.footer")

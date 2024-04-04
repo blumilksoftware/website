@@ -1,4 +1,4 @@
 <button type="button"
-        class="bg-website-normal px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-website-light focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+        class="m-1 bg-website-button px-3.5 py-2.5 text-sm text-white shadow-sm transform transition hover:scale-110 hover:rounded-sm flex items-center space-x-2">
     {{ $slot }}
 </button>

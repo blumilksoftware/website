@@ -1,0 +1,25 @@
+{
+    "case_studies": [
+        {
+            "Project": "E-commerce Application",
+            "Client": "Company XYZ",
+            "Goal": "Increase online sales by 30% within a year",
+            "Scope": "Development of a new e-commerce platform with an intuitive interface, integration with payment systems, optimization for mobile devices",
+            "Technologies": "Node.js, React, MongoDB, Stripe API"
+        },
+        {
+            "Project": "Customer Relationship Management (CRM) System",
+            "Client": "Company ABC",
+            "Goal": "Automate sales and customer service processes, improve sales department efficiency",
+            "Scope": "Development of a personalized CRM system enabling contact management, lead tracking, sales data analysis",
+            "Technologies": "Salesforce, Java, MySQL, Angular"
+        },
+        {
+            "Project": "Mobile Application for Remote Fleet Management",
+            "Client": "Transport Company XYZ",
+            "Goal": "Logistics optimization, increased efficiency in fleet management",
+            "Scope": "Development of a mobile application for monitoring vehicles, route tracing, driver and order management",
+            "Technologies": "Swift, Firebase, Google Maps API, Kotlin"
+        }
+    ]
+}

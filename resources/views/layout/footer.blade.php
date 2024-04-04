@@ -1,11 +1,8 @@
-<footer class="">
-    <div class="bg-gradient-to-t from-blue-900 to-blue-700">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 120">
-            <path fill="#f4f8fd" fill-opacity="1"
-                  d="M0,0L60,21.3C120,43,240,85,360,90.7C480,96,600,64,720,53.3C840,43,960,53,1080,53.3C1200,53,1320,43,1380,37.3L1440,32L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
-        </svg>
-        <div class="flex text-white justify-center pl-52 pr-52">
-            <div class="lg:flex gap-x-16">
+<footer>
+    <div class="bg-gradient-to-t from-footer-dark to-footer-light">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 240"><path fill="#ffffff" fill-opacity="1" d="M0,128L80,149.3C160,171,320,213,480,224C640,235,800,213,960,176C1120,139,1280,85,1360,58.7L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
+        <div class="flex text-white justify-center padding">
+            <div class="flex gap-x-16">
                 <div class="lg:w-1/2">
                     <h4 class="text-4xl font-bold tracking-tight text-white">{{__("footer.contact.title")}}</h4>
                     <p class="mt-2 text-lg leading-8 text-white">{{__("footer.contact.subtitle")}}</p>
@@ -52,8 +49,8 @@
                         </form>
                     </div>
                 </div>
-                <div class="lg:w-1/2 lg:mt-6 lg:flex-none pl-8 pr-8 rounded-3xl gap-x-6">
-                    <div class="bg-blue-600 p-8 rounded-3xl bg-opacity-40 gap-x-6">
+                <div class="lg:w-1/2 lg:mt-6 lg:flex-none px-8 gap-x-6">
+                    <div class="bg-footer-light p-8 rounded-3xl bg-opacity-80 gap-x-6">
                         <figure class="mt-10">
                             <figcaption class="flex gap-x-6">
                                 <img src="images/kasia.jpeg" alt="" class="h-24 w-24 flex-none rounded-full">
@@ -64,7 +61,8 @@
                                     <div class="mt-6">
                                         <div class="flex mt-2">
                                             <span class="sr-only">Email</span>
-                                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
                                                 <path fill-rule="evenodd"
                                                       d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
                                                       clip-rule="evenodd"/>
@@ -73,7 +71,8 @@
                                         </div>
                                         <div class="flex mt-2">
                                             <span class="sr-only">Phone number</span>
-                                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"
+                                                 aria-hidden="true">
                                                 <path fill-rule="evenodd"
                                                       d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"
                                                       clip-rule="evenodd"/>
@@ -94,7 +93,7 @@
             </div>
         </div>
 
-        <div class="justify-center mx-auto max-w-7xl px-6 py-12 md:flex md:items-center md:justify-between lg:px-8">
+        <div class="py-12 padding md:flex md:items-center md:justify-between">
             <div class="mt-8 md:order-1 md:mt-0">
                 <p class="text-center text-xs leading-5 text-white font-medium md:font-normal">&copy; 2024 Blumilk, Inc.
                     All rights reserved.</p>
