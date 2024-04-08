@@ -6,7 +6,7 @@
 ])
 
 <div class="mb-12 md:mb-0">
-    <i class="fa-solid fa-quote-left fa-2xl relative right-8 top-2"></i>
+    <i class="text-8xl fa-solid fa-quote-left fa-2xl relative right-12 top-8 text-neutral-600"></i>
     <div class="mb-6 flex justify-center relative z-10">
         <img src="{{ $photoUrl }}" class="w-32 rounded-full shadow-lg"/>
     </div>
@@ -15,7 +15,7 @@
     <p class="text-neutral-600">
         {!! $description !!}
     </p>
-    <a class="mb-8 text-sm flex items-center justify-center text-neutral-600 px-4 py-2" href="#">
+    <a class="mb-8 text-sm flex items-center justify-center text-neutral-400 px-4 py-2" href="#">
         Czytaj więcej
     </a>
     <a class="mb-0 flex items-center justify-center" href="#">

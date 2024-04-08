@@ -54,18 +54,18 @@
             <div class="text-2xl font-medium text-gray-400">Dołącz do grona <span class="text-website-normal">zadowolonych klientów Blumilk</span>
             </div>
 
-            <div class="flex flex-row py-12 pb-12 text-gray-400">
+            <div class="flex flex-row pb-12 text-gray-400 items-center">
                 <div class="basis-1/4">
-                    <img src="partnerships/cwup.png" class="h-1/2" alt="Collegium Witelona"/>
+                    <img src="images/clients/cwup.png" class="w-auto" alt="Collegium Witelona"/>
                 </div>
                 <div class="basis-1/4">
-                    <img src="images/client-2.jpg" class="h-auto" alt="Insly"/>
+                    <img src="images/clients/insly.png" class="h-auto" alt="Insly"/>
                 </div>
                 <div class="basis-1/4">
-                    <img src="images/client-3.jpg" class="h-auto" alt="KGHM"/>
+                    <img src="images/clients/kghm.png" class="w-auto" alt="KGHM"/>
                 </div>
                 <div class="basis-1/4">
-                    <img src="images/client-4.jpg" class="h-auto" alt="Vita Plus"/>
+                    <img src="images/clients/vitaplus.png" class="w-auto" alt="Vita Plus"/>
                 </div>
             </div>
         </div>
@@ -131,7 +131,7 @@
                       d="M0,64L80,69.3C160,75,320,85,480,90.7C640,96,800,96,960,80C1120,64,1280,32,1360,16L1440,0L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
             </svg>
         </div>
-        <div class="relative flex justify-center padding py-24 ">
+        <div class="relative flex py-24 padding-left items-center overflow-hidden">
             <div class="flex basis-1/2 z-10">
                 <div class="flex flex-col">
                     <div class="relative">
