@@ -43,7 +43,7 @@
                                     </p>
                                 </div>
 
-                                <x-primary-button type="submit">{{ __("buttons.lets_talk") }}</x-primary-button>
+                                <x-primary-button type="submit" href="">{{ __("buttons.lets_talk") }}</x-primary-button>
                             </div>
 
                         </form>

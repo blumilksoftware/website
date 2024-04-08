@@ -120,7 +120,7 @@
                                 </div>
                             </div>
                             <div class="flex place-content-center px-4 py-2 sm:px-6">
-                                <x-primary-button>{{ __("buttons.text_us") }}</x-primary-button>
+                                <x-block-primary-button href="">{{ __("buttons.text_us") }}</x-block-primary-button>
                             </div>
                         </div>
                     </div>
@@ -131,10 +131,14 @@
                       d="M0,64L80,69.3C160,75,320,85,480,90.7C640,96,800,96,960,80C1120,64,1280,32,1360,16L1440,0L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
             </svg>
         </div>
-        <div class="flex justify-center padding py-24 ">
+        <div class="relative flex justify-center padding py-24 ">
             <div class="flex basis-1/2 z-10">
                 <div class="flex flex-col">
-                    <div><h2 class="text-4xl font-semibold text-gray-900 mb-4">Case study</h2></div>
+                    <div class="relative">
+                        <h2 class="text-4xl font-semibold text-gray-900 mb-4">Case study</h2>
+                        <span class="absolute -right-24"><x-bubble size="40"/>
+                        </span>
+                    </div>
                     <div class="text-black">
                         <span>Dowiedz się jak nasze realizacje przekształciły wyzwania klientów w <span
                                 class="font-medium">skuteczne rozwiązania</span></span>
@@ -143,20 +147,27 @@
                                 <li><span class="font-semibold">{{ $key }}</span> : {{ $description }}</li>
                             @endforeach
                         </ul>
-                        <div class="flex">
-                            <x-secondary-button>{{ __("buttons.all_projects") }}</x-secondary-button>
-                            <x-primary-button>{{ __("buttons.case_study") }}</x-primary-button>
+                        <div class="relative flex">
+                            <x-secondary-button href="">{{ __("buttons.all_projects") }}</x-secondary-button>
+                            <x-primary-button href="">{{ __("buttons.case_study") }}</x-primary-button>
+                            <span class="absolute -left-52">
+                                <x-bubble size="25"/>
+                            </span>
+                            <span class="absolute -right-24">
+                                <x-bubble size="80"/>
+                            </span>
                         </div>
                     </div>
                 </div>
-                <span class="relative left-44">
-                <x-bubble size="40"/>
-            </span>
-                <span class="relative left-20 top-80">
-                <x-bubble size="90"/>
-            </span>
+
+                <span class="absolute left-20 top-80">
+                    <x-bubble size="90"/>
+                </span>
+                <span class="absolute left-48 top-96">
+                    <x-bubble size="15"/>
+                </span>
             </div>
-            <div class="flex rounded-2xl bg-gray -rotate-3 basis-1/2 relative left-56">
+            <div class="flex rounded-2xl bg-gray -rotate-3 basis-1/2 relative shadow-md left-56">
                 <div class="relative flex left-12 overflow-hidden rounded-2xl bg-white shadow-md rotate-3">
                     <img src="graphics/vita.png" class="" alt="placeholder"/>
                 </div>
@@ -182,12 +193,38 @@
                 </div>
             </div>
         </div>
-        <div class="my-12 py-12">
+        <div class=" py-12">
             <div class="padding text-center z-10">
                 <h2 class="text-4xl font-semibold text-gray-900 my-6">Co mówią o nas inni</h2>
                 <span>Opinie naszych klientów są bardzo ważne, <span class="font-semibold">świadczą o jakości naszych usług</span> i inspirują nas do nieustannego doskonalenia.</span>
-
+                <div class="grid gap-6 text-center md:grid-cols-3 lg:gap-12 py-10">
+                    <x-profile-card
+                        photoUrl="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg"
+                        name="Maria Smantha"
+                        occupation="Web Developer"
+                        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur."
+                    />
+                    <x-profile-card
+                        photoUrl="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg"
+                        name="Lisa Cudrow"
+                        occupation="Graphic Designer"
+                        description="Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi."
+                    />
+                    <x-profile-card
+                        photoUrl="https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg"
+                        name="John Smith"
+                        occupation="Marketing Specialist"
+                        description="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti."
+                    />
+                </div>
             </div>
+        </div>
+        <div class="padding py-12">
+            <div class="flex flex-row items-center justify-between">
+                <h2 class="text-4xl font-semibold text-gray-900 my-6">Nasze aktywności</h2>
+                <x-primary-button href="">Zobacz wszystkie</x-primary-button>
+            </div>
+
         </div>
     </div>
 @endsection

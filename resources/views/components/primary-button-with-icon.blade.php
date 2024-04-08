@@ -1,5 +1,6 @@
 <button type="button"
-        class="bg-website-normal px-3.5 py-2.5 text-sm text-white shadow-sm transform transition hover:scale-110 hover:rounded-sm flex items-center space-x-2">
+        class="bg-website-normal px-3.5 py-2.5 text-sm text-white shadow-sm transform transition hover:scale-110 hover:rounded-sm flex items-center space-x-2"
+        @isset($href) onclick="window.location='{{ $href }}';" @endisset>
     <span class="flex items-center space-x-1">
         {{ $slot }}
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
