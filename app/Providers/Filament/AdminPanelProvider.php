@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Blumilk\Website\Providers\Filament;
 
 use Filament\Http\Middleware\Authenticate;
@@ -24,18 +26,18 @@ class AdminPanelProvider extends PanelProvider
     {
         return $panel
             ->default()
-            ->id('admin')
-            ->path('admin')
+            ->id("admin")
+            ->path("admin")
             ->login()
             ->colors([
-                'primary' => Color::Amber,
+                "primary" => Color::Amber,
             ])
-            ->discoverResources(in: app_path('Filament/Resources'), for: 'Blumilk\\Website\\Filament\\Resources')
-            ->discoverPages(in: app_path('Filament/Pages'), for: 'Blumilk\\Website\\Filament\\Pages')
+            ->discoverResources(in: app_path("Filament/Resources"), for: "Blumilk\\Website\\Filament\\Resources")
+            ->discoverPages(in: app_path("Filament/Pages"), for: "Blumilk\\Website\\Filament\\Pages")
             ->pages([
                 Pages\Dashboard::class,
             ])
-            ->discoverWidgets(in: app_path('Filament/Widgets'), for: 'Blumilk\\Website\\Filament\\Widgets')
+            ->discoverWidgets(in: app_path("Filament/Widgets"), for: "Blumilk\\Website\\Filament\\Widgets")
             ->widgets([
                 Widgets\AccountWidget::class,
                 Widgets\FilamentInfoWidget::class,
