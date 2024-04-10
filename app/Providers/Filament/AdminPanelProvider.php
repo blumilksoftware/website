@@ -45,7 +45,7 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->plugin(
                 SpatieLaravelTranslatablePlugin::make()
-                    ->defaultLocales(["pl", "en"]),
+                    ->defaultLocales(config("app.translatable_locales")),
             )
             ->middleware([
                 EncryptCookies::class,
