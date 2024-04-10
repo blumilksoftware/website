@@ -40,7 +40,7 @@ class ActivityResource extends Resource
                 Forms\Components\Checkbox::make("published")
                     ->label("Opublikowane"),
                 Forms\Components\DateTimePicker::make("published_at")
-                    ->format("Y/m/d")
+                    ->format(DateFormats::DATE_DISPLAY)
                     ->time(false)
                     ->label("Data publikacji")
                     ->required(),
