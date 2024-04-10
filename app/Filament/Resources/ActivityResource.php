@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Blumilk\Website\Filament\Resources;
 
+use Blumilk\Website\Enums\DateFormats;
 use Blumilk\Website\Filament\Resources\ActivityResource\Pages;
 use Blumilk\Website\Models\Activity;
 use Filament\Forms;
@@ -36,10 +37,17 @@ class ActivityResource extends Resource
                         ->label("Podtytuł")
                         ->maxLength(255),
                 )->requiredLocales(config("app.translatable_locales")),
+                Forms\Components\Checkbox::make("published")
+                    ->label("Opublikowane"),
+                Forms\Components\DateTimePicker::make("published_at")
+                    ->format("Y/m/d")
+                    ->time(false)
+                    ->label("Data publikacji")
+                    ->required(),
                 Forms\Components\FileUpload::make("photo")
                     ->label("Zdjęcie")
                     ->required()
-                    ->directory("activities")
+                    ->directory(Activity::PHOTOS_DIRECTORY)
                     ->multiple(false)
                     ->maxSize(1000),
                 TranslatableContainer::make(
@@ -57,8 +65,10 @@ class ActivityResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make("title")
                     ->label("Tytuł"),
-                Tables\Columns\TextColumn::make("subtitle")
-                    ->label("Podtytuł"),
+                Tables\Columns\CheckboxColumn::make("published")
+                    ->label("Opublikowane"),
+                Tables\Columns\TextColumn::make("published_at")->date(DateFormats::DATE_DISPLAY)
+                    ->label("Data publikacji"),
             ])
             ->actions([
                 Tables\Actions\ViewAction::make(),

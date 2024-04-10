@@ -15,6 +15,8 @@ return new class() extends Migration {
             $table->json("title");
             $table->json("subtitle");
             $table->json("description");
+            $table->boolean("published")->default(false);
+            $table->timestamp("published_at");
             $table->timestamps();
         });
     }
