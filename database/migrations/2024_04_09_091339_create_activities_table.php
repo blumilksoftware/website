@@ -16,7 +16,7 @@ return new class() extends Migration {
             $table->json("subtitle");
             $table->json("description");
             $table->boolean("published")->default(false);
-            $table->timestamp("published_at");
+            $table->date("published_at")->nullable();
             $table->timestamps();
         });
     }

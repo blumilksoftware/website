@@ -22,7 +22,7 @@ class ActivityFactory extends Factory
             "description" => $this->translations($locales, $this->faker->paragraph),
             "photo" => sprintf("%s/%s", Activity::PHOTOS_DIRECTORY, $this->faker->image("public/storage/activities", width: 240, height: 240, fullPath: false)),
             "published" => $this->faker->boolean,
-            "published_at" => $this->faker->dateTime,
+            "published_at" => $this->faker->date,
         ];
     }
 }

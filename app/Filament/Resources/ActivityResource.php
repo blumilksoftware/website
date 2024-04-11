@@ -42,8 +42,7 @@ class ActivityResource extends Resource
                 Forms\Components\DateTimePicker::make("published_at")
                     ->format(DateFormats::DATE_DISPLAY)
                     ->time(false)
-                    ->label("Data publikacji")
-                    ->required(),
+                    ->label("Data publikacji"),
                 Forms\Components\FileUpload::make("photo")
                     ->label("Zdjęcie")
                     ->required()

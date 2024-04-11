@@ -42,5 +42,6 @@ class Activity extends Model
         "subtitle" => "array",
         "description" => "array",
         "published" => "boolean",
+        "published_at" => "datetime",
     ];
 }
