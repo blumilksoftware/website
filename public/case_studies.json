@@ -1,25 +1,23 @@
-{
-    "case_studies": [
-        {
-            "Project": "E-commerce Application",
-            "Client": "Company XYZ",
-            "Goal": "Increase online sales by 30% within a year",
-            "Scope": "Development of a new e-commerce platform with an intuitive interface, integration with payment systems, optimization for mobile devices",
-            "Technologies": "Node.js, React, MongoDB, Stripe API"
-        },
-        {
-            "Project": "Customer Relationship Management (CRM) System",
-            "Client": "Company ABC",
-            "Goal": "Automate sales and customer service processes, improve sales department efficiency",
-            "Scope": "Development of a personalized CRM system enabling contact management, lead tracking, sales data analysis",
-            "Technologies": "Salesforce, Java, MySQL, Angular"
-        },
-        {
-            "Project": "Mobile Application for Remote Fleet Management",
-            "Client": "Transport Company XYZ",
-            "Goal": "Logistics optimization, increased efficiency in fleet management",
-            "Scope": "Development of a mobile application for monitoring vehicles, route tracing, driver and order management",
-            "Technologies": "Swift, Firebase, Google Maps API, Kotlin"
-        }
-    ]
-}
+[
+    {
+        "Projekt": "Aplikacja e-commerce",
+        "Klient": "Firma XYZ",
+        "Cel": "Zwiększenie sprzedaży online o 30% w ciągu roku",
+        "Zakres": "Rozwój nowej platformy e-commerce z intuicyjnym interfejsem, integracja z systemami płatności, optymalizacja dla urządzeń mobilnych",
+        "Technologie": "Node.js, React, MongoDB, Stripe API"
+    },
+    {
+        "Projekt": "System zarządzania relacjami z klientami (CRM)",
+        "Klient": "Firma ABC",
+        "Cel": "Automatyzacja procesów sprzedaży i obsługi klienta, poprawa wydajności działu sprzedaży",
+        "Zakres": "Rozwój spersonalizowanego systemu CRM umożliwiającego zarządzanie kontaktami, śledzenie potencjalnych klientów, analizę danych sprzedażowych",
+        "Technologie": "Salesforce, Java, MySQL, Angular"
+    },
+    {
+        "Projekt": "Aplikacja mobilna do zdalnego zarządzania flotą",
+        "Klient": "Firma transportowa XYZ",
+        "Cel": "Optymalizacja logistyki, zwiększenie efektywności zarządzania flotą",
+        "Zakres": "Rozwój aplikacji mobilnej do monitorowania pojazdów, śledzenia trasy, zarządzania kierowcami i zamówieniami",
+        "Technologie": "Swift, Firebase, Google Maps API, Kotlin"
+    }
+]

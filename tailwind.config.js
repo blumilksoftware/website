@@ -15,15 +15,18 @@ module.exports = {
     },
     extend: {
       colors: {
-        gray: '#f1f3f6',
-        bubble: '#e0e4f4',
+        gray: {
+          light: '#F6F7FD',
+          dark: '#F1F3F6',
+        },
+        bubble: '#DAE3F0',
         brand: '#527aba',
         background: '#f4f8fd',
         website: {
           normal: '#5379f6',
           light: '#7c9cfc',
-          button: '#4865d5',
         },
+        navigation: '#FAFAFA',
         footer: {
           dark: '#044088',
           light: '#015fc8',

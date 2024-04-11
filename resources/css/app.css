@@ -4,13 +4,31 @@
 
 .padding {
   width: 100%;
-  padding-left: 20%;
-  padding-right: 20%;
+  padding-left: 15%;
+  padding-right: 15%;
 }
 .padding-left {
   width: 100%;
-  padding-left: 20%;
+  padding-left: 15%;
 }
 .bg-binary{
-  background-size: contain;
+  background-size: auto;
+  background-repeat: round;
+  background-position: center;
+}
+.title{
+  font-size: 60px;
+  line-height: 1;
+  margin-bottom: 24px;
+}
+.subtitle
+{
+  font-size: 20px;
+  line-height: 28px;
+}
+.active
+{
+  background-color: #f4f8fd;
+  color: #5379f6;
+
 }

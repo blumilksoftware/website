@@ -10,9 +10,9 @@
         <script src="https://kit.fontawesome.com/f6187d55ef.js" crossorigin="anonymous"></script>
     </head>
     <body>
-    <div class="left-0 right-0 bg-white">
+    <div class="left-0 right-0 font-sora">
         @include("layout.navigation")
-        <div class="min-height-100vh">
+        <div class="min-height-100vh relative z-10">
         @yield("content")
         </div>
         @include("layout.footer")
