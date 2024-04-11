@@ -1,4 +1,4 @@
-<article class="relative isolate flex flex-col justify-end overflow-hidden pb-8  aspect-square">
+<article class="relative isolate flex flex-col justify-end overflow-hidden pb-8 aspect-square">
     <img src="{{ $imageSrc }}" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
     <div class="flex absolute flex-wrap items-center overflow-hidden text-md text-white font-semibold top-0 right-8 w-11">
         <time datetime="{{ $date }}" class="bg-website-normal pt-6 py-2 text-center">{{ $dateFormatted }}</time>

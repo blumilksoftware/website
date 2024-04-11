@@ -8,26 +8,26 @@
 @endphp
 @section("content")
     <div class="relative overflow-hidden">
-        <div class="hidden md:block -z-10">
-        <div class="absolute left-6 top-36">
-            <x-bubble size="80"/>
-        </div>
-        <div class="absolute left-24 top-28">
-            <x-bubble size="30"/>
-        </div>
-        <div class="absolute -left-16 top-80">
-            <x-bubble size="200"/>
-        </div>
-        <div class="absolute right-36 top-36">
-            <x-bubble size="40"/>
-        </div>
-        <div class="relative top-24">
-            <div class="absolute right-20 top-72">
-                <x-bubble size="90"/>
+        <div class="relative md:block -z-10">
+            <div class="absolute -left-[6%] md:left-[1%] top-28 md:top-40">
+                <x-bubble size="80"/>
             </div>
-        </div>
-        <div class="relative top-24">
-            <div class="absolute right-24 top-96">
+            <div class="absolute left-[8%] md:left-[4%] top-20 md:top-28">
+                <x-bubble size="30"/>
+            </div>
+            <div class="absolute hidden md:block -left-[3%] top-80">
+                <x-bubble size="200"/>
+            </div>
+            <div class="absolute right-[4%] top-36">
+                <x-bubble size="40"/>
+            </div>
+            <div class="relative top-24">
+                <div class="absolute -right-[6%] md:right-[3%] top-72">
+                    <x-bubble size="90"/>
+            </div>
+            </div>
+            <div class="relative top-24">
+            <div class="absolute hidden md:block md:right-[4%] top-96">
                 <x-bubble size="200"/>
             </div>
         </div>
@@ -35,17 +35,17 @@
 
         <div class="flex flex-col-reverse lg:flex-row py-24 padding">
             <div class="flex basis-1/2 relative flex-col self-center">
-                    <div class="text-4xl sm:text-5xl lg:text-6xl text-center lg:justify-start lg:text-start ">
+                    <div class="text-3xl md:text-4xl lg:text-6xl text-center lg:justify-start lg:text-start ">
                         <h2 class="font-medium text-gray-900">Oprogramowanie
                             <span class="text-website-normal lg:block"> dopasowane </span> do Twoich potrzeb.</h2>
                     </div>
                     <div class="flex flex-col items-center lg:items-start">
-                    <span class="text-2xl lg:text-3xl font-light text-center lg:text-start">
+                    <span class="text-xl lg:text-3xl font-light text-center lg:text-start">
                         Jesteśmy pasjonatami tworzenia aplikacji web/mobile oraz zaawansowanych projektów B+R.
                         <span class="font-medium">Zmieniami koncepcje w działające rozwiązania.</span>
                     </span>
                         <div class="my-6">
-                        <x-primary-button href="">{{ __("buttons.lets_talk") }}</x-primary-button>
+                        <x-primary-button href="">{{ __("content.pages.about") }}</x-primary-button>
                         </div>
                     </div>
             </div>
@@ -82,7 +82,7 @@
             <div class="flex flex-col lg:flex-row align-middle justify-center items-center padding py-24 overflow-hidden">
                 <div class="flex basis-2/5">
                     <div class="flex flex-col">
-                        <div><h2 class="text-4xl sm:text-5xl lg:text-6xl  font-semibold text-gray-900"> Jak możemy Ci pomóc? </h2></div>
+                        <div><h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900"> Jak możemy Ci pomóc? </h2></div>
                         <div class="text-black subtitle">
                             <span>Badania, rozwój, kod:
                                 <span class="font-medium">
@@ -110,19 +110,19 @@
                         </div>
                     </div>
                 </div>
-                <div class="hidden md:flex place-content-center basis-3/5 -fill">
+                <div class="hidden lg:flex place-content-center size-full basis-3/5">
                     <div class="rounded-2xl bg-gray-light basis-1/2 rotate-6">
-                        <div class="relative z-10 right-4 top-10 rounded-2xl bg-white p-6 -rotate-6">
+                        <div class="relative aspect-square z-10 right-4 top-10 rounded-2xl bg-white p-6 -rotate-6">
                             <div class="px-4 py-5 font-semibold text-3xl">
                                 Projektujemy rozwiązania
                             </div>
                             <div class="p-8 text-website-normal">
-                                <div class="flex flex-col items-center text-lg w-auto h-auto text-center bg-gray-light p-12 rounded-2xl">
-                                    <div class="px-28 pb-8"><img src="graphics/stars.png" class="" alt="5 stars"/></div>
+                                <div class="flex flex-col items-center text-md lg:text-lg w-auto h-auto text-center bg-gray-light p-12 rounded-2xl">
+                                    <div class=""><img src="graphics/stars.png" class="max-h-12 shrink m-1" alt="5 stars"/></div>
                                     W trosce o stuprocentowe zadowolenie naszych klientów i partnerów.
                                 </div>
                             </div>
-                            <div class="flex place-content-center p-4 sm:px-6">
+                            <div class="flex place-content-center">
                                 <x-block-primary-button href="">{{ __("buttons.text_us") }}</x-block-primary-button>
                             </div>
                         </div>
@@ -140,7 +140,7 @@
                     <div class="relative">
                         <x-badge>zobacz jak działamy</x-badge>
 
-                        <h2 class="text-4xl sm:text-5xl lg:text-6xl  font-semibold text-gray-900">Case study</h2>
+                        <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900">Case study</h2>
                         <span class="absolute -right-24"><x-bubble size="40"/>
                         </span>
                     </div>
@@ -172,8 +172,8 @@
                     <x-bubble size="15"/>
                 </span>
             </div>
-            <div class="flex rounded-2xl bg-gray-light -rotate-3 basis-1/2 relative shadow-md lg:left-36">
-                <div class="relative flex lg:left-12 overflow-hidden rounded-2xl bg-white shadow-md rotate-3 lg:h-[645px]">
+            <div class="flex rounded-2xl md:bg-gray-light -rotate-3 basis-1/2 relative md:shadow-md left-[30%] lg:left-[15%] mt-12">
+                <div class="relative flex left-[5%] overflow-hidden rounded-2xl bg-white shadow-md rotate-3 h-[323px] lg:h-[645px]">
                     <img src="graphics/vita.png" class="w-auto" alt="placeholder"/>
                 </div>
             </div>
@@ -181,7 +181,7 @@
         </div>
         <div class="bg-gray-light bg-binary my-12 py-12">
             <div class="padding text-center z-10">
-                <h2 class="text-4xl sm:text-5xl lg:text-6xl  font-semibold text-gray-900 my-6">Tech stack</h2>
+                <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900 my-6">Tech stack</h2>
                 <span class="subtitle">PHP i Laravel to nasze główne narzędzie pracy. GitHub stanowi naszą centralną platformę, umożliwiającą code review oraz CI/CD za pomocą GitHub Actions. Frontend budujemy z użyciem Vue.js, a także korzystamy z różnych systemów zarządzania bazami danych, tj. MySQL i PostgreSQL.</span>
                 <div class="flex gid-cols-5 pb-6 text-gray-400 items-center justify-center mt-6 gap-8">
                     <div class="">
@@ -204,10 +204,10 @@
         </div>
         <div class="">
             <div class="padding text-center items-center">
-                <h2 class="text-4xl sm:text-5xl lg:text-6xl  font-semibold text-gray-900 my-6">Co mówią o nas inni</h2>
+                <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900 my-6">Co mówią o nas inni</h2>
                     <x-badge>opinie</x-badge>
                 <span class="subtitle">Opinie naszych klientów są bardzo ważne, <span class="font-semibold">świadczą o jakości naszych usług</span> i inspirują nas do nieustannego doskonalenia.</span>
-                <div class="grid gap-6 text-center md:grid-cols-3 lg:gap-12">
+                <div class="grid gap-6 text-center lg:grid-cols-3 lg:gap-12">
                     @foreach($testimonials as $testimonial)
                         <x-testimonial
                             photoUrl="{{ $testimonial['photoUrl'] }}"
@@ -223,25 +223,34 @@
         </div>
         <div class="padding pt-24">
             <div class="flex flex-row items-center justify-between">
-                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-semibold text-gray-900">Nasze aktywności</h2>
-                <div class="hidden md:block">
+                <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900">Nasze aktywności</h2>
+                <div class="hidden sm:block">
                     <x-primary-button href="">Zobacz wszystkie</x-primary-button>
                 </div>
             </div>
-            <div
-                class="grid gap-8 pt-12 max-w-none lg:grid-cols-3 relative z-10">
-                @foreach($articles as $article)
+            <div class="grid gap-8 pt-12 max-w-none grid-cols-2 lg:grid-cols-3 relative z-10">
+                @for($currentArticle = 0; $currentArticle < 3; $currentArticle++)
                     <x-article-card
-                        imageSrc="{{ $article['imageSrc'] }}"
-                        date="{{ $article['date'] }}"
-                        dateFormatted="{{ $article['dateFormatted'] }}"
-                        firstText="{{ $article['firstText'] }}"
-                        secondText="{{ $article['secondText'] }}"
-                        articleRoute="{{ $article['articleRoute'] }}"
+                        imageSrc="{{ $articles[$currentArticle]['imageSrc'] }}"
+                        date="{{ $articles[$currentArticle]['date'] }}"
+                        dateFormatted="{{ $articles[$currentArticle]['dateFormatted'] }}"
+                        firstText="{{ $articles[$currentArticle]['firstText'] }}"
+                        secondText="{{ $articles[$currentArticle]['secondText'] }}"
+                        articleRoute="{{ $articles[$currentArticle]['articleRoute'] }}"
                     />
-                @endforeach
+                @endfor
+                <div class="lg:hidden">
+                    <x-article-card
+                        imageSrc="{{ $articles[3]['imageSrc'] }}"
+                        date="{{ $articles[3]['date'] }}"
+                        dateFormatted="{{ $articles[3]['dateFormatted'] }}"
+                        firstText="{{ $articles[3]['firstText'] }}"
+                        secondText="{{ $articles[3]['secondText'] }}"
+                        articleRoute="{{ $articles[3]['articleRoute'] }}"
+                    />
+                </div>
             </div>
-            <div class="md:hidden flex pt-8">
+            <div class="sm:hidden flex pt-8">
                 <x-block-primary-button href="">Zobacz wszystkie</x-block-primary-button>
             </div>
         </div>

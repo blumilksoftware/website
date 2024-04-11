@@ -78,7 +78,15 @@
                         </div>
                     </div>
                     <div class="">
-                        <div class="md:flex md:items-center md:justify-end">
+                        <div class="md:flex text-center md:items-center md:justify-end">
+                            <div class="md:hidden text-3xl font-semibold pb-4">
+                                Blumilk sp. z o.o.
+                                <p class="text-sm font-medium leading-6 text-white">NIP 1234567890 KRS 1234567890
+                                </p>
+                                <p class=" text-sm leading-6 text-white">
+                                    <a href="#" class="font-semibold text-white">{{__("footer.form.policy")}}</a>
+                                </p>
+                            </div>
                             <div class="flex justify-center space-x-6 md:order-2">
                                 <a href="https://clutch.co/profile/blumilk-0" class="items-center" target="_blank">
                                     <span class="sr-only">Clutch</span>
