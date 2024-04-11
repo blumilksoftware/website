@@ -14,6 +14,7 @@ use Filament\Resources\Concerns\Translatable;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Filters\Filter;
+use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Mvenghaus\FilamentPluginTranslatableInline\Forms\Components\TranslatableContainer;
@@ -70,24 +71,35 @@ class ActivityResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make("title")
-                    ->label("Tytuł"),
+                    ->label("Tytuł")
+                    ->searchable(),
                 Tables\Columns\CheckboxColumn::make("published")
                     ->label("Opublikowane"),
                 Tables\Columns\TextColumn::make("published_at")
                     ->date(DateFormats::DATE_DISPLAY)
-                    ->label("Data publikacji"),
+                    ->label("Data publikacji")
+                    ->sortable(),
             ])->filters([
-                Filter::make("published")
-                    ->label("Opublikowane")
-                    ->query(fn(Builder $query): Builder => $query->where("published", true))
-                    ->toggle(),
+                TernaryFilter::make("published")
+                    ->label("Status publikacji")
+                    ->placeholder("Wszystkie")
+                    ->trueLabel("Opublikowane")
+                    ->falseLabel("Nieopublikowane"),
                 Filter::make("published_at")
                     ->form([
-                        Forms\Components\DatePicker::make("published_at_from")
-                            ->label("Data publikacji od"),
-                        Forms\Components\DatePicker::make("published_at_to")
-                            ->label("Data publikacji do"),
-                    ]),
+                        Forms\Components\DatePicker::make("published_from"),
+                        Forms\Components\DatePicker::make("published_to"),
+                    ])->query(function (Builder $query, array $data): Builder {
+                        return $query
+                            ->when(
+                                $data["published_from"],
+                                fn(Builder $query, $date): Builder => $query->whereDate("published_at", ">=", $date),
+                            )
+                            ->when(
+                                $data["published_to"],
+                                fn(Builder $query, $date): Builder => $query->whereDate("published_at", "<=", $date),
+                            );
+                    }),
             ])
             ->actions([
                 Tables\Actions\ViewAction::make(),
