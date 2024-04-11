@@ -7,12 +7,15 @@ namespace Blumilk\Website\Filament\Resources;
 use Blumilk\Website\Enums\DateFormats;
 use Blumilk\Website\Filament\Resources\ActivityResource\Pages;
 use Blumilk\Website\Models\Activity;
+use Exception;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Concerns\Translatable;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Filters\Filter;
 use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Builder;
 use Mvenghaus\FilamentPluginTranslatableInline\Forms\Components\TranslatableContainer;
 
 class ActivityResource extends Resource
@@ -42,6 +45,7 @@ class ActivityResource extends Resource
                 Forms\Components\DateTimePicker::make("published_at")
                     ->format(DateFormats::DATE_DISPLAY)
                     ->time(false)
+                    ->requiredUnless("published", true)
                     ->label("Data publikacji"),
                 Forms\Components\FileUpload::make("photo")
                     ->label("Zdjęcie")
@@ -58,6 +62,9 @@ class ActivityResource extends Resource
             ]);
     }
 
+    /**
+     * @throws Exception
+     */
     public static function table(Table $table): Table
     {
         return $table
@@ -66,8 +73,21 @@ class ActivityResource extends Resource
                     ->label("Tytuł"),
                 Tables\Columns\CheckboxColumn::make("published")
                     ->label("Opublikowane"),
-                Tables\Columns\TextColumn::make("published_at")->date(DateFormats::DATE_DISPLAY)
+                Tables\Columns\TextColumn::make("published_at")
+                    ->date(DateFormats::DATE_DISPLAY)
                     ->label("Data publikacji"),
+            ])->filters([
+                Filter::make("published")
+                    ->label("Opublikowane")
+                    ->query(fn(Builder $query): Builder => $query->where("published", true))
+                    ->toggle(),
+                Filter::make("published_at")
+                    ->form([
+                        Forms\Components\DatePicker::make("published_at_from")
+                            ->label("Data publikacji od"),
+                        Forms\Components\DatePicker::make("published_at_to")
+                            ->label("Data publikacji do"),
+                    ]),
             ])
             ->actions([
                 Tables\Actions\ViewAction::make(),
