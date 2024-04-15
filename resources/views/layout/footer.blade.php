@@ -51,15 +51,13 @@
             </div>
         </section>
         <section class="flex flex-col lg:h-[500px] justify-between md:basis-1/2">
-            <div class="hidden md:flex bg-footer-light p-12 lg:min-w-[385px] lg:max-w-[450px] self-center rounded-3xl bg-opacity-80">
+            <div class="hidden md:flex bg-footer-light p-8 lg:p-12 lg:min-w-[400px] lg:max-w-[600px] self-center rounded-3xl bg-opacity-80">
                 <div class="flex gap-4">
                     <img src="images/kasia.jpeg" alt="" class="h-24 w-24 flex-none rounded-full">
                     <div class="gap-12">
                         <div class="text-base font-semibold text-white">Katarzyna Nowak</div>
-                        <div
-                            class="text-sm leading-6 text-white break-words">{{__("footer.contactTo.job")}}</div>
-                        <div
-                            class="text-sm  text-white break-normal">{{__("footer.contactTo.description")}}</div>
+                        <div class="text-md leading-6 text-white break-words pb-2">{{__("footer.contactTo.job")}}</div>
+                        <div class="text-md text-white break-normal">{{__("footer.contactTo.description")}}</div>
                         <div class="">
                             <div class="flex mt-2 items-center">
                                 <span class="sr-only">Phone number</span>

@@ -80,7 +80,7 @@
                 <path fill="#ffffff" fill-opacity="1"
                       d="M0,64L80,69.3C160,75,320,85,480,90.7C640,96,800,96,960,80C1120,64,1280,32,1360,16L1440,0L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
             </svg>
-            <div class="flex flex-col lg:flex-row align-middle justify-center items-center section-padding lg:pr-[0%] py-24 overflow-hidden">
+            <div class="flex flex-col lg:flex-row section-padding lg:pr-[0%] py-24 overflow-hidden">
                 <div class="flex basis-2/5 flex-col lg:pr-8">
                     <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900 mb-4"> Jak możemy Ci
                         pomóc? </h2>
@@ -110,17 +110,16 @@
                         </ul>
                     </div>
                 </div>
-                <div class="hidden lg:flex place-content-center basis-3/5">
-                    <div class="rounded-2xl bg-gray-light rotate-6">
-                        <div
-                            class="relative flex flex-col justify-between aspect-square max-h-[500px] z-10 right-4 top-10 rounded-2xl bg-white p-6 -rotate-6">
+                <div class="hidden lg:flex basis-3/5">
+                    <div class="rounded-xl bg-gray-light max-h-[600px] rotate-6">
+                        <div class="relative flex flex-col justify-between aspect-square max-h-[600px] z-10 right-4 top-10 rounded-2xl bg-white p-6 -rotate-6">
                             <div class="px-4 pt-5 font-semibold text-3xl">
                                 Projektujemy rozwiązania
                             </div>
                             <div class="p-8 text-website-normal">
                                 <div class="flex flex-col items-center w-auto h-auto text-center bg-gray-light p-6 rounded-2xl">
                                     <img src="graphics/stars.png" class="max-h-12 shrink m-4" alt="5 stars"/>
-                                    <div class="text-md">
+                                    <div class="text-xl">
                                         W trosce o stuprocentowe zadowolenie naszych klientów i partnerów.
                                     </div>
 
@@ -179,9 +178,9 @@
                     <x-bubble size="20"/>
                 </span>
             </div>
-            <div class="absolute hidden lg:block z-20 rounded-2xl h-52 w-80 right-[40%] bottom-36 bg-[url('graphics/code-snippet.png')] bg-cover">
-            </div>
             <div class="flex rounded-2xl md:bg-gray-light -rotate-3 basis-2/3 relative md:shadow-md left-[30%] lg:left-[10%] mt-12">
+                <div class="absolute hidden lg:block rotate-3 z-20 rounded-2xl h-52 w-80 -left-[10%] bottom-16 bg-[url('graphics/code-snippet.png')] bg-cover">
+                </div>
                 <div class="relative flex left-[5%] overflow-hidden rounded-2xl bg-white shadow-md rotate-3">
                     <img src="graphics/vita.png" class="max-w-[1149px] max-h-[645px]" alt="Vita homepage"/>
                 </div>

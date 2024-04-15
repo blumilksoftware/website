@@ -39,8 +39,3 @@
 .nav-item{
   justify-content: center;
 }
-
-.tile{
-  width:min(100% - 15px, 800px);
-  margin-inside: auto;
-}
