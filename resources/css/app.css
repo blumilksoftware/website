@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-.padding {
+.section-padding {
   width: 100%;
   padding-left: 15%;
   padding-right: 15%;
@@ -30,5 +30,17 @@
 {
   background-color: #f4f8fd;
   color: #5379f6;
+}
+.nav-item:hover {
+  background-color: rgba(124, 156, 252, 0.2);
+  color: #5379f6;
+}
 
+.nav-item{
+  justify-content: center;
+}
+
+.tile{
+  width:min(100% - 15px, 800px);
+  margin-inside: auto;
 }

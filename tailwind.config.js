@@ -32,6 +32,9 @@ module.exports = {
           light: '#015fc8',
         },
       },
+      fontFamily: {
+        "sora": ["Sora", "sans-serif"]
+      },
       backgroundImage:{
         'binary': 'url("graphics/binary.png" )',
       }
