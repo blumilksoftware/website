@@ -1,7 +1,7 @@
 <footer class="bg-gradient-to-t from-footer-dark to-footer-light">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 230">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150">
         <path fill="#ffffff" fill-opacity="1"
-              d="M0,128L80,149.3C160,171,320,213,480,224C640,235,800,213,960,176C1120,139,1280,85,1360,58.7L1440,32L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+              d="M0,96L120,106.7C240,117,480,139,720,122.7C960,107,1200,53,1320,26.7L1440,0L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
     </svg>
     <div class="text-white section-padding py-16 flex flex-col justify-between lg:flex-row items-center gap-8">
         <section class="hidden md:flex flex-col md:basis-1/2">
@@ -51,7 +51,8 @@
             </div>
         </section>
         <section class="flex flex-col lg:h-[500px] justify-between md:basis-1/2">
-            <div class="hidden md:flex bg-footer-light p-8 lg:p-12 lg:min-w-[400px] lg:max-w-[600px] self-center rounded-3xl bg-opacity-80">
+            <div
+                class="hidden md:flex bg-footer-light p-8 lg:p-12 lg:min-w-[400px] lg:max-w-[600px] self-center rounded-3xl bg-opacity-80">
                 <div class="flex gap-4">
                     <img src="images/kasia.jpeg" alt="" class="h-24 w-24 flex-none rounded-full">
                     <div class="gap-12">

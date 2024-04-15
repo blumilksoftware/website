@@ -61,26 +61,26 @@
 
             <div class="flex flex-col md:flex-row pb-12 text-gray-400 items-center justify-center mt-6">
                 <div class="m-6">
-                    <img src="images/clients/cwup.png" class="h-auto w-44" alt="Collegium Witelona"/>
+                    <img src="images/clients/cwup.png" class="client-icon" alt="Collegium Witelona"/>
                 </div>
                 <div class="m-6">
-                    <img src="images/clients/insly.png" class="h-auto w-44" alt="Insly"/>
+                    <img src="images/clients/insly.png" class="client-icon" alt="Insly"/>
                 </div>
                 <div class="m-6">
-                    <img src="images/clients/kghm.png" class="h-auto w-44" alt="KGHM"/>
+                    <img src="images/clients/kghm.png" class="client-icon" alt="KGHM"/>
                 </div>
                 <div class="m-6">
-                    <img src="images/clients/vitaplus.png" class="h-auto w-44" alt="Vita Plus"/>
+                    <img src="images/clients/vitaplus.png" class="client-icon" alt="Vita Plus"/>
                 </div>
             </div>
         </section>
 
         <section class="bg-gradient-to-r from-gray-light to-white">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 90">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
                 <path fill="#ffffff" fill-opacity="1"
                       d="M0,64L80,69.3C160,75,320,85,480,90.7C640,96,800,96,960,80C1120,64,1280,32,1360,16L1440,0L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
             </svg>
-            <div class="flex flex-col lg:flex-row section-padding lg:pr-[0%] py-24 overflow-hidden">
+            <div class="flex flex-col lg:flex-row section-padding lg:pr-[0%] pt-24">
                 <div class="flex basis-2/5 flex-col lg:pr-8">
                     <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900 mb-4"> Jak możemy Ci
                         pomóc? </h2>
@@ -182,33 +182,37 @@
                 <div class="absolute hidden lg:block rotate-3 z-20 rounded-2xl h-52 w-80 -left-[10%] bottom-16 bg-[url('graphics/code-snippet.png')] bg-cover">
                 </div>
                 <div class="relative flex left-[5%] overflow-hidden rounded-2xl bg-white shadow-md rotate-3">
-                    <img src="graphics/vita.png" class="max-w-[1149px] max-h-[645px]" alt="Vita homepage"/>
+                    <img src="graphics/vita.png" class="w-full" alt="Vita homepage"/>
                 </div>
             </div>
+
         </section>
-        <section class="bg-gray-light bg-binary my-12 py-12 section-padding text-center z-10">
-            <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900 my-6">Tech stack</h2>
+        <section class="bg-gray-light my-12 py-32 text-center z-10 relative">
+            <div class="hidden md:block bg-binary z-20 absolute w-[4000px] h-[1000px] -top-60 opacity-30 overflow-hidden bg-cover"></div>
+            <div class="section-padding">
+            <h2 class="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 my-6">Tech stack</h2>
             <span class="subtitle">PHP i Laravel to nasze główne narzędzie pracy. GitHub stanowi naszą centralną platformę, umożliwiającą code review oraz CI/CD za pomocą GitHub Actions. Frontend budujemy z użyciem Vue.js, a także korzystamy z różnych systemów zarządzania bazami danych, tj. MySQL i PostgreSQL.</span>
-            <div class="flex gid-cols-5 pb-6 text-gray-400 items-center justify-center mt-6 gap-8">
+            <div class="lg:flex grid grid-cols-3 md:flex-row relative z-30 pb-6 text-gray-400 items-center justify-center mt-6 gap-24">
                 <div class="">
-                    <img src="images/tech/laravel.png" class="h-auto w-14" alt="laravel"/>
+                    <img src="images/tech/laravel.png" class="tech-icon" alt="laravel"/>
                 </div>
                 <div>
-                    <img src="images/tech/php.png" class="h-auto w-14" alt="php"/>
+                    <img src="images/tech/php.png" class="tech-icon" alt="php"/>
                 </div>
                 <div class="">
-                    <img src="images/tech/postgresql.png" class="h-auto w-14" alt="postgresql"/>
+                    <img src="images/tech/postgresql.png" class="tech-icon" alt="postgresql"/>
+                </div>
+                <div>
+                    <img src="images/tech/docker.png" class="tech-icon" alt="docker"/>
                 </div>
                 <div class="">
-                    <img src="images/tech/docker.png" class="h-auto w-14" alt="docker"/>
-                </div>
-                <div class="">
-                    <img src="images/tech/vue.png" class="h-auto w-14" alt="vue"/>
+                    <img src="images/tech/vue.png" class="tech-icon" alt="vue"/>
                 </div>
             </div>
+            </div>
         </section>
-        <section class="section-padding text-center items-center">
-            <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900 my-6">Co mówią o nas inni</h2>
+        <section class="section-padding text-center items-center py-24">
+            <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900 mb-6">Co mówią o nas inni</h2>
             <x-badge>opinie</x-badge>
             <span class="subtitle">Opinie naszych klientów są bardzo ważne, <span class="font-semibold">świadczą o jakości naszych usług</span> i inspirują nas do nieustannego doskonalenia.</span>
             <div class="grid gap-6 text-center lg:grid-cols-3 lg:gap-12">
@@ -224,7 +228,7 @@
 
             </div>
         </section>
-        <section class="section-padding pt-24">
+        <section class="section-padding">
             <div class="flex flex-row items-center justify-between">
                 <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900">Nasze aktywności</h2>
                 <div class="hidden sm:block">

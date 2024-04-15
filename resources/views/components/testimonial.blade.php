@@ -10,7 +10,7 @@
     <div class="mb-6 flex justify-center relative">
         <div class="relative">
             <img src="{{ $photoUrl }}" class="w-32 rounded-full shadow-lg relative z-10" alt=""/>
-            <img src="gifs/quote.gif" alt="gif" class="w-32 shrink absolute justify-center  -left-[70%] -top-12"/>
+            <img src="gifs/quote.gif" alt="gif" class="w-24 shrink absolute justify-center  -left-[35%] -top-12"/>
 
         </div>
     </div>
