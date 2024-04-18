@@ -11,10 +11,12 @@
         "ext-pdo": "*",
         "codezero/laravel-localized-routes": "^4.0",
         "filament/filament": "^3.2",
+        "filament/spatie-laravel-translatable-plugin": "^3.2",
         "guzzlehttp/guzzle": "^7.8",
         "laravel/framework": "^11.0",
         "laravel/sanctum": "^4.0",
-        "laravel/tinker": "^2.9"
+        "laravel/tinker": "^2.9",
+        "mvenghaus/filament-plugin-translatable-inline": "^3.0"
     },
     "require-dev": {
         "blumilksoftware/codestyle": "^v2.8",
