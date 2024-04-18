@@ -7,12 +7,16 @@ namespace Blumilk\Website\Filament\Resources;
 use Blumilk\Website\Enums\DateFormats;
 use Blumilk\Website\Filament\Resources\ActivityResource\Pages;
 use Blumilk\Website\Models\Activity;
+use Exception;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Concerns\Translatable;
 use Filament\Resources\Resource;
 use Filament\Tables;
+use Filament\Tables\Filters\Filter;
+use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Builder;
 use Mvenghaus\FilamentPluginTranslatableInline\Forms\Components\TranslatableContainer;
 
 class ActivityResource extends Resource
@@ -44,8 +48,8 @@ class ActivityResource extends Resource
                 Forms\Components\DateTimePicker::make("published_at")
                     ->format(DateFormats::DATE_DISPLAY)
                     ->time(false)
-                    ->label("Data publikacji")
-                    ->required(),
+                    ->requiredUnless("published", true)
+                    ->label("Data publikacji"),
                 Forms\Components\FileUpload::make("photo")
                     ->label("Zdjęcie")
                     ->required()
@@ -61,16 +65,43 @@ class ActivityResource extends Resource
             ]);
     }
 
+    /**
+     * @throws Exception
+     */
     public static function table(Table $table): Table
     {
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make("title")
-                    ->label("Tytuł"),
+                    ->label("Tytuł")
+                    ->searchable(),
                 Tables\Columns\CheckboxColumn::make("published")
                     ->label("Opublikowane"),
-                Tables\Columns\TextColumn::make("published_at")->date(DateFormats::DATE_DISPLAY)
-                    ->label("Data publikacji"),
+                Tables\Columns\TextColumn::make("published_at")
+                    ->date(DateFormats::DATE_DISPLAY)
+                    ->label("Data publikacji")
+                    ->sortable(),
+            ])->filters([
+                TernaryFilter::make("published")
+                    ->label("Status publikacji")
+                    ->placeholder("Wszystkie")
+                    ->trueLabel("Opublikowane")
+                    ->falseLabel("Nieopublikowane"),
+                Filter::make("published_at")
+                    ->form([
+                        Forms\Components\DatePicker::make("published_from"),
+                        Forms\Components\DatePicker::make("published_to"),
+                    ])->query(function (Builder $query, array $data): Builder {
+                        return $query
+                            ->when(
+                                $data["published_from"],
+                                fn(Builder $query, $date): Builder => $query->whereDate("published_at", ">=", $date),
+                            )
+                            ->when(
+                                $data["published_to"],
+                                fn(Builder $query, $date): Builder => $query->whereDate("published_at", "<=", $date),
+                            );
+                    }),
             ])
             ->actions([
                 Tables\Actions\ViewAction::make(),
