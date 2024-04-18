@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Blumilk\Website\Http\Middleware;
 
 use Closure;

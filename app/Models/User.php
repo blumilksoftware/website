@@ -40,7 +40,8 @@ class User extends Authenticatable implements FilamentUser
         "password" => "hashed",
     ];
 
-    #[\Override] public function canAccessPanel(Panel $panel): bool
+    #[\Override]
+    public function canAccessPanel(Panel $panel): bool
     {
         return true;
     }
