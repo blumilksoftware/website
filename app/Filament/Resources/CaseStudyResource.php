@@ -44,7 +44,7 @@ class CaseStudyResource extends Resource
                             ->maxLength(255),
                         Forms\Components\Select::make("template")
                             ->label("Szablon")
-                            ->options(fn() => self::getTemplates())
+                            ->options(fn(): array => self::getTemplateOptions())
                             ->native(false),
                         Forms\Components\Checkbox::make("published")
                             ->label("Opublikowane"),
@@ -109,7 +109,7 @@ class CaseStudyResource extends Resource
         ];
     }
 
-    protected static function getTemplates(): array
+    protected static function getTemplateOptions(): array
     {
         $files = scandir(resource_path("views/case-studies"));
         $files = array_diff($files, [".", ".."]);
