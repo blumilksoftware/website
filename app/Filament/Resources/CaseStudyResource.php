@@ -1,0 +1,121 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Blumilk\Website\Filament\Resources;
+
+use Blumilk\Website\Filament\Resources\CaseStudyResource\Pages;
+use Blumilk\Website\Models\CaseStudy;
+use Filament\Forms;
+use Filament\Forms\Components\Section;
+use Filament\Forms\Components\Split;
+use Filament\Forms\Form;
+use Filament\Resources\Resource;
+use Filament\Tables;
+use Filament\Tables\Filters\TernaryFilter;
+use Filament\Tables\Table;
+use Mvenghaus\FilamentPluginTranslatableInline\Forms\Components\TranslatableContainer;
+
+class CaseStudyResource extends Resource
+{
+    protected static ?string $model = CaseStudy::class;
+    protected static ?string $navigationIcon = "heroicon-o-swatch";
+
+    public static function form(Form $form): Form
+    {
+        return $form
+            ->schema([
+                Split::make([
+                    Section::make([
+                        TranslatableContainer::make(
+                            Forms\Components\TextInput::make("name")
+                                ->label("Nazwa realizacji")
+                                ->required()
+                                ->maxLength(255),
+                        )->requiredLocales(config("app.translatable_locales")),
+                        Forms\Components\TextInput::make("company")
+                            ->label("Firma")
+                            ->required()
+                            ->maxLength(255),
+                        Forms\Components\TextInput::make("slug")
+                            ->label("Slug")
+                            ->required()
+                            ->unique(ignoreRecord: true)
+                            ->maxLength(255),
+                        Forms\Components\Select::make("template")
+                            ->options(fn() => self::getTemplates())
+                            ->native(false),
+                        Forms\Components\Checkbox::make("published")
+                            ->label("Opublikowane"),
+                    ]),
+                    Section::make([
+                        TranslatableContainer::make(
+                            Forms\Components\MarkdownEditor::make("description")
+                                ->label("Opis")
+                                ->required()
+                                ->maxLength(65000),
+                        )->requiredLocales(config("app.translatable_locales")),
+                        Forms\Components\FileUpload::make("photo")
+                            ->label("Zdjęcie")
+                            ->directory(CaseStudy::PHOTOS_DIRECTORY)
+                            ->imageEditor()
+                            ->rules(["mimes:jpeg,png,webp"])
+                            ->required()
+                            ->multiple(false)
+                            ->maxSize(1000),
+                    ]),
+                ])->from("lg"),
+            ])->columns(1);
+    }
+
+    public static function table(Table $table): Table
+    {
+        return $table
+            ->columns([
+                Tables\Columns\TextColumn::make("name")
+                    ->label("Nazwa relizacji")
+                    ->searchable(),
+                Tables\Columns\TextColumn::make("template")
+                    ->label("Szablon"),
+                Tables\Columns\CheckboxColumn::make("published")
+                    ->label("Opublikowane"),
+            ])
+            ->filters([
+                TernaryFilter::make("published")
+                    ->label("Status publikacji")
+                    ->placeholder("Wszystkie")
+                    ->trueLabel("Opublikowane")
+                    ->falseLabel("Nieopublikowane"),
+            ])
+            ->actions([
+                Tables\Actions\EditAction::make(),
+            ])
+            ->bulkActions([
+                Tables\Actions\BulkActionGroup::make([
+                    Tables\Actions\DeleteBulkAction::make(),
+                ]),
+            ]);
+    }
+
+    public static function getPages(): array
+    {
+        return [
+            "index" => Pages\ListCaseStudies::route("/"),
+            "create" => Pages\CreateCaseStudy::route("/create"),
+            "edit" => Pages\EditCaseStudy::route("/{record}/edit"),
+        ];
+    }
+
+    protected static function getTemplates(): array
+    {
+        $files = scandir(resource_path("views/case-studies"));
+        $files = array_diff($files, [".", ".."]);
+        $options = [];
+
+        foreach ($files as $file) {
+            $options[$file] = $file;
+        }
+
+        return $options;
+    }
+}

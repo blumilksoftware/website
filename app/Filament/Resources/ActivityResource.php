@@ -9,6 +9,8 @@ use Blumilk\Website\Filament\Resources\ActivityResource\Pages;
 use Blumilk\Website\Models\Activity;
 use Exception;
 use Filament\Forms;
+use Filament\Forms\Components\Section;
+use Filament\Forms\Components\Split;
 use Filament\Forms\Form;
 use Filament\Resources\Concerns\Translatable;
 use Filament\Resources\Resource;
@@ -26,43 +28,49 @@ class ActivityResource extends Resource
     protected static ?string $model = Activity::class;
     protected static ?string $label = "Aktualność";
     protected static ?string $pluralLabel = "Aktualności";
-    protected static ?string $navigationIcon = "heroicon-o-rectangle-stack";
+    protected static ?string $navigationIcon = "heroicon-o-newspaper";
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                TranslatableContainer::make(
-                    Forms\Components\TextInput::make("title")
-                        ->label("Tytuł")
-                        ->required()
-                        ->maxLength(255),
-                )->requiredLocales(config("app.translatable_locales")),
-                TranslatableContainer::make(
-                    Forms\Components\TextInput::make("subtitle")
-                        ->label("Podtytuł")
-                        ->maxLength(255),
-                )->requiredLocales(config("app.translatable_locales")),
-                Forms\Components\Checkbox::make("published")
-                    ->label("Opublikowane"),
-                Forms\Components\DateTimePicker::make("published_at")
-                    ->format(DateFormats::DATE_DISPLAY)
-                    ->time(false)
-                    ->requiredUnless("published", true)
-                    ->label("Data publikacji"),
-                Forms\Components\FileUpload::make("photo")
-                    ->label("Zdjęcie")
-                    ->required()
-                    ->directory(Activity::PHOTOS_DIRECTORY)
-                    ->multiple(false)
-                    ->maxSize(1000),
-                TranslatableContainer::make(
-                    Forms\Components\Textarea::make("description")
-                        ->label("Opis")
-                        ->required()
-                        ->maxLength(65000),
-                )->requiredLocales(config("app.translatable_locales")),
-            ]);
+                Split::make([
+                    Section::make([
+                        TranslatableContainer::make(
+                            Forms\Components\TextInput::make("title")
+                                ->label("Tytuł")
+                                ->required()
+                                ->maxLength(255),
+                        )->requiredLocales(config("app.translatable_locales")),
+                        TranslatableContainer::make(
+                            Forms\Components\TextInput::make("subtitle")
+                                ->label("Podtytuł")
+                                ->maxLength(255),
+                        )->requiredLocales(config("app.translatable_locales")),
+                        Forms\Components\Checkbox::make("published")
+                            ->label("Opublikowane"),
+                        Forms\Components\DateTimePicker::make("published_at")
+                            ->format(DateFormats::DATE_DISPLAY)
+                            ->time(false)
+                            ->requiredUnless("published", true)
+                            ->label("Data publikacji"),
+                    ]),
+                    Section::make([
+                        TranslatableContainer::make(
+                            Forms\Components\MarkdownEditor::make("description")
+                                ->label("Opis")
+                                ->required()
+                                ->maxLength(65000),
+                        )->requiredLocales(config("app.translatable_locales")),
+                        Forms\Components\FileUpload::make("photo")
+                            ->label("Zdjęcie")
+                            ->required()
+                            ->directory(Activity::PHOTOS_DIRECTORY)
+                            ->multiple(false)
+                            ->maxSize(1000),
+                    ]),
+                ])->from("lg"),
+            ])->columns(1);
     }
 
     /**
