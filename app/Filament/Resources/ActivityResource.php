@@ -57,7 +57,7 @@ class ActivityResource extends Resource
                     ]),
                     Section::make([
                         TranslatableContainer::make(
-                            Forms\Components\MarkdownEditor::make("description")
+                            Forms\Components\Textarea::make("description")
                                 ->label("Opis")
                                 ->required()
                                 ->maxLength(65000),

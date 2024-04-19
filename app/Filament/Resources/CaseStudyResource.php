@@ -43,6 +43,7 @@ class CaseStudyResource extends Resource
                             ->unique(ignoreRecord: true)
                             ->maxLength(255),
                         Forms\Components\Select::make("template")
+                            ->label("Szablon")
                             ->options(fn() => self::getTemplates())
                             ->native(false),
                         Forms\Components\Checkbox::make("published")
@@ -50,7 +51,7 @@ class CaseStudyResource extends Resource
                     ]),
                     Section::make([
                         TranslatableContainer::make(
-                            Forms\Components\MarkdownEditor::make("description")
+                            Forms\Components\Textarea::make("description")
                                 ->label("Opis")
                                 ->required()
                                 ->maxLength(65000),
@@ -88,7 +89,9 @@ class CaseStudyResource extends Resource
                     ->falseLabel("Nieopublikowane"),
             ])
             ->actions([
+                Tables\Actions\ViewAction::make(),
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
