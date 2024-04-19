@@ -21,8 +21,8 @@ jobs:
       pgsql:
         image: postgres:16.1-alpine3.18 # https://hub.docker.com/_/postgres
         env:
-          POSTGRES_DB: website
-          POSTGRES_USER: website
+          POSTGRES_DB: website-ci
+          POSTGRES_USER: website-ci
           POSTGRES_PASSWORD: password
         # Set health checks to wait until postgres has started
         options: >-
