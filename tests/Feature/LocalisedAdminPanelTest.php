@@ -26,16 +26,19 @@ class LocalisedAdminPanelTest extends TestCase
         $this->actingAs($this->user)
             ->get("/admin")
             ->assertSee("Panel")
+            ->assertSee("Aktualności")
             ->assertStatus(200);
 
         $this->actingAs($this->user)
             ->get("/admin", ["Accept-Language" => "en"])
             ->assertSee("Panel")
+            ->assertSee("Aktualności")
             ->assertStatus(200);
 
         $this->actingAs($this->user)
             ->get("/admin", ["Accept-Language" => "fr"])
             ->assertSee("Panel")
+            ->assertSee("Aktualności")
             ->assertStatus(200);
     }
 }
