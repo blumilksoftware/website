@@ -24,6 +24,8 @@ class ActivityResource extends Resource
     use Translatable;
 
     protected static ?string $model = Activity::class;
+    protected static ?string $label = "Aktualność";
+    protected static ?string $pluralLabel = "Aktualności";
     protected static ?string $navigationIcon = "heroicon-o-rectangle-stack";
 
     public static function form(Form $form): Form
@@ -46,7 +48,7 @@ class ActivityResource extends Resource
                 Forms\Components\DateTimePicker::make("published_at")
                     ->format(DateFormats::DATE_DISPLAY)
                     ->time(false)
-                    ->requiredUnless("published", true)
+                    ->required()
                     ->label("Data publikacji"),
                 Forms\Components\FileUpload::make("photo")
                     ->label("Zdjęcie")
@@ -87,8 +89,12 @@ class ActivityResource extends Resource
                     ->falseLabel("Nieopublikowane"),
                 Filter::make("published_at")
                     ->form([
-                        Forms\Components\DatePicker::make("published_from"),
-                        Forms\Components\DatePicker::make("published_to"),
+                        Forms\Components\DatePicker::make("published_from")
+                            ->label("Data publikacji od")
+                            ->format(DateFormats::DATE_DISPLAY),
+                        Forms\Components\DatePicker::make("published_to")
+                            ->label("Data publikacji do")
+                            ->format(DateFormats::DATE_DISPLAY),
                     ])->query(function (Builder $query, array $data): Builder {
                         return $query
                             ->when(

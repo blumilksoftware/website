@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Blumilk\Website\Providers\Filament;
 
+use Blumilk\Website\Http\Middleware\AdminPanelDefaultLanguage;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
@@ -57,9 +58,11 @@ class AdminPanelProvider extends PanelProvider
                 SubstituteBindings::class,
                 DisableBladeIconComponents::class,
                 DispatchServingFilamentEvent::class,
+                AdminPanelDefaultLanguage::class,
             ])
             ->authMiddleware([
                 Authenticate::class,
-            ]);
+            ])
+            ->spa();
     }
 }

@@ -26,4 +26,5 @@ return [
         "pl",
         "en",
     ],
+    "dashboard_locale" => "pl",
 ];
