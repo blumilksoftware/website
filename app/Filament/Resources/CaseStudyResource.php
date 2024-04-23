@@ -75,7 +75,7 @@ class CaseStudyResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make("name")
-                    ->label("Nazwa relizacji")
+                    ->label("Nazwa realizacji")
                     ->searchable(),
                 Tables\Columns\TextColumn::make("template")
                     ->label("Szablon"),
