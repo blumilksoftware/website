@@ -41,6 +41,7 @@ class CaseStudyResource extends Resource
                             ->label("Slug")
                             ->required()
                             ->unique(ignoreRecord: true)
+                            ->alphaDash()
                             ->maxLength(255),
                         Forms\Components\Select::make("template")
                             ->label("Szablon")
