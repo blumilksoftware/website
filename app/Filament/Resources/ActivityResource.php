@@ -26,6 +26,8 @@ class ActivityResource extends Resource
     use Translatable;
 
     protected static ?string $model = Activity::class;
+    protected static ?string $label = "Aktualność";
+    protected static ?string $pluralLabel = "Aktualności";
     protected static ?string $navigationIcon = "heroicon-o-rectangle-stack";
 
     public static function form(Form $form): Form
