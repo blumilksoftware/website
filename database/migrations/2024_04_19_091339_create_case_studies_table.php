@@ -14,7 +14,7 @@ return new class() extends Migration {
             $table->string("photo");
             $table->string("company");
             $table->string("slug");
-            $table->string("template");
+            $table->string("template")->nullable();
             $table->json("name");
             $table->json("description");
             $table->boolean("published")->default(false);
