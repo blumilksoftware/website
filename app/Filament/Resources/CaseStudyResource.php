@@ -78,6 +78,7 @@ class CaseStudyResource extends Resource
                     ->label("Nazwa realizacji")
                     ->searchable(),
                 Tables\Columns\TextColumn::make("template")
+                    ->getStateUsing(fn(CaseStudy $record): string => $record->template ?: "-")
                     ->label("Szablon"),
                 Tables\Columns\CheckboxColumn::make("published")
                     ->label("Opublikowane"),
