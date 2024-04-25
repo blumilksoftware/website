@@ -11,6 +11,7 @@ return new class() extends Migration {
     {
         Schema::table("users", function (Blueprint $table): void {
             $table->string("role")->default("moderator");
+            $table->boolean("active")->default(true);
         });
     }
 
@@ -18,6 +19,7 @@ return new class() extends Migration {
     {
         Schema::table("users", function (Blueprint $table): void {
             $table->dropColumn("role");
+            $table->dropColumn("active");
         });
     }
 };

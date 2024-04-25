@@ -63,6 +63,9 @@ class UserResource extends Resource
                             ->dehydrateStateUsing(fn(string $state): string => Hash::make($state))
                             ->dehydrated(fn(?string $state): bool => filled($state))
                             ->password(),
+                        Forms\Components\Checkbox::make("active")
+                            ->label("Aktywny")
+                            ->default(true),
                     ]),
                 ])->from("lg"),
             ])->columns(1);
@@ -78,6 +81,9 @@ class UserResource extends Resource
                 Tables\Columns\TextColumn::make("email")
                     ->label("E-mail")
                     ->searchable(),
+                Tables\Columns\CheckboxColumn::make("active")
+                    ->disabled(fn(User $user): bool => $user->id === auth()->user()->id)
+                    ->label("Aktywny"),
                 Tables\Columns\TextColumn::make("role")
                     ->label("Rola"),
             ])

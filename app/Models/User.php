@@ -14,9 +14,11 @@ use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
 /**
+ * @poperty int $id
  * @property string $name
  * @property string $email
  * @property string $password
+ * @property bool $active
  * @property Role $role
  * @property Carbon $email_verified_at
  * @property Carbon $created_at
@@ -35,12 +37,14 @@ class User extends Authenticatable implements FilamentUser
         "password",
         "role",
         "moderator",
+        "active",
     ];
     protected $hidden = [
         "password",
         "remember_token",
     ];
     protected $casts = [
+        "active" => "boolean",
         "email_verified_at" => "datetime",
         "password" => "hashed",
         "role" => Role::class,
@@ -49,7 +53,7 @@ class User extends Authenticatable implements FilamentUser
     #[\Override]
     public function canAccessPanel(Panel $panel): bool
     {
-        return $this->isAdmin() || $this->isModerator();
+        return $this->active && ($this->isAdmin() || $this->isModerator());
     }
 
     public function isModerator(): bool
