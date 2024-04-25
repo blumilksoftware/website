@@ -6,7 +6,6 @@ namespace Blumilk\Website\Filament\Resources\UserResource\Pages;
 
 use Blumilk\Website\Filament\Resources\BaseResource\Pages\BaseEditRecord;
 use Blumilk\Website\Filament\Resources\UserResource;
-use Filament\Actions;
 
 class EditUser extends BaseEditRecord
 {
