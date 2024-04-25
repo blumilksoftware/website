@@ -114,11 +114,12 @@ class CaseStudyResource extends Resource
     protected static function getTemplateOptions(): array
     {
         $files = scandir(resource_path("views/case-studies"));
-        $files = array_diff($files, [".", ".."]);
         $options = [];
 
         foreach ($files as $file) {
-            $options[$file] = $file;
+            if (str_ends_with($file, ".blade.php")) {
+                $options[$file] = $file;
+            }
         }
 
         return $options;
