@@ -1,0 +1,118 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Blumilk\Website\Filament\Resources;
+
+use Blumilk\Website\Enums\ContactFormStatus;
+use Blumilk\Website\Enums\DateFormats;
+use Blumilk\Website\Filament\Resources\ContactFormResource\Pages;
+use Blumilk\Website\Models\ContactForm;
+use Exception;
+use Filament\Forms;
+use Filament\Forms\Components\Section;
+use Filament\Forms\Components\Split;
+use Filament\Forms\Form;
+use Filament\Resources\Resource;
+use Filament\Tables;
+use Filament\Tables\Filters\Filter;
+use Filament\Tables\Filters\SelectFilter;
+use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Builder;
+
+class ContactFormResource extends Resource
+{
+    protected static ?string $model = ContactForm::class;
+    protected static ?string $label = "Wiadomość";
+    protected static ?string $pluralLabel = "Wiadomości";
+    protected static ?string $navigationIcon = "heroicon-o-envelope-open";
+
+    public static function form(Form $form): Form
+    {
+        return $form
+            ->schema([
+                Split::make([
+                    Section::make([
+                        Forms\Components\TextInput::make("email")
+                            ->label("E-mail")
+                            ->disabled(),
+                        Forms\Components\Select::make("status")
+                            ->label("Status")
+                            ->options(ContactFormStatus::class)
+                            ->required(),
+                    ]),
+                    Section::make([
+                        Forms\Components\Textarea::make("message")
+                            ->rows(4)
+                            ->label("Wiadomość")
+                            ->disabled(),
+                    ]),
+                ])->from("lg"),
+            ])->columns(1);
+    }
+
+    /**
+     * @throws Exception
+     */
+    public static function table(Table $table): Table
+    {
+        return $table
+            ->columns([
+                Tables\Columns\TextColumn::make("email")
+                    ->label("E-mail")
+                    ->searchable(),
+                Tables\Columns\TextColumn::make("status")
+                    ->label("Status"),
+                Tables\Columns\TextColumn::make("created_at")
+                    ->date(DateFormats::DATE_DISPLAY)
+                    ->label("Data kontaktu")
+                    ->sortable(),
+            ])->filters([
+                Filter::make("published_at")
+                    ->form([
+                        Forms\Components\DatePicker::make("created_from")
+                            ->label("Data od")
+                            ->format(DateFormats::DATE_DISPLAY),
+                        Forms\Components\DatePicker::make("created_to")
+                            ->label("Data do")
+                            ->format(DateFormats::DATE_DISPLAY),
+                    ])->query(function (Builder $query, array $data): Builder {
+                        return $query
+                            ->when(
+                                $data["created_from"],
+                                fn(Builder $query, $date): Builder => $query->whereDate("created_at", ">=", $date),
+                            )
+                            ->when(
+                                $data["created_to"],
+                                fn(Builder $query, $date): Builder => $query->whereDate("created_at", "<=", $date),
+                            );
+                    }),
+                SelectFilter::make("status")
+                    ->label("Status wiadomości")
+                    ->options(ContactFormStatus::class),
+            ])
+            ->actions([
+                Tables\Actions\ViewAction::make(),
+                Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
+            ])
+            ->bulkActions([
+                Tables\Actions\BulkActionGroup::make([
+                    Tables\Actions\DeleteBulkAction::make(),
+                ]),
+            ]);
+    }
+
+    public static function getPages(): array
+    {
+        return [
+            "index" => Pages\ListActivities::route("/"),
+            "edit" => Pages\EditActivity::route("/{record}/edit"),
+        ];
+    }
+
+    public static function canCreate(): bool
+    {
+        return false;
+    }
+}
