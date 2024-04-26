@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Tests\Feature;
+namespace Tests\Feature\AdministrationPanel;
 
 use Blumilk\Website\Models\User;
 use Illuminate\Foundation\Testing\DatabaseMigrations;

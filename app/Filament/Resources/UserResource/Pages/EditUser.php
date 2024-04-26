@@ -6,16 +6,8 @@ namespace Blumilk\Website\Filament\Resources\UserResource\Pages;
 
 use Blumilk\Website\Filament\Resources\BaseResource\Pages\BaseEditRecord;
 use Blumilk\Website\Filament\Resources\UserResource;
-use Filament\Actions;
 
 class EditUser extends BaseEditRecord
 {
     protected static string $resource = UserResource::class;
-
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\DeleteAction::make(),
-        ];
-    }
 }

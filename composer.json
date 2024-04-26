@@ -60,7 +60,8 @@
         ],
         "analyse": "./vendor/bin/phpstan analyse",
         "cs": "./vendor/bin/php-cs-fixer fix --dry-run --diff --config codestyle.php",
-        "csf": "./vendor/bin/php-cs-fixer fix --diff --config codestyle.php"
+        "csf": "./vendor/bin/php-cs-fixer fix --diff --config codestyle.php",
+        "fresh:demo": "@php artisan migrate:fresh --seed"
     },
     "extra": {
         "laravel": {
