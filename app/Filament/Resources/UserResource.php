@@ -52,6 +52,7 @@ class UserResource extends Resource
                     Section::make([
                         Forms\Components\TextInput::make("password")
                             ->label("Hasło")
+                            ->minValue(8)
                             ->required(fn(string $context): bool => $context === "create")
                             ->dehydrateStateUsing(fn(string $state): string => Hash::make($state))
                             ->dehydrated(fn(?string $state): bool => filled($state))
