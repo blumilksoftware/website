@@ -1,9 +1,9 @@
 module.exports = {
-  content: [
-    "./resources/**/*.blade.php",
-    "./resources/**/*.js",
-    "./resources/**/*.vue",
-  ],
+  content: {
+      relative: true,
+      files: ['./resources/**/*.blade.php', './resources/**/*.js', './resources/**/*.vue'],
+      transform: (content) => content.replace(/taos:/g, ''),
+    },
   theme: {
     screens: {
       'sm': '640px',
@@ -36,11 +36,17 @@ module.exports = {
         "sora": ["Sora", "sans-serif"]
       },
       backgroundImage:{
-        'binary': 'url("graphics/binary.png" )',
-      }
+        'binary': 'url("graphics/binary.svg" )',
+      },
     },
   },
   plugins: [
     require('@tailwindcss/forms'),
+    require('taos/plugin'),
+  ],
+  safelist: [
+    '!duration-[0ms]',
+    '!delay-[0ms]',
+    'html.js :where([class*="taos:"]:not(.taos-init))'
   ],
 }
