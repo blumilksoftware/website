@@ -109,21 +109,11 @@ class UserResource extends Resource
         return auth()->user()->isAdmin();
     }
 
-    public static function canCreate(): bool
-    {
-        return auth()->user()->isAdmin();
-    }
-
     public static function canDelete(Model $record): bool
     {
         /** @var User $user */
         $user = auth()->user();
 
         return $user->isAdmin() && $record->id !== $user->id;
-    }
-
-    public static function canUpdate(): bool
-    {
-        return auth()->user()->isAdmin();
     }
 }
