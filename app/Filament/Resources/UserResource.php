@@ -26,8 +26,8 @@ class UserResource extends Resource
 
     public static function form(Form $form): Form
     {
-        /** @var User $user */
-        $user = auth()->user();
+        /** @var User $authUser */
+        $authUser = auth()->user();
 
         return $form
             ->schema([
@@ -45,7 +45,7 @@ class UserResource extends Resource
                             ->unique(ignoreRecord: true),
                         Forms\Components\Select::make("role")
                             ->label("Rola")
-                            ->disabled(fn(string $context): bool => !($context === "create") && $user->id === $form->model->id)
+                            ->disabled(fn(string $context): bool => !($context === "create") && $authUser->id === $form->model->id)
                             ->options(Role::class)
                             ->required(),
                     ]),
@@ -64,6 +64,7 @@ class UserResource extends Resource
                             ->dehydrated(fn(?string $state): bool => filled($state))
                             ->password(),
                         Forms\Components\Checkbox::make("active")
+                            ->disabled(fn(User $user): bool => $user->id === $authUser->id)
                             ->label("Aktywny")
                             ->default(true),
                     ]),
