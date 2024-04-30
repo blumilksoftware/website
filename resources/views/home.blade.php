@@ -36,13 +36,13 @@
         <section class="flex flex-col-reverse lg:flex-row py-24 section-padding">
             <div class="flex basis-1/2 relative flex-col self-center gap-5">
                 <div class="text-3xl md:text-4xl lg:text-6xl text-center lg:justify-start lg:text-start py-4">
-                    <h2 class="font-semibold text-gray-900 animation-appear">Oprogramowanie
-                        <span class="text-website-normal block"> dopasowane </span> do Twoich potrzeb.</h2>
+                    <h2 class="font-semibold text-gray-900 animation-appear">{{__("content.section_1.title_1")}}
+                        <span class="text-website-normal block"> {{__("content.section_1.title_2")}} </span> {{__("content.section_1.title_3")}}</h2>
                 </div>
                 <div class="flex flex-col items-center lg:items-start animation-appear">
                     <p class="text-xl lg:text-2xl font-light text-center lg:text-start">
-                        Jesteśmy pasjonatami tworzenia aplikacji web/mobile oraz zaawansowanych projektów B+R.
-                        <span class="font-medium">Zmieniami koncepcje w działające rozwiązania.</span>
+                        {{__("content.section_1.subtitle_1")}}
+                        <span class="font-medium">{{__("content.section_1.subtitle_2")}}</span>
                     </p>
                     <div class="my-6">
                         <x-primary-button href="">{{ __("content.pages.about") }}</x-primary-button>
@@ -57,8 +57,8 @@
         </section>
 
         <section class="text-center section-padding">
-            <div class="text-2xl lg:text-3xl font-medium text-gray-400">Dołącz do grona <span
-                    class="text-website-normal">zadowolonych klientów Blumilk</span>
+            <div class="text-2xl lg:text-3xl font-medium text-gray-400">{{ __("content.section_2.title_1") }}<span
+                    class="text-website-normal">{{ __("content.section_2.title_2") }}</span>
             </div>
 
             <div class="grid grid-cols-2 md:flex md:flex-row pb-12 text-gray-400 items-center justify-center mt-6">
@@ -87,30 +87,29 @@
                     class="flex basis-2/5 flex-col lg:pr-8 delay-[300ms] duration-[700ms] taos:translate-x-[200px] taos:opacity-0"
                     data-taos-offset="100">
                     <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900 mb-4 text-center md:text-left">
-                        Jak możemy Ci
-                        pomóc? </h2>
+                        {{__("content.section_3.title_1")}}</h2>
                     <div class="text-black subtitle text-center md:text-left py-6">
-                        <div class="pb-4 md:pb-0">Badania, rozwój, kod:
+                        <div class="pb-4 md:pb-0"> {{__("content.section_3.subtitle_1")}}
                             <span class="font-medium">
-                                kształtujemy przyszłość oprogramowania.
+                                {{__("content.section_3.subtitle_2")}}
                                 </span>
                         </div>
                         <ul class="py-2 md:-ml-4 text-md justify-center">
                             <li class="flex items-center text-left">
                                 <x-icons.arrow color="#5379f6"></x-icons.arrow>
-                                Projekty B+R
+                                {{__("content.section_3.content_1")}}
                             </li>
                             <li class="flex items-center text-left">
                                 <x-icons.arrow color="#5379f6"></x-icons.arrow>
-                                Audyty rozwiązań IT
+                                {{__("content.section_3.content_2")}}
                             </li>
                             <li class="flex items-center text-left">
                                 <x-icons.arrow color="#5379f6"></x-icons.arrow>
-                                Cyfryzacja biznesu i procesów
+                                {{__("content.section_3.content_3")}}
                             </li>
                             <li class="flex items-center text-left">
                                 <x-icons.arrow color="#5379f6"></x-icons.arrow>
-                                Dedykowane aplikacje mobilne i webowe
+                                {{__("content.section_3.content_4")}}
                             </li>
                         </ul>
                     </div>
@@ -122,14 +121,14 @@
                         <div
                             class="relative flex flex-col justify-between aspect-square max-h-[600px] z-10 right-4 top-10 rounded-2xl bg-white p-6 -rotate-6">
                             <div class="px-4 pt-5 font-semibold text-3xl">
-                                Projektujemy rozwiązania
+                                {{__("content.section_3.title_2")}}
                             </div>
                             <div class="p-8 text-website-normal">
                                 <div
                                     class="flex flex-col items-center w-auto h-auto text-center bg-gray-light p-6 rounded-2xl">
                                     <img src="graphics/stars.png" class="max-h-12 shrink m-4" alt="5 stars"/>
                                     <div class="text-xl">
-                                        W trosce o stuprocentowe zadowolenie naszych klientów i partnerów.
+                                        {{__("content.section_3.subtitle_2")}}
                                     </div>
 
                                 </div>
@@ -152,17 +151,17 @@
                 <div class="flex flex-col text-center md:text-left">
                     <div class="relative duration-[600ms] taos:translate-y-[200px] taos:opacity-0"
                          data-taos-offset="200">
-                        <x-badge>zobacz jak działamy</x-badge>
-                        <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900">Case study</h2>
+                        <x-badge>{{__("content.section_4.badge")}}</x-badge>
+                        <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900">{{__("content.section_4.title_1")}}</h2>
                     </div>
                     <span class="absolute -right-[15%]">
                             <x-bubble size="40"/>
                         </span>
                     <div class="text-black subtitle relative z-10 py-4">
                         <div class="py-4 subtitle duration-[800ms] taos:translate-y-[200px] taos:opacity-0"
-                             data-taos-offset="200"> Dowiedz się jak nasze realizacje przekształciły wyzwania klientów w
+                             data-taos-offset="200"> {{__("content.section_4.subtitle_1")}}
                             <span
-                                class="font-medium">skuteczne rozwiązania</span></div>
+                                class="font-medium">{{__("content.section_4.subtitle_2")}}</span></div>
                         <ul class="list-disc-none py-8 hidden md:block duration-[1000ms] taos:translate-y-[200px] taos:opacity-0"
                             data-taos-offset="100">
                             @foreach($caseStudy as $key => $description)
@@ -193,15 +192,14 @@
                     <x-bubble size="20"/>
                 </span>
             </div>
-            <div
-                class="flex rounded-2xl md:bg-gray-light -rotate-3 basis-2/3 relative md:shadow-md left-[30%] lg:left-[10%] mt-12 delay-[200ms] duration-[1000ms] taos:translate-x-[100%] taos:opacity-0 [animation-iteration-count:infinite]"
+            <div class="flex rounded-2xl md:bg-gray-light -rotate-3 basis-2/3 relative md:shadow-md size-full left-[5%] lg:left-[10%] mt-12 pb-16 lg:pb-0 delay-[200ms] duration-[1000ms] taos:translate-x-[100%] taos:opacity-0 [animation-iteration-count:infinite]"
                 data-taos-offset="400">
                 <div
-                    class="absolute hidden lg:block rotate-3 z-20 rounded-2xl h-52 w-80 -left-[10%] bottom-16 bg-[url('graphics/code-snippet.png')] bg-cover">
+                    class="absolute hidden lg:block rotate-3 z-20 rounded-2xl h-52 w-80 -left-[10%] bottom-[10%] bg-[url('graphics/code-snippet.png')] bg-cover">
                 </div>
-                <div class="relative flex left-[5%] overflow-hidden rounded-2xl bg-white shadow-md rotate-3">
-                    <img src="graphics/vita.png" class="w-full" alt="Vita homepage"/>
-                </div>
+                <img src="graphics/vita.png" class="w-full relative flex lg:left-[10%] overflow-hidden rounded-2xl bg-white shadow-md rotate-3" alt="Vita homepage"/>
+
+
             </div>
             <div class="flex md:hidden place-content-center px-8">
                 <x-block-primary-button href="">{{ __("buttons.all_projects") }}</x-block-primary-button>
@@ -213,9 +211,9 @@
             <div class="hidden md:block bg-binary min-w-[120%] absolute z-20 opacity-5 inset-0"></div>
             <div class="section-padding bg-gray-light py-8 md:py-24">
                 <h2 class="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 relative z-30 my-6 delay-[300ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0"
-                    data-taos-offset="400">Tech stack</h2>
+                    data-taos-offset="400">{{__("content.section_5.title_1")}}</h2>
                 <span class="subtitle relative z-30 delay-[300ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0"
-                      data-taos-offset="400"> PHP i Laravel to nasze główne narzędzie pracy. GitHub stanowi naszą centralną platformę, umożliwiającą code review oraz CI/CD za pomocą GitHub Actions. Frontend budujemy z użyciem Vue.js, a także korzystamy z różnych systemów zarządzania bazami danych, tj. MySQL i PostgreSQL.</span>
+                      data-taos-offset="400">{{__("content.section_5.subtitle_1")}}</span>
                 <div class="flex relative z-30 text-gray-400 items-center my-6 justify-between gap-4">
                     <div class="delay-[600ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="300">
                         <img src="images/tech/laravel.png" class="tech-icon" alt="laravel"/>
@@ -236,11 +234,11 @@
             </div>
         </section>
         <section
-            class="section-padding text-center items-center py-24 delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0"
+            class="section-padding text-center items-center pb-36 delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0"
             data-taos-offset="300">
-            <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900 mb-6">Co mówią o nas inni</h2>
-            <x-badge>opinie</x-badge>
-            <span class="subtitle">Opinie naszych klientów są bardzo ważne, <span class="font-semibold">świadczą o jakości naszych usług</span> i inspirują nas do nieustannego doskonalenia.</span>
+            <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900 mb-6">{{__("content.section_6.title_1")}}</h2>
+            <x-badge>{{__("content.section_6.badge")}}</x-badge>
+            <span class="subtitle">{{__("content.section_6.subtitle_1")}}<span class="font-semibold">{{__("content.section_6.subtitle_2")}}</span> {{__("content.section_6.subtitle_3")}}</span>
             <div class="main-gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
                 <div class="gallery-cell gap-6 text-center py-4 lg:gap-12">
                     <x-testimonial
@@ -282,9 +280,9 @@
         </section>
         <section class="section-padding">
             <div class="flex flex-row items-center justify-between">
-                <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900">Nasze aktywności</h2>
+                <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900">{{__("content.section_7.title_1")}}</h2>
                 <div class="hidden sm:block">
-                    <x-primary-button href="">Zobacz wszystkie</x-primary-button>
+                    <x-primary-button href="">{{__("buttons.see_all")}}</x-primary-button>
                 </div>
             </div>
             <div class="grid gap-8 pt-12 max-w-none sm:grid-cols-2 lg:grid-cols-3 relative z-10">
@@ -310,7 +308,7 @@
                 </div>
             </div>
             <div class="sm:hidden flex pt-8">
-                <x-block-primary-button href="">Zobacz wszystkie</x-block-primary-button>
+                <x-block-primary-button href="">{{__("buttons.see_all")}}</x-block-primary-button>
             </div>
         </section>
     </section>
