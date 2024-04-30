@@ -11,18 +11,20 @@
         "ext-pdo": "*",
         "codezero/laravel-localized-routes": "^4.0",
         "filament/filament": "^3.2",
+        "filament/spatie-laravel-translatable-plugin": "^3.2",
         "guzzlehttp/guzzle": "^7.8",
         "laravel/framework": "^11.0",
         "laravel/sanctum": "^4.0",
-        "laravel/tinker": "^2.9"
+        "laravel/tinker": "^2.9",
+        "mvenghaus/filament-plugin-translatable-inline": "^3.0"
     },
     "require-dev": {
         "blumilksoftware/codestyle": "^v2.8",
         "fakerphp/faker": "^1.23",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.1",
-        "nunomaduro/larastan": "^2.9",
-        "phpunit/phpunit": "^10.5",
+        "larastan/larastan": "^v2.9.5",
+        "phpunit/phpunit": "^11.1.2",
         "spatie/laravel-ignition": "^2.4"
     },
     "autoload": {
@@ -58,7 +60,8 @@
         ],
         "analyse": "./vendor/bin/phpstan analyse",
         "cs": "./vendor/bin/php-cs-fixer fix --dry-run --diff --config codestyle.php",
-        "csf": "./vendor/bin/php-cs-fixer fix --diff --config codestyle.php"
+        "csf": "./vendor/bin/php-cs-fixer fix --diff --config codestyle.php",
+        "fresh:demo": "@php artisan migrate:fresh --seed"
     },
     "extra": {
         "laravel": {
