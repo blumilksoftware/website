@@ -26,7 +26,7 @@ return Application::configure(basePath: dirname(__DIR__))
         ])->web(append: [
             SetLocale::class,
             SubstituteBindings::class,
-        ]);
+        ])->redirectGuestsTo("admin");
     })
     ->withExceptions()
     ->create();

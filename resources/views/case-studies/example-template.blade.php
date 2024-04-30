@@ -1,0 +1,3 @@
+<div>
+    Example template
+</div>
