@@ -207,7 +207,7 @@
 
         </section>
 
-        <section class="relative py-36 text-center">
+        <section class="relative py-20 text-center">
             <div class="hidden md:block bg-binary min-w-[120%] absolute z-20 opacity-5 inset-0"></div>
             <div class="section-padding bg-gray-light py-8 md:py-24">
                 <h2 class="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 relative z-30 my-6 delay-[300ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0"
