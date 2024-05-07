@@ -74,11 +74,6 @@
 </nav>
 
 <script>
-    function abc(route){
-        console.log("abc");
-        window.location=route;
-    }
-
     function showSidebar() {
         const sidebar = document.querySelector(".sidebar");
         sidebar.style.display = "flex";

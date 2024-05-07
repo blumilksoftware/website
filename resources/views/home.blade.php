@@ -9,25 +9,25 @@
 @section("content")
     <section class="relative overflow-hidden">
         <div class="relative md:block -z-10">
-            <div class="absolute -left-[6%] md:left-[1%] top-28 md:top-40">
+            <div class="absolute -left-[6%] md:left-[1%] top-28 md:top-40 -z-10">
                 <x-bubble size="80"/>
             </div>
-            <div class="absolute left-[8%] md:left-[4%] top-20 md:top-28">
+            <div class="absolute left-[8%] md:left-[4%] top-20 md:top-28 -z-10">
                 <x-bubble size="30"/>
             </div>
-            <div class="absolute hidden md:block -left-[3%] top-80">
+            <div class="absolute hidden md:block -left-[3%] top-80 -z-10">
                 <x-bubble size="200"/>
             </div>
-            <div class="absolute right-[4%] top-36">
+            <div class="absolute right-[4%] top-36 -z-10">
                 <x-bubble size="40"/>
             </div>
             <div class="relative top-24">
-                <div class="absolute -right-[6%] md:right-[3%] top-72">
+                <div class="absolute -right-[6%] md:right-[3%] top-72 -z-10">
                     <x-bubble size="90"/>
                 </div>
             </div>
             <div class="relative top-24">
-                <div class="absolute hidden md:block md:right-[4%] top-96">
+                <div class="absolute hidden md:block md:right-[4%] top-96 -z-10">
                     <x-bubble size="200"/>
                 </div>
             </div>
@@ -78,13 +78,11 @@
         </section>
 
         <section class="bg-gradient-to-r from-gray-light to-white">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
-                <path fill="#ffffff" fill-opacity="1"
-                      d="M0,64L80,69.3C160,75,320,85,480,90.7C640,96,800,96,960,80C1120,64,1280,32,1360,16L1440,0L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
-            </svg>
-            <div class="flex flex-col lg:flex-row section-padding lg:pr-[0%] pt-24">
+
+            <x-waves.wave-1.top></x-waves.wave-1.top>
+            <div class="flex flex-col lg:flex-row section-padding lg:pr-0 pt-24">
                 <div
-                    class="flex basis-2/5 flex-col lg:pr-8 delay-[300ms] duration-[700ms] taos:translate-x-[200px] taos:opacity-0"
+                    class="flex basis-2/5 flex-col lg:pr-8 delay-300 duration-700 taos:translate-x-48 taos:opacity-0"
                     data-taos-offset="100">
                     <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900 mb-4 text-center md:text-left">
                         {{__("content.section_3.title_1")}}</h2>
@@ -115,7 +113,7 @@
                     </div>
                 </div>
                 <div
-                    class="hidden lg:flex basis-3/5 delay-[600ms] duration-[800ms] taos:translate-x-[200px] taos:opacity-0"
+                    class="hidden lg:flex basis-3/5 delay-700 duration-700 taos:translate-x-48 taos:opacity-0"
                     data-taos-offset="300">
                     <div class="rounded-xl bg-gray-light max-h-[600px] rotate-6">
                         <div
@@ -140,29 +138,26 @@
                     </div>
                 </div>
             </div>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100">
-                <path fill="#ffffff" fill-opacity="1"
-                      d="M0,64L80,69.3C160,75,320,85,480,90.7C640,96,800,96,960,80C1120,64,1280,32,1360,16L1440,0L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
-            </svg>
+            <x-waves.wave-1.bottom></x-waves.wave-1.bottom>
         </section>
         <section
-            class="relative flex flex-col lg:flex-row md:py-24 section-padding lg:pr-[0%] items-center overflow-hidden">
+            class="relative flex flex-col lg:flex-row md:py-24 section-padding lg:pr-0 items-center overflow-hidden">
             <div class="flex basis-1/3 relative">
                 <div class="flex flex-col text-center md:text-left">
-                    <div class="relative duration-[600ms] taos:translate-y-[200px] taos:opacity-0"
+                    <div class="relative duration-700 taos:translate-y-48 taos:opacity-0"
                          data-taos-offset="200">
                         <x-badge>{{__("content.section_4.badge")}}</x-badge>
                         <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900">{{__("content.section_4.title_1")}}</h2>
                     </div>
-                    <span class="absolute -right-[15%]">
+                    <span class="absolute -right-[15%] -z-10">
                             <x-bubble size="40"/>
                         </span>
                     <div class="text-black subtitle relative z-10 py-4">
-                        <div class="py-4 subtitle duration-[800ms] taos:translate-y-[200px] taos:opacity-0"
+                        <div class="py-4 subtitle duration-700 taos:translate-y-48 taos:opacity-0"
                              data-taos-offset="200"> {{__("content.section_4.subtitle_1")}}
                             <span
                                 class="font-medium">{{__("content.section_4.subtitle_2")}}</span></div>
-                        <ul class="list-disc-none py-8 hidden md:block duration-[1000ms] taos:translate-y-[200px] taos:opacity-0"
+                        <ul class="list-disc-none py-8 hidden md:block duration-1000 taos:translate-y-48 taos:opacity-0"
                             data-taos-offset="100">
                             @foreach($caseStudy as $key => $description)
                                 <li><span class="font-semibold">{{ $key }}</span> : {{ $description }}</li>
@@ -170,29 +165,29 @@
                         </ul>
                         <div class="relative pb-8">
                             <div
-                                class="relative hidden md:flex z-10 duration-[1200ms] taos:translate-y-[200px] taos:opacity-0"
+                                class="relative hidden md:flex z-10 duration-1000 taos:translate-y-48 taos:opacity-0"
                                 data-taos-offset="0">
                                 <x-secondary-button href="">{{ __("buttons.all_projects") }}</x-secondary-button>
                                 <x-primary-button href="">{{ __("buttons.case_study") }}</x-primary-button>
                             </div>
-                            <span class="absolute -left-[30%]">
+                            <span class="absolute -left-[30%] -z-10">
                                 <x-bubble size="30"/>
                             </span>
-                            <span class="absolute -right-[10%]">
+                            <span class="absolute -right-[10%] -z-10">
                                 <x-bubble size="80"/>
                             </span>
                         </div>
                     </div>
                 </div>
 
-                <span class="absolute -left-[40%] top-72">
+                <span class="absolute -left-[40%] top-72 -z-10">
                     <x-bubble size="90"/>
                 </span>
-                <span class="absolute -left-[25%] top-96">
+                <span class="absolute -left-[25%] top-96 -z-10">
                     <x-bubble size="20"/>
                 </span>
             </div>
-            <div class="flex rounded-2xl md:bg-gray-light -rotate-3 basis-2/3 relative md:shadow-md size-full left-[5%] lg:left-[10%] mt-12 pb-16 lg:pb-0 delay-[200ms] duration-[1000ms] taos:translate-x-[100%] taos:opacity-0 [animation-iteration-count:infinite]"
+            <div class="flex rounded-2xl md:bg-gray-light -rotate-3 basis-2/3 relative md:shadow-md size-full left-[5%] lg:left-[10%] mt-12 pb-16 lg:pb-0 delay-200 duration-1000 taos:translate-x-full taos:opacity-0 [animation-iteration-count:infinite]"
                 data-taos-offset="400">
                 <div
                     class="absolute hidden lg:block rotate-3 z-20 rounded-2xl h-52 w-80 -left-[10%] bottom-[10%] bg-[url('graphics/code-snippet.png')] bg-cover">
@@ -210,31 +205,31 @@
         <section class="relative py-20 text-center">
             <div class="hidden md:block bg-binary min-w-[120%] absolute z-20 opacity-5 inset-0"></div>
             <div class="section-padding bg-gray-light py-8 md:py-24">
-                <h2 class="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 relative z-30 my-6 delay-[300ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0"
+                <h2 class="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 relative z-30 my-6 delay-300 duration-700 taos:scale-75 taos:opacity-0"
                     data-taos-offset="400">{{__("content.section_5.title_1")}}</h2>
-                <span class="subtitle relative z-30 delay-[300ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0"
+                <span class="subtitle relative z-30 delay-300 duration-700 taos:scale-75 taos:opacity-0"
                       data-taos-offset="400">{{__("content.section_5.subtitle_1")}}</span>
                 <div class="flex relative z-30 text-gray-400 items-center my-6 justify-between gap-4">
-                    <div class="delay-[600ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="300">
+                    <div class="delay-200 duration-700 taos:scale-75 taos:opacity-0" data-taos-offset="300">
                         <img src="images/tech/laravel.png" class="tech-icon" alt="laravel"/>
                     </div>
-                    <div class="delay-[800ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="300">
+                    <div class="delay-300 duration-700 taos:scale-75 taos:opacity-0" data-taos-offset="300">
                         <img src="images/tech/php.png" class="tech-icon" alt="php"/>
                     </div>
-                    <div class="delay-[1000ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="300">
+                    <div class="delay-500 duration-700 taos:scale-75 taos:opacity-0" data-taos-offset="300">
                         <img src="images/tech/postgresql.png" class="tech-icon" alt="postgresql"/>
                     </div>
-                    <div class="delay-[1200ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="300">
+                    <div class="delay-700 duration-700 taos:scale-75 taos:opacity-0" data-taos-offset="300">
                         <img src="images/tech/docker.png" class="tech-icon" alt="docker"/>
                     </div>
-                    <div class="delay-[1400ms] duration-[600ms] taos:scale-[0.6] taos:opacity-0" data-taos-offset="300">
+                    <div class="delay-1000 duration-700 taos:scale-75 taos:opacity-0" data-taos-offset="300">
                         <img src="images/tech/vue.png" class="tech-icon" alt="vue"/>
                     </div>
                 </div>
             </div>
         </section>
         <section
-            class="section-padding text-center items-center pb-36 delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0"
+            class="section-padding text-center items-center pb-36 delay-300 duration-700 taos:translate-y-48 taos:opacity-0"
             data-taos-offset="300">
             <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900 mb-6">{{__("content.section_6.title_1")}}</h2>
             <x-badge>{{__("content.section_6.badge")}}</x-badge>
