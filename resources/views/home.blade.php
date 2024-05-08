@@ -1,7 +1,9 @@
+@php use Illuminate\Support\Facades\App; @endphp
 @extends("layout.public")
 
 @php
-    $caseStudy = json_decode(file_get_contents(public_path('case_studies.json')), true)[0];
+    $caseStudiesFile = App::currentLocale()=='en' ? 'case_studies_en.json' : 'case_studies_pl.json';
+    $caseStudy = json_decode(file_get_contents(public_path($caseStudiesFile)), true)[0];
     $testimonials = json_decode(file_get_contents(public_path('testimonials.json')), true);
     $articles = json_decode(file_get_contents(public_path('articles.json')), true);
 
@@ -37,7 +39,9 @@
             <div class="flex basis-1/2 relative flex-col self-center gap-5">
                 <div class="text-3xl md:text-4xl lg:text-6xl text-center lg:justify-start lg:text-start py-4">
                     <h2 class="font-semibold text-gray-900 animation-appear">{{__("content.section_1.title_1")}}
-                        <span class="text-website-normal block"> {{__("content.section_1.title_2")}} </span> {{__("content.section_1.title_3")}}</h2>
+                        <span
+                            class="text-website-normal block"> {{__("content.section_1.title_2")}} </span> {{__("content.section_1.title_3")}}
+                    </h2>
                 </div>
                 <div class="flex flex-col items-center lg:items-start animation-appear">
                     <p class="text-xl lg:text-2xl font-light text-center lg:text-start">
@@ -187,12 +191,15 @@
                     <x-bubble size="20"/>
                 </span>
             </div>
-            <div class="flex rounded-2xl md:bg-gray-light -rotate-3 basis-2/3 relative md:shadow-md size-full left-[5%] lg:left-[10%] mt-12 pb-16 lg:pb-0 delay-200 duration-1000 taos:translate-x-full taos:opacity-0 [animation-iteration-count:infinite]"
+            <div
+                class="flex rounded-2xl md:bg-gray-light -rotate-3 basis-2/3 relative md:shadow-md size-full left-[5%] lg:left-[10%] mt-12 pb-16 lg:pb-0 delay-200 duration-1000 taos:translate-x-full taos:opacity-0 [animation-iteration-count:infinite]"
                 data-taos-offset="400">
                 <div
                     class="absolute hidden lg:block rotate-3 z-20 rounded-2xl h-52 w-80 -left-[10%] bottom-[10%] bg-[url('graphics/code-snippet.png')] bg-cover">
                 </div>
-                <img src="graphics/vita.png" class="w-full relative flex lg:left-[10%] overflow-hidden rounded-2xl bg-white shadow-md rotate-3" alt="Vita homepage"/>
+                <img src="graphics/vita.png"
+                     class="w-full relative flex lg:left-[10%] overflow-hidden rounded-2xl bg-white shadow-md rotate-3"
+                     alt="Vita homepage"/>
 
 
             </div>
@@ -203,13 +210,14 @@
         </section>
 
         <section class="relative py-20 text-center">
-            <div class="hidden md:block bg-binary min-w-[120%] absolute z-20 opacity-5 inset-0"></div>
+            <div class="hidden md:block bg-binary min-w-[100%] absolute z-20 inset-0"></div>
             <div class="section-padding bg-gray-light py-8 md:py-24">
                 <h2 class="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 relative z-30 my-6 delay-300 duration-700 taos:scale-75 taos:opacity-0"
                     data-taos-offset="400">{{__("content.section_5.title_1")}}</h2>
                 <span class="subtitle relative z-30 delay-300 duration-700 taos:scale-75 taos:opacity-0"
                       data-taos-offset="400">{{__("content.section_5.subtitle_1")}}</span>
-                <div class="flex flex-col sm:flex-row relative z-30 text-gray-400 items-center my-6 md:justify-between lg:justify-center gap-y-8 sm:gap-x-8 lg:gap-x-16">
+                <div
+                    class="flex flex-col sm:flex-row relative z-30 text-gray-400 items-center my-6 md:justify-between lg:justify-center gap-y-8 sm:gap-x-8 lg:gap-x-16">
                     <div class="delay-200 duration-700 taos:scale-75 taos:opacity-0" data-taos-offset="300">
                         <img src="images/tech/laravel.png" class="tech-icon" alt="laravel"/>
                     </div>
@@ -229,11 +237,12 @@
             </div>
         </section>
         <section
-            class="section-padding text-center items-center pb-36 delay-300 duration-700 taos:translate-y-48 taos:opacity-0"
+            class="section-padding text-center items-center pb-36 delay-300 duration-700 taos:translate-y-48 taos:opacity-0 relative z-10"
             data-taos-offset="300">
             <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900 mb-6">{{__("content.section_6.title_1")}}</h2>
             <x-badge>{{__("content.section_6.badge")}}</x-badge>
-            <span class="subtitle">{{__("content.section_6.subtitle_1")}}<span class="font-semibold">{{__("content.section_6.subtitle_2")}}</span> {{__("content.section_6.subtitle_3")}}</span>
+            <span class="subtitle">{{__("content.section_6.subtitle_1")}}<span
+                    class="font-semibold">{{__("content.section_6.subtitle_2")}}</span> {{__("content.section_6.subtitle_3")}}</span>
             <div class="main-gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
                 <div class="gallery-cell gap-6 text-center py-4 lg:gap-12">
                     <x-testimonial
@@ -273,38 +282,41 @@
                 </div>
             </div>
         </section>
-        <section class="section-padding">
-            <div class="flex flex-row items-center justify-between">
-                <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900">{{__("content.section_7.title_1")}}</h2>
-                <div class="hidden sm:block">
-                    <x-primary-button href="">{{__("buttons.see_all")}}</x-primary-button>
+        <div class="md:py-20 block bg-binary min-w-[100%] z-20 inset-0">
+            <section class="relative section-padding">
+
+                <div class="relative z-30 flex flex-row items-center justify-between">
+                    <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900">{{__("content.section_7.title_1")}}</h2>
+                    <div class="hidden sm:block">
+                        <x-primary-button href="">{{__("buttons.see_all")}}</x-primary-button>
+                    </div>
                 </div>
-            </div>
-            <div class="grid gap-8 pt-12 max-w-none sm:grid-cols-2 lg:grid-cols-3 relative z-10">
-                @for($currentArticle = 0; $currentArticle < 3; $currentArticle++)
-                    <x-article-card
-                        imageSrc="{{ $articles[$currentArticle]['imageSrc'] }}"
-                        date="{{ $articles[$currentArticle]['date'] }}"
-                        dateFormatted="{{ $articles[$currentArticle]['dateFormatted'] }}"
-                        firstText="{{ $articles[$currentArticle]['firstText'] }}"
-                        secondText="{{ $articles[$currentArticle]['secondText'] }}"
-                        articleRoute="{{ $articles[$currentArticle]['articleRoute'] }}"
-                    />
-                @endfor
-                <div class="lg:hidden">
-                    <x-article-card
-                        imageSrc="{{ $articles[3]['imageSrc'] }}"
-                        date="{{ $articles[3]['date'] }}"
-                        dateFormatted="{{ $articles[3]['dateFormatted'] }}"
-                        firstText="{{ $articles[3]['firstText'] }}"
-                        secondText="{{ $articles[3]['secondText'] }}"
-                        articleRoute="{{ $articles[3]['articleRoute'] }}"
-                    />
+                <div class="grid gap-8 pt-12 max-w-none sm:grid-cols-2 lg:grid-cols-3 relative z-30">
+                    @for($currentArticle = 0; $currentArticle < 3; $currentArticle++)
+                        <x-article-card
+                            imageSrc="{{ $articles[$currentArticle]['imageSrc'] }}"
+                            date="{{ $articles[$currentArticle]['date'] }}"
+                            dateFormatted="{{ $articles[$currentArticle]['dateFormatted'] }}"
+                            firstText="{{ $articles[$currentArticle]['firstText'] }}"
+                            secondText="{{ $articles[$currentArticle]['secondText'] }}"
+                            articleRoute="{{ $articles[$currentArticle]['articleRoute'] }}"
+                        />
+                    @endfor
+                    <div class="hidden sm:block lg:hidden">
+                        <x-article-card
+                            imageSrc="{{ $articles[3]['imageSrc'] }}"
+                            date="{{ $articles[3]['date'] }}"
+                            dateFormatted="{{ $articles[3]['dateFormatted'] }}"
+                            firstText="{{ $articles[3]['firstText'] }}"
+                            secondText="{{ $articles[3]['secondText'] }}"
+                            articleRoute="{{ $articles[3]['articleRoute'] }}"
+                        />
+                    </div>
                 </div>
-            </div>
-            <div class="sm:hidden flex pt-8">
-                <x-block-primary-button href="">{{__("buttons.see_all")}}</x-block-primary-button>
-            </div>
-        </section>
+                <div class="sm:hidden flex pt-8">
+                    <x-block-primary-button href="">{{__("buttons.see_all")}}</x-block-primary-button>
+                </div>
+            </section>
+        </div>
     </section>
 @endsection

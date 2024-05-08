@@ -3,7 +3,7 @@
     $current = substr(Route::currentRouteName(), 3);
 @endphp
 
-<nav id="mobile-nav" class="sidebar bg-navigation hidden h-screen w-screen justify-between absolute z-30 right-0 md:hidden flex-col font-semibold text-2xl text-center items-center" lang="en">
+<nav id="mobile-nav" class="sidebar bg-navigation hidden h-screen w-screen justify-between absolute z-30 right-0 md:hidden flex-col font-semibold text-2xl text-center items-center">
     <div class="flex justify-between relative bg-navigation p-4 px-6 w-full">
         <a class="flex lowercase font-bold items-center" href="{{ route("home") }}">
             <img class="w-40" src="/logo.svg" alt="Blumilk"/>
@@ -39,26 +39,26 @@
     <x-primary-button-with-icon icon="text" href="">{{ __("buttons.lets_talk") }}</x-primary-button-with-icon>
 </nav>
 
-<nav id="desktop-nav" class="left-0 right-0 py-4 duration-300 bg-navigation relative" lang="en">
+<nav id="desktop-nav" class="left-0 right-0 py-4 duration-300 xl:px-[15%] bg-navigation relative">
     <div class="mx-auto flex items-center justify-between px-6">
         <div>
-            <a class="flex items-center" href="{{ route("home") }}">
-                <img class="w-40" src="/logo.svg" alt="Blumilk"/>
+            <a class="flex items-start" href="{{ route("home") }}">
+                <img class="w-40 shrink-0" src="/logo.svg" alt="Blumilk"/>
             </a>
         </div>
-        <div class="md:flex flex-1 hidden justify-center items-center text-lg lg:text-xl">
-            <p class="font-medium flex items-center text-center gap-2 lg:gap-6 nav-list">
-                <a onclick="abc({{route('about')}})" class="nav-item @if($current === "about") active @endif" href="{{ route("about") }}">{{ __("content.pages.about") }}</a>
+        <div class="md:flex hidden justify-center items-center text-lg lg:text-xl">
+            <p class="font-medium flex items-center text-center gap-2 nav-list">
+                <a onclick="{{route('about')}}" class="nav-item @if($current === "about") active @endif" href="{{ route("about") }}">{{ __("content.pages.about") }}</a>
                 <a href="{{ route("case-studies") }}" class="nav-item @if($current === "case-studies") active @endif">{{ __("content.pages.case_study") }}</a>
                 <a href="{{ route("partners") }}" class="nav-item @if($current === "partners") active @endif">{{ __("content.pages.partners") }}</a>
                 <a href="{{ route("career") }}" class="nav-item @if($current === "career") active @endif">{{ __("content.pages.career") }}</a>
                 <a href="{{ route("contact") }}" class="nav-item @if($current === "contact") active @endif">{{ __("content.pages.contact") }}</a>
             </p>
-            <div class="ml-8">
+            <div class="m-2">
                 <x-primary-button-with-icon icon="text" href="">{{ __("buttons.lets_talk") }}</x-primary-button-with-icon>
             </div>
         </div>
-        <div class="md:flex hidden items-center justify-end m-1">
+        <div class="md:flex hidden items-center">
             @foreach(LocaleConfig::getLocales() as $locale)
                 @if (!App::isLocale($locale))
                     <a href="{{ route(Route::currentRouteName(), Route::getCurrentRoute()->parameters(), true, $locale) }}">
@@ -67,7 +67,7 @@
                 @endif
             @endforeach
         </div>
-        <button class="flex md:hidden justify-end" onclick="showSidebar()">
+        <button class="flex md:hidden" onclick="showSidebar()">
             <i class="fa-solid fa-bars hamburger-menu text-2xl text-brand"></i>
         </button>
     </div>
@@ -77,10 +77,12 @@
     function showSidebar() {
         const sidebar = document.querySelector(".sidebar");
         sidebar.style.display = "flex";
+        document.body.style.overflow = 'hidden';
     }
 
     function hideSidebar() {
         const sidebar = document.querySelector(".sidebar");
         sidebar.style.display = "none";
+        document.body.style.overflow = '';
     }
 </script>

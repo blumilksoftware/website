@@ -8,4 +8,5 @@ return [
     "all_projects" => "Zobacz wszystkie projekty",
     "case_study" => "Przejdź do case study",
     "see_all" => "Zobacz wszystkie",
+    "send" => "Wyślij",
 ];
