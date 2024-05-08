@@ -209,7 +209,7 @@
                     data-taos-offset="400">{{__("content.section_5.title_1")}}</h2>
                 <span class="subtitle relative z-30 delay-300 duration-700 taos:scale-75 taos:opacity-0"
                       data-taos-offset="400">{{__("content.section_5.subtitle_1")}}</span>
-                <div class="flex relative z-30 text-gray-400 items-center my-6 justify-between gap-4">
+                <div class="flex flex-col sm:flex-row relative z-30 text-gray-400 items-center my-6 md:justify-between lg:justify-center gap-y-8 sm:gap-x-8 lg:gap-x-16">
                     <div class="delay-200 duration-700 taos:scale-75 taos:opacity-0" data-taos-offset="300">
                         <img src="images/tech/laravel.png" class="tech-icon" alt="laravel"/>
                     </div>
