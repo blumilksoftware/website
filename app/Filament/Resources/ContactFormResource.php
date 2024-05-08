@@ -62,6 +62,12 @@ class ContactFormResource extends Resource
                     ->label("E-mail")
                     ->searchable(),
                 Tables\Columns\TextColumn::make("status")
+                    ->badge()
+                    ->colors([
+                        "warning" => static fn($state): bool => $state === ContactFormStatus::Read,
+                        "danger" => static fn($state): bool => $state === ContactFormStatus::Unread,
+                        "success" => static fn($state): bool => $state === ContactFormStatus::Responded,
+                    ])
                     ->label("Status"),
                 Tables\Columns\TextColumn::make("created_at")
                     ->date(DateFormats::DATE_DISPLAY)
