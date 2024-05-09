@@ -2,23 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-binary{
-  background-size: 100%;
-  object-fit: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.active
-{
-  background-color: rgba(124, 156, 252, 0.2);
-  color: #5379f6;
-  border-radius: 22px;
-}
-@media (max-width: 767px) {
-  .active {
-    border-radius: 0;
-  }
-}
 .tech-icon:active {
   filter: grayscale(0%);
   transform: scale(1.2);
@@ -31,7 +14,6 @@
   animation: fadeInSlideLeft 2s ease;
   animation-iteration-count: 1;
 }
-
 @keyframes fadeInSlideLeft {
   0% {
     opacity: 0;

@@ -206,7 +206,7 @@
         </section>
 
         <section class="relative py-20 text-center">
-            <div class="hidden md:block bg-binary min-w-full absolute inset-0"></div>
+            <div class="hidden md:block bg-binary bg-cover bg-center bg-no-repeat object-contain min-w-full absolute inset-0"></div>
             <div class="px-[10%] md:px-[15%] bg-gray-light py-8 md:py-24">
                 <h2 class="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 relative my-6 delay-300 duration-700 taos:scale-75 taos:opacity-0"
                     data-taos-offset="400">{{__("content.section_5.title_1")}}</h2>
@@ -277,7 +277,7 @@
                 </div>
             </div>
         </section>
-        <div class="md:py-20 block bg-binary min-w-full inset-0">
+        <div class="md:py-20 block bg-binary bg-cover bg-center bg-no-repeat object-contain min-w-full inset-0">
             <section class="relative px-[10%] md:px-[15%]">
 
                 <div class="relative flex flex-row items-center justify-between">

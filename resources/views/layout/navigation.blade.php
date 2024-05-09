@@ -1,31 +1,33 @@
 @php
     use Illuminate\Support\Facades\Route;
     $current = substr(Route::currentRouteName(), 3);
+
+
+    define("navButtons", [
+    "about" => __("content.pages.about"),
+    "case-studies" => __("content.pages.case_study"),
+    "partners" => __("content.pages.partners"),
+    "career" => __("content.pages.career"),
+    "contact" => __("content.pages.contact"),
+    ]);
 @endphp
 
-<nav id="mobile-nav" class="sidebar bg-navigation hidden h-screen w-screen justify-between absolute z-30 right-0 md:hidden flex-col font-semibold text-2xl text-center items-center">
+<nav id="mobile-nav"
+     class="sidebar bg-navigation hidden h-screen w-screen justify-between absolute z-30 right-0 md:hidden flex-col font-semibold text-2xl text-center items-center">
     <div class="flex justify-between relative bg-navigation p-4 px-6 w-full">
         <a class="flex lowercase font-bold items-center" href="{{ route("home") }}">
             <img class="w-40" src="/logo.svg" alt="Blumilk"/>
         </a>
-        <button type="button" aria-label="Close sidebar"><i class="fa-solid fa-xmark text-2xl text-brand" onclick="hideSidebar()"></i></button>
+        <button type="button" aria-label="Close sidebar"><i class="fa-solid fa-xmark text-2xl text-brand"
+                                                            onclick="hideSidebar()"></i></button>
     </div>
     <div class="w-full h-full">
-        <button class="w-full group hover:bg-website-light hover:text-website-normal hover:bg-opacity-25 p-8 @if($current === "about") active @endif" onclick="window.location='{{ route("about") }}';">
-            <a class="my-4 p-2 rounded-2xl">{{ __("content.pages.about") }}</a>
-        </button>
-        <button class="w-full group hover:bg-website-light hover:text-website-normal hover:bg-opacity-25 p-8 @if($current === "case-studies") active @endif" onclick="window.location='{{ route("case-studies") }}';">
-            <a class="my-4 p-2 rounded-2xl">{{ __("content.pages.case_study") }}</a>
-        </button>
-        <button class="w-full hover:bg-website-light hover:text-website-normal hover:bg-opacity-25 p-8 @if($current === "partners") active @endif" onclick="window.location='{{ route("partners") }}';">
-            <a class="my-4 p-2 rounded-2xl">{{ __("content.pages.partners") }}</a>
-        </button>
-        <button class="w-full group hover:bg-website-light hover:text-website-normal hover:bg-opacity-25 p-8 @if($current === "career") active @endif" onclick="window.location='{{ route("career") }}';">
-            <a class="my-4 p-2 rounded-2xl">{{ __("content.pages.career") }}</a>
-        </button>
-        <button class="w-full group hover:bg-website-light hover:text-website-normal hover:bg-opacity-25 p-8 @if($current === "contact") active @endif" onclick="window.location='{{ route("contact") }}';">
-            <a class="my-4 p-2 rounded-2xl">{{ __("content.pages.contact") }}</a>
-        </button>
+        @foreach(navButtons as $slug => $value)
+            <button class="w-full group hover:bg-website-light hover:text-website-normal hover:bg-opacity-25 p-8 @if($current === $slug) bg-website-light text-website-normal bg-opacity-25 @endif"
+                    onclick="window.location='{{ route($slug) }}';">
+                <a class="my-4 p-2 rounded-2xl">{{ $value }}</a>
+            </button>
+        @endforeach
         <div class="w-full p-8">
             @foreach(LocaleConfig::getLocales() as $locale)
                 @if (!App::isLocale($locale))
@@ -48,14 +50,15 @@
         </div>
         <div class="md:flex hidden justify-center items-center text-lg lg:text-xl">
             <p class="font-medium flex items-center text-center gap-2 nav-list">
-                <a onclick="{{route('about')}}" class="hover:bg-website-light hover:text-website-normal hover:bg-opacity-25 hover:rounded-3xl p-1 @if($current === "about") active @endif" href="{{ route("about") }}">{{ __("content.pages.about") }}</a>
-                <a href="{{ route("case-studies") }}" class="hover:bg-website-light hover:text-website-normal hover:bg-opacity-25 hover:rounded-3xl p-1 @if($current === "case-studies") active @endif">{{ __("content.pages.case_study") }}</a>
-                <a href="{{ route("partners") }}" class="hover:bg-website-light hover:text-website-normal hover:bg-opacity-25 hover:rounded-3xl p-1 @if($current === "partners") active @endif">{{ __("content.pages.partners") }}</a>
-                <a href="{{ route("career") }}" class="hover:bg-website-light hover:text-website-normal hover:bg-opacity-25 hover:rounded-3xl p-1 @if($current === "career") active @endif">{{ __("content.pages.career") }}</a>
-                <a href="{{ route("contact") }}" class="hover:bg-website-light hover:text-website-normal hover:bg-opacity-25 hover:rounded-3xl p-1 @if($current === "contact") active @endif">{{ __("content.pages.contact") }}</a>
+                @foreach(navButtons as $slug => $value)
+                    <a onclick="{{route($slug)}}"
+                    class="hover:bg-website-light hover:text-website-normal hover:bg-opacity-25 hover:rounded-3xl p-1 @if($current === "$slug") bg-website-light text-website-normal bg-opacity-25 rounded-3xl @endif"
+                    href="{{ route($slug) }}">{{ $value }}</a>
+                @endforeach
             </p>
             <div class="m-2">
-                <x-primary-button-with-icon icon="text" href="#">{{ __("buttons.lets_talk") }}</x-primary-button-with-icon>
+                <x-primary-button-with-icon icon="text"
+                                            href="#">{{ __("buttons.lets_talk") }}</x-primary-button-with-icon>
             </div>
         </div>
         <div class="md:flex hidden items-center">
