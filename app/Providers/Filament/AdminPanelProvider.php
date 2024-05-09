@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Blumilk\Website\Providers\Filament;
 
 use Blumilk\Website\Http\Middleware\AdminPanelDefaultLanguage;
+use Exception;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
@@ -21,9 +22,13 @@ use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Session\Middleware\AuthenticateSession;
 use Illuminate\Session\Middleware\StartSession;
 use Illuminate\View\Middleware\ShareErrorsFromSession;
+use Illuminate\View\View;
 
 class AdminPanelProvider extends PanelProvider
 {
+    /**
+     * @throws Exception
+     */
     public function panel(Panel $panel): Panel
     {
         return $panel
@@ -34,8 +39,10 @@ class AdminPanelProvider extends PanelProvider
             ->passwordReset()
             ->emailVerification()
             ->colors([
-                "primary" => Color::Amber,
+                "primary" => Color::Sky,
             ])
+            ->brandLogo(fn(): View => view("filament.logo"))
+            ->favicon(asset("logo.png"))
             ->discoverResources(in: app_path("Filament/Resources"), for: "Blumilk\\Website\\Filament\\Resources")
             ->discoverPages(in: app_path("Filament/Pages"), for: "Blumilk\\Website\\Filament\\Pages")
             ->pages([
