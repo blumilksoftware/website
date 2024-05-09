@@ -215,19 +215,19 @@
                 <div
                     class="flex flex-col sm:flex-row relative text-gray-400 items-center my-6 md:justify-between lg:justify-center gap-y-8 sm:gap-x-8 lg:gap-x-16">
                     <div class="delay-200 duration-700 taos:scale-75 taos:opacity-0" data-taos-offset="300">
-                        <img src="images/tech/laravel.png" class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="laravel"/>
+                        <img src="images/tech/laravel.svg" class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="laravel"/>
                     </div>
                     <div class="delay-300 duration-700 taos:scale-75 taos:opacity-0" data-taos-offset="300">
-                        <img src="images/tech/php.png" class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="php"/>
+                        <img src="images/tech/php.svg" class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="php"/>
                     </div>
                     <div class="delay-500 duration-700 taos:scale-75 taos:opacity-0" data-taos-offset="300">
-                        <img src="images/tech/postgresql.png" class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="postgresql"/>
+                        <img src="images/tech/postgresql.svg" class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="postgresql"/>
                     </div>
                     <div class="delay-700 duration-700 taos:scale-75 taos:opacity-0" data-taos-offset="300">
-                        <img src="images/tech/docker.png" class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="docker"/>
+                        <img src="images/tech/docker.svg" class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="docker"/>
                     </div>
                     <div class="delay-1000 duration-700 taos:scale-75 taos:opacity-0" data-taos-offset="300">
-                        <img src="images/tech/vue.png" class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="vue"/>
+                        <img src="images/tech/vue.svg" class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="vue"/>
                     </div>
                 </div>
             </div>
