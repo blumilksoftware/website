@@ -81,7 +81,7 @@
             </div>
         </section>
 
-        <section class="bg-gradient-to-r from-gray-light to-white">
+        <section class="bg-gradient-to-br from-gray-light to-white">
 
             <x-waves.wave-1.top></x-waves.wave-1.top>
             <div class="flex flex-col lg:flex-row px-[10%] md:px-[15%] lg:pr-0 pt-24">
