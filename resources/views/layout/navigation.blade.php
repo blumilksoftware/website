@@ -36,7 +36,7 @@
             @endforeach
         </div>
     </div>
-    <x-primary-button-with-icon icon="text" href="">{{ __("buttons.lets_talk") }}</x-primary-button-with-icon>
+    <x-primary-button-with-icon icon="text" href="#">{{ __("buttons.lets_talk") }}</x-primary-button-with-icon>
 </nav>
 
 <nav id="desktop-nav" class="left-0 right-0 py-4 duration-300 xl:px-[15%] bg-navigation relative">
@@ -55,7 +55,7 @@
                 <a href="{{ route("contact") }}" class="hover:bg-website-light hover:text-website-normal hover:bg-opacity-25 hover:rounded-3xl p-1 @if($current === "contact") active @endif">{{ __("content.pages.contact") }}</a>
             </p>
             <div class="m-2">
-                <x-primary-button-with-icon icon="text" href="">{{ __("buttons.lets_talk") }}</x-primary-button-with-icon>
+                <x-primary-button-with-icon icon="text" href="#">{{ __("buttons.lets_talk") }}</x-primary-button-with-icon>
             </div>
         </div>
         <div class="md:flex hidden items-center">
