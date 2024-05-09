@@ -1,6 +1,6 @@
 <footer class="bg-gradient-to-t from-footer-dark to-footer-light relative z-0">
     <x-waves.wave-2.top></x-waves.wave-2.top>
-    <div class="text-white section-padding pt-12 pb-16 md:py-16 flex flex-col justify-between lg:flex-row items-center gap-8">
+    <div class="text-white px-[10%] md:px-[15%] pt-12 pb-16 md:py-16 flex flex-col justify-between lg:flex-row items-center gap-8">
         <section class="hidden md:flex flex-col md:basis-1/2">
             <h4 class="text-4xl sm:text-5xl lg:text-6xl  font-bold text-white">{{__("footer.contact.title")}}</h4>
             <p class=" text-lg leading-8 text-white">{{__("footer.contact.subtitle")}}</p>

@@ -9,4 +9,5 @@ return [
     "case_study" => "Go to case study",
     "see_all" => "See all",
     "send" => "Send",
+    "read_more" => "Read more",
 ];

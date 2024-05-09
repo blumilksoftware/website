@@ -11,31 +11,31 @@
 @section("content")
     <section class="relative overflow-hidden">
         <div class="relative md:block -z-10">
-            <div class="absolute -left-[6%] md:left-[1%] top-28 md:top-40 -z-10">
+            <div class="absolute -left-[6%] md:left-[1%] top-28 md:top-40">
                 <x-bubble size="80"/>
             </div>
-            <div class="absolute left-[8%] md:left-[4%] top-20 md:top-28 -z-10">
+            <div class="absolute left-[8%] md:left-[4%] top-20 md:top-28">
                 <x-bubble size="30"/>
             </div>
-            <div class="absolute hidden md:block -left-[3%] top-80 -z-10">
+            <div class="absolute hidden md:block -left-[3%] top-80">
                 <x-bubble size="200"/>
             </div>
-            <div class="absolute right-[4%] top-36 -z-10">
+            <div class="absolute right-[4%] top-36">
                 <x-bubble size="40"/>
             </div>
             <div class="relative top-24">
-                <div class="absolute -right-[6%] md:right-[3%] top-72 -z-10">
+                <div class="absolute -right-[6%] md:right-[3%] top-72">
                     <x-bubble size="90"/>
                 </div>
             </div>
             <div class="relative top-24">
-                <div class="absolute hidden md:block md:right-[4%] top-96 -z-10">
+                <div class="absolute hidden md:block md:right-[4%] top-96">
                     <x-bubble size="200"/>
                 </div>
             </div>
         </div>
 
-        <section class="flex flex-col-reverse lg:flex-row py-24 section-padding">
+        <section class="flex flex-col-reverse lg:flex-row py-24 px-[10%] md:px-[15%]">
             <div class="flex basis-1/2 relative flex-col self-center gap-5">
                 <div class="text-3xl md:text-4xl lg:text-6xl text-center lg:justify-start lg:text-start py-4">
                     <h2 class="font-semibold text-gray-900 animation-appear">{{__("content.section_1.title_1")}}
@@ -60,23 +60,23 @@
             </div>
         </section>
 
-        <section class="text-center section-padding">
+        <section class="text-center px-[10%] md:px-[15%]">
             <div class="text-2xl lg:text-3xl font-medium text-gray-400">{{ __("content.section_2.title_1") }}<span
                     class="text-website-normal">{{ __("content.section_2.title_2") }}</span>
             </div>
 
             <div class="grid grid-cols-2 md:flex md:flex-row pb-12 text-gray-400 items-center justify-center mt-6">
                 <div class="m-6">
-                    <img src="images/clients/cwup.png" class="client-icon" alt="Collegium Witelona"/>
+                    <img src="images/clients/cwup.png" class="client-icon h-auto w-44 grayscale hover:grayscale-0 transform transition hover:scale-110" alt="Collegium Witelona"/>
                 </div>
                 <div class="m-6">
-                    <img src="images/clients/insly.png" class="client-icon" alt="Insly"/>
+                    <img src="images/clients/insly.png" class="client-icon h-auto w-44 grayscale hover:grayscale-0 transform transition hover:scale-110" alt="Insly"/>
                 </div>
                 <div class="m-6">
-                    <img src="images/clients/kghm.png" class="client-icon" alt="KGHM"/>
+                    <img src="images/clients/kghm.png" class="client-icon h-auto w-44 grayscale hover:grayscale-0 transform transition hover:scale-110" alt="KGHM"/>
                 </div>
                 <div class="m-6">
-                    <img src="images/clients/vitaplus.png" class="client-icon" alt="Vita Plus"/>
+                    <img src="images/clients/vitaplus.png" class="client-icon h-auto w-44 grayscale hover:grayscale-0 transform transition hover:scale-110" alt="Vita Plus"/>
                 </div>
             </div>
         </section>
@@ -84,13 +84,13 @@
         <section class="bg-gradient-to-r from-gray-light to-white">
 
             <x-waves.wave-1.top></x-waves.wave-1.top>
-            <div class="flex flex-col lg:flex-row section-padding lg:pr-0 pt-24">
+            <div class="flex flex-col lg:flex-row px-[10%] md:px-[15%] lg:pr-0 pt-24">
                 <div
                     class="flex basis-2/5 flex-col lg:pr-8 delay-300 duration-700 taos:translate-x-48 taos:opacity-0"
                     data-taos-offset="100">
                     <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900 mb-4 text-center md:text-left">
                         {{__("content.section_3.title_1")}}</h2>
-                    <div class="text-black subtitle text-center md:text-left py-6">
+                    <div class="text-black text-xl text-center md:text-left py-6">
                         <div class="pb-4 md:pb-0"> {{__("content.section_3.subtitle_1")}}
                             <span class="font-medium">
                                 {{__("content.section_3.subtitle_2")}}
@@ -98,30 +98,28 @@
                         </div>
                         <ul class="py-2 md:-ml-4 text-md justify-center">
                             <li class="flex items-center text-left">
-                                <x-icons.arrow color="#5379f6"></x-icons.arrow>
+                                <x-icons.arrow></x-icons.arrow>
                                 {{__("content.section_3.content_1")}}
                             </li>
                             <li class="flex items-center text-left">
-                                <x-icons.arrow color="#5379f6"></x-icons.arrow>
+                                <x-icons.arrow></x-icons.arrow>
                                 {{__("content.section_3.content_2")}}
                             </li>
                             <li class="flex items-center text-left">
-                                <x-icons.arrow color="#5379f6"></x-icons.arrow>
+                                <x-icons.arrow></x-icons.arrow>
                                 {{__("content.section_3.content_3")}}
                             </li>
                             <li class="flex items-center text-left">
-                                <x-icons.arrow color="#5379f6"></x-icons.arrow>
+                                <x-icons.arrow></x-icons.arrow>
                                 {{__("content.section_3.content_4")}}
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div
-                    class="hidden lg:flex basis-3/5 delay-700 duration-700 taos:translate-x-48 taos:opacity-0"
+                <div class="hidden lg:flex basis-3/5 delay-700 duration-700 taos:translate-x-48 taos:opacity-0"
                     data-taos-offset="300">
                     <div class="rounded-xl bg-gray-light max-h-[600px] rotate-6">
-                        <div
-                            class="relative flex flex-col justify-between aspect-square max-h-[600px] z-10 right-4 top-10 rounded-2xl bg-white p-6 -rotate-6">
+                        <div class="relative flex flex-col justify-between aspect-square max-h-[600px] z-10 right-4 top-10 rounded-2xl bg-white p-6 -rotate-6">
                             <div class="px-4 pt-5 font-semibold text-3xl">
                                 {{__("content.section_3.title_2")}}
                             </div>
@@ -145,7 +143,7 @@
             <x-waves.wave-1.bottom></x-waves.wave-1.bottom>
         </section>
         <section
-            class="relative flex flex-col lg:flex-row md:py-24 section-padding lg:pr-0 items-center overflow-hidden">
+            class="relative flex flex-col lg:flex-row md:py-24 px-[10%] md:px-[15%] lg:pr-0 items-center overflow-hidden">
             <div class="flex basis-1/3 relative">
                 <div class="flex flex-col text-center md:text-left">
                     <div class="relative duration-700 taos:translate-y-48 taos:opacity-0"
@@ -156,8 +154,8 @@
                     <span class="absolute -right-[15%] -z-10">
                             <x-bubble size="40"/>
                         </span>
-                    <div class="text-black subtitle relative z-10 py-4">
-                        <div class="py-4 subtitle duration-700 taos:translate-y-48 taos:opacity-0"
+                    <div class="text-black text-xl relative py-4">
+                        <div class="py-4 text-xl duration-700 taos:translate-y-48 taos:opacity-0"
                              data-taos-offset="200"> {{__("content.section_4.subtitle_1")}}
                             <span
                                 class="font-medium">{{__("content.section_4.subtitle_2")}}</span></div>
@@ -169,7 +167,7 @@
                         </ul>
                         <div class="relative pb-8">
                             <div
-                                class="relative hidden md:flex z-10 duration-1000 taos:translate-y-48 taos:opacity-0"
+                                class="relative hidden md:flex  duration-1000 taos:translate-y-48 taos:opacity-0"
                                 data-taos-offset="0">
                                 <x-secondary-button href="">{{ __("buttons.all_projects") }}</x-secondary-button>
                                 <x-primary-button href="">{{ __("buttons.case_study") }}</x-primary-button>
@@ -191,11 +189,9 @@
                     <x-bubble size="20"/>
                 </span>
             </div>
-            <div
-                class="flex rounded-2xl md:bg-gray-light -rotate-3 basis-2/3 relative md:shadow-md size-full left-[5%] lg:left-[10%] mt-12 pb-16 lg:pb-0 delay-200 duration-1000 taos:translate-x-full taos:opacity-0 [animation-iteration-count:infinite]"
+            <div class="flex rounded-2xl md:bg-gray-light -rotate-3 basis-2/3 relative md:shadow-md size-full left-[5%] lg:left-[10%] mt-12 pb-16 lg:pb-0 delay-200 duration-1000 taos:translate-x-full taos:opacity-0 [animation-iteration-count:infinite]"
                 data-taos-offset="400">
-                <div
-                    class="absolute hidden lg:block rotate-3 z-20 rounded-2xl h-52 w-80 -left-[10%] bottom-[10%] bg-[url('graphics/code-snippet.png')] bg-cover">
+                <div class="absolute hidden lg:block rotate-3 z-20 rounded-2xl h-52 w-80 -left-[10%] bottom-[10%] bg-[url('graphics/code-snippet.png')] bg-cover">
                 </div>
                 <img src="graphics/vita.png"
                      class="w-full relative flex lg:left-[10%] overflow-hidden rounded-2xl bg-white shadow-md rotate-3"
@@ -210,34 +206,33 @@
         </section>
 
         <section class="relative py-20 text-center">
-            <div class="hidden md:block bg-binary min-w-[100%] absolute z-20 inset-0"></div>
-            <div class="section-padding bg-gray-light py-8 md:py-24">
-                <h2 class="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 relative z-30 my-6 delay-300 duration-700 taos:scale-75 taos:opacity-0"
+            <div class="hidden md:block bg-binary min-w-full absolute inset-0"></div>
+            <div class="px-[10%] md:px-[15%] bg-gray-light py-8 md:py-24">
+                <h2 class="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 relative my-6 delay-300 duration-700 taos:scale-75 taos:opacity-0"
                     data-taos-offset="400">{{__("content.section_5.title_1")}}</h2>
-                <span class="subtitle relative z-30 delay-300 duration-700 taos:scale-75 taos:opacity-0"
+                <span class="subtitle relative delay-300 duration-700 taos:scale-75 taos:opacity-0"
                       data-taos-offset="400">{{__("content.section_5.subtitle_1")}}</span>
                 <div
-                    class="flex flex-col sm:flex-row relative z-30 text-gray-400 items-center my-6 md:justify-between lg:justify-center gap-y-8 sm:gap-x-8 lg:gap-x-16">
+                    class="flex flex-col sm:flex-row relative text-gray-400 items-center my-6 md:justify-between lg:justify-center gap-y-8 sm:gap-x-8 lg:gap-x-16">
                     <div class="delay-200 duration-700 taos:scale-75 taos:opacity-0" data-taos-offset="300">
-                        <img src="images/tech/laravel.png" class="tech-icon" alt="laravel"/>
+                        <img src="images/tech/laravel.png" class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="laravel"/>
                     </div>
                     <div class="delay-300 duration-700 taos:scale-75 taos:opacity-0" data-taos-offset="300">
-                        <img src="images/tech/php.png" class="tech-icon" alt="php"/>
+                        <img src="images/tech/php.png" class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="php"/>
                     </div>
                     <div class="delay-500 duration-700 taos:scale-75 taos:opacity-0" data-taos-offset="300">
-                        <img src="images/tech/postgresql.png" class="tech-icon" alt="postgresql"/>
+                        <img src="images/tech/postgresql.png" class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="postgresql"/>
                     </div>
                     <div class="delay-700 duration-700 taos:scale-75 taos:opacity-0" data-taos-offset="300">
-                        <img src="images/tech/docker.png" class="tech-icon" alt="docker"/>
+                        <img src="images/tech/docker.png" class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="docker"/>
                     </div>
                     <div class="delay-1000 duration-700 taos:scale-75 taos:opacity-0" data-taos-offset="300">
-                        <img src="images/tech/vue.png" class="tech-icon" alt="vue"/>
+                        <img src="images/tech/vue.png" class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="vue"/>
                     </div>
                 </div>
             </div>
         </section>
-        <section
-            class="section-padding text-center items-center pb-36 delay-300 duration-700 taos:translate-y-48 taos:opacity-0 relative z-10"
+        <section class="px-[10%] md:px-[15%] text-center items-center pb-36 delay-300 duration-700 taos:translate-y-48 taos:opacity-0 relative"
             data-taos-offset="300">
             <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900 mb-6">{{__("content.section_6.title_1")}}</h2>
             <x-badge>{{__("content.section_6.badge")}}</x-badge>
@@ -282,16 +277,16 @@
                 </div>
             </div>
         </section>
-        <div class="md:py-20 block bg-binary min-w-[100%] z-20 inset-0">
-            <section class="relative section-padding">
+        <div class="md:py-20 block bg-binary min-w-full inset-0">
+            <section class="relative px-[10%] md:px-[15%]">
 
-                <div class="relative z-30 flex flex-row items-center justify-between">
+                <div class="relative flex flex-row items-center justify-between">
                     <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900">{{__("content.section_7.title_1")}}</h2>
                     <div class="hidden sm:block">
                         <x-primary-button href="">{{__("buttons.see_all")}}</x-primary-button>
                     </div>
                 </div>
-                <div class="grid gap-8 pt-12 max-w-none sm:grid-cols-2 lg:grid-cols-3 relative z-30">
+                <div class="grid gap-8 pt-12 max-w-none sm:grid-cols-2 lg:grid-cols-3 relative">
                     @for($currentArticle = 0; $currentArticle < 3; $currentArticle++)
                         <x-article-card
                             imageSrc="{{ $articles[$currentArticle]['imageSrc'] }}"

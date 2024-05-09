@@ -6,7 +6,7 @@
     <div class="flex flex-wrap items-center overflow-hidden text-md text-black font-semibold delay-300 duration-700 taos:-translate-x-full taos:invisible" data-taos-offset="200">
         <span class="bg-white p-2">{{ $firstText }}</span>
     </div>
-    <h3 class="mt-3 text-md subtitle font-semibold text-black delay-300 duration-700 taos:-translate-x-full taos:invisible" data-taos-offset="200">
+    <h3 class="mt-3 text-md text-xl font-semibold text-black delay-300 duration-700 taos:-translate-x-full taos:invisible" data-taos-offset="200">
         <a href="{{ route($articleRoute) }}" class="bg-white p-2">
             <span class="absolute inset-0"></span>
             {{ $secondText }}
