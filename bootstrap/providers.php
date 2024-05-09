@@ -1,6 +1,11 @@
 <?php
 
+declare(strict_types=1);
+
+use Blumilk\Website\Providers\AppServiceProvider;
+use Blumilk\Website\Providers\Filament\AdminPanelProvider;
+
 return [
-    Blumilk\Website\Providers\Filament\AdminPanelProvider::class,
-    Blumilk\Website\Providers\AppServiceProvider::class,
+    AdminPanelProvider::class,
+    AppServiceProvider::class,
 ];
