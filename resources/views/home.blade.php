@@ -37,7 +37,7 @@
 
         <section class="flex flex-col-reverse lg:flex-row py-24 px-[10%] md:px-[20%]">
             <div class="flex basis-1/2 relative flex-col self-center gap-5">
-                <div class="text-3xl md:text-4xl lg:text-6xl text-center lg:justify-start lg:text-start py-4">
+                <div class="text-3xl md:text-4xl lg:text-5xl text-center lg:justify-start lg:text-start py-4">
                     <h2 class="font-semibold text-gray-900 animation-appear">{{__("content.section_1.title_1")}}
                         <span
                             class="text-website-normal block"> {{__("content.section_1.title_2")}} </span> {{__("content.section_1.title_3")}}
@@ -53,10 +53,8 @@
                     </div>
                 </div>
             </div>
-
-
             <div class="flex basis-1/2 relative self-center">
-                <img src="graphics/web-1.jpg" class="h-auto w-min aspect-auto" alt="placeholder"/>
+                <img src="{{ asset('graphics/web-1.png') }}" class="h-auto w-min aspect-auto" alt="placeholder"/>
             </div>
         </section>
 
@@ -88,7 +86,7 @@
                 <div
                     class="flex basis-2/5 flex-col lg:pr-8 delay-300 duration-700 taos:translate-x-48 taos:opacity-0"
                     data-taos-offset="100">
-                    <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900 mb-4 text-center md:text-left">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4 text-center md:text-left">
                         {{__("content.section_3.title_1")}}</h2>
                     <div class="text-black text-xl text-center md:text-left py-6">
                         <div class="pb-4 md:pb-0 leading-relaxed"> {{__("content.section_3.subtitle_1")}}
@@ -149,7 +147,7 @@
                     <div class="relative duration-700 taos:translate-y-48 taos:opacity-0"
                          data-taos-offset="200">
                         <x-badge>{{__("content.section_4.badge")}}</x-badge>
-                        <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900">{{__("content.section_4.title_1")}}</h2>
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">{{__("content.section_4.title_1")}}</h2>
                     </div>
                     <span class="absolute -right-[20%] -z-10">
                             <x-bubble size="40"/>
@@ -208,7 +206,7 @@
         <section class="relative py-20 text-center">
             <div class="hidden md:block bg-binary bg-cover bg-center bg-no-repeat object-contain min-w-full absolute inset-0"></div>
             <div class="px-[10%] md:px-[20%] bg-gray-light py-8 md:py-24">
-                <h2 class="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 relative my-6 delay-300 duration-700 taos:scale-75 taos:opacity-0"
+                <h2 class="text-3xl md:text-5xl lg:text-5xl font-semibold text-gray-900 relative my-6 delay-300 duration-700 taos:scale-75 taos:opacity-0"
                     data-taos-offset="400">{{__("content.section_5.title_1")}}</h2>
                 <span class="font-medium leading-relaxed text-xl relative delay-300 duration-700 taos:scale-75 taos:opacity-0"
                       data-taos-offset="400">{{__("content.section_5.subtitle_1")}}</span>
@@ -218,7 +216,7 @@
                         <img src="images/tech/laravel.svg" class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="laravel"/>
                     </div>
                     <div class="delay-300 duration-700 taos:scale-75 taos:opacity-0" data-taos-offset="300">
-                        <img src="images/tech/php.svg" class="tech-icon h-full w-32 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="php"/>
+                        <img src="images/tech/php.svg" class="tech-icon h-full w-28 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="php"/>
                     </div>
                     <div class="delay-500 duration-700 taos:scale-75 taos:opacity-0" data-taos-offset="300">
                         <img src="images/tech/postgresql.svg" class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="postgresql"/>
@@ -234,7 +232,7 @@
         </section>
         <section class="px-[10%] md:px-[20%] text-center items-center pb-36 delay-300 duration-700 taos:translate-y-48 taos:opacity-0 relative"
             data-taos-offset="300">
-            <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900 mb-6">{{__("content.section_6.title_1")}}</h2>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">{{__("content.section_6.title_1")}}</h2>
             <x-badge>{{__("content.section_6.badge")}}</x-badge>
             <span class="subtitle">{{__("content.section_6.subtitle_1")}}<span
                     class="font-semibold leading-relaxed text-xl">{{__("content.section_6.subtitle_2")}}</span> {{__("content.section_6.subtitle_3")}}</span>
@@ -281,7 +279,7 @@
             <section class="relative px-[10%] md:px-[20%]">
 
                 <div class="relative flex flex-row items-center justify-between">
-                    <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900">{{__("content.section_7.title_1")}}</h2>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">{{__("content.section_7.title_1")}}</h2>
                     <div class="hidden sm:block">
                         <x-primary-button href="">{{__("buttons.see_all")}}</x-primary-button>
                     </div>

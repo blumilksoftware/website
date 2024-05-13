@@ -39,8 +39,8 @@
     <x-primary-button-with-icon icon="text" href="#">{{ __("buttons.lets_talk") }}</x-primary-button-with-icon>
 </nav>
 
-<nav id="desktop-nav" class="left-0 right-0 py-4 duration-300 xl:px-[15%] bg-navigation relative">
-    <div class="mx-auto flex items-center justify-between px-6">
+<nav id="desktop-nav" class="left-0 right-0 py-4 duration-300 xl:px-[20%] bg-navigation relative">
+    <div class="mx-auto flex items-center justify-between px-6 lg:px-0">
         <div>
             <a class="flex items-start" href="{{ route("home") }}">
                 <img class="w-40 shrink-0" src="/logo.svg" alt="Blumilk"/>

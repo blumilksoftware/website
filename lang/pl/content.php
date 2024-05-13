@@ -35,4 +35,12 @@ return [
     "section_6.subtitle_2" => "świadczą o jakości naszych usług ",
     "section_6.subtitle_3" => "i inspirują nas do nieustannego doskonalenia.",
     "section_7.title_1" => "Nasze aktywności",
+    "about.section_1.title_1" => "Blumilk ",
+    "about.section_1.title_2" => "to przede wszystkim ludzie",
+    "about.section_1.subtitle_1" => "Nasz zespół to ponad 25 wyjątkowych pasjonatów technologii - kierownicy projektów, programiści i testerzy o bogatych doświadczeniach. Obsługujemy klientów zarówno lokalnych, jak i zagranicznych, co pozwala nam na elastyczne dostosowanie się do różnorodnych wymagań i oczekiwań.",
+    "about.section_1.subtitle_2" => "Jesteśmy gotowi sprostać nawet najbardziej wymagającym projektom.",
+    "about.section_2.title_1" => "Nasza ",
+    "about.section_2.title_2" => "misja",
+    "about.section_2.subtitle_1" => "Jako pasjonaci kodu, tworzymy nowoczesne rozwiązania technologiczne, które inspirują i ułatwiają codzienne życie naszych klientów.",
+    "about.section_2.subtitle_2" => "Zapewniamy doskonałość techniczną, łatwość obsługi i skuteczność w działaniu.",
 ];

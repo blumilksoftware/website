@@ -8,9 +8,9 @@
 
 <div class="relative my-20 md:mb-0">
     <div class="mb-6 flex justify-center relative">
+        <i class="text-8xl fa-solid fa-quote-left fa-2xl absolute left-14 bottom-20 text-neutral-600"></i>
         <div class="relative">
             <img src="{{ $photoUrl }}" class="w-32 rounded-full shadow-lg relative z-10" alt=""/>
-            <img src="gifs/quote.gif" alt="gif" class="w-24 shrink absolute justify-center  -left-[35%] -top-12"/>
         </div>
     </div>
     <h5 class="text-xl font-semibold">{{ $name }}</h5>

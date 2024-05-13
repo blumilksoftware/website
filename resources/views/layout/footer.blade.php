@@ -1,8 +1,8 @@
 <footer class="bg-gradient-to-t from-footer-dark to-footer-light relative">
     <x-waves.wave-2.top></x-waves.wave-2.top>
-    <div class="text-white px-[10%] md:px-[15%] pt-12 pb-16 md:py-16 flex flex-col justify-between lg:flex-row items-center gap-8">
+    <div class="text-white px-[10%] md:px-[20%] pt-12 pb-16 md:py-16 flex flex-col justify-between lg:flex-row items-center gap-8">
         <section class="hidden md:flex flex-col md:basis-1/2">
-            <h4 class="text-4xl sm:text-5xl lg:text-6xl  font-bold text-white">{{__("footer.contact.title")}}</h4>
+            <h4 class="text-3xl sm:text-4xl lg:text-5xl  font-bold text-white">{{__("footer.contact.title")}}</h4>
             <p class=" text-lg leading-8 text-white">{{__("footer.contact.subtitle")}}</p>
             <div class="py-8 flex flex-col gap-16 sm:gap-y-20 lg:flex-row">
                 <form action="#" method="POST" class="lg:flex-auto">
@@ -31,7 +31,7 @@
                     </div>
                     <div class="mt-6 flex flex-col md:flex-row justify-between">
                         <div class="lg:mt-0">
-                            <p class="text-sm leading-6 text-white">NIP 1234567890 KRS 1234567890
+                            <p class="text-sm leading-6 text-white">NIP 6912551135 KRS 0000866755
                             </p>
                             <p class="text-sm leading-6 text-white">
                                 <a href="#" class="font-semibold text-white">{{ __("footer.form.policy") }}</a>
@@ -47,7 +47,7 @@
             <div
                 class="hidden md:flex bg-footer-light p-8 lg:p-12 lg:min-w-[400px] lg:max-w-[600px] self-center rounded-3xl bg-opacity-80">
                 <div class="flex gap-4">
-                    <img src="images/kasia.jpeg" alt="" class="h-24 w-24 flex-none rounded-full">
+                    <img src="{{ asset('images/kasia.jpeg') }}" alt="" class="h-24 w-24 flex-none rounded-full">
                     <div class="gap-12">
                         <div class="text-base font-semibold text-white">Katarzyna Nowak</div>
                         <div class="text-md leading-6 text-white break-words pb-2">{{__("footer.contactTo.job")}}</div>
@@ -56,12 +56,12 @@
                             <div class="flex mt-2 items-center">
                                 <span class="sr-only">Phone number</span>
                                 <i class="fa-solid fa-phone"></i>
-                                <div class="ml-2">+48 500 123 348</div>
+                                <div class="ml-2">+48 780 142 367</div>
                             </div>
                             <div class="flex mt-2 items-center break-words">
                                 <span class="sr-only">Email</span>
                                 <i class="fa-solid fa-envelope"></i>
-                                <div class="ml-2">example@example.com</div>
+                                <div class="ml-2">katarzyna.nowak@blumilk.pl</div>
                             </div>
                         </div>
                     </div>
@@ -71,8 +71,7 @@
                 <div class="md:flex text-center justify-center lg:justify-end">
                     <div class="md:hidden text-3xl font-semibold pb-4">
                         Blumilk sp. z o.o.
-                        <p class="text-sm font-medium leading-6 text-white">NIP 1234567890 KRS 1234567890
-                        </p>
+                        <p class="text-sm font-medium leading-6 text-white">NIP 6912551135 KRS 0000866755</p>
                         <p class=" text-sm leading-6 text-white">
                             <a href="#" class="font-semibold text-white">{{__("footer.form.policy")}}</a>
                         </p>

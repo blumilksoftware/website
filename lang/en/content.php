@@ -35,4 +35,8 @@ return [
     "section_6.subtitle_2" => "they attest to the quality of our services ",
     "section_6.subtitle_3" => "and inspire us to constantly improve.",
     "section_7.title_1" => "Our activities",
+    "about.section_1.title_1" => "Blumilk ",
+    "about.section_1.title_2" => "is primarily people",
+    "about.section_1.subtitle_1" => "Our team consists of over 25 unique technology enthusiasts - project managers, programmers, and testers with rich experiences. We serve both local and foreign clients, allowing us to flexibly adapt to diverse requirements and expectations.",
+    "about.section_1.subtitle_2" => "We are ready to meet even the most demanding projects.",
 ];

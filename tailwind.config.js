@@ -16,7 +16,7 @@ module.exports = {
     extend: {
       colors: {
         gray: {
-          light: '#F6F7FD',
+          light: '#F5F6FA',
           dark: '#F1F3F6',
         },
         bubble: '#DAE3F0',
