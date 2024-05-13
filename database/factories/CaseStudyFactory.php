@@ -5,10 +5,11 @@ declare(strict_types=1);
 namespace Database\Factories;
 
 use Blumilk\Website\Models\Activity;
+use Blumilk\Website\Models\CaseStudy;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends Factory<Activity>
+ * @extends Factory<CaseStudy>
  */
 class CaseStudyFactory extends Factory
 {
