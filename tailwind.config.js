@@ -25,12 +25,14 @@ module.exports = {
         website: {
           normal: '#5379f6',
           light: '#7c9cfc',
+          extra_light: '#E2EAFF',
         },
         navigation: '#FAFAFA',
         footer: {
           dark: '#044088',
           light: '#015fc8',
         },
+
       },
       fontFamily: {
         "sora": ["Sora", "sans-serif"]

@@ -1,4 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 150" class="relative -top-1">
-    <path fill="#ffffff" fill-opacity="1"
-          d="M0,96L120,106.7C240,117,480,139,720,122.7C960,107,1200,53,1320,26.7L1440,0L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path>
+<svg id="Warstwa_1" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 84.7" class="relative -top-1">
+    <defs>
+        <style>
+            .cls-1 {
+                fill: #fff;
+                stroke-width: 0px;
+            }
+        </style>
+    </defs>
+    <path class="cls-1" d="M1200,0l-100,.63H0v62.79l100,7c100,6.74,300,21.13,500,10.47,200-10.27,407.83-46.14,500-62.79"/>
 </svg>

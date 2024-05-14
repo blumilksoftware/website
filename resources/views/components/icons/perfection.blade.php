@@ -1,5 +1,5 @@
-
-<svg id="Layer_1" viewBox="0 0 468 468" fill="#5379f6" class="size-36 m-8" xmlns="http://www.w3.org/2000/svg">
+<div class="bg-website-extra_light rounded-full">
+<svg id="Layer_1" viewBox="0 0 468 468" fill="#5379f6" class="size-20 m-4" xmlns="http://www.w3.org/2000/svg">
     <g>
         <g>
             <g>
@@ -36,3 +36,4 @@
         </g>
     </g>
 </svg>
+</div>

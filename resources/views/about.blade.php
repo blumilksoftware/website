@@ -66,107 +66,95 @@
             </div>
         </div>
     </section>
-    <section class="relative py-20 text-center">
-        <div class="px-[10%] md:px-[20%] py-8 md:py-24">
-            <h2 class="text-3xl md:text-5xl lg:text-5xl font-semibold text-gray-900 relative my-6 delay-300 duration-700 taos:scale-75 taos:opacity-0"
-                data-taos-offset="400">{{__("content.about.section_3.title_1")}}</h2>
-            <span
-                class="font-medium leading-relaxed text-xl relative delay-300 duration-700 taos:scale-75 taos:opacity-0"
-                data-taos-offset="400">{{__("content.about.section_3.subtitle_1")}}</span>
-            <div
-                class="flex flex-col sm:flex-row relative  items-center my-6 md:justify-between lg:justify-center gap-y-8 sm:gap-x-8 lg:gap-x-16">
-                <div
-                    class="flex flex-col p-4 items-center gap-x-16font-medium leading-relaxed text-xl relative delay-300 duration-700 taos:scale-75 taos:opacity-0"
+    <section class="relative pt-28 text-center">
+        <div class="px-[10%] md:px-[20%] space-y-10">
+            <div class="pb-14">
+                <h2 class="text-3xl md:text-3xl lg:text-5xl font-semibold pb-12 delay-300 duration-700 taos:scale-75 taos:opacity-0"
+                    data-taos-offset="400">{{__("content.about.section_3.title_1")}}</h2>
+                <span class="font-light leading-relaxed text-xl relative delay-300 duration-700 taos:scale-75 taos:opacity-0"
+                      data-taos-offset="400">{{__("content.about.section_3.subtitle_1")}}</span>
+            </div>
+            <div class="grid lg:grid-cols-3 my-6 md:justify-between lg:justify-center items-start gap-x-12">
+                <div class="flex flex-col items-center gap-y-6 leading-relaxed text-xl relative delay-300 duration-700 taos:scale-75 taos:opacity-0"
                     data-taos-offset="400">
                     <x-icons.passion/>
-                    <span class="font-medium">{{__("content.about.section_3.content_1")}}</span>
-                    {{__("content.about.section_3.content_2")}}
+                    <p class="text-xl lg:text-xl font-light text-center">
+                        <span class="font-medium leading-relaxed">{{__("content.about.section_3.content_1")}}</span>{{__("content.about.section_3.content_2")}}
+                    </p>
                 </div>
-                <div
-                    class="flex flex-col p-4 items-center gap-x-16font-medium leading-relaxed text-xl relative delay-300 duration-700 taos:scale-75 taos:opacity-0"
+                <div class="flex flex-col items-center gap-y-6 leading-relaxed text-xl relative delay-300 duration-700 taos:scale-75 taos:opacity-0"
                     data-taos-offset="400">
                     <x-icons.innovation/>
-                    <span class="font-medium">{{__("content.about.section_3.content_3")}}</span>
-                    {{__("content.about.section_3.content_4")}}
+                    <p class="text-xl lg:text-xl font-light text-center">
+                        <span class="font-medium leading-relaxed">{{__("content.about.section_3.content_3")}}</span>{{__("content.about.section_3.content_4")}}
+                    </p>
                 </div>
-                <div
-                    class="flex flex-col p-4 items-center gap-x-16font-medium leading-relaxed text-xl relative delay-300 duration-700 taos:scale-75 taos:opacity-0"
+                <div class="flex flex-col items-center gap-y-6 leading-relaxed text-xl relative delay-300 duration-700 taos:scale-75 taos:opacity-0"
                     data-taos-offset="400">
                     <x-icons.perfection/>
-                    <span class="font-medium">{{__("content.about.section_3.content_5")}}</span>
-                    {{__("content.about.section_3.content_6")}}
+                    <p class="text-xl lg:text-xl font-light text-center">
+                        <span class="font-medium leading-relaxed">{{__("content.about.section_3.content_5")}}</span>{{__("content.about.section_3.content_6")}}
+                    </p>
                 </div>
             </div>
         </div>
     </section>
-    <section class="bg-gradient-to-br from-gray-light to-white px-[10%] md:px-[20%]">
+    <section class="bg-gradient-to-b from-gray-light to-white">
         <x-waves.wave-2.top></x-waves.wave-2.top>
-        <div class="flex flex-col text-center md:text-left">
-            <div class="relative duration-700 taos:translate-y-48 taos:opacity-0"
-                 data-taos-offset="200">
-                <x-badge>{{__("content.about.section_4.badge")}}</x-badge>
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">{{__("content.about.section_4.title_1")}}</h2>
+        <div class="flex flex-row text-center md:text-left px-[10%] md:px-[20%] gap-x-16 py-28">
+            <div class="flex flex-col basis-1/3 pt-16">
+                <div class="relative duration-700 taos:translate-y-48 taos:opacity-0"
+                     data-taos-offset="200">
+                    <x-badge>{{__("content.about.section_4.badge")}}</x-badge>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">{{__("content.about.section_4.title_1")}}</h2>
+                </div>
+                <div class="text-black text-xl relative py-4">
+                    <div class="py-4 text-xl font-light duration-700 taos:translate-y-48 taos:opacity-0"
+                         data-taos-offset="200">
+                        {{__("content.about.section_4.subtitle_1")}}
+                        <span class="font-medium leading-relaxed">{{__("content.about.section_4.subtitle_2")}}</span>
+                        {{__("content.about.section_4.subtitle_3")}}
+                    </div>
+                </div>
             </div>
-            <div class="text-black text-xl relative py-4">
-                <div class="py-4 text-xl duration-700 taos:translate-y-48 taos:opacity-0"
-                     data-taos-offset="200"> {{__("content.about.section_4.subtitle_1")}}
-                    <span
-                        class="font-medium leading-relaxed">{{__("content.about.section_4.subtitle_2")}}</span></div>
-                <ul class="list-disc-none py-8 hidden md:block duration-1000 taos:translate-y-48 taos:opacity-0"
-                    data-taos-offset="100">
+            <div class="hidden lg:flex basis-2/3 gap-2 2xl:gap-4 bg-black lg:bg-blue-700 xl:bg-red-700 2xl:bg-yellow-600 3xl:bg-green-800 justify-center">
+                <div class="grid grid-cols-1 place-items-center gap-2 2xl:gap-4">
+                    <div class="grid grid-rows-2 place-items-center gap-2 2xl:gap-4">
+                        <div class="grid grid-cols-3 place-content-evenly gap-2 2xl:gap-4">
+                            <div class="grid col-span-2 grid-rows-2 place-content-evenly gap-2 2xl:gap-4">
+                                <div class="h-16 2xl:h-24 3xl:h-32 w-40 xl:w-60 3xl:w-80">
+                                    <img src="{{ asset('images/photos/rzeka.jpg') }}" class="h-full w-full object-cover rounded-xl 2xl:rounded-2xl 3xl:rounded-3xl" alt="placeholder"/>
+                                </div>
+                                <div class="h-16 2xl:h-24 3xl:h-32 w-40 xl:w-60 3xl:w-80">
+                                    <img src="{{ asset('images/photos/energylandia.jpg') }}" class="h-full w-full object-cover rounded-xl 2xl:rounded-2xl 3xl:rounded-3xl" alt="placeholder"/>
+                                </div>
+                            </div>
+                            <div class="grid grid-rows-2 justify-self-center gap-2 2xl:gap-4">
+                                <div class="size-16 2xl:size-24 3xl:size-32">
+                                    <img src="{{ asset('images/photos/meetup.jpg') }}" class="h-full w-full object-cover rounded-xl 2xl:rounded-2xl 3xl:rounded-3xl" alt="placeholder"/>
+                                </div>
+                                <div class="size-16 2xl:size-24 3xl:size-32">
+                                    <img src="{{ asset('images/photos/plane.jpg') }}" class="h-full w-full object-cover rounded-xl 2xl:rounded-2xl 3xl:rounded-3xl" alt="placeholder"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="h-36 2xl:h-52 3xl:h-72 w-full">
+                            <img src="{{ asset('images/photos/birthday.jpg') }}" class="h-full w-full object-cover rounded-xl 2xl:rounded-2xl 3xl:rounded-3xl" alt="placeholder"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 place-items-center">
+                    <div class="grid grid-rows-2 gap-2 2xl:gap-4">
+                        <div class="size-36 2xl:size-52 3xl:size-72">
+                            <img src="{{ asset('images/photos/quantum.jpg') }}" class="h-full w-full object-cover rounded-xl 2xl:rounded-2xl 3xl:rounded-3xl" alt="placeholder"/>
+                        </div>
+                        <div class="size-36 2xl:size-52 3xl:size-72">
+                            <img src="{{ asset('images/photos/lasertag.jpg') }}" class="h-full w-full object-cover rounded-xl 2xl:rounded-2xl 3xl:rounded-3xl" alt="placeholder"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                </ul>
-            </div>
         </div>
-
-
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
-                </div>
-            </div>
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="">
-                </div>
-                <div>
-                    <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="">
-                </div>
-            </div>
-        </div>
-
-
     </section>
 @endsection
