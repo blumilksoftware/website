@@ -17,7 +17,7 @@
     <body>
     <div class="font-sora">
         @include("layout.navigation")
-        <div class="min-height-100vh relative z-10 font-sora">
+        <div class="min-height-100vh font-sora">
         @yield("content")
         </div>
         @include("layout.footer")

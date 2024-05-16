@@ -10,15 +10,12 @@
 @endphp
 @section("content")
     <section class="relative overflow-hidden">
-        <div class="relative md:block -z-10">
-            <div class="absolute -left-[6%] md:left-[1%] top-28 md:top-40">
-                <x-bubble size="80"/>
+        <div class="relative md:block">
+            <div class="absolute -left-[15%] md:-left-[2%] lg:left-0 top-28 md:top-40">
+                <x-bubble size="100"/>
             </div>
             <div class="absolute left-[8%] md:left-[4%] top-20 md:top-28">
-                <x-bubble size="30"/>
-            </div>
-            <div class="absolute hidden md:block -left-[3%] top-80">
-                <x-bubble size="200"/>
+                <x-bubble size="50"/>
             </div>
             <div class="absolute right-[4%] top-36">
                 <x-bubble size="40"/>
@@ -28,23 +25,18 @@
                     <x-bubble size="90"/>
                 </div>
             </div>
-            <div class="relative top-24">
-                <div class="absolute hidden md:block md:right-[4%] top-96">
-                    <x-bubble size="200"/>
-                </div>
-            </div>
         </div>
 
-        <section class="flex flex-col-reverse lg:flex-row py-24 px-[10%] md:px-[20%]">
+        <section class="flex flex-col-reverse xl:flex-row py-24 px-[10%] md:px-[20%]">
             <div class="flex basis-1/2 relative flex-col self-center gap-5">
-                <div class="text-3xl md:text-4xl lg:text-5xl text-center lg:justify-start lg:text-start py-4">
+                <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:justify-start xl:text-start py-4">
                     <h2 class="font-semibold text-gray-900 animation-appear">{{__("content.section_1.title_1")}}
                         <span
                             class="text-website-normal block"> {{__("content.section_1.title_2")}} </span> {{__("content.section_1.title_3")}}
                     </h2>
                 </div>
-                <div class="flex flex-col items-center lg:items-start animation-appear">
-                    <p class="text-xl lg:text-2xl font-light text-center lg:text-start">
+                <div class="flex flex-col items-center xl:items-start animation-appear">
+                    <p class="text-xl lg:text-2xl font-light text-center xl:text-start">
                         {{__("content.section_1.subtitle_1")}}
                         <span class="font-medium leading-relaxed">{{__("content.section_1.subtitle_2")}}</span>
                     </p>
@@ -54,27 +46,32 @@
                 </div>
             </div>
             <div class="flex basis-1/2 relative self-center">
-                <img src="{{ asset('graphics/web-1.png') }}" class="h-auto w-min aspect-auto" alt="placeholder"/>
+                <img src="{{ asset('graphics/web-1.png') }}" class="h-auto w-full aspect-auto object-center shrink-0" alt="placeholder"/>
             </div>
         </section>
 
-        <section class="text-center px-[10%] md:px-[20%]">
+        <section class="relative text-center px-[10%] md:px-[20%]">
             <div class="text-2xl lg:text-3xl font-medium text-gray-400">{{ __("content.section_2.title_1") }}<span
                     class="text-website-normal">{{ __("content.section_2.title_2") }}</span>
             </div>
-
+            <div class="absolute hidden md:block -left-[10%] lg:-left-[3%] top-0">
+                <x-bubble size="250"/>
+            </div>
+            <div class="absolute hidden md:block -right-[10%] md:right-[5%] -top-8">
+                <x-bubble size="200"/>
+            </div>
             <div class="grid grid-cols-2 md:flex md:flex-row pb-12 text-gray-400 items-center justify-center mt-6">
                 <div class="m-6">
-                    <img src="images/clients/cwup.png" class="client-icon h-auto w-44 grayscale hover:grayscale-0 transform transition hover:scale-110" alt="Collegium Witelona"/>
+                    <img src="{{asset('images/clients/cwup.png')}}" class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110" alt="Collegium Witelona"/>
+                </div>
+                <div class="m-6 items-center">
+                    <img src="{{asset('images/clients/insly.png')}}" class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110" alt="Insly"/>
                 </div>
                 <div class="m-6">
-                    <img src="images/clients/insly.png" class="client-icon h-auto w-44 grayscale hover:grayscale-0 transform transition hover:scale-110" alt="Insly"/>
+                    <img src="{{asset('images/clients/kghm.png')}}" class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110" alt="KGHM"/>
                 </div>
                 <div class="m-6">
-                    <img src="images/clients/kghm.png" class="client-icon h-auto w-44 grayscale hover:grayscale-0 transform transition hover:scale-110" alt="KGHM"/>
-                </div>
-                <div class="m-6">
-                    <img src="images/clients/vitaplus.png" class="client-icon h-auto w-44 grayscale hover:grayscale-0 transform transition hover:scale-110" alt="Vita Plus"/>
+                    <img src="{{asset('images/clients/vitaplus.png')}}" class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110" alt="Vita Plus"/>
                 </div>
             </div>
         </section>
@@ -83,8 +80,7 @@
 
             <x-waves.wave-1.top></x-waves.wave-1.top>
             <div class="flex flex-col lg:flex-row px-[10%] md:px-[20%] lg:pr-0 pt-24">
-                <div
-                    class="flex basis-2/5 flex-col lg:pr-8 delay-300 duration-700 taos:translate-x-48 taos:opacity-0"
+                <div class="flex basis-2/5 flex-col lg:pr-8 justify-center delay-300 duration-700 taos:translate-x-48 taos:opacity-0"
                     data-taos-offset="100">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4 text-center md:text-left">
                         {{__("content.section_3.title_1")}}</h2>
@@ -117,14 +113,14 @@
                 <div class="hidden lg:flex basis-3/5 delay-700 duration-700 taos:translate-x-48 taos:opacity-0"
                     data-taos-offset="300">
                     <div class="rounded-xl bg-gray-light max-h-[600px] rotate-6">
-                        <div class="relative flex flex-col justify-between aspect-square max-h-[600px] z-10 right-4 top-10 rounded-2xl bg-white p-6 -rotate-6">
+                        <div class="relative flex flex-col justify-between aspect-square max-h-[600px] z-10 right-6 top-10 rounded-2xl bg-white p-6 -rotate-6">
                             <div class="px-4 pt-5 font-semibold text-3xl">
                                 {{__("content.section_3.title_2")}}
                             </div>
                             <div class="p-8 text-website-normal">
                                 <div
                                     class="flex flex-col items-center w-auto h-auto text-center bg-gray-light p-6 rounded-2xl">
-                                    <img src="graphics/stars.png" class="max-h-12 shrink m-4" alt="5 stars"/>
+                                    <img src="{{asset('graphics/stars.png')}}" class="max-h-12 shrink m-4" alt="5 stars"/>
                                     <div class="text-xl leading-relaxed">
                                         {{__("content.section_3.subtitle_2")}}
                                     </div>
@@ -132,7 +128,7 @@
                                 </div>
                             </div>
                             <div class="flex place-content-center px-8">
-                                <x-block-primary-button href="">{{ __("buttons.text_us") }}</x-block-primary-button>
+                                <x-block-primary-button href=""><span class="font-bold">{{ __("buttons.text_us_1") }}</span>{{ __("buttons.text_us_2") }}</x-block-primary-button>
                             </div>
                         </div>
                     </div>
@@ -163,9 +159,9 @@
                                 <li><span class="font-semibold leading-relaxed">{{ $key }}</span> : {{ $description }}</li>
                             @endforeach
                         </ul>
-                        <div class="relative pb-8">
+                        <div class="hidden md:block relative pb-8">
                             <div
-                                class="relative hidden md:flex  duration-1000 taos:translate-y-48 taos:opacity-0"
+                                class="relative flex duration-1000 taos:translate-y-48 taos:opacity-0"
                                 data-taos-offset="0">
                                 <x-secondary-button href="">{{ __("buttons.all_projects") }}</x-secondary-button>
                                 <x-primary-button href="">{{ __("buttons.case_study") }}</x-primary-button>
@@ -187,17 +183,17 @@
                     <x-bubble size="20"/>
                 </span>
             </div>
-            <div class="flex rounded-2xl md:bg-gray-light -rotate-3 basis-2/3 relative md:shadow-md size-full left-[5%] lg:left-[10%] mt-12 pb-16 lg:pb-0 delay-200 duration-1000 taos:translate-x-full taos:opacity-0 [animation-iteration-count:infinite]"
+            <div class="flex rounded-2xl md:bg-gray-light -rotate-3 basis-2/3 relative md:shadow-md size-full lg:left-[10%] md:mt-12 delay-200 duration-1000 taos:translate-x-full taos:opacity-0 [animation-iteration-count:infinite]"
                 data-taos-offset="400">
                 <div class="absolute hidden lg:block rotate-3 z-20 rounded-2xl h-52 w-80 -left-[10%] bottom-[10%] bg-[url('graphics/code-snippet.png')] bg-cover">
                 </div>
                 <img src="graphics/vita.png"
-                     class="w-full relative flex lg:left-[10%] overflow-hidden rounded-2xl bg-white shadow-md rotate-3"
+                     class="w-full relative flex lg:left-[5%] overflow-hidden rounded-2xl bg-white shadow-md rotate-3"
                      alt="Vita homepage"/>
 
 
             </div>
-            <div class="flex md:hidden place-content-center px-8">
+            <div class="flex md:hidden place-content-center p-8">
                 <x-block-primary-button href="">{{ __("buttons.all_projects") }}</x-block-primary-button>
             </div>
 

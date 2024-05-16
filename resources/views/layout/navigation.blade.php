@@ -40,32 +40,30 @@
 </nav>
 
 <nav id="desktop-nav" class="left-0 right-0 py-4 duration-300 xl:px-[20%] bg-navigation relative">
-    <div class="mx-auto flex items-center justify-between px-6 lg:px-0">
+    <div class="mx-auto flex items-center justify-between px-6 xl:px-0">
         <div>
             <a class="flex items-start" href="{{ route("home") }}">
-                <img class="w-40 shrink-0" src="/logo.svg" alt="Blumilk"/>
+                <img class="w-40 shrink-0" src="{{asset('/logo.svg')}}" alt="Blumilk"/>
             </a>
         </div>
         <div class="md:flex hidden justify-center items-center text-lg lg:text-xl">
-            <p class="font-medium flex items-center text-center gap-2 nav-list">
-                <a onclick="{{route('about')}}" class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if($current === "about") bg-website-extra_light text-website-normal @endif" href="{{ route("about") }}">{{ __("content.pages.about") }}</a>
+            <p class="font-medium flex items-center text-center gap-2">
+                <a href="{{route('about')}}" class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if($current === "about") bg-website-extra_light text-website-normal @endif" href="{{ route("about") }}">{{ __("content.pages.about") }}</a>
                 <a href="{{ route("case-studies") }}" class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if($current === "case-studies") bg-website-extra_light text-website-normal @endif">{{ __("content.pages.case_study") }}</a>
                 <a href="{{ route("partners") }}" class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if($current === "partners") bg-website-extra_light text-website-normal @endif">{{ __("content.pages.partners") }}</a>
                 <a href="{{ route("career") }}" class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if($current === "career") bg-website-extra_light text-website-normal @endif">{{ __("content.pages.career") }}</a>
                 <a href="{{ route("contact") }}" class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if($current === "contact") bg-website-extra_light text-website-normal @endif">{{ __("content.pages.contact") }}</a>
             </p>
-            <div class="m-2">
-                <x-primary-button-with-icon icon="text" href="#">{{ __("buttons.lets_talk") }}</x-primary-button-with-icon>
-            </div>
-        </div>
-        <div class="md:flex hidden items-center">
             @foreach(LocaleConfig::getLocales() as $locale)
                 @if (!App::isLocale($locale))
-                    <a href="{{ route(Route::currentRouteName(), Route::getCurrentRoute()->parameters(), true, $locale) }}">
-                        <i class="large {{ $locale === "en" ? "gb" : $locale }} flat flag"></i>
+                    <a href="{{ route(Route::currentRouteName(), Route::getCurrentRoute()->parameters(), true, $locale) }}" class="m-2">
+                        <i class="large {{ $locale === "en" ? "gb" : $locale }} flat flag align-middle"></i>
                     </a>
                 @endif
             @endforeach
+        </div>
+        <div class="md:flex hidden items-center">
+            <x-primary-button-with-icon icon="text" href="#">{{ __("buttons.lets_talk") }}</x-primary-button-with-icon>
         </div>
         <button class="flex md:hidden" onclick="showSidebar()">
             <i class="fa-solid fa-bars hamburger-menu text-2xl text-brand"></i>

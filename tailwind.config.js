@@ -38,7 +38,7 @@ module.exports = {
         "sora": ["Sora", "sans-serif"]
       },
       backgroundImage:{
-        'binary': 'url("graphics/binary.svg" )',
+        'binary': 'url("/public/graphics/binary.svg" )',
       },
     },
   },

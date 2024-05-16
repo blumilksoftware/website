@@ -8,8 +8,8 @@
 
 <div class="relative my-20 md:mb-0">
     <div class="mb-6 flex justify-center relative">
-        <i class="text-8xl fa-solid fa-quote-left fa-2xl absolute left-14 bottom-20 text-neutral-600"></i>
         <div class="relative">
+            <i class="text-8xl fa-solid fa-quote-left fa-2xl absolute -left-10 bottom-20 text-neutral-600"></i>
             <img src="{{ $photoUrl }}" class="w-32 rounded-full shadow-lg relative z-10" alt=""/>
         </div>
     </div>

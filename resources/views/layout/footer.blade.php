@@ -1,5 +1,5 @@
 <footer class="bg-gradient-to-t from-footer-dark to-footer-light relative">
-    <x-waves.wave-2.top></x-waves.wave-2.top>
+    <x-waves.wave-footer></x-waves.wave-footer>
     <div class="text-white px-[10%] md:px-[20%] pt-12 pb-16 md:py-16 flex flex-col justify-between lg:flex-row items-center gap-8">
         <section class="hidden md:flex flex-col md:basis-1/2">
             <h4 class="text-3xl sm:text-4xl lg:text-5xl  font-bold text-white">{{__("footer.contact.title")}}</h4>
@@ -77,7 +77,7 @@
                         </p>
                     </div>
                     <div class="flex justify-center space-x-6 md:order-2">
-                        <a href="https://clutch.co/profile/blumilk-0" class="" target="_blank">
+                        <a href="https://clutch.co/profile/blumilk-0" class="m-auto" target="_blank">
                             <span class="sr-only">Clutch</span>
                             <x-icons.clutch></x-icons.clutch>
                         </a>
