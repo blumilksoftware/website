@@ -271,9 +271,8 @@
                 </div>
             </div>
         </section>
-        <div class="md:py-20 block bg-binary bg-cover bg-center bg-no-repeat object-contain min-w-full inset-0">
+        <div class="md:py-20 block lg:bg-binary bg-cover bg-center bg-no-repeat object-contain min-w-full inset-0">
             <section class="relative px-[10%] md:px-[20%]">
-
                 <div class="relative flex flex-row items-center justify-between">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">{{__("content.section_7.title_1")}}</h2>
                     <div class="hidden sm:block">
