@@ -148,7 +148,9 @@
                 <div class="flex flex-col text-center md:text-left">
                     <div class="relative duration-700 taos:translate-y-48 taos:opacity-0"
                          data-taos-offset="200">
-                        <x-badge>{{__("content.section_4.badge")}}</x-badge>
+                        <div class="my-6">
+                            <x-badge>{{__("content.section_4.badge")}}</x-badge>
+                        </div>
                         <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900">{{__("content.section_4.title_1")}}</h2>
                     </div>
                     <span class="absolute -right-[20%] -z-10">
@@ -196,8 +198,6 @@
                 <img src="graphics/vita.png"
                      class="w-full relative flex lg:left-[10%] overflow-hidden rounded-2xl bg-white shadow-md rotate-3"
                      alt="Vita homepage"/>
-
-
             </div>
             <div class="flex md:hidden place-content-center px-8">
                 <x-block-primary-button href="">{{ __("buttons.all_projects") }}</x-block-primary-button>
@@ -235,7 +235,9 @@
         <section class="px-[10%] md:px-[20%] text-center items-center pb-36 delay-300 duration-700 taos:translate-y-48 taos:opacity-0 relative"
             data-taos-offset="300">
             <h2 class="text-3xl md:text-4xl lg:text-6xl font-semibold text-gray-900 mb-6">{{__("content.section_6.title_1")}}</h2>
-            <x-badge>{{__("content.section_6.badge")}}</x-badge>
+            <div class="my-6">
+                <x-badge>{{__("content.section_6.badge")}}</x-badge>
+            </div>
             <span class="subtitle">{{__("content.section_6.subtitle_1")}}<span
                     class="font-semibold leading-relaxed text-xl">{{__("content.section_6.subtitle_2")}}</span> {{__("content.section_6.subtitle_3")}}</span>
             <div class="main-gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
