@@ -35,7 +35,7 @@
                             class="text-website-normal block"> {{__("content.section_1.title_2")}} </span> {{__("content.section_1.title_3")}}
                     </h2>
                 </div>
-                <div class="flex flex-col items-center xl:items-start animation-appear">
+                <div class="flex flex-col items-center xl:items-start md:animation-appear">
                     <p class="text-xl lg:text-2xl font-light text-center xl:text-start">
                         {{__("content.section_1.subtitle_1")}}
                         <span class="font-medium leading-relaxed">{{__("content.section_1.subtitle_2")}}</span>
@@ -80,7 +80,7 @@
 
             <x-waves.wave-1.top></x-waves.wave-1.top>
             <div class="flex flex-col lg:flex-row px-[10%] md:px-[20%] lg:pr-0 pt-24">
-                <div class="flex basis-2/5 flex-col lg:pr-8 justify-center delay-300 duration-700 taos:translate-x-48 taos:opacity-0"
+                <div class="flex basis-2/5 flex-col lg:pr-8 justify-center md:delay-300 md:duration-700 md:taos:translate-x-48 md:taos:opacity-0"
                     data-taos-offset="100">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4 text-center md:text-left">
                         {{__("content.section_3.title_1")}}</h2>
@@ -110,7 +110,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="hidden lg:flex basis-3/5 delay-700 duration-700 taos:translate-x-48 taos:opacity-0"
+                <div class="hidden lg:flex basis-3/5 md:delay-700 md:duration-700 md:taos:translate-x-48 md:taos:opacity-0"
                     data-taos-offset="300">
                     <div class="rounded-xl bg-gray-light max-h-[600px] rotate-6">
                         <div class="relative flex flex-col justify-between aspect-square max-h-[600px] z-10 right-6 top-10 rounded-2xl bg-white p-6 -rotate-6">
@@ -140,7 +140,7 @@
             class="relative flex flex-col lg:flex-row md:py-24 px-[10%] md:px-[20%] lg:pr-0 items-center overflow-hidden">
             <div class="flex basis-1/3 relative">
                 <div class="flex flex-col text-center md:text-left">
-                    <div class="relative duration-700 taos:translate-y-48 taos:opacity-0"
+                    <div class="relative md:duration-700 md:taos:translate-y-48 md:taos:opacity-0"
                          data-taos-offset="200">
                         <x-badge>{{__("content.section_4.badge")}}</x-badge>
                         <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">{{__("content.section_4.title_1")}}</h2>
@@ -149,11 +149,11 @@
                             <x-bubble size="40"/>
                         </span>
                     <div class="text-black text-xl relative py-4">
-                        <div class="py-4 text-xl duration-700 taos:translate-y-48 taos:opacity-0"
+                        <div class="py-4 text-xl md:duration-700 md:taos:translate-y-48 md:taos:opacity-0"
                              data-taos-offset="200"> {{__("content.section_4.subtitle_1")}}
                             <span
                                 class="font-medium leading-relaxed">{{__("content.section_4.subtitle_2")}}</span></div>
-                        <ul class="list-disc-none py-8 hidden md:block duration-1000 taos:translate-y-48 taos:opacity-0"
+                        <ul class="list-disc-none py-8 hidden md:block md:duration-1000 md:taos:translate-y-48 md:taos:opacity-0"
                             data-taos-offset="100">
                             @foreach($caseStudy as $key => $description)
                                 <li><span class="font-semibold leading-relaxed">{{ $key }}</span> : {{ $description }}</li>
@@ -161,7 +161,7 @@
                         </ul>
                         <div class="hidden md:block relative pb-8">
                             <div
-                                class="relative flex duration-1000 taos:translate-y-48 taos:opacity-0"
+                                class="relative flex md:duration-1000 md:taos:translate-y-48 md:taos:opacity-0"
                                 data-taos-offset="0">
                                 <x-secondary-button href="">{{ __("buttons.all_projects") }}</x-secondary-button>
                                 <x-primary-button href="">{{ __("buttons.case_study") }}</x-primary-button>
@@ -183,7 +183,7 @@
                     <x-bubble size="20"/>
                 </span>
             </div>
-            <div class="flex rounded-2xl md:bg-gray-light -rotate-3 basis-2/3 relative md:shadow-md size-full lg:left-[10%] md:mt-12 delay-200 duration-1000 taos:translate-x-full taos:opacity-0 [animation-iteration-count:infinite]"
+            <div class="flex rounded-2xl md:bg-gray-light -rotate-3 basis-2/3 relative md:shadow-md size-full lg:left-[10%] md:mt-12 md:delay-200 md:duration-1000 md:taos:translate-x-full md:taos:opacity-0 md:[animation-iteration-count:infinite]"
                 data-taos-offset="400">
                 <div class="absolute hidden lg:block rotate-3 z-20 rounded-2xl h-52 w-80 -left-[10%] bottom-[10%] bg-[url('graphics/code-snippet.png')] bg-cover">
                 </div>
@@ -202,9 +202,9 @@
         <section class="relative py-20 text-center">
             <div class="hidden md:block bg-binary bg-cover bg-center bg-no-repeat object-contain min-w-full absolute inset-0"></div>
             <div class="px-[10%] md:px-[20%] bg-gray-light py-8 md:py-24">
-                <h2 class="text-3xl md:text-5xl lg:text-5xl font-semibold text-gray-900 relative my-6 delay-300 duration-700 taos:scale-75 taos:opacity-0"
+                <h2 class="text-3xl md:text-5xl lg:text-5xl font-semibold text-gray-900 relative my-6 md:delay-300 md:duration-700 md:taos:scale-75 md:taos:opacity-0"
                     data-taos-offset="400">{{__("content.section_5.title_1")}}</h2>
-                <span class="font-medium leading-relaxed text-xl relative delay-300 duration-700 taos:scale-75 taos:opacity-0"
+                <span class="font-normal leading-relaxed text-xl relative md:delay-300 md:duration-700 md:taos:scale-75 md:taos:opacity-0"
                       data-taos-offset="400">{{__("content.section_5.subtitle_1")}}</span>
                 <div
                     class="flex flex-col sm:flex-row relative text-gray-400 items-center my-6 md:justify-between lg:justify-center gap-y-8 sm:gap-x-8 lg:gap-x-16">
@@ -226,12 +226,12 @@
                 </div>
             </div>
         </section>
-        <section class="px-[10%] md:px-[20%] text-center items-center pb-36 delay-300 duration-700 taos:translate-y-48 taos:opacity-0 relative"
+        <section class="px-[10%] md:px-[20%] text-center items-center pb-36 md:delay-300 md:duration-700 md:taos:translate-y-48 md:taos:opacity-0 relative"
             data-taos-offset="300">
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">{{__("content.section_6.title_1")}}</h2>
             <x-badge>{{__("content.section_6.badge")}}</x-badge>
-            <span class="subtitle">{{__("content.section_6.subtitle_1")}}<span
-                    class="font-semibold leading-relaxed text-xl">{{__("content.section_6.subtitle_2")}}</span> {{__("content.section_6.subtitle_3")}}</span>
+            <span class="font-normal leading-relaxed text-xl">{{__("content.section_6.subtitle_1")}}<span
+                    class="font-semibold">{{__("content.section_6.subtitle_2")}}</span> {{__("content.section_6.subtitle_3")}}</span>
             <div class="main-gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
                 <div class="gallery-cell gap-6 text-center py-4 lg:gap-12">
                     <x-testimonial
@@ -301,7 +301,7 @@
                         />
                     </div>
                 </div>
-                <div class="sm:hidden flex pt-8">
+                <div class="sm:hidden flex py-8">
                     <x-block-primary-button href="">{{__("buttons.see_all")}}</x-block-primary-button>
                 </div>
             </section>

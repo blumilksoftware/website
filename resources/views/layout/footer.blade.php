@@ -1,7 +1,5 @@
 <footer class="bg-gradient-to-t from-footer-dark to-footer-light relative">
-    <div class="hidden lg:block">
-        <x-waves.wave-footer></x-waves.wave-footer>
-    </div>
+    <x-waves.wave-footer></x-waves.wave-footer>
     <div class="text-white px-[10%] md:px-[20%] pt-12 pb-16 md:py-16 flex flex-col justify-between lg:flex-row items-center gap-8">
         <section class="hidden md:flex flex-col md:basis-1/2">
             <h4 class="text-3xl sm:text-4xl lg:text-5xl  font-bold text-white">{{__("footer.contact.title")}}</h4>
@@ -46,10 +44,9 @@
             </div>
         </section>
         <section class="flex flex-col lg:h-[500px] justify-between md:basis-1/2">
-            <div
-                class="hidden md:flex bg-footer-light p-8 lg:p-12 lg:min-w-[400px] lg:max-w-[600px] self-center rounded-3xl bg-opacity-80">
+            <div class="hidden md:flex bg-footer-light p-8 lg:p-12 lg:min-w-[400px] lg:max-w-[600px] self-center rounded-3xl bg-opacity-80">
                 <div class="flex gap-4">
-                    <img src="{{ asset('images/kasia.jpeg') }}" alt="" class="h-24 w-24 flex-none rounded-full">
+                    <img src="{{ asset('images/kasia.jpeg') }}" alt="" class="size-24 flex-none rounded-full">
                     <div class="gap-12">
                         <div class="text-base font-semibold text-white">Katarzyna Nowak</div>
                         <div class="text-md leading-6 text-white break-words pb-2">{{__("footer.contactTo.job")}}</div>
@@ -79,7 +76,7 @@
                         </p>
                     </div>
                     <div class="flex justify-center space-x-6 md:order-2">
-                        <a href="https://clutch.co/profile/blumilk-0" class="m-auto" target="_blank">
+                        <a href="https://clutch.co/profile/blumilk-0" class="md:m-auto" target="_blank">
                             <span class="sr-only">Clutch</span>
                             <x-icons.clutch></x-icons.clutch>
                         </a>
