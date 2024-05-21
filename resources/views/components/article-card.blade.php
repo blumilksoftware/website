@@ -1,5 +1,5 @@
 <article class="relative isolate flex flex-col justify-end overflow-hidden pb-8 aspect-square">
-    <img src="{{ $imageSrc }}" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover">
+    <img src="{{ $imageSrc }}" alt="" class="absolute inset-0 -z-10 size-full object-cover">
     <div class="flex absolute flex-wrap items-center overflow-hidden text-md text-white font-semibold top-0 right-8 w-14 delay-300 duration-700 taos:-translate-y-full taos:invisible" data-taos-offset="500">
         <time datetime="{{ $date }}" class="bg-website-normal pt-6 py-2 text-center">{{ $dateFormatted }}</time>
     </div>
