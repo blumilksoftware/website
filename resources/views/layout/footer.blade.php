@@ -37,7 +37,7 @@
                                 <a href="#" class="font-semibold text-white">{{ __("footer.form.policy") }}</a>
                             </p>
                         </div>
-                        <x-primary-button type="submit" href="">{{ __("buttons.send") }}</x-primary-button>
+                        <x-margin-primary-button type="submit" href="">{{ __("buttons.send") }}</x-margin-primary-button>
                     </div>
                 </form>
 

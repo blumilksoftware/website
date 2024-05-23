@@ -2,21 +2,21 @@ module.exports = {
   content: {
       relative: true,
       files: ['./resources/**/*.blade.php', './resources/**/*.js', './resources/**/*.vue'],
-      transform: (content) => content.replace(/taos:/g, ''),
     },
   theme: {
     screens: {
       'sm': '640px',
       'md': '768px',
+      'tablet': '850px',
       'lg': '1024px',
       'xl': '1280px',
       '2xl': '1536px',
-      '3xl': '1855px',
+      '3xl': '1921px',
     },
     extend: {
       colors: {
         gray: {
-          light: '#F5F6FA',
+          light: '#f0f1f7',
           dark: '#F1F3F6',
         },
         bubble: '#DAE3F0',
@@ -44,11 +44,5 @@ module.exports = {
   },
   plugins: [
     require('@tailwindcss/forms'),
-    require('taos/plugin'),
-  ],
-  safelist: [
-    '!duration-[0ms]',
-    '!delay-[0ms]',
-    'html.js :where([class*="taos:"]:not(.taos-init))'
   ],
 }

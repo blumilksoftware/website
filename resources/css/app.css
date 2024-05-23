@@ -28,10 +28,15 @@
   width: 30%;
   counter-increment: gallery-cell;
 }
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .gallery-cell { width: 100%; }
   .flickity-prev-next-button {
     display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .gallery-cell { width: 33%; }
+  .flickity-prev-next-button {
   }
 }
 .flickity-prev-next-button {
