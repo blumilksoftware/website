@@ -35,4 +35,10 @@ return [
     "section_6.subtitle_2" => "they attest to the quality of our services ",
     "section_6.subtitle_3" => "and inspire us to constantly improve.",
     "section_7.title_1" => "Our activities",
+    "case_studies.section_1.title_1" => "Our ",
+    "case_studies.section_1.title_2" => "projects",
+    "case_studies.section_1.subtitle_1" => "See what we worked on for our clients.",
+    "case_studies.section_1.subtitle_2" => "Each case study contains a detailed description of the project implementation.",
+    "case_studies.section_2.title_1" => "Interested in cooperation?",
+    "case_studies.section_2.subtitle_1" => "Let us turn your vision into reality. Do you have an idea for a web/mobile application, need digital transformation, or plan an R&D project? Do it with us!",
 ];

@@ -27,33 +27,13 @@
             <h2 class="text-3xl md:text-5xl lg:text-6xl font-semibold text-black my-6 break-words">
                 <span class="text-website-normal">{{__("content.case_studies.section_1.title_1")}}</span>
                 {{__("content.case_studies.section_1.title_2")}}</h2>
-            <span class="font-medium leading-relaxed text-xl" >{{__("content.case_studies.section_1.subtitle_1")}}</span>
+            <span class="font-medium leading-relaxed text-xl block" >{{__("content.case_studies.section_1.subtitle_1")}}</span>
+            <span class="font-medium leading-relaxed text-xl" >{{__("content.case_studies.section_1.subtitle_2")}}</span>
         </div>
         <div class="grid grid-cols-2 gap-28">
-            <div class="grid gap-y-10">
-                <div class="rounded-3xl md:bg-gray-light -rotate-3 relative md:shadow-md size-full lg:left-[0%] lg:pb-0">
-                    <img src="{{asset('graphics/vita.png')}}"
-                         class="h-auto w-full aspect-video flex lg:left-[2%] overflow-hidden rounded-3xl bg-white shadow-md rotate-3"
-                         alt="Vita homepage"/>
-                </div>
-                <div class="flex flex-col text-left gap-2 pl-3">
-                    <x-badge>Lorem</x-badge>
-                    <span class="font-semibold leading-relaxed">Lorem ipsum</span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-            </div>
-            <div class="grid gap-y-10">
-                <div class="rounded-3xl md:bg-gray-light -rotate-3 relative md:shadow-md size-full lg:left-[0%] lg:pb-0">
-                    <img src="{{asset('graphics/vita.png')}}"
-                         class="h-auto w-full aspect-video flex lg:left-[2%] overflow-hidden rounded-3xl bg-white shadow-md rotate-3"
-                         alt="Vita homepage"/>
-                </div>
-                <div class="flex flex-col text-left gap-2 pl-3">
-                    <x-badge>Lorem</x-badge>
-                    <span class="font-semibold leading-relaxed">Lorem ipsum</span>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </div>
-            </div>
+            @foreach($caseStudies as $caseStudy)
+                <x-case-study :caseStudy="$caseStudy"/>
+            @endforeach
         </div>
     </section>
     <section class="text-center bg-gradient-to-b from-gray-light via-gray-light to-white">
@@ -62,7 +42,7 @@
             <h2 class="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 relative">
                 {{__("content.case_studies.section_2.title_1")}}</h2>
             <span class="font-medium leading-relaxed text-xl relative delay-300 duration-700 taos:scale-75 taos:opacity-0"
-                  data-taos-offset="400">{{__("content.case_studies.section_2.title_1")}}</span>
+                  data-taos-offset="400">{{__("content.case_studies.section_2.subtitle_1")}}</span>
             <div class="mx-auto">
                 <x-block-primary-button href="">{{ __("buttons.text_us") }}</x-block-primary-button>
 
