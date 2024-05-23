@@ -14,23 +14,23 @@
             </div>
         </div>
     </div>
-    <section class="relative flex flex-col-reverse lg:flex-row pt-20 pb-44 md:py-52 px-[10%] md:px-[20%]">
+    <section class="relative flex flex-col-reverse 2xl:flex-row pt-20 pb-44 md:py-36 px-[10%] md:px-[20%] place-items-center">
         <div class="flex basis-2/5 flex-col self-center gap-5">
-            <div class="text-3xl md:text-4xl xl:text-5xl text-center lg:justify-start lg:text-start pb-4">
-                <h2 class="font-semibold text-gray-900 md:animation-appear leading-snug">
+            <div class="text-3xl md:text-4xl xl:text-5xl text-center 2xl:justify-start 2xl:text-start pb-4">
+                <h2 class="font-semibold text-gray-900 leading-snug">
                     <span class="text-website-normal"> {{__("content.about.section_1.title_1")}}</span>
                     {{__("content.about.section_1.title_2")}}
                 </h2>
             </div>
-            <div class="items-center lg:items-start md:animation-appear">
-                <p class="text-lg lg:text-xl font-light text-center lg:text-start leading-loose">
+            <div class="items-center 2xl:items-start">
+                <p class="text-lg lg:text-xl font-light text-center 2xl:text-start leading-loose">
                     {{__("content.about.section_1.subtitle_1")}}
                     <span class="font-medium">{{__("content.about.section_1.subtitle_2")}}</span>
                 </p>
             </div>
         </div>
         <div class="flex basis-3/5">
-            <img src="{{ asset('graphics/web-1.png') }}" class="h-max w-auto xl:h-auto xl:w-11/12 xl:p-12 "
+            <img src="{{ asset('graphics/web-1.png') }}" class="h-max w-auto align-middle xl:h-auto xl:w-11/12 xl:p-12 "
                  alt="placeholder"/>
         </div>
         <div class="absolute hidden md:block right-[5%] bottom-64">
@@ -51,13 +51,13 @@
             </div>
             <div class="flex basis-1/2 relative flex-col self-center gap-5">
                 <div class="text-3xl md:text-4xl lg:text-5xl text-center lg:justify-start lg:text-start pb-4">
-                    <h2 class="font-semibold text-gray-900 md:animation-appear">
+                    <h2 class="font-semibold text-gray-900">
                         <span class="text-website-normal">{{__("content.about.section_2.title_1")}}</span>
                         {{__("content.about.section_2.title_2")}}
                     </h2>
                 </div>
 
-                <div class="items-center lg:items-start md:animation-appear">
+                <div class="items-center lg:items-start">
                     <p class="text-lg lg:text-xl font-light text-center lg:text-start">
                         {{__("content.about.section_2.subtitle_1")}}
                         <span class="font-medium leading-relaxed">{{__("content.about.section_2.subtitle_2")}}</span>
