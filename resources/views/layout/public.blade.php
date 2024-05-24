@@ -7,28 +7,22 @@
         <link rel="shortcut icon" href="/logo.png" type="image/x-icon">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/krzysztofrewak/flat-flags-iconset@latest/style.css">
         @vite("resources/js/app.ts")
+        <script src="https://kit.fontawesome.com/f6187d55ef.js" crossorigin="anonymous"></script>
+        <script>document.documentElement.classList.add('js')</script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     </head>
     <body>
-        <div class="p-12 flex justify-center gap-4">
-            <a href="{{ route("home") }}">{{ __("content.pages.home") }}</a>
-            <a href="{{ route("about") }}">{{ __("content.pages.about") }}</a>
-            <a href="{{ route("case-studies") }}">{{ __("content.pages.case_study") }}</a>
-            <a href="{{ route("partners") }}">{{ __("content.pages.partners") }}</a>
-            <a href="{{ route("career") }}">{{ __("content.pages.career") }}</a>
-            <a href="{{ route("contact") }}">{{ __("content.pages.contact") }}</a>
-
-            <div class="flex-1 flex justify-end gap-4">
-                @foreach(LocaleConfig::getLocales() as $locale)
-                    @if (!App::isLocale($locale))
-                        <a href="{{ route(Route::currentRouteName(), Route::getCurrentRoute()->parameters(), true, $locale) }}">
-                            <i class="large {{ $locale === "en" ? "gb" : $locale }} flat flag"></i> </a>
-                    @endif
-                @endforeach
-            </div>
+    <div class="font-sora">
+        @include("layout.navigation")
+        <div class="min-height-100vh relative z-10 font-sora">
+        @yield("content")
         </div>
-
-        <div class="p-12">
-            @yield("content")
-        </div>
+        @include("layout.footer")
+    </div>
+    <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </body>
 </html>

@@ -19,7 +19,7 @@
         "mvenghaus/filament-plugin-translatable-inline": "^3.0"
     },
     "require-dev": {
-        "blumilksoftware/codestyle": "^v2.8",
+        "blumilksoftware/codestyle": "^v3.0",
         "fakerphp/faker": "^1.23",
         "mockery/mockery": "^1.6",
         "nunomaduro/collision": "^8.1",

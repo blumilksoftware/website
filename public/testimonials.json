@@ -1,0 +1,23 @@
+[
+    {
+        "photoUrl": "https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(1).jpg",
+        "name": "Maria Smantha",
+        "occupation": "Web Developer",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur.",
+        "linkedIn": "https://www.linkedin.com/"
+    },
+    {
+        "photoUrl": "https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(2).jpg",
+        "name": "Lisa Cudrow",
+        "occupation": "Graphic Designer",
+        "description": "Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi.",
+        "linkedIn": "https://www.linkedin.com/"
+    },
+    {
+        "photoUrl": "https://tecdn.b-cdn.net/img/Photos/Avatars/img%20(9).jpg",
+        "name": "John Smith",
+        "occupation": "Marketing Specialist",
+        "description": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti.",
+        "linkedIn": "https://www.linkedin.com/"
+    }
+]

@@ -19,7 +19,10 @@ use Mvenghaus\FilamentPluginTranslatableInline\Forms\Components\TranslatableCont
 class CaseStudyResource extends Resource
 {
     protected static ?string $model = CaseStudy::class;
+    protected static ?string $label = "case study";
+    protected static ?string $pluralLabel = "Case studies";
     protected static ?string $navigationIcon = "heroicon-o-swatch";
+    protected static bool $hasTitleCaseModelLabel = false;
 
     public static function form(Form $form): Form
     {
