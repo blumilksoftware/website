@@ -43,6 +43,7 @@ class MeetupActivityResource extends Resource
                                 ->maxLength(255),
                         )->requiredLocales(config("app.translatable_locales")),
                         Forms\Components\TextInput::make("presenter_name")
+                            ->required()
                             ->label("Osoba prezentująca")
                             ->maxLength(255),
                         Forms\Components\Checkbox::make("published")
@@ -50,11 +51,12 @@ class MeetupActivityResource extends Resource
                         Forms\Components\DateTimePicker::make("published_at")
                             ->format(DateFormats::DATE_DISPLAY)
                             ->time(false)
-                            ->requiredUnless("published", true)
+                            ->required()
                             ->label("Data publikacji"),
                         Forms\Components\TextInput::make("associate_link")
                             ->label("Powiązany link")
                             ->url()
+                            ->placeholder("https://example.com")
                             ->maxLength(255),
                     ]),
                     Section::make([
