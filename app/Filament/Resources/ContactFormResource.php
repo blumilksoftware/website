@@ -26,6 +26,7 @@ class ContactFormResource extends Resource
     protected static ?string $label = "Wiadomość";
     protected static ?string $pluralLabel = "Wiadomości";
     protected static ?string $navigationIcon = "heroicon-o-envelope-open";
+    protected static bool $hasTitleCaseModelLabel = false;
 
     public static function form(Form $form): Form
     {

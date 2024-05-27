@@ -22,6 +22,7 @@ class ReferenceResource extends Resource
     protected static ?string $label = "Referencję";
     protected static ?string $pluralLabel = "Referencje";
     protected static ?string $navigationIcon = "heroicon-o-hand-thumb-up";
+    protected static bool $hasTitleCaseModelLabel = false;
 
     public static function form(Form $form): Form
     {

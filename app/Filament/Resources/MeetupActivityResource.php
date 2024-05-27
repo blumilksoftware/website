@@ -29,6 +29,7 @@ class MeetupActivityResource extends Resource
     protected static ?string $label = "Aktywność na meetupie";
     protected static ?string $pluralLabel = "Aktywność na meetupach";
     protected static ?string $navigationIcon = "heroicon-o-film";
+    protected static bool $hasTitleCaseModelLabel = false;
 
     public static function form(Form $form): Form
     {
