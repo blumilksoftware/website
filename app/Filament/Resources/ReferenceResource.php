@@ -19,7 +19,7 @@ use Mvenghaus\FilamentPluginTranslatableInline\Forms\Components\TranslatableCont
 class ReferenceResource extends Resource
 {
     protected static ?string $model = Reference::class;
-    protected static ?string $label = "Referencję";
+    protected static ?string $label = "referencję";
     protected static ?string $pluralLabel = "Referencje";
     protected static ?string $navigationIcon = "heroicon-o-hand-thumb-up";
     protected static bool $hasTitleCaseModelLabel = false;

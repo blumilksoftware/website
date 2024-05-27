@@ -26,7 +26,7 @@ class MeetupActivityResource extends Resource
     use Translatable;
 
     protected static ?string $model = MeetupActivity::class;
-    protected static ?string $label = "Aktywność na meetupie";
+    protected static ?string $label = "aktywność na meetupie";
     protected static ?string $pluralLabel = "Aktywność na meetupach";
     protected static ?string $navigationIcon = "heroicon-o-film";
     protected static bool $hasTitleCaseModelLabel = false;
