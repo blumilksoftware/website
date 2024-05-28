@@ -333,7 +333,7 @@
             opacity: .41;
             }
             .cls-base{
-            opacity: .08;
+            opacity: .05;
             }
         </style>
     </defs>
