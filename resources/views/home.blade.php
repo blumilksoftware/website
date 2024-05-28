@@ -30,12 +30,12 @@
         <section class="flex flex-col-reverse xl:flex-row pt-40 pb-24 px-[10%] md:px-[20%]">
             <div class="flex basis-1/2 relative flex-col self-center gap-5">
                 <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:justify-start xl:text-start py-4">
-                    <h2 class="font-bold text-gray-900 leading-snug">{{__("content.section_1.title_1")}}
+                    <h2 class="font-semibold text-gray-900 leading-snug">{{__("content.section_1.title_1")}}
                         <span class="text-website-normal block"> {{__("content.section_1.title_2")}} </span> {{__("content.section_1.title_3")}}
                     </h2>
                 </div>
                 <div class="flex flex-col items-center xl:items-start">
-                    <p class="text-xl lg:text-2xl font-normal text-center xl:text-start">
+                    <p class="text-lg lg:text-xl font-light text-center xl:text-start">
                         {{__("content.section_1.subtitle_1")}}
                         <span class="font-semibold leading-relaxed">{{__("content.section_1.subtitle_2")}}</span>
                     </p>
@@ -80,11 +80,11 @@
             <x-waves.wave-1.top></x-waves.wave-1.top>
             <div class="flex flex-col 2xl:flex-row px-[10%] md:px-[20%] pt-24 gap-24">
                 <div class="flex basis-1/2 flex-col justify-center align-middle place-content-center">
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 text-center md:text-left">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4 text-center md:text-left">
                         {{__("content.section_3.title_1")}}</h2>
-                    <div class="text-black text-xl text-center md:text-left py-6">
+                    <div class="text-black text-lg lg:text-xl text-center md:text-left py-6">
                         <div class="pb-4 md:pb-1 leading-relaxed"> {{__("content.section_3.subtitle_1")}}
-                            <span class="font-bold">
+                            <span class="font-semibold">
                                 {{__("content.section_3.subtitle_2")}}
                                 </span>
                         </div>
@@ -124,7 +124,7 @@
                                 </div>
                             </div>
                             <div class="flex place-content-center px-8">
-                                <x-block-primary-button href=""><span class="font-bold">{{ __("buttons.text_us_1") }}</span>{{ __("buttons.text_us_2") }}</x-block-primary-button>
+                                <x-block-primary-button href=""><span class="font-semibold">{{ __("buttons.text_us_1") }}</span>{{ __("buttons.text_us_2") }}</x-block-primary-button>
                             </div>
                         </div>
                     </div>
@@ -137,15 +137,15 @@
                 <div class="flex flex-col text-center md:text-left">
                     <div class="relative md:duration-700">
                         <x-badge>{{__("content.section_4.badge")}}</x-badge>
-                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900">{{__("content.section_4.title_1")}}</h2>
+                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">{{__("content.section_4.title_1")}}</h2>
                     </div>
                     <span class="absolute -right-[20%] -z-10">
                             <x-bubble size="40"/>
                         </span>
-                    <div class="text-black text-xl relative py-4">
-                        <div class="py-4 text-xl md:duration-700"> {{__("content.section_4.subtitle_1")}}
+                    <div class="text-black text-lg lg:text-xl relative py-4">
+                        <div class="py-4 md:duration-700"> {{__("content.section_4.subtitle_1")}}
                             <span
-                                class="font-bold leading-relaxed">{{__("content.section_4.subtitle_2")}}</span></div>
+                                class="font-semibold leading-relaxed">{{__("content.section_4.subtitle_2")}}</span></div>
                         <ul class="list-disc-none py-8 hidden md:block">
                             @foreach($caseStudy as $key => $description)
                                 <li><span class="font-semibold leading-relaxed">{{ $key }}</span> : {{ $description }}</li>
@@ -190,9 +190,9 @@
         <section class="py-20 text-center overflow-hidden">
             <div class="relative px-[10%] md:px-[20%] bg-gray-light py-8 md:py-20">
                 <div class="hidden md:block bg-binary bg-cover bg-center bg-no-repeat absolute inset-0"></div>
-                <h2 class="text-3xl md:text-5xl lg:text-5xl font-bold text-gray-900 relative my-6">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 relative my-6">
                     {{__("content.section_5.title_1")}}</h2>
-                <span class="font-normal leading-relaxed text-xl relative">
+                <span class="font-light leading-relaxed text-lg lg:text-xl relative">
                     {{__("content.section_5.subtitle_1")}}</span>
                 <div
                     class="flex flex-col sm:flex-row relative text-gray-400 items-center my-6 md:justify-between lg:justify-center gap-y-8 sm:gap-x-8 lg:gap-x-16">
@@ -215,10 +215,10 @@
             </div>
         </section>
         <section class="px-[10%] md:px-[15%] text-center items-center pb-36 relative">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-6">{{__("content.section_6.title_1")}}</h2>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">{{__("content.section_6.title_1")}}</h2>
             <x-badge>{{__("content.section_6.badge")}}</x-badge>
-            <span class="font-normal leading-relaxed text-xl">{{__("content.section_6.subtitle_1")}}<span
-                    class="font-bold">{{__("content.section_6.subtitle_2")}}</span> {{__("content.section_6.subtitle_3")}}</span>
+            <span class="font-light leading-relaxed text-lg lg:text-xl">{{__("content.section_6.subtitle_1")}}<span
+                    class="font-semibold">{{__("content.section_6.subtitle_2")}}</span> {{__("content.section_6.subtitle_3")}}</span>
             <div class="main-gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
                 <div class="gallery-cell gap-4 text-center py-4 2xl:gap-12">
                     <x-testimonial

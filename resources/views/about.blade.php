@@ -22,10 +22,10 @@
                     {{__("content.about.section_1.title_2")}}
                 </h2>
             </div>
-            <div class="items-center 2xl:items-start">
-                <p class="text-lg lg:text-xl font-light text-center 2xl:text-start leading-loose">
-                    {{__("content.about.section_1.subtitle_1")}}
-                    <span class="font-medium">{{__("content.about.section_1.subtitle_2")}}</span>
+            <div class="items-center 2xl:items-start ">
+                <p class="text-lg lg:text-xl font-light text-center 2xl:text-start">
+                    <span class="leading-relaxed">{{__("content.about.section_1.subtitle_1")}}</span>
+                    <span class="font-medium leading-relaxed">{{__("content.about.section_1.subtitle_2")}}</span>
                 </p>
             </div>
         </div>
@@ -59,7 +59,7 @@
 
                 <div class="items-center lg:items-start">
                     <p class="text-lg lg:text-xl font-light text-center lg:text-start">
-                        {{__("content.about.section_2.subtitle_1")}}
+                        <span class="leading-relaxed">{{__("content.about.section_2.subtitle_1")}}</span>
                         <span class="font-medium leading-relaxed">{{__("content.about.section_2.subtitle_2")}}</span>
                     </p>
                 </div>
@@ -78,24 +78,24 @@
                     class="flex flex-col items-center gap-y-6 leading-relaxed">
                     <x-icons.passion/>
                     <p class="text-lg lg:text-xl font-light text-center">
-                        <span
-                            class="font-medium leading-relaxed">{{__("content.about.section_3.content_1")}}</span>{{__("content.about.section_3.content_2")}}
+                        <span class="font-medium leading-relaxed">{{__("content.about.section_3.content_1")}}</span>
+                        <span class="leading-relaxed">{{__("content.about.section_3.content_2")}}</span>
                     </p>
                 </div>
                 <div
                     class="flex flex-col items-center gap-y-6 leading-relaxed">
                     <x-icons.innovation/>
                     <p class="text-lg lg:text-xl font-light text-center">
-                        <span
-                            class="font-medium leading-relaxed">{{__("content.about.section_3.content_3")}}</span>{{__("content.about.section_3.content_4")}}
+                        <span class="font-medium leading-relaxed">{{__("content.about.section_3.content_3")}}</span>
+                        <span class="leading-relaxed">{{__("content.about.section_3.content_4")}}</span>
                     </p>
                 </div>
                 <div
                     class="flex flex-col items-center gap-y-6 leading-relaxed">
                     <x-icons.perfection/>
                     <p class="text-lg lg:text-xl font-light text-center">
-                        <span
-                            class="font-medium leading-relaxed">{{__("content.about.section_3.content_5")}}</span>{{__("content.about.section_3.content_6")}}
+                        <span class="font-medium leading-relaxed">{{__("content.about.section_3.content_5")}}</span>
+                        <span class="leading-relaxed">{{__("content.about.section_3.content_6")}}</span>
                     </p>
                 </div>
             </div>
@@ -111,9 +111,9 @@
                 </div>
                 <div class="text-black text-xl relative py-4 text-center xl:text-left">
                     <div class="py-4 text-xl font-light">
-                        {{__("content.about.section_4.subtitle_1")}}
+                        <span class="leading-relaxed">{{__("content.about.section_4.subtitle_1")}}</span>
                         <span class="font-medium leading-relaxed">{{__("content.about.section_4.subtitle_2")}}</span>
-                        {{__("content.about.section_4.subtitle_3")}}
+                        <span class="leading-relaxed">{{__("content.about.section_4.subtitle_3")}}</span>
                     </div>
                 </div>
             </div>
