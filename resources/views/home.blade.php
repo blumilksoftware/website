@@ -145,7 +145,7 @@
                             <x-bubble size="40"/>
                         </span>
                     <div class="text-black text-lg lg:text-xl relative py-4">
-                        <div class="py-4 md:duration-700">
+                        <div class="py-4">
                             <span class="leading-relaxed">{{__("content.section_4.subtitle_1")}}</span>
                             <span class="font-semibold leading-relaxed">{{__("content.section_4.subtitle_2")}}</span></div>
                         <ul class="list-disc-none py-8 hidden md:block">

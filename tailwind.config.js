@@ -18,6 +18,7 @@ module.exports = {
         gray: {
           light: '#f0f1f7',
           dark: '#F1F3F6',
+          extraDark: '#EAEBF3'
         },
         bubble: '#DAE3F0',
         brand: '#527aba',
