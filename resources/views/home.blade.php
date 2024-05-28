@@ -30,9 +30,9 @@
         <section class="flex flex-col-reverse xl:flex-row pt-40 pb-24 px-[10%] md:px-[20%]">
             <div class="flex basis-1/2 relative flex-col self-center gap-5">
                 <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:justify-start xl:text-start py-4">
-                    <h2 class="font-semibold text-gray-900 leading-relaxed">{{__("content.section_1.title_1")}}
+                    <h2 class="font-semibold text-gray-900 leading-snug">{{__("content.section_1.title_1")}}
                         <span class="text-website-normal block"> {{__("content.section_1.title_2")}} </span>
-                        <span class="leading-relaxed">{{__("content.section_1.title_3")}}</span>
+                       {{__("content.section_1.title_3")}}
                     </h2>
                 </div>
                 <div class="flex flex-col items-center xl:items-start">
