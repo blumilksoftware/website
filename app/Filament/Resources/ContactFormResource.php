@@ -23,9 +23,10 @@ use Illuminate\Database\Eloquent\Builder;
 class ContactFormResource extends Resource
 {
     protected static ?string $model = ContactForm::class;
-    protected static ?string $label = "Wiadomość";
+    protected static ?string $label = "wiadomość";
     protected static ?string $pluralLabel = "Wiadomości";
     protected static ?string $navigationIcon = "heroicon-o-envelope-open";
+    protected static bool $hasTitleCaseModelLabel = false;
 
     public static function form(Form $form): Form
     {
