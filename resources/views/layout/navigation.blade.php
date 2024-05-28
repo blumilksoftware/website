@@ -49,7 +49,7 @@
                      :class="{'block': openLang, 'hidden': ! openLang}"
                      class="hidden absolute right-0 z-10 w-full mt-2 origin-top-right bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                      tabindex="-1">
-                    <div class="text-end" role="none">
+                    <div class="text-start" role="none">
                         @foreach(LocaleConfig::getLocales() as $locale)
                             <a href="{{route(Route::currentRouteName(), Route::getCurrentRoute()->parameters(), true, $locale)}}"
                                class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-light uppercase"
