@@ -63,4 +63,8 @@ return [
     "case_studies.section_1.subtitle_2" => "Each case study contains a detailed description of the project implementation.",
     "case_studies.section_2.title_1" => "Interested in cooperation?",
     "case_studies.section_2.subtitle_1" => "Let us turn your vision into reality. Do you have an idea for a web/mobile application, need digital transformation, or plan an R&D project? Do it with us!",
+    "case_study.section_2.title_1" => "Bring ",
+    "case_study.section_2.title_2" => "your idea ",
+    "case_study.section_2.title_3" => "to life with us",
+    "case_study.section_2.subtitle_1" => "We will help you turn your vision into a working solution. Do you have an idea for a web/mobile application, need digital transformation, or plan an R&D project? Do it with us!",
 ];

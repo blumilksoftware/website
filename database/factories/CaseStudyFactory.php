@@ -24,7 +24,7 @@ class CaseStudyFactory extends Factory
             "published" => $this->faker->boolean,
             "company" => $this->faker->company,
             "slug" => $this->faker->slug,
-            "template" => "example-template.blade.php",
+            "template" => "base-template.blade.php",
         ];
     }
 }

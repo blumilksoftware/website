@@ -63,4 +63,8 @@ return [
     "case_studies.section_1.subtitle_2" => "Każde studium przypadku zawiera szczegółowy opis realizacji projektu.",
     "case_studies.section_2.title_1" => "Zainteresowany współpracą?",
     "case_studies.section_2.subtitle_1" => "Pozwól nam przekształcić Twoją wizję w rzeczywistość. Masz pomysł na aplikację web/mobile, potrzebujesz transformacji cyfrowej lub planujesz projekt badawczo-rozwojowy? Zrób to z nami!",
+    "case_study.section_2.title_1" => "Zrealizuj z nami ",
+    "case_study.section_2.title_2" => "swój pomysł",
+    "case_study.section_2.title_3" => "",
+    "case_study.section_2.subtitle_1" => "Pozwól nam przekształcić Twoją wizję w rzeczywistość. Masz pomysł na aplikację web/mobile, potrzebujesz transformacji cyfrowej lub planujesz projekt badawczo-rozwojowy? Zrób to z nami!",
 ];

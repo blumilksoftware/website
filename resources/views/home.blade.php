@@ -32,7 +32,7 @@
                 <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:justify-start xl:text-start py-4">
                     <h2 class="font-semibold text-gray-900 leading-snug">{{__("content.section_1.title_1")}}
                         <span class="text-website-normal block"> {{__("content.section_1.title_2")}} </span>
-                       {{__("content.section_1.title_3")}}
+                        {{__("content.section_1.title_3")}}
                     </h2>
                 </div>
                 <div class="flex flex-col items-center xl:items-start">
@@ -46,7 +46,8 @@
                 </div>
             </div>
             <div class="flex basis-1/2 relative self-center">
-                <img src="{{ asset('graphics/web-1.png') }}" class="h-auto w-full aspect-auto object-center shrink-0" alt="placeholder"/>
+                <img src="{{ asset('graphics/web-1.png') }}" class="h-auto w-full aspect-auto object-center shrink-0"
+                     alt="placeholder"/>
             </div>
         </section>
 
@@ -60,18 +61,27 @@
             <div class="absolute hidden lg:block -right-[10%] lg:right-[5%] -top-8">
                 <x-bubble size="200"/>
             </div>
-            <div class="grid grid-cols-2 md:flex md:flex-row pb-12 text-gray-400 items-center justify-center mt-6 2xl:gap-12">
+            <div
+                class="grid grid-cols-2 md:flex md:flex-row pb-12 text-gray-400 items-center justify-center mt-6 2xl:gap-12">
                 <div class="m-6">
-                    <img src="{{asset('images/clients/cwup.png')}}" class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110" alt="Collegium Witelona"/>
+                    <img src="{{asset('images/clients/cwup.png')}}"
+                         class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110"
+                         alt="Collegium Witelona"/>
                 </div>
                 <div class="m-6 items-center">
-                    <img src="{{asset('images/clients/insly.png')}}" class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110" alt="Insly"/>
+                    <img src="{{asset('images/clients/insly.png')}}"
+                         class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110"
+                         alt="Insly"/>
                 </div>
                 <div class="m-6">
-                    <img src="{{asset('images/clients/kghm.png')}}" class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110" alt="KGHM"/>
+                    <img src="{{asset('images/clients/kghm.png')}}"
+                         class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110"
+                         alt="KGHM"/>
                 </div>
                 <div class="m-6">
-                    <img src="{{asset('images/clients/vitaplus.png')}}" class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110" alt="Vita Plus"/>
+                    <img src="{{asset('images/clients/vitaplus.png')}}"
+                         class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110"
+                         alt="Vita Plus"/>
                 </div>
             </div>
         </section>
@@ -109,14 +119,17 @@
                     </div>
                 </div>
                 <div class="hidden 2xl:flex basis-1/2 m-auto md:delay-700 object-center">
-                    <div class="rounded-xl bg-gray-light max-h-[500px] rotate-6">
-                        <div class="relative flex flex-col justify-between aspect-square max-h-[500px] z-10 right-6 top-10 rounded-2xl bg-white p-6 -rotate-6">
+                    <div class="rounded-xl bg-gray-dark max-h-[500px] rotate-6">
+                        <div
+                            class="relative flex flex-col justify-between aspect-square max-h-[500px] z-10 right-6 top-10 rounded-2xl bg-white p-6 -rotate-6">
                             <div class="px-4 pt-5 font-semibold text-3xl">
                                 {{__("content.section_3.title_2")}}
                             </div>
                             <div class="p-8 text-website-normal">
-                                <div class="flex flex-col items-center place-content-center text-center bg-gray-light aspect-video p-6 rounded-2xl">
-                                    <img src="{{asset('graphics/stars.png')}}" class="max-h-12 shrink m-4" alt="5 stars"/>
+                                <div
+                                    class="flex flex-col items-center place-content-center text-center bg-gray-light aspect-video p-6 rounded-2xl">
+                                    <img src="{{asset('graphics/stars.png')}}" class="max-h-12 shrink m-4"
+                                         alt="5 stars"/>
                                     <div class="text-md leading-relaxed">
                                         {{__("content.section_3.subtitle_3")}}
                                     </div>
@@ -124,7 +137,10 @@
                                 </div>
                             </div>
                             <div class="flex place-content-center px-8">
-                                <x-block-primary-button href=""><span class="font-semibold">{{ __("buttons.text_us_1") }}</span>{{ __("buttons.text_us_2") }}</x-block-primary-button>
+                                <x-block-primary-button href="">
+                                    <span
+                                        class="font-semibold">{{ __("buttons.text_us_1") }}</span>{{ __("buttons.text_us_2") }}
+                                </x-block-primary-button>
                             </div>
                         </div>
                     </div>
@@ -133,7 +149,7 @@
             <x-waves.wave-1.bottom></x-waves.wave-1.bottom>
         </section>
         <section class="relative flex flex-col xl:flex-row md:py-24 px-[10%] md:px-[20%] xl:pr-0 items-center overflow-hidden 3xl:gap-44">
-            <div class="flex basis-3/12 relative">
+            <div class="flex basis-4/12 relative">
                 <div class="flex flex-col text-center md:text-left">
                     <div class="relative">
                         <div class="my-6">
@@ -144,13 +160,15 @@
                     <span class="absolute -right-[20%] -z-10">
                             <x-bubble size="40"/>
                         </span>
-                    <div class="text-black text-lg lg:text-xl relative py-4">
+                    <div class="text-black text-lg font-light lg:text-xl relative py-4">
                         <div class="py-4">
                             <span class="leading-relaxed">{{__("content.section_4.subtitle_1")}}</span>
-                            <span class="font-semibold leading-relaxed">{{__("content.section_4.subtitle_2")}}</span></div>
+                            <span class="font-semibold leading-relaxed">{{__("content.section_4.subtitle_2")}}</span>
+                        </div>
                         <ul class="list-disc-none py-8 hidden md:block">
                             @foreach($caseStudy as $key => $description)
-                                <li><span class="font-semibold leading-relaxed">{{ $key }}</span> : {{ $description }}</li>
+                                <li><span class="font-semibold leading-relaxed">{{ $key }}</span> : {{ $description }}
+                                </li>
                             @endforeach
                         </ul>
                         <div class="hidden md:block relative pb-8">
@@ -176,47 +194,59 @@
                     <x-bubble size="20"/>
                 </span>
             </div>
-            <div class="flex rounded-2xl xl:bg-gray-light -rotate-3 basis-9/12 relative xl:shadow-md size-full xl:left-[10%] md:mt-12">
-                <div class="absolute hidden xl:block rotate-3 z-20 rounded-2xl h-52 w-80 -left-[10%] bottom-[10%] bg-[url('graphics/code-snippet.png')] bg-cover">
+            <div
+                class="flex rounded-2xl xl:bg-gray-light -rotate-3 basis-8/12 relative xl:shadow-md size-full xl:left-[10%] md:mt-12">
+                <div
+                    class="absolute hidden xl:block rotate-3 z-20 rounded-2xl h-52 w-80 -left-[10%] bottom-[10%] bg-[url('graphics/code-snippet.png')] bg-cover">
                 </div>
                 <img src="{{asset('graphics/vita.png')}}"
                      class="w-full relative flex xl:left-[5%] overflow-hidden rounded-2xl bg-white shadow-md rotate-3"
                      alt="Vita homepage"/>
             </div>
             <div class="flex md:hidden place-content-center p-8">
-                <x-block-primary-button href="">{{ __("buttons.all_projects") }}</x-block-primary-button>
+                <x-small-primary-button href="">{{ __("buttons.all_projects") }}</x-small-primary-button>
             </div>
-
         </section>
 
-        <section class="py-20 text-center overflow-hidden">
-            <div class="relative px-[10%] md:px-[20%] bg-gray-light py-8 md:py-20">
-                <div class="hidden md:block bg-binary bg-cover bg-center bg-no-repeat absolute inset-0"></div>
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 relative my-6">
-                    {{__("content.section_5.title_1")}}</h2>
-                <span class="font-light leading-relaxed text-lg lg:text-xl relative">
+        <section class="my-20 text-center bg-gray-extraLight ">
+            <div class="block lg:bg-binary bg-cover bg-center bg-no-repeat 3xl:mx-44">
+                <div class="relative px-[10%] md:px-[20%]  py-8 md:py-20">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 relative mb-8">
+                        {{__("content.section_5.title_1")}}</h2>
+                    <span class="font-light leading-relaxed text-lg lg:text-xl relative">
                     {{__("content.section_5.subtitle_1")}}</span>
-                <div
-                    class="flex flex-col sm:flex-row relative text-gray-400 items-center my-6 md:justify-between lg:justify-center gap-y-8 sm:gap-x-8 lg:gap-x-16">
-                    <div>
-                        <img src="images/tech/laravel.svg" class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="laravel"/>
-                    </div>
-                    <div>
-                        <img src="images/tech/php.svg" class="tech-icon h-full w-28 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="php"/>
-                    </div>
-                    <div>
-                        <img src="images/tech/postgresql.svg" class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="postgresql"/>
-                    </div>
-                    <div>
-                        <img src="images/tech/docker.svg" class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="docker"/>
-                    </div>
-                    <div>
-                        <img src="images/tech/vue.svg" class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110" alt="vue"/>
+                    <div class="flex flex-col sm:flex-row relative text-gray-400 items-center mt-8 md:justify-between lg:justify-center gap-y-8 sm:gap-x-8 lg:gap-x-16">
+                        <div>
+                            <img src="{{ asset('images/tech/laravel.svg')}}"
+                                 class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110"
+                                 alt="laravel"/>
+                        </div>
+                        <div>
+                            <img src="{{ asset('images/tech/php.svg')}}"
+                                 class="tech-icon h-full w-28 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110"
+                                 alt="php"/>
+                        </div>
+                        <div>
+                            <img src="{{ asset('images/tech/postgresql.svg')}}"
+                                 class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110"
+                                 alt="postgresql"/>
+                        </div>
+                        <div>
+                            <img src="{{ asset('images/tech/docker.svg')}}"
+                                 class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110"
+                                 alt="docker"/>
+                        </div>
+                        <div>
+                            <img src="{{ asset('images/tech/vue.svg')}}"
+                                 class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110"
+                                 alt="vue"/>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="px-[10%] md:px-[15%] text-center items-center pb-36 relative">
+
+        <section class="px-[10%] md:px-[15%] text-center items-center sm:pb-36 relative">
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">{{__("content.section_6.title_1")}}</h2>
             <div class="my-6">
                 <x-badge>{{__("content.section_6.badge")}}</x-badge>
@@ -225,8 +255,17 @@
                 <span class="font-semibold leading-relaxed">{{__("content.section_6.subtitle_2")}}</span>
                 <span class="leading-relaxed">{{__("content.section_6.subtitle_3")}}</span>
             </span>
-            <div class="main-gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-                <div class="gallery-cell gap-4 text-center py-4 2xl:gap-12">
+            <div class="sm:hidden">
+                <x-testimonial
+                    photoUrl="{{ $testimonials[0]['photoUrl'] }}"
+                    name="{{ $testimonials[0]['name'] }}"
+                    occupation="{{ $testimonials[0]['occupation'] }}"
+                    description="{{ $testimonials[0]['description'] }}"
+                    linkedIn="{{ $testimonials[0]['linkedIn'] }}"
+                />
+            </div>
+            <div class="hidden sm:block main-gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
+                <div class="gallery-cell gap-4 py-4 2xl:gap-12">
                     <x-testimonial
                         photoUrl="{{ $testimonials[0]['photoUrl'] }}"
                         name="{{ $testimonials[0]['name'] }}"
@@ -235,7 +274,7 @@
                         linkedIn="{{ $testimonials[0]['linkedIn'] }}"
                     />
                 </div>
-                <div class="gallery-cell gap-6 text-center py-4 2xl:gap-12">
+                <div class="gallery-cell gap-6 py-4 2xl:gap-12">
                     <x-testimonial
                         photoUrl="{{ $testimonials[1]['photoUrl'] }}"
                         name="{{ $testimonials[1]['name'] }}"
@@ -244,7 +283,7 @@
                         linkedIn="{{ $testimonials[1]['linkedIn'] }}"
                     />
                 </div>
-                <div class="gallery-cell gap-6 text-center py-4 2xl:gap-12">
+                <div class="gallery-cell gap-6 py-4 2xl:gap-12">
                     <x-testimonial
                         photoUrl="{{ $testimonials[2]['photoUrl'] }}"
                         name="{{ $testimonials[2]['name'] }}"
@@ -253,7 +292,7 @@
                         linkedIn="{{ $testimonials[2]['linkedIn'] }}"
                     />
                 </div>
-                <div class="gallery-cell gap-6 text-center py-4 2xl:gap-12">
+                <div class="gallery-cell gap-6 py-4 2xl:gap-12">
                     <x-testimonial
                         photoUrl="{{ $testimonials[0]['photoUrl'] }}"
                         name="{{ $testimonials[0]['name'] }}"
@@ -262,7 +301,7 @@
                         linkedIn="{{ $testimonials[0]['linkedIn'] }}"
                     />
                 </div>
-                <div class="gallery-cell gap-6 text-center py-4 2xl:gap-12">
+                <div class="gallery-cell gap-6 py-4 2xl:gap-12">
                     <x-testimonial
                         photoUrl="{{ $testimonials[2]['photoUrl'] }}"
                         name="{{ $testimonials[2]['name'] }}"
@@ -274,7 +313,7 @@
             </div>
         </section>
         <div class="md:py-20 block lg:bg-binary bg-cover bg-center bg-no-repeat object-contain min-w-full inset-0">
-            <section class="relative px-[10%] md:px-[20%]">
+            <section class="relative z-20 px-[10%] md:px-[20%]">
                 <div class="relative flex flex-row items-center justify-between">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">{{__("content.section_7.title_1")}}</h2>
                     <div class="hidden sm:block">

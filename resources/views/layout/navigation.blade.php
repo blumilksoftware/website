@@ -41,7 +41,7 @@
                                 class="flex h-full items-center place-content-center gap-x-1.5 bg-white px-3 py-2 text-sm 3xl:text-md font-semibold text-gray-500 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 uppercase"
                                 id="desktopLocalesButton" aria-expanded="true" aria-haspopup="true">
                             {{ $locale }}
-                            <i class="fa-solid fa-chevron-up fa-rotate-180 langArrow text-gray-500"></i>
+                            <i :class="{'rotate-0': openLang, 'rotate-180': ! openLang}" class="fa-solid fa-chevron-up text-gray-500"></i>
                         </button>
                     @endif
                 @endforeach
@@ -117,7 +117,7 @@
                                     class="flex w-full h-full justify-between items-center place-content-center gap-x-1.5 mt-4 text-lg sm:text-xl font-semibold text-black hover:text-website-normal uppercase"
                                     id="mobileLocalesButton" aria-expanded="true" aria-haspopup="true">
                                 {{ $locale }}
-                                <i class="fa-solid fa-chevron-up fa-rotate-180 langArrow text-gray-500"></i>
+                                <i :class="{'rotate-0': openLang, 'rotate-180': ! openLang}" class="fa-solid fa-chevron-up text-gray-500"></i>
                             </button>
                         @endif
                     @endforeach

@@ -19,8 +19,9 @@ class CaseStudiesController extends Controller
 
     public function get(Factory $factory, string $slug): View
     {
-        return $factory->make("case_study", [
-            "caseStudy" => CaseStudy::where("slug", $slug)->firstOrFail(),
-        ]);
+        $caseStudy = CaseStudy::where("slug", $slug)->firstOrFail();
+        $view = preg_replace('/\.blade\.php$/', "", $caseStudy->template);
+
+        return $factory->make("case-studies/$view", compact("caseStudy"));
     }
 }
