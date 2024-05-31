@@ -41,7 +41,7 @@
         </div>
     </section>
     <section class="relative z-20 text-center bg-gradient-to-b from-gray-light via-gray-light to-white">
-        <div class="flex flex-col gap-8 md:gap-14 px-[10%] md:px-[20%] py-12 md:pt-24">
+        <div class="flex flex-col gap-8 md:gap-14 px-[10%] md:px-[20%] py-12 md:pt-24 lg:pt-32">
             <h2 class="text-3xl md:text-5xl lg:text-6xl font-semibold text-gray-900 relative">
                 {{__("content.case_study.section_2.title_1")}}
                 <span class="text-website-normal">{{__("content.case_study.section_2.title_2")}}</span>
