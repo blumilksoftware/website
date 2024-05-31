@@ -106,7 +106,9 @@
         <div class="grid xl:grid-cols-2 2xl:grid-cols-3 gap-2 text-center xl:text-left px-[10%] md:px-[20%] z-20 pt-20">
             <div class="grid xl:col-span-1">
                 <div class="relative">
-                    <x-badge>{{__("content.about.section_4.badge")}}</x-badge>
+                    <div class="my-6">
+                        <x-badge>{{__("content.about.section_4.badge")}}</x-badge>
+                    </div>
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">{{__("content.about.section_4.title_1")}}</h2>
                 </div>
                 <div class="text-black text-xl relative py-4">

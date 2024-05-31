@@ -31,8 +31,8 @@
             <span class="font-light leading-relaxed text-xl" >{{__("content.case_studies.section_1.subtitle_2")}}</span>
         </div>
         <div class="grid lg:grid-cols-2 gap-12 3xl:mx-32">
-            @foreach($caseStudies as $caseStudy)
-                <x-case-study-tile :caseStudy="$caseStudy"/>
+            @foreach($caseStudies as $index => $caseStudy)
+                <x-case-study-tile :caseStudy="$caseStudy" class="{{ $index >= 3 ? 'hidden lg:grid' : '' }}"/>
             @endforeach
         </div>
     </section>
@@ -42,7 +42,7 @@
                 {{__("content.case_studies.section_2.title_1")}}</h2>
             <span class="font-light leading-relaxed text-xl relative">{{__("content.case_studies.section_2.subtitle_1")}}</span>
             <div class="mx-auto">
-                <x-margin-primary-button href="">{{ __("buttons.text_us") }}</x-margin-primary-button>
+                <x-margin-primary-button href="{{ route('contact') }}">{{ __("buttons.text_us") }}</x-margin-primary-button>
             </div>
         </div>
     </section>

@@ -12,4 +12,5 @@ return [
     "see_all" => "Zobacz wszystkie",
     "send" => "Wyślij",
     "read_more" => "Czytaj więcej",
+    "back_to_portfolio" => "Wróć do portfolio",
 ];

@@ -12,8 +12,8 @@
             <x-bubble size="40"/>
         </div>
     </div>
-    <section class="relative flex flex-col py-16 md:py-28 px-[10%] md:px-[20%]">
-        <div class="flex flex-col self-center">
+    <section class="relative py-16 md:py-28 px-[10%] md:px-[20%]">
+        <div class="self-center">
             <div class="text-4xl md:text-5xl xl:text-6xl text-center pb-4">
                 <h2 class="font-semibold text-gray-900 leading-snug">
                     {{ $caseStudy->name }}
@@ -25,8 +25,8 @@
                 </p>
             </div>
         </div>
-        <div class="relative z-20 pt-12 md:py-24 w-full">
-            <div class="rounded-3xl md:bg-gray-dark aspect-[5/3] max-w-4xl h-full -rotate-3 relative md:shadow-md -left-2">
+        <div class="pt-12 md:py-24 w-full">
+            <div class="m-auto rounded-3xl md:bg-gray-dark aspect-[5/3] max-w-4xl h-full -rotate-3 relative md:shadow-md -left-2">
                 <img src="{{ asset('storage/' . $caseStudy->photo)  }}"
                      class="relative aspect-[5/3] flex w-full h-full rounded-3xl bg-white shadow-md rotate-3 left-4"
                      alt="{{ $caseStudy->company }}"/>
@@ -49,8 +49,8 @@
             </h2>
             <span class="font-light leading-relaxed text-xl relative">{{__("content.case_study.section_2.subtitle_1")}}</span>
             <div class="mx-auto flex">
-                <x-secondary-button href="">{{ __("buttons.text_us") }}</x-secondary-button>
-                <x-primary-button href="">{{ __("buttons.text_us") }}</x-primary-button>
+                <x-secondary-button href="{{ route('case-studies') }}">{{ __('buttons.back_to_portfolio') }}</x-secondary-button>
+                <x-primary-button href="{{ route('contact') }}">{{ __("buttons.text_us") }}</x-primary-button>
             </div>
         </div>
     </section>

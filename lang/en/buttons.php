@@ -12,4 +12,5 @@ return [
     "see_all" => "See all",
     "send" => "Send",
     "read_more" => "Read more",
+    "back_to_portfolio" => "Back to portfolio",
 ];

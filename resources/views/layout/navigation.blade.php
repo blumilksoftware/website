@@ -17,21 +17,21 @@
         </div>
         <div class="md:flex hidden justify-center items-center text-sm 3xl:text-lg">
             <p class="font-medium flex items-center text-center gap-2">
-                <a href="{{route('about')}}"
-                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if($current === "about") bg-website-extra_light text-website-normal @endif">{{ __("content.pages.about") }}</a>
-                <a href="{{ route("case-studies") }}"
-                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if($current === "case-studies") bg-website-extra_light text-website-normal @endif">{{ __("content.pages.case_study") }}</a>
-                <a href="{{ route("partners") }}"
-                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if($current === "partners") bg-website-extra_light text-website-normal @endif">{{ __("content.pages.partners") }}</a>
-                <a href="{{ route("career") }}"
-                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if($current === "career") bg-website-extra_light text-website-normal @endif">{{ __("content.pages.career") }}</a>
-                <a href="{{ route("contact") }}"
-                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if($current === "contact") bg-website-extra_light text-website-normal @endif">{{ __("content.pages.contact") }}</a>
+                <a href="{{ route('about') }}"
+                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if(Str::contains($current, 'about')) bg-website-extra_light text-website-normal @endif">{{ __("content.pages.about") }}</a>
+                <a href="{{ route('case-studies') }}"
+                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if(Str::contains($current, 'case-studies')) bg-website-extra_light text-website-normal @endif">{{ __("content.pages.case_study") }}</a>
+                <a href="{{ route('partners') }}"
+                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if(Str::contains($current, 'partners')) bg-website-extra_light text-website-normal @endif">{{ __("content.pages.partners") }}</a>
+                <a href="{{ route('career') }}"
+                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if(Str::contains($current, 'career')) bg-website-extra_light text-website-normal @endif">{{ __("content.pages.career") }}</a>
+                <a href="{{ route('contact') }}"
+                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if(Str::contains($current, 'contact')) bg-website-extra_light text-website-normal @endif">{{ __("content.pages.contact") }}</a>
             </p>
         </div>
         <div class="md:flex hidden gap-4">
             <div class="items-center">
-                <x-small-primary-button href="#">{{ __("buttons.lets_talk") }}</x-small-primary-button>
+                <x-small-primary-button href="{{ route('contact') }}">{{ __("buttons.lets_talk") }}</x-small-primary-button>
             </div>
             <div class="relative inline-block text-left">
                 @foreach(LocaleConfig::getLocales() as $locale)

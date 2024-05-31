@@ -41,7 +41,7 @@
                         <span class="font-semibold leading-relaxed">{{__("content.section_1.subtitle_2")}}</span>
                     </p>
                     <div class="my-6">
-                        <x-margin-primary-button href="">{{ __("content.pages.about") }}</x-margin-primary-button>
+                        <x-margin-primary-button href="{{ route('about') }}">{{ __("content.pages.about") }}</x-margin-primary-button>
                     </div>
                 </div>
             </div>
@@ -137,9 +137,8 @@
                                 </div>
                             </div>
                             <div class="flex place-content-center px-8">
-                                <x-block-primary-button href="">
-                                    <span
-                                        class="font-semibold">{{ __("buttons.text_us_1") }}</span>{{ __("buttons.text_us_2") }}
+                                <x-block-primary-button href="{{ route('contact') }}">
+                                    <span class="font-semibold">{{ __("buttons.text_us_1") }}</span>{{ __("buttons.text_us_2") }}
                                 </x-block-primary-button>
                             </div>
                         </div>
@@ -148,7 +147,8 @@
             </div>
             <x-waves.wave-1.bottom></x-waves.wave-1.bottom>
         </section>
-        <section class="relative flex flex-col xl:flex-row md:py-24 px-[10%] md:px-[20%] xl:pr-0 items-center overflow-hidden 3xl:gap-44">
+        <section
+            class="relative flex flex-col xl:flex-row md:py-24 px-[10%] md:px-[20%] xl:pr-0 items-center overflow-hidden 3xl:gap-44">
             <div class="flex basis-4/12 relative">
                 <div class="flex flex-col text-center md:text-left">
                     <div class="relative">
@@ -167,14 +167,12 @@
                         </div>
                         <ul class="list-disc-none py-8 hidden md:block">
                             @foreach($caseStudy as $key => $description)
-                                <li><span class="font-semibold leading-relaxed">{{ $key }}</span> : {{ $description }}
-                                </li>
+                                <li><span class="font-semibold leading-relaxed">{{ $key }}</span> : {{ $description }}</li>
                             @endforeach
                         </ul>
                         <div class="hidden md:block relative pb-8">
-                            <div
-                                class="relative flex">
-                                <x-secondary-button href="">{{ __("buttons.all_projects") }}</x-secondary-button>
+                            <div class="relative flex">
+                                <x-secondary-button href="{{ route('case-studies') }}">{{ __("buttons.all_projects") }}</x-secondary-button>
                                 <x-primary-button href="">{{ __("buttons.case_study") }}</x-primary-button>
                             </div>
                             <span class="absolute -left-[30%] -z-10">
@@ -204,7 +202,7 @@
                      alt="Vita homepage"/>
             </div>
             <div class="flex md:hidden place-content-center p-8">
-                <x-small-primary-button href="">{{ __("buttons.all_projects") }}</x-small-primary-button>
+                <x-small-primary-button href="{{ route('case-studies') }}">{{ __("buttons.all_projects") }}</x-small-primary-button>
             </div>
         </section>
 
@@ -215,7 +213,8 @@
                         {{__("content.section_5.title_1")}}</h2>
                     <span class="font-light leading-relaxed text-lg lg:text-xl relative">
                     {{__("content.section_5.subtitle_1")}}</span>
-                    <div class="flex flex-col sm:flex-row relative text-gray-400 items-center mt-8 md:justify-between lg:justify-center gap-y-8 sm:gap-x-8 lg:gap-x-16">
+                    <div
+                        class="flex flex-col sm:flex-row relative text-gray-400 items-center mt-8 md:justify-between lg:justify-center gap-y-8 sm:gap-x-8 lg:gap-x-16">
                         <div>
                             <img src="{{ asset('images/tech/laravel.svg')}}"
                                  class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110"
@@ -321,26 +320,17 @@
                     </div>
                 </div>
                 <div class="grid gap-8 pt-12 max-w-none sm:grid-cols-2 lg:grid-cols-3 relative">
-                    @for($currentArticle = 0; $currentArticle < 3; $currentArticle++)
+                    @foreach($articles as $index => $article)
                         <x-article-card
-                            imageSrc="{{ $articles[$currentArticle]['imageSrc'] }}"
-                            date="{{ $articles[$currentArticle]['date'] }}"
-                            dateFormatted="{{ $articles[$currentArticle]['dateFormatted'] }}"
-                            firstText="{{ $articles[$currentArticle]['firstText'] }}"
-                            secondText="{{ $articles[$currentArticle]['secondText'] }}"
-                            articleRoute="{{ $articles[$currentArticle]['articleRoute'] }}"
+                            imageSrc="{{ $article['imageSrc'] }}"
+                            date="{{ $article['date'] }}"
+                            dateFormatted="{{ $article['dateFormatted'] }}"
+                            firstText="{{ $article['firstText'] }}"
+                            secondText="{{ $article['secondText'] }}"
+                            articleRoute="{{ $article['articleRoute'] }}"
+                            class="{{ $index >= 3 ? 'hidden sm:flex lg:hidden' : '' }}"
                         />
-                    @endfor
-                    <div class="hidden sm:block lg:hidden">
-                        <x-article-card
-                            imageSrc="{{ $articles[3]['imageSrc'] }}"
-                            date="{{ $articles[3]['date'] }}"
-                            dateFormatted="{{ $articles[3]['dateFormatted'] }}"
-                            firstText="{{ $articles[3]['firstText'] }}"
-                            secondText="{{ $articles[3]['secondText'] }}"
-                            articleRoute="{{ $articles[3]['articleRoute'] }}"
-                        />
-                    </div>
+                    @endforeach
                 </div>
                 <div class="sm:hidden flex py-8">
                     <x-block-primary-button href="">{{__("buttons.see_all")}}</x-block-primary-button>

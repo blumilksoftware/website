@@ -15,8 +15,10 @@
     </head>
     <body>
     <div class="font-sora">
-        @include("layout.navigation")
-        <div class="min-height-100vh font-sora">
+        <div class="relative z-20">
+            @include("layout.navigation")
+        </div>
+        <div class="min-height-100vh">
         @yield("content")
         </div>
         @include("layout.footer")
