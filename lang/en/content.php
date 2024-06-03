@@ -57,4 +57,33 @@ return [
     "about.section_4.subtitle_1" => "Our company promotes ",
     "about.section_4.subtitle_2" => "work-life balance, ",
     "about.section_4.subtitle_3" => "giving employees the opportunity to develop outside of the professional sphere as well. After hours, our team builds bonds through shared passions such as board games, mountain trips, basketball tournaments, and regular outdoor meetings.",
+    "career" => [
+        "section_1" => [
+            "title_1" => "Join ",
+            "title_2" => "us!",
+            "subtitle_1" => "We believe in the power of each of our employees! Thanks to the open and friendly atmosphere, each member of our team can confidently develop their skills and achieve their professional goals. We have a nice office, right in the city center. We like each other so much that we also spend time together outside of it. Let's see if we fit together!",
+        ],
+        "section_2" => [
+            "title_1" => "Benefits",
+            "subtitle_1" => "For each team member, we provide not only interesting projects, but also a benefits package.",
+            "benefit_1" => "Flexible working hours",
+            "benefit_2" => "English with a native speaker",
+            "benefit_3" => "Private medical care",
+            "benefit_4" => "Multisport",
+            "benefit_5" => "Fruit Tuesdays",
+            "benefit_6" => "Daily dose of memes",
+        ],
+        "section_3" => [
+            "title_1" => "Internship program",
+            "subtitle_1" => "An internship at Blumilk is an excellent opportunity to learn about the programmer's work ethos, meet experienced professionals and gain inspiration for further development. As part of cooperation with ",
+            "subtitle_2" => "Collegium Witelon State University, ",
+            "subtitle_3" => "we invite students interested in internships as software engineers.",
+            "badge" => "we share experience",
+        ],
+        "section_4" => [
+            "title_1" => "Software Engineer",
+            "subtitle_1" => "Software engineer description",
+            "badge" => "join our team",
+        ],
+    ],
 ];

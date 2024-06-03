@@ -57,4 +57,33 @@ return [
     "about.section_4.subtitle_1" => "Nasza firma promuje ",
     "about.section_4.subtitle_2" => "równowagę między pracą a życiem prywatnym, ",
     "about.section_4.subtitle_3" => "dając pracownikom możliwość rozwijania się także poza sferą zawodową. Po godzinach nasz zespół buduje więzi poprzez wspólne pasje, takie jak: gry planszowe, wyprawy górskie, turnieje koszykówki czy też regularne spotkania na świeżym powietrzu.",
+    "career" => [
+        "section_1" => [
+            "title_1" => "Dołącz do ",
+            "title_2" => "nas!",
+            "subtitle_1" => "Wierzymy w moc każdego z naszych pracowników! Dzięki otwartej i przyjaznej atmosferze każdy członek naszego zespołu śmiało może rozwijać swoje umiejętności i osiągać cele zawodowe. Mamy fajne biuro, w samym centrum miasta. Na tyle się lubimy, że spędzamy ze sobą czas także poza nim. Sprawdźmy czy do siebie pasujemy!",
+        ],
+        "section_2" => [
+            "title_1" => "Benefity",
+            "subtitle_1" => "Dla każdego członka zespołu zapewniamy nie tylko ciekawe projekty, ale także pakiet benefitów.",
+            "benefit_1" => "Elastyczne godziny",
+            "benefit_2" => "Język angielski z native speakerem",
+            "benefit_3" => "Prywatna opieka medyczna",
+            "benefit_4" => "Multisport",
+            "benefit_5" => "Owocowe wtorki",
+            "benefit_6" => "Dzienna dawka memów",
+        ],
+        "section_3" => [
+            "title_1" => "Program praktyk",
+            "subtitle_1" => "Praktyki w Blumilk to doskonała okazja do zapoznania się z etosem pracy programisty, poznania doświadczonych profesjonalistów i zdobycia inspiracji do dalszego rozwoju. W ramach współpracy z ",
+            "subtitle_2" => "Collegium Witelona Uczelnia Państwowa ",
+            "subtitle_3" => "zapraszamy studentów zainteresowanych praktykami w roli inżyniera oprogramowania.",
+            "badge" => "dzielimy się doświadczeniem",
+        ],
+        "section_4" => [
+            "title_1" => "Inżynier oprogramowania",
+            "subtitle_1" => "Opis inżyniera oprogramowania",
+            "badge" => "dołącz do naszego team'u",
+        ],
+    ],
 ];

@@ -11,4 +11,7 @@ return [
     "see_all" => "See all",
     "send" => "Send",
     "read_more" => "Read more",
+    "join_team" => "Join the team",
+    "apply_internship" => "Apply for an internship!",
+    "apply_now" => "Apply now!",
 ];

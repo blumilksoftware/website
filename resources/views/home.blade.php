@@ -77,7 +77,6 @@
         </section>
 
         <section class="bg-gradient-to-br from-gray-light to-white">
-
             <x-waves.wave-1.top></x-waves.wave-1.top>
             <div class="flex flex-col 2xl:flex-row px-[10%] md:px-[20%] pt-24 gap-24">
                 <div class="flex basis-1/2 flex-col justify-center align-middle place-content-center">
