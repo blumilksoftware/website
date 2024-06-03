@@ -19,7 +19,7 @@ class CaseStudyFactory extends Factory
         return [
             "name" => $this->translations($locales, $this->faker->sentence),
             "description" => $this->translations($locales, $this->faker->paragraph),
-            "photo" => sprintf("%s/%s", CaseStudy::PHOTOS_DIRECTORY, $this->faker->image("public/storage/case-studies", width: 240, height: 240, fullPath: false)),
+            "photo" => sprintf("%s/%s", "factory", "case_study.jpg"),
             "published" => $this->faker->boolean,
             "company" => $this->faker->company,
             "slug" => $this->faker->slug,

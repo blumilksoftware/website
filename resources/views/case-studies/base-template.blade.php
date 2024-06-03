@@ -27,8 +27,8 @@
         </div>
         <div class="pt-12 md:py-24 w-full">
             <div class="relative m-auto rounded-3xl md:bg-gray-dark aspect-[5/3] max-w-4xl h-full pl-1 -rotate-6 -left-2 bottom-2">
-                <img src="{{ asset('storage/' . $caseStudy->photo)  }}"
-                     class="relative aspect-[5/3] flex w-full h-full rounded-3xl bg-white rotate-6 left-4 -bottom-2"
+                <img src="{{ asset($caseStudy->photo)  }}"
+                     class="relative aspect-[5/3] flex w-full h-full rounded-3xl bg-white rotate-6 left-6 -bottom-2"
                      alt="{{ $caseStudy->company }}"/>
             </div>
         </div>
