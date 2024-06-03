@@ -40,8 +40,7 @@
                                 <a href="#" class="font-semibold text-white">{{ __("footer.form.policy") }}</a>
                             </p>
                         </div>
-                        <x-margin-primary-button type="submit"
-                                                 href="">{{ __("buttons.send") }}</x-margin-primary-button>
+                        <x-primary-button type="submit" href="" class="px-14">{{ __("buttons.send") }}</x-primary-button>
                     </div>
                 </form>
             </div>

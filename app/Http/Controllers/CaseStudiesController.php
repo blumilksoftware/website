@@ -12,16 +12,18 @@ class CaseStudiesController extends Controller
 {
     public function index(Factory $factory): View
     {
-        $caseStudies = CaseStudy::all()->where("published", true);
+        $caseStudies = CaseStudy::query()->where("published", true)->get();
 
-        return $factory->make("case_studies", compact("caseStudies"));
+        return $factory->make("case_studies")
+            ->with("caseStudies", $caseStudies);
     }
 
     public function get(Factory $factory, string $slug): View
     {
-        $caseStudy = CaseStudy::where("slug", $slug)->firstOrFail();
+        $caseStudy = CaseStudy::query()->where("slug", $slug)->firstOrFail();
         $view = preg_replace('/\.blade\.php$/', "", $caseStudy->template);
 
-        return $factory->make("case-studies/$view", compact("caseStudy"));
+        return $factory->make("case-studies/$view")
+            ->with("caseStudy", $caseStudy);
     }
 }

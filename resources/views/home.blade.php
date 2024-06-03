@@ -41,7 +41,7 @@
                         <span class="font-semibold leading-relaxed">{{__("content.section_1.subtitle_2")}}</span>
                     </p>
                     <div class="my-6">
-                        <x-margin-primary-button href="{{ route('about') }}">{{ __("content.pages.about") }}</x-margin-primary-button>
+                        <x-primary-button href="{{ route('about') }}" class="px-14">{{ __("content.pages.about") }}</x-primary-button>
                     </div>
                 </div>
             </div>
@@ -172,8 +172,8 @@
                         </ul>
                         <div class="hidden md:block relative pb-8">
                             <div class="relative flex">
-                                <x-secondary-button href="{{ route('case-studies') }}">{{ __("buttons.all_projects") }}</x-secondary-button>
-                                <x-primary-button href="">{{ __("buttons.case_study") }}</x-primary-button>
+                                <x-secondary-button href="{{ route('case-studies') }}" class="flex">{{ __("buttons.all_projects") }}</x-secondary-button>
+                                <x-primary-button href="" class="flex h-full">{{ __("buttons.case_study") }}</x-primary-button>
                             </div>
                             <span class="absolute -left-[30%] -z-10">
                                 <x-bubble size="30"/>
@@ -316,7 +316,7 @@
                 <div class="relative flex flex-row items-center justify-between">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">{{__("content.section_7.title_1")}}</h2>
                     <div class="hidden sm:block">
-                        <x-margin-primary-button href="">{{__("buttons.see_all")}}</x-margin-primary-button>
+                        <x-primary-button href="" class="px-14">{{__("buttons.see_all")}}</x-primary-button>
                     </div>
                 </div>
                 <div class="grid gap-8 pt-12 max-w-none sm:grid-cols-2 lg:grid-cols-3 relative">

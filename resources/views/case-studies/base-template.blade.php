@@ -26,9 +26,9 @@
             </div>
         </div>
         <div class="pt-12 md:py-24 w-full">
-            <div class="m-auto rounded-3xl md:bg-gray-dark aspect-[5/3] max-w-4xl h-full -rotate-3 relative md:shadow-md -left-2">
+            <div class="relative m-auto rounded-3xl md:bg-gray-dark aspect-[5/3] max-w-4xl h-full pl-1 -rotate-6 -left-2 bottom-2">
                 <img src="{{ asset('storage/' . $caseStudy->photo)  }}"
-                     class="relative aspect-[5/3] flex w-full h-full rounded-3xl bg-white shadow-md rotate-3 left-4"
+                     class="relative aspect-[5/3] flex w-full h-full rounded-3xl bg-white rotate-6 left-4 -bottom-2"
                      alt="{{ $caseStudy->company }}"/>
             </div>
         </div>
@@ -49,8 +49,8 @@
             </h2>
             <span class="font-light leading-relaxed text-xl relative">{{__("content.case_study.section_2.subtitle_1")}}</span>
             <div class="mx-auto flex">
-                <x-secondary-button href="{{ route('case-studies') }}">{{ __('buttons.back_to_portfolio') }}</x-secondary-button>
-                <x-primary-button href="{{ route('contact') }}">{{ __("buttons.text_us") }}</x-primary-button>
+                <x-secondary-button href="{{ route('case-studies') }}" class="px-14">{{ __('buttons.back_to_portfolio') }}</x-secondary-button>
+                <x-primary-button class="px-14" href="{{ route('contact') }}">{{ __("buttons.text_us") }}</x-primary-button>
             </div>
         </div>
     </section>

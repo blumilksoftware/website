@@ -3,7 +3,7 @@
         "Project": "E-commerce Application",
         "Client": "XYZ Company",
         "Objective": "Increase online sales by 30% within a year",
-        "Scope": "UI/Ux, payment methods, mobile version",
+        "Scope": "UI/UX, payment methods, mobile version",
         "Technologies": "Node.js, React, MongoDB, Stripe API"
     },
     {
