@@ -49,7 +49,7 @@
         </div>
         <x-waves.wave-3.bottom></x-waves.wave-3.bottom>
     </section>
-    <section class="relative flex flex-col-reverse py-10 xl:flex-row px-[10%] md:px-[20%] gap-x-16 -top-44">
+    <section class="relative flex flex-col-reverse pt-10 xl:flex-row px-[10%] md:px-[20%] gap-x-16 -top-24 2xl:-top-44 gap-y-12">
         <div class="flex relative self-center">
             <img src="{{ asset('graphics/web-1.png') }}" class="h-auto w-full xl:h-full xl:w-auto aspect-auto object-center shrink-0"
                  alt="placeholder"/>
@@ -57,33 +57,27 @@
         <div class="flex basis-1/2 relative flex-col justify-between">
             <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:justify-start xl:text-start py-4">
                 <h2 class="font-semibold text-gray-900 leading-snug">{{__("content.career.section_3.title_1")}}</h2>
-                <x-badge class="py-8 flex place-items-center">{{__("content.career.section_3.badge")}}</x-badge>
+                <x-badge class="py-8 flex place-items-center justify-center xl:justify-start">{{__("content.career.section_3.badge")}}</x-badge>
                 <p class="text-lg lg:text-xl font-light text-center xl:text-start">
                     <span class="leading-relaxed">{{__("content.career.section_3.subtitle_1")}}</span>
                     <span class="font-semibold leading-relaxed">{{__("content.career.section_3.subtitle_2")}}</span>
                     <span class="leading-relaxed">{{__("content.career.section_3.subtitle_3")}}</span>
                 </p>
             </div>
-            <div class="my-6">
-                <x-primary-button href="https://praktyki.blumilk.pl/" class="px-14">{{ __("buttons.apply_internship") }}</x-primary-button>
-            </div>
+            <x-primary-button href="https://praktyki.blumilk.pl/" class="px-14 my-6 flex m-auto xl:m-0 xl:mr-auto xl:justify-start">{{ __("buttons.apply_internship") }}</x-primary-button>
         </div>
     </section>
-    <section class="flex self-center py-10 xl:flex-row px-[10%] md:px-[20%] gap-x-16">
-        <div class="flex xl:basis-1/2 relative flex-col xl:justify-between gap-5">
+    <section class="flex xl:flex-row px-[10%] md:px-[20%] xl:gap-x-16">
+        <div class="flex xl:basis-1/2 relative flex-col justify-start xl:justify-between">
             <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:justify-start xl:text-start py-4">
                 <h2 class="font-semibold text-gray-900 leading-snug">{{__("content.career.section_4.title_1")}}</h2>
-                <x-badge class="py-8 flex place-items-center">{{__("content.career.section_4.badge")}}</x-badge>
-
+                <x-badge class="py-8 flex place-items-center justify-center xl:justify-start">{{__("content.career.section_4.badge")}}</x-badge>
                 <p class="text-lg lg:text-xl font-light text-center xl:text-start">
                     <span class="leading-relaxed font-semibold block">{{__("content.career.section_4.subtitle_1")}}</span>
                     <span class="leading-relaxed">{{__("content.career.section_4.subtitle_2")}}</span>
-
                 </p>
             </div>
-            <div class="my-6 relative">
-                <x-primary-button href="{{ route('career.softwareEngineer') }}" class="px-14">{{ __("buttons.apply_now") }}</x-primary-button>
-            </div>
+            <x-primary-button href="{{ route('career.softwareEngineer') }}" class="px-14 my-6 flex m-auto xl:m-0 xl:mr-auto xl:justify-start">{{ __("buttons.apply_now") }}</x-primary-button>
         </div>
         <div class="hidden xl:flex relative self-center">
             <img src="{{ asset('graphics/web-1.png') }}" class="h-auto w-full xl:h-full xl:w-auto aspect-auto object-center shrink-0"
