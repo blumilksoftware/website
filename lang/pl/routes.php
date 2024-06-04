@@ -13,5 +13,5 @@ return [
     "meetups" => "meetupy",
     "events" => "wydarzenia",
     "events/{slug}" => "wydarzenia/{slug}",
-    "software_engineer" => "inzynier-oprogramowania",
+    "software-engineer" => "inzynier-oprogramowania",
 ];
