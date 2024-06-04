@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Database\Factories;
 
-use Blumilk\Website\Models\Activity;
 use Blumilk\Website\Models\CaseStudy;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
@@ -20,11 +19,11 @@ class CaseStudyFactory extends Factory
         return [
             "name" => $this->translations($locales, $this->faker->sentence),
             "description" => $this->translations($locales, $this->faker->paragraph),
-            "photo" => sprintf("%s/%s", Activity::PHOTOS_DIRECTORY, $this->faker->image("public/storage/activities", width: 240, height: 240, fullPath: false)),
+            "photo" => sprintf("%s/%s", "factory", "case_study.jpg"),
             "published" => $this->faker->boolean,
             "company" => $this->faker->company,
             "slug" => $this->faker->slug,
-            "template" => "example-template.blade.php",
+            "template" => "base-template.blade.php",
         ];
     }
 }
