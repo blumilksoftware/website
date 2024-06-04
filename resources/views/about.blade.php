@@ -101,7 +101,7 @@
             </div>
         </div>
     </section>
-    <section class="relative bg-gradient-to-b from-gray-light to-white z-20">
+    <section class="relative bg-gradient-to-b from-gray-light to-white">
         <x-waves.wave-2.top></x-waves.wave-2.top>
         <div class="grid xl:grid-cols-2 2xl:grid-cols-3 gap-2 text-center xl:text-left px-[10%] md:px-[20%] z-20 pt-20">
             <div class="grid xl:col-span-1">
