@@ -12,11 +12,10 @@
             <x-bubble size="40"/>
         </div>
     </div>
-    <section
-        class="relative flex flex-col-reverse 2xl:flex-row text-center md:text-left px-[10%] md:px-[20%] z-20 pt-20">
+    <section class="flex flex-col-reverse 2xl:flex-row text-center md:text-left px-[10%] md:px-[20%] pt-20">
         <div class="basis-3/5 3xl:basis-1/2">
             <div class="relative">
-                <x-badge>{{__("content.software_engineer.section_1.badge")}}</x-badge>
+                <x-badge class="py-4">{{__("content.software_engineer.section_1.badge")}}</x-badge>
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">{{__("content.software_engineer.section_1.title_1")}}
                     <span
                         class="leading-relaxed font-semibold text-website-normal">{{__("content.software_engineer.section_1.title_2")}}</span>
@@ -69,7 +68,7 @@
                 </ul>
             </div>
         </div>
-        <div class="basis-2/5 3xl:basis-1/2 self-center">
+        <div class="basis-2/5 3xl:basis-1/2 self-center relative z-10">
             <img src="{{ asset('graphics/web-1.png') }}" class="h-auto w-full aspect-auto object-center shrink-0"
                  alt="placeholder"/>
         </div>

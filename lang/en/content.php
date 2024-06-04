@@ -130,7 +130,8 @@ return [
         ],
         "section_4" => [
             "title_1" => "Software Engineer",
-            "subtitle_1" => "Software engineer description",
+            "subtitle_1" => "Are you a programmer specializing in the design and development of web applications? Apply if you work in PHP and Laravel technology.",
+            "subtitle_2" => "Do you work in a different technology? We are open to dialogue.",
             "badge" => "join our team",
         ],
     ],
