@@ -3,7 +3,7 @@
         "Project": "E-commerce Application",
         "Client": "XYZ Company",
         "Objective": "Increase online sales by 30% within a year",
-        "Scope": "Development of a new e-commerce platform with an intuitive interface, integration with payment systems, optimization for mobile devices",
+        "Scope": "UI/UX, payment methods, mobile version",
         "Technologies": "Node.js, React, MongoDB, Stripe API"
     },
     {

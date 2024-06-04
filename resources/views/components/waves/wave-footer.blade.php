@@ -1,5 +1,5 @@
 <div class="relative">
-    <div class="bg-binary bg-cover bg-top bg-no-repeat min-w-full absolute z-10 -top-80 inset-0">
+    <div class="md:bg-binary bg-cover bg-top bg-no-repeat min-w-full absolute z-10 -top-80 inset-0">
     </div>
     <svg id="Warstwa_1" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 84.7" class="relative -top-1">
         <defs>
