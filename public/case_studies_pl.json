@@ -3,7 +3,7 @@
         "Projekt": "Aplikacja e-commerce",
         "Klient": "Firma XYZ",
         "Cel": "Zwiększenie sprzedaży online o 30% w ciągu roku",
-        "Zakres": "Rozwój nowej platformy e-commerce z intuicyjnym interfejsem, integracja z systemami płatności, optymalizacja dla urządzeń mobilnych",
+        "Zakres": "UI/UX, systemy płatności, wersja mobilna",
         "Technologie": "Node.js, React, MongoDB, Stripe API"
     },
     {

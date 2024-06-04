@@ -16,21 +16,23 @@ module.exports = {
     extend: {
       colors: {
         gray: {
-          light: '#f0f1f7',
+          extraLight: '#F5F6FA',
+          light: '#F0F1F7',
           dark: '#F1F3F6',
+          extraDark: '#EAEBF3'
         },
         bubble: '#DAE3F0',
-        brand: '#527aba',
-        background: '#f4f8fd',
+        brand: '#527ABA',
+        background: '#F4F8FD',
         website: {
-          normal: '#5379f6',
-          light: '#7c9cfc',
+          normal: '#5379F6',
+          light: '#7C9CFC',
           extra_light: '#E2EAFF',
         },
         navigation: '#FAFAFA',
         footer: {
           dark: '#044088',
-          light: '#015fc8',
+          light: '#015FC8',
         },
 
       },

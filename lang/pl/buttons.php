@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 return [
     "lets_talk" => "Porozmawiajmy",
+    "text_us" => "Napisz do nas!",
     "text_us_1" => "Napisz ",
     "text_us_2" => "do nas!",
     "all_projects" => "Zobacz wszystkie projekty",
@@ -11,4 +12,5 @@ return [
     "see_all" => "Zobacz wszystkie",
     "send" => "Wyślij",
     "read_more" => "Czytaj więcej",
+    "back_to_portfolio" => "Wróć do portfolio",
 ];

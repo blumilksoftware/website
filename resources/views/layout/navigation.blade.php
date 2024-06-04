@@ -17,21 +17,21 @@
         </div>
         <div class="md:flex hidden justify-center items-center text-sm 3xl:text-lg">
             <p class="font-medium flex items-center text-center gap-2">
-                <a href="{{route('about')}}"
-                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if($current === "about") bg-website-extra_light text-website-normal @endif">{{ __("content.pages.about") }}</a>
-                <a href="{{ route("case-studies") }}"
-                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if($current === "case-studies") bg-website-extra_light text-website-normal @endif">{{ __("content.pages.case_study") }}</a>
-                <a href="{{ route("partners") }}"
-                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if($current === "partners") bg-website-extra_light text-website-normal @endif">{{ __("content.pages.partners") }}</a>
-                <a href="{{ route("career") }}"
-                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if($current === "career") bg-website-extra_light text-website-normal @endif">{{ __("content.pages.career") }}</a>
-                <a href="{{ route("contact") }}"
-                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if($current === "contact") bg-website-extra_light text-website-normal @endif">{{ __("content.pages.contact") }}</a>
+                <a href="{{ route('about') }}"
+                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if(Str::contains($current, 'about')) bg-website-extra_light text-website-normal @endif">{{ __("content.pages.about") }}</a>
+                <a href="{{ route('case-studies') }}"
+                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if(Str::contains($current, 'case-studies')) bg-website-extra_light text-website-normal @endif">{{ __("content.pages.case_study") }}</a>
+                <a href="{{ route('partners') }}"
+                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if(Str::contains($current, 'partners')) bg-website-extra_light text-website-normal @endif">{{ __("content.pages.partners") }}</a>
+                <a href="{{ route('career') }}"
+                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if(Str::contains($current, 'career')) bg-website-extra_light text-website-normal @endif">{{ __("content.pages.career") }}</a>
+                <a href="{{ route('contact') }}"
+                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if(Str::contains($current, 'contact')) bg-website-extra_light text-website-normal @endif">{{ __("content.pages.contact") }}</a>
             </p>
         </div>
         <div class="md:flex hidden gap-4">
             <div class="items-center">
-                <x-small-primary-button href="#">{{ __("buttons.lets_talk") }}</x-small-primary-button>
+                <x-small-primary-button href="{{ route('contact') }}">{{ __("buttons.lets_talk") }}</x-small-primary-button>
             </div>
             <div class="relative inline-block text-left">
                 @foreach(LocaleConfig::getLocales() as $locale)
@@ -41,7 +41,7 @@
                                 class="flex h-full items-center place-content-center gap-x-1.5 bg-white px-3 py-2 text-sm 3xl:text-md font-semibold text-gray-500 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 uppercase"
                                 id="desktopLocalesButton" aria-expanded="true" aria-haspopup="true">
                             {{ $locale }}
-                            <i class="fa-solid fa-chevron-up fa-rotate-180 langArrow text-gray-500"></i>
+                            <i :class="{'rotate-0': openLang, 'rotate-180': ! openLang}" class="fa-solid fa-chevron-up text-gray-500"></i>
                         </button>
                     @endif
                 @endforeach
@@ -117,7 +117,7 @@
                                     class="flex w-full h-full justify-between items-center place-content-center gap-x-1.5 mt-4 text-lg sm:text-xl font-semibold text-black hover:text-website-normal uppercase"
                                     id="mobileLocalesButton" aria-expanded="true" aria-haspopup="true">
                                 {{ $locale }}
-                                <i class="fa-solid fa-chevron-up fa-rotate-180 langArrow text-gray-500"></i>
+                                <i :class="{'rotate-0': openLang, 'rotate-180': ! openLang}" class="fa-solid fa-chevron-up text-gray-500"></i>
                             </button>
                         @endif
                     @endforeach
