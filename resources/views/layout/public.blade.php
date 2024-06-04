@@ -13,14 +13,12 @@
         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     </head>
-    <body>
-    <div class="font-sora">
+    <body class="font-sora bg-white">
         @include("layout.navigation")
         <div class="min-height-100vh font-sora">
         @yield("content")
         </div>
         @include("layout.footer")
-    </div>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </body>
 </html>

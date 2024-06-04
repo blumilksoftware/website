@@ -21,7 +21,7 @@ module.exports = {
         },
         bubble: '#DAE3F0',
         brand: '#527aba',
-        background: '#f4f8fd',
+        background: '#fBFBFB',
         website: {
           normal: '#5379f6',
           light: '#7c9cfc',

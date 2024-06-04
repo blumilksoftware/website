@@ -78,7 +78,7 @@
 
         <section class="bg-gradient-to-br from-gray-light to-white">
             <x-waves.wave-1.top></x-waves.wave-1.top>
-            <div class="flex flex-col 2xl:flex-row px-[10%] md:px-[20%] pt-24 gap-24">
+            <div class="flex flex-col 2xl:flex-row px-[10%] md:px-[20%] pt-32 gap-24">
                 <div class="flex basis-1/2 flex-col justify-center align-middle place-content-center">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4 text-center md:text-left">
                         {{__("content.section_3.title_1")}}</h2>
@@ -87,20 +87,20 @@
                             <span class="leading-relaxed">{{__("content.section_3.subtitle_1")}}</span>
                             <span class="font-semibold">{{__("content.section_3.subtitle_2")}}</span>
                         </div>
-                        <ul class="py-8 md:-ml-4 text-md justify-center">
-                            <li class="flex items-center text-left">
+                        <ul class="py-8 md:-ml-4 text-md justify-center space-y-4">
+                            <li class="flex items-center text-left leading-relaxed gap-x-4">
                                 <x-icons.arrow></x-icons.arrow>
                                 {{__("content.section_3.content_1")}}
                             </li>
-                            <li class="flex items-center text-left">
+                            <li class="flex items-center text-left leading-relaxed gap-x-4">
                                 <x-icons.arrow></x-icons.arrow>
                                 {{__("content.section_3.content_2")}}
                             </li>
-                            <li class="flex items-center text-left">
+                            <li class="flex items-center text-left leading-relaxed gap-x-4">
                                 <x-icons.arrow></x-icons.arrow>
                                 {{__("content.section_3.content_3")}}
                             </li>
-                            <li class="flex items-center text-left">
+                            <li class="flex items-center text-left leading-relaxed gap-x-4">
                                 <x-icons.arrow></x-icons.arrow>
                                 {{__("content.section_3.content_4")}}
                             </li>
@@ -129,7 +129,7 @@
                     </div>
                 </div>
             </div>
-            <x-waves.wave-1.bottom></x-waves.wave-1.bottom>
+            <x-waves.wave-3.bottom></x-waves.wave-3.bottom>
         </section>
         <section class="relative flex flex-col xl:flex-row md:py-24 px-[10%] md:px-[20%] xl:pr-0 items-center overflow-hidden 3xl:gap-44">
             <div class="flex basis-3/12 relative">
