@@ -17,18 +17,17 @@
             <div class="relative">
                 <x-badge class="py-4">{{__("content.software_engineer.section_1.badge")}}</x-badge>
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">{{__("content.software_engineer.section_1.title_1")}}
-                    <span
-                        class="leading-relaxed font-semibold text-website-normal">{{__("content.software_engineer.section_1.title_2")}}</span>
+                    <span class="leading-relaxed font-semibold text-website-normal">{{__("content.software_engineer.section_1.title_2")}}</span>
                 </h2>
             </div>
-            <div class="text-black relative py-8 text-center xl:text-left text-md md:text-lg lg:text-xl font-light">
+            <div class="text-black relative pb-8 text-center xl:text-left text-md lg:text-lg font-light">
                 <span class="leading-relaxed">{{__("content.software_engineer.section_1.subtitle_1")}}</span>
             </div>
             <div class="text-black text-center md:text-left">
-                <div class="text-lg lg:text-xl leading-relaxed">
+                <div class="text-md lg:text-lg leading-relaxed">
                     <span class="font-semibold">{{__("content.software_engineer.section_1.subtitle_2")}}</span>
                 </div>
-                <ul class="text-black text-md md:text-lg lg:text-xl text-center md:text-left pt-8 md:-ml-4 font-light justify-center space-y-4">
+                <ul class="text-black text-md lg:text-lg text-center md:text-left pt-8 md:-ml-4 font-light justify-center space-y-4">
                     <li class="flex items-start sm:items-center text-left leading-relaxed gap-x-4">
                         <x-icons.arrow></x-icons.arrow>
                         {{__("content.software_engineer.section_1.content_1")}}
@@ -83,7 +82,7 @@
             <div class="flex basis-3/5 flex-col justify-center">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4 text-center md:text-left">
                     {{__("content.software_engineer.section_2.title_1")}}</h2>
-                    <ul class="text-black text-md md:text-lg lg:text-xl text-center md:text-left pt-8 md:-ml-4 font-light justify-center space-y-4">
+                    <ul class="text-black lg:text-xl text-center md:text-left pt-8 md:-ml-4 font-light justify-center space-y-4">
                         <li class="flex items-start sm:items-center text-left leading-relaxed gap-x-4">
                             <x-icons.arrow></x-icons.arrow>
                             {{__("content.software_engineer.section_2.content_1")}}

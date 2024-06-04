@@ -23,7 +23,7 @@
                 </h2>
             </div>
             <div class="items-center 2xl:items-start ">
-                <p class="text-lg lg:text-xl font-light text-center 2xl:text-start pr-12">
+                <p class="text-lg lg:text-xl font-light text-center 2xl:text-start 2xl:pr-12">
                     <span class="leading-relaxed">{{__("content.about.section_1.subtitle_1")}}</span>
                     <span class="font-medium leading-relaxed ">{{__("content.about.section_1.subtitle_2")}}</span>
                 </p>

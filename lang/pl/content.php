@@ -131,7 +131,7 @@ return [
             "title_1" => "Inżynier oprogramowania",
             "subtitle_1" => "Jesteś programistą specjalizującym się w dziedzinie projektowania i wytwarzania aplikacji internetowych? Aplikuj, jeśli działasz w technologii PHP i Laravel.",
             "subtitle_2" => "Działasz w innej technologii? Jesteśmy otwarci na dialog.",
-            "badge" => "dołącz do naszego team'u",
+            "badge" => "dołącz do naszego teamu",
         ],
     ],
     "software_engineer" => [

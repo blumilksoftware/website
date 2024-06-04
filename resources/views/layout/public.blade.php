@@ -14,7 +14,7 @@
         <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     </head>
     <body class="font-sora">
-        <div class="relative z-20">
+        <div class="relative z-30">
             @include("layout.navigation")
         </div>
         <div class="min-height-100vh relative z-20">
