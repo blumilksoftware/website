@@ -2,7 +2,7 @@
     <defs>
         <style>
             .cls-1 {
-                fill: #fff;
+                fill: #FFFFFF;
                 stroke-width: 0px;
             }
         </style>

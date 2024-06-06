@@ -83,31 +83,31 @@
                        class="fa-solid fa-xmark text-2xl text-brand"></i>
                 </button>
             </div>
-            <button
-                class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start @if($current === "about") text-website-normal @endif"
-                onclick="window.location='{{ route("about") }}';">
-                <a class="my-4 p-2 start">{{ __("content.pages.about") }}</a>
-            </button>
-            <button
-                class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start @if($current === "case-studies") text-website-normal @endif"
-                onclick="window.location='{{ route("case-studies") }}';">
-                <a class="my-4 p-2">{{ __("content.pages.case_study") }}</a>
-            </button>
-            <button
-                class="w-full hover:text-website-normal py-4 text-lg sm:text-xl text-start @if($current === "partners") text-website-normal @endif"
-                onclick="window.location='{{ route("partners") }}';">
-                <a class="my-4 p-2">{{ __("content.pages.partners") }}</a>
-            </button>
-            <button
-                class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start @if($current === "career") text-website-normal @endif"
-                onclick="window.location='{{ route("career") }}';">
-                <a class="my-4 p-2">{{ __("content.pages.career") }}</a>
-            </button>
-            <button
-                class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start @if($current === "contact") text-website-normal @endif"
-                onclick="window.location='{{ route("contact") }}';">
-                <a class="my-4 p-2">{{ __("content.pages.contact") }}</a>
-            </button>
+            <div class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start @if(Str::contains($current, 'about')) text-website-normal @endif">
+                <a href="{{ route('about') }}" class="my-4 p-2 start">
+                    {{ __("content.pages.about") }}
+                </a>
+            </div>
+            <div class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start @if(Str::contains($current, 'case-studies')) text-website-normal @endif">
+                <a href="{{ route('case-studies') }}" class="my-4 p-2">
+                    {{ __("content.pages.case_study") }}
+                </a>
+            </div>
+            <div class="w-full hover:text-website-normal py-4 text-lg sm:text-xl text-start @if(Str::contains($current, 'partners')) text-website-normal @endif">
+                <a href="{{ route('partners') }}" class="my-4 p-2">
+                    {{ __("content.pages.partners") }}
+                </a>
+            </div>
+            <div class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start @if(Str::contains($current, 'career')) text-website-normal @endif">
+                <a href="{{ route('career') }}" class="my-4 p-2">
+                    {{ __("content.pages.career") }}
+                </a>
+            </div>
+            <div class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start @if(Str::contains($current, 'contact')) text-website-normal @endif">
+                <a href="{{ route('contact') }}" class="my-4 p-2">
+                    {{ __("content.pages.contact") }}
+                </a>
+            </div>
             <div class="w-full px-2">
                 <div class="relative flex flex-col text-left">
                     @foreach(LocaleConfig::getLocales() as $locale)
@@ -138,7 +138,7 @@
             </div>
         </div>
         <div class="w-full pb-14">
-            <x-small-primary-button icon="text" href="#">{{ __("buttons.lets_talk") }}</x-small-primary-button>
+            <x-small-primary-button icon="text" href="{{ route('contact') }}">{{ __("buttons.lets_talk") }}</x-small-primary-button>
         </div>
     </nav>
 </nav>

@@ -9,8 +9,13 @@ use Illuminate\Contracts\View\View;
 
 class CareerController extends Controller
 {
-    public function __invoke(Factory $factory): View
+    public function index(Factory $factory): View
     {
         return $factory->make("career");
+    }
+
+    public function softwareEngineerPage(Factory $factory): View
+    {
+        return $factory->make("software_engineer");
     }
 }

@@ -23,7 +23,7 @@ module.exports = {
         },
         bubble: '#DAE3F0',
         brand: '#527ABA',
-        background: '#F4F8FD',
+        background: '#FBFBFB',
         website: {
           normal: '#5379F6',
           light: '#7C9CFC',

@@ -12,5 +12,8 @@ return [
     "see_all" => "Zobacz wszystkie",
     "send" => "Wyślij",
     "read_more" => "Czytaj więcej",
+    "join_team" => "Dołącz do zespołu",
+    "apply_internship" => "Zgłoś się na praktyki!",
+    "apply_now" => "Aplikuj teraz!",
     "back_to_portfolio" => "Wróć do portfolio",
 ];
