@@ -16,7 +16,8 @@
         "laravel/framework": "^11.0",
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
-        "mvenghaus/filament-plugin-translatable-inline": "^3.0"
+        "mvenghaus/filament-plugin-translatable-inline": "^3.0",
+        "nesbot/carbon": "^3.5"
     },
     "require-dev": {
         "blumilksoftware/codestyle": "^v3.0",

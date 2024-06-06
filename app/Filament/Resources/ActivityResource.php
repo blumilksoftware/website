@@ -63,6 +63,9 @@ class ActivityResource extends Resource
                                 ->required()
                                 ->maxLength(65000),
                         )->requiredLocales(config("app.translatable_locales")),
+                        Forms\Components\TagsInput::make("tags")
+                            ->label("Tagi")
+                            ->suggestions(static::getTags()),
                         Forms\Components\FileUpload::make("photo")
                             ->label("Zdjęcie")
                             ->required()
@@ -140,5 +143,15 @@ class ActivityResource extends Resource
     public static function getTranslatableLocales(): array
     {
         return config("app.translatable_locales");
+    }
+
+    public static function getTags(): array
+    {
+        return [
+            "Witelon State University",
+            "SoDa",
+            "Tech Meetup Legnica",
+            "Publications",
+        ];
     }
 }

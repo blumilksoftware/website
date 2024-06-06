@@ -36,6 +36,7 @@ class Activity extends Model
         "description",
         "published",
         "published_at",
+        "tags",
     ];
     protected $casts = [
         "title" => "array",
@@ -43,5 +44,6 @@ class Activity extends Model
         "description" => "array",
         "published" => "boolean",
         "published_at" => "datetime",
+        "tags" => "array",
     ];
 }
