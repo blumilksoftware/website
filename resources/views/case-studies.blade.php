@@ -30,7 +30,7 @@
             <span class="font-light leading-relaxed text-xl block" >{{__("content.case_studies.section_1.subtitle_1")}}</span>
             <span class="font-light leading-relaxed text-xl" >{{__("content.case_studies.section_1.subtitle_2")}}</span>
         </div>
-        <div class="grid lg:grid-cols-2 gap-12 3xl:mx-32">
+        <div class="grid lg:grid-cols-2 gap-20">
             @foreach($caseStudies as $index => $caseStudy)
                 <x-case-study-tile :caseStudy="$caseStudy" class="{{ $index >= 3 ? 'hidden lg:grid' : '' }}"/>
             @endforeach
