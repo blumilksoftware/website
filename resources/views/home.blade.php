@@ -55,10 +55,10 @@
             <div class="text-2xl lg:text-3xl font-semibold text-gray-400">{{ __("content.home.section_2.title_1") }}<span
                     class="text-website-normal">{{ __("content.home.section_2.title_2") }}</span>
             </div>
-            <div class="absolute hidden lg:block -left-[10%] lg:-left-[3%] top-0">
+            <div class="absolute z-10 hidden lg:block -left-[10%] lg:-left-[3%] top-0">
                 <x-bubble size="250"/>
             </div>
-            <div class="absolute hidden lg:block -right-[10%] lg:right-[5%] -top-8">
+            <div class="absolute z-10 hidden lg:block -right-[10%] lg:right-[5%] -top-8">
                 <x-bubble size="200"/>
             </div>
             <div
