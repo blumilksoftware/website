@@ -41,7 +41,13 @@ return [
         ],
         "section_5" => [
             "title_1" => "Tech Stack",
-            "subtitle_1" => "PHP and Laravel are our main tools. GitHub serves as our central platform, enabling code review and CI/CD through GitHub Actions. We build the frontend using Vue.js and utilize various database management systems, such as MySQL and PostgreSQL.",
+            "subtitle_1" => "PHP and Laravel ",
+            "subtitle_2" => "are our main tools. ",
+            "subtitle_3" => "GitHub ",
+            "subtitle_4" => "serves as our central platform, enabling code review and CI/CD through GitHub Actions. We build the frontend using ",
+            "subtitle_5" => "Vue.js ",
+            "subtitle_6" => "and utilize various database management systems, such as ",
+            "subtitle_7" => "MySQL and PostgreSQL.",
         ],
         "section_6" => [
             "badge" => "reviews",

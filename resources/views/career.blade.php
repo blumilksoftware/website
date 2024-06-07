@@ -25,7 +25,7 @@
                     {{__("content.career.section_1.subtitle_1")}}
                 </p>
                 <div class="hidden sm:block my-6">
-                    <x-primary-button href="{{ route('contact') }}" class="px-14">{{ __("buttons.join_team") }}</x-primary-button>
+                    <x-primary-button href="{{ route('contact') }}" class="px-16">{{ __("buttons.join_team") }}</x-primary-button>
                 </div>
             </div>
         </div>
@@ -64,7 +64,7 @@
                     <span class="leading-relaxed">{{__("content.career.section_3.subtitle_3")}}</span>
                 </p>
             </div>
-            <x-primary-button href="https://praktyki.blumilk.pl/" class="px-14 my-6 flex m-auto xl:m-0 xl:mr-auto xl:justify-start">{{ __("buttons.apply_internship") }}</x-primary-button>
+            <x-primary-button href="https://praktyki.blumilk.pl/" class="px-16 my-6 flex m-auto xl:m-0 xl:mr-auto xl:justify-start">{{ __("buttons.apply_internship") }}</x-primary-button>
         </div>
     </section>
     <section class="flex xl:flex-row px-[10%] md:px-[20%] xl:gap-x-16">
@@ -73,11 +73,11 @@
                 <h2 class="font-semibold text-gray-900 leading-snug text-3xl md:text-4xl lg:text-5xl">{{__("content.career.section_4.title_1")}}</h2>
                 <x-badge class="py-8 flex place-items-center justify-center xl:justify-start">{{__("content.career.section_4.badge")}}</x-badge>
                 <p class="text-md lg:text-lg font-light text-center xl:text-start">
-                    <span class="leading-relaxed font-semibold block">{{__("content.career.section_4.subtitle_1")}}</span>
+                    <span class="leading-relaxed block">{{__("content.career.section_4.subtitle_1")}}</span>
                     <span class="leading-relaxed">{{__("content.career.section_4.subtitle_2")}}</span>
                 </p>
             </div>
-            <x-primary-button href="{{ route('career.job', 'software-engineer') }}" class="px-14 my-6 flex m-auto xl:m-0 xl:mr-auto xl:justify-start">{{ __("buttons.apply_now") }}</x-primary-button>
+            <x-primary-button href="{{ route('career.job', 'software-engineer') }}" class="px-16 my-6 flex m-auto xl:m-0 xl:mr-auto xl:justify-start">{{ __("buttons.apply_now") }}</x-primary-button>
         </div>
         <div class="hidden xl:flex relative self-center">
             <img src="{{ asset('graphics/web-1.png') }}" class="h-auto w-full xl:h-full xl:w-auto aspect-auto object-center shrink-0"

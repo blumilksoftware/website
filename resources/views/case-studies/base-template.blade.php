@@ -48,9 +48,9 @@
                 {{__("content.case_study.section_2.title_3")}}
             </h2>
             <span class="font-light leading-relaxed text-xl relative">{{__("content.case_study.section_2.subtitle_1")}}</span>
-            <div class="mx-auto flex">
-                <x-secondary-button href="{{ route('case-studies') }}" class="px-14">{{ __('buttons.back_to_portfolio') }}</x-secondary-button>
-                <x-primary-button class="md:px-14" href="{{ route('contact') }}">{{ __("buttons.text_us") }}</x-primary-button>
+            <div class="mx-auto flex items-center">
+                <x-secondary-button href="{{ route('case-studies') }}" class="md:px-16">{{ __('buttons.back_to_portfolio') }}</x-secondary-button>
+                <x-primary-button class="md:px-16" href="{{ route('contact') }}">{{ __("buttons.text_us") }}</x-primary-button>
             </div>
         </div>
     </section>
