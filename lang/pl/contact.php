@@ -9,7 +9,7 @@ return [
     "form.email" => "E-mail",
     "form.title" => "Tytuł wiadomości",
     "form.message" => "Wiadomość",
-    "form.policy" => "Polityka prywatności",
+    "form.policy" => "Akceptuje regulamin oraz politykę prywatności i tym samym wyrażam zgodę na przetwarzenie przez Administratora moich danych osobowych",
     "contactTo.job" => "Menedżer ds. rozwoju",
     "contactTo.description" => "Cześć, jestem Kasia! Z przyjemnością porozmawiam o rozwoju Twojego biznesu. Napisz do mnie e-mail lub zadzwoń, a na pewno znajdziemy odpowiednie rozwiązanie.",
 ];

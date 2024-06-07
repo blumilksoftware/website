@@ -20,7 +20,9 @@
         <div class="min-height-100vh relative z-20">
         @yield("content")
         </div>
-        @include("layout.footer")
+        @if (!isset($excludeFooter) || !$excludeFooter)
+            @include("layout.footer")
+        @endif
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </body>
 </html>

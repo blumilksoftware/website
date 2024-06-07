@@ -1,7 +1,11 @@
 @extends("layout.public")
 
 @section("content")
-<div class="relative md:block -z-10">
+@php
+    $excludeFooter = true;
+@endphp
+
+<div class="relative md:block bg-gradient-to-b from-gray-400 to-white -z-10">
         <div class="absolute -left-[6%] md:left-[1%] top-28 md:top-40">
             <x-bubble size="80"/>
         </div>
@@ -22,7 +26,7 @@
             </div>
         </div>
     </div>
-<section class="bg-gradient-to-r from-blue-500 to-black">
+<section class="bg-gradient-to-b from-gray-400 to-white">
     
     <div class="grid xl:grid-cols-2 justify-between xl:flex-row items-center gap-8 xl:gap-24 text-black px-[10%] md:px-[20%] pt-12 pb-16 md:py-16">
         <section class=" md:flex flex-col">
@@ -55,6 +59,10 @@
                                           class="block w-full rounded-md border-0 px-3.5 py-2 min-h-12 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
                             </div>
                         </div>
+                    </div>
+                    <div>
+                        <span class="block text-xs font-normal leading-6 text-black">{{ __("contact.form.policy") }}</span>
+
                     </div>
                     <div class="mt-6 flex flex-row justify-between items-end">
                         <x-primary-button type="submit" href="" class="px-14 w-ful">{{ __("buttons.send") }}</x-primary-button>
