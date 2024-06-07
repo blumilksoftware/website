@@ -10,6 +10,8 @@ return [
     "form.title" => "Tytuł wiadomości",
     "form.message" => "Wiadomość",
     "form.policy" => "Akceptuje regulamin oraz politykę prywatności i tym samym wyrażam zgodę na przetwarzenie przez Administratora moich danych osobowych",
-    "contactTo.job" => "Menedżer ds. rozwoju",
-    "contactTo.description" => "Cześć, jestem Kasia! Z przyjemnością porozmawiam o rozwoju Twojego biznesu. Napisz do mnie e-mail lub zadzwoń, a na pewno znajdziemy odpowiednie rozwiązanie.",
+    "location" => "ul. Najświętszej Marii Panny 5f.5 59-220 Legnica",
+    "phone" => "+48 780 142 367",
+    "email" => "office@blumilk.pl",
+    "info" => "NIP 6912551135"
 ];

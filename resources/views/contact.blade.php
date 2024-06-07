@@ -30,8 +30,8 @@
     
     <div class="grid xl:grid-cols-2 justify-between xl:flex-row items-center gap-8 xl:gap-24 text-black px-[10%] md:px-[20%] pt-12 pb-16 md:py-16">
         <section class=" md:flex flex-col">
-            <h4 class="text-3xl sm:text-4xl lg:text-5xl text-center font-semibold text-black "><span class="text-website-normal">{{__("contact.title")}}</span> {{__("contact.title2")}}</h4>
-            <p class="text-md xl:text-lg leading-8 text-black text-center py-3">{{__("contact.subtitle")}}</p>
+            <h4 class="text-3xl sm:text-4xl lg:text-5xl text-center xl:text-left font-semibold text-black "><span class="text-website-normal">{{__("contact.title")}}</span> {{__("contact.title2")}}</h4>
+            <p class="text-md xl:text-lg leading-8 text-black text-center xl:text-left py-6">{{__("contact.subtitle")}}</p>
             <div class="flex flex-col lg:flex-row">
                 <form action="#" method="POST" class="lg:flex-auto">
                     <div class="grid grid-cols-1 gap-y-6">
@@ -60,12 +60,12 @@
                             </div>
                         </div>
                     </div>
-                    <div>
-                        <span class="block text-xs font-normal leading-6 text-black">{{ __("contact.form.policy") }}</span>
-
-                    </div>
+                    <div class="flex items-center mt-6">
+                <input type="checkbox" name="policyBox" id="policyBox">
+                <p class="text-xs font-normal text-gray-600 ml-2">{{ __("contact.form.policy") }}</p>
+            </div>
                     <div class="mt-6 flex flex-row justify-between items-end">
-                        <x-primary-button type="submit" href="" class="px-14 w-ful">{{ __("buttons.send") }}</x-primary-button>
+                        <x-primary-button type="submit" href="" class="px-20 xl:px-14 w-full ">{{ __("buttons.send") }}</x-primary-button>
                     </div>
                 </form>
             </div>
@@ -73,42 +73,51 @@
         <section class="flex flex-col h-full justify-between text-black">
             <div class=" flex bg-white p-8 lg:max-w-xl h-auto self-center xl:self-end rounded-3xl bg-opacity-80 gap-4">
                 <div>
-                    <div class="text-base font-semibold text-black">Katarzyna Nowak</div>
-                    <div class="text-md font-light leading-6 text-black break-words pb-2">{{__("footer.contactTo.job")}}</div>
-                    <div class="text-sm text-black break-normal break-words">{{__("footer.contactTo.description")}}</div>
+                    <h1 class="text-2xl font-extrabold text-black">Blumilk SP. z o.o</h1>
                     <div>
+                        <div class="flex mt-2 items-center break-words">
+                            <span class="sr-only">Location</span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div class="ml-2">{{ __("contact.location") }}</div>
+                        </div>
                         <div class="flex mt-2 items-center">
                             <span class="sr-only">Phone number</span>
                             <i class="fa-solid fa-phone"></i>
-                            <div class="ml-2">+48 780 142 367</div>
+                            <div class="ml-2">{{ __("contact.phone") }}</div>
                         </div>
                         <div class="flex mt-2 items-center break-words">
                             <span class="sr-only">Email</span>
                             <i class="fa-solid fa-envelope"></i>
-                            <div class="ml-2">katarzyna.nowak@blumilk.pl</div>
+                            <div class="ml-2">{{ __("contact.email") }}</div>
+                        </div>
+                       
+                        <div class="flex mt-2 items-center break-words">
+                            <span class="sr-only">Info</span>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div class="ml-2">{{ __("contact.info") }}</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div>
                     <div class="flex justify-center space-x-6 md:order-2 mt-2">
-                        <a href="https://clutch.co/profile/blumilk-0" class="md:m-auto" target="_blank">
+                        <a href="https://clutch.co/profile/blumilk-0" class="md:m-auto text-black" target="_blank">
                             <span class="sr-only">Clutch</span>
                             <x-icons.clutch></x-icons.clutch>
                         </a>
-                        <a href="https://github.com/blumilksoftware" class="text-white" target="_blank">
+                        <a href="https://github.com/blumilksoftware" class="text-black" target="_blank">
                             <span class="sr-only">Github</span>
                             <i class="fa-brands fa-square-github text-xl lg:text-2xl"></i>
                         </a>
-                        <a href="https://linkedin.com/company/blumilksoftware" class="text-white" target="_blank">
+                        <a href="https://linkedin.com/company/blumilksoftware" class="text-black" target="_blank">
                             <span class="sr-only">LinkedIn</span>
                             <i class="fa-brands fa-linkedin text-xl lg:text-2xl"></i>
                         </a>
-                        <a href="https://twitter.com/blumilksoftware" class="text-white" target="_blank">
+                        <a href="https://twitter.com/blumilksoftware" class="text-black" target="_blank">
                             <span class="sr-only">X</span>
                             <i class="fa-brands fa-x-twitter text-xl lg:text-2xl"></i>
                         </a>
-                        <a href="https://www.facebook.com/blumilksoftware/" class="text-white" target="_blank">
+                        <a href="https://www.facebook.com/blumilksoftware/" class="text-black" target="_blank">
                             <span class="sr-only">X</span>
                             <i class="fa-brands fa-facebook text-xl lg:text-2xl"></i>
                         </a>
