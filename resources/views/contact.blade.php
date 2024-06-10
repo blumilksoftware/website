@@ -18,8 +18,8 @@
             </div>
         </div>
     </div>    
-    <div class="grid xl:grid-cols-2 justify-between xl:flex-row items-center gap-8 xl:gap-24 text-black px-[10%] md:px-[20%] pt-12 pb-16 md:py-16 bg-gray-dark xl:bg-gradient-to-r from-gray-extraDark to-white">
-        <section class=" md:flex flex-col">
+    <div class="grid xl:grid-cols-2 justify-center xl:flex-row items-center  text-black ">
+        <section class=" md:flex flex-col  bg-gray-dark xl:bg-gradient-to-r from-gray-extraDark from-50% to-white to-90% px-[10%] xl:px-[0%] xl:pl-[40%] pt-16 pb-7">
             <h4 class="text-3xl sm:text-4xl lg:text-5xl text-center xl:text-left font-semibold text-black "><span class="text-website-normal">{{__("contact.title")}}</span> {{__("contact.title2")}}</h4>
             <p class="text-md xl:text-lg leading-8 text-black text-center xl:text-left py-6">{{__("contact.subtitle")}}</p>
             <div class="flex flex-col lg:flex-row">
@@ -55,44 +55,44 @@
                 <p class="text-xs font-normal text-gray-600 ml-2">{{ __("contact.form.policy") }}</p>
             </div>
                     <div class="mt-6 flex flex-row justify-between items-end">
-                        <x-primary-button type="submit" href="" class=" w-full xl:w-[30%]  bg-button">{{ __("buttons.send") }}</x-primary-button>
+                        <x-primary-button type="submit" href="" class=" w-full xl:w-[30%] text-xl  bg-button">{{ __("buttons.send") }}</x-primary-button>
                     </div>
                 </form>
             </div>
         </section>
-        <section class="flex flex-col h-full justify-between text-black">
-            <div class=" flex bg-white p-8 lg:max-w-xl h-auto self-center xl:self-end rounded-3xl bg-opacity-80 gap-4">
+        <section class="flex flex-col h-full justify-center text-black px-[10%] xl:pr-[40%] pt-5  ">
+            <div class=" flex xl:bg-cyan-200 p-8 lg:max-w-xl xl:h-[50%] self-center  rounded-3xl bg-opacity-80 gap-4 ">
                 <div>
-                    <h1 class="text-2xl font-bold text-black">Blumilk SP. z o.o</h1>
+                    <h1 class="text-2xl font-bold text-black mb-4">Blumilk SP. z o.o</h1>
                     <div>
                         <div class="flex mt-2 items-center break-words">
                             <span class="sr-only">Location</span>
                             <i class="fa-solid fa-location-dot"></i>
-                            <div class="ml-2">{{ __("contact.location") }}</div>
+                            <div class="ml-4">{{ __("contact.location") }}</div>
                         </div>
                         <div class="flex mt-2 items-center">
                             <span class="sr-only">Phone number</span>
                             <i class="fa-solid fa-phone"></i>
-                            <div class="ml-2">{{ __("contact.phone") }}</div>
+                            <div class="ml-4">{{ __("contact.phone") }}</div>
                         </div>
                         <div class="flex mt-2 items-center break-words">
                             <span class="sr-only">Email</span>
                             <i class="fa-solid fa-envelope"></i>
-                            <div class="ml-2">{{ __("contact.email") }}</div>
+                            <div class="ml-4">{{ __("contact.email") }}</div>
                         </div>
                        
                         <div class="flex mt-2 items-center break-words">
                             <span class="sr-only">Info</span>
-                            <i class="fa-solid fa-envelope"></i>
-                            <div class="ml-2">{{ __("contact.info") }}</div>
+                            <i class="fa-solid fa-info-circle"></i>
+                            <div class="ml-4">{{ __("contact.info") }}</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div>
-                    <div class="flex justify-center space-x-6 md:order-2 mt-2">
+                    <div class="flex justify-center align-center space-x-6 md:order-2 pt-8">
                         <a href="https://clutch.co/profile/blumilk-0" class="md:m-auto text-black" target="_blank">
-                            <span class="sr-only">Clutch</span>
+                            <span class="sr-only">Clutch</span
                             <x-icons.clutch></x-icons.clutch>
                         </a>
                         <a href="https://github.com/blumilksoftware" class="text-black" target="_blank">
