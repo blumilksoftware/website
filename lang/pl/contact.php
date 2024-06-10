@@ -7,7 +7,7 @@ return [
     "title2" => "do Nas!",
     "subtitle" => "Zainteresowaliśmy Cię na tyle, że chcesz z nami omówić swój projekt, wymienić myśli, zostać naszym partnerem biznesowym, lub z nami pracować? Chętnie z Tobą porozmawiamy!",
     "form.email" => "E-mail",
-    "form.title" => "Tytuł wiadomości",
+    "form.title" => "Temat",
     "form.message" => "Wiadomość",
     "form.policy" => "Akceptuje regulamin oraz politykę prywatności i tym samym wyrażam zgodę na przetwarzenie przez Administratora moich danych osobowych",
     "location" => "ul. Najświętszej Marii Panny 5f.5 59-220 Legnica",
