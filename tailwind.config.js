@@ -28,11 +28,11 @@ module.exports = {
         bubble: "#DAE3F0",
         brand: "#527ABA",
         background: "#FBFBFB",
-        button: "#4865D5",
         website: {
           normal: "#5379F6",
           light: "#7C9CFC",
           extra_light: "#E2EAFF",
+          dark: "#4865D5",
         },
         navigation: "#FAFAFA",
         footer: {

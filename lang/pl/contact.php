@@ -13,5 +13,7 @@ return [
     "location" => "ul. Najświętszej Marii Panny 5f.5 59-220 Legnica",
     "phone" => "+48 780 142 367",
     "email" => "office@blumilk.pl",
-    "info" => "NIP 6912551135"
+    "infoNIP" => "NIP 6912551135",
+    "infoKRS" => "KRS 0000866755",
+    "infoREGON" => "REGON 38737620",
 ];
