@@ -5,7 +5,7 @@
         $excludeFooter = true;
     @endphp
 
-    <div class="relative md:block -z-10">
+    <div class="relative md:block z-10">
         <div class="relative md:block">
             <div class="absolute -left-[15%] sm:-left-[8%] md:-left-[2%] lg:left-0 top-28 md:top-40">
                 <x-bubble size="100" />
@@ -18,9 +18,9 @@
             </div>
         </div>
     </div>
-    <div class="grid xl:grid-cols-2 justify-center xl:flex-row items-center  text-black ">
-        <section
-            class=" md:flex flex-col  bg-gray-light xl:bg-gradient-to-r from-gray-light from-50% to-white to-90% px-[10%] xl:px-[0%] xl:pl-[40%] pt-16 pb-7">
+    <div
+        class="grid xl:grid-cols-2 justify-center  items-center  text-black bg-gray-light xl:bg-gradient-to-r from-gray-light from-30% to-white  ">
+        <section class=" md:flex flex-col   px-[10%] xl:px-[0%] xl:pl-[40%] pt-16 pb-7 z-20">
             <h4 class="text-3xl sm:text-4xl lg:text-5xl text-center xl:text-left font-semibold text-black "><span
                     class="text-website-normal">{{ __('contact.title') }}</span> {{ __('contact.title2') }}</h4>
             <p class="text-md xl:text-lg leading-8 text-black text-center xl:text-left py-6">{{ __('contact.subtitle') }}
@@ -54,8 +54,8 @@
                         </div>
                     </div>
                     <div class="flex items-center mt-6">
-                        <input type="checkbox" name="policyBox" id="policyBox">
-                        <p class="text-xs font-normal text-gray-600 ml-2">{{ __('contact.form.policy') }}</p>
+                        <input type="checkbox" name="policyBox" id="policyBox" class="w-3 h-3">
+                        <p class="text-xs font-normal text-gray-600 ml-2 pt-4">Akceptuję regulamin oraz <a href="" class="underline font-bold">politykę prywatności</a> i tym samym wyrażam zgodę na przetwarzanie przez Administratora moich danych osobowych</p>
                     </div>
                     <div class="mt-6 flex">
                         <x-primary-button type="submit" href=""
@@ -64,63 +64,67 @@
                 </form>
             </div>
         </section>
-        <section class="flex flex-col h-full xl:pt-28 text-black px-[10%] xl:pr-[40%]   ">
-            <div class=" flex xl:bg-cyan-200 p-8 lg:w-xl xl:h-[60%] self-center  rounded-3xl bg-opacity-80 gap-x-14 ">
-                <div>
-                    <h1 class="text-2xl font-bold text-black mb-4">Blumilk SP. z o.o</h1>
+        <section class="flex flex-col h-full xl:pt-28 text-black px-[10%] xl:pl-[10%]  xl:pr-[40%] bg-white xl:bg-transparent">
+            <div class="max-w-md">
+                <div
+                    class="flex flex-col xl:bg-white p-8 lg:w-lg self-center rounded-3xl bg-opacity-80 gap-x-14 justify-center items-center xl:pb-36">
+
+                    <h1 class="text-2xl font-bold text-black mb-4">{{ __('contact.company') }}</h1>
                     <div>
-                        <div class="flex mt-2 items-center break-words">
+                        <div class="flex mt-3 items-start">
                             <span class="sr-only">Location</span>
-                            <i class="fa-solid fa-location-dot"></i>
-                            <div class="ml-6">{{ __('contact.location') }}</div>
-                        </div>
-                        <div class="flex mt-2 items-center">
-                            <span class="sr-only">Phone number</span>
-                            <i class="fa-solid fa-phone"></i>
-                            <div class="ml-6">{{ __('contact.phone') }}</div>
-                        </div>
-                        <div class="flex mt-2 items-center break-words">
-                            <span class="sr-only">Email</span>
-                            <i class="fa-solid fa-envelope"></i>
-                            <div class="ml-6">{{ __('contact.email') }}</div>
-                        </div>
-
-                        <div class="flex mt-2 break-words">
-                            <span class="sr-only">Info</span>
-                            <i class="fa-solid fa-info-circle"></i>
-                            <div class="flex-col">
-                                <div class="ml-6">{{ __('contact.infoNIP') }}</div>
-                                <div class="ml-6">{{ __('contact.infoKRS') }}</div>
-                                <div class="ml-6">{{ __('contact.infoREGON') }}</div>
+                            <i class="fa-solid fa-location-dot pt-1"></i>
+                            <div class="ml-4">
+                                <div>{{ __('contact.location') }}</div>
+                                <div>{{ __('contact.locationPostalCode') }}</div>
                             </div>
-
+                        </div>
+                        <div class="flex mt-3 items-start">
+                            <span class="sr-only">Phone number</span>
+                            <i class="fa-solid fa-phone pt-1"></i>
+                            <div class="ml-4">{{ __('contact.phone') }}</div>
+                        </div>
+                        <div class="flex mt-3 items-start">
+                            <span class="sr-only">Email</span>
+                            <i class="fa-solid fa-envelope pt-1"></i>
+                            <div class="ml-4">{{ __('contact.email') }}</div>
+                        </div>
+                        <div class="flex mt-3 items-start">
+                            <span class="sr-only">Info</span>
+                            <i class="fa-solid fa-info-circle pt-1"></i>
+                            <div class="ml-4">
+                                <div>{{ __('contact.infoNIP') }}</div>
+                                <div>{{ __('contact.infoKRS') }}</div>
+                                <div>{{ __('contact.infoREGON') }}</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div>
-                <div class="flex justify-center align-center space-x-6 md:order-2 pt-8">
-                    <a href="https://clutch.co/profile/blumilk-0" class="md:m-auto text-black  fill-current"
-                        target="_blank">
-                        <span class="sr-only">Clutch</span>
-                        <x-icons.clutch />
-                    </a>
+            
 
-                    <a href="https://github.com/blumilksoftware" class="text-black" target="_blank">
-                        <span class="sr-only">Github</span>
-                        <i class="fa-brands fa-square-github text-xl lg:text-2xl"></i>
-                    </a>
-                    <a href="https://linkedin.com/company/blumilksoftware" class="text-black" target="_blank">
-                        <span class="sr-only">LinkedIn</span>
-                        <i class="fa-brands fa-linkedin text-xl lg:text-2xl"></i>
-                    </a>
-                    <a href="https://www.facebook.com/blumilksoftware/" class="text-black" target="_blank">
-                        <span class="sr-only">X</span>
-                        <i class="fa-brands fa-facebook text-xl lg:text-2xl"></i>
-                    </a>
-                </div>
+            <div class="flex justify-center xl:justify-end space-x-6 md:order-2 pt-8 items-center xl:mt-8 xl:pr-2">
+                <a href="https://clutch.co/profile/blumilk-0" class="text-gray-700 align-center fill-current" target="_blank">
+                    <span class="sr-only">Clutch</span>
+                    <x-icons.clutch class="align-middle" />
+                </a>
+
+                <a href="https://github.com/blumilksoftware" class="text-gray-700" target="_blank">
+                    <span class="sr-only">Github</span>
+                    <i class="fa-brands fa-square-github text-xl lg:text-2xl"></i>
+                </a>
+                <a href="https://linkedin.com/company/blumilksoftware" class="text-gray-700" target="_blank">
+                    <span class="sr-only">LinkedIn</span>
+                    <i class="fa-brands fa-linkedin text-xl lg:text-2xl"></i>
+                </a>
+                <a href="https://www.facebook.com/blumilksoftware/" class="text-gray-700" target="_blank">
+                    <span class="sr-only">X</span>
+                    <i class="fa-brands fa-facebook text-xl lg:text-2xl"></i>
+                </a>
             </div>
-    </div>
-    </section>
+        </div>
+
+
+        </section>
+
     </div>
 @endsection
