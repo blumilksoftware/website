@@ -130,8 +130,8 @@
         </section>
     </div>
     <div class="bg-white ">
-        <div id="map" class=" h-[80vh] w-full"></div>
-        <div class="flex justify-center  space-x-6 md:order-2 pt-8 items-center xl:mt-8 xl:pr-2 xl:hidden">
+        <div id="map" class=" h-[40vh] xl:h-[60vh] w-full"></div>
+        <div class="flex justify-center  space-x-6 md:order-2 pt-8 items-center xl:mt-8 xl:pr-2 xl:hidden pb-6">
             <a href="https://clutch.co/profile/blumilk-0" class="text-gray-700 align-center fill-current"
                 target="_blank">
                 <span class="sr-only">Clutch</span>
@@ -155,22 +155,39 @@
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             mapboxgl.accessToken =
-                'pk.eyJ1IjoiYnJ6b3prYSIsImEiOiJja3J5cXdmbnIxMzJ0MndwczlhcWRqcWc5In0.1aZP0oYf2ucf0NRpTh1exA';
+                'pk.eyJ1Ijoia3Jld2FrIiwiYSI6ImNramhmNWI3NjQ2Mm0yeW5xaHUxbmFvMTAifQ.pML1FJHSbrdqOGUvlnd1xw';
             var map = new mapboxgl.Map({
-                container: 'map', // container ID
-                style: 'mapbox://styles/mapbox/streets-v11', // style URL
-                center: [16.163780, 51.208760], // starting position [lng, lat]
-                zoom: 16 // starting zoom
+                container: 'map',
+                style: 'mapbox://styles/krewak/ckjhf6g1qbww719p1e33pgm84',
+                center: [16.163200, 51.208200], //[lng, lat]
+                zoom: 15
             });
-    
-            map.on('load', function() {
-                // Disable scroll zoom
-                map.scrollZoom.disable();
-    
-                // Add navigation controls
-                var nav = new mapboxgl.NavigationControl();
-                map.addControl(nav, 'top-left');
+            map.scrollZoom.disable();
+            var nav = new mapboxgl.NavigationControl();
+
+            function addRemoveMapControls() {
+
+                if (window.matchMedia('(min-width: 1024px)').matches) {
+                    map.addControl(nav, 'top-left');
+                } else {
+                    map.removeControl(nav);
+                }
+            }
+
+            addRemoveMapControls();
+
+            window.addEventListener('resize', function() {
+                addRemoveMapControls();
             });
+
+
+
+            
+            const marker = new mapboxgl.Marker({
+                    color: 'black'
+                })
+                .setLngLat([16.163780, 51.208760])
+                .addTo(map);
         });
     </script>
 @endsection
