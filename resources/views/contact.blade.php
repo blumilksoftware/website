@@ -5,21 +5,33 @@
         $excludeFooter = true;
     @endphp
 
-    <div class="z-10">
+    <div class="z-10 ">
         <div class="relative md:block">
-            <div class="absolute -left-[15%] sm:-left-[8%] md:-left-[2%] lg:left-0 top-24 md:top-40">
+            <div class="absolute -left-[15%] sm:-left-[8%] md:-left-[2%] xl:-left-[1%]  top-24 md:top-30">
                 <x-bubble size="100" />
             </div>
-            <div class="absolute left-[8%] md:left-[4%] top-10 md:top-28">
+            <div class="absolute xl:hidden left-[8%] md:left-[4%] xl:left-[5%] top-8 md:top-18 ">
                 <x-bubble size="40" />
             </div>
-            <div class="absolute right-[4%] top-8">
+            <div class="absolute xl:hidden right-[4%] top-8">
                 <x-bubble size="50" />
+            </div>
+            <div class="absolute hidden xl:block right-[7%] top-[500px]">
+                <x-bubble size="50" />
+            </div>
+            <div class="absolute hidden xl:block -right-[7%] top-24">
+                <x-bubble size="220"/>
+            </div>
+            <div class="absolute hidden xl:block left-[7%] top-[560px]">
+                <x-bubble size="60" />
+            </div>
+            <div class="absolute hidden xl:block right-[2%] top-[600px]">
+                <x-bubble size="110" />
             </div>
         </div>
     </div>
     <div
-        class="grid xl:grid-cols-2 justify-center  items-center  text-black bg-gray-light xl:bg-gradient-to-r from-gray-light from-30% to-white to-90%  ">
+        class="grid xl:grid-cols-2 justify-center  items-center  text-black bg-gray-light xl:bg-gradient-to-r from-gray-light from-30% to-white to-90%   ">
         <section class=" md:flex flex-col   px-[10%] xl:px-[0%] xl:pl-[40%] pt-16 pb-7 z-20">
             <h4 class="text-3xl sm:text-4xl lg:text-5xl text-center xl:text-left font-semibold text-black "><span
                     class="text-website-normal">{{ __('contact.title') }}</span> {{ __('contact.title2') }}</h4>
@@ -68,10 +80,10 @@
             </div>
         </section>
         <section
-            class="flex flex-col h-full xl:pt-28 text-black px-[10%] xl:pl-[10%]  xl:pr-[40%] bg-white xl:bg-transparent pb-10">
+            class="flex flex-col h-full xl:pt-28 text-black px-[10%] xl:pl-[10%]  xl:pr-[40%] bg-white xl:bg-transparent pb-10 ">
             <div class="max-w-md">
                 <div
-                    class="flex flex-col xl:bg-white p-8 lg:w-lg self-center rounded-3xl xl:shadow-lg bg-opacity-80 gap-x-14 justify-center items-center xl:pb-36 pt-5 relative">
+                    class="flex flex-col xl:bg-white p-8 lg:w-lg self-center rounded-3xl xl:shadow-lg bg-opacity-80 gap-x-14 justify-center items-center xl:pb-36 pt-10 relative">
                     <div class="relative">
                         <h1 class="text-2xl font-bold text-black mb-4">{{ __('contact.company') }}</h1>
                         <div>
