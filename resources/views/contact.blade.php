@@ -74,7 +74,7 @@
                     </div>
                     <div class="mt-6 flex">
                         <x-primary-button type="submit" href=""
-                            class=" w-full lg:w-[40%] text-xl mx-0 bg-website-dark">{{ __('buttons.send') }}</x-primary-button>
+                            class=" w-full lg:w-[45%] 2xl:w-[32%] text-xl mx-0 bg-website-dark">{{ __('buttons.send') }}</x-primary-button>
                     </div>
                 </form>
             </div>
