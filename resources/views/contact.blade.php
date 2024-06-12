@@ -19,8 +19,8 @@
             <div class="absolute hidden xl:block right-[7%] top-[500px]">
                 <x-bubble size="50" />
             </div>
-            <div class="absolute hidden xl:block -right-[7%] top-24">
-                <x-bubble size="220"/>
+            <div class="absolute hidden xl:block -right-[6%] top-24">
+                <x-bubble size="220" />
             </div>
             <div class="absolute hidden xl:block left-[7%] top-[560px]">
                 <x-bubble size="60" />
@@ -80,10 +80,12 @@
             </div>
         </section>
         <section
-            class="flex flex-col h-full xl:pt-28 text-black px-[10%] xl:pl-[10%]  xl:pr-[40%] bg-white xl:bg-transparent pb-10 ">
-            <div class="max-w-md">
+            class="flex flex-col h-full xl:pt-28 text-black px-[10%]  bg-white xl:bg-transparent pb-10 ">
+            <div class="xl:max-w-[460px] ">
+                <div class="hidden absolute xl:flex xl:w-[455px] xl:h-[451px] -translate-y-[30px] translate-x-[25px] rotate-[4deg] bg-gray-light rounded-3xl "></div>
                 <div
-                    class="flex flex-col xl:bg-white p-8 lg:w-lg self-center rounded-3xl xl:shadow-lg bg-opacity-80 gap-x-14 justify-center items-center xl:pb-36 pt-10 relative">
+                    class="flex flex-col xl:w-[460px] xl:h-[451px]  xl:bg-white p-8 self-center rounded-3xl xl:shadow-md bg-opacity-80 gap-x-14 justify-center items-center xl:pb-36 pt-10 relative ">
+                    
                     <div class="relative">
                         <h1 class="text-2xl font-bold text-black mb-4">{{ __('contact.company') }}</h1>
                         <div>
@@ -98,7 +100,7 @@
                             <div class="flex mt-3 items-start">
                                 <span class="sr-only">Phone number</span>
                                 <x-icons.phone></x-icons.phone>
-                                <div class="ml-4 -mt-1"  >{{ __('contact.phone') }}</div>
+                                <div class="ml-4 -mt-1">{{ __('contact.phone') }}</div>
                             </div>
                             <div class="flex mt-3 items-start">
                                 <span class="sr-only">Email</span>
@@ -141,27 +143,26 @@
             </div>
         </section>
     </div>
-        <div id="map" class=" h-[40vh] xl:h-[60vh] w-full"></div>
-        <div class="flex justify-center  space-x-6 md:order-2 pt-8 items-center xl:mt-8 xl:pr-2 xl:hidden pb-6">
-            <a href="https://clutch.co/profile/blumilk-0" class="text-gray-700 align-center fill-current"
-                target="_blank">
-                <span class="sr-only">Clutch</span>
-                <x-icons.clutch class="align-middle" />
-            </a>
+    <div id="map" class=" h-[40vh] xl:h-[60vh] w-full"></div>
+    <div class="flex justify-center  space-x-6 md:order-2 pt-8 items-center xl:mt-8 xl:pr-2 xl:hidden pb-6">
+        <a href="https://clutch.co/profile/blumilk-0" class="text-gray-700 align-center fill-current" target="_blank">
+            <span class="sr-only">Clutch</span>
+            <x-icons.clutch class="align-middle" />
+        </a>
 
-            <a href="https://github.com/blumilksoftware" class="text-gray-700" target="_blank">
-                <span class="sr-only">Github</span>
-                <i class="fa-brands fa-square-github text-xl lg:text-2xl"></i>
-            </a>
-            <a href="https://linkedin.com/company/blumilksoftware" class="text-gray-700" target="_blank">
-                <span class="sr-only">LinkedIn</span>
-                <i class="fa-brands fa-linkedin text-xl lg:text-2xl"></i>
-            </a>
-            <a href="https://www.facebook.com/blumilksoftware/" class="text-gray-700" target="_blank">
-                <span class="sr-only">X</span>
-                <i class="fa-brands fa-facebook text-xl lg:text-2xl"></i>
-            </a>
-        </div>
+        <a href="https://github.com/blumilksoftware" class="text-gray-700" target="_blank">
+            <span class="sr-only">Github</span>
+            <i class="fa-brands fa-square-github text-xl lg:text-2xl"></i>
+        </a>
+        <a href="https://linkedin.com/company/blumilksoftware" class="text-gray-700" target="_blank">
+            <span class="sr-only">LinkedIn</span>
+            <i class="fa-brands fa-linkedin text-xl lg:text-2xl"></i>
+        </a>
+        <a href="https://www.facebook.com/blumilksoftware/" class="text-gray-700" target="_blank">
+            <span class="sr-only">X</span>
+            <i class="fa-brands fa-facebook text-xl lg:text-2xl"></i>
+        </a>
+    </div>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             mapboxgl.accessToken =
