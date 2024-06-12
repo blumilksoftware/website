@@ -71,32 +71,32 @@
             class="flex flex-col h-full xl:pt-28 text-black px-[10%] xl:pl-[10%]  xl:pr-[40%] bg-white xl:bg-transparent pb-10">
             <div class="max-w-md">
                 <div
-                    class="flex flex-col xl:bg-white p-8 lg:w-lg self-center rounded-3xl xl:shadow-lg bg-opacity-80 gap-x-14 justify-center items-center xl:pb-36  relative">
+                    class="flex flex-col xl:bg-white p-8 lg:w-lg self-center rounded-3xl xl:shadow-lg bg-opacity-80 gap-x-14 justify-center items-center xl:pb-36 pt-5 relative">
                     <div class="relative">
                         <h1 class="text-2xl font-bold text-black mb-4">{{ __('contact.company') }}</h1>
                         <div>
                             <div class="flex mt-3 items-start">
                                 <span class="sr-only">Location</span>
-                                <i class="fa-solid fa-location-dot pt-1"></i>
-                                <div class="ml-4">
+                                <x-icons.marker></x-icons.marker>
+                                <div class="ml-4 -mt-1">
                                     <div>{{ __('contact.location') }}</div>
                                     <div>{{ __('contact.locationPostalCode') }}</div>
                                 </div>
                             </div>
                             <div class="flex mt-3 items-start">
                                 <span class="sr-only">Phone number</span>
-                                <i class="fa-solid fa-phone pt-1"></i>
-                                <div class="ml-4">{{ __('contact.phone') }}</div>
+                                <x-icons.phone></x-icons.phone>
+                                <div class="ml-4 -mt-1"  >{{ __('contact.phone') }}</div>
                             </div>
                             <div class="flex mt-3 items-start">
                                 <span class="sr-only">Email</span>
-                                <i class="fa-solid fa-envelope pt-1"></i>
-                                <div class="ml-4">{{ __('contact.email') }}</div>
+                                <x-icons.postcard></x-icons.postcard>
+                                <div class="ml-4 -mt-1">{{ __('contact.email') }}</div>
                             </div>
                             <div class="flex mt-3 items-start">
                                 <span class="sr-only">Info</span>
-                                <i class="fa-solid fa-info-circle pt-1"></i>
-                                <div class="ml-4">
+                                <x-icons.info></x-icons.info>
+                                <div class="ml-4 -mt-1">
                                     <div>{{ __('contact.infoNIP') }}</div>
                                     <div>{{ __('contact.infoKRS') }}</div>
                                     <div>{{ __('contact.infoREGON') }}</div>
@@ -129,7 +129,6 @@
             </div>
         </section>
     </div>
-    <div class="bg-white ">
         <div id="map" class=" h-[40vh] xl:h-[60vh] w-full"></div>
         <div class="flex justify-center  space-x-6 md:order-2 pt-8 items-center xl:mt-8 xl:pr-2 xl:hidden pb-6">
             <a href="https://clutch.co/profile/blumilk-0" class="text-gray-700 align-center fill-current"
@@ -151,7 +150,6 @@
                 <i class="fa-brands fa-facebook text-xl lg:text-2xl"></i>
             </a>
         </div>
-    </div>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             mapboxgl.accessToken =
@@ -180,14 +178,15 @@
                 addRemoveMapControls();
             });
 
-
-
-            
             const marker = new mapboxgl.Marker({
-                    color: 'black'
+                    color: '#5379F6'
                 })
                 .setLngLat([16.163780, 51.208760])
                 .addTo(map);
+
+            marker.getElement().addEventListener('click', function() {
+                window.open('https://maps.app.goo.gl/h6HhaStCsVmwAwF19');
+            });
         });
     </script>
 @endsection
