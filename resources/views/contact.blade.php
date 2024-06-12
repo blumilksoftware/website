@@ -92,7 +92,7 @@
                             <div class="flex mt-3 items-start">
                                 <span class="sr-only">Location</span>
                                 <x-icons.marker></x-icons.marker>
-                                <div class="ml-4 -mt-1">
+                                <div class="ml-4 -mt-[2px]">
                                     <div>{{ __('contact.location') }}</div>
                                     <div>{{ __('contact.locationPostalCode') }}</div>
                                 </div>
@@ -100,17 +100,17 @@
                             <div class="flex mt-3 items-start">
                                 <span class="sr-only">Phone number</span>
                                 <x-icons.phone></x-icons.phone>
-                                <div class="ml-4 -mt-1">{{ __('contact.phone') }}</div>
+                                <div class="ml-4 -mt-[2px]">{{ __('contact.phone') }}</div>
                             </div>
                             <div class="flex mt-3 items-start">
                                 <span class="sr-only">Email</span>
                                 <x-icons.postcard></x-icons.postcard>
-                                <div class="ml-4 -mt-1">{{ __('contact.email') }}</div>
+                                <div class="ml-4 -mt-[2px]">{{ __('contact.email') }}</div>
                             </div>
                             <div class="flex mt-3 items-start">
                                 <span class="sr-only">Info</span>
                                 <x-icons.info></x-icons.info>
-                                <div class="ml-4 -mt-1">
+                                <div class="ml-4 -mt-[2px]">
                                     <div>{{ __('contact.infoNIP') }}</div>
                                     <div>{{ __('contact.infoKRS') }}</div>
                                     <div>{{ __('contact.infoREGON') }}</div>
