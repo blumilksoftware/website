@@ -79,13 +79,14 @@
                 </form>
             </div>
         </section>
-        <section
-            class="flex flex-col h-full xl:pt-28 text-black px-[10%]  bg-white xl:bg-transparent pb-10 ">
+        <section class="flex flex-col h-full xl:pt-28 text-black px-[10%]  bg-white xl:bg-transparent pb-10 ">
             <div class="xl:max-w-[460px] ">
-                <div class="hidden absolute xl:flex xl:w-[455px] xl:h-[451px] -translate-y-[30px] translate-x-[25px] rotate-[4deg] bg-gray-light rounded-3xl "></div>
                 <div
-                    class="flex flex-col xl:w-[460px] xl:h-[451px]  xl:bg-white p-8 self-center rounded-3xl xl:shadow-md bg-opacity-80 gap-x-14 justify-center items-center xl:pb-36 pt-10 relative ">
-                    
+                    class="hidden absolute xl:flex xl:w-[455px] xl:h-[451px] -translate-y-[30px] translate-x-[25px] rotate-[4deg] bg-gray-light rounded-3xl ">
+                </div>
+                <div
+                    class="flex flex-col xl:w-[460px] xl:h-[451px]  xl:bg-white p-8 self-center rounded-3xl xl:shadow-md bg-opacity-80 gap-x-14 justify-center items-center pt-10 xl:pt-0 relative ">
+
                     <div class="relative">
                         <h1 class="text-2xl font-bold text-black mb-4">{{ __('contact.company') }}</h1>
                         <div>
@@ -164,42 +165,42 @@
         </a>
     </div>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            mapboxgl.accessToken =
-                'pk.eyJ1Ijoia3Jld2FrIiwiYSI6ImNramhmNWI3NjQ2Mm0yeW5xaHUxbmFvMTAifQ.pML1FJHSbrdqOGUvlnd1xw';
-            var map = new mapboxgl.Map({
-                container: 'map',
-                style: 'mapbox://styles/krewak/ckjhf6g1qbww719p1e33pgm84',
-                center: [16.163200, 51.208200], //[lng, lat]
-                zoom: 15
-            });
-            map.scrollZoom.disable();
-            var nav = new mapboxgl.NavigationControl();
+        document.addEventListener('DOMContentLoaded', function() {
+          mapboxgl.accessToken =
+                'pk.eyJ1Ijoia3Jld2FrIiwiYSI6ImNramhmNWI3NjQ2Mm0yeW5xaHUxbmFvMTAifQ.pML1FJHSbrdqOGUvlnd1xw'
+          var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/krewak/ckjhf6g1qbww719p1e33pgm84',
+            center: [16.163200, 51.208200], //[lng, lat]
+            zoom: 15,
+          })
+          map.scrollZoom.disable()
+          var nav = new mapboxgl.NavigationControl()
 
-            function addRemoveMapControls() {
+          function addRemoveMapControls() {
 
-                if (window.matchMedia('(min-width: 1024px)').matches) {
-                    map.addControl(nav, 'top-left');
-                } else {
-                    map.removeControl(nav);
-                }
+            if (window.matchMedia('(min-width: 1024px)').matches) {
+              map.addControl(nav, 'top-left')
+            } else {
+              map.removeControl(nav)
             }
+          }
 
-            addRemoveMapControls();
+          addRemoveMapControls()
 
-            window.addEventListener('resize', function() {
-                addRemoveMapControls();
-            });
+          window.addEventListener('resize', function() {
+            addRemoveMapControls()
+          })
 
-            const marker = new mapboxgl.Marker({
-                    color: '#5379F6'
-                })
-                .setLngLat([16.163780, 51.208760])
-                .addTo(map);
+          const marker = new mapboxgl.Marker({
+            color: '#5379F6',
+          })
+            .setLngLat([16.163780, 51.208760])
+            .addTo(map)
 
-            marker.getElement().addEventListener('click', function() {
-                window.open('https://maps.app.goo.gl/h6HhaStCsVmwAwF19');
-            });
-        });
+          marker.getElement().addEventListener('click', function() {
+            window.open('https://maps.app.goo.gl/h6HhaStCsVmwAwF19')
+          })
+        })
     </script>
 @endsection
