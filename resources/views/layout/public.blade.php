@@ -7,7 +7,8 @@
         <link rel="shortcut icon" href="{{ asset('/sygnet.svg') }}" type="image/x-icon">
         @vite("resources/js/app.ts")
         <script src="https://kit.fontawesome.com/f6187d55ef.js" crossorigin="anonymous"></script>
-        <script>document.documentElement.classList.add('js')</script>
+        <script>document.documentElement.classList.add('js')
+</script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
