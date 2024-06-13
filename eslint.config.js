@@ -1,5 +1,5 @@
 import blumilkDefault from "@blumilksoftware/eslint-config";
-import htmlPlugin from "eslint-plugin-html";  // Import the ESLint HTML plugin
+import htmlPlugin from "eslint-plugin-html";
 
 export default [
   ...blumilkDefault,
