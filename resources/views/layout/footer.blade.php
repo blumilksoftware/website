@@ -55,12 +55,12 @@
                     <div class="text-base">
                         <div class="flex mt-4 items-center">
                             <span class="sr-only">Phone number</span>
-                            <i class="fa-solid fa-phone"></i>
+                            <x-icons.phone></x-icons.phone>
                             <div class="ml-6">+48 780 142 367</div>
                         </div>
                         <div class="flex mt-2 items-center break-words">
                             <span class="sr-only">Email</span>
-                            <i class="fa-solid fa-envelope"></i>
+                            <x-icons.mail></x-icons.mail>
                             <div class="ml-6">katarzyna.nowak@blumilk.pl</div>
                         </div>
                     </div>
@@ -88,13 +88,13 @@
                             <span class="sr-only">LinkedIn</span>
                             <i class="fa-brands fa-linkedin text-xl lg:text-2xl"></i>
                         </a>
-                        <a href="https://twitter.com/blumilksoftware" class="text-white" target="_blank">
-                            <span class="sr-only">X</span>
-                            <i class="fa-brands fa-x-twitter text-xl lg:text-2xl"></i>
+                        <a href="" class="text-white" target="_blank">
+                            <span class="sr-only">Youtube</span>
+                            <i class="fa-brands fa-square-youtube text-xl lg:text-2xl"></i>
                         </a>
                         <a href="https://www.facebook.com/blumilksoftware/" class="text-white" target="_blank">
                             <span class="sr-only">Facebook</span>
-                            <i class="fa-brands fa-facebook text-xl lg:text-2xl"></i>
+                            <i class="fa-brands fa-square-facebook text-xl lg:text-2xl"></i>
                         </a>
                     </div>
                 </div>
