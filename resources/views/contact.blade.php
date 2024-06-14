@@ -87,7 +87,7 @@
                 <div
                     class="flex flex-col xl:w-[460px] xl:h-[451px]  xl:bg-white p-8 self-center rounded-3xl xl:shadow-md bg-opacity-80 gap-x-14 justify-center items-center pt-10 xl:pt-0 relative ">
 
-                    <div class="relative">
+                    <div class="relative ">
                         <h1 class="text-2xl font-bold text-black mb-4">{{ __('contact.company') }}</h1>
                         <div>
                             <div class="flex mt-3 items-start">
@@ -120,8 +120,7 @@
                         </div>
                     </div>
                 </div>
-                <div
-                    class=" hidden xl:flex  xl:justify-end space-x-6 md:order-2 items-center xl:mt-32 xl:pr-2 ">
+                <div class=" hidden xl:flex  xl:justify-end space-x-6 md:order-2 items-center xl:mt-32 xl:pr-2 ">
                     <a href="https://clutch.co/profile/blumilk-0" class="text-gray-700 align-center fill-current"
                         target="_blank">
                         <span class="sr-only">Clutch</span>
@@ -136,9 +135,13 @@
                         <span class="sr-only">LinkedIn</span>
                         <i class="fa-brands fa-linkedin text-xl lg:text-2xl"></i>
                     </a>
+                    <a href="https://www.youtube.com/@blumilksoftware" class="text-gray-700" target="_blank">
+                        <span class="sr-only">Youtube</span>
+                        <i class="fa-brands fa-square-youtube text-xl lg:text-2xl"></i>
+                    </a>
                     <a href="https://www.facebook.com/blumilksoftware/" class="text-gray-700" target="_blank">
                         <span class="sr-only">X</span>
-                        <i class="fa-brands fa-facebook text-xl lg:text-2xl"></i>
+                        <i class="fa-brands fa-square-facebook text-xl lg:text-2xl"></i>
                     </a>
                 </div>
             </div>
@@ -159,6 +162,10 @@
             <span class="sr-only">LinkedIn</span>
             <i class="fa-brands fa-linkedin text-xl lg:text-2xl"></i>
         </a>
+        <a href="https://www.youtube.com/@blumilksoftware" class="text-gray-700" target="_blank">
+            <span class="sr-only">Youtube</span>
+            <i class="fa-brands fa-square-youtube text-xl lg:text-2xl"></i>
+        </a>
         <a href="https://www.facebook.com/blumilksoftware/" class="text-gray-700" target="_blank">
             <span class="sr-only">X</span>
             <i class="fa-brands fa-facebook text-xl lg:text-2xl"></i>
@@ -166,41 +173,41 @@
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-          mapboxgl.accessToken =
+            mapboxgl.accessToken =
                 'pk.eyJ1Ijoia3Jld2FrIiwiYSI6ImNramhmNWI3NjQ2Mm0yeW5xaHUxbmFvMTAifQ.pML1FJHSbrdqOGUvlnd1xw'
-          var map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/krewak/ckjhf6g1qbww719p1e33pgm84',
-            center: [16.163200, 51.208200], //[lng, lat]
-            zoom: 15,
-          })
-          map.scrollZoom.disable()
-          var nav = new mapboxgl.NavigationControl()
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/krewak/ckjhf6g1qbww719p1e33pgm84',
+                center: [16.163200, 51.208200], //[lng, lat]
+                zoom: 15,
+            })
+            map.scrollZoom.disable()
+            var nav = new mapboxgl.NavigationControl()
 
-          function addRemoveMapControls() {
+            function addRemoveMapControls() {
 
-            if (window.matchMedia('(min-width: 1024px)').matches) {
-              map.addControl(nav, 'top-left')
-            } else {
-              map.removeControl(nav)
+                if (window.matchMedia('(min-width: 1024px)').matches) {
+                    map.addControl(nav, 'top-left')
+                } else {
+                    map.removeControl(nav)
+                }
             }
-          }
 
-          addRemoveMapControls()
-
-          window.addEventListener('resize', function() {
             addRemoveMapControls()
-          })
 
-          const marker = new mapboxgl.Marker({
-            color: '#5379F6',
-          })
-            .setLngLat([16.163780, 51.208760])
-            .addTo(map)
+            window.addEventListener('resize', function() {
+                addRemoveMapControls()
+            })
 
-          marker.getElement().addEventListener('click', function() {
-            window.open('https://maps.app.goo.gl/h6HhaStCsVmwAwF19')
-          })
+            const marker = new mapboxgl.Marker({
+                    color: '#5379F6',
+                })
+                .setLngLat([16.163780, 51.208760])
+                .addTo(map)
+
+            marker.getElement().addEventListener('click', function() {
+                window.open('https://maps.app.goo.gl/h6HhaStCsVmwAwF19')
+            })
         })
     </script>
 @endsection
