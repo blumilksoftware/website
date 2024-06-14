@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+    "about" => "O firmie",
     "lets_talk" => "Porozmawiajmy",
     "text_us" => "Napisz do nas!",
     "text_us_1" => "Napisz ",

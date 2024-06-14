@@ -1,4 +1,4 @@
-<svg id="Warstwa_1" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 84.7" class="relative -top-1">
+<svg id="Warstwa_1" data-name="Warstwa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 84.7" class="relative -top-0.5">
     <defs>
         <style>
             .cls-1 {

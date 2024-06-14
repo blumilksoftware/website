@@ -14,7 +14,7 @@ class CaseStudiesController extends Controller
     {
         $caseStudies = CaseStudy::query()->where("published", true)->get();
 
-        return $factory->make("case_studies")
+        return $factory->make("case-studies")
             ->with("caseStudies", $caseStudies);
     }
 

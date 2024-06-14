@@ -44,8 +44,7 @@
         </div>
     </section>
     <section class="bg-gray-extraLight">
-        <div
-            class="flex flex-col lg:flex-row py-20 px-[10%] md:px-[20%]">
+        <div class="flex flex-col gap-x-8 lg:flex-row py-20 px-[10%] md:px-[20%]">
             <div class="hidden lg:flex basis-1/2 relative self-center">
                 <img src="{{ asset('graphics/web-1.png') }}" class="h-auto w-min aspect-auto" alt="placeholder"/>
             </div>
@@ -123,43 +122,43 @@
                 <div
                     class="size-full 2xl:size-52 3xl:size-72">
                     <img src="{{ asset('images/photos/lasertag.jpg') }}"
-                         class="size-full object-cover rounded-xl 2xl:rounded-2xl 3xl:rounded-3xl" alt="placeholder"/>
+                         class="size-full object-cover rounded-[40px]" alt="placeholder"/>
                 </div>
             </div>
             <div class="hidden xl:grid 2xl:col-span-2 m-auto 3xl:py-0 3xl:px-12 grid-cols-5 grid-rows-4 gap-2 xl:gap-6">
                 <div class="col-span-2 row-span-2 ">
                     <img src="{{ asset('images/photos/energylandia.jpg') }}"
-                         class="size-full object-cover rounded-xl 2xl:rounded-2xl 3xl:rounded-3xl transform transition hover:scale-110"
+                         class="size-full object-cover rounded-3xl 2xl:rounded-[40px] transform transition hover:scale-110"
                          alt="placeholder"/>
                 </div>
                 <div
                     class="h-16 2xl:h-24 3xl:h-32 w-full">
                     <img src="{{ asset('images/photos/rzeka.jpg') }}"
-                         class="size-full object-cover rounded-xl 2xl:rounded-2xl 3xl:rounded-3xl transform transition hover:scale-110"
+                         class="size-full object-cover rounded-2xl 2xl:rounded-3xl transform transition hover:scale-110"
                          alt="placeholder"/>
                 </div>
                 <div
                     class="col-span-2 row-span-2 size-36 2xl:size-52 3xl:size-72">
                     <img src="{{ asset('images/photos/quantum.jpg') }}"
-                         class="size-full object-cover rounded-xl 2xl:rounded-2xl 3xl:rounded-3xl transform transition hover:scale-105"
+                         class="size-full object-cover rounded-3xl 2xl:rounded-[40px] transform transition hover:scale-105"
                          alt="placeholder"/>
                 </div>
                 <div
                     class="h-16 2xl:h-24 3xl:h-32 w-full">
                     <img src="{{ asset('images/photos/meetup.jpg') }}"
-                         class="size-full object-cover rounded-xl 2xl:rounded-2xl 3xl:rounded-3xl transform transition hover:scale-110"
+                         class="size-full object-cover rounded-2xl 2xl:rounded-3xl transform transition hover:scale-110"
                          alt="placeholder"/>
                 </div>
                 <div
                     class="col-span-3 row-span-3 h-36 2xl:h-52 3xl:h-72 w-full place-items-center">
                     <img src="{{ asset('images/photos/birthday.jpg') }}"
-                         class="size-full object-cover rounded-xl 2xl:rounded-2xl 3xl:rounded-3xl transform transition hover:scale-105"
+                         class="size-full object-cover rounded-3xl 2xl:rounded-[40px] transform transition hover:scale-105"
                          alt="placeholder"/>
                 </div>
                 <div
                     class="col-span-2 row-span-2 size-36 2xl:size-52 3xl:size-72">
                     <img src="{{ asset('images/photos/plane.jpg') }}"
-                         class="size-full object-cover rounded-xl 2xl:rounded-2xl 3xl:rounded-3xl transform transition hover:scale-105"
+                         class="size-full object-cover rounded-3xl 2xl:rounded-[40px] transform transition hover:scale-105"
                          alt="placeholder"/>
                 </div>
             </div>

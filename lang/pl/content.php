@@ -40,7 +40,13 @@ return [
         ],
         "section_5" => [
             "title_1" => "Tech stack",
-            "subtitle_1" => "PHP i Laravel to nasze główne narzędzie pracy. GitHub stanowi naszą centralną platformę, umożliwiającą code review oraz CI/CD za pomocą GitHub Actions. Frontend budujemy z użyciem Vue.js, a także korzystamy z różnych systemów zarządzania bazami danych, tj. MySQL i PostgreSQL.",
+            "subtitle_1" => "PHP i Laravel ",
+            "subtitle_2" => "to nasze główne narzędzie pracy.",
+            "subtitle_3" => "GitHub ",
+            "subtitle_4" => "stanowi naszą centralną platformę, umożliwiającą code review oraz CI/CD za pomocą GitHub Actions. Frontend budujemy z użyciem ",
+            "subtitle_5" => "Vue.js, ",
+            "subtitle_6" => "a także korzystamy z różnych systemów zarządzania bazami danych, tj. ",
+            "subtitle_7" => "MySQL i PostgreSQL.",
         ],
         "section_6" => [
             "badge" => "opinie",

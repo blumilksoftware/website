@@ -25,6 +25,9 @@ module.exports = {
           dark: '#F1F3F6',
           extraDark: '#EAEBF3',
         },
+        blue: {
+          light: '#F6F7FD',
+        },
         bubble: '#DAE3F0',
         brand: '#527ABA',
         background: '#FBFBFB',
