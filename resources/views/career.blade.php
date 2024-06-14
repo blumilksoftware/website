@@ -77,7 +77,7 @@
                     <span class="leading-relaxed">{{__("content.career.section_4.subtitle_2")}}</span>
                 </p>
             </div>
-            <x-primary-button href="{{ route('career.job', 'software-engineer') }}" class="px-16 my-6 flex m-auto xl:m-0 xl:mr-auto xl:justify-start">{{ __("buttons.apply_now") }}</x-primary-button>
+            <x-primary-button href="{{ route('career.software-engineer') }}" class="px-16 my-6 flex m-auto xl:m-0 xl:mr-auto xl:justify-start">{{ __("buttons.apply_now") }}</x-primary-button>
         </div>
         <div class="hidden xl:flex relative self-center">
             <img src="{{ asset('graphics/web-1.png') }}" class="h-auto w-full xl:h-full xl:w-auto aspect-auto object-center shrink-0"

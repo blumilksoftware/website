@@ -14,8 +14,8 @@ class CareerController extends Controller
         return $factory->make("career");
     }
 
-    public function get(Factory $factory, string $slug): View
+    public function softwareEngineerPage(Factory $factory): View
     {
-        return $factory->make("$slug");
+        return $factory->make("software-engineer");
     }
 }
