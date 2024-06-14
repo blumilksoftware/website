@@ -31,7 +31,7 @@
         </div>
     </div>
     <div
-        class="grid xl:grid-cols-2 justify-center  items-center  text-black bg-gray-light xl:bg-gradient-to-r from-gray-light from-30% to-white to-90%   xl:pb-8 ">
+        class="grid xl:grid-cols-2 justify-center  items-center  text-black bg-gray-light xl:bg-gradient-to-br from-gray-light via-[#F8F9FC]  to-white    xl:pb-8 ">
         <section class=" md:flex flex-col   px-[10%] xl:px-[0%] xl:pl-[40%] pt-16 pb-4 z-20">
             <h4 class="text-3xl sm:text-4xl lg:text-5xl text-center xl:text-left font-semibold text-black "><span
                     class="text-website-normal">{{ __('content.contact.title') }}</span> {{ __('content.contact.title2') }}</h4>
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex items-center mt-2">
+                    <div class="flex items-center mt-2 xl:w-[90%]">
                         <input type="checkbox" name="policyBox" id="policyBox" class="w-3 h-3">
                         <p class="text-xs font-normal text-gray-600 ml-2 pt-4">Akceptuję regulamin oraz <a href=""
                                 class="underline font-bold">politykę prywatności</a> i tym samym wyrażam zgodę na
@@ -82,7 +82,7 @@
         <section class="flex flex-col h-full  text-black px-[10%]  bg-white xl:bg-transparent pb-4 ">
             <div class="xl:max-w-[460px] h-full xl:pt-32 ">
                 <div
-                    class="hidden absolute xl:flex xl:w-[455px] xl:h-[451px] -translate-y-[30px] translate-x-[25px] rotate-[4deg] bg-gray-light rounded-3xl ">
+                    class="hidden absolute xl:flex xl:w-[455px] xl:h-[451px] -translate-y-[30px] translate-x-[25px] rotate-[4deg] bg-gray-dark rounded-3xl shadow-md">
                 </div>
                 <div
                     class="flex flex-col xl:w-[460px] xl:h-[451px]  xl:bg-white p-8 self-center rounded-3xl xl:shadow-md bg-opacity-80 gap-x-14 justify-center items-center pt-10 xl:pt-0 relative ">
