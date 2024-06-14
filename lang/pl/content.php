@@ -9,7 +9,8 @@ return [
         "partners" => "Partnerzy",
         "career" => "Kariera",
         "contact" => "Kontakt",
-    ], "home" => [
+    ],
+    "home" => [
         "section_1" => [
             "title_1" => "Oprogramowanie ",
             "title_2" => "dopasowane ",
@@ -171,6 +172,28 @@ return [
         ],
         "section_3" => [
             "title_1" => "Szukamy właśnie Ciebie?",
+        ],
+    ],
+    "contact" => [
+        "title" => "Napisz",
+        "title2" => "do Nas!",
+        "company" => "Blumilk Sp. z o.o.",
+        "subtitle" => "Zainteresowaliśmy Cię na tyle, że chcesz z nami omówić swój projekt, wymienić myśli, zostać naszym partnerem biznesowym, lub z nami pracować? Chętnie z Tobą porozmawiamy!",
+        "form" => [
+            "email" => "E-mail",
+            "title" => "Temat",
+            "message" => "Wiadomość",
+        ],
+        "location" => [
+            "address" => "ul. Najświętszej Marii Panny 5f/5",
+            "PostalCode" => "59-220 Legnica",
+        ],
+        "phone" => "+48 780 142 367",
+        "email" => "office@blumilk.pl",
+        "info" => [
+            "NIP" => "NIP 6912551135",
+            "KRS" => "KRS 0000866755",
+            "REGON" => "REGON 38737620",
         ],
     ],
 ];

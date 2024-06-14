@@ -34,15 +34,15 @@
         class="grid xl:grid-cols-2 justify-center  items-center  text-black bg-gray-light xl:bg-gradient-to-r from-gray-light from-30% to-white to-90%   xl:pb-8 ">
         <section class=" md:flex flex-col   px-[10%] xl:px-[0%] xl:pl-[40%] pt-16 pb-4 z-20">
             <h4 class="text-3xl sm:text-4xl lg:text-5xl text-center xl:text-left font-semibold text-black "><span
-                    class="text-website-normal">{{ __('contact.title') }}</span> {{ __('contact.title2') }}</h4>
-            <p class="text-md xl:text-lg leading-8 text-black text-center xl:text-left py-6">{{ __('contact.subtitle') }}
+                    class="text-website-normal">{{ __('content.contact.title') }}</span> {{ __('content.contact.title2') }}</h4>
+            <p class="text-md xl:text-lg leading-8 text-black text-center xl:text-left py-6">{{ __('content.contact.subtitle') }}
             </p>
             <div class="flex flex-col lg:flex-row">
                 <form action="#" method="POST" class="lg:flex-auto">
                     <div class="grid grid-cols-1 gap-y-6">
                         <div>
                             <label for="e-mail"
-                                class="block text-xs font-semibold leading-6 text-gray-700">{{ __('contact.form.email') }}</label>
+                                class="block text-xs font-semibold leading-6 text-gray-700">{{ __('content.contact.form.email') }}</label>
                             <div class="mt-2.5">
                                 <input type="text" name="e-mail" id="e-mail" autocomplete="given-e-mail"
                                     class="block w-full xl:w-[90%]  h-12 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
@@ -50,7 +50,7 @@
                         </div>
                         <div>
                             <label for="topic"
-                                class="block text-xs font-semibold leading-6 text-gray-700">{{ __('contact.form.title') }}</label>
+                                class="block text-xs font-semibold leading-6 text-gray-700">{{ __('content.contact.form.title') }}</label>
                             <div class="mt-2.5">
                                 <input type="text" name="topic" id="topic" autocomplete="topic"
                                     class="block w-full xl:w-[90%]  h-12 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
@@ -58,7 +58,7 @@
                         </div>
                         <div>
                             <label for="message"
-                                class="block text-xs font-semibold leading-6 text-gray-700">{{ __('contact.form.message') }}</label>
+                                class="block text-xs font-semibold leading-6 text-gray-700">{{ __('content.contact.form.message') }}</label>
                             <div class="mt-2.5">
                                 <textarea id="message" name="message" rows="4"
                                     class="block w-full xl:w-[90%] rounded-md border-0 px-3.5 py-2 min-h-12 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
@@ -88,33 +88,33 @@
                     class="flex flex-col xl:w-[460px] xl:h-[451px]  xl:bg-white p-8 self-center rounded-3xl xl:shadow-md bg-opacity-80 gap-x-14 justify-center items-center pt-10 xl:pt-0 relative ">
 
                     <div class="relative ">
-                        <h1 class="text-2xl font-bold text-black mb-4">{{ __('contact.company') }}</h1>
+                        <h1 class="text-2xl font-bold text-black mb-4">{{ __('content.contact.company') }}</h1>
                         <div>
                             <div class="flex mt-3 items-start">
                                 <span class="sr-only">Location</span>
                                 <x-icons.marker></x-icons.marker>
                                 <div class="ml-4 -mt-[2px]">
-                                    <div>{{ __('contact.location') }}</div>
-                                    <div>{{ __('contact.locationPostalCode') }}</div>
+                                    <div>{{ __('content.contact.location.address') }}</div>
+                                    <div>{{ __('content.contact.location.PostalCode') }}</div>
                                 </div>
                             </div>
                             <div class="flex mt-3 items-start">
                                 <span class="sr-only">Phone number</span>
                                 <x-icons.phone></x-icons.phone>
-                                <div class="ml-4 -mt-[2px]">{{ __('contact.phone') }}</div>
+                                <div class="ml-4 -mt-[2px]">{{ __('content.contact.phone') }}</div>
                             </div>
                             <div class="flex mt-3 items-start">
                                 <span class="sr-only">Email</span>
                                 <x-icons.postcard></x-icons.postcard>
-                                <div class="ml-4 -mt-[2px]">{{ __('contact.email') }}</div>
+                                <div class="ml-4 -mt-[2px]">{{ __('content.contact.email') }}</div>
                             </div>
                             <div class="flex mt-3 items-start">
                                 <span class="sr-only">Info</span>
                                 <x-icons.info></x-icons.info>
                                 <div class="ml-4 -mt-[2px]">
-                                    <div>{{ __('contact.infoNIP') }}</div>
-                                    <div>{{ __('contact.infoKRS') }}</div>
-                                    <div>{{ __('contact.infoREGON') }}</div>
+                                    <div>{{ __('content.contact.info.NIP') }}</div>
+                                    <div>{{ __('content.contact.info.KRS') }}</div>
+                                    <div>{{ __('content.contact.info.REGON') }}</div>
                                 </div>
                             </div>
                         </div>
