@@ -38,7 +38,7 @@
                     @if (App::isLocale($locale))
                         <button type="button"
                                 @click="openLang = ! openLang"
-                                class="flex h-full items-center place-content-center gap-x-1.5 bg-white px-3 py-2 text-sm 3xl:text-md font-semibold text-gray-500 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 uppercase"
+                                class="flex h-full items-center place-content-center gap-x-1.5 bg-white px-4 py-2 text-sm 3xl:text-md font-semibold text-gray-500 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 uppercase"
                                 id="desktopLocalesButton" aria-expanded="true" aria-haspopup="true">
                             {{ $locale }}
                             <i :class="{'rotate-0': openLang, 'rotate-180': ! openLang}" class="fa-solid fa-chevron-up text-gray-500"></i>
@@ -127,7 +127,7 @@
                         <div class="text-end" role="none">
                             @foreach(LocaleConfig::getLocales() as $locale)
                                 <a href="{{route(Route::currentRouteName(), Route::getCurrentRoute()->parameters(), true, $locale)}}"
-                                   class="text-gray-500 block text-lg pt-4 sm:text-xl hover:text-website-normal uppercase text-start"
+                                   class="text-gray-500 block text-lg font-normal pt-4 sm:text-xl hover:text-website-normal uppercase text-start"
                                    role="menuitem" tabindex="-1">
                                     {{$locale}}
                                 </a>

@@ -1,5 +1,5 @@
 <svg xmlns:xlink="http://www.w3.org/1999/xlink" id="wave" style="transform:rotate(0deg); transition: 0.3s"
-     class="-top-1"
+     class="relative -bottom-1"
      viewBox="0 0 1440 160" version="1.1" xmlns="http://www.w3.org/2000/svg">
     <defs>
         <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">

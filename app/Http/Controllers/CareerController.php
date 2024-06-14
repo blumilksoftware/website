@@ -16,6 +16,6 @@ class CareerController extends Controller
 
     public function softwareEngineerPage(Factory $factory): View
     {
-        return $factory->make("software_engineer");
+        return $factory->make("software-engineer");
     }
 }
