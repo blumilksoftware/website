@@ -67,7 +67,7 @@
                     </div>
                     <div class="flex items-center mt-2">
                         <input type="checkbox" name="policyBox" id="policyBox" class="w-3 h-3">
-                        <p class="text-xs font-normal text-gray-600 ml-2 pt-4">Akceptuję regulamin oraz <a href=""
+                        <p class="text-xs font-normal text-gray-600 ml-2 pt-4">Akceptuję regulamin oraz <a href="{{ route('policy') }}"
                                 class="underline font-bold">politykę prywatności</a> i tym samym wyrażam zgodę na
                             przetwarzanie przez Administratora moich danych osobowych <a href=""
                                 class="font-bold">Więcej</a></p>
