@@ -41,7 +41,7 @@
                         <span class="font-semibold leading-relaxed">{{__("content.home.section_1.subtitle_2")}}</span>
                     </p>
                     <div class="my-6">
-                        <x-primary-button href="{{ route('about') }}" class="px-14">{{ __("content.pages.about") }}</x-primary-button>
+                        <x-primary-button href="{{ route('about') }}" class="px-16">{{ __("buttons.about") }}</x-primary-button>
                     </div>
                 </div>
             </div>
@@ -55,31 +55,31 @@
             <div class="text-2xl lg:text-3xl font-semibold text-gray-400">{{ __("content.home.section_2.title_1") }}<span
                     class="text-website-normal">{{ __("content.home.section_2.title_2") }}</span>
             </div>
-            <div class="absolute hidden lg:block -left-[10%] lg:-left-[3%] top-0">
+            <div class="absolute z-10 hidden lg:block -left-[10%] lg:-left-[3%] top-0">
                 <x-bubble size="250"/>
             </div>
-            <div class="absolute hidden lg:block -right-[10%] lg:right-[5%] -top-8">
+            <div class="absolute z-10 hidden lg:block -right-[10%] lg:right-[5%] -top-8">
                 <x-bubble size="200"/>
             </div>
             <div
                 class="grid grid-cols-2 md:flex md:flex-row pb-12 text-gray-400 items-center justify-center mt-6 2xl:gap-12">
                 <div class="m-6">
-                    <img src="{{asset('images/clients/cwup.png')}}"
+                    <img src="{{asset('images/clients/cwup.svg')}}"
                          class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110"
                          alt="Collegium Witelona"/>
                 </div>
                 <div class="m-6 items-center">
-                    <img src="{{asset('images/clients/insly.png')}}"
+                    <img src="{{asset('images/clients/insly.svg')}}"
                          class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110"
                          alt="Insly"/>
                 </div>
                 <div class="m-6">
-                    <img src="{{asset('images/clients/kghm.png')}}"
+                    <img src="{{asset('images/clients/kghm.svg')}}"
                          class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110"
                          alt="KGHM"/>
                 </div>
                 <div class="m-6">
-                    <img src="{{asset('images/clients/vitaplus.png')}}"
+                    <img src="{{asset('images/clients/vita.svg')}}"
                          class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110"
                          alt="Vita Plus"/>
                 </div>
@@ -88,48 +88,50 @@
 
         <section class="bg-gradient-to-br from-gray-light to-white">
             <x-waves.wave-1.top></x-waves.wave-1.top>
-            <div class="flex flex-col 2xl:flex-row px-[10%] md:px-[20%] pt-32 gap-24">
-                <div class="flex basis-1/2 flex-col justify-center align-middle place-content-center">
+            <div class="flex flex-col 2xl:flex-row px-[10%] md:px-[20%] py-16 2xl:pt-32 gap-x-4">
+                <div class="flex basis-7/12 flex-col justify-center align-middle">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4 text-center md:text-left">
                         {{__("content.home.section_3.title_1")}}</h2>
-                    <div class="text-black text-lg lg:text-xl text-center md:text-left py-6">
+                    <div class="text-black text-lg lg:text-xl text-center md:text-left">
                         <div class="pb-4 md:pb-1 leading-relaxed">
                             <span class="leading-relaxed">{{__("content.home.section_3.subtitle_1")}}</span>
                             <span class="font-semibold">{{__("content.home.section_3.subtitle_2")}}</span>
                         </div>
-                        <ul class="py-8 md:-ml-4 text-md justify-center space-y-4">
-                            <li class="flex items-center text-left leading-relaxed gap-x-4">
-                                <x-icons.arrow></x-icons.arrow>
-                                {{__("content.home.section_3.content_1")}}
-                            </li>
-                            <li class="flex items-center text-left leading-relaxed gap-x-4">
-                                <x-icons.arrow></x-icons.arrow>
-                                {{__("content.home.section_3.content_2")}}
-                            </li>
-                            <li class="flex items-center text-left leading-relaxed gap-x-4">
-                                <x-icons.arrow></x-icons.arrow>
-                                {{__("content.home.section_3.content_3")}}
-                            </li>
-                            <li class="flex items-center text-left leading-relaxed gap-x-4">
+                        <ul class="pt-8 md:-ml-2 text-md justify-center space-y-6">
+                            <li class="flex items-center text-left leading-relaxed gap-x-6">
                                 <x-icons.arrow></x-icons.arrow>
                                 {{__("content.home.section_3.content_4")}}
+
+                            </li>
+                            <li class="flex items-center text-left leading-relaxed gap-x-6">
+                                <x-icons.arrow></x-icons.arrow>
+                                {{__("content.home.section_3.content_3")}}
+
+                            </li>
+                            <li class="flex items-center text-left leading-relaxed gap-x-6">
+                                <x-icons.arrow></x-icons.arrow>
+                                {{__("content.home.section_3.content_2")}}
+
+                            </li>
+                            <li class="flex items-center text-left leading-relaxed gap-x-6">
+                                <x-icons.arrow></x-icons.arrow>
+                                {{__("content.home.section_3.content_1")}}
+
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="hidden 2xl:flex basis-1/2 m-auto md:delay-700 object-center">
-                    <div class="rounded-xl bg-gray-dark max-h-[500px] rotate-6">
-                        <div
-                            class="relative flex flex-col justify-between aspect-square max-h-[500px] z-10 right-6 top-10 rounded-2xl bg-white p-6 -rotate-6">
-                            <div class="px-4 pt-5 font-semibold text-3xl">
+                <div class="hidden 2xl:flex basis-5/12 m-auto md:delay-700 relative -right-5">
+                    <div class="rounded-xl bg-gray-dark aspect-[2/1] max-h-[500px] rotate-6 relative -top-5">
+                        <div class="relative flex flex-col justify-between aspect-[2/1] max-h-[500px] z-10 right-6 top-10 rounded-2xl shadow-sm bg-white px-6 py-10 -rotate-6 gap-6">
+                            <div class="px-4 font-semibold text-xl lg:text-2xl">
                                 {{__("content.home.section_3.title_2")}}
                             </div>
-                            <div class="p-8 text-website-normal">
-                                <div
-                                    class="flex flex-col items-center place-content-center text-center bg-gray-light aspect-video p-6 rounded-2xl">
-                                    <img src="{{asset('graphics/stars.png')}}" class="max-h-12 shrink m-4"
+                            <div class="py-6 text-website-normal mx-4">
+                                <div class="flex flex-col items-center place-content-center text-center bg-blue-light max-w-full px-6 py-4 gap-4 rounded-2xl">
+                                    <img src="{{asset('graphics/stars.svg')}}" class="max-h-8 shrink"
                                          alt="5 stars"/>
-                                    <div class="text-md leading-relaxed">
+                                    <div class="leading-relaxed">
                                         {{__("content.home.section_3.subtitle_3")}}
                                     </div>
 
@@ -170,9 +172,9 @@
                             @endforeach
                         </ul>
                         <div class="hidden md:block relative pb-8">
-                            <div class="relative flex">
-                                <x-secondary-button href="{{ route('case-studies') }}" class="flex">{{ __("buttons.all_projects") }}</x-secondary-button>
-                                <x-primary-button href="" class="flex h-full">{{ __("buttons.case_study") }}</x-primary-button>
+                            <div class="relative flex items-center">
+                                <x-secondary-button href="{{ route('case-studies') }}" class="">{{ __("buttons.all_projects") }}</x-secondary-button>
+                                <x-primary-button href="" class="">{{ __("buttons.case_study") }}</x-primary-button>
                             </div>
                             <span class="absolute -left-[30%] -z-10">
                                 <x-bubble size="30"/>
@@ -191,10 +193,8 @@
                     <x-bubble size="20"/>
                 </span>
             </div>
-            <div
-                class="flex rounded-2xl xl:bg-gray-light -rotate-3 basis-8/12 relative xl:shadow-md size-full xl:left-[10%] md:mt-12">
-                <div
-                    class="absolute hidden xl:block rotate-3 z-20 rounded-2xl h-52 w-80 -left-[10%] bottom-[10%] bg-[url('graphics/code-snippet.png')] bg-cover">
+            <div class="flex rounded-2xl xl:bg-gray-light -rotate-3 basis-8/12 relative xl:shadow-md size-full xl:left-[10%]">
+                <div class="absolute hidden xl:block rotate-3 z-20 rounded-2xl h-52 w-80 -left-[10%] bottom-[10%] bg-[url('graphics/code-snippet.png')] bg-cover">
                 </div>
                 <img src="{{asset('graphics/vita.png')}}"
                      class="w-full relative flex xl:left-[5%] overflow-hidden rounded-2xl bg-white shadow-md rotate-3"
@@ -207,36 +207,44 @@
 
         <section class="my-20 text-center bg-gray-extraLight ">
             <div class="block lg:bg-binary bg-cover bg-center bg-no-repeat 3xl:mx-44">
-                <div class="relative px-[10%] md:px-[20%]  py-8 md:py-20">
+                <div class="relative px-[10%] md:px-[20%] py-20">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 relative mb-8">
                         {{__("content.home.section_5.title_1")}}</h2>
                     <span class="font-light leading-relaxed text-lg lg:text-xl relative">
-                    {{__("content.home.section_5.subtitle_1")}}</span>
-                    <div
-                        class="flex flex-col sm:flex-row relative text-gray-400 items-center mt-8 md:justify-between lg:justify-center gap-y-8 sm:gap-x-8 lg:gap-x-16">
-                        <div>
+                    <span class="leading-relaxed font-semibold">{{__("content.home.section_5.subtitle_1")}}</span>
+                    <span class="leading-relaxed">{{__("content.home.section_5.subtitle_2")}}</span>
+                        <span class="leading-relaxed font-semibold">{{__("content.home.section_5.subtitle_3")}}</span>
+                    <span class="leading-relaxed">{{__("content.home.section_5.subtitle_4")}}</span>
+                        <span class="leading-relaxed font-semibold">{{__("content.home.section_5.subtitle_5")}}</span>
+                    <span class="leading-relaxed">{{__("content.home.section_5.subtitle_6")}}</span>
+                        <span class="leading-relaxed font-semibold">{{__("content.home.section_5.subtitle_7")}}</span>
+
+
+                    </span>
+                    <div class="grid grid-cols-5 relative w-fit align-middle place-items-center mx-auto text-gray-400 items-center mt-14  gap-8 lg:gap-x-14">
+                        <div class="">
                             <img src="{{ asset('images/tech/laravel.svg')}}"
-                                 class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110"
+                                 class="tech-icon h-full w-12 m-auto grayscale hover:grayscale-0 object-contain transform transition hover:scale-110"
                                  alt="laravel"/>
                         </div>
-                        <div>
+                        <div class="">
                             <img src="{{ asset('images/tech/php.svg')}}"
-                                 class="tech-icon h-full w-28 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110"
+                                 class="tech-icon h-full w-16 m-auto grayscale hover:grayscale-0 object-contain transform transition hover:scale-110"
                                  alt="php"/>
                         </div>
-                        <div>
+                        <div class="">
                             <img src="{{ asset('images/tech/postgresql.svg')}}"
-                                 class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110"
+                                 class="tech-icon h-full w-12 m-auto grayscale hover:grayscale-0 object-contain transform transition hover:scale-110"
                                  alt="postgresql"/>
                         </div>
-                        <div>
+                        <div class=" sm:col-span-1">
                             <img src="{{ asset('images/tech/docker.svg')}}"
-                                 class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110"
+                                 class="tech-icon h-full w-12 m-auto grayscale hover:grayscale-0 object-contain transform transition hover:scale-110"
                                  alt="docker"/>
                         </div>
-                        <div>
+                        <div class=" sm:col-span-1">
                             <img src="{{ asset('images/tech/vue.svg')}}"
-                                 class="tech-icon h-full w-20 grayscale hover:grayscale-0 object-contain transform transition hover:scale-110"
+                                 class="tech-icon h-full w-12 m-auto grayscale hover:grayscale-0 object-contain transform transition hover:scale-110"
                                  alt="vue"/>
                         </div>
                     </div>
@@ -315,7 +323,7 @@
                 <div class="relative flex flex-row items-center justify-between">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">{{__("content.home.section_7.title_1")}}</h2>
                     <div class="hidden sm:block">
-                        <x-primary-button href="" class="px-14">{{__("buttons.see_all")}}</x-primary-button>
+                        <x-primary-button href="" class="px-16">{{__("buttons.see_all")}}</x-primary-button>
                     </div>
                 </div>
                 <div class="grid gap-8 pt-12 max-w-none sm:grid-cols-2 lg:grid-cols-3 relative">
