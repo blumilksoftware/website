@@ -88,7 +88,7 @@
                             <span class="sr-only">LinkedIn</span>
                             <i class="fa-brands fa-linkedin text-xl lg:text-2xl"></i>
                         </a>
-                        <a href="" class="text-white" target="_blank">
+                        <a href="https://www.youtube.com/@blumilksoftware" class="text-white" target="_blank">
                             <span class="sr-only">Youtube</span>
                             <i class="fa-brands fa-square-youtube text-xl lg:text-2xl"></i>
                         </a>
