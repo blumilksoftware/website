@@ -13,7 +13,7 @@ return new class() extends Migration {
             $table->id();
             $table->string("photo");
             $table->string("company");
-            $table->string("slug");
+            $table->json("slug");
             $table->string("template")->nullable();
             $table->json("name");
             $table->json("description");

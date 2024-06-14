@@ -22,7 +22,7 @@ class CaseStudyFactory extends Factory
             "photo" => sprintf("%s/%s", "factory", "case_study.jpg"),
             "published" => $this->faker->boolean,
             "company" => $this->faker->company,
-            "slug" => $this->faker->slug,
+            "slug" => $this->translations($locales, $this->faker->slug),
             "template" => "base-template.blade.php",
         ];
     }

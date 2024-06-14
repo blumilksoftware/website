@@ -6,10 +6,12 @@ namespace Blumilk\Website\Filament\Resources;
 
 use Blumilk\Website\Filament\Resources\CaseStudyResource\Pages;
 use Blumilk\Website\Models\CaseStudy;
+use CodeZero\UniqueTranslation\UniqueTranslationRule;
 use Filament\Forms;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Split;
 use Filament\Forms\Form;
+use Filament\Forms\Get;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Filters\TernaryFilter;
@@ -40,12 +42,17 @@ class CaseStudyResource extends Resource
                             ->label("Firma")
                             ->required()
                             ->maxLength(255),
-                        Forms\Components\TextInput::make("slug")
+                        TranslatableContainer::make(
+                            Forms\Components\TextInput::make("slug")
                             ->label("Slug")
                             ->required()
-                            ->unique(ignoreRecord: true)
+                            ->rules([
+                                fn (Get $get) => dd($get)
+//                                UniqueTranslationRule::for('case_studies', 'slug')->ignore($get('id'))
+                            ])
                             ->alphaDash()
                             ->maxLength(255),
+                        )->requiredLocales(config("app.translatable_locales")),
                         Forms\Components\Select::make("template")
                             ->label("Szablon")
                             ->options(fn(): array => self::getTemplateOptions())

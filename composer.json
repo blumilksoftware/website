@@ -10,6 +10,7 @@
         "ext-intl": "*",
         "ext-pdo": "*",
         "codezero/laravel-localized-routes": "^4.0",
+        "codezero/laravel-unique-translation": "^4.3",
         "filament/filament": "^3.2",
         "filament/spatie-laravel-translatable-plugin": "^3.2",
         "guzzlehttp/guzzle": "^7.8",

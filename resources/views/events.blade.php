@@ -36,7 +36,7 @@
             @foreach($tags as $tag)
                 <a href=""
                    class="inline-block bg-bubble transform transition hover:scale-110 hover:rounded-sm text-gray-800 font-semibold text-sm px-12 py-6 mr-4 mb-2">
-                    {{$tag}}
+                    {{__("tags.$tag")}}
                 </a>
             @endforeach
         </div>

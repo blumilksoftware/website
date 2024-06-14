@@ -148,10 +148,10 @@ class ActivityResource extends Resource
     public static function getTags(): array
     {
         return [
-            "Witelon State University",
-            "SoDa",
-            "Tech Meetup Legnica",
-            "Publications",
+            "cwup",
+            "soda",
+            "lmt",
+            "publikacje",
         ];
     }
 }
