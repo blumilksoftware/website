@@ -12,9 +12,9 @@ class HomeController extends Controller
 {
     public function __invoke(Factory $factory): View
     {
-        $events = Activity::query()->where("published", true)->get();
+        $activities = Activity::query()->where("published", true)->get();
 
         return $factory->make("home")
-            ->with("events", $events);
+            ->with("activities", $activities);
     }
 }

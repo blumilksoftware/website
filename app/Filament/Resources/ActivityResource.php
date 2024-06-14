@@ -7,6 +7,7 @@ namespace Blumilk\Website\Filament\Resources;
 use Blumilk\Website\Enums\DateFormats;
 use Blumilk\Website\Filament\Resources\ActivityResource\Pages;
 use Blumilk\Website\Models\Activity;
+use CodeZero\UniqueTranslation\UniqueTranslationRule;
 use Exception;
 use Filament\Forms;
 use Filament\Forms\Components\Section;
@@ -19,6 +20,7 @@ use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
 use Mvenghaus\FilamentPluginTranslatableInline\Forms\Components\TranslatableContainer;
 
 class ActivityResource extends Resource
@@ -46,6 +48,16 @@ class ActivityResource extends Resource
                         TranslatableContainer::make(
                             Forms\Components\TextInput::make("subtitle")
                                 ->label("Podtytuł")
+                                ->maxLength(255),
+                        )->requiredLocales(config("app.translatable_locales")),
+                        TranslatableContainer::make(
+                            Forms\Components\TextInput::make("slug")
+                                ->label("Slug")
+                                ->required()
+                                ->rules([
+                                    fn(?Model $record) => UniqueTranslationRule::for("activities", "slug")->ignore($record?->getKey()),
+                                ])
+                                ->alphaDash()
                                 ->maxLength(255),
                         )->requiredLocales(config("app.translatable_locales")),
                         Forms\Components\Checkbox::make("published")

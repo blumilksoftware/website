@@ -23,9 +23,7 @@ class CaseStudiesController extends Controller
     {
         $locale = App::getLocale();
 
-        $caseStudy = CaseStudy::query()
-            ->where("slug->{$locale}", $slug)
-            ->firstOrFail();
+        $caseStudy = CaseStudy::query()->where("slug->{$locale}", $slug)->firstOrFail();
         $view = preg_replace('/\.blade\.php$/', "", $caseStudy->template);
 
         return $factory->make("case-studies/$view")

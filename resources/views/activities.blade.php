@@ -25,7 +25,7 @@
     <section class="py-16 text-center px-[10%] md:px-[20%] space-y-16">
         <div class="">
             <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-black my-6 break-words">
-                {{__("content.events.section_1.title_1")}}
+                {{__("content.activities.section_1.title_1")}}
             </h2>
         </div>
         <div>
@@ -41,8 +41,8 @@
             @endforeach
         </div>
         <div class="grid lg:grid-cols-3 gap-12">
-            @foreach($events as $index => $event)
-                <x-article-card :event="$event"/>
+            @foreach($activities as $index => $activity)
+                <x-activity-card :activity="$activity"/>
             @endforeach
         </div>
     </section>

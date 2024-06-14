@@ -111,6 +111,7 @@ return [
     "string" => "Pole :attribute musi być ciągiem znaków.",
     "timezone" => "Pole :attribute musi być prawidłową strefą czasową.",
     "unique" => "Taki :attribute już występuje.",
+    "unique_translation" => "Taki :attribute już występuje.",
     "uploaded" => "Nie udało się wgrać pliku :attribute.",
     "url" => "Format pola :attribute jest nieprawidłowy.",
     "uuid" => "Pole :attribute musi być poprawnym identyfikatorem UUID.",

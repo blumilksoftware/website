@@ -3,10 +3,10 @@
 declare(strict_types=1);
 
 use Blumilk\Website\Http\Controllers\AboutController;
+use Blumilk\Website\Http\Controllers\ActivitiesController;
 use Blumilk\Website\Http\Controllers\CareerController;
 use Blumilk\Website\Http\Controllers\CaseStudiesController;
 use Blumilk\Website\Http\Controllers\ContactController;
-use Blumilk\Website\Http\Controllers\EventsController;
 use Blumilk\Website\Http\Controllers\HomeController;
 use Blumilk\Website\Http\Controllers\LegalController;
 use Blumilk\Website\Http\Controllers\MeetupsController;
@@ -29,6 +29,6 @@ $router->get($uri->translate("career/software-engineer"), [CareerController::cla
 $router->get($uri->translate("contact"), ContactController::class)->name("contact");
 
 $router->get($uri->translate("meetups"), MeetupsController::class)->name("meetups");
-$router->get($uri->translate("events"), [EventsController::class, "index"])->name("events");
-$router->get($uri->translate("events/{slug}"), [EventsController::class, "get"])->name("event");
+$router->get($uri->translate("activities"), [ActivitiesController::class, "index"])->name("activities");
+$router->get($uri->translate("activities/{slug}"), [ActivitiesController::class, "get"])->name("activities.entry");
 $router->get($uri->translate("legal"), LegalController::class)->name("legal");

@@ -11,11 +11,11 @@ use Filament\Forms;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Split;
 use Filament\Forms\Form;
-use Filament\Forms\Get;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
+use Illuminate\Database\Eloquent\Model;
 use Mvenghaus\FilamentPluginTranslatableInline\Forms\Components\TranslatableContainer;
 
 class CaseStudyResource extends Resource
@@ -44,14 +44,13 @@ class CaseStudyResource extends Resource
                             ->maxLength(255),
                         TranslatableContainer::make(
                             Forms\Components\TextInput::make("slug")
-                            ->label("Slug")
-                            ->required()
-                            ->rules([
-                                fn (Get $get) => dd($get)
-//                                UniqueTranslationRule::for('case_studies', 'slug')->ignore($get('id'))
-                            ])
-                            ->alphaDash()
-                            ->maxLength(255),
+                                ->label("Slug")
+                                ->required()
+                                ->rules([
+                                    fn(?Model $record) => UniqueTranslationRule::for("case_studies", "slug")->ignore($record?->getKey()),
+                                ])
+                                ->alphaDash()
+                                ->maxLength(255),
                         )->requiredLocales(config("app.translatable_locales")),
                         Forms\Components\Select::make("template")
                             ->label("Szablon")

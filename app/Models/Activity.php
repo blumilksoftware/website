@@ -13,6 +13,7 @@ use Spatie\Translatable\HasTranslations;
  * @property array $title
  * @property array $subtitle
  * @property array $description
+ * @property array $slug
  * @property string $photo
  * @property bool $published
  * @property Carbon $published_at
@@ -28,12 +29,14 @@ class Activity extends Model
         "title",
         "subtitle",
         "description",
+        "slug",
     ];
     protected $fillable = [
         "photo",
         "title",
         "subtitle",
         "description",
+        "slug",
         "published",
         "published_at",
         "tags",
@@ -42,6 +45,7 @@ class Activity extends Model
         "title" => "array",
         "subtitle" => "array",
         "description" => "array",
+        "slug" => "array",
         "published" => "boolean",
         "published_at" => "datetime",
         "tags" => "array",

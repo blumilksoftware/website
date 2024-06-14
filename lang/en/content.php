@@ -174,7 +174,7 @@ return [
             "title_1" => "Are we looking for you?",
         ],
     ],
-    "events" => [
+    "activities" => [
         "section_1" => [
             "title_1" => "Our activities",
         ],
