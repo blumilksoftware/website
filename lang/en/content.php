@@ -179,4 +179,10 @@ return [
             "title_1" => "Our activities",
         ],
     ],
+    "activity" => [
+        "section_1" => [
+            "title_1" => "You might find this interesting:",
+            "title_2" => "Tags",
+        ],
+    ],
 ];

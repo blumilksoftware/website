@@ -17,6 +17,7 @@ use Spatie\Translatable\HasTranslations;
  * @property string $photo
  * @property bool $published
  * @property Carbon $published_at
+ * @property string $url
  */
 class Activity extends Model
 {
@@ -40,6 +41,7 @@ class Activity extends Model
         "published",
         "published_at",
         "tags",
+        "url",
     ];
     protected $casts = [
         "title" => "array",

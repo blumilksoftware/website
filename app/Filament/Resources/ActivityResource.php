@@ -75,9 +75,13 @@ class ActivityResource extends Resource
                                 ->required()
                                 ->maxLength(65000),
                         )->requiredLocales(config("app.translatable_locales")),
-                        Forms\Components\TagsInput::make("tags")
+                        Forms\Components\Select::make("tags")
                             ->label("Tagi")
-                            ->suggestions(static::getTags()),
+                            ->multiple()
+                            ->options(static::getTags()),
+                        Forms\Components\TextInput::make("url")
+                            ->label("Url")
+                            ->maxLength(2048),
                         Forms\Components\FileUpload::make("photo")
                             ->label("Zdjęcie")
                             ->required()

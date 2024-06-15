@@ -26,8 +26,13 @@ class ActivitiesController extends Controller
     {
         $locale = App::getLocale();
         $activity = Activity::query()->where("slug->{$locale}", $slug)->firstOrFail();
+        $recommendedActivities = Activity::all()
+            ->shuffle()
+            ->take(2);
+
 
         return $factory->make("activity")
-            ->with("activity", $activity);
+            ->with("activity", $activity)
+            ->with("recommendedActivities", $recommendedActivities);
     }
 }

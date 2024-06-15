@@ -21,44 +21,66 @@
                 <x-bubble size="200"/>
             </div>
 
-        <div class="absolute z-10 hidden lg:block -left-[10%] lg:-left-[3%] top-96">
-            <x-bubble size="250"/>
-        </div>
+            <div class="absolute z-10 hidden lg:block -left-[10%] lg:-left-[3%] top-96">
+                <x-bubble size="250"/>
+            </div>
         </div>
     </div>
-    <section class="flex flex-col md:flex-row place-content-between relative mx-[10%] md:mx-[20%] pt-16">
-            <div class="basis-3/5">
-                <div class="relative aspect-square max-w-2xl overflow-hidden rounded-3xl">
-                    <img src="{{asset("$activity->photo")}}"
-                         alt=""
-                         class="inset-0 -z-10 size-full object-cover">
+    <section class="flex flex-col gap-32 md:flex-row place-content-between relative mx-[10%] md:mx-[20%] pt-32">
+        <div class="">
+            <div class="relative aspect-square max-w-xl overflow-hidden rounded-3xl">
+                <img src="{{asset("$activity->photo")}}"
+                     alt=""
+                     class="inset-0 -z-10 size-full object-cover">
+            </div>
+            <div class="mt-16 w-full max-w-2xl lg:max-w-none">
+                <div class="mt-14 sm:mt-16 max-w-xl">
+                    <div class="mt-14 text-2xl md:text-3xl lg:text-4xl">
+                        <h1 class="font-bold">{{$activity->title}}</h1>
+                        <h1>{{$activity->subtitle}}</h1>
+                    </div>
+                    <p class="mt-20 text-lg lg:text-xl font-light">{{$activity->description}}</p>
+                    @if(!empty($activity->url))
+                        <a class="block mt-10 text-lg lg:text-xl font-light"
+                           href="{{$activity->url}}">▶ {{$activity->url}}</a>
+                    @endif
                 </div>
-                <div class="mx-auto mt-16 w-full max-w-2xl lg:col-span-4 lg:mt-0 lg:max-w-none">
-                    <div class="mt-14 max-w-2xl sm:mt-16 lg:col-span-3 lg:row-span-2 lg:row-end-2 lg:mt-0 lg:max-w-2xl">
-                        <div class="mt-14 text-2xl md:text-3xl lg:text-4xl">
-                            <h1 class="font-bold">{{$activity->title}}</h1>
-                            <h1>{{$activity->subtitle}}</h1>
+            </div>
+        </div>
+        <div>
+            <div class="mt-10 md:mt-0">
+                <h3 class="text-lg lg:text-xl font-semibold">{{__("content.activity.section_1.title_1")}}</h3>
+                <div class="prose prose-sm mt-4">
+                    @foreach($recommendedActivities as $recommendedActivity)
+                        <div class="relative flex bg-bubble my-4">
+                            <time datetime="{{ $recommendedActivity->published_at }}"
+                                  class="bg-website-normal w-20 text-center text-white font-bold py-3">
+                                <span
+                                    class="text-sm">{{ \Carbon\Carbon::parse($recommendedActivity->published_at)->format('d/m') }}</span>
+                                <span
+                                    class="text-lg">{{ \Carbon\Carbon::parse($recommendedActivity->published_at)->format('Y') }}</span>
+                            </time>
+                            <div class="flex bg-bubble my-auto pl-8 max-w-xs">
+                                <h3 class="text-gray-900 text-left text-base font-bold">
+                                    <a href="{{ route('activities.entry', $recommendedActivity->slug) }}">
+                                        <span class="absolute inset-0"></span>
+                                        {{ $recommendedActivity->title }}
+                                    </a>
+                                </h3>
+                            </div>
                         </div>
-                        <p class="mt-6 text-lg lg:text-xl font-light">{{$activity->description}}</p>
-                    </div>
+                    @endforeach
                 </div>
             </div>
-            <div class="basis-2/5">
-                <div class="mt-10 md:mt-0 md:pt-10">
-                    <h3 class="text-lg lg:text-xl font-semibold">{{__("content.activity.section_1.title_1")}}</h3>
-                    <div class="prose prose-sm mt-4">
-                        opis
-                    </div>
-                </div>
-                <div class="mt-10 pt-10">
-                    <h3 class="text-lg lg:text-xl font-semibold">{{__("content.activity.section_1.title_2")}}</h3>
-                    <p class="mt-4 text-sm">
-                        @foreach($activity->tags as $tag)
-                            <x-badge class="my-4"> {{__("tags.$tag")}}</x-badge>
-                        @endforeach
-                    </p>
-                </div>
+            <div class="mt-10">
+                <h3 class="text-lg lg:text-xl font-semibold">{{__("content.activity.section_1.title_2")}}</h3>
+                <p class="mt-4 text-sm">
+                    @foreach($activity->tags as $tag)
+                        <x-badge class="my-4"> {{__("tags.$tag")}}</x-badge>
+                    @endforeach
+                </p>
             </div>
+        </div>
     </section>
 
 @endsection

@@ -27,6 +27,7 @@ class ActivityFactory extends Factory
             "published" => $this->faker->boolean,
             "published_at" => $this->faker->date,
             "tags" => $this->faker->randomElements($tags, $this->faker->numberBetween(0, count($tags))),
+            "url" => $this->faker->url(),
         ];
     }
 }
