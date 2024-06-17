@@ -199,8 +199,7 @@ return [
             "part1" => "I accept the terms and conditions and",
             "part2" => "privacy policy",
             "part3" => "and thereby consent to the processing of my personal data by the Administrator",
-            "more"  => "More",
+            "more" => "More",
         ],
-
     ],
 ];
