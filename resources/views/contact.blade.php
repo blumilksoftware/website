@@ -31,18 +31,18 @@
         </div>
     </div>
     <div
-        class="grid xl:grid-cols-2 justify-center  items-center  text-black bg-gray-light xl:bg-gradient-to-r from-gray-light from-30% to-white to-90%   xl:pb-8 ">
+        class="grid xl:grid-cols-2 justify-center  items-center  text-black bg-gray-light xl:bg-gradient-to-br from-gray-light via-[#F8F9FC]  to-white    xl:pb-8 ">
         <section class=" md:flex flex-col   px-[10%] xl:px-[0%] xl:pl-[40%] pt-16 pb-4 z-20">
             <h4 class="text-3xl sm:text-4xl lg:text-5xl text-center xl:text-left font-semibold text-black "><span
-                    class="text-website-normal">{{ __('contact.title') }}</span> {{ __('contact.title2') }}</h4>
-            <p class="text-md xl:text-lg leading-8 text-black text-center xl:text-left py-6">{{ __('contact.subtitle') }}
+                    class="text-website-normal">{{ __('content.contact.title') }}</span> {{ __('content.contact.title2') }}</h4>
+            <p class="text-md xl:text-lg leading-8 text-black text-center xl:text-left py-6">{{ __('content.contact.subtitle') }}
             </p>
             <div class="flex flex-col lg:flex-row">
                 <form action="#" method="POST" class="lg:flex-auto">
                     <div class="grid grid-cols-1 gap-y-6">
                         <div>
                             <label for="e-mail"
-                                class="block text-xs font-semibold leading-6 text-gray-700">{{ __('contact.form.email') }}</label>
+                                class="block text-xs font-semibold leading-6 text-gray-700">{{ __('content.contact.form.email') }}</label>
                             <div class="mt-2.5">
                                 <input type="text" name="e-mail" id="e-mail" autocomplete="given-e-mail"
                                     class="block w-full xl:w-[90%]  h-12 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
@@ -50,7 +50,7 @@
                         </div>
                         <div>
                             <label for="topic"
-                                class="block text-xs font-semibold leading-6 text-gray-700">{{ __('contact.form.title') }}</label>
+                                class="block text-xs font-semibold leading-6 text-gray-700">{{ __('content.contact.form.title') }}</label>
                             <div class="mt-2.5">
                                 <input type="text" name="topic" id="topic" autocomplete="topic"
                                     class="block w-full xl:w-[90%]  h-12 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
@@ -58,19 +58,18 @@
                         </div>
                         <div>
                             <label for="message"
-                                class="block text-xs font-semibold leading-6 text-gray-700">{{ __('contact.form.message') }}</label>
+                                class="block text-xs font-semibold leading-6 text-gray-700">{{ __('content.contact.form.message') }}</label>
                             <div class="mt-2.5">
                                 <textarea id="message" name="message" rows="4"
                                     class="block w-full xl:w-[90%] rounded-md border-0 px-3.5 py-2 min-h-12 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"></textarea>
                             </div>
                         </div>
                     </div>
-                    <div class="flex items-center mt-2">
+                    <div class="flex items-center mt-2 xl:w-[90%]">
                         <input type="checkbox" name="policyBox" id="policyBox" class="w-3 h-3">
-                        <p class="text-xs font-normal text-gray-600 ml-2 pt-4">Akceptuję regulamin oraz <a href="{{ route('policy') }}"
-                                class="underline font-bold">politykę prywatności</a> i tym samym wyrażam zgodę na
-                            przetwarzanie przez Administratora moich danych osobowych <a href=""
-                                class="font-bold">Więcej</a></p>
+                        <p class="text-xs font-normal text-gray-600 ml-2 pt-4">{{ __('content.contact.policy.part1') }} <a href="{{ route('policy') }}"
+                                class="underline font-bold">{{ __('content.contact.policy.part2') }}</a> {{ __('content.contact.policy.part3') }} <a href=""
+                                class="font-bold">{{ __('content.contact.policy.more') }}</a></p>
                     </div>
                     <div class="mt-3 flex">
                         <x-primary-button type="submit" href=""
@@ -82,46 +81,45 @@
         <section class="flex flex-col h-full  text-black px-[10%]  bg-white xl:bg-transparent pb-4 ">
             <div class="xl:max-w-[460px] h-full xl:pt-32 ">
                 <div
-                    class="hidden absolute xl:flex xl:w-[455px] xl:h-[451px] -translate-y-[30px] translate-x-[25px] rotate-[4deg] bg-gray-light rounded-3xl ">
+                    class="hidden absolute xl:flex xl:w-[455px] xl:h-[451px] -translate-y-[30px] translate-x-[25px] rotate-[4deg] bg-gray-dark rounded-3xl shadow-md">
                 </div>
                 <div
                     class="flex flex-col xl:w-[460px] xl:h-[451px]  xl:bg-white p-8 self-center rounded-3xl xl:shadow-md bg-opacity-80 gap-x-14 justify-center items-center pt-10 xl:pt-0 relative ">
 
-                    <div class="relative">
-                        <h1 class="text-2xl font-bold text-black mb-4">{{ __('contact.company') }}</h1>
+                    <div class="relative ">
+                        <h1 class="text-2xl font-bold text-black mb-4">{{ __('content.contact.company') }}</h1>
                         <div>
                             <div class="flex mt-3 items-start">
                                 <span class="sr-only">Location</span>
                                 <x-icons.marker></x-icons.marker>
                                 <div class="ml-4 -mt-[2px]">
-                                    <div>{{ __('contact.location') }}</div>
-                                    <div>{{ __('contact.locationPostalCode') }}</div>
+                                    <div>{{ __('content.contact.location.address') }}</div>
+                                    <div>{{ __('content.contact.location.PostalCode') }}</div>
                                 </div>
                             </div>
                             <div class="flex mt-3 items-start">
                                 <span class="sr-only">Phone number</span>
                                 <x-icons.phone></x-icons.phone>
-                                <div class="ml-4 -mt-[2px]">{{ __('contact.phone') }}</div>
+                                <div class="ml-4 -mt-[2px]">{{ __('content.contact.phone') }}</div>
                             </div>
                             <div class="flex mt-3 items-start">
                                 <span class="sr-only">Email</span>
                                 <x-icons.postcard></x-icons.postcard>
-                                <div class="ml-4 -mt-[2px]">{{ __('contact.email') }}</div>
+                                <div class="ml-4 -mt-[2px]">{{ __('content.contact.email') }}</div>
                             </div>
                             <div class="flex mt-3 items-start">
                                 <span class="sr-only">Info</span>
                                 <x-icons.info></x-icons.info>
                                 <div class="ml-4 -mt-[2px]">
-                                    <div>{{ __('contact.infoNIP') }}</div>
-                                    <div>{{ __('contact.infoKRS') }}</div>
-                                    <div>{{ __('contact.infoREGON') }}</div>
+                                    <div>{{ __('content.contact.info.NIP') }}</div>
+                                    <div>{{ __('content.contact.info.KRS') }}</div>
+                                    <div>{{ __('content.contact.info.REGON') }}</div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div
-                    class=" hidden xl:flex  xl:justify-end space-x-6 md:order-2 items-center xl:mt-32 xl:pr-2 ">
+                <div class=" hidden xl:flex  xl:justify-end space-x-6 md:order-2 items-center xl:mt-32 xl:pr-2 ">
                     <a href="https://clutch.co/profile/blumilk-0" class="text-gray-700 align-center fill-current"
                         target="_blank">
                         <span class="sr-only">Clutch</span>
@@ -136,9 +134,13 @@
                         <span class="sr-only">LinkedIn</span>
                         <i class="fa-brands fa-linkedin text-xl lg:text-2xl"></i>
                     </a>
+                    <a href="https://www.youtube.com/@blumilksoftware" class="text-gray-700" target="_blank">
+                        <span class="sr-only">Youtube</span>
+                        <i class="fa-brands fa-square-youtube text-xl lg:text-2xl"></i>
+                    </a>
                     <a href="https://www.facebook.com/blumilksoftware/" class="text-gray-700" target="_blank">
-                        <span class="sr-only">X</span>
-                        <i class="fa-brands fa-facebook text-xl lg:text-2xl"></i>
+                        <span class="sr-only">Facebook</span>
+                        <i class="fa-brands fa-square-facebook text-xl lg:text-2xl"></i>
                     </a>
                 </div>
             </div>
@@ -159,48 +161,52 @@
             <span class="sr-only">LinkedIn</span>
             <i class="fa-brands fa-linkedin text-xl lg:text-2xl"></i>
         </a>
+        <a href="https://www.youtube.com/@blumilksoftware" class="text-gray-700" target="_blank">
+            <span class="sr-only">Youtube</span>
+            <i class="fa-brands fa-square-youtube text-xl lg:text-2xl"></i>
+        </a>
         <a href="https://www.facebook.com/blumilksoftware/" class="text-gray-700" target="_blank">
-            <span class="sr-only">X</span>
-            <i class="fa-brands fa-facebook text-xl lg:text-2xl"></i>
+            <span class="sr-only">Facebook</span>
+            <i class="fa-brands fa-square-facebook text-xl lg:text-2xl"></i>
         </a>
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-          mapboxgl.accessToken =
+            mapboxgl.accessToken =
                 'pk.eyJ1Ijoia3Jld2FrIiwiYSI6ImNramhmNWI3NjQ2Mm0yeW5xaHUxbmFvMTAifQ.pML1FJHSbrdqOGUvlnd1xw'
-          var map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/krewak/ckjhf6g1qbww719p1e33pgm84',
-            center: [16.163200, 51.208200], //[lng, lat]
-            zoom: 15,
-          })
-          map.scrollZoom.disable()
-          var nav = new mapboxgl.NavigationControl()
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/krewak/ckjhf6g1qbww719p1e33pgm84',
+                center: [16.163200, 51.208200], //[lng, lat]
+                zoom: 15,
+            })
+            map.scrollZoom.disable()
+            var nav = new mapboxgl.NavigationControl()
 
-          function addRemoveMapControls() {
+            function addRemoveMapControls() {
 
-            if (window.matchMedia('(min-width: 1024px)').matches) {
-              map.addControl(nav, 'top-left')
-            } else {
-              map.removeControl(nav)
+                if (window.matchMedia('(min-width: 1024px)').matches) {
+                    map.addControl(nav, 'top-left')
+                } else {
+                    map.removeControl(nav)
+                }
             }
-          }
 
-          addRemoveMapControls()
-
-          window.addEventListener('resize', function() {
             addRemoveMapControls()
-          })
 
-          const marker = new mapboxgl.Marker({
-            color: '#5379F6',
-          })
-            .setLngLat([16.163780, 51.208760])
-            .addTo(map)
+            window.addEventListener('resize', function() {
+                addRemoveMapControls()
+            })
 
-          marker.getElement().addEventListener('click', function() {
-            window.open('https://maps.app.goo.gl/h6HhaStCsVmwAwF19')
-          })
+            const marker = new mapboxgl.Marker({
+                    color: '#5379F6',
+                })
+                .setLngLat([16.163780, 51.208760])
+                .addTo(map)
+
+            marker.getElement().addEventListener('click', function() {
+                window.open('https://maps.app.goo.gl/h6HhaStCsVmwAwF19')
+            })
         })
     </script>
 @endsection
