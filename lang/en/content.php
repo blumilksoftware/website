@@ -202,4 +202,27 @@ return [
             "more" => "More",
         ],
     ],
+    "policy" => [
+    "title_1" => "Privacy",
+    "title_2" => "policy",
+    "content_1" => "We use cookies on our website to provide services at the highest level and tailor them specifically to your needs. Cookies are used for statistical purposes.",
+    "subtitle_1" => "Cookies - what are they?",
+    "content_2" => "Cookies, also known as 'biscuits', are small files sent by the website you visit and stored on your end device (computer, laptop, smartphone).",
+    "subtitle_2" => "Why do we use cookies?",
+    "content_3" => "We use cookies for estimation purposes, to know the number of users visiting our website. This data allows us to analyze and continually develop the site. For this purpose, we also use 'Google Analytics'. Importantly, 'Google Analytics' only saves the IP address assigned to you on the day of your visit to this site, not your name or other identifying information. Details on how 'Google Analytics' works can be found at",
+    "link_1" => [
+        "address" => "https://policies.google.com/privacy?hl=en-US",
+        "description" => "policies.google.com/privacy",
+    ],
+    "conjunction" => "and",
+    "link_2" => [
+        "address" => "https://marketingplatform.google.com/about/analytics/terms/us/",
+        "description" => "google.com/analytics/terms",
+    ],
+    "subtitle_3" => "Do you have questions?",
+    "content_4" => "If you want to learn more about our Privacy Policy, use the contact form or write to us at:",
+    "email" => "hello@blumilk.pl",
+],
+
+    
 ];
