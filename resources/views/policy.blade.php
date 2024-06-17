@@ -25,10 +25,10 @@
         <h4 class="font-semibold text-black pt-6">{{ __('content.policy.subtitle_2') }} </h4>
         <div>
             <p class="">{{ __('content.policy.content_3') }} </p>
-            <a class="text-website-normal" href="{{ __('content.policy.link_1.addresss') }} ">
+            <a class="text-website-normal" href="{{ __('content.policy.link_1.address') }} ">
                 {{ __('content.policy.link_1.description') }} </a>
             <span>{{ __('content.policy.conjunction') }} </span>
-            <a class="text-website-normal" href="{{ __('content.policy.link_2.addresss') }} ">
+            <a class="text-website-normal" href="{{ __('content.policy.link_2.address') }} ">
                 {{ __('content.policy.link_2.description') }} </a>
         </div>
         <h4 class="font-semibold text-black pt-6">{{ __('content.policy.subtitle_3') }} </h4>
