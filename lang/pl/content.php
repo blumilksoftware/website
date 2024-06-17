@@ -195,5 +195,12 @@ return [
             "KRS" => "KRS 0000866755",
             "REGON" => "REGON 38737620",
         ],
+        "policy" => [
+            "part1" => "Akceptuję regulamin oraz",
+            "part2" => "politykę prywatnośći",
+            "part3" => "i tym samym wyrażam zgodę na przetwarzanie przez Administratora moich danych osobowych",
+            "more"  => "Więcej",
+
+        ],
     ],
 ];

@@ -67,10 +67,9 @@
                     </div>
                     <div class="flex items-center mt-2 xl:w-[90%]">
                         <input type="checkbox" name="policyBox" id="policyBox" class="w-3 h-3">
-                        <p class="text-xs font-normal text-gray-600 ml-2 pt-4">Akceptuję regulamin oraz <a href=""
-                                class="underline font-bold">politykę prywatności</a> i tym samym wyrażam zgodę na
-                            przetwarzanie przez Administratora moich danych osobowych <a href=""
-                                class="font-bold">Więcej</a></p>
+                        <p class="text-xs font-normal text-gray-600 ml-2 pt-4">{{ __('content.contact.policy.part1') }} <a href=""
+                                class="underline font-bold">{{ __('content.contact.policy.part2') }}</a> {{ __('content.contact.policy.part3') }} <a href=""
+                                class="font-bold">{{ __('content.contact.policy.more') }}</a></p>
                     </div>
                     <div class="mt-3 flex">
                         <x-primary-button type="submit" href=""
@@ -140,7 +139,7 @@
                         <i class="fa-brands fa-square-youtube text-xl lg:text-2xl"></i>
                     </a>
                     <a href="https://www.facebook.com/blumilksoftware/" class="text-gray-700" target="_blank">
-                        <span class="sr-only">X</span>
+                        <span class="sr-only">Facebook</span>
                         <i class="fa-brands fa-square-facebook text-xl lg:text-2xl"></i>
                     </a>
                 </div>
@@ -168,7 +167,7 @@
         </a>
         <a href="https://www.facebook.com/blumilksoftware/" class="text-gray-700" target="_blank">
             <span class="sr-only">X</span>
-            <i class="fa-brands fa-facebook text-xl lg:text-2xl"></i>
+            <i class="fa-brands fa-square-facebook text-xl lg:text-2xl"></i>
         </a>
     </div>
     <script>
