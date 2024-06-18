@@ -4,7 +4,6 @@
 @php
     $caseStudiesFile = App::currentLocale()=='en' ? 'case_studies_en.json' : 'case_studies_pl.json';
     $caseStudy = json_decode(file_get_contents(public_path($caseStudiesFile)), true)[0];
-    $testimonials = json_decode(file_get_contents(public_path('testimonials.json')), true);
     $articles = json_decode(file_get_contents(public_path('articles.json')), true);
 
 @endphp
@@ -41,7 +40,8 @@
                         <span class="font-semibold leading-relaxed">{{__("content.home.section_1.subtitle_2")}}</span>
                     </p>
                     <div class="my-6">
-                        <x-primary-button href="{{ route('about') }}" class="px-16">{{ __("buttons.about") }}</x-primary-button>
+                        <x-primary-button href="{{ route('about') }}"
+                                          class="px-16">{{ __("buttons.about") }}</x-primary-button>
                     </div>
                 </div>
             </div>
@@ -52,7 +52,8 @@
         </section>
 
         <section class="relative text-center px-[10%] md:px-[20%]">
-            <div class="text-2xl lg:text-3xl font-semibold text-gray-400">{{ __("content.home.section_2.title_1") }}<span
+            <div class="text-2xl lg:text-3xl font-semibold text-gray-400">{{ __("content.home.section_2.title_1") }}
+                <span
                     class="text-website-normal">{{ __("content.home.section_2.title_2") }}</span>
             </div>
             <div class="absolute z-10 hidden lg:block -left-[10%] lg:-left-[3%] top-0">
@@ -123,12 +124,14 @@
                 </div>
                 <div class="hidden 2xl:flex basis-5/12 m-auto md:delay-700 relative -right-5">
                     <div class="rounded-xl bg-gray-dark aspect-[2/1] max-h-[500px] rotate-6 relative -top-5">
-                        <div class="relative flex flex-col justify-between aspect-[2/1] max-h-[500px] z-10 right-6 top-10 rounded-2xl shadow-sm bg-white px-6 py-10 -rotate-6 gap-6">
+                        <div
+                            class="relative flex flex-col justify-between aspect-[2/1] max-h-[500px] z-10 right-6 top-10 rounded-2xl shadow-sm bg-white px-6 py-10 -rotate-6 gap-6">
                             <div class="px-4 font-semibold text-xl lg:text-2xl">
                                 {{__("content.home.section_3.title_2")}}
                             </div>
                             <div class="py-6 text-website-normal mx-4">
-                                <div class="flex flex-col items-center place-content-center text-center bg-blue-light max-w-full px-6 py-4 gap-4 rounded-2xl">
+                                <div
+                                    class="flex flex-col items-center place-content-center text-center bg-blue-light max-w-full px-6 py-4 gap-4 rounded-2xl">
                                     <img src="{{asset('graphics/stars.svg')}}" class="max-h-8 shrink"
                                          alt="5 stars"/>
                                     <div class="leading-relaxed">
@@ -139,7 +142,8 @@
                             </div>
                             <div class="flex place-content-center px-8">
                                 <x-block-primary-button href="{{ route('contact') }}">
-                                    <span class="font-semibold">{{ __("buttons.text_us_1") }}</span>{{ __("buttons.text_us_2") }}
+                                    <span
+                                        class="font-semibold">{{ __("buttons.text_us_1") }}</span>{{ __("buttons.text_us_2") }}
                                 </x-block-primary-button>
                             </div>
                         </div>
@@ -164,16 +168,19 @@
                     <div class="text-black text-lg font-light lg:text-xl relative py-4">
                         <div class="py-4">
                             <span class="leading-relaxed">{{__("content.home.section_4.subtitle_1")}}</span>
-                            <span class="font-semibold leading-relaxed">{{__("content.home.section_4.subtitle_2")}}</span>
+                            <span
+                                class="font-semibold leading-relaxed">{{__("content.home.section_4.subtitle_2")}}</span>
                         </div>
                         <ul class="list-disc-none py-8 hidden md:block">
                             @foreach($caseStudy as $key => $description)
-                                <li><span class="font-semibold leading-relaxed">{{ $key }}</span> : {{ $description }}</li>
+                                <li><span class="font-semibold leading-relaxed">{{ $key }}</span> : {{ $description }}
+                                </li>
                             @endforeach
                         </ul>
                         <div class="hidden md:block relative pb-8">
                             <div class="relative flex items-center">
-                                <x-secondary-button href="{{ route('case-studies') }}" class="">{{ __("buttons.all_projects") }}</x-secondary-button>
+                                <x-secondary-button href="{{ route('case-studies') }}"
+                                                    class="">{{ __("buttons.all_projects") }}</x-secondary-button>
                                 <x-primary-button href="" class="">{{ __("buttons.case_study") }}</x-primary-button>
                             </div>
                             <span class="absolute -left-[30%] -z-10">
@@ -193,15 +200,18 @@
                     <x-bubble size="20"/>
                 </span>
             </div>
-            <div class="flex rounded-2xl xl:bg-gray-light -rotate-3 basis-8/12 relative xl:shadow-md size-full xl:left-[10%]">
-                <div class="absolute hidden xl:block rotate-3 z-20 rounded-2xl h-52 w-80 -left-[10%] bottom-[10%] bg-[url('graphics/code-snippet.png')] bg-cover">
+            <div
+                class="flex rounded-2xl xl:bg-gray-light -rotate-3 basis-8/12 relative xl:shadow-md size-full xl:left-[10%]">
+                <div
+                    class="absolute hidden xl:block rotate-3 z-20 rounded-2xl h-52 w-80 -left-[10%] bottom-[10%] bg-[url('graphics/code-snippet.png')] bg-cover">
                 </div>
                 <img src="{{asset('graphics/vita.png')}}"
                      class="w-full relative flex xl:left-[5%] overflow-hidden rounded-2xl bg-white shadow-md rotate-3"
                      alt="Vita homepage"/>
             </div>
             <div class="flex md:hidden place-content-center p-8">
-                <x-small-primary-button href="{{ route('case-studies') }}">{{ __("buttons.all_projects") }}</x-small-primary-button>
+                <x-small-primary-button
+                    href="{{ route('case-studies') }}">{{ __("buttons.all_projects") }}</x-small-primary-button>
             </div>
         </section>
 
@@ -211,15 +221,13 @@
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 relative mb-8">
                         {{__("content.home.section_5.title_1")}}</h2>
                     <span class="font-light leading-relaxed text-lg lg:text-xl relative">
-                    <span class="leading-relaxed font-semibold">{{__("content.home.section_5.subtitle_1")}}</span>
-                    <span class="leading-relaxed">{{__("content.home.section_5.subtitle_2")}}</span>
+                        <span class="leading-relaxed font-semibold">{{__("content.home.section_5.subtitle_1")}}</span>
+                        <span class="leading-relaxed">{{__("content.home.section_5.subtitle_2")}}</span>
                         <span class="leading-relaxed font-semibold">{{__("content.home.section_5.subtitle_3")}}</span>
-                    <span class="leading-relaxed">{{__("content.home.section_5.subtitle_4")}}</span>
+                        <span class="leading-relaxed">{{__("content.home.section_5.subtitle_4")}}</span>
                         <span class="leading-relaxed font-semibold">{{__("content.home.section_5.subtitle_5")}}</span>
-                    <span class="leading-relaxed">{{__("content.home.section_5.subtitle_6")}}</span>
+                        <span class="leading-relaxed">{{__("content.home.section_5.subtitle_6")}}</span>
                         <span class="leading-relaxed font-semibold">{{__("content.home.section_5.subtitle_7")}}</span>
-
-
                     </span>
                     <div class="grid grid-cols-5 relative w-fit align-middle place-items-center mx-auto text-gray-400 items-center mt-14  gap-8 lg:gap-x-14">
                         <div class="">
@@ -262,60 +270,14 @@
                 <span class="leading-relaxed">{{__("content.home.section_6.subtitle_3")}}</span>
             </span>
             <div class="sm:hidden">
-                <x-testimonial
-                    photoUrl="{{ $testimonials[0]['photoUrl'] }}"
-                    name="{{ $testimonials[0]['name'] }}"
-                    occupation="{{ $testimonials[0]['occupation'] }}"
-                    description="{{ $testimonials[0]['description'] }}"
-                    linkedIn="{{ $testimonials[0]['linkedIn'] }}"
-                />
+                <x-reference :reference="$references[0]"/>
             </div>
             <div class="hidden sm:block main-gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-                <div class="gallery-cell gap-4 py-4 2xl:gap-12">
-                    <x-testimonial
-                        photoUrl="{{ $testimonials[0]['photoUrl'] }}"
-                        name="{{ $testimonials[0]['name'] }}"
-                        occupation="{{ $testimonials[0]['occupation'] }}"
-                        description="{{ $testimonials[0]['description'] }}"
-                        linkedIn="{{ $testimonials[0]['linkedIn'] }}"
-                    />
-                </div>
-                <div class="gallery-cell gap-6 py-4 2xl:gap-12">
-                    <x-testimonial
-                        photoUrl="{{ $testimonials[1]['photoUrl'] }}"
-                        name="{{ $testimonials[1]['name'] }}"
-                        occupation="{{ $testimonials[1]['occupation'] }}"
-                        description="{{ $testimonials[1]['description'] }}"
-                        linkedIn="{{ $testimonials[1]['linkedIn'] }}"
-                    />
-                </div>
-                <div class="gallery-cell gap-6 py-4 2xl:gap-12">
-                    <x-testimonial
-                        photoUrl="{{ $testimonials[2]['photoUrl'] }}"
-                        name="{{ $testimonials[2]['name'] }}"
-                        occupation="{{ $testimonials[2]['occupation'] }}"
-                        description="{{ $testimonials[2]['description'] }}"
-                        linkedIn="{{ $testimonials[2]['linkedIn'] }}"
-                    />
-                </div>
-                <div class="gallery-cell gap-6 py-4 2xl:gap-12">
-                    <x-testimonial
-                        photoUrl="{{ $testimonials[0]['photoUrl'] }}"
-                        name="{{ $testimonials[0]['name'] }}"
-                        occupation="{{ $testimonials[0]['occupation'] }}"
-                        description="{{ $testimonials[0]['description'] }}"
-                        linkedIn="{{ $testimonials[0]['linkedIn'] }}"
-                    />
-                </div>
-                <div class="gallery-cell gap-6 py-4 2xl:gap-12">
-                    <x-testimonial
-                        photoUrl="{{ $testimonials[2]['photoUrl'] }}"
-                        name="{{ $testimonials[2]['name'] }}"
-                        occupation="{{ $testimonials[2]['occupation'] }}"
-                        description="{{ $testimonials[2]['description'] }}"
-                        linkedIn="{{ $testimonials[2]['linkedIn'] }}"
-                    />
-                </div>
+                @foreach($references as $index => $reference)
+                    <div class="gallery-cell gap-6 py-4 2xl:gap-12">
+                        <x-reference :reference="$reference"/>
+                    </div>
+                @endforeach
             </div>
         </section>
         <div class="md:py-20 block lg:bg-binary bg-cover bg-center bg-no-repeat object-contain min-w-full inset-0">
