@@ -34,8 +34,10 @@
         class="grid xl:grid-cols-2 justify-center  items-center  text-black bg-gray-light xl:bg-gradient-to-br from-gray-light via-[#F8F9FC]  to-white    xl:pb-8 ">
         <section class=" md:flex flex-col   px-[10%] xl:px-[0%] xl:pl-[40%] pt-16 pb-4 z-20">
             <h4 class="text-3xl sm:text-4xl lg:text-5xl text-center xl:text-left font-semibold text-black "><span
-                    class="text-website-normal">{{ __('content.contact.title_1') }}</span> {{ __('content.contact.title_2') }}</h4>
-            <p class="text-md xl:text-lg leading-8 text-black text-center xl:text-left py-6">{{ __('content.contact.subtitle') }}
+                    class="text-website-normal">{{ __('content.contact.title_1') }}</span>
+                {{ __('content.contact.title_2') }}</h4>
+            <p class="text-md xl:text-lg leading-8 text-black text-center xl:text-left py-6">
+                {{ __('content.contact.subtitle') }}
             </p>
             <div class="flex flex-col lg:flex-row">
                 <form action="#" method="POST" class="lg:flex-auto">
@@ -66,10 +68,12 @@
                         </div>
                     </div>
                     <div class="flex items-center mt-2 xl:w-[90%]">
-                        <input type="checkbox" name="policyBox" id="policyBox" class="w-3 h-3">
-                        <p class="text-xs font-normal text-gray-600 ml-2 pt-4">{{ __('content.contact.policy.part_1') }} <a href=""
-                                class="underline font-bold">{{ __('content.contact.policy.part_2') }}</a> {{ __('content.contact.policy.part_3') }} <a href=""
-                                class="font-bold">{{ __('content.contact.policy.more') }}</a></p>
+                        <label for="policyBox" class="flex items-center">
+                            <input type="checkbox" name="policyBox" id="policyBox" class="w-3 h-3">
+                            <p class="text-xs font-normal text-gray-600 ml-2 pt-4">{{ __('content.contact.policy.part_1') }}
+                                <a href="" class="underline font-bold">{{ __('content.contact.policy.part_2') }}</a>
+                                {{ __('content.contact.policy.part_3') }}</p>
+                        </label>
                     </div>
                     <div class="mt-3 flex">
                         <x-primary-button type="submit" href=""
@@ -111,9 +115,9 @@
                                 <span class="sr-only">Info</span>
                                 <x-icons.info></x-icons.info>
                                 <div class="ml-4 -mt-[2px]">
-                                    <div>{{ __('content.contact.info.NIP') }}</div>
-                                    <div>{{ __('content.contact.info.KRS') }}</div>
-                                    <div>{{ __('content.contact.info.REGON') }}</div>
+                                    <div>NIP {{ __('content.contact.info.NIP') }}</div>
+                                    <div>KRS {{ __('content.contact.info.KRS') }}</div>
+                                    <div>REGON {{ __('content.contact.info.REGON') }}</div>
                                 </div>
                             </div>
                         </div>
