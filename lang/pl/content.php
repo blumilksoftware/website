@@ -176,7 +176,7 @@ return [
     ],
     "contact" => [
         "title_1" => "Napisz",
-        "title_2" => "do Nas!",
+        "title_2" => "do nas!",
         "company" => "Blumilk Sp. z o.o.",
         "subtitle" => "Zainteresowaliśmy Cię na tyle, że chcesz z nami omówić swój projekt, wymienić myśli, zostać naszym partnerem biznesowym, lub z nami pracować? Chętnie z Tobą porozmawiamy!",
         "form" => [
@@ -191,15 +191,14 @@ return [
         "phone" => "+48 780 142 367",
         "email" => "office@blumilk.pl",
         "info" => [
-            "NIP" => "NIP 6912551135",
-            "KRS" => "KRS 0000866755",
-            "REGON" => "REGON 38737620",
+            "NIP" => "6912551135",
+            "KRS" => "0000866755",
+            "REGON" => "38737620",
         ],
         "policy" => [
             "part_1" => "Akceptuję regulamin oraz",
             "part_2" => "politykę prywatności",
-            "part_3" => "i tym samym wyrażam zgodę na przetwarzanie przez Administratora moich danych osobowych",
-            "more" => "Więcej",
+            "part_3" => "i tym samym wyrażam zgodę na przetwarzanie przez Administratora moich danych osobowych.",
         ],
     ],
     "policy" => [
