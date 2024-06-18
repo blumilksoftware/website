@@ -198,7 +198,7 @@ return [
         "policy" => [
             "part_1" => "Akceptuję regulamin oraz",
             "part_2" => "politykę prywatności",
-            "part_3" => "i tym samym wyrażam zgodę na przetwarzanie przez Administratora moich danych osobowych",
+            "part_3" => "i tym samym wyrażam zgodę na przetwarzanie przez Administratora moich danych osobowych.",
         ],
     ],
 ];

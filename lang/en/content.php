@@ -198,7 +198,7 @@ return [
         "policy" => [
             "part_1" => "I accept the terms and conditions and",
             "part_2" => "privacy policy",
-            "part_3" => "and thereby consent to the processing of my personal data by the Administrator",
+            "part_3" => "and thereby consent to the processing of my personal data by the Administrator.",
         ],
     ],
 ];
