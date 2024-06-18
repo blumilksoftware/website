@@ -180,7 +180,7 @@ return [
         "company" => "Blumilk Sp. z o.o.",
         "subtitle" => "Are you interested enough to want to discuss your project with us, exchange ideas, become our business partner, or work with us? We would love to talk with you!",
         "form" => [
-            "email" => "E-mail",
+            "email" => "Email",
             "title" => "Topic",
             "message" => "Message",
         ],

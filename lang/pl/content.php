@@ -180,7 +180,7 @@ return [
         "company" => "Blumilk Sp. z o.o.",
         "subtitle" => "Zainteresowaliśmy Cię na tyle, że chcesz z nami omówić swój projekt, wymienić myśli, zostać naszym partnerem biznesowym, lub z nami pracować? Chętnie z Tobą porozmawiamy!",
         "form" => [
-            "email" => "E-mail",
+            "email" => "Email",
             "title" => "Temat",
             "message" => "Wiadomość",
         ],
