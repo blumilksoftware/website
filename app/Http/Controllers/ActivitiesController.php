@@ -14,7 +14,7 @@ class ActivitiesController extends Controller
 {
     public function index(Factory $factory): View
     {
-        $activities = Activity::query()->where("published", true)->get();
+        $activities = Activity::query()->where("published", true)->paginate(9);
         $tags = ActivityResource::getTags();
 
         return $factory->make("activities")
