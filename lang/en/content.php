@@ -174,4 +174,31 @@ return [
             "title_1" => "Are we looking for you?",
         ],
     ],
+    "contact" => [
+        "title_1" => "Write",
+        "title_2" => "to us!",
+        "company" => "Blumilk Sp. z o.o.",
+        "subtitle" => "Are you interested enough to want to discuss your project with us, exchange ideas, become our business partner, or work with us? We would love to talk with you!",
+        "form" => [
+            "email" => "E-mail",
+            "title" => "Topic",
+            "message" => "Message",
+        ],
+        "location" => [
+            "address" => "ul. Najświętszej Marii Panny 5f/5",
+            "PostalCode" => "59-220 Legnica",
+        ],
+        "phone" => "+48 780 142 367",
+        "email" => "office@blumilk.pl",
+        "info" => [
+            "NIP" => "6912551135",
+            "KRS" => "0000866755",
+            "REGON" => "38737620",
+        ],
+        "policy" => [
+            "part_1" => "I accept the terms and conditions and",
+            "part_2" => "privacy policy",
+            "part_3" => "and thereby consent to the processing of my personal data by the Administrator.",
+        ],
+    ],
 ];

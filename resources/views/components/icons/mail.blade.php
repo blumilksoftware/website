@@ -1,3 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="19.186" class="align-middle" viewBox="0 0 20 19.186">
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="align-middle" viewBox="0 0 20 20">
     <path id="Vector" d="M2.929,16.376a9.319,9.319,0,0,1,0-13.566,10.3,10.3,0,0,1,14.142,0,9.319,9.319,0,0,1,0,13.566,10.3,10.3,0,0,1-14.142,0ZM10,9.548l5-1.9V6H5V7.648Zm0,1.289-.23-.086L5,8.937V13.19H15V8.937l-4.77,1.814Z" fill="#fff"/>
 </svg>
