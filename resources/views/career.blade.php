@@ -64,7 +64,7 @@
                     <span class="leading-relaxed">{{__("content.career.section_3.subtitle_3")}}</span>
                 </p>
             </div>
-            <x-primary-button href="https://praktyki.blumilk.pl/" class="px-16 my-6 flex m-auto xl:m-0 xl:mr-auto xl:justify-start">{{ __("buttons.apply_internship") }}</x-primary-button>
+            <x-primary-button href="https://praktyki.blumilk.pl/" target="_blank" class="px-16 my-6 flex m-auto xl:m-0 xl:mr-auto xl:justify-start">{{ __("buttons.apply_internship") }}</x-primary-button>
         </div>
     </section>
     <section class="flex xl:flex-row px-[10%] md:px-[20%] xl:gap-x-16">
