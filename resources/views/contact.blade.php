@@ -183,7 +183,7 @@
                 container: 'map',
                 style: '{{ env('MAPBOX_STYLE') }}',
                 center: [16.163200, 51.208200], //[lng, lat]
-                zoom: 15,
+                zoom: 13,
             })
             map.scrollZoom.disable()
             var nav = new mapboxgl.NavigationControl()

@@ -177,7 +177,7 @@ return [
     "contact" => [
         "title_1" => "Write",
         "title_2" => "to us!",
-        "company" => "Blumilk Sp. z o.o.",
+        "company" => "Blumilk sp. z o.o.",
         "subtitle" => "Are you interested enough to want to discuss your project with us, exchange ideas, become our business partner, or work with us? We would love to talk with you!",
         "form" => [
             "email" => "E-mail",
@@ -185,7 +185,7 @@ return [
             "message" => "Message",
         ],
         "location" => [
-            "address" => "ul. Najświętszej Marii Panny 5f/5",
+            "address" => "ul. Najświętszej Marii Panny 5F/5",
             "PostalCode" => "59-220 Legnica",
         ],
         "phone" => "+48 780 142 367",
