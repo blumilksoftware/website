@@ -178,11 +178,11 @@
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            mapboxgl.accessToken =
-                'pk.eyJ1Ijoia3Jld2FrIiwiYSI6ImNramhmNWI3NjQ2Mm0yeW5xaHUxbmFvMTAifQ.pML1FJHSbrdqOGUvlnd1xw'
+            mapboxgl.accessToken = '{{ env('MAPBOX_ACCESS_TOKEN') }}'
+
             var map = new mapboxgl.Map({
                 container: 'map',
-                style: 'mapbox://styles/krewak/ckjhf6g1qbww719p1e33pgm84',
+                style: '{{ env('MAPBOX_STYLE') }}',
                 center: [16.163200, 51.208200], //[lng, lat]
                 zoom: 15,
             })
