@@ -45,10 +45,10 @@ class ActivityResource extends JsonResource
     public static function getTags(): array
     {
         return [
-            "cwup",
-            "soda",
-            "lmt",
-            "publikacje",
+            "cwup" => "cwup",
+            "soda" => "soda",
+            "lmt" => "lmt",
+            "publikacje" => "publikacje",
         ];
     }
 }
