@@ -8,11 +8,9 @@
             {{ $activity['published_at'] }}
         </time>
     </div>
-
     <div class="flex flex-wrap items-center overflow-hidden text-md text-black font-semibold">
         <span class="bg-white p-2">{{ $activity['title'] }}</span>
     </div>
-
     <h3 class="mt-3 flex flex-wrap items-center overflow-hidden text-md text-black font-semibold">
         <a href="{{ route('activities.entry', $activity['slug']) }}" class="bg-white p-2">
             <span class="absolute inset-0"></span>

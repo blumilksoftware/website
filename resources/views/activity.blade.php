@@ -56,13 +56,13 @@
                 <div class="prose prose-sm mt-4 w-72">
                     @foreach($recommendedActivities as $recommendedActivity)
                         <div class="relative flex bg-bubble my-4">
-                            <time datetime="{{ $recommendedActivity['published_at'] }}"
-                                  class="bg-website-normal w-16 xl:w-20 shrink-0 h-auto text-center text-white font-bold py-3">
-                                <span
-                                    class="text-sm">{{ \Carbon\Carbon::parse($recommendedActivity['published_at'])->format('d/m') }}</span>
-                                <span
-                                    class="text-lg">{{ \Carbon\Carbon::parse($recommendedActivity['published_at'])->format('Y') }}</span>
-                            </time>
+                            <div class="bg-website-normal w-16 xl:w-20 shrink-0 h-auto text-center text-white font-bold py-3">
+                                <div class="flex flex-wrap items-center overflow-hidden text-sm">
+                                    <time datetime="{{ $activity['published_at'] }}">
+                                        {{ $activity['published_at'] }}
+                                    </time>
+                                </div>
+                            </div>
                             <div class="flex bg-bubble my-auto pl-8 max-w-xs">
                                 <h3 class="text-gray-900 text-left text-base font-bold line-clamp-2">
                                     <a href="{{ route('activities.entry', $recommendedActivity['slug']) }}">

@@ -49,7 +49,17 @@ class Activity extends Model
         "description" => "array",
         "slug" => "array",
         "published" => "boolean",
-        "published_at" => "datetime",
         "tags" => "array",
     ];
+
+
+    protected $dates = [
+        'published_at',
+    ];
+
+    public function getPublishedAtAttribute($value)
+    {
+        return $this->asDateTime($value)->format('d/m Y');
+    }
+
 }
