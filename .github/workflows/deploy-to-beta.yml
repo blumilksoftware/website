@@ -1,0 +1,103 @@
+name: Deploy to beta
+
+concurrency:
+  group: deploy-beta
+  cancel-in-progress: true
+
+on:
+  workflow_dispatch:
+
+jobs:
+
+  deploy:
+    environment: beta
+    name: Deploy to beta
+    runs-on: ubuntu-22.04
+    env:
+      DOCKER_REGISTRY: registry.blumilk.pl
+      DOCKER_REGISTRY_USER_NAME: robot@blumilkbot-harbor
+      DOCKER_REGISTRY_PROJECT_NAME: ${{ github.event.repository.name }}
+      TARGET_DIR_ON_SERVER: /blumilk/beta/projects
+    steps:
+      - name: set branch name
+        run: echo "BRANCH_NAME=$GITHUB_REF_NAME" >> $GITHUB_ENV
+
+      - name: checkout
+        uses: actions/checkout@v4.1.6
+        with:
+          fetch-depth: 0
+          ref: ${{ env.BRANCH_NAME }}
+
+      - name: sync with main branch
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          git merge --no-commit --no-ff origin/main
+
+      - name: set deployment project version
+        run: echo "DEPLOYMENT_PROJECT_VERSION=$(bash ./environment/prod/deployment/scripts/version.sh --long)" >> $GITHUB_ENV
+
+      - name: set up Docker Buildx
+        uses: docker/setup-buildx-action@v3.3.0
+
+      - name: login to GitHub Container Registry
+        uses: docker/login-action@v3.2.0
+        with:
+          registry: ${{ env.DOCKER_REGISTRY }}
+          username: ${{ env.DOCKER_REGISTRY_USER_NAME }}
+          password: ${{ secrets.BLUMILKBOT_HARBOR_TOKEN }}
+
+      - name: set docker image name
+        run: echo "DOCKER_IMAGE_NAME=${{ env.DOCKER_REGISTRY }}/${{ env.DOCKER_REGISTRY_PROJECT_NAME }}/${{ env.DOCKER_REGISTRY_PROJECT_NAME }}" >> $GITHUB_ENV
+
+      - name: Docker meta
+        id: meta
+        uses: docker/metadata-action@v5.5.1
+        with:
+          images: ${{ env.DOCKER_IMAGE_NAME }}
+          tags: type=raw,value=beta
+          context: git
+
+      - name: build and push image
+        uses: docker/build-push-action@v5.3.0
+        with:
+          context: .
+          file: ./environment/prod/app/Dockerfile
+          build-args: DEPLOYMENT_PROJECT_VERSION_ARG=${{ env.DEPLOYMENT_PROJECT_VERSION }}
+          labels: ${{ steps.meta.outputs.labels }}
+          tags: ${{ steps.meta.outputs.tags }}
+          push: true
+          cache-from: type=gha, ref=${{ env.DOCKER_IMAGE_NAME }}-beta-build-cache
+          cache-to: type=gha, ref=${{ env.DOCKER_IMAGE_NAME }}-beta-build-cache, mode=max
+
+      - name: copy files via ssh
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          timeout: 10s
+          command_timeout: 10m
+          host: ${{ secrets.VPS_OVH_BF7EC892_HOST }}
+          port: ${{ secrets.VPS_OVH_BF7EC892_PORT }}
+          username: ${{ secrets.VPS_OVH_BF7EC892_USERNAME }}
+          key: ${{ secrets.VPS_OVH_BF7EC892_SSH_PRIVATE_KEY }}
+          passphrase: ${{ secrets.VPS_OVH_BF7EC892_SSH_PRIVATE_KEY_PASSPHRASE }}
+          source: "./environment/prod/deployment/beta/*,./environment/prod/deployment/scripts/*"
+          target: ${{ env.TARGET_DIR_ON_SERVER }}/${{ env.DOCKER_REGISTRY_PROJECT_NAME }}
+          rm: true
+
+      - name: run deployment script over ssh
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          timeout: 10s
+          command_timeout: 10m
+          host: ${{ secrets.VPS_OVH_BF7EC892_HOST }}
+          port: ${{ secrets.VPS_OVH_BF7EC892_PORT }}
+          username: ${{ secrets.VPS_OVH_BF7EC892_USERNAME }}
+          key: ${{ secrets.VPS_OVH_BF7EC892_SSH_PRIVATE_KEY }}
+          passphrase: ${{ secrets.VPS_OVH_BF7EC892_SSH_PRIVATE_KEY_PASSPHRASE }}
+          script_stop: true
+          script: |
+            cd ${{ env.TARGET_DIR_ON_SERVER }}/${{ env.DOCKER_REGISTRY_PROJECT_NAME }}/environment/prod/deployment/beta
+            echo ${{ secrets.BLUMILKBOT_HARBOR_TOKEN }} | docker login ${{ env.DOCKER_REGISTRY }} --username ${{ env.DOCKER_REGISTRY_USER_NAME }} --password-stdin
+            make beta-deploy SOPS_AGE_KEY=${{ secrets.SOPS_AGE_BETA_SECRET_KEY }}
+            docker images --filter dangling=true | grep "${{ env.DOCKER_IMAGE_NAME }}" | awk '{print $3}'| xargs --no-run-if-empty docker rmi
+            docker logout ${{ env.DOCKER_REGISTRY }}
