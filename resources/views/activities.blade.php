@@ -35,7 +35,7 @@
             @endforeach
         </div>
         <div class="grid lg:grid-cols-3 gap-12">
-            @foreach($activities as $index => $activity)
+            @foreach($activities as $activity)
                 <x-activity-card :activity="$activity"/>
             @endforeach
         </div>

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Blumilk\Website\Http\Controllers;
 
-use Blumilk\Website\Filament\Resources\ActivityResource;
+use Blumilk\Website\Http\Resources\ActivityResource;
 use Blumilk\Website\Models\Activity;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -18,7 +18,7 @@ class ActivitiesController extends Controller
         $tags = ActivityResource::getTags();
 
         return $factory->make("activities")
-            ->with("activities", $activities)
+            ->with("activities", ActivityResource::collection($activities))
             ->with("tags", $tags);
     }
 
@@ -32,7 +32,7 @@ class ActivitiesController extends Controller
 
 
         return $factory->make("activity")
-            ->with("activity", $activity)
+            ->with("activity", new ActivityResource($activity))
             ->with("recommendedActivities", $recommendedActivities);
     }
 }

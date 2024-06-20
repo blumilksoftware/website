@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Database\Factories;
 
-use Blumilk\Website\Filament\Resources\ActivityResource;
+use Blumilk\Website\Http\Resources\ActivityResource;
 use Blumilk\Website\Models\Activity;
 use Illuminate\Database\Eloquent\Factories\Factory;
 

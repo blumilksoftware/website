@@ -22,6 +22,7 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Mvenghaus\FilamentPluginTranslatableInline\Forms\Components\TranslatableContainer;
+use Blumilk\Website\Http\Resources\ActivityResource as ModelActivityResource;
 
 class ActivityResource extends Resource
 {
@@ -78,7 +79,7 @@ class ActivityResource extends Resource
                         Forms\Components\Select::make("tags")
                             ->label("Tagi")
                             ->multiple()
-                            ->options(static::getTags()),
+                            ->options(ModelActivityResource::getTags()),
                         Forms\Components\TextInput::make("url")
                             ->label("Url")
                             ->maxLength(2048),
@@ -159,15 +160,5 @@ class ActivityResource extends Resource
     public static function getTranslatableLocales(): array
     {
         return config("app.translatable_locales");
-    }
-
-    public static function getTags(): array
-    {
-        return [
-            "cwup",
-            "soda",
-            "lmt",
-            "publikacje",
-        ];
     }
 }
