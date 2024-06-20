@@ -1,6 +1,6 @@
 <div class="relative mt-8 mb-24 sm:my-20 mx-8 lg:mx-12 2xl:mx-16">
     <div class="mb-6 flex justify-center relative">
-        <img src="{{ asset($reference->photo) }}" class="w-32 rounded-full shadow-lg" alt=""/>
+        <img src="{{ asset("storage/".$reference->photo) }} }}" class="w-32 rounded-full shadow-lg" alt=""/>
     </div>
     <h5 class="text-xl font-semibold">{{ $reference->creator_name }}</h5>
     <h6 class="mb-4 font-normal text-black">{{ $reference->company }}</h6>
@@ -14,3 +14,8 @@
         <i class="fa-brands fa-linkedin fa-xl text-website-normal"></i>
     </a>
 </div>
+<script>
+
+
+console.log({{ asset("storage/".$reference->photo) }})
+</script>

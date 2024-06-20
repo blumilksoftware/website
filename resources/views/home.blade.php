@@ -2,8 +2,7 @@
 @extends("layout.public")
 
 @php
-    $caseStudiesFile = App::currentLocale()=='en' ? 'case_studies_en.json' : 'case_studies_pl.json';
-    $caseStudy = json_decode(file_get_contents(public_path($caseStudiesFile)), true)[0];
+    $caseStudy = App::currentLocale()=='en' ? json_decode(file_get_contents(public_path('main_case_study.json')), true)['en'] : json_decode(file_get_contents(public_path('main_case_study.json')), true)['pl'];
     $articles = json_decode(file_get_contents(public_path('articles.json')), true);
 
 @endphp
@@ -132,7 +131,7 @@
                             <div class="py-6 text-website-normal mx-4">
                                 <div
                                     class="flex flex-col items-center place-content-center text-center bg-blue-light max-w-full px-6 py-4 gap-4 rounded-2xl">
-                                    <img src="{{asset('graphics/stars.svg')}}" class="max-h-8 shrink"
+                                    <img src="{{ asset('graphics/stars.svg') }}" class="max-h-8 shrink"
                                          alt="5 stars"/>
                                     <div class="leading-relaxed">
                                         {{__("content.home.section_3.subtitle_3")}}
@@ -173,14 +172,14 @@
                         </div>
                         <ul class="list-disc-none py-8 hidden md:block">
                             @foreach($caseStudy as $key => $description)
-                                <li><span class="font-semibold leading-relaxed">{{ $key }}</span> : {{ $description }}
+                                <li>
+                                    <span class="font-semibold leading-relaxed"> {{ $key }}</span> : {{ $description }}
                                 </li>
                             @endforeach
                         </ul>
                         <div class="hidden md:block relative pb-8">
                             <div class="relative flex items-center">
-                                <x-secondary-button href="{{ route('case-studies') }}"
-                                                    class="">{{ __("buttons.all_projects") }}</x-secondary-button>
+                                <x-secondary-button href="{{ route('case-studies') }}" class="">{{ __("buttons.all_projects") }}</x-secondary-button>
                                 <x-primary-button href="" class="">{{ __("buttons.case_study") }}</x-primary-button>
                             </div>
                             <span class="absolute -left-[30%] -z-10">
@@ -205,7 +204,7 @@
                 <div
                     class="absolute hidden xl:block rotate-3 z-20 rounded-2xl h-52 w-80 -left-[10%] bottom-[10%] bg-[url('graphics/code-snippet.png')] bg-cover">
                 </div>
-                <img src="{{asset('graphics/vita.png')}}"
+                <img src="{{ asset('graphics/vita.png') }}"
                      class="w-full relative flex xl:left-[5%] overflow-hidden rounded-2xl bg-white shadow-md rotate-3"
                      alt="Vita homepage"/>
             </div>
@@ -273,7 +272,7 @@
                 <x-reference :reference="$references[0]"/>
             </div>
             <div class="hidden sm:block main-gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-                @foreach($references as $index => $reference)
+                @foreach($references as $reference)
                     <div class="gallery-cell gap-6 py-4 2xl:gap-12">
                         <x-reference :reference="$reference"/>
                     </div>
