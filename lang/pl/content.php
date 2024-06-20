@@ -9,7 +9,8 @@ return [
         "partners" => "Partnerzy",
         "career" => "Kariera",
         "contact" => "Kontakt",
-    ], "home" => [
+    ],
+    "home" => [
         "section_1" => [
             "title_1" => "Oprogramowanie ",
             "title_2" => "dopasowane ",
@@ -172,5 +173,80 @@ return [
         "section_3" => [
             "title_1" => "Szukamy właśnie Ciebie?",
         ],
+    ],
+    "contact" => [
+        "title_1" => "Napisz",
+        "title_2" => "do nas!",
+        "company" => "Blumilk sp. z o.o.",
+        "subtitle" => "Zainteresowaliśmy Cię na tyle, że chcesz z nami omówić swój projekt, wymienić myśli, zostać naszym partnerem biznesowym, lub z nami pracować? Chętnie z Tobą porozmawiamy!",
+        "form" => [
+            "email" => "E-mail",
+            "title" => "Temat",
+            "message" => "Wiadomość",
+        ],
+        "location" => [
+            "address" => "ul. Najświętszej Marii Panny 5F/5",
+            "PostalCode" => "59-220 Legnica",
+        ],
+        "phone" => "+48 780 142 367",
+        "email" => "office@blumilk.pl",
+        "info" => [
+            "NIP" => "6912551135",
+            "KRS" => "0000866755",
+            "REGON" => "38737620",
+        ],
+        "policy" => [
+            "part_1" => "Akceptuję regulamin oraz",
+            "part_2" => "politykę prywatności",
+            "part_3" => "i tym samym wyrażam zgodę na przetwarzanie przez Administratora moich danych osobowych.",
+        ],
+    ],
+    "contact" => [
+        "title_1" => "Napisz",
+        "title_2" => "do nas!",
+        "company" => "Blumilk Sp. z o.o.",
+        "subtitle" => "Zainteresowaliśmy Cię na tyle, że chcesz z nami omówić swój projekt, wymienić myśli, zostać naszym partnerem biznesowym, lub z nami pracować? Chętnie z Tobą porozmawiamy!",
+        "form" => [
+            "email" => "E-mail",
+            "title" => "Temat",
+            "message" => "Wiadomość",
+        ],
+        "location" => [
+            "address" => "ul. Najświętszej Marii Panny 5f/5",
+            "PostalCode" => "59-220 Legnica",
+        ],
+        "phone" => "+48 780 142 367",
+        "email" => "office@blumilk.pl",
+        "info" => [
+            "NIP" => "6912551135",
+            "KRS" => "0000866755",
+            "REGON" => "38737620",
+        ],
+        "policy" => [
+            "part_1" => "Akceptuję regulamin oraz",
+            "part_2" => "politykę prywatności",
+            "part_3" => "i tym samym wyrażam zgodę na przetwarzanie przez Administratora moich danych osobowych.",
+        ],
+    ],
+    "policy" => [
+        "title_1" => "Polityka",
+        "title_2" => "prywatności",
+        "content_1" => "Na naszej stronie internetowej stosujemy pliki cookies w celu świadczenia usług na najwyższym poziomie i dostosowania ich specjalnie do Twoich potrzeb. Pliki cookies są wykorzystywane do celów statystycznych.",
+        "subtitle_1" => "Pliki cookies - czyli co?",
+        "content_2" => "Pliki cookies inaczej \"ciasteczka\" to małe pliki wysyłane przez stronę, którą odwiedzasz i zapisywane na twoim urządzeniu końcowym (komputerze, laptopie, smartfonie).",
+        "subtitle_2" => "Dlaczego używamy ciasteczek?",
+        "content_3" => "Stosujemy pliki cookies w celach szacunkowych, aby poznać ilość użytkowników odwiedzających naszą stronę internetową. Te dane umożliwiają nam analizę, a co za tym idzie stały rozwój strony. W tym celu korzystamy także z \"Google Analytics\". Co istotne \"Google Analytics\" zapisuje tylko adres IP przypisany do Ciebie w dniu wizyty na tej stronie, a nie Twoje imię i nazwisko lub inne informacje umożliwiające identyfikację. Szczegóły dotyczące działania \"Google Analytics\" znajdziesz pod adresem",
+        "link_1" => [
+            "address" => "https://policies.google.com/privacy?hl=en-US",
+            "description" => "policies.google.com/privacy",
+        ],
+        "conjunction" => "oraz",
+        "link_2" => [
+            "address" => "https://marketingplatform.google.com/about/analytics/terms/us/",
+            "description" => "google.com/analytics/terms",
+        ],
+        "subtitle_3" => "Masz pytania?",
+        "content_4" => "Jeśli chcesz dowiedzieć się więcej o naszej Polityce Prywatności skorzystaj z formularza kontaktowego lub napisz do nas na adres:",
+        "email" => "hello@blumilk.pl",
     ],
 ];

@@ -8306,27 +8306,27 @@
     "packages-dev": [
         {
             "name": "blumilksoftware/codestyle",
-            "version": "v3.1.0",
+            "version": "v3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/blumilksoftware/codestyle.git",
-                "reference": "119b6eb0d460a3a77a7e8f817dd279769f68dc01"
+                "reference": "0b2838233bfd92d8966e01bb795f7a372cf1cd1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/blumilksoftware/codestyle/zipball/119b6eb0d460a3a77a7e8f817dd279769f68dc01",
-                "reference": "119b6eb0d460a3a77a7e8f817dd279769f68dc01",
+                "url": "https://api.github.com/repos/blumilksoftware/codestyle/zipball/0b2838233bfd92d8966e01bb795f7a372cf1cd1f",
+                "reference": "0b2838233bfd92d8966e01bb795f7a372cf1cd1f",
                 "shasum": ""
             },
             "require": {
-                "friendsofphp/php-cs-fixer": "^3.49",
-                "kubawerlos/php-cs-fixer-custom-fixers": "^3.20",
+                "friendsofphp/php-cs-fixer": "^3.58",
+                "kubawerlos/php-cs-fixer-custom-fixers": "^3.21",
                 "php": "^8.1"
             },
             "require-dev": {
-                "jetbrains/phpstorm-attributes": "^1.0",
-                "phpunit/phpunit": "^10.0",
-                "symfony/console": "^6.0"
+                "jetbrains/phpstorm-attributes": "^1.1",
+                "phpunit/phpunit": "^10.0|^11.2",
+                "symfony/console": "^6.0|^7.0"
             },
             "bin": [
                 "bin/codestyle"
@@ -8350,9 +8350,9 @@
             "description": "Blumilk codestyle configurator",
             "support": {
                 "issues": "https://github.com/blumilksoftware/codestyle/issues",
-                "source": "https://github.com/blumilksoftware/codestyle/tree/v3.1.0"
+                "source": "https://github.com/blumilksoftware/codestyle/tree/v3.2.0"
             },
-            "time": "2024-05-14T12:02:45+00:00"
+            "time": "2024-06-11T07:32:30+00:00"
         },
         {
             "name": "clue/ndjson-react",

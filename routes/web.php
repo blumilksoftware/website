@@ -11,6 +11,7 @@ use Blumilk\Website\Http\Controllers\HomeController;
 use Blumilk\Website\Http\Controllers\LegalController;
 use Blumilk\Website\Http\Controllers\MeetupsController;
 use Blumilk\Website\Http\Controllers\PartnersController;
+use Blumilk\Website\Http\Controllers\PolicyController;
 use CodeZero\UriTranslator\UriTranslator;
 use Illuminate\Routing\Router;
 
@@ -27,6 +28,7 @@ $router->get($uri->translate("partners"), PartnersController::class)->name("part
 $router->get($uri->translate("career"), [CareerController::class, "index"])->name("career");
 $router->get($uri->translate("career/software-engineer"), [CareerController::class, "softwareEngineerPage"])->name("career.software-engineer");
 $router->get($uri->translate("contact"), ContactController::class)->name("contact");
+$router->get($uri->translate("privacy-policy"), PolicyController::class)->name("privacy-policy");
 
 $router->get($uri->translate("meetups"), MeetupsController::class)->name("meetups");
 $router->get($uri->translate("events"), [EventsController::class, "index"])->name("events");
