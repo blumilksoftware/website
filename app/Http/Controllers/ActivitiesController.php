@@ -33,6 +33,6 @@ class ActivitiesController extends Controller
 
         return $factory->make("activity")
             ->with("activity", new ActivityResource($activity))
-            ->with("recommendedActivities", $recommendedActivities);
+            ->with("recommendedActivities", ActivityResource::collection($recommendedActivities));
     }
 }
