@@ -9,6 +9,8 @@ use Exception;
 use Filament\Http\Middleware\Authenticate;
 use Filament\Http\Middleware\DisableBladeIconComponents;
 use Filament\Http\Middleware\DispatchServingFilamentEvent;
+use Filament\Navigation\NavigationGroup;
+use Filament\Navigation\NavigationItem;
 use Filament\Pages;
 use Filament\Panel;
 use Filament\PanelProvider;
@@ -71,6 +73,19 @@ class AdminPanelProvider extends PanelProvider
             ])
             ->authMiddleware([
                 Authenticate::class,
+            ])
+            ->navigationGroups([
+                NavigationGroup::make("zewnętrzne linki")->collapsible(false),
+            ])
+            ->navigationItems([
+                NavigationItem::make("Analityka")
+                    ->url(config("analytics.url"), shouldOpenInNewTab: true)
+                    ->icon("heroicon-o-chart-bar")
+                    ->group("zewnętrzne linki"),
+                NavigationItem::make("Strona główna")
+                    ->url(config("app.url"), shouldOpenInNewTab: true)
+                    ->icon("heroicon-o-arrow-top-right-on-square")
+                    ->group("zewnętrzne linki"),
             ])
             ->spa();
     }
