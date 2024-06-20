@@ -11,7 +11,7 @@ return [
     "contact" => "kontakt",
     "legal" => "prawne",
     "meetups" => "meetupy",
-    "activities" => "aktywności",
-    "activities/{slug}" => "aktywności/{slug}",
+    "activities" => "aktywnosci",
+    "activities/{slug}" => "aktywnosci/{slug}",
     "software-engineer" => "inzynier-oprogramowania",
 ];
