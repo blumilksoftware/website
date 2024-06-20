@@ -14,4 +14,5 @@ return [
     "events" => "wydarzenia",
     "events/{slug}" => "wydarzenia/{slug}",
     "software-engineer" => "inzynier-oprogramowania",
+    "privacy-policy" => "polityka-prywatnosci",
 ];

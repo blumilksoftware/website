@@ -71,7 +71,7 @@
                         <label for="policyBox" class="flex items-center">
                             <input type="checkbox" name="policyBox" id="policyBox" class="w-3 h-3">
                             <p class="text-xs font-normal text-gray-600 ml-2 pt-4">{{ __('content.contact.policy.part_1') }}
-                                <a href="{{ route('policy') }}" target="_blank"
+                                <a href="{{ route('privacy-policy') }}" target="_blank"
                                     class="underline font-bold">{{ __('content.contact.policy.part_2') }}</a>
                                 {{ __('content.contact.policy.part_3') }}
                             </p>
