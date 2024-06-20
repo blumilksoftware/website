@@ -52,5 +52,4 @@ class Activity extends Model
         "published_at" => "datetime",
         "tags" => "array",
     ];
-
 }

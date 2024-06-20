@@ -183,8 +183,8 @@ return [
         "section_1" => [
             "title_1" => "You might find this interesting:",
             "title_2" => "Tags",
-          ],
-      ],
+        ],
+    ],
     "contact" => [
         "title_1" => "Write",
         "title_2" => "to us!",

@@ -29,18 +29,19 @@ class ActivityResource extends JsonResource
         $activity = $this;
 
         return [
-            'id' => $activity->id,
-            'title' => $activity->title,
-            'subtitle' => $activity->subtitle,
-            'description' => $activity->description,
-            'slug' => $activity->slug,
-            'photo' => $activity->photo,
-            'published' => $activity->published,
-            'published_at' => $activity->published_at?->format(DateFormats::ACTIVITY_DATE_DISPLAY),
-            'url' => $activity->url,
-            'tags' => $activity->tags,
+            "id" => $activity->id,
+            "title" => $activity->title,
+            "subtitle" => $activity->subtitle,
+            "description" => $activity->description,
+            "slug" => $activity->slug,
+            "photo" => $activity->photo,
+            "published" => $activity->published,
+            "published_at" => $activity->published_at?->format(DateFormats::ACTIVITY_DATE_DISPLAY),
+            "url" => $activity->url,
+            "tags" => $activity->tags,
         ];
     }
+
     public static function getTags(): array
     {
         return [

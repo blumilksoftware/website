@@ -27,22 +27,20 @@ class ActivitiesController extends Controller
         $locale = App::getLocale();
         $activity = Activity::query()->where("slug->{$locale}", $slug)->firstOrFail();
 
-        $nextActivity = Activity::where('id', '>', $activity->id)->orderBy('id', 'asc')->first();
-        $previousActivity = Activity::where('id', '<', $activity->id)->orderBy('id', 'desc')->first();
+        $nextActivity = Activity::where("id", ">", $activity->id)->orderBy("id", "asc")->first();
+        $previousActivity = Activity::where("id", "<", $activity->id)->orderBy("id", "desc")->first();
 
         if (!$previousActivity) {
-            $recommendedActivities = Activity::where('id', '>', $activity->id)
-                ->orderBy('id', 'asc')
+            $recommendedActivities = Activity::where("id", ">", $activity->id)
+                ->orderBy("id", "asc")
                 ->take(2)
                 ->get();
-        }
-        elseif (!$nextActivity) {
-            $recommendedActivities = Activity::where('id', '<', $activity->id)
-                ->orderBy('id', 'desc')
+        } elseif (!$nextActivity) {
+            $recommendedActivities = Activity::where("id", "<", $activity->id)
+                ->orderBy("id", "desc")
                 ->take(2)
                 ->get();
-        }
-        else {
+        } else {
             $recommendedActivities = collect([$previousActivity, $nextActivity]);
         }
 
