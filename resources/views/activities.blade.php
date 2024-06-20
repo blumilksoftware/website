@@ -36,7 +36,7 @@
         </div>
         <div class="grid lg:grid-cols-3 gap-12">
             @foreach($activities as $activity)
-                <x-activity-card :activity="$activity"/>
+                <x-activity-card :activity="$activity->resolve()"/>
             @endforeach
         </div>
     </section>

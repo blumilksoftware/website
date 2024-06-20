@@ -26,13 +26,28 @@ class ActivitiesController extends Controller
     {
         $locale = App::getLocale();
         $activity = Activity::query()->where("slug->{$locale}", $slug)->firstOrFail();
-        $recommendedActivities = Activity::all()
-            ->shuffle()
-            ->take(2);
 
+        $nextActivity = Activity::where('id', '>', $activity->id)->orderBy('id', 'asc')->first();
+        $previousActivity = Activity::where('id', '<', $activity->id)->orderBy('id', 'desc')->first();
+
+        if (!$previousActivity) {
+            $recommendedActivities = Activity::where('id', '>', $activity->id)
+                ->orderBy('id', 'asc')
+                ->take(2)
+                ->get();
+        }
+        elseif (!$nextActivity) {
+            $recommendedActivities = Activity::where('id', '<', $activity->id)
+                ->orderBy('id', 'desc')
+                ->take(2)
+                ->get();
+        }
+        else {
+            $recommendedActivities = collect([$previousActivity, $nextActivity]);
+        }
 
         return $factory->make("activity")
             ->with("activity", new ActivityResource($activity))
-            ->with("recommendedActivities", ActivityResource::collection($recommendedActivities));
+            ->with("recommendedActivities", ActivityResource::collection($recommendedActivities)->resolve());
     }
 }

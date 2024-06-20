@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Blumilk\Website\Http\Resources;
 
+use Blumilk\Website\Enums\DateFormats;
 use Blumilk\Website\Models\Activity;
 use Carbon\Carbon;
 use Illuminate\Http\Resources\Json\JsonResource;
@@ -24,17 +25,20 @@ class ActivityResource extends JsonResource
 {
     public function toArray($request)
     {
+        /** @var Activity $activity */
+        $activity = $this;
+
         return [
-            'id' => $this->id,
-            'title' => $this->title,
-            'subtitle' => $this->subtitle,
-            'description' => $this->description,
-            'slug' => $this->slug,
-            'photo' => $this->photo,
-            'published' => $this->published,
-            'published_at' => $this->published_at?->format('d/m Y'),
-            'url' => $this->url,
-            'tags' => $this->tags,
+            'id' => $activity->id,
+            'title' => $activity->title,
+            'subtitle' => $activity->subtitle,
+            'description' => $activity->description,
+            'slug' => $activity->slug,
+            'photo' => $activity->photo,
+            'published' => $activity->published,
+            'published_at' => $activity->published_at?->format(DateFormats::ACTIVITY_DATE_DISPLAY),
+            'url' => $activity->url,
+            'tags' => $activity->tags,
         ];
     }
     public static function getTags(): array

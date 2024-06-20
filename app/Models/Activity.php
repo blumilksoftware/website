@@ -16,7 +16,7 @@ use Spatie\Translatable\HasTranslations;
  * @property array $slug
  * @property string $photo
  * @property bool $published
- * @property Carbon $published_at
+ * @property ?Carbon $published_at
  * @property string $url
  */
 class Activity extends Model
@@ -49,17 +49,8 @@ class Activity extends Model
         "description" => "array",
         "slug" => "array",
         "published" => "boolean",
+        "published_at" => "datetime",
         "tags" => "array",
     ];
-
-
-    protected $dates = [
-        'published_at',
-    ];
-
-    public function getPublishedAtAttribute($value)
-    {
-        return $this->asDateTime($value)->format('d/m Y');
-    }
 
 }

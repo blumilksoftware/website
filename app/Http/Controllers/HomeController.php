@@ -16,6 +16,6 @@ class HomeController extends Controller
         $activities = Activity::query()->where("published", true)->get();
 
         return $factory->make("home")
-            ->with("activities", ActivityResource::collection($activities));
+            ->with("activities", ActivityResource::collection($activities)->resolve());
     }
 }
