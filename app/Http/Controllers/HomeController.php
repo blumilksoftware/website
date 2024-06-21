@@ -13,7 +13,7 @@ class HomeController extends Controller
 {
     public function __invoke(Factory $factory): View
     {
-        $activities = Activity::query()->where("published", true)->get();
+        $activities = Activity::query()->where("published", true)->latest()->get();
 
         return $factory->make("home")
             ->with("activities", ActivityResource::collection($activities)->resolve());

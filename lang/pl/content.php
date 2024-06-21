@@ -182,7 +182,7 @@ return [
     "activity" => [
         "section_1" => [
             "title_1" => "Może Cię zainteresować:",
-            "title_2" => "Oznaczenia",
+            "title_2" => "Tagi",
         ],
     ],
     "contact" => [
