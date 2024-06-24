@@ -1,10 +1,5 @@
-@php use Illuminate\Support\Facades\App; @endphp
 @extends("layout.public")
 
-@php
-    $caseStudy = App::currentLocale()=='en' ? json_decode(file_get_contents(public_path('main_case_study.json')), true)['en'] : json_decode(file_get_contents(public_path('main_case_study.json')), true)['pl'];
-    $articles = json_decode(file_get_contents(public_path('articles.json')), true);
-@endphp
 @section("content")
     <section class="relative overflow-hidden">
         <div class="relative md:block">
@@ -250,7 +245,7 @@
             </div>
         </section>
 
-        <section @class([ 'hidden' => count($references)==0, 'px-[10%] md:px-[15%] text-center items-center sm:pb-36 relative' ])>
+        <section @class([ 'hidden' => $references->isEmpty(), 'px-[10%] md:px-[15%] text-center items-center sm:pb-36 relative' ])>
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">{{__("content.home.section_6.title_1")}}</h2>
             <div class="my-6">
                 <x-badge>{{__("content.home.section_6.badge")}}</x-badge>
@@ -260,9 +255,9 @@
                 <span class="leading-relaxed">{{__("content.home.section_6.subtitle_3")}}</span>
             </span>
             <div class="sm:hidden">
-                <x-reference @if(count($references)!=0) :reference="$references[0] @endif "/>
+                <x-reference @if($references->isNotEmpty()) :reference="$references[0] @endif "/>
             </div>
-            <div @class([ 'sm:block main-gallery js-flickity' => count($references)>3, 'sm:flex justify-center' => count($references)<=3])
+            <div @class([ 'sm:block main-gallery js-flickity' => $referencesCount>3, 'sm:flex justify-center' => $referencesCount<=3])
                data-flickity-options='{ "wrapAround": true }'>
                 @foreach($references as $reference)
                         <x-reference :reference="$reference"/>
