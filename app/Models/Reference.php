@@ -35,7 +35,6 @@ class Reference extends Model
         "associate_link",
     ];
     protected $casts = [
-        "creator_name" => "array",
         "description" => "array",
         "published" => "boolean",
     ];

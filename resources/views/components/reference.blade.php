@@ -3,8 +3,8 @@
         <div class="mb-6 flex justify-center relative">
             <img src="{{ asset("storage/" . $reference->photo) }}" class="w-32 rounded-full shadow-lg" alt=""/>
         </div>
-        <h5 class="text-xl font-semibold">{{ $reference->creator_name }}</h5>
-        <h6 class="mb-4 font-normal text-black">{{ $reference->company }}</h6>
+        <h5 class="text-xl font-semibold break-words">{{ $reference->creator_name }}</h5>
+        <h6 class="mb-4 font-normal text-black break-words">{{ $reference->company }}</h6>
         <p class="text-neutral-600 line-clamp-3 px-10">
             {!! $reference->description !!}
         </p>
