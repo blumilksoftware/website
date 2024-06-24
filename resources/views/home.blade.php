@@ -151,8 +151,7 @@
             </div>
             <x-waves.wave-3.bottom></x-waves.wave-3.bottom>
         </section>
-        <section
-            class="relative flex flex-col xl:flex-row md:py-24 px-[10%] md:px-[20%] xl:pr-0 items-center overflow-hidden 3xl:gap-44">
+        <section class="relative flex flex-col xl:flex-row md:py-24 px-[10%] md:px-[20%] xl:pr-0 items-center overflow-hidden 3xl:gap-44">
             <div class="flex basis-4/12 relative">
                 <div class="flex flex-col text-center md:text-left">
                     <div class="relative">
@@ -214,7 +213,7 @@
             </div>
         </section>
 
-        <section class="my-20 text-center bg-gray-extraLight ">
+        <section class="my-20 text-center bg-gray-extraLight">
             <div class="block lg:bg-binary bg-cover bg-center bg-no-repeat 3xl:mx-44">
                 <div class="relative px-[10%] md:px-[20%] py-20">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 relative mb-8">
@@ -273,9 +272,7 @@
             </div>
             <div class="hidden sm:block main-gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
                 @foreach($references as $reference)
-                    <div class="gallery-cell gap-6 py-4 2xl:gap-12">
                         <x-reference :reference="$reference"/>
-                    </div>
                 @endforeach
             </div>
         </section>
