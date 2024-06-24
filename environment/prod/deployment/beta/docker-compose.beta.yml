@@ -1,5 +1,3 @@
-version: "3.8"
-
 networks:
   traefik-proxy:
     external: true
@@ -14,9 +12,14 @@ volumes:
 
 services:
   blumilk-website-beta-app:
-    image: registry.blumilk.pl/website/website:beta
-    container_name: blumilk-website-beta-app
+    image: registry.blumilk.pl/internal-public/website:beta
+    container_name: blumilk-website-beta-app-container
     pull_policy: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
     deploy:
       mode: replicated
       replicas: 1
@@ -25,11 +28,11 @@ services:
           memory: 512M
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.blumilk-website-beta-app.rule=Host(`${BLUMILK_WEBSITE_BETA_HOST_NAME}`)"
+      - "traefik.http.routers.blumilk-website-beta-app.rule=Host(`${BLUMILK_WEBSITE_HOST_NAME}`)"
       - "traefik.http.routers.blumilk-website-beta-app.entrypoints=websecure"
       - "traefik.http.routers.blumilk-website-beta-app.tls=true"
       - "traefik.http.routers.blumilk-website-beta-app.tls.certresolver=lets-encrypt-resolver"
-      - "traefik.http.routers.blumilk-website-beta-app.middlewares=response-gzip-compress@file"
+      - "traefik.http.routers.blumilk-website-beta-app.middlewares=authelia@file,response-gzip-compress@file"
     depends_on:
       blumilk-website-beta-database:
         condition: service_healthy
@@ -47,14 +50,25 @@ services:
 
   blumilk-website-beta-database:
     image: postgres:16.1-alpine3.18
-    container_name: blumilk-website-beta-database
+    container_name: blumilk-website-beta-database-container
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+    deploy:
+      mode: replicated
+      replicas: 1
+      resources:
+        limits:
+          memory: 1G
     environment:
-      - PGPASSWORD=${DOCKER_BLUMILK_WEBSITE_BETA_DB_ROOT_PASSWORD:? variable DOCKER_BLUMILK_WEBSITE_BETA_DB_ROOT_PASSWORD not set}
-      - POSTGRES_DB=${DOCKER_BLUMILK_WEBSITE_BETA_DB_DATABASE:? variable DOCKER_BLUMILK_WEBSITE_BETA_DB_DATABASE not set}
-      - POSTGRES_USER=${DOCKER_BLUMILK_WEBSITE_BETA_DB_USERNAME:? variable DOCKER_BLUMILK_WEBSITE_BETA_DB_USERNAME not set}
-      - POSTGRES_PASSWORD=${DOCKER_BLUMILK_WEBSITE_BETA_DB_PASSWORD:? variable DOCKER_BLUMILK_WEBSITE_BETA_DB_PASSWORD not set}
+      - PGPASSWORD=${DB_ROOT_PASSWORD}
+      - POSTGRES_DB=${DB_DATABASE}
+      - POSTGRES_USER=${DB_USERNAME}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
     healthcheck:
-      test: [ "CMD-SHELL", "pg_isready --dbname ${DOCKER_BLUMILK_WEBSITE_BETA_DB_DATABASE} --username ${DOCKER_BLUMILK_WEBSITE_BETA_DB_USERNAME}"]
+      test: [ "CMD-SHELL", "pg_isready --dbname ${DOCKER_POSTGRES_DB_DATABASE} --username ${DOCKER_POSTGRES_DB_USERNAME}"]
       interval: 3s
       timeout: 3s
       retries: 5
@@ -65,8 +79,19 @@ services:
     restart: unless-stopped
 
   blumilk-website-beta-redis:
-    image: redis:7.0-alpine3.16@sha256:2700d5097763fda285c463f4eefc3d0730a2df2a9d48e66707b19d5a5e5f23d4
-    container_name: blumilk-website-beta-redis
+    image: redis:7.2.3-alpine3.18
+    container_name: blumilk-website-beta-redis-container
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+    deploy:
+      mode: replicated
+      replicas: 1
+      resources:
+        limits:
+          memory: 1G
     healthcheck:
       test: [ "CMD-SHELL", "redis-cli ping | grep PONG" ]
       interval: 3s

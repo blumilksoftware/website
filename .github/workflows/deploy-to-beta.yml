@@ -16,7 +16,8 @@ jobs:
     env:
       DOCKER_REGISTRY: registry.blumilk.pl
       DOCKER_REGISTRY_USER_NAME: robot@blumilkbot-harbor
-      DOCKER_REGISTRY_PROJECT_NAME: ${{ github.event.repository.name }}
+      DOCKER_REGISTRY_PROJECT_NAME: internal-public
+      DOCKER_REGISTRY_REPO_NAME: website
       TARGET_DIR_ON_SERVER: /blumilk/beta/projects
     steps:
       - name: set branch name
@@ -48,15 +49,16 @@ jobs:
           password: ${{ secrets.BLUMILKBOT_HARBOR_TOKEN }}
 
       - name: set docker image name
-        run: echo "DOCKER_IMAGE_NAME=${{ env.DOCKER_REGISTRY }}/${{ env.DOCKER_REGISTRY_PROJECT_NAME }}/${{ env.DOCKER_REGISTRY_PROJECT_NAME }}" >> $GITHUB_ENV
+        run: echo "DOCKER_IMAGE_NAME=${{ env.DOCKER_REGISTRY }}/${{ env.DOCKER_REGISTRY_PROJECT_NAME }}/${{ env.DOCKER_REGISTRY_REPO_NAME }}" >> $GITHUB_ENV
 
       - name: Docker meta
         id: meta
         uses: docker/metadata-action@v5.5.1
         with:
           images: ${{ env.DOCKER_IMAGE_NAME }}
-          tags: type=raw,value=beta
-          context: git
+          tags: |
+            type=raw,value=beta
+          context: workflow
 
       - name: build and push image
         uses: docker/build-push-action@v5.3.0
@@ -81,7 +83,7 @@ jobs:
           key: ${{ secrets.VPS_OVH_BF7EC892_SSH_PRIVATE_KEY }}
           passphrase: ${{ secrets.VPS_OVH_BF7EC892_SSH_PRIVATE_KEY_PASSPHRASE }}
           source: "./environment/prod/deployment/beta/*,./environment/prod/deployment/scripts/*"
-          target: ${{ env.TARGET_DIR_ON_SERVER }}/${{ env.DOCKER_REGISTRY_PROJECT_NAME }}
+          target: ${{ env.TARGET_DIR_ON_SERVER }}/${{ env.DOCKER_REGISTRY_REPO_NAME }}
           rm: true
 
       - name: run deployment script over ssh
@@ -96,7 +98,7 @@ jobs:
           passphrase: ${{ secrets.VPS_OVH_BF7EC892_SSH_PRIVATE_KEY_PASSPHRASE }}
           script_stop: true
           script: |
-            cd ${{ env.TARGET_DIR_ON_SERVER }}/${{ env.DOCKER_REGISTRY_PROJECT_NAME }}/environment/prod/deployment/beta
+            cd ${{ env.TARGET_DIR_ON_SERVER }}/${{ env.DOCKER_REGISTRY_REPO_NAME }}/environment/prod/deployment/beta
             echo ${{ secrets.BLUMILKBOT_HARBOR_TOKEN }} | docker login ${{ env.DOCKER_REGISTRY }} --username ${{ env.DOCKER_REGISTRY_USER_NAME }} --password-stdin
             make beta-deploy SOPS_AGE_KEY=${{ secrets.SOPS_AGE_BETA_SECRET_KEY }}
             docker images --filter dangling=true | grep "${{ env.DOCKER_IMAGE_NAME }}" | awk '{print $3}'| xargs --no-run-if-empty docker rmi

@@ -1,6 +1,6 @@
 ### PHP DEPENDENCIES ###
 # https://hub.docker.com/_/composer/tags
-FROM composer:2.7.6 as vendor
+FROM composer:2.7.7 as vendor
 
 WORKDIR /app_composer_dependencies
 
@@ -17,27 +17,29 @@ RUN composer install \
 
 ### FRONTEND ###
 # https://hub.docker.com/_/node/tags
-FROM node:22.1.0-bookworm-slim as frontend
+FROM node:22.2.0-bookworm-slim as frontend
 
 WORKDIR /app_frontend_dependencies
 
-COPY package.json package-lock.json postcss.config.js tailwind.config.js vite.config.js ./
+COPY package.json package-lock.json postcss.config.js tailwind.config.js vite.config.js tsconfig.json ./
+COPY ./environment/prod/app/vite.env .env
 
 RUN npm clean-install
 
 COPY resources/js ./resources/js/
 COPY resources/css ./resources/css/
+COPY resources/views ./resources/views/
 
 RUN npm run build
 
 ### APPLICATION ###
 # https://hub.docker.com/_/php/tags
-FROM php:8.3.7-fpm-bookworm as app
+FROM php:8.3.8-fpm-bookworm as app
 
 COPY --from=vendor /usr/bin/composer /usr/local/bin/composer
 
 # For other versions check: http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx/
-ARG NGINX_VERSION="1.25.4-1~bookworm"
+ARG NGINX_VERSION="1.27.0-2~bookworm"
 # For other versions check: https://pecl.php.net/package/redis
 ARG PHPREDIS_VERSION=6.0.2
 
@@ -49,17 +51,20 @@ RUN apt-get update \
         nginx=${NGINX_VERSION} \
         libzip-dev \
         libpq-dev \
+        libicu-dev \
         supervisor \
         cron \
-        unzip \
     && pecl install redis-${PHPREDIS_VERSION} \
     && docker-php-ext-install \
         zip \
         pdo_pgsql \
+        intl \
         bcmath \
+        calendar \
         opcache \
         pcntl \
-    && docker-php-ext-enable redis
+    && docker-php-ext-enable \
+        redis
 
 RUN mv "${PHP_INI_DIR}/php.ini-production" "${PHP_INI_DIR}/php.ini"
 
@@ -79,6 +84,16 @@ COPY --chown=www-data:www-data --from=vendor /app_composer_dependencies/vendor .
 
 # Copy App files
 COPY --chown=www-data:www-data . .
+
+# Remove unnecessary files
+RUN rm --recursive --force \
+    ./environment \
+    eslint.config.js \
+    postcss.config.js \
+    tailwind.config.js \
+    tsconfig.json \
+    vite.config.js \
+    .dockerignore
 
 RUN composer dump-autoload --optimize
 

@@ -4,7 +4,7 @@ export DOCKER_BUILDKIT = 1
 MAKEFLAGS += --no-print-directory
 
 DOCKER_COMPOSE_FILENAME = docker-compose.beta.yml
-DOCKER_COMPOSE_APP_CONTAINER = blumilk-website-beta-app
+DOCKER_COMPOSE_APP_CONTAINER = blumilk-website-beta-app-container
 
 DOCKER_EXEC_SCRIPT = docker compose --file ${DOCKER_COMPOSE_FILENAME} exec --workdir /application/environment/prod/deployment/scripts ${DOCKER_COMPOSE_APP_CONTAINER} bash
 
@@ -15,7 +15,7 @@ beta-deploy: decrypt-secrets create-deployment-file
 	docker compose --file ${DOCKER_COMPOSE_FILENAME} up --detach && \
 	sleep 5 && \
 	echo "App post deploy actions" && \
-            ${DOCKER_EXEC_SCRIPT} post-deploy-actions.sh
+    	${DOCKER_EXEC_SCRIPT} post-deploy-actions.sh
 
 SOPS_VERSION=3.8.1
 

@@ -8,6 +8,7 @@
 .sops.yaml
 Makefile
 README.md
+readme.md
 docker-compose.yml
 docs/
 phpstan*
