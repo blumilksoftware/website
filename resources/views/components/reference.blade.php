@@ -9,9 +9,8 @@
             {!! $reference->description !!}
         </p>
         <a class="mb-8 text-sm flex items-center justify-center text-neutral-400 px-12 py-2">
-            {{__('buttons.read_more')}}
+            {{ __('buttons.read_more') }}
         </a>
-
         <a class="mb-0 flex items-center justify-center" href="{{ $reference->associate_link }}" target="_blank">
             <i class="fa-brands fa-linkedin fa-xl text-website-normal"></i>
         </a>
