@@ -12,8 +12,7 @@ RUN composer install \
         --no-scripts \
         --no-dev \
         --prefer-dist \
-        --ignore-platform-reqs \
-    && composer config http-basic.nova.laravel.com --unset
+        --ignore-platform-reqs
 
 ### FRONTEND ###
 # https://hub.docker.com/_/node/tags
