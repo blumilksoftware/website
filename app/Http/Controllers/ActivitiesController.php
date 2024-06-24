@@ -13,7 +13,7 @@ class ActivitiesController extends Controller
 {
     public function index(Factory $factory): View
     {
-        $activities = Activity::query()->where("published", true)->latest()->paginate(9);
+        $activities = Activity::query()->where("published", true)->latest('published_at')->paginate(9);
         $tags = ActivityResource::getTags();
 
         return $factory->make("activities")
