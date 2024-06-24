@@ -8,7 +8,6 @@ use Blumilk\Website\Http\Resources\ActivityResource;
 use Blumilk\Website\Models\Activity;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
-use Illuminate\Support\Facades\App;
 
 class ActivitiesController extends Controller
 {
@@ -24,8 +23,7 @@ class ActivitiesController extends Controller
 
     public function get(Factory $factory, string $slug): View
     {
-        $locale = App::getLocale();
-        $activity = Activity::query()->where("slug->{$locale}", $slug)->firstOrFail();
+        $activity = Activity::query()->whereJsonContains("slug->en", $slug)->orWhereJsonContains("slug->pl", $slug)->firstOrFail();
 
         $nextActivity = Activity::where("id", ">", $activity->id)->where("published", true)->orderBy("id", "asc")->first();
         $previousActivity = Activity::where("id", "<", $activity->id)->where("published", true)->orderBy("id", "desc")->first();

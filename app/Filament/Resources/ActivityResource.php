@@ -66,7 +66,7 @@ class ActivityResource extends Resource
                         Forms\Components\DateTimePicker::make("published_at")
                             ->format(DateFormats::DATE_DISPLAY)
                             ->time(false)
-                            ->requiredUnless("published", true)
+                            ->required()
                             ->label("Data publikacji"),
                     ]),
                     Section::make([
@@ -110,7 +110,8 @@ class ActivityResource extends Resource
                     ->date(DateFormats::DATE_DISPLAY)
                     ->label("Data publikacji")
                     ->sortable(),
-            ])->filters([
+            ])->defaultSort("published_at", "desc")
+            ->filters([
                 TernaryFilter::make("published")
                     ->label("Status publikacji")
                     ->placeholder("Wszystkie")
