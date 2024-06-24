@@ -4,7 +4,6 @@
 @php
     $caseStudy = App::currentLocale()=='en' ? json_decode(file_get_contents(public_path('main_case_study.json')), true)['en'] : json_decode(file_get_contents(public_path('main_case_study.json')), true)['pl'];
     $articles = json_decode(file_get_contents(public_path('articles.json')), true);
-//dd(count($references));
 @endphp
 @section("content")
     <section class="relative overflow-hidden">
@@ -163,8 +162,7 @@
                     <div class="text-black text-lg font-light lg:text-xl relative py-4">
                         <div class="py-4">
                             <span class="leading-relaxed">{{__("content.home.section_4.subtitle_1")}}</span>
-                            <span
-                                class="font-semibold leading-relaxed">{{__("content.home.section_4.subtitle_2")}}</span>
+                            <span class="font-semibold leading-relaxed">{{__("content.home.section_4.subtitle_2")}}</span>
                         </div>
                         <ul class="list-disc-none py-8 hidden md:block">
                             @foreach($caseStudy as $key => $description)
@@ -203,8 +201,7 @@
                      alt="Vita homepage"/>
             </div>
             <div class="flex md:hidden place-content-center p-8">
-                <x-small-primary-button
-                    href="{{ route('case-studies') }}">{{ __("buttons.all_projects") }}</x-small-primary-button>
+                <x-small-primary-button href="{{ route('case-studies') }}">{{ __("buttons.all_projects") }}</x-small-primary-button>
             </div>
         </section>
 
@@ -253,7 +250,7 @@
             </div>
         </section>
 
-        <section class=" @if(count($references)==0) hidden @endif px-[10%] md:px-[15%] text-center items-center sm:pb-36 relative">
+        <section @class([ 'hidden' => count($references)==0, 'px-[10%] md:px-[15%] text-center items-center sm:pb-36 relative' ])>
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">{{__("content.home.section_6.title_1")}}</h2>
             <div class="my-6">
                 <x-badge>{{__("content.home.section_6.badge")}}</x-badge>
@@ -265,7 +262,8 @@
             <div class="sm:hidden">
                 <x-reference @if(count($references)!=0) :reference="$references[0] @endif "/>
             </div>
-            <div class=" @if(count($references)>3) sm:block main-gallery js-flickity @else sm:flex justify-center @endif" data-flickity-options='{ "wrapAround": true }'>
+            <div @class([ 'sm:block main-gallery js-flickity' => count($references)>3, 'sm:flex justify-center' => count($references)<=3])
+               data-flickity-options='{ "wrapAround": true }'>
                 @foreach($references as $reference)
                         <x-reference :reference="$reference"/>
                 @endforeach
