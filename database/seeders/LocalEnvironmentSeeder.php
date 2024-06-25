@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Database\Seeders;
 
-use Blumilk\Website\Enums\Role;
 use Blumilk\Website\Models\Activity;
 use Blumilk\Website\Models\CaseStudy;
 use Blumilk\Website\Models\ContactForm;
