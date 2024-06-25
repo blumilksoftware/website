@@ -27,7 +27,7 @@ return Application::configure(basePath: dirname(__DIR__))
             SetLocale::class,
             SubstituteBindings::class,
         ])->redirectGuestsTo("admin")
-        ->trustProxies(at: "*");
+            ->trustProxies(at: "*");
     })
     ->withExceptions()
     ->create();
