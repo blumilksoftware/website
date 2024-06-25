@@ -11,7 +11,7 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function __invoke(Factory $factory, Request $request): View
+    public function __invoke(Request $request, Factory $factory): View
     {
         $references = Reference::query()->where("published", true)->get();
         $locale = $request->getLocale();
