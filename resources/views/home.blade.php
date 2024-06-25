@@ -255,9 +255,9 @@
                 <span class="leading-relaxed">{{__("content.home.section_6.subtitle_3")}}</span>
             </span>
             <div class="sm:hidden">
-                <x-reference @if($references->isNotEmpty()) :reference="$references[0] @endif "/>
+                <x-reference @if($references->isNotEmpty()) :reference="$references[0]" @endif/>
             </div>
-            <div @class([ 'sm:block main-gallery js-flickity' => $referencesCount>3, 'sm:flex justify-center' => $referencesCount<=3])
+            <div @class([ 'sm:block main-gallery js-flickity' => $referencesCount > 3, 'sm:flex justify-center' => $referencesCount <= 3])
                data-flickity-options='{ "wrapAround": true }'>
                 @foreach($references as $reference)
                         <x-reference :reference="$reference"/>
