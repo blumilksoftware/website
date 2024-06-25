@@ -14,4 +14,5 @@ return [
     "activities" => "aktywnosci",
     "activities/{slug}" => "aktywnosci/{slug}",
     "software-engineer" => "inzynier-oprogramowania",
+    "privacy-policy" => "polityka-prywatnosci",
 ];
