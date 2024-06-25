@@ -14,6 +14,8 @@
 
 .env
 .env.backup
+.env.beta.secrets.decrypted
+*.decrypted
 .phpunit.result.cache
 .php-cs-fixer.cache
 docker-compose.override.yml
