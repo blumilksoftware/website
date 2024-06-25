@@ -12,6 +12,10 @@ class UsersSeeder extends Seeder
 {
     public function run(): void
     {
+        if (User::query()->count() > 0) {
+            return;
+        }
+
         User::factory()->create([
             "email" => "admin@example.com",
             "role" => Role::Admin,
