@@ -13,7 +13,7 @@ use Blumilk\Website\Models\Reference;
 use Blumilk\Website\Models\User;
 use Illuminate\Database\Seeder;
 
-class LocalEnvironmentSeeder extends Seeder
+class BetaSeeder extends Seeder
 {
     public function run(): void
     {
@@ -23,10 +23,5 @@ class LocalEnvironmentSeeder extends Seeder
 
         $this->call(UsersSeeder::class);
 
-        Activity::factory()->count(12)->create();
-        CaseStudy::factory()->count(12)->create();
-        MeetupActivity::factory()->count(12)->create();
-        ContactForm::factory()->count(12)->create();
-        Reference::factory()->count(12)->create();
     }
 }
