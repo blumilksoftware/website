@@ -82,7 +82,7 @@ jobs:
           username: ${{ secrets.VPS_OVH_BF7EC892_USERNAME }}
           key: ${{ secrets.VPS_OVH_BF7EC892_SSH_PRIVATE_KEY }}
           passphrase: ${{ secrets.VPS_OVH_BF7EC892_SSH_PRIVATE_KEY_PASSPHRASE }}
-          source: "./environment/prod/deployment/beta/*,./environment/prod/deployment/scripts/*"
+          source: "./environment/prod/deployment/beta/*"
           target: ${{ env.TARGET_DIR_ON_SERVER }}/${{ env.DOCKER_REGISTRY_REPO_NAME }}
           rm: true
 
