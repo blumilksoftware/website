@@ -40,7 +40,7 @@
             @endforeach
         </div>
     </section>
-    <section class="px-[10%] md:px-[20%]">
+    <section class="px-[10%] md:px-[20%] pb-8 md:pb-0">
         {{ $activities->onEachSide(1)->links() }}
     </section>
 @endsection

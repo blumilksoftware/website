@@ -44,7 +44,7 @@ class AdminPanelProvider extends PanelProvider
                 "primary" => Color::Sky,
             ])
             ->brandLogo(fn(): View => view("filament.logo"))
-            ->favicon(asset("sygnet.svg"))
+            ->favicon(asset("identification/sygnet.svg"))
             ->discoverResources(in: app_path("Filament/Resources"), for: "Blumilk\\Website\\Filament\\Resources")
             ->discoverPages(in: app_path("Filament/Pages"), for: "Blumilk\\Website\\Filament\\Pages")
             ->pages([
