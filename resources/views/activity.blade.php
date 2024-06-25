@@ -75,7 +75,8 @@
                     @endforeach
                 </div>
             </div>
-            <div class="mt-10">
+            <div @class(['mt-10',
+                    'hidden' => count($activity['tags']) == 0 ])>
                 <h3 class="text-lg lg:text-xl font-semibold">{{__("content.activity.section_1.title_2")}}</h3>
                 <div class="flex flex-col place-content-left">
                     @foreach($activity['tags'] as $tag)

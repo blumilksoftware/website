@@ -14,7 +14,7 @@ return [
         "policy" => "Privacy policy",
     ],
     "contactTo" => [
-        "job" => "Development manager",
+        "job" => "Business Development Manager",
         "description" => "Hi, I'm Kasia! I will be happy to talk about the development of your business. Write me an email or call me, and we will definitely find the right solution.",
     ],
 ];

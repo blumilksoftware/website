@@ -14,7 +14,7 @@ return [
         "policy" => "Polityka prywatności",
     ],
     "contactTo" => [
-        "job" => "Menadżer ds. rozwoju",
+        "job" => "Menedżer ds. rozwoju",
         "description" => "Cześć, jestem Kasia! Z przyjemnością porozmawiam o rozwoju Twojego biznesu. Napisz do mnie e-mail lub zadzwoń, a na pewno znajdziemy odpowiednie rozwiązanie.",
     ],
 ];
