@@ -4,9 +4,9 @@ export DOCKER_BUILDKIT = 1
 MAKEFLAGS += --no-print-directory
 
 DOCKER_COMPOSE_FILENAME = docker-compose.beta.yml
-DOCKER_COMPOSE_APP_CONTAINER = blumilk-website-beta-app-container
+DOCKER_COMPOSE_APP_SERVICE = blumilk-website-beta-app
 
-DOCKER_EXEC_SCRIPT = docker compose --file ${DOCKER_COMPOSE_FILENAME} exec --workdir /application/environment/prod/deployment/scripts ${DOCKER_COMPOSE_APP_CONTAINER} bash
+DOCKER_EXEC_SCRIPT = docker compose --file ${DOCKER_COMPOSE_FILENAME} exec --workdir /application/environment/prod/deployment/scripts ${DOCKER_COMPOSE_APP_SERVICE} bash
 
 CURRENT_DIR = $(shell pwd)
 

@@ -7,7 +7,7 @@ MAKEFLAGS += --no-print-directory
 
 SHELL := /bin/bash
 
-DOCKER_COMPOSE_FILE = docker-compose.yaml
+DOCKER_COMPOSE_FILE = docker-compose.yml
 DOCKER_COMPOSE_APP_CONTAINER = app
 DOCKER_COMPOSE_DATABASE_CONTAINER = database
 

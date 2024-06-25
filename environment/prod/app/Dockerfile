@@ -86,7 +86,7 @@ COPY --chown=www-data:www-data . .
 
 # Remove unnecessary files
 RUN rm --recursive --force \
-    ./environment \
+    ./environment/prod/app \
     eslint.config.js \
     postcss.config.js \
     tailwind.config.js \
