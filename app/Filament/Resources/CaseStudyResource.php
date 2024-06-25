@@ -47,7 +47,7 @@ class CaseStudyResource extends Resource
                                 ->label("Slug")
                                 ->required()
                                 ->rules([
-                                    fn(?Model $record) => UniqueTranslationRule::for("case_studies", "slug")->ignore($record?->getKey()),
+                                    fn(?Model $record): UniqueTranslationRule => UniqueTranslationRule::for("case_studies", "slug")->ignore($record?->getKey()),
                                 ])
                                 ->alphaDash()
                                 ->maxLength(255),

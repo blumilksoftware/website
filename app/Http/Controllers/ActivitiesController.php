@@ -25,23 +25,15 @@ class ActivitiesController extends Controller
     {
         $activity = Activity::query()->whereJsonContains("slug->en", $slug)->orWhereJsonContains("slug->pl", $slug)->firstOrFail();
 
-        $nextActivity = Activity::where("id", ">", $activity->id)->where("published", true)->orderBy("id", "asc")->first();
-        $previousActivity = Activity::where("id", "<", $activity->id)->where("published", true)->orderBy("id", "desc")->first();
+        $nextActivities = Activity::query()->where("id", ">", $activity->id)->where("published", true)->orderBy("id", "asc")->take(2)->get();
+        $previousActivities = Activity::query()->where("id", "<", $activity->id)->where("published", true)->orderBy("id", "desc")->take(2)->get();
 
-        if (!$previousActivity) {
-            $recommendedActivities = Activity::where("id", ">", $activity->id)
-                ->where("published", true)
-                ->orderBy("id", "asc")
-                ->take(2)
-                ->get();
-        } elseif (!$nextActivity) {
-            $recommendedActivities = Activity::where("id", "<", $activity->id)
-                ->where("published", true)
-                ->orderBy("id", "desc")
-                ->take(2)
-                ->get();
+        if (!$previousActivities->first()) {
+            $recommendedActivities = $nextActivities;
+        } elseif (!$nextActivities->first()) {
+            $recommendedActivities = $previousActivities;
         } else {
-            $recommendedActivities = collect([$previousActivity, $nextActivity]);
+            $recommendedActivities = [$previousActivities->first(), $nextActivities->first()];
         }
 
         return $factory->make("activity")

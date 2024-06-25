@@ -29,24 +29,24 @@
     <section class="flex flex-col gap-16 xl:gap-32 lg:flex-row place-content-between relative mx-[10%] md:mx-[20%] lg:pt-32">
         <div class="flex flex-col">
             <div class="relative aspect-square max-w-xl overflow-hidden rounded-3xl order-2 lg:order-1 mt-8 md:mt-16 lg:mt-0">
-                <img src="{{  asset("storage/".$activity['photo']) }}"
+                <img src="{{  asset("storage/".$activity->photo) }}"
                      alt=""
                      class="inset-0 -z-10 size-full object-cover">
             </div>
             <div class="mt-8 lg:mt-16 w-full max-w-2xl lg:max-w-none order-1 lg:order-2">
                 <div class="max-w-xl">
                     <div class="text-2xl md:text-3xl lg:text-4xl">
-                        <h1 class="font-bold">{{ $activity['title']  }}</h1>
-                        <h1>{{ $activity['subtitle'] }}</h1>
+                        <h1 class="font-bold">{{ $activity->title }}</h1>
+                        <h1>{{ $activity->subtitle }}</h1>
                     </div>
 
                 </div>
             </div>
             <div class="order-3">
-                <p class="mt-20 text-lg lg:text-xl font-light">{{ $activity['description'] }}</p>
-                @if(!empty( $activity['url'] ))
+                <p class="mt-20 text-lg lg:text-xl font-light">{{ $activity->description }}</p>
+                @if(!empty( $activity->url ))
                     <a class="block mt-10 text-lg lg:text-xl font-light"
-                       href="{{ $activity['url'] }}">▶ {{ $activity['url'] }}</a>
+                       href="{{ $activity->url }}">▶ {{ $activity->url }}</a>
                 @endif
             </div>
         </div>
@@ -76,10 +76,10 @@
                 </div>
             </div>
             <div @class(['mt-10',
-                    'hidden' => count($activity['tags']) == 0 ])>
+                    'hidden' => count($activity->tags) == 0 ])>
                 <h3 class="text-lg lg:text-xl font-semibold">{{__("content.activity.section_1.title_2")}}</h3>
                 <div class="flex flex-col place-content-left">
-                    @foreach($activity['tags'] as $tag)
+                    @foreach($activity->tags as $tag)
                         <x-tag class="flex my-1 md:my-2 xl:my-3 px-4 py-1 md:px-3 md:py-2 xl:px-4 xl:py-2 2xl:px-6 2xl:py-3 text-center w-fit"> {{__("tags.$tag")}}</x-tag>
                     @endforeach
                 </div>

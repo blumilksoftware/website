@@ -56,7 +56,7 @@ class ActivityResource extends Resource
                                 ->label("Slug")
                                 ->required()
                                 ->rules([
-                                    fn(?Model $record) => UniqueTranslationRule::for("activities", "slug")->ignore($record?->getKey()),
+                                    fn(?Model $record): UniqueTranslationRule => UniqueTranslationRule::for("activities", "slug")->ignore($record?->getKey()),
                                 ])
                                 ->alphaDash()
                                 ->maxLength(255),
