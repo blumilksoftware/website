@@ -1,13 +1,5 @@
-@php use Illuminate\Support\Facades\App; @endphp
 @extends("layout.public")
 
-@php
-    $caseStudiesFile = App::currentLocale()=='en' ? 'case_studies_en.json' : 'case_studies_pl.json';
-    $caseStudy = json_decode(file_get_contents(public_path($caseStudiesFile)), true)[0];
-    $testimonials = json_decode(file_get_contents(public_path('testimonials.json')), true);
-    $articles = json_decode(file_get_contents(public_path('articles.json')), true);
-
-@endphp
 @section("content")
     <section class="relative overflow-hidden">
         <div class="relative md:block">
@@ -41,7 +33,8 @@
                         <span class="font-semibold leading-relaxed">{{__("content.home.section_1.subtitle_2")}}</span>
                     </p>
                     <div class="my-6">
-                        <x-primary-button href="{{ route('about') }}" class="px-16">{{ __("buttons.about") }}</x-primary-button>
+                        <x-primary-button href="{{ route('about') }}"
+                                          class="px-16">{{ __("buttons.about") }}</x-primary-button>
                     </div>
                 </div>
             </div>
@@ -52,7 +45,8 @@
         </section>
 
         <section class="relative text-center px-[10%] md:px-[20%]">
-            <div class="text-2xl lg:text-3xl font-semibold text-gray-400">{{ __("content.home.section_2.title_1") }}<span
+            <div class="text-2xl lg:text-3xl font-semibold text-gray-400">{{ __("content.home.section_2.title_1") }}
+                <span
                     class="text-website-normal">{{ __("content.home.section_2.title_2") }}</span>
             </div>
             <div class="absolute z-10 hidden lg:block -left-[10%] lg:-left-[3%] top-0">
@@ -129,7 +123,7 @@
                             </div>
                             <div class="py-6 text-website-normal mx-4">
                                 <div class="flex flex-col items-center place-content-center text-center bg-blue-light max-w-full px-6 py-4 gap-4 rounded-2xl">
-                                    <img src="{{asset('graphics/stars.svg')}}" class="max-h-8 shrink"
+                                    <img src="{{ asset('graphics/stars.svg') }}" class="max-h-8 shrink"
                                          alt="5 stars"/>
                                     <div class="leading-relaxed">
                                         {{__("content.home.section_3.subtitle_3")}}
@@ -148,8 +142,7 @@
             </div>
             <x-waves.wave-3.bottom></x-waves.wave-3.bottom>
         </section>
-        <section
-            class="relative flex flex-col xl:flex-row md:py-24 px-[10%] md:px-[20%] xl:pr-0 items-center overflow-hidden 3xl:gap-44">
+        <section class="relative flex flex-col xl:flex-row md:py-24 px-[10%] md:px-[20%] xl:pr-0 items-center overflow-hidden 3xl:gap-44">
             <div class="flex basis-4/12 relative">
                 <div class="flex flex-col text-center md:text-left">
                     <div class="relative">
@@ -168,7 +161,9 @@
                         </div>
                         <ul class="list-disc-none py-8 hidden md:block">
                             @foreach($caseStudy as $key => $description)
-                                <li><span class="font-semibold leading-relaxed">{{ $key }}</span> : {{ $description }}</li>
+                                <li>
+                                    <span class="font-semibold leading-relaxed"> {{ $key }}</span> : {{ $description }}
+                                </li>
                             @endforeach
                         </ul>
                         <div class="hidden md:block relative pb-8">
@@ -196,7 +191,7 @@
             <div class="flex rounded-2xl xl:bg-gray-light -rotate-3 basis-8/12 relative xl:shadow-md size-full xl:left-[10%]">
                 <div class="absolute hidden xl:block rotate-3 z-20 rounded-2xl h-52 w-80 -left-[10%] bottom-[10%] bg-[url('graphics/code-snippet.png')] bg-cover">
                 </div>
-                <img src="{{asset('graphics/vita.png')}}"
+                <img src="{{ asset('graphics/vita.png') }}"
                      class="w-full relative flex xl:left-[5%] overflow-hidden rounded-2xl bg-white shadow-md rotate-3"
                      alt="Vita homepage"/>
             </div>
@@ -205,21 +200,19 @@
             </div>
         </section>
 
-        <section class="my-20 text-center bg-gray-extraLight ">
+        <section class="my-20 text-center bg-gray-extraLight">
             <div class="block lg:bg-binary bg-cover bg-center bg-no-repeat 3xl:mx-44">
                 <div class="relative px-[10%] md:px-[20%] py-20">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 relative mb-8">
                         {{__("content.home.section_5.title_1")}}</h2>
                     <span class="font-light leading-relaxed text-lg lg:text-xl relative">
-                    <span class="leading-relaxed font-semibold">{{__("content.home.section_5.subtitle_1")}}</span>
-                    <span class="leading-relaxed">{{__("content.home.section_5.subtitle_2")}}</span>
+                        <span class="leading-relaxed font-semibold">{{__("content.home.section_5.subtitle_1")}}</span>
+                        <span class="leading-relaxed">{{__("content.home.section_5.subtitle_2")}}</span>
                         <span class="leading-relaxed font-semibold">{{__("content.home.section_5.subtitle_3")}}</span>
-                    <span class="leading-relaxed">{{__("content.home.section_5.subtitle_4")}}</span>
+                        <span class="leading-relaxed">{{__("content.home.section_5.subtitle_4")}}</span>
                         <span class="leading-relaxed font-semibold">{{__("content.home.section_5.subtitle_5")}}</span>
-                    <span class="leading-relaxed">{{__("content.home.section_5.subtitle_6")}}</span>
+                        <span class="leading-relaxed">{{__("content.home.section_5.subtitle_6")}}</span>
                         <span class="leading-relaxed font-semibold">{{__("content.home.section_5.subtitle_7")}}</span>
-
-
                     </span>
                     <div class="grid grid-cols-5 relative w-fit align-middle place-items-center mx-auto text-gray-400 items-center mt-14  gap-8 lg:gap-x-14">
                         <div class="">
@@ -252,7 +245,7 @@
             </div>
         </section>
 
-        <section class="px-[10%] md:px-[15%] text-center items-center sm:pb-36 relative">
+        <section @class([ 'hidden' => $references->isEmpty(), 'px-[10%] md:px-[15%] text-center items-center sm:pb-36 relative' ])>
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">{{__("content.home.section_6.title_1")}}</h2>
             <div class="my-6">
                 <x-badge>{{__("content.home.section_6.badge")}}</x-badge>
@@ -262,60 +255,13 @@
                 <span class="leading-relaxed">{{__("content.home.section_6.subtitle_3")}}</span>
             </span>
             <div class="sm:hidden">
-                <x-testimonial
-                    photoUrl="{{ $testimonials[0]['photoUrl'] }}"
-                    name="{{ $testimonials[0]['name'] }}"
-                    occupation="{{ $testimonials[0]['occupation'] }}"
-                    description="{{ $testimonials[0]['description'] }}"
-                    linkedIn="{{ $testimonials[0]['linkedIn'] }}"
-                />
+                <x-reference @if($references->isNotEmpty()) :reference="$references[0]" @endif/>
             </div>
-            <div class="hidden sm:block main-gallery js-flickity" data-flickity-options='{ "wrapAround": true }'>
-                <div class="gallery-cell gap-4 py-4 2xl:gap-12">
-                    <x-testimonial
-                        photoUrl="{{ $testimonials[0]['photoUrl'] }}"
-                        name="{{ $testimonials[0]['name'] }}"
-                        occupation="{{ $testimonials[0]['occupation'] }}"
-                        description="{{ $testimonials[0]['description'] }}"
-                        linkedIn="{{ $testimonials[0]['linkedIn'] }}"
-                    />
-                </div>
-                <div class="gallery-cell gap-6 py-4 2xl:gap-12">
-                    <x-testimonial
-                        photoUrl="{{ $testimonials[1]['photoUrl'] }}"
-                        name="{{ $testimonials[1]['name'] }}"
-                        occupation="{{ $testimonials[1]['occupation'] }}"
-                        description="{{ $testimonials[1]['description'] }}"
-                        linkedIn="{{ $testimonials[1]['linkedIn'] }}"
-                    />
-                </div>
-                <div class="gallery-cell gap-6 py-4 2xl:gap-12">
-                    <x-testimonial
-                        photoUrl="{{ $testimonials[2]['photoUrl'] }}"
-                        name="{{ $testimonials[2]['name'] }}"
-                        occupation="{{ $testimonials[2]['occupation'] }}"
-                        description="{{ $testimonials[2]['description'] }}"
-                        linkedIn="{{ $testimonials[2]['linkedIn'] }}"
-                    />
-                </div>
-                <div class="gallery-cell gap-6 py-4 2xl:gap-12">
-                    <x-testimonial
-                        photoUrl="{{ $testimonials[0]['photoUrl'] }}"
-                        name="{{ $testimonials[0]['name'] }}"
-                        occupation="{{ $testimonials[0]['occupation'] }}"
-                        description="{{ $testimonials[0]['description'] }}"
-                        linkedIn="{{ $testimonials[0]['linkedIn'] }}"
-                    />
-                </div>
-                <div class="gallery-cell gap-6 py-4 2xl:gap-12">
-                    <x-testimonial
-                        photoUrl="{{ $testimonials[2]['photoUrl'] }}"
-                        name="{{ $testimonials[2]['name'] }}"
-                        occupation="{{ $testimonials[2]['occupation'] }}"
-                        description="{{ $testimonials[2]['description'] }}"
-                        linkedIn="{{ $testimonials[2]['linkedIn'] }}"
-                    />
-                </div>
+            <div @class([ 'sm:block main-gallery js-flickity' => $referencesCount > 3, 'sm:flex justify-center' => $referencesCount <= 3])
+               data-flickity-options='{ "wrapAround": true }'>
+                @foreach($references as $reference)
+                        <x-reference :reference="$reference"/>
+                @endforeach
             </div>
         </section>
         <div class="md:py-20 block lg:bg-binary bg-cover bg-center bg-no-repeat object-contain min-w-full inset-0">
