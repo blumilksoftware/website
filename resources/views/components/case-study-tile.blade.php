@@ -1,7 +1,7 @@
 <div {{ $attributes->merge(['class' => 'grid gap-8 content-start max-w-xl mx-auto text-center lg:text-left']) }}>
     <div class="relative rounded-3xl md:bg-gray-dark aspect-[5/3] max-h-80 pl-1 shadow-md -rotate-3 md:-left-2">
         <a href="{{ route('case-studies.entry', $caseStudy->slug) }}">
-            <img src="{{ asset($caseStudy->photo)  }}"
+            <img src="{{ asset("storage/" . $caseStudy->photo)  }}"
                  class="relative max-h-80 m-auto w-full aspect-[5/3] shadow-md rounded-3xl rotate-3 md:left-3 -bottom-2"
                  alt="{{ $caseStudy->company }}"/>
         </a>
