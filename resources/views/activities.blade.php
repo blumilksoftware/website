@@ -29,10 +29,34 @@
             </h2>
         </div>
         <div class="flex flex-wrap place-content-center gap-y-2 md:gap-y-6 2xl:gap-y-8">
-            <x-tag class="my-1 m-2 md:my-2 xl:my-3 px-4 py-1 md:px-3 md:py-2 xl:px-4 xl:py-2 2xl:px-6 2xl:py-3"> {{ __("tags.all") }}</x-tag>
+            <a href="{{ route("activities") }}">
+                <x-tag
+                    @class([
+                        "my-1 m-2 md:my-2 xl:my-3 px-4 py-1 md:px-3 md:py-2 xl:px-4 xl:py-2 2xl:px-6 2xl:py-3",
+                        "text-website-normal" => $selectedTag === null
+                    ])
+                > {{ __("tags.all") }}</x-tag>
+            </a>
             @foreach($tags as $tag)
-                <x-tag class="my-1 m-2 md:my-2 xl:my-3 px-4 py-1 md:px-3 md:py-2 xl:px-4 xl:py-2 2xl:px-6 2xl:py-3">{{ __("tags.$tag") }}</x-tag>
+                <a href="{{ route("activities", ["tag" => $tag]) }}">
+                    <x-tag
+                        @class([
+                            "my-1 m-2 md:my-2 xl:my-3 px-4 py-1 md:px-3 md:py-2 xl:px-4 xl:py-2 2xl:px-6 2xl:py-3",
+                            "text-website-normal" => $selectedTag && $tag === $selectedTag
+                        ])
+                    >{{ $tag }}</x-tag>
+                </a>
             @endforeach
+            @if($selectedTag && $tags->contains($selectedTag) === false)
+                <a href="{{ route("activities") }}">
+                    <x-tag
+                        @class([
+                            "my-1 m-2 md:my-2 xl:my-3 px-4 py-1 md:px-3 md:py-2 xl:px-4 xl:py-2 2xl:px-6 2xl:py-3",
+                            "text-website-normal"
+                        ])
+                    >{{ $selectedTag }}</x-tag>
+                </a>
+            @endif
         </div>
         <div class="grid lg:grid-cols-3 gap-12">
             @foreach($activities as $activity)

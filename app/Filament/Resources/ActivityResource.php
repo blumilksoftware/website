@@ -6,8 +6,8 @@ namespace Blumilk\Website\Filament\Resources;
 
 use Blumilk\Website\Enums\DateFormats;
 use Blumilk\Website\Filament\Resources\ActivityResource\Pages;
-use Blumilk\Website\Http\Resources\ActivityResource as ModelActivityResource;
 use Blumilk\Website\Models\Activity;
+use Blumilk\Website\Models\Tag;
 use CodeZero\UniqueTranslation\UniqueTranslationRule;
 use Exception;
 use Filament\Forms;
@@ -79,7 +79,7 @@ class ActivityResource extends Resource
                         Forms\Components\Select::make("tags")
                             ->label("Tagi")
                             ->multiple()
-                            ->options(ModelActivityResource::getTags()),
+                            ->options(Tag::all()->pluck("title", "id")->toArray()),
                         Forms\Components\TextInput::make("url")
                             ->label("Url")
                             ->maxLength(2048),
