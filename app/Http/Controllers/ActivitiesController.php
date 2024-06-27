@@ -23,7 +23,7 @@ class ActivitiesController extends Controller
 
     public function get(Factory $factory, string $slug): View
     {
-        $activity = Activity::query()->whereJsonContains("slug->en", $slug)->orWhereJsonContains("slug->pl", $slug)->firstOrFail();
+        $activity = Activity::query()->where("slug", $slug)->firstOrFail();
 
         $nextActivities = Activity::query()->where("id", ">", $activity->id)->where("published", true)->orderBy("id", "asc")->take(2)->get();
         $previousActivities = Activity::query()->where("id", "<", $activity->id)->where("published", true)->orderBy("id", "desc")->take(2)->get();

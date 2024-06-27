@@ -20,7 +20,7 @@ class CaseStudiesController extends Controller
 
     public function get(Factory $factory, string $slug): View
     {
-        $caseStudy = CaseStudy::query()->whereJsonContains("slug->en", $slug)->orWhereJsonContains("slug->pl", $slug)->firstOrFail();
+        $caseStudy = CaseStudy::query()->where("slug", $slug)->firstOrFail();
 
         $view = preg_replace('/\.blade\.php$/', "", $caseStudy->template);
 

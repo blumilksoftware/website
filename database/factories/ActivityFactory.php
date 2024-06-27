@@ -22,7 +22,7 @@ class ActivityFactory extends Factory
             "title" => $this->translations($locales, $this->faker->sentence),
             "subtitle" => $this->translations($locales, $this->faker->sentence),
             "description" => $this->translations($locales, $this->faker->paragraph),
-            "slug" => $this->translations($locales, $this->faker->slug),
+            "slug" => $this->faker->slug,
             "photo" => sprintf("%s/%s", "factory", "activity.jpg"),
             "published" => $this->faker->boolean,
             "published_at" => $this->faker->date,
