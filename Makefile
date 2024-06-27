@@ -3,9 +3,11 @@ export DOCKER_BUILDKIT = 1
 
 include .env
 
+MAKEFLAGS += --no-print-directory
+
 SHELL := /bin/bash
 
-DOCKER_COMPOSE_FILE = docker-compose.yaml
+DOCKER_COMPOSE_FILE = docker-compose.yml
 DOCKER_COMPOSE_APP_CONTAINER = app
 DOCKER_COMPOSE_DATABASE_CONTAINER = database
 
@@ -63,4 +65,24 @@ queue:
 create-test-db:
 	@docker compose --file ${DOCKER_COMPOSE_FILE} exec ${DOCKER_COMPOSE_DATABASE_CONTAINER} bash -c 'createdb --username=${DATABASE_USERNAME} ${TEST_DATABASE_NAME} &> /dev/null && echo "Created database for tests (${TEST_DATABASE_NAME})." || echo "Database for tests (${TEST_DATABASE_NAME}) exists."'
 
-.PHONY: init check-env-file build run stop restart shell shell-root test fix create-test-db queue analyse dev
+encrypt-beta-secrets:
+	@$(MAKE) encrypt-secrets SECRETS_ENV=beta
+
+decrypt-beta-secrets:
+	@$(MAKE) decrypt-secrets SECRETS_ENV=beta AGE_SECRET_KEY=${SOPS_AGE_BETA_SECRET_KEY}
+
+decrypt-secrets:
+	@docker compose --file ${DOCKER_COMPOSE_FILE} exec --user "${CURRENT_USER_ID}:${CURRENT_USER_GROUP_ID}" --env SOPS_AGE_KEY=${AGE_SECRET_KEY} ${DOCKER_COMPOSE_APP_CONTAINER} \
+		bash -c "echo 'Decrypting ${SECRETS_ENV} secrets' \
+			&& cd ./environment/prod/deployment/${SECRETS_ENV} \
+			&& sops --decrypt --input-type=dotenv --output-type=dotenv --output .env.${SECRETS_ENV}.secrets.decrypted .env.${SECRETS_ENV}.secrets \
+			&& echo 'Done'"
+
+encrypt-secrets:
+	@docker compose --file ${DOCKER_COMPOSE_FILE} exec --user "${CURRENT_USER_ID}:${CURRENT_USER_GROUP_ID}" ${DOCKER_COMPOSE_APP_CONTAINER} \
+		bash -c "echo 'Encrypting ${SECRETS_ENV} secrets' \
+			&& cd ./environment/prod/deployment/${SECRETS_ENV} \
+			&& sops --encrypt --input-type=dotenv --output-type=dotenv --output .env.${SECRETS_ENV}.secrets .env.${SECRETS_ENV}.secrets.decrypted \
+			&& echo 'Done'"
+
+.PHONY: init check-env-file build run stop restart shell shell-root test fix create-test-db queue analyse encrypt-beta-secrets decrypt-beta-secrets decrypt-secrets encrypt-secrets dev
