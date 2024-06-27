@@ -9,7 +9,6 @@ use Blumilk\Website\Http\Controllers\CaseStudiesController;
 use Blumilk\Website\Http\Controllers\ContactController;
 use Blumilk\Website\Http\Controllers\HomeController;
 use Blumilk\Website\Http\Controllers\LegalController;
-use Blumilk\Website\Http\Controllers\MeetupsController;
 use Blumilk\Website\Http\Controllers\PartnersController;
 use Blumilk\Website\Http\Controllers\PolicyController;
 use CodeZero\UriTranslator\UriTranslator;
@@ -30,7 +29,6 @@ $router->get($uri->translate("career/software-engineer"), [CareerController::cla
 $router->get($uri->translate("contact"), ContactController::class)->name("contact");
 $router->get($uri->translate("privacy-policy"), PolicyController::class)->name("privacy-policy");
 
-$router->get($uri->translate("meetups"), MeetupsController::class)->name("meetups");
 $router->get($uri->translate("activities"), [ActivitiesController::class, "index"])->name("activities");
 $router->get($uri->translate("activities/{slug}"), [ActivitiesController::class, "get"])->name("activities.entry");
 $router->get($uri->translate("legal"), LegalController::class)->name("legal");
