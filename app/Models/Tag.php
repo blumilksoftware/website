@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Blumilk\Website\Models;
 
+use Blumilk\Website\Observers\TagObserver;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Translatable\HasTranslations;
@@ -31,4 +32,10 @@ class Tag extends Model
         "as_person" => "boolean",
         "id" => "string",
     ];
+
+    public static function boot(): void
+    {
+        parent::boot();
+        static::observe(TagObserver::class);
+    }
 }

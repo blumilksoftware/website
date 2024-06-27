@@ -19,6 +19,7 @@ use Spatie\Translatable\HasTranslations;
  * @property bool $published
  * @property ?Carbon $published_at
  * @property string $url
+ * @property array $tags
  */
 class Activity extends Model
 {
