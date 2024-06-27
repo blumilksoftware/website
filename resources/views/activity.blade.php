@@ -42,18 +42,20 @@
 
                 </div>
             </div>
-            <div class="order-3">
-                <p class="mt-20 text-lg lg:text-xl font-light">{{ $activity->description }}</p>
+            <div class="order-3 mt-20">
+                <div class="prose">{!! $activity->description !!}</div>
                 @if(!empty( $activity->url ))
                     <a class="block mt-10 text-lg lg:text-xl font-light"
-                       href="{{ $activity->url }}">▶ {{ $activity->url }}</a>
+                       href="{{ $activity->url }}"
+                       target="_blank">
+                        ▶ {{ $activity->url }}</a>
                 @endif
             </div>
         </div>
         <div>
             <div class="mt-10 md:mt-0">
                 <h3 class="text-lg lg:text-xl font-semibold">{{__("content.activity.section_1.title_1")}}</h3>
-                <div class="prose prose-sm mt-4 w-72">
+                <div class="mt-4 w-72">
                     @foreach($recommendedActivities as $recommendedActivity)
                         <div class="relative flex bg-bubble my-4">
                             <div class="bg-website-normal w-16 shrink-0 h-auto text-center text-white font-bold py-3">

@@ -10,7 +10,6 @@ return [
     "career" => "kariera",
     "contact" => "kontakt",
     "legal" => "prawne",
-    "meetups" => "meetupy",
     "activities" => "aktywnosci",
     "activities/{slug}" => "aktywnosci/{slug}",
     "software-engineer" => "inzynier-oprogramowania",
