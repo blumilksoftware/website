@@ -64,8 +64,9 @@ class ActivityResource extends Resource
                     ]),
                     Section::make([
                         TranslatableContainer::make(
-                            Forms\Components\Textarea::make("description")
+                            Forms\Components\RichEditor::make("description")
                                 ->label("Opis")
+                                ->disableToolbarButtons(["attachFiles"])
                                 ->required()
                                 ->maxLength(65000),
                         )->requiredLocales(config("app.translatable_locales")),
