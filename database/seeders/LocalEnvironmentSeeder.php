@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Database\Seeders;
 
-use Blumilk\Website\Enums\Role;
 use Blumilk\Website\Models\Activity;
 use Blumilk\Website\Models\CaseStudy;
 use Blumilk\Website\Models\ContactForm;
@@ -18,18 +17,12 @@ class LocalEnvironmentSeeder extends Seeder
 {
     public function run(): void
     {
-        if (config("app.env") !== "local" || User::query()->count() > 0) {
+        if (config("app.env") !== "local") {
             return;
         }
 
-        User::factory()->create([
-            "email" => "admin@example.com",
-            "role" => Role::Admin,
-        ]);
-        User::factory()->create([
-            "email" => "moderator@example.com",
-            "role" => Role::Moderator,
-        ]);
+        $this->call(UsersSeeder::class);
+
         Tag::factory()->count(12)->create();
         Activity::factory()->count(12)->create();
         CaseStudy::factory()->count(12)->create();

@@ -178,11 +178,11 @@
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            mapboxgl.accessToken = '{{ env('MAPBOX_ACCESS_TOKEN') }}'
+            mapboxgl.accessToken = '{{ config('services.mapbox.access_token') }}'
 
             var map = new mapboxgl.Map({
                 container: 'map',
-                style: '{{ env('MAPBOX_STYLE') }}',
+                style: '{{ config('services.mapbox.style') }}',
                 center: [16.163200, 51.208200], //[lng, lat]
                 zoom: 13,
             })

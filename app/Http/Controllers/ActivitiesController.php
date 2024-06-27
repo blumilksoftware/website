@@ -35,8 +35,6 @@ class ActivitiesController extends Controller
 
         return $factory->make("activities")
             ->with("activities", ActivityResource::collection($activities))
-            ->with("tags", $tags)
-            ->with("selectedTag", $tag?->title);
     }
 
     public function get(Factory $factory, string $slug): View
@@ -55,7 +53,7 @@ class ActivitiesController extends Controller
             $recommendedActivities = [$previousActivities->first(), $nextActivities->first()];
         }
 
-        return view("activity")
+        return $factory->make("activity")
             ->with("activity", new ActivityResource($activity))
             ->with("tags", TagResource::collection($activityTags->where("as_person", false))->resolve())
             ->with("peopleTags", TagResource::collection($activityTags->where("as_person", true))->resolve())

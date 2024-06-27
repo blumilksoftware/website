@@ -6,6 +6,7 @@ namespace Blumilk\Website\Filament\Resources;
 
 use Blumilk\Website\Enums\DateFormats;
 use Blumilk\Website\Filament\Resources\ActivityResource\Pages;
+use Blumilk\Website\Http\Resources\ActivityResource as ModelActivityResource;
 use Blumilk\Website\Models\Activity;
 use Blumilk\Website\Models\Tag;
 use CodeZero\UniqueTranslation\UniqueTranslationRule;
@@ -51,16 +52,11 @@ class ActivityResource extends Resource
                                 ->label("Podtytuł")
                                 ->maxLength(255),
                         )->requiredLocales(config("app.translatable_locales")),
-                        TranslatableContainer::make(
-                            Forms\Components\TextInput::make("slug")
-                                ->label("Slug")
-                                ->required()
-                                ->rules([
-                                    fn(?Model $record): UniqueTranslationRule => UniqueTranslationRule::for("activities", "slug")->ignore($record?->getKey()),
-                                ])
-                                ->alphaDash()
-                                ->maxLength(255),
-                        )->requiredLocales(config("app.translatable_locales")),
+                        Forms\Components\TextInput::make("slug")
+                            ->label("Slug")
+                            ->required()
+                            ->alphaDash()
+                            ->maxLength(255),
                         Forms\Components\Checkbox::make("published")
                             ->label("Opublikowane"),
                         Forms\Components\DateTimePicker::make("published_at")
