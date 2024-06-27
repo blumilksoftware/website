@@ -10,7 +10,6 @@ use Blumilk\Website\Models\ContactForm;
 use Blumilk\Website\Models\MeetupActivity;
 use Blumilk\Website\Models\Reference;
 use Blumilk\Website\Models\Tag;
-use Blumilk\Website\Models\User;
 use Illuminate\Database\Seeder;
 
 class LocalEnvironmentSeeder extends Seeder

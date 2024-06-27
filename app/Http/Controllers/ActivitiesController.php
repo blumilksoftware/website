@@ -35,11 +35,13 @@ class ActivitiesController extends Controller
 
         return $factory->make("activities")
             ->with("activities", ActivityResource::collection($activities))
+            ->with("tags", $tags)
+            ->with("selectedTag", $tag?->title);
     }
 
     public function get(Factory $factory, string $slug): View
     {
-        $activity = Activity::query()->whereJsonContains("slug->en", $slug)->orWhereJsonContains("slug->pl", $slug)->firstOrFail();
+        $activity = Activity::query()->where("slug", $slug)->firstOrFail();
         $activityTags = $activity->getRelatedTagModels();
 
         $nextActivities = Activity::query()->where("id", ">", $activity->id)->where("published", true)->orderBy("id", "asc")->take(2)->get();

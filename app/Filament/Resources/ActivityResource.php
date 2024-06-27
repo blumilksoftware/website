@@ -6,10 +6,8 @@ namespace Blumilk\Website\Filament\Resources;
 
 use Blumilk\Website\Enums\DateFormats;
 use Blumilk\Website\Filament\Resources\ActivityResource\Pages;
-use Blumilk\Website\Http\Resources\ActivityResource as ModelActivityResource;
 use Blumilk\Website\Models\Activity;
 use Blumilk\Website\Models\Tag;
-use CodeZero\UniqueTranslation\UniqueTranslationRule;
 use Exception;
 use Filament\Forms;
 use Filament\Forms\Components\Section;
@@ -22,7 +20,6 @@ use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\Model;
 use Mvenghaus\FilamentPluginTranslatableInline\Forms\Components\TranslatableContainer;
 
 class ActivityResource extends Resource

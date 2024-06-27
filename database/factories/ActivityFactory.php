@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Database\Factories;
 
-use Blumilk\Website\Http\Resources\ActivityResource;
 use Blumilk\Website\Models\Activity;
 use Blumilk\Website\Models\Tag;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -16,7 +15,6 @@ class ActivityFactory extends Factory
 {
     public function definition(): array
     {
-        $tags = ActivityResource::getTags();
         $locales = config("app.translatable_locales");
 
         return [
