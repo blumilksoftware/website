@@ -12,7 +12,7 @@ class RemoveTagFromActivitiesAction
     {
         Activity::query()->whereJsonContains("tags", $tagId)->get()
             ->each(function (Activity $activity) use ($tagId): void {
-                $activity->tags = array_diff($activity->tags, [$tagId]);
+                $activity->tags = array_values(array_diff($activity->tags, [$tagId]));
                 $activity->save();
             });
     }
