@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Blumilk\Website\Models;
 
+use Blumilk\Website\Observers\ActivityObserver;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -56,5 +57,11 @@ class Activity extends Model
     public function getRelatedTagModels(): Collection
     {
         return Tag::query()->whereIn("id", $this->tags)->get();
+    }
+
+    public static function boot(): void
+    {
+        parent::boot();
+        static::observe(ActivityObserver::class);
     }
 }

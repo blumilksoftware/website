@@ -25,7 +25,7 @@ class ActivitiesController extends Controller
             : null;
         $activities = Activity::query()
             ->where("published", true)
-            ->when($tag, fn($query, $tag) => $query->whereJsonContains("tags", (string)$tag->id))
+            ->when($tag, fn($query, $tag) => $query->whereJsonContains("tags", $tag->id))
             ->latest("published_at")
             ->paginate(9);
         $tags = Tag::query()

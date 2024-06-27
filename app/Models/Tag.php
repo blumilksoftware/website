@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 use Spatie\Translatable\HasTranslations;
 
 /**
+ * @property int $id
  * @property array $title
  * @property bool $is_primary
  * @property bool $as_person
@@ -30,7 +31,6 @@ class Tag extends Model
     protected $casts = [
         "is_primary" => "boolean",
         "as_person" => "boolean",
-        "id" => "string",
     ];
 
     public static function boot(): void

@@ -17,6 +17,8 @@ use Mvenghaus\FilamentPluginTranslatableInline\Forms\Components\TranslatableCont
 class TagResource extends Resource
 {
     protected static ?string $model = Tag::class;
+    protected static ?string $label = "tag";
+    protected static ?string $pluralLabel = "Tagi";
     protected static ?string $navigationIcon = "heroicon-o-rectangle-stack";
 
     public static function form(Form $form): Form
@@ -44,6 +46,7 @@ class TagResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make("title")
                     ->label("Tag")
+                    ->sortable()
                     ->searchable(),
                 Tables\Columns\CheckboxColumn::make("is_primary")
                     ->label("Pokaż jako główny"),
