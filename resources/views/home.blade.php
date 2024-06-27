@@ -269,24 +269,16 @@
                 <div class="relative flex flex-row items-center justify-between">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">{{__("content.home.section_7.title_1")}}</h2>
                     <div class="hidden sm:block">
-                        <x-primary-button href="" class="px-16">{{__("buttons.see_all")}}</x-primary-button>
+                        <x-primary-button href="{{ route('activities') }}" class="px-16">{{__("buttons.see_all")}}</x-primary-button>
                     </div>
                 </div>
                 <div class="grid gap-8 pt-12 max-w-none sm:grid-cols-2 lg:grid-cols-3 relative">
-                    @foreach($articles as $index => $article)
-                        <x-article-card
-                            imageSrc="{{ $article['imageSrc'] }}"
-                            date="{{ $article['date'] }}"
-                            dateFormatted="{{ $article['dateFormatted'] }}"
-                            firstText="{{ $article['firstText'] }}"
-                            secondText="{{ $article['secondText'] }}"
-                            articleRoute="{{ $article['articleRoute'] }}"
-                            class="{{ $index >= 3 ? 'hidden sm:flex lg:hidden' : '' }}"
-                        />
+                    @foreach($activities as $index => $activity)
+                        <x-activity-card :activity="$activity" class="{{ $index >= 3 ? 'hidden sm:flex lg:hidden' : '' }}"/>
                     @endforeach
                 </div>
                 <div class="sm:hidden flex py-8">
-                    <x-block-primary-button href="">{{__("buttons.see_all")}}</x-block-primary-button>
+                    <x-block-primary-button href="{{ route('activities') }}">{{__("buttons.see_all")}}</x-block-primary-button>
                 </div>
             </section>
         </div>

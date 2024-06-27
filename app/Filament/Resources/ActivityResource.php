@@ -6,6 +6,7 @@ namespace Blumilk\Website\Filament\Resources;
 
 use Blumilk\Website\Enums\DateFormats;
 use Blumilk\Website\Filament\Resources\ActivityResource\Pages;
+use Blumilk\Website\Http\Resources\ActivityResource as ModelActivityResource;
 use Blumilk\Website\Models\Activity;
 use Exception;
 use Filament\Forms;
@@ -48,12 +49,17 @@ class ActivityResource extends Resource
                                 ->label("Podtytuł")
                                 ->maxLength(255),
                         )->requiredLocales(config("app.translatable_locales")),
+                        Forms\Components\TextInput::make("slug")
+                            ->label("Slug")
+                            ->required()
+                            ->alphaDash()
+                            ->maxLength(255),
                         Forms\Components\Checkbox::make("published")
                             ->label("Opublikowane"),
                         Forms\Components\DateTimePicker::make("published_at")
                             ->format(DateFormats::DATE_DISPLAY)
                             ->time(false)
-                            ->requiredUnless("published", true)
+                            ->required()
                             ->label("Data publikacji"),
                     ]),
                     Section::make([
@@ -63,6 +69,13 @@ class ActivityResource extends Resource
                                 ->required()
                                 ->maxLength(65000),
                         )->requiredLocales(config("app.translatable_locales")),
+                        Forms\Components\Select::make("tags")
+                            ->label("Tagi")
+                            ->multiple()
+                            ->options(ModelActivityResource::getTags()),
+                        Forms\Components\TextInput::make("url")
+                            ->label("Url")
+                            ->maxLength(2048),
                         Forms\Components\FileUpload::make("photo")
                             ->label("Zdjęcie")
                             ->required()
@@ -90,7 +103,8 @@ class ActivityResource extends Resource
                     ->date(DateFormats::DATE_DISPLAY)
                     ->label("Data publikacji")
                     ->sortable(),
-            ])->filters([
+            ])->defaultSort("published_at", "desc")
+            ->filters([
                 TernaryFilter::make("published")
                     ->label("Status publikacji")
                     ->placeholder("Wszystkie")

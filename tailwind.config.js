@@ -1,12 +1,12 @@
 module.exports = {
   content: {
-    relative: true,
-    files: [
-      './resources/**/*.blade.php',
-      './resources/**/*.js',
-      './resources/**/*.vue',
-    ],
-  },
+      relative: true,
+      files: [
+        './resources/**/*.blade.php',
+        './resources/**/*.js',
+        './resources/**/*.vue',
+      ],
+    },
   theme: {
     screens: {
       'sm': '640px',

@@ -13,9 +13,11 @@ use Spatie\Translatable\HasTranslations;
  * @property array $title
  * @property array $subtitle
  * @property array $description
+ * @property string $slug
  * @property string $photo
  * @property bool $published
- * @property Carbon $published_at
+ * @property ?Carbon $published_at
+ * @property string $url
  */
 class Activity extends Model
 {
@@ -34,8 +36,11 @@ class Activity extends Model
         "title",
         "subtitle",
         "description",
+        "slug",
         "published",
         "published_at",
+        "tags",
+        "url",
     ];
     protected $casts = [
         "title" => "array",
@@ -43,5 +48,6 @@ class Activity extends Model
         "description" => "array",
         "published" => "boolean",
         "published_at" => "datetime",
+        "tags" => "array",
     ];
 }

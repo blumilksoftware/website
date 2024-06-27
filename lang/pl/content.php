@@ -174,6 +174,17 @@ return [
             "title_1" => "Szukamy właśnie Ciebie?",
         ],
     ],
+    "activities" => [
+        "section_1" => [
+            "title_1" => "Nasze aktywności",
+        ],
+    ],
+    "activity" => [
+        "section_1" => [
+            "title_1" => "Może Cię zainteresować:",
+            "title_2" => "Tagi",
+        ],
+    ],
     "contact" => [
         "title_1" => "Napisz",
         "title_2" => "do nas!",
