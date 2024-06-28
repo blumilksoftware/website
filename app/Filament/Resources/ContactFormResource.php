@@ -43,6 +43,9 @@ class ContactFormResource extends Resource
                             ->required(),
                     ]),
                     Section::make([
+                        Forms\Components\TextInput::make("topic")
+                            ->label("Temat")
+                            ->disabled(),
                         Forms\Components\Textarea::make("message")
                             ->rows(4)
                             ->label("Wiadomość")
