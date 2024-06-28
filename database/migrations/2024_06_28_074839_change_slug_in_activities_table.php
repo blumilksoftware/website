@@ -17,7 +17,7 @@ return new class() extends Migration {
     public function down(): void
     {
         Schema::table("activities", function (Blueprint $table): void {
-            $table->dropUnique("slug");
+            $table->dropUnique(["slug"]);
         });
     }
 };
