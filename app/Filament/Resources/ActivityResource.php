@@ -52,6 +52,7 @@ class ActivityResource extends Resource
                         Forms\Components\TextInput::make("slug")
                             ->label("Slug")
                             ->required()
+                            ->unique(ignoreRecord: true)
                             ->alphaDash()
                             ->maxLength(255),
                         Forms\Components\Checkbox::make("published")
