@@ -27,7 +27,6 @@ class CaseStudy extends Model
     public $translatable = [
         "name",
         "description",
-        "slug",
     ];
     protected $fillable = [
         "name",
