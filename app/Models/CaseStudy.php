@@ -12,7 +12,7 @@ use Spatie\Translatable\HasTranslations;
  * @property array $name
  * @property array $description
  * @property string $photo
- * @property array $slug
+ * @property string $slug
  * @property string $company
  * @property string $template
  * @property bool $published
@@ -42,6 +42,5 @@ class CaseStudy extends Model
         "name" => "array",
         "description" => "array",
         "published" => "boolean",
-        "slug" => "array",
     ];
 }
