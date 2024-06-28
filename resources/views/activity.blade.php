@@ -77,12 +77,23 @@
                     @endforeach
                 </div>
             </div>
-            <div @class(['mt-10',
-                    'hidden' => count($activity->tags) == 0 ])>
+            <div @class(['mt-10', 'hidden' => count($tags) == 0 ])>
                 <h3 class="text-lg lg:text-xl font-semibold">{{__("content.activity.section_1.title_2")}}</h3>
                 <div class="flex flex-col place-content-left">
-                    @foreach($activity->tags as $tag)
-                        <x-tag class="flex my-1 md:my-2 xl:my-3 px-4 py-1 md:px-3 md:py-2 xl:px-4 xl:py-2 2xl:px-6 2xl:py-3 text-center w-fit"> {{__("tags.$tag")}}</x-tag>
+                    @foreach($tags as $tag)
+                        <a href="{{ route("activities", ["tag" => $tag['title']]) }}">
+                            <x-tag class="flex my-1 md:my-2 xl:my-3 px-4 py-1 md:px-3 md:py-2 xl:px-4 xl:py-2 2xl:px-6 2xl:py-3 text-center w-fit"> {{ $tag['title'] }}</x-tag>
+                        </a>
+                    @endforeach
+                </div>
+            </div>
+            <div @class(['mt-10', 'hidden' => count($peopleTags) == 0 ])>
+                <h3 class="text-lg lg:text-xl font-semibold">{{__("content.activity.section_1.title_3")}}</h3>
+                <div class="flex flex-col place-content-left">
+                    @foreach($peopleTags as $tag)
+                        <a href="{{ route("activities", ["tag" => $tag['title']]) }}">
+                            <x-tag class="flex my-1 md:my-2 xl:my-3 px-4 py-1 md:px-3 md:py-2 xl:px-4 xl:py-2 2xl:px-6 2xl:py-3 text-center w-fit"> {{ $tag['title'] }}</x-tag>
+                        </a>
                     @endforeach
                 </div>
             </div>

@@ -38,17 +38,6 @@ class ActivityResource extends JsonResource
             "published" => $activity->published,
             "published_at" => $activity->published_at?->format(DateFormats::ACTIVITY_DATE_DISPLAY),
             "url" => $activity->url,
-            "tags" => $activity->tags,
-        ];
-    }
-
-    public static function getTags(): array
-    {
-        return [
-            "cwup" => "cwup",
-            "soda" => "soda",
-            "lmt" => "lmt",
-            "publikacje" => "publikacje",
         ];
     }
 }

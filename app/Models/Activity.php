@@ -4,9 +4,11 @@ declare(strict_types=1);
 
 namespace Blumilk\Website\Models;
 
+use Blumilk\Website\Observers\ActivityObserver;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Collection;
 use Spatie\Translatable\HasTranslations;
 
 /**
@@ -18,6 +20,7 @@ use Spatie\Translatable\HasTranslations;
  * @property bool $published
  * @property ?Carbon $published_at
  * @property string $url
+ * @property array $tags
  */
 class Activity extends Model
 {
@@ -50,4 +53,15 @@ class Activity extends Model
         "published_at" => "datetime",
         "tags" => "array",
     ];
+
+    public function getRelatedTagModels(): Collection
+    {
+        return Tag::query()->whereIn("id", $this->tags)->get();
+    }
+
+    public static function boot(): void
+    {
+        parent::boot();
+        static::observe(ActivityObserver::class);
+    }
 }
