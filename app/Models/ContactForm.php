@@ -21,6 +21,7 @@ class ContactForm extends Model
         "email",
         "message",
         "status",
+        "response",
     ];
     protected $casts = [
         "status" => ContactFormStatus::class,
