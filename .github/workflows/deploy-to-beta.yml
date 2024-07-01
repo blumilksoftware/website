@@ -61,7 +61,7 @@ jobs:
           context: workflow
 
       - name: build and push image
-        uses: docker/build-push-action@v5.3.0
+        uses: docker/build-push-action@v6.2.0
         with:
           context: .
           file: ./environment/prod/app/Dockerfile
