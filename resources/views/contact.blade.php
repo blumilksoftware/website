@@ -83,19 +83,21 @@
                             </div>
                         </div>
                         <div class="flex flex-col items-left mt-2 xl:w-[90%]">
-                            <label for="policyBox" class="flex items-center">
+                            <label for="consents" class="flex items-center">
                                 <input type="checkbox" name="consents" id="consents"
                                        class="w-4 h-4 rounded-sm focus:ring-0 checked:text-website-normal">
-                                <span class="text-xs font-normal text-gray-600 ml-2 pt-4">{{ __('content.contact.policy.part_1') }}
-                                <a href="{{ route('privacy-policy') }}" target="_blank"
-                                   class="underline font-bold">{{ __('content.contact.policy.part_2') }}</a>
-                                {{ __('content.contact.policy.part_3') }}
-                            </span>
+                                <span class="text-xs font-normal text-gray-600 ml-2 pt-4">
+                                    {{ __('content.contact.policy.part_1') }}
+                                    <a href="{{ route('privacy-policy') }}" target="_blank"
+                                       class="underline font-bold">{{ __('content.contact.policy.part_2') }}</a>
+                                    {{ __('content.contact.policy.part_3') }}
+                                </span>
                             </label>
                             @error('consents')
                             <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
                             @enderror
                         </div>
+
                         <div class="mt-3 flex">
                             <button type="submit"
                                     class="w-full lg:w-[45%] 2xl:w-[32%] text-xl mx-0 bg-website-dark m-2 p-3 sm:text-lg h-min text-center font-normal text-white shadow-sm transform transition hover:scale-110 hover:rounded-sm flex justify-center items-center space-x-2">
@@ -199,36 +201,6 @@
             </a>
         </div>
         <script>
-
-            @if (Session::has('message'))
-            var type = "{{ Session::get('alert-type', 'info') }}"
-            switch (type) {
-                case 'info':
-
-                    toastr.options.timeOut = 10000;
-                    toastr.info("{{ Session::get('message') }}");
-                    break;
-                case 'success':
-
-                    toastr.options.timeOut = 10000;
-                    toastr.success("{{ Session::get('message') }}");
-
-                    break;
-                case 'warning':
-
-                    toastr.options.timeOut = 10000;
-                    toastr.warning("{{ Session::get('message') }}");
-
-                    break;
-                case 'error':
-
-                    toastr.options.timeOut = 10000;
-                    toastr.error("{{ Session::get('message') }}");
-
-                    break;
-            }
-            @endif
-
             document.addEventListener('DOMContentLoaded', function () {
                 mapboxgl.accessToken = '{{ config('services.mapbox.access_token') }}'
 

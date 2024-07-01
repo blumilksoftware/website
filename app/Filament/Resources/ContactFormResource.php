@@ -77,7 +77,8 @@ class ContactFormResource extends Resource
                     ->date(DateFormats::DATE_DISPLAY)
                     ->label("Data kontaktu")
                     ->sortable(),
-            ])->filters([
+            ])->defaultSort("created_at", "desc")
+            ->filters([
                 Filter::make("published_at")
                     ->form([
                         Forms\Components\DatePicker::make("created_from")

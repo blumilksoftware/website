@@ -126,5 +126,6 @@ return [
         "topic" => "temat",
         "message" => "wiadomość",
         "consents" => "zgody",
+        "email" => "e-mail",
     ],
 ];
