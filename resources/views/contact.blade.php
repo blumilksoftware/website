@@ -5,13 +5,8 @@
         $excludeFooter = true;
     @endphp
     @if(Session('success'))
-        <div class="alert alert-success">
-            <script>
-                toastr.success("{{ Session::get('success') }}");
-            </script>
-        </div>
+        <x-toast type="success" position="top-right">{{ Session::get('success') }}</x-toast>
     @endif
-
     <div class="z-10">
         <div class="relative w-auto h-auto">
             <div class="relative md:block">

@@ -17,10 +17,10 @@ class ContactController extends Controller
         return $factory->make("contact");
     }
 
-    public function store(StoreRequest $request):RedirectResponse
+    public function store(StoreRequest $request): RedirectResponse
     {
         ContactForm::create($request->data());
 
-        return redirect()->back()->with(["success" => __("Message sent.")]);
+        return redirect()->back()->with(["success" => __("toast.contact.success")]);
     }
 }
