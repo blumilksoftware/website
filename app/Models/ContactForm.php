@@ -23,6 +23,7 @@ class ContactForm extends Model
         "topic",
         "message",
         "status",
+        "response",
     ];
     protected $casts = [
         "status" => ContactFormStatus::class,
