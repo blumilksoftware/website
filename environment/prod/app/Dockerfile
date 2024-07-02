@@ -1,6 +1,6 @@
 ### PHP DEPENDENCIES ###
 # https://hub.docker.com/_/composer/tags
-FROM composer:2.7.7 as vendor
+FROM composer:2.7.7 AS vendor
 
 WORKDIR /app_composer_dependencies
 
@@ -16,7 +16,7 @@ RUN composer install \
 
 ### FRONTEND ###
 # https://hub.docker.com/_/node/tags
-FROM node:22.2.0-bookworm-slim as frontend
+FROM node:22.3.0-bookworm-slim AS frontend
 
 WORKDIR /app_frontend_dependencies
 
@@ -33,7 +33,7 @@ RUN npm run build
 
 ### APPLICATION ###
 # https://hub.docker.com/_/php/tags
-FROM php:8.3.8-fpm-bookworm as app
+FROM php:8.3.8-fpm-bookworm AS app
 
 COPY --from=vendor /usr/bin/composer /usr/local/bin/composer
 

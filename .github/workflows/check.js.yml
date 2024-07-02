@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4.1.6 # https://github.com/actions/checkout
+      - uses: actions/checkout@v4.1.7 # https://github.com/actions/checkout
 
       - name: Cache dependencies
         uses: actions/cache@v4.0.2 # https://github.com/actions/cache

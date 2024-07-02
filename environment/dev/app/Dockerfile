@@ -1,5 +1,5 @@
 # https://hub.docker.com/_/alpine
-FROM alpine:3.19.0 as secops-tools
+FROM alpine:3.20.1 AS secops-tools
 
 # https://github.com/FiloSottile/age/releases
 ARG AGE_VERSION="1.1.1"
@@ -15,10 +15,10 @@ RUN wget --output-document age.tar.gz "https://github.com/FiloSottile/age/releas
     && chmod +x /usr/local/bin/sops
 
 # For other versions check: https://hub.docker.com/_/composer/tags
-FROM composer/composer:2.7.7-bin as composer-bin
+FROM composer/composer:2.7.7-bin AS composer-bin
 
 # For other versions check: https://hub.docker.com/_/node/tags
-FROM node:22.2.0-bookworm-slim as node
+FROM node:22.3.0-bookworm-slim AS node
 
 # For other versions check: https://hub.docker.com/_/php/tags
 FROM php:8.3.8-fpm-bookworm
