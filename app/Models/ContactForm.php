@@ -10,6 +10,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * @property string $email
+ * @property string $topic
  * @property string $message
  * @property ContactFormStatus $status
  */
@@ -19,6 +20,7 @@ class ContactForm extends Model
 
     protected $fillable = [
         "email",
+        "topic",
         "message",
         "status",
         "response",

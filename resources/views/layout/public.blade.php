@@ -25,7 +25,7 @@
     <div class="relative z-30">
         @include('layout.navigation')
     </div>
-    <div class="min-height-100vh relative z-20 overflow-hidden">
+    <div class="min-height-100vh z-20 overflow-hidden">
         @yield('content')
     </div>
     @if (!isset($excludeFooter) || !$excludeFooter)
