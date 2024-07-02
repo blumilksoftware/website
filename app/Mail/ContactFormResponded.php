@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Blumilk\Website\Mail;
 
 use Illuminate\Bus\Queueable;
@@ -8,28 +10,19 @@ use Illuminate\Queue\SerializesModels;
 
 class ContactFormResponded extends Mailable
 {
-    use Queueable, SerializesModels;
+    use Queueable;
+    use SerializesModels;
 
     public array $details;
 
-    /**
-     * Create a new message instance.
-     *
-     * @return void
-     */
     public function __construct($details)
     {
         $this->details = $details;
     }
 
-    /**
-     * Build the message.
-     *
-     * @return $this
-     */
-    public function build()
+    public function build(): self
     {
-        return $this->subject($this->details['subject'])
-            ->view('email');
+        return $this->subject($this->details["subject"])
+            ->view("email");
     }
 }

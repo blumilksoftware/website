@@ -13,10 +13,4 @@ return [
         "access_token" => env("MAPBOX_ACCESS_TOKEN"),
         "style" => env("MAPBOX_STYLE"),
     ],
-    'mailgun' => [
-        'domain' => env('MAILGUN_DOMAIN'),
-        'secret' => env('MAILGUN_SECRET'),
-        'endpoint' => env('MAILGUN_ENDPOINT', 'api.eu.mailgun.net'),
-        'scheme' => 'https',
-    ],
 ];

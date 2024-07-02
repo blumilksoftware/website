@@ -6,10 +6,9 @@ namespace Blumilk\Website\Filament\Resources;
 
 use Blumilk\Website\Enums\ContactFormStatus;
 use Blumilk\Website\Enums\DateFormats;
+use Blumilk\Website\Filament\Resources\ContactFormResource\Actions\RespondToContactFormMessageAction;
 use Blumilk\Website\Filament\Resources\ContactFormResource\Pages;
-use Blumilk\Website\Mail\ContactFormResponded;
 use Blumilk\Website\Models\ContactForm;
-use Blumilk\Website\Notifications\ContactFormRespond;
 use Exception;
 use Filament\Forms;
 use Filament\Forms\Components\Section;
@@ -17,12 +16,10 @@ use Filament\Forms\Components\Split;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
-use Filament\Tables\Actions\Action;
 use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\SelectFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Support\Facades\Mail;
 
 class ContactFormResource extends Resource
 {
@@ -54,12 +51,12 @@ class ContactFormResource extends Resource
                             ->rows(4)
                             ->label("Wiadomość")
                             ->disabled(),
-                        Forms\Components\RichEditor::make("respond")
+                        Forms\Components\RichEditor::make("response")
                             ->label("Odpowiedź")
                             ->disableToolbarButtons(["attachFiles"])
                             ->maxLength(65000)
                             ->disabled()
-                            ->visible( fn($record) => $record->status === ContactFormStatus::Responded),
+                            ->visible(fn($record) => $record->status === ContactFormStatus::Responded),
                     ]),
                 ])->from("lg"),
             ])->columns(1);
@@ -115,41 +112,8 @@ class ContactFormResource extends Resource
             ->actions([
                 Tables\Actions\ViewAction::make(),
                 Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
-                Action::make('sendEmail')
-                    ->label('Wyślij email')
-                    ->icon('heroicon-m-envelope')
-                    ->color('success')
-                    ->visible(fn ($record) => $record->status !== ContactFormStatus::Responded)
-                    ->form([
-                        Forms\Components\TextInput::make("email")
-                            ->label("E-mail")
-                            ->disabled()
-                            ->default(fn ($record) => $record->email),
-                        Forms\Components\TextInput::make("topic")
-                            ->label("Temat")
-                            ->disabled()
-                            ->default(fn ($record) => $record->topic),
-                        Forms\Components\Textarea::make('message')
-                            ->label('Wiadomość')
-                            ->default(fn ($record) => $record->message)
-                            ->disabled(),
-                        Forms\Components\RichEditor::make("response")
-                            ->label("Odpowiedź")
-                            ->disableToolbarButtons(["attachFiles"])
-                            ->maxLength(65000)
-                            ->required(),
-                    ])
-                    ->action(function ($record, $data) {
-                        $details = [
-                            'subject' => $record->email,
-                            'message' => $data['response'],
-                        ];
-
-                        Mail::to($record->email)->send(new ContactFormResponded($details));
-                    })
-                    ->modalHeading('Wyślij odpowiedź na e-mail')
-                    ->modalButton('Wyślij email'),
+                Tables\Actions\DeleteAction::make()->visible(fn($record) => $record->status !== ContactFormStatus::Responded),
+                RespondToContactFormMessageAction::make("respond"),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
