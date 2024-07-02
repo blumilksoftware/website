@@ -34,7 +34,7 @@
                 <x-small-primary-button href="{{ route('contact') }}">{{ __("buttons.lets_talk") }}</x-small-primary-button>
             </div>
             <div class="relative inline-block text-left">
-                @foreach(LocaleConfig::getLocales() as $locale)
+                @foreach(config("app.translatable_locales") as $locale)
                     @if (App::isLocale($locale))
                         <button type="button"
                                 @click="openLang = ! openLang"
@@ -50,7 +50,7 @@
                      class="hidden absolute right-0 z-10 w-full mt-2 origin-top-right bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
                      tabindex="-1">
                     <div class="text-start" role="none">
-                        @foreach(LocaleConfig::getLocales() as $localeOption)
+                        @foreach(config("app.translatable_locales") as $localeOption)
                             <a href="{{route(Route::currentRouteName(), Route::getCurrentRoute()->parameters(), true, $localeOption)}}"
                                class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-light uppercase"
                                role="menuitem" tabindex="-1">
