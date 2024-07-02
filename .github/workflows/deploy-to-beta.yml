@@ -24,7 +24,7 @@ jobs:
         run: echo "BRANCH_NAME=$GITHUB_REF_NAME" >> $GITHUB_ENV
 
       - name: checkout
-        uses: actions/checkout@v4.1.6
+        uses: actions/checkout@v4.1.7
         with:
           fetch-depth: 0
           ref: ${{ env.BRANCH_NAME }}
@@ -61,7 +61,7 @@ jobs:
           context: workflow
 
       - name: build and push image
-        uses: docker/build-push-action@v5.3.0
+        uses: docker/build-push-action@v6.2.0
         with:
           context: .
           file: ./environment/prod/app/Dockerfile
