@@ -43,6 +43,9 @@ class ContactFormResource extends Resource
                             ->required(),
                     ]),
                     Section::make([
+                        Forms\Components\TextInput::make("topic")
+                            ->label("Temat")
+                            ->disabled(),
                         Forms\Components\Textarea::make("message")
                             ->rows(4)
                             ->label("Wiadomość")
@@ -74,7 +77,8 @@ class ContactFormResource extends Resource
                     ->date(DateFormats::DATE_DISPLAY)
                     ->label("Data kontaktu")
                     ->sortable(),
-            ])->filters([
+            ])->defaultSort("created_at", "desc")
+            ->filters([
                 Filter::make("published_at")
                     ->form([
                         Forms\Components\DatePicker::make("created_from")

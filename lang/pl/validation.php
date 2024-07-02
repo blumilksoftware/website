@@ -123,5 +123,9 @@ return [
         "subtitle" => "podtytuł",
         "description" => "opis",
         "photo" => "zdjęcie",
+        "topic" => "temat",
+        "message" => "wiadomość",
+        "consents" => "zgody",
+        "email" => "e-mail",
     ],
 ];

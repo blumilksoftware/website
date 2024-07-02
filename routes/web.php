@@ -26,7 +26,8 @@ $router->get($uri->translate("case-studies/{slug}"), [CaseStudiesController::cla
 $router->get($uri->translate("partners"), PartnersController::class)->name("partners");
 $router->get($uri->translate("career"), [CareerController::class, "index"])->name("career");
 $router->get($uri->translate("career/software-engineer"), [CareerController::class, "softwareEngineerPage"])->name("career.software-engineer");
-$router->get($uri->translate("contact"), ContactController::class)->name("contact");
+$router->get($uri->translate("contact"), [ContactController::class, "index"])->name("contact");
+$router->post($uri->translate("contact"), [ContactController::class, "store"])->name("contact.create");
 $router->get($uri->translate("privacy-policy"), PolicyController::class)->name("privacy-policy");
 
 $router->get($uri->translate("activities"), [ActivitiesController::class, "index"])->name("activities");
