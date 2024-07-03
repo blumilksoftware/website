@@ -8,7 +8,6 @@ COPY composer.json composer.lock ./
 
 RUN composer install \
         --no-interaction \
-        --no-plugins \
         --no-scripts \
         --no-dev \
         --prefer-dist \
