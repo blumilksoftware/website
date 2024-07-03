@@ -8,7 +8,6 @@ COPY composer.json composer.lock ./
 
 RUN composer install \
         --no-interaction \
-        --no-plugins \
         --no-scripts \
         --no-dev \
         --prefer-dist \
@@ -94,7 +93,11 @@ RUN rm --recursive --force \
     vite.config.js \
     .dockerignore
 
+USER www-data
+
 RUN composer dump-autoload --optimize
+
+USER root
 
 EXPOSE 80
 
