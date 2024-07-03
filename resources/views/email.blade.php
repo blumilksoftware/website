@@ -1,171 +1,53 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Simple Transactional Email</title>
-    <style media="all" type="text/css">
-        body {
-            font-family: Helvetica, sans-serif;
-            -webkit-font-smoothing: antialiased;
-            font-size: 16px;
-            line-height: 1.3;
-            -ms-text-size-adjust: 100%;
-            -webkit-text-size-adjust: 100%;
-        }
-
-        table {
-            border-collapse: separate;
-            mso-table-lspace: 0pt;
-            mso-table-rspace: 0pt;
-            width: 100%;
-        }
-
-        table td {
-            font-family: Helvetica, sans-serif;
-            font-size: 16px;
-            vertical-align: top;
-        }
-
-        body {
-            background-color: #F6F7FD;
-            margin: 0;
-            padding: 0;
-        }
-
-        .body {
-            background-color: #F6F7FD;
-            width: 100%;
-        }
-
-        .container {
-            margin: 0 auto !important;
-            max-width: 600px;
-            padding: 0;
-            padding-top: 24px;
-            width: 600px;
-        }
-
-        .content {
-            box-sizing: border-box;
-            display: block;
-            margin: 0 auto;
-            max-width: 600px;
-            padding: 0;
-        }
-
-
-        .main {
-            background: #ffffff;
-            border: 1px solid #eaebed;
-            border-radius: 16px;
-            width: 100%;
-        }
-
-        .wrapper {
-            box-sizing: border-box;
-            padding: 24px;
-        }
-
-        .footer {
-            clear: both;
-            padding-top: 24px;
-            text-align: center;
-            width: 100%;
-        }
-
-        .footer td,
-        .footer p,
-        .footer span,
-        .footer a {
-            color: #9a9ea6;
-            font-size: 16px;
-            text-align: center;
-        }
-
-        p {
-            font-family: Sora, sans-serif;
-            font-size: 16px;
-            font-weight: normal;
-            margin: 0;
-            margin-bottom: 16px;
-        }
-
-        a {
-            color: #000000;
-            text-decoration: underline;
-        }
-
-        .powered-by a {
-            text-decoration: none;
-        }
-
-        @media only screen and (max-width: 640px) {
-            .main p,
-            .main td,
-            .main span {
-                font-size: 16px !important;
-            }
-
-            .wrapper {
-                padding: 8px !important;
-            }
-
-            .content {
-                padding: 0 !important;
-            }
-
-            .container {
-                padding: 0 !important;
-                padding-top: 8px !important;
-                width: 100% !important;
-            }
-
-            .main {
-                border-left-width: 0 !important;
-                border-radius: 0 !important;
-                border-right-width: 0 !important;
-            }
-        }
-    </style>
+    <title>Odpowiedź na formularz kontaktowy</title>
 </head>
-<body>
-<table role="presentation" border="0" cellpadding="0" cellspacing="0" class="body">
+<body style="font-family: Helvetica, sans-serif; -webkit-font-smoothing: antialiased; font-size: 16px; line-height: 1.3; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; background-color: #F6F7FD; margin: 0; padding: 0;">
+<table role="presentation" style="border-collapse: separate; width: 100%;" class="body">
     <tr>
         <td>&nbsp;</td>
-        <td class="container">
-            <div class="content">
-                <h2>Odpowiedź na formularz kontaktowy</h2>
-                <table role="presentation" class="main">
+        <td style="margin: 0 auto !important; max-width: 600px; padding: 24px 0 0;width: 600px;" class="container">
+            <div style="box-sizing: border-box; display: block; margin: 0 auto; max-width: 600px; padding: 0;" class="content">
+                <h2 style="margin: 0; text-align: center;">Odpowiedź z formularza kontaktowego</h2>
+                <table role="presentation" style="color: #000000; width: 100%;" class="main">
                     <tr>
-                        <td class="wrapper">
-                            <h3>Twoja wiadomość:</h3>
-                            <div class="prose">
-                                {!! $details['messageTopic'] !!}
-                                {!! $details['messageDescription'] !!}
+                        <td style="box-sizing: border-box; padding: 24px;" class="wrapper">
+                            <div style="text-align: right;">
+                                <h3>Twoja wiadomość</h3>
+                                <div style="background: #ffffff; border-radius: 16px; width: 100%; padding: 4px 12px 4px 4px;">
+                                    <p>{!! $details['messageDescription'] !!}</p>
+                                </div>
                             </div>
-                            <h3>Odpowiedź:</h3>
-                            <div class="prose">
+                            <h3 style="padding-top: 8px">Odpowiedź</h3>
+                            <div style="background: #ffffff; border-radius: 16px; width: 100%; padding: 4px 4px 4px 12px;">
                                 {!! $details['response'] !!}
                             </div>
                         </td>
                     </tr>
                 </table>
-                <div class="footer">
-                    <table role="presentation">
+                <div style="clear: both; padding-top: 24px; padding-bottom: 24px; text-align: left; width: 100%;" class="footer">
+                    <table role="presentation" style="margin: 0; text-align: left; width: 100%;">
                         <tr>
-                            <td class="content-block">
-                                <span class="apple-link">Blumilk sp. z o.o.</span><br>
-                                <span>office@blumilk.pl</span><br>
-                                <span>+48 780 142 367</span><br>
-                                <span>ul. Najświętszej Marii Panny 5f/5 59-220 Legnica</span><br>
-                                <span>
-                                    <a href="https://clutch.co/profile/blumilk-0">Clutch</a> |
-                                    <a href="https://github.com/blumilksoftware">Github</a> |
-                                    <a href="https://linkedin.com/company/blumilksoftware">LinkedIn</a> |
-                                    <a href="https://www.facebook.com/blumilksoftware/">Facebook</a> |
-                                    <a href="https://www.youtube.com/@blumilksoftware">YouTube</a>
-                                </span>
+                            <td style="font-size: 16px; text-align: left;" class="content-block">
+                                <div style="display: flex; align-items: center;">
+                                    <img src="https://www.blumilk.pl/logo.png" class="logo" style="height: 80px; margin: auto 8px auto 16px;" alt="Blumilk Logo">
+                                    <div>
+                                        <span>Blumilk sp. z o.o.</span><br>
+                                        <span style="color: #000000; text-decoration: none;">office@blumilk.pl</span><br>
+                                        <span>+48 780 142 367</span><br>
+                                        <span>ul. Najświętszej Marii Panny 5f/5 59-220 Legnica</span><br>
+                                        <span>
+                                            <a href="https://clutch.co/profile/blumilk-0" style="color: #000000; text-decoration: underline;">Clutch</a> |
+                                            <a href="https://github.com/blumilksoftware" style="color: #000000; text-decoration: underline;">Github</a> |
+                                            <a href="https://linkedin.com/company/blumilksoftware" style="color: #000000; text-decoration: underline;">LinkedIn</a> |
+                                            <a href="https://www.facebook.com/blumilksoftware/" style="color: #000000; text-decoration: underline;">Facebook</a> |
+                                            <a href="https://www.youtube.com/@blumilksoftware" style="color: #000000; text-decoration: underline;">YouTube</a>
+                                        </span>
+                                    </div>
+                                </div>
                             </td>
                         </tr>
                     </table>
@@ -177,3 +59,4 @@
 </table>
 </body>
 </html>
+

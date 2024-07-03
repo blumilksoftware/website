@@ -49,7 +49,6 @@ class RespondToContactFormMessageAction extends Action
                 $details = [
                     "subject" => $data["responseTopic"],
                     "response" => $data["response"],
-                    "messageTopic" => $record->topic,
                     "messageDescription" => $record->message,
                 ];
 
