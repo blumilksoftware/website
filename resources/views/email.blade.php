@@ -38,7 +38,7 @@
                                         <span>Blumilk sp. z o.o.</span><br>
                                         <span style="color: #000000; text-decoration: none;">office@blumilk.pl</span><br>
                                         <span>+48 780 142 367</span><br>
-                                        <span>ul. Najświętszej Marii Panny 5f/5 59-220 Legnica</span><br>
+                                        <span>ul. Najświętszej Marii Panny 5F/5 59-220 Legnica</span><br>
                                         <span>
                                             <a href="https://clutch.co/profile/blumilk-0" style="color: #000000; text-decoration: underline;">Clutch</a> |
                                             <a href="https://github.com/blumilksoftware" style="color: #000000; text-decoration: underline;">Github</a> |
@@ -59,4 +59,3 @@
 </table>
 </body>
 </html>
-
