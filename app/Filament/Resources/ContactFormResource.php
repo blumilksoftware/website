@@ -56,7 +56,7 @@ class ContactFormResource extends Resource
                             ->disableToolbarButtons(["attachFiles"])
                             ->maxLength(65000)
                             ->disabled()
-                            ->visible(fn($record) => $record->status === ContactFormStatus::Responded),
+                            ->visible(fn($record): bool => $record->status === ContactFormStatus::Responded),
                     ]),
                 ])->from("lg"),
             ])->columns(1);
@@ -112,7 +112,7 @@ class ContactFormResource extends Resource
             ->actions([
                 Tables\Actions\ViewAction::make(),
                 Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make()->visible(fn($record) => $record->status !== ContactFormStatus::Responded),
+                Tables\Actions\DeleteAction::make()->visible(fn($record): bool => $record->status !== ContactFormStatus::Responded),
                 RespondToContactFormMessageAction::make("respond"),
             ])
             ->bulkActions([
