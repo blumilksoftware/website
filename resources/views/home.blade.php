@@ -80,67 +80,18 @@
             </div>
         </section>
 
-        <section class="bg-gradient-to-br from-gray-light to-white">
-            <x-waves.wave-1.top></x-waves.wave-1.top>
-            <div class="flex flex-col 2xl:flex-row px-[10%] md:px-[20%] py-16 2xl:pt-32 gap-x-4">
-                <div class="flex basis-7/12 flex-col justify-center align-middle">
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-4 text-center md:text-left">
-                        {{__("content.home.section_3.title_1")}}</h2>
-                    <div class="text-black text-lg lg:text-xl text-center md:text-left">
-                        <div class="pb-4 md:pb-1 leading-relaxed">
-                            <span class="leading-relaxed">{{__("content.home.section_3.subtitle_1")}}</span>
-                            <span class="font-semibold">{{__("content.home.section_3.subtitle_2")}}</span>
-                        </div>
-                        <ul class="pt-8 md:-ml-2 text-md justify-center space-y-6">
-                            <li class="flex items-center text-left leading-relaxed gap-x-6">
-                                <x-icons.arrow></x-icons.arrow>
-                                {{__("content.home.section_3.content_4")}}
-
-                            </li>
-                            <li class="flex items-center text-left leading-relaxed gap-x-6">
-                                <x-icons.arrow></x-icons.arrow>
-                                {{__("content.home.section_3.content_3")}}
-
-                            </li>
-                            <li class="flex items-center text-left leading-relaxed gap-x-6">
-                                <x-icons.arrow></x-icons.arrow>
-                                {{__("content.home.section_3.content_2")}}
-
-                            </li>
-                            <li class="flex items-center text-left leading-relaxed gap-x-6">
-                                <x-icons.arrow></x-icons.arrow>
-                                {{__("content.home.section_3.content_1")}}
-
-                            </li>
-                        </ul>
-                    </div>
+        <section class="relative">
+            <div class="px-[10%] md:px-[20%] space-y-10 pt-28 pb-28">
+                <div class="pb-14 text-center">
+                    <h2 class="text-3xl md:text-3xl lg:text-5xl font-semibold pb-8">{{__("content.career.section_2.title_1")}}</h2>
+                    <span class="font-light leading-relaxed text-md lg:text-lg relative">{{__("content.career.section_2.subtitle_1")}}</span>
                 </div>
-                <div class="hidden 2xl:flex basis-5/12 m-auto md:delay-700 relative -right-5">
-                    <div class="rounded-xl bg-gray-dark aspect-[2/1] max-h-[500px] rotate-6 relative -top-5">
-                        <div class="relative flex flex-col justify-between aspect-[2/1] max-h-[500px] z-10 right-6 top-10 rounded-2xl shadow-sm bg-white px-6 py-10 -rotate-6 gap-6">
-                            <div class="px-4 font-semibold text-xl lg:text-2xl">
-                                {{__("content.home.section_3.title_2")}}
-                            </div>
-                            <div class="py-6 text-website-normal mx-4">
-                                <div class="flex flex-col items-center place-content-center text-center bg-blue-light max-w-full px-6 py-4 gap-4 rounded-2xl">
-                                    <img src="{{ asset('graphics/stars.svg') }}" class="max-h-8 shrink"
-                                         alt="5 stars"/>
-                                    <div class="leading-relaxed">
-                                        {{__("content.home.section_3.subtitle_3")}}
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="flex place-content-center px-8">
-                                <x-block-primary-button href="{{ route('contact') }}">
-                                    <span class="font-semibold">{{ __("buttons.text_us_1") }}</span>{{ __("buttons.text_us_2") }}
-                                </x-block-primary-button>
-                            </div>
-                        </div>
-                    </div>
+                <div class="grid xl:grid-cols-3 gap-4 2xl:gap-12 place-items-center xl:place-items-stretch">
+                    @for($benefit = 1; $benefit <= 6; $benefit++)
+                        <x-benefit-tile :benefit="$benefit"/>
+                    @endfor
                 </div>
             </div>
-            <x-waves.wave-3.bottom></x-waves.wave-3.bottom>
         </section>
         <section class="relative flex flex-col xl:flex-row md:py-24 px-[10%] md:px-[20%] xl:pr-0 items-center overflow-hidden 3xl:gap-44">
             <div class="flex basis-4/12 relative">
