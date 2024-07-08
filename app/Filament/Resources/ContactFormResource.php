@@ -6,6 +6,7 @@ namespace Blumilk\Website\Filament\Resources;
 
 use Blumilk\Website\Enums\ContactFormStatus;
 use Blumilk\Website\Enums\DateFormats;
+use Blumilk\Website\Filament\Resources\ContactFormResource\Actions\RespondToContactFormMessageAction;
 use Blumilk\Website\Filament\Resources\ContactFormResource\Pages;
 use Blumilk\Website\Models\ContactForm;
 use Exception;
@@ -50,6 +51,12 @@ class ContactFormResource extends Resource
                             ->rows(4)
                             ->label("Wiadomość")
                             ->disabled(),
+                        Forms\Components\RichEditor::make("response")
+                            ->label("Odpowiedź")
+                            ->disableToolbarButtons(["attachFiles"])
+                            ->maxLength(65000)
+                            ->disabled()
+                            ->visible(fn($record): bool => $record->status === ContactFormStatus::Responded),
                     ]),
                 ])->from("lg"),
             ])->columns(1);
@@ -105,7 +112,8 @@ class ContactFormResource extends Resource
             ->actions([
                 Tables\Actions\ViewAction::make(),
                 Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
+                Tables\Actions\DeleteAction::make()->visible(fn($record): bool => $record->status !== ContactFormStatus::Responded),
+                RespondToContactFormMessageAction::make("respond"),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
