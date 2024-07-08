@@ -18,12 +18,12 @@
                             <div style="text-align: right;">
                                 <h3>Twoja wiadomość</h3>
                                 <div style="background: #ffffff; border-radius: 16px; width: 100%; padding: 4px 12px 4px 4px;">
-                                    <p>{!! $details['messageDescription'] !!}</p>
+                                    <p>{!! $details->messageDescription !!}</p>
                                 </div>
                             </div>
                             <h3 style="padding-top: 8px">Odpowiedź</h3>
                             <div style="background: #ffffff; border-radius: 16px; width: 100%; padding: 4px 4px 4px 12px;">
-                                {!! $details['response'] !!}
+                                {!! $details->response !!}
                             </div>
                         </td>
                     </tr>

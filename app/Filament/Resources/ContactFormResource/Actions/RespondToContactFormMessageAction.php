@@ -4,8 +4,10 @@ declare(strict_types=1);
 
 namespace Blumilk\Website\Filament\Resources\ContactFormResource\Actions;
 
+use Blumilk\Website\DTOs\ContactFormResponse;
 use Blumilk\Website\Enums\ContactFormStatus;
 use Blumilk\Website\Mail\ContactFormResponded;
+use Blumilk\Website\Models\ContactForm;
 use Filament\Forms;
 use Filament\Notifications\Notification;
 use Filament\Tables\Actions\Action;
@@ -20,7 +22,7 @@ class RespondToContactFormMessageAction extends Action
         $this->label("Odpowiedz")
             ->icon("heroicon-m-envelope")
             ->color("success")
-            ->visible(fn($record) => $record->status !== ContactFormStatus::Responded)
+            ->visible(fn($record): bool => $record->status !== ContactFormStatus::Responded)
             ->form([
                 Forms\Components\Section::make([
                     Forms\Components\TextInput::make("email")
@@ -45,12 +47,8 @@ class RespondToContactFormMessageAction extends Action
                     ->maxLength(65000)
                     ->required(),
             ])
-            ->action(function ($record, $data): void {
-                $details = [
-                    "subject" => $data["responseTopic"],
-                    "response" => $data["response"],
-                    "messageDescription" => $record->message,
-                ];
+            ->action(function (ContactForm $record, array $data): void {
+                $details = ContactFormResponse::fromArray($record, $data);
 
                 Mail::to($record->email)->send(new ContactFormResponded($details));
 
