@@ -53,7 +53,7 @@ class RespondToContactFormMessageAction extends Action
                 Mail::to($record->email)->send(new ContactFormResponded($details));
 
                 $record->update([
-                    "response" => $data["response"],
+                    "response" => $details->response,
                     "status" => ContactFormStatus::Responded,
                 ]);
 
