@@ -4,10 +4,11 @@ declare(strict_types=1);
 
 return [
     "pages" => [
-        "about" => "o Firmie",
+        "about" => "O firmie",
         "case_study" => "Case Study",
         "partners" => "Partnerzy",
         "career" => "Kariera",
+        "activities" => "Aktywności",
         "contact" => "Kontakt",
     ],
     "home" => [
@@ -23,41 +24,55 @@ return [
             "title_2" => "zadowolonych klientów Blumilk",
         ],
         "section_3" => [
-            "title_1" => "Jak możemy Ci pomóc?",
-            "subtitle_1" => "Badania, rozwój, kod: ",
-            "subtitle_2" => "kształtujemy przyszłość oprogramowania.",
-            "content_1" => "Projekty B+R",
-            "content_2" => "Audyty rozwiązań IT",
-            "content_3" => "Cyfryzacja biznesu i procesów",
-            "content_4" => "Dedykowane aplikacje mobilne i webowe",
-            "title_2" => "Projektujemy rozwiązania",
-            "subtitle_3" => "W trosce o stuprocentowe zadowolenie naszych klientów i partnerów.",
+            "title_1" => "Co możemy dla Ciebie zrobić?",
+            "subtitle_1" => "Twój biznes potrzebuje transformacji cyfrowej? Jesteś we właściwym miejscu.",
+            "tile_1" => [
+                "title" => "Aplikacje mobilne i webowe",
+                "subtitle" => "Tworzymy dedykowane oprogramowanie w formie aplikacji mobilnych i webowych.",
+            ],
+            "tile_2" => [
+                "title" => "Audyty rozwiązań IT",
+                "subtitle" => "Analizujemy kody źródłowe gotowych rozwiązań informatycznych.",
+            ],
+            "tile_3" => [
+                "title" => "Cyfryzacja biznesu i procesów",
+                "subtitle" => "Pomagamy klientom przejść przez transformację cyfrową w ich firmach.",
+            ],
+            "tile_4" => [
+                "title" => "Projekty B+R",
+                "subtitle" => "Angażujemy się w szeroki zakres popularnych zagadnień badawczych.",
+            ],
+            "tile_5" => [
+                "title" => "Interface design",
+                "subtitle" => "Projektujemy intuicyjne interfejsy, które sprawiają, że korzystanie z nich jest łątwe i przyjemne.",
+            ],
+            "tile_6" => [
+                "title" => "Wykorzystanie AI",
+                "subtitle" => "Proponujemy klientom optymalizację działań z wykorzystaniem AI.",
+            ],
         ],
         "section_4" => [
-            "badge" => "zobacz jak działamy",
             "title_1" => "Case study",
             "subtitle_1" => "Dowiedz się jak nasze realizacje przekształciły wyzwania klientów w ",
             "subtitle_2" => "skuteczne rozwiązania.",
+            "tile_1" => [
+                "title_1" => "Powiadomienie",
+                "description_1" => "Tutaj jest miejsce na przykładowy komponent użyty w aplikacji. Może to być modal, dropdown czy cokolwiek.",
+            ],
+            "tile_2" => [
+                "title_1" => "Title",
+                "description_1" => "Description",
+            ],
+            "badge" => "Tutaj też przykładowy badge z aplikacji.",
         ],
         "section_5" => [
-            "title_1" => "Tech stack",
-            "subtitle_1" => "PHP i Laravel ",
-            "subtitle_2" => "to nasze główne narzędzie pracy.",
-            "subtitle_3" => "GitHub ",
-            "subtitle_4" => "stanowi naszą centralną platformę, umożliwiającą code review oraz CI/CD za pomocą GitHub Actions. Frontend budujemy z użyciem ",
-            "subtitle_5" => "Vue.js, ",
-            "subtitle_6" => "a także korzystamy z różnych systemów zarządzania bazami danych, tj. ",
-            "subtitle_7" => "MySQL i PostgreSQL.",
+            "title_1" => "Co mówią o nas inni",
+            "subtitle_1" => "Opinie naszych klientów są bardzo ważne, świadczą o jakości naszych usług i inspirują nas do nieustannego doskonalenia.",
         ],
         "section_6" => [
-            "badge" => "opinie",
-            "title_1" => "Co mówią o nas inni",
-            "subtitle_1" => "Opinie naszych klientów są bardzo ważne, ",
-            "subtitle_2" => "świadczą o jakości naszych usług ",
-            "subtitle_3" => "i inspirują nas do nieustannego doskonalenia.",
-        ],
-        "section_7" => [
-            "title_1" => "Nasze aktywności",
+            "title_1" => "Zainteresowany współpracą?",
+            "subtitle_1" => "Pozwól nam przekształcić Twoją wizję w rzeczywistość. Masz pomysł na aplikację web/mobile, potrzebujesz transformacji cyfrowej lub planujesz projekt badawczo-rozwojowy?",
+            "subtitle_2" => "Zrób to z nami!",
         ],
     ],
     "about" => [

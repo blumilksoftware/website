@@ -19,7 +19,7 @@
             </div>
         </div>
 
-        <section class="flex flex-col-reverse xl:flex-row pt-40 pb-24 px-[10%] md:px-[20%]">
+        <section class="flex flex-col-reverse xl:flex-row pt-40 pb-24 px-[10%] md:px-[15%]">
             <div class="flex basis-1/2 relative flex-col self-center gap-5">
                 <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:justify-start xl:text-start py-4">
                     <h2 class="font-semibold text-gray-900 leading-snug">{{__("content.home.section_1.title_1")}}
@@ -32,10 +32,8 @@
                         <span class="leading-relaxed">{{__("content.home.section_1.subtitle_1")}}</span>
                         <span class="font-semibold leading-relaxed">{{__("content.home.section_1.subtitle_2")}}</span>
                     </p>
-                    <div class="my-6">
-                        <x-primary-button href="{{ route('about') }}"
-                                          class="px-16">{{ __("buttons.about") }}</x-primary-button>
-                    </div>
+                    <x-primary-button href="{{ route('about') }}"
+                                      class="px-16">{{ __("buttons.about") }}</x-primary-button>
                 </div>
             </div>
             <div class="flex basis-1/2 relative self-center">
@@ -44,7 +42,7 @@
             </div>
         </section>
 
-        <section class="relative text-center px-[10%] md:px-[20%]">
+        <section class="relative text-center px-[10%] md:px-[15%]">
             <div class="text-2xl lg:text-3xl font-semibold text-gray-400">{{ __("content.home.section_2.title_1") }}
                 <span
                     class="text-website-normal">{{ __("content.home.section_2.title_2") }}</span>
@@ -81,157 +79,104 @@
         </section>
 
         <section class="relative">
-            <div class="px-[10%] md:px-[20%] space-y-10 pt-28 pb-28">
+            <div class="px-[10%] lg:px-[15%] space-y-10 pt-28 pb-28">
                 <div class="pb-14 text-center">
-                    <h2 class="text-3xl md:text-3xl lg:text-5xl font-semibold pb-8">{{__("content.career.section_2.title_1")}}</h2>
-                    <span class="font-light leading-relaxed text-md lg:text-lg relative">{{__("content.career.section_2.subtitle_1")}}</span>
+                    <h2 class="text-3xl md:text-3xl lg:text-5xl font-semibold pb-8">{{ __("content.home.section_3.title_1") }}</h2>
+                    <span
+                        class="font-light leading-relaxed text-md lg:text-lg relative">{{ __("content.home.section_3.subtitle_1") }}</span>
                 </div>
-                <div class="grid xl:grid-cols-3 gap-4 2xl:gap-12 place-items-center xl:place-items-stretch">
-                    @for($benefit = 1; $benefit <= 6; $benefit++)
-                        <x-benefit-tile :benefit="$benefit"/>
-                    @endfor
-                </div>
-            </div>
-        </section>
-        <section class="relative flex flex-col xl:flex-row md:py-24 px-[10%] md:px-[20%] xl:pr-0 items-center overflow-hidden 3xl:gap-44">
-            <div class="flex basis-4/12 relative">
-                <div class="flex flex-col text-center md:text-left">
-                    <div class="relative">
-                        <div class="my-6">
-                            <x-badge>{{__("content.home.section_4.badge")}}</x-badge>
-                        </div>
-                        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">{{__("content.home.section_4.title_1")}}</h2>
-                    </div>
-                    <span class="absolute -right-[20%] -z-10">
-                            <x-bubble size="40"/>
-                        </span>
-                    <div class="text-black text-lg font-light lg:text-xl relative py-4">
-                        <div class="py-4">
-                            <span class="leading-relaxed">{{__("content.home.section_4.subtitle_1")}}</span>
-                            <span class="font-semibold leading-relaxed">{{__("content.home.section_4.subtitle_2")}}</span>
-                        </div>
-                        <ul class="list-disc-none py-8 hidden md:block">
-                            @foreach($caseStudy as $key => $description)
-                                <li>
-                                    <span class="font-semibold leading-relaxed"> {{ $key }}</span> : {{ $description }}
-                                </li>
-                            @endforeach
-                        </ul>
-                        <div class="hidden md:block relative pb-8">
-                            <div class="relative flex items-center">
-                                <x-secondary-button href="{{ route('case-studies') }}" class="">{{ __("buttons.all_projects") }}</x-secondary-button>
-                                <x-primary-button href="" class="">{{ __("buttons.case_study") }}</x-primary-button>
-                            </div>
-                            <span class="absolute -left-[30%] -z-10">
-                                <x-bubble size="30"/>
-                            </span>
-                            <span class="absolute -right-[10%] -z-10">
-                                <x-bubble size="80"/>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-
-                <span class="absolute -left-[40%] top-72 -z-10">
-                    <x-bubble size="90"/>
-                </span>
-                <span class="absolute -left-[20%] top-96 -z-10">
-                    <x-bubble size="20"/>
-                </span>
-            </div>
-            <div class="flex rounded-2xl xl:bg-gray-light -rotate-3 basis-8/12 relative xl:shadow-md size-full xl:left-[10%]">
-                <div class="absolute hidden xl:block rotate-3 z-20 rounded-2xl h-52 w-80 -left-[10%] bottom-[10%] bg-[url('graphics/code-snippet.png')] bg-cover">
-                </div>
-                <img src="{{ asset('graphics/vita.png') }}"
-                     class="w-full relative flex xl:left-[5%] overflow-hidden rounded-2xl bg-white shadow-md rotate-3"
-                     alt="Vita homepage"/>
-            </div>
-            <div class="flex md:hidden place-content-center p-8">
-                <x-small-primary-button href="{{ route('case-studies') }}">{{ __("buttons.all_projects") }}</x-small-primary-button>
-            </div>
-        </section>
-
-        <section class="my-20 text-center bg-gray-extraLight">
-            <div class="block lg:bg-binary bg-cover bg-center bg-no-repeat 3xl:mx-44">
-                <div class="relative px-[10%] md:px-[20%] py-20">
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 relative mb-8">
-                        {{__("content.home.section_5.title_1")}}</h2>
-                    <span class="font-light leading-relaxed text-lg lg:text-xl relative">
-                        <span class="leading-relaxed font-semibold">{{__("content.home.section_5.subtitle_1")}}</span>
-                        <span class="leading-relaxed">{{__("content.home.section_5.subtitle_2")}}</span>
-                        <span class="leading-relaxed font-semibold">{{__("content.home.section_5.subtitle_3")}}</span>
-                        <span class="leading-relaxed">{{__("content.home.section_5.subtitle_4")}}</span>
-                        <span class="leading-relaxed font-semibold">{{__("content.home.section_5.subtitle_5")}}</span>
-                        <span class="leading-relaxed">{{__("content.home.section_5.subtitle_6")}}</span>
-                        <span class="leading-relaxed font-semibold">{{__("content.home.section_5.subtitle_7")}}</span>
-                    </span>
-                    <div class="grid grid-cols-5 relative w-fit align-middle place-items-center mx-auto text-gray-400 items-center mt-14  gap-8 lg:gap-x-14">
-                        <div class="">
-                            <img src="{{ asset('images/tech/laravel.svg')}}"
-                                 class="tech-icon h-full w-12 m-auto grayscale hover:grayscale-0 object-contain transform transition hover:scale-110"
-                                 alt="laravel"/>
-                        </div>
-                        <div class="">
-                            <img src="{{ asset('images/tech/php.svg')}}"
-                                 class="tech-icon h-full w-16 m-auto grayscale hover:grayscale-0 object-contain transform transition hover:scale-110"
-                                 alt="php"/>
-                        </div>
-                        <div class="">
-                            <img src="{{ asset('images/tech/postgresql.svg')}}"
-                                 class="tech-icon h-full w-12 m-auto grayscale hover:grayscale-0 object-contain transform transition hover:scale-110"
-                                 alt="postgresql"/>
-                        </div>
-                        <div class=" sm:col-span-1">
-                            <img src="{{ asset('images/tech/docker.svg')}}"
-                                 class="tech-icon h-full w-12 m-auto grayscale hover:grayscale-0 object-contain transform transition hover:scale-110"
-                                 alt="docker"/>
-                        </div>
-                        <div class=" sm:col-span-1">
-                            <img src="{{ asset('images/tech/vue.svg')}}"
-                                 class="tech-icon h-full w-12 m-auto grayscale hover:grayscale-0 object-contain transform transition hover:scale-110"
-                                 alt="vue"/>
-                        </div>
-                    </div>
+                <div
+                    class="grid md:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-12 place-items-center xl:place-items-stretch">
+                    <x-tile image="{{ asset('graphics/services/window.svg') }}"
+                            alt="benefit-1"
+                            title="{{ __('content.home.section_3.tile_1.title') }}"
+                            description="{{ __('content.home.section_3.tile_1.subtitle') }}"/>
+                    <x-tile image="{{ asset('graphics/services/file.svg') }}"
+                            alt="benefit-1"
+                            title="{{ __('content.home.section_3.tile_2.title') }}"
+                            description="{{ __('content.home.section_3.tile_2.subtitle') }}"/>
+                    <x-tile image="{{ asset('graphics/services/web.svg') }}"
+                            alt="benefit-1"
+                            title="{{ __('content.home.section_3.tile_3.title') }}"
+                            description="{{ __('content.home.section_3.tile_3.subtitle') }}"/>
+                    <x-tile image="{{ asset('graphics/services/analyse.svg') }}"
+                            alt="benefit-1"
+                            title="{{ __('content.home.section_3.tile_4.title') }}"
+                            description="{{ __('content.home.section_3.tile_4.subtitle') }}"/>
+                    <x-tile image="{{ asset('graphics/services/gallery.svg') }}"
+                            alt="benefit-1"
+                            title="{{ __('content.home.section_3.tile_5.title') }}"
+                            description="{{ __('content.home.section_3.tile_5.subtitle') }}"/>
+                    <x-tile image="{{ asset('graphics/services/robot.svg') }}"
+                            alt="benefit-1"
+                            title="{{ __('content.home.section_3.tile_6.title') }}"
+                            description="{{ __('content.home.section_3.tile_6.subtitle') }}"/>
                 </div>
             </div>
         </section>
 
-        <section @class([ 'hidden' => $references->isEmpty(), 'px-[10%] md:px-[15%] text-center items-center sm:pb-36 relative' ])>
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">{{__("content.home.section_6.title_1")}}</h2>
-            <div class="my-6">
-                <x-badge>{{__("content.home.section_6.badge")}}</x-badge>
+        <section class="relative">
+            <div class="px-[10%] lg:px-[15%] space-y-10 pt-28 pb-28">
+                <div class="pb-14 text-center">
+                    <h2 class="text-3xl md:text-3xl lg:text-5xl font-semibold pb-8">{{ __("content.home.section_4.title_1") }}</h2>
+                    <span
+                        class="font-light leading-relaxed text-md lg:text-lg relative">{{ __("content.home.section_4.subtitle_1") }}</span>
+                    <span
+                        class="font-bold leading-relaxed text-md lg:text-lg relative">{{ __("content.home.section_4.subtitle_2") }}</span>
+                </div>
+                <div class="flex justify-center">
+                    <x-main-case-study/>
+                </div>
+                <div class="flex justify-center">
+                    <x-primary-button href="" class="px-10">{{ __("buttons.case_study") }}</x-primary-button>
+                    <x-secondary-button href="{{ route('case-studies') }}"
+                                        class="px-10">{{ __("buttons.all_projects") }}</x-secondary-button>
+                </div>
             </div>
-            <span class="font-light text-lg lg:text-xl">{{__("content.home.section_6.subtitle_1")}}
-                <span class="font-semibold leading-relaxed">{{__("content.home.section_6.subtitle_2")}}</span>
-                <span class="leading-relaxed">{{__("content.home.section_6.subtitle_3")}}</span>
-            </span>
-            <div class="sm:hidden">
-                <x-reference @if($references->isNotEmpty()) :reference="$references[0]" @endif/>
-            </div>
-            <div @class([ 'sm:block main-gallery js-flickity' => $referencesCount > 3, 'sm:flex justify-center' => $referencesCount <= 3])
-               data-flickity-options='{ "wrapAround": true }'>
-                @foreach($references as $reference)
-                        <x-reference :reference="$reference"/>
-                @endforeach
+
+        </section>
+
+        <section @class([ 'hidden' => $references->isEmpty(), 'px-[10%] md:px-[15%] text-center items-center sm:pb-16 relative' ])>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">{{ __("content.home.section_5.title_1") }}</h2>
+
+            <span class="font-light text-lg lg:text-xl">{{ __("content.home.section_5.subtitle_1") }}</span>
+            <div class="relative isolate">
+                <div class="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
+                    aria-hidden="true">
+                    <div
+                        class="ml-[max(50%,38rem)] aspect-[1313/771] w-[82.0625rem] bg-gradient-to-tr from-website-normal to-website-light"
+                        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+                </div>
+                <div class="absolute inset-x-0 top-0 -z-10 flex transform-gpu overflow-hidden pt-32 opacity-25 blur-3xl sm:pt-40 xl:justify-end"
+                    aria-hidden="true">
+                    <div
+                        class="ml-[-22rem] aspect-[1313/771] w-[82.0625rem] flex-none origin-top-right rotate-[30deg] bg-gradient-to-tr from-website-light to-website-normal xl:ml-0 xl:mr-[calc(50%-12rem)]"
+                        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+                </div>
+                <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                    <x-references :references="$references"/>
+                </div>
             </div>
         </section>
-        <div class="md:py-20 block lg:bg-binary bg-cover bg-center bg-no-repeat object-contain min-w-full inset-0">
-            <section class="relative px-[10%] md:px-[20%]">
-                <div class="relative flex flex-row items-center justify-between">
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900">{{__("content.home.section_7.title_1")}}</h2>
-                    <div class="hidden sm:block">
-                        <x-primary-button href="{{ route('activities') }}" class="px-16">{{__("buttons.see_all")}}</x-primary-button>
+        <section class="relative px-[10%] md:px-[15%]">
+            <div class="w-full py-12 sm:py-32">
+                <div class="relative isolate overflow-hidden bg-blue-normal py-24 text-center shadow-2xl sm:rounded-3xl">
+                    <img src="{{ asset('graphics/blobs/blob_1.svg') }}" class="absolute -left-16" alt="blob"/>
+                    <img src="{{ asset('graphics/blobs/blob_2.svg') }}" class="absolute -z-20 top-0" alt="blob"/>
+                    <img src="{{ asset('graphics/blobs/blob_3.svg') }}" class="absolute -z-20 right-0 top-0" alt="blob"/>
+                    <img src="{{ asset('graphics/blobs/blob_4.svg') }}" class="absolute -z-20 -bottom-32 right-16" alt="blob"/>
+                    <h2 class="mx-auto max-w-5xl text-3xl font-bold tracking-tight text-white sm:text-5xl">{{ __("content.home.section_6.title_1") }}</h2>
+                    <p class="mx-auto max-w-5xl mt-6 text-lg leading-8 text-gray-300">{{ __("content.home.section_6.subtitle_1") }}
+                        <span class="font-bold">{{ __("content.home.section_6.subtitle_2") }}</span>
+                    </p>
+                    <div class="mt-10 flex items-center justify-center gap-x-6">
+                        <x-primary-button href="{{ route('contact') }}"
+                                          class="px-16 bg-blue-dark opacity-80">
+                            {{ __("buttons.text_us") }}
+                        </x-primary-button>
                     </div>
                 </div>
-                <div class="grid gap-8 pt-12 max-w-none sm:grid-cols-2 lg:grid-cols-3 relative">
-                    @foreach($activities as $index => $activity)
-                        <x-activity-card :activity="$activity" class="{{ $index >= 3 ? 'hidden sm:flex lg:hidden' : '' }}"/>
-                    @endforeach
-                </div>
-                <div class="sm:hidden flex py-8">
-                    <x-block-primary-button href="{{ route('activities') }}">{{__("buttons.see_all")}}</x-block-primary-button>
-                </div>
-            </section>
-        </div>
+            </div>
+        </section>
     </section>
 @endsection

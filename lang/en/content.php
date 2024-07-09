@@ -8,6 +8,7 @@ return [
         "case_study" => "Case Study",
         "partners" => "Partners",
         "career" => "Career",
+        "activities" => "Activities",
         "contact" => "Contact",
     ],
     "home" => [

@@ -26,6 +26,8 @@ module.exports = {
           extraDark: '#EAEBF3',
         },
         blue: {
+          dark: "#0E0B3D",
+          normal: '#3259E8',
           light: '#F7F8FD',
         },
         bubble: '#DAE3F0',
@@ -45,9 +47,6 @@ module.exports = {
       },
       fontFamily: {
         sora: ['Sora', 'sans-serif'],
-      },
-      backgroundImage: {
-        binary: 'url("/public/graphics/binary.svg" )',
       },
     },
   },

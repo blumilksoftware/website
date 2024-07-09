@@ -6,7 +6,7 @@
 <nav x-data="{ openLang: false, openMobileMenu: false}"
      class="w-auto bg-navigation">
     <div :class="{'block': ! openMobileMenu, 'hidden': openMobileMenu}"
-         class="mx-auto flex items-center justify-between px-14 md:px-6 left-0 right-0 py-8 xl:px-[20%] relative">
+         class="mx-auto flex items-center justify-between px-14 md:px-6 left-0 right-0 py-8 xl:px-[15%] relative">
         <div>
             <a class="md:hidden tablet:block items-start" href="{{ route("home") }}">
                 <img class="w-32 shrink-0" src="{{ asset('identification/logo.svg') }}" alt="Blumilk"/>
@@ -25,6 +25,8 @@
                    class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if(Str::contains($current, 'partners')) bg-website-extra_light text-website-normal @endif">{{ __("content.pages.partners") }}</a>
                 <a href="{{ route('career') }}"
                    class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if(Str::contains($current, 'career')) bg-website-extra_light text-website-normal @endif">{{ __("content.pages.career") }}</a>
+                <a href="{{ route('activities') }}"
+                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if(Str::contains($current, 'activities')) bg-website-extra_light text-website-normal @endif">{{ __("content.pages.activities") }}</a>
                 <a href="{{ route('contact') }}"
                    class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if(Str::contains($current, 'contact')) bg-website-extra_light text-website-normal @endif">{{ __("content.pages.contact") }}</a>
             </p>
@@ -74,7 +76,7 @@
          x-trap.noscroll="openMobileMenu">
 
         <div class="w-full">
-            <div class="flex items-center justify-between left-0 right-0 py-8 xl:px-[20%] relative">
+            <div class="flex items-center justify-between left-0 right-0 py-8 xl:px-[15%] relative">
                 <a class="md:hidden tablet:block items-start" href="{{ route("home") }}">
                     <img class="w-32 shrink-0" src="{{ asset('identification/logo.svg') }}" alt="Blumilk"/>
                 </a>
@@ -101,6 +103,11 @@
             <div class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start @if(Str::contains($current, 'career')) text-website-normal @endif">
                 <a href="{{ route('career') }}" class="my-4 p-2">
                     {{ __("content.pages.career") }}
+                </a>
+            </div>
+            <div class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start @if(Str::contains($current, 'activities')) text-website-normal @endif">
+                <a href="{{ route('activities') }}" class="my-4 p-2">
+                    {{ __("content.pages.activities") }}
                 </a>
             </div>
             <div class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start @if(Str::contains($current, 'contact')) text-website-normal @endif">
