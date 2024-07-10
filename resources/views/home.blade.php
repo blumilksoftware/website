@@ -113,9 +113,9 @@
         </section>
 
         <section class="relative">
-            <div class="px-[10%] lg:px-[15%] space-y-10 pt-28 pb-44">
+            <div class="px-[10%] lg:px-[15%] space-y-4 lg:space-y-10 pt-28 pb-44">
                 <div class="pb-8 text-center">
-                    <h2 class="text-3xl md:text-3xl lg:text-5xl font-semibold pb-8">{{ __("content.home.section_4.title_1") }}</h2>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.home.section_4.title_1") }}</h2>
                     <span
                         class="font-light leading-relaxed text-md lg:text-lg relative">{{ __("content.home.section_4.subtitle_1") }}</span>
                     <span
@@ -139,24 +139,23 @@
             <span class="font-light text-lg lg:text-xl">{{ __("content.home.section_5.subtitle_1") }}</span>
             <div class="relative">
                 <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                    @if(count($references))<x-references :references="$references"/>@endisset
+                    @if( count($references) )<x-references :references="$references"/>@endisset
                 </div>
             </div>
         </section>
         <section class="relative px-[10%] md:px-[15%]">
             <div class="w-full py-12 sm:py-32">
-                <div class="relative isolate overflow-hidden bg-blue-normal py-24 text-center shadow-2xl sm:rounded-3xl">
-                    <img src="{{ asset('graphics/blobs/blob_1.svg') }}" class="absolute -left-16" alt="blob"/>
-                    <img src="{{ asset('graphics/blobs/blob_2.svg') }}" class="absolute -z-20 top-0" alt="blob"/>
-                    <img src="{{ asset('graphics/blobs/blob_3.svg') }}" class="absolute -z-20 right-0 top-0" alt="blob"/>
-                    <img src="{{ asset('graphics/blobs/blob_4.svg') }}" class="absolute -z-20 -bottom-32 right-16" alt="blob"/>
+                <div class="relative isolate overflow-hidden bg-blue-normal py-24 text-center shadow-2xl px-8  rounded-3xl">
+                    <img src="{{ asset('graphics/blobs/blob_1.svg') }}" class="absolute -left-44 2xl:-left-16 -bottom-44 xl:-bottom-32" alt="blob"/>
+                    <img src="{{ asset('graphics/blobs/blob_2.svg') }}" class="absolute -z-20 -left-32 -top-24 xl:-top-16 2xl:-top-8 3xl:top-0" alt="blob"/>
+                    <img src="{{ asset('graphics/blobs/blob_3.svg') }}" class="absolute -z-20 -right-16 2xl:-right-8 3xl:right-0 top-0" alt="blob"/>
+                    <img src="{{ asset('graphics/blobs/blob_4.svg') }}" class="absolute -z-20 -bottom-64 2xl:-bottom-44 3xl:-bottom-32 -right-44 xl:right-6 2xl:right-16" alt="blob"/>
                     <h2 class="mx-auto max-w-5xl text-3xl font-bold tracking-tight text-white sm:text-5xl">{{ __("content.home.section_6.title_1") }}</h2>
                     <p class="mx-auto max-w-5xl mt-6 text-lg leading-8 text-gray-300">{{ __("content.home.section_6.subtitle_1") }}
                         <span class="font-bold text-white">{{ __("content.home.section_6.subtitle_2") }}</span>
                     </p>
                     <div class="mt-10 flex items-center justify-center gap-x-6">
-                        <x-primary-button href="{{ route('contact') }}"
-                                          class="px-16 bg-blue-dark opacity-80">
+                        <x-primary-button href="{{ route('contact') }}" class="px-16 bg-blue-dark opacity-80">
                             {{ __("buttons.text_us") }}
                         </x-primary-button>
                     </div>

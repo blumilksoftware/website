@@ -1,5 +1,5 @@
-<div class="relative">
-    <div class="size-40 absolute -left-44 top-0 grid grid-cols-3 grid-rows-3 gap-6 place-items-center">
+<div class="relative flex place-content-center">
+    <div class="size-40 absolute hidden lg:grid lg:-left-32 2xl:-left-44 top-0 grid-cols-3 grid-rows-3 gap-6 place-items-center">
             <div class="bg-blue-light rounded-lg p-2"> <x-icons.crop-rotate/> </div>
             <div class="bg-blue-light rounded-lg p-2"> <x-icons.add-lens/> </div>
             <div class="bg-blue-light rounded-lg p-2"> <x-icons.frame/> </div>
@@ -10,7 +10,7 @@
             <div class="bg-blue-light rounded-lg p-2"> <x-icons.collage-frame/> </div>
             <div class="bg-website-normal rounded-lg p-2 scale-110 relative text-white left-1 top-1"> <x-icons.color-filter/> </div>
     </div>
-    <div class="h-44 w-80 bg-white rounded-2xl absolute shadow-xl border-gray-100 border-2 -right-72 top-32">
+    <div class="h-44 w-80 bg-white rounded-2xl absolute shadow-xl border-gray-100 border-2 hidden lg:block lg:-right-36 2xl:-right-64 top-32">
         <div class="divide-y divide-gray-200 overflow-hidden">
             <div class="px-4 py-5 sm:px-6 text-center font-semibold text-md">
                 {{ __('content.home.section_4.tile_1.title_1') }}
@@ -20,10 +20,10 @@
             </div>
         </div>
     </div>
-    <div class="flex h-12 w-auto bg-blue-normalNeon text-white text-sm text-center py-3 font-semibold rounded-3xl absolute -right-52 top-96 px-4">
+    <div class="h-12 w-auto bg-blue-normalNeon text-white text-sm text-center py-3 font-semibold rounded-3xl absolute hidden lg:flex lg:-right-32 xl:-right-44 2xl:-right-52 top-96 px-4">
         {{ __('content.home.section_4.badge') }}
     </div>
-    <div class="h-36 w-[430px] bg-white rounded-2xl absolute -left-64 shadow-xl border-gray-100 border-2 bottom-8">
+    <div class="h-36 w-[430px] bg-white rounded-2xl absolute hidden lg:block lg:-left-36 xl:-left-48 2xl:-left-64 shadow-xl border-gray-100 border-2 bottom-8">
         <div class="flex items-center align-middle gap-x-6 size-full mx-8">
             <div class="shadow-lg bg-white p-4 rounded-full size-16">
                 <x-icons.window/>

@@ -8,14 +8,14 @@
     <div :class="{'block': ! openMobileMenu, 'hidden': openMobileMenu}"
          class="mx-auto flex items-center justify-between px-14 md:px-6 left-0 right-0 py-8 xl:px-[15%] relative">
         <div>
-            <a class="md:hidden tablet:block items-start" href="{{ route("home") }}">
+            <a class="tablet:hidden lg:block items-start" href="{{ route("home") }}">
                 <img class="w-32 shrink-0" src="{{ asset('identification/logo.svg') }}" alt="Blumilk"/>
             </a>
-            <a class="hidden md:block tablet:hidden items-start" href="{{ route("home") }}">
+            <a class="hidden tablet:block lg:hidden items-start" href="{{ route("home") }}">
                 <img class="h-8" src="{{ asset('identification/sygnet.svg') }}" alt="Blumilk"/>
             </a>
         </div>
-        <div class="md:flex hidden justify-center items-center text-sm 3xl:text-lg">
+        <div class="tablet:flex hidden justify-center items-center text-sm 3xl:text-lg">
             <p class="font-medium flex items-center text-center gap-2">
                 <a href="{{ route('about') }}"
                    class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if(Str::contains($current, 'about')) bg-website-extra_light text-website-normal @endif">{{ __("content.pages.about") }}</a>
@@ -31,7 +31,7 @@
                    class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if(Str::contains($current, 'contact')) bg-website-extra_light text-website-normal @endif">{{ __("content.pages.contact") }}</a>
             </p>
         </div>
-        <div class="md:flex hidden gap-4">
+        <div class="tablet:flex hidden gap-4">
             <div class="items-center">
                 <x-small-primary-button href="{{ route('contact') }}">{{ __("buttons.lets_talk") }}</x-small-primary-button>
             </div>
@@ -64,7 +64,7 @@
             </div>
         </div>
 
-        <button id="hamburgerMenu" class="flex md:hidden" @click="openMobileMenu = ! openMobileMenu">
+        <button id="hamburgerMenu" class="flex tablet:hidden" @click="openMobileMenu = ! openMobileMenu">
             <i :class="{'block': ! openMobileMenu, 'hidden': openMobileMenu}"
                class="fa-solid fa-bars hamburger-menu text-2xl text-brand"></i>
             <i :class="{'block': openMobileMenu, 'hidden': ! openMobileMenu}"

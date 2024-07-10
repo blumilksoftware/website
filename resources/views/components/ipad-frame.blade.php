@@ -1,4 +1,4 @@
-<svg width="1000" height="800" viewBox="0 0 739 551" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="1000" height="800" viewBox="0 0 739 551" fill="none" class="size-11/12 lg:size-full" xmlns="http://www.w3.org/2000/svg">
     <g filter="url(#filter0_dd_84_231)">
         <rect x="65" y="50" width="610" height="425" rx="32" fill="url(#img1)"/>
         <rect x="676.5" y="48.6428" width="425" height="610" rx="29.5" transform="rotate(90 676.5 48.6428)" stroke="#484953" stroke-width="5"/>
