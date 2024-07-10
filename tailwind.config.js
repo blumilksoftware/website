@@ -27,10 +27,11 @@ module.exports = {
         },
         blue: {
           dark: "#0E0B3D",
+          normalNeon: '#3461fd',
           normal: '#3259E8',
           light: '#F7F8FD',
         },
-        bubble: '#DAE3F0',
+        bubble: '#DAE3F0', //#f7f8fb
         brand: '#527ABA',
         background: '#FBFBFB',
         website: {

@@ -15,7 +15,7 @@ return [
         "section_1" => [
             "title_1" => "Oprogramowanie ",
             "title_2" => "dopasowane ",
-            "title_3" => "do Twoich potrzeb",
+            "title_3" => "do Twoich potrzeb.",
             "subtitle_1" => "Jesteśmy pasjonatami tworzenia aplikacji web/mobile oraz zaawansowanych projektów B+R.",
             "subtitle_2" => "Zmieniamy koncepcje w działające rozwiązania",
         ],
@@ -44,11 +44,11 @@ return [
             ],
             "tile_5" => [
                 "title" => "Interface design",
-                "subtitle" => "Projektujemy intuicyjne interfejsy, które sprawiają, że korzystanie z nich jest łątwe i przyjemne.",
+                "subtitle" => "Projektujemy intuicyjne interfejsy, które sprawiają, że korzystanie z nich jest łatwe i przyjemne.",
             ],
             "tile_6" => [
                 "title" => "Wykorzystanie AI",
-                "subtitle" => "Proponujemy klientom optymalizację działań z wykorzystaniem AI.",
+                "subtitle" => "Proponujemy klientom optymalizację działań z wykorzystaniem AI.",
             ],
         ],
         "section_4" => [
@@ -60,8 +60,8 @@ return [
                 "description_1" => "Tutaj jest miejsce na przykładowy komponent użyty w aplikacji. Może to być modal, dropdown czy cokolwiek.",
             ],
             "tile_2" => [
-                "title_1" => "Title",
-                "description_1" => "Description",
+                "title_1" => "Tytuł",
+                "description_1" => "Staraj się, aby Twoje wiadomości były krótkie, ale upewnij się, że obejmują wszystko, co masz do powiedzenia.",
             ],
             "badge" => "Tutaj też przykładowy badge z aplikacji.",
         ],
