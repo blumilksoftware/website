@@ -1,5 +1,6 @@
 @extends("layout.public")
-
+@section("title", __("meta.software-engineer.title"))
+@section("description", __("meta.software-engineer.description"))
 @section("content")
     <div class="relative md:block">
         <div class="absolute -left-[15%] md:-left-[2%] lg:left-0 top-28 md:top-40">

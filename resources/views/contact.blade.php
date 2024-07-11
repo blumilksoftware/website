@@ -1,5 +1,6 @@
 @extends('layout.public')
-
+@section("title", __("meta.contact.title"))
+@section("description", __("meta.contact.description"))
 @section('content')
     @php
         $excludeFooter = true;

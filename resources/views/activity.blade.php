@@ -1,5 +1,6 @@
 @extends("layout.public")
-
+@section("title", $activity->title)
+@section("description", $activity->subtitle)
 @section("content")
     <div class="relative md:block -z-10">
         <div class="absolute -left-[6%] md:left-[1%] top-28 md:top-40">
