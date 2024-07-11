@@ -149,7 +149,7 @@
             <span class="font-normal text-md lg:text-lg">{{ __("content.home.section_5.subtitle_1") }}</span>
             <div class="relative">
                 <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                    @if( count($references) )<x-references :references="$references"/>@endisset
+                    @includeWhen(count($references), 'components.references', ['references' => $references])
                 </div>
             </div>
         </section>

@@ -18,17 +18,35 @@
         <div class="tablet:flex hidden justify-center items-center text-sm 3xl:text-lg">
             <p class="font-medium flex items-center text-center gap-2">
                 <a href="{{ route('about') }}"
-                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if(Str::contains($current, 'about')) bg-website-extra_light text-website-normal @endif">{{ __("content.pages.about") }}</a>
+                   @class([
+                        'hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2',
+                        'bg-website-extra_light text-website-normal' => Str::contains($current, 'about')])>{{ __("content.pages.about") }}
+                </a>
                 <a href="{{ route('case-studies') }}"
-                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if(Str::contains($current, 'case-studies')) bg-website-extra_light text-website-normal @endif">{{ __("content.pages.case_study") }}</a>
+                   @class([
+                        'hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2',
+                        'bg-website-extra_light text-website-normal' => Str::contains($current, 'case-studies')])>{{ __("content.pages.case_study") }}
+                </a>
                 <a href="{{ route('partners') }}"
-                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if(Str::contains($current, 'partners')) bg-website-extra_light text-website-normal @endif">{{ __("content.pages.partners") }}</a>
+                   @class([
+                        'hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2',
+                        'bg-website-extra_light text-website-normal' => Str::contains($current, 'partners')])>{{ __("content.pages.partners") }}
+                </a>
                 <a href="{{ route('career') }}"
-                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if(Str::contains($current, 'career')) bg-website-extra_light text-website-normal @endif">{{ __("content.pages.career") }}</a>
+                   @class([
+                        'hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2',
+                        'bg-website-extra_light text-website-normal' => Str::contains($current, 'career')])>{{ __("content.pages.career") }}
+                </a>
                 <a href="{{ route('activities') }}"
-                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if(Str::contains($current, 'activities')) bg-website-extra_light text-website-normal @endif">{{ __("content.pages.activities") }}</a>
+                   @class([
+                        'hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2',
+                        'bg-website-extra_light text-website-normal' => Str::contains($current, 'activities')])>{{ __("content.pages.activities") }}
+                </a>
                 <a href="{{ route('contact') }}"
-                   class="hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2 @if(Str::contains($current, 'contact')) bg-website-extra_light text-website-normal @endif">{{ __("content.pages.contact") }}</a>
+                   @class([
+                        'hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2',
+                        'bg-website-extra_light text-website-normal' => Str::contains($current, 'contact')])>{{ __("content.pages.contact") }}
+                </a>
             </p>
         </div>
         <div class="tablet:flex hidden gap-4">
@@ -85,32 +103,44 @@
                        class="fa-solid fa-xmark text-2xl text-brand"></i>
                 </button>
             </div>
-            <div class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start @if(Str::contains($current, 'about')) text-website-normal @endif">
+            <div @class([
+                'w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start',
+                'text-website-normal' => Str::contains($current, 'about')])>
                 <a href="{{ route('about') }}" class="my-4 p-2 start">
                     {{ __("content.pages.about") }}
                 </a>
             </div>
-            <div class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start @if(Str::contains($current, 'case-studies')) text-website-normal @endif">
+            <div @class([
+                'w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start',
+                'text-website-normal' => Str::contains($current, 'case-studies')])>
                 <a href="{{ route('case-studies') }}" class="my-4 p-2">
                     {{ __("content.pages.case_study") }}
                 </a>
             </div>
-            <div class="w-full hover:text-website-normal py-4 text-lg sm:text-xl text-start @if(Str::contains($current, 'partners')) text-website-normal @endif">
+            <div @class([
+                'w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start',
+                'text-website-normal' => Str::contains($current, 'partners')])>
                 <a href="{{ route('partners') }}" class="my-4 p-2">
                     {{ __("content.pages.partners") }}
                 </a>
             </div>
-            <div class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start @if(Str::contains($current, 'career')) text-website-normal @endif">
+            <div @class([
+                'w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start',
+                'text-website-normal' => Str::contains($current, 'career')])>
                 <a href="{{ route('career') }}" class="my-4 p-2">
                     {{ __("content.pages.career") }}
                 </a>
             </div>
-            <div class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start @if(Str::contains($current, 'activities')) text-website-normal @endif">
+            <div @class([
+                'w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start',
+                'text-website-normal' => Str::contains($current, 'activities')])>
                 <a href="{{ route('activities') }}" class="my-4 p-2">
                     {{ __("content.pages.activities") }}
                 </a>
             </div>
-            <div class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start @if(Str::contains($current, 'contact')) text-website-normal @endif">
+            <div @class([
+                'w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start',
+                'text-website-normal' => Str::contains($current, 'contact')])>
                 <a href="{{ route('contact') }}" class="my-4 p-2">
                     {{ __("content.pages.contact") }}
                 </a>
