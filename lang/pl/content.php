@@ -15,9 +15,9 @@ return [
         "section_1" => [
             "title_1" => "Oprogramowanie ",
             "title_2" => "dopasowane ",
-            "title_3" => "do Twoich potrzeb.",
+            "title_3" => "do Twoich potrzeb",
             "subtitle_1" => "Jesteśmy pasjonatami tworzenia aplikacji web/mobile oraz zaawansowanych projektów B+R.",
-            "subtitle_2" => "Zmieniamy koncepcje w działające rozwiązania",
+            "subtitle_2" => "Zmieniamy koncepcje w działające rozwiązania.",
         ],
         "section_2" => [
             "title_1" => "Dołącz do grona ",

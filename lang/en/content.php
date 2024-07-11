@@ -15,7 +15,7 @@ return [
         "section_1" => [
             "title_1" => "Software",
             "title_2" => "tailored",
-            "title_3" => "to your needs.",
+            "title_3" => "to your needs",
             "subtitle_1" => "We are passionate about creating web/mobile applications and advanced R&D projects.",
             "subtitle_2" => "We turn concepts into working solutions.",
         ],
