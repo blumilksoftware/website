@@ -43,7 +43,7 @@ return [
                 "subtitle" => "We engage in a wide range of popular research topics.",
             ],
             "tile_5" => [
-                "title" => "Interface design",
+                "title" => "UX/UI",
                 "subtitle" => "We design intuitive interfaces that make using them easy and pleasant.",
             ],
             "tile_6" => [

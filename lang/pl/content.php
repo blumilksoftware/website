@@ -43,7 +43,7 @@ return [
                 "subtitle" => "Angażujemy się w szeroki zakres popularnych zagadnień badawczych.",
             ],
             "tile_5" => [
-                "title" => "Interface design",
+                "title" => "UX/UI",
                 "subtitle" => "Projektujemy intuicyjne interfejsy, które sprawiają, że korzystanie z nich jest łatwe i przyjemne.",
             ],
             "tile_6" => [
