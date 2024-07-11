@@ -130,7 +130,7 @@
             {{__("content.software_engineer.section_3.title_1")}}</h2>
         <div class="mx-auto">
             <x-primary-button href="{{ route('contact') }}"
-                              class="px-14">{{ __("buttons.apply_now") }}</x-primary-button>
+                              class="px-14 bg-website-normal">{{ __("buttons.apply_now") }}</x-primary-button>
         </div>
     </section>
 @endsection
