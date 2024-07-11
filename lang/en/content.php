@@ -8,6 +8,7 @@ return [
         "case_study" => "Case Study",
         "partners" => "Partners",
         "career" => "Career",
+        "activities" => "Activities",
         "contact" => "Contact",
     ],
     "home" => [
@@ -20,44 +21,58 @@ return [
         ],
         "section_2" => [
             "title_1" => "Join the ranks of ",
-            "title_2" => "satisfied Blumilk customers",
+            "title_2" => "satisfied Blumilk clients",
         ],
         "section_3" => [
-            "title_1" => "How can we help you?",
-            "subtitle_1" => "Research, development, code: ",
-            "subtitle_2" => "shaping the future of software.",
-            "content_1" => "R&D projects",
-            "content_2" => "IT solutions audits",
-            "content_3" => "Business and process digitization",
-            "content_4" => "Dedicated mobile and web applications",
-            "title_2" => "We design solutions",
-            "subtitle_3" => "With a focus on hundred percent satisfaction of our clients and partners.",
+            "title_1" => "What can we do for you?",
+            "subtitle_1" => "Does your business need digital transformation? You are in the right place.",
+            "tile_1" => [
+                "title" => "Web and mobile applications",
+                "subtitle" => "We create dedicated software in the form of mobile and web applications.",
+            ],
+            "tile_2" => [
+                "title" => "Audits of IT solutions",
+                "subtitle" => "We analyze the source codes of ready-made IT solutions.",
+            ],
+            "tile_3" => [
+                "title" => "Digitization of business and processes",
+                "subtitle" => "We help companies in the digital transformation of their business.",
+            ],
+            "tile_4" => [
+                "title" => "R&D projects",
+                "subtitle" => "We engage in a wide range of popular research topics.",
+            ],
+            "tile_5" => [
+                "title" => "UI/UX",
+                "subtitle" => "We design intuitive interfaces that make using them easy and pleasant.",
+            ],
+            "tile_6" => [
+                "title" => "Use of AI",
+                "subtitle" => "We offer clients optimization of activities using AI.",
+            ],
         ],
         "section_4" => [
-            "badge" => "see how we work",
             "title_1" => "Case Study",
             "subtitle_1" => "Learn how our implementations transformed clients' challenges into ",
             "subtitle_2" => "effective solutions",
+            "tile_1" => [
+                "title_1" => "Notification",
+                "description_1" => "Here is a place for an example component used in the application. It could be a modal, dropdown or whatever.",
+            ],
+            "tile_2" => [
+                "title_1" => "Title",
+                "description_1" => "Keep your messages short, but make sure they cover everything you need to say.",
+            ],
+            "badge" => "Here is also an example badge from the application.",
         ],
         "section_5" => [
-            "title_1" => "Tech Stack",
-            "subtitle_1" => "PHP and Laravel ",
-            "subtitle_2" => "are our main tools. ",
-            "subtitle_3" => "GitHub ",
-            "subtitle_4" => "serves as our central platform, enabling code review and CI/CD through GitHub Actions. We build the frontend using ",
-            "subtitle_5" => "Vue.js ",
-            "subtitle_6" => "and utilize various database management systems, such as ",
-            "subtitle_7" => "MySQL and PostgreSQL.",
+            "title_1" => "What others say about us",
+            "subtitle_1" => "Our clients' opinions are very important, they attest to the quality of our services and inspire us to constantly improve.",
         ],
         "section_6" => [
-            "badge" => "reviews",
-            "title_1" => "What others say about us",
-            "subtitle_1" => "Our clients' opinions are very important, ",
-            "subtitle_2" => "they attest to the quality of our services ",
-            "subtitle_3" => "and inspire us to constantly improve.",
-        ],
-        "section_7" => [
-            "title_1" => "Our activities",
+            "title_1" => "Interested in cooperation?",
+            "subtitle_1" => "Let us turn your vision into reality. Do you have an idea for a web/mobile application, need digital transformation, or plan an R&D project?",
+            "subtitle_2" => "Do it with us!",
         ],
     ],
     "about" => [

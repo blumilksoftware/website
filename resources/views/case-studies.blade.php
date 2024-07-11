@@ -43,7 +43,7 @@
                 {{__("content.case_studies.section_2.title_1")}}</h2>
             <span class="font-light leading-relaxed text-lg lg:text-xl relative">{{__("content.case_studies.section_2.subtitle_1")}}</span>
             <div class="mx-auto">
-                <x-primary-button href="{{ route('contact') }}" class="px-16">{{ __("buttons.text_us") }}</x-primary-button>
+                <x-primary-button href="{{ route('contact') }}" class="px-16 bg-website-normal">{{ __("buttons.text_us") }}</x-primary-button>
             </div>
         </div>
     </section>
