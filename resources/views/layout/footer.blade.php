@@ -1,5 +1,5 @@
-<footer class="bg-white border-t-2 border-gray-100">
-    <div class="mx-auto w-full px-6 pt-12 md:py-12 md:flex items-center place-items-center md:justify-between lg:px-10">
+<footer class="bg-white">
+    <div class="mx-16 w-auto py-6 md:py-12 md:flex items-center place-items-center md:justify-between border-t-2 border-gray-100">
         <div class="mb-6 md:order-1 md:mb-0">
             <img class="w-32 shrink-0 mx-auto" src="{{ asset('identification/logo.svg') }}" alt="Blumilk"/>
         </div>
@@ -26,15 +26,15 @@
             </a>
         </div>
     </div>
-    <div class="mx-auto w-full px-6 pt-4 pb-12 md:py-12 md:flex md:items-center md:justify-between lg:px-8">
-        <div class="mt-4 md:mt-0 md:order-2">
-            <p class="text-center text-xs leading-5 text-gray-500">
-                <a href="{{ route('privacy-policy') }}" target="_blank" class="font-bold">{{ __('footer.policy') }}</a>
+    <div class="px-16 w-full py-6 md:py-6 md:flex md:items-center md:justify-between bg-gray-extraLight">
+        <div class="md:order-2">
+            <p class="text-center text-sm leading-5 text-gray-500">
+                <a href="{{ route('privacy-policy') }}" target="_blank" class="font-normal mr-1">{{ __('footer.policy') }}</a>
                 |
-                <a href="{{ route('contact') }}">{{ __('footer.data') }}</a></p>
+                <a href="{{ route('contact') }}" class="ml-1">{{ __('footer.data') }}</a></p>
         </div>
-        <div class="mt-8 md:order-1 md:mt-0">
-            <p class="text-center text-xs leading-5 text-gray-500">Copyright &copy; 2024 | Blumilk. <span class="font-semibold">{{ __('footer.rights') }}</span></p>
+        <div class="mt-2 md:order-1 md:mt-0">
+            <p class="text-center text-sm leading-5 text-gray-500">Copyright &copy; 2024 | Blumilk. <span class="font-semibold block md:inline mt-2 md:mt-0">{{ __('footer.rights') }}</span></p>
         </div>
     </div>
 </footer>

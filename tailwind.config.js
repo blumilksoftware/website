@@ -31,7 +31,7 @@ module.exports = {
           normal: '#3259E8',
           light: '#F7F8FD',
         },
-        bubble: '#DAE3F0', //#f7f8fb
+        bubble: '#DAE3F0',
         brand: '#527ABA',
         background: '#FBFBFB',
         website: {

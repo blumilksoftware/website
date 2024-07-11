@@ -60,7 +60,7 @@ switch (count($references)) {
         </figcaption>
     </figure>
     @endisset
-    <div class="space-y-8 xl:contents xl:space-y-0">
+    <div class="space-y-0 xl:contents xl:space-y-0">
         <div class="space-y-8 xl:row-span-2">
             @isset($references[$topLeft])
                 <x-reference :reference="$references[$topLeft]"/>
@@ -72,9 +72,9 @@ switch (count($references)) {
             @endisset
         </div>
     </div>
-    <div class="space-y-8 xl:contents xl:space-y-0">
+    <div class="space-y-0 xl:contents xl:space-y-0">
         <div class="space-y-8 xl:row-start-1">
-            @isset($references[$middleLeft])
+            @isset($references[$middleRight])
                 <x-reference :reference="$references[$middleRight]"/>
             @endisset
         </div>

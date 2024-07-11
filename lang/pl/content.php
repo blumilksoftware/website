@@ -53,7 +53,7 @@ return [
         ],
         "section_4" => [
             "title_1" => "Case study",
-            "subtitle_1" => "Dowiedz się jak nasze realizacje przekształciły wyzwania klientów w ",
+            "subtitle_1" => "Dowiedz się, jak nasze realizacje przekształciły wyzwania klientów w ",
             "subtitle_2" => "skuteczne rozwiązania.",
             "tile_1" => [
                 "title_1" => "Powiadomienie",

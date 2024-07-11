@@ -9,17 +9,12 @@
             <div class="absolute left-[8%] md:left-[4%] top-20 md:top-28">
                 <x-bubble size="50"/>
             </div>
-            <div class="absolute right-[4%] top-36">
-                <x-bubble size="40"/>
-            </div>
-            <div class="relative top-24">
-                <div class="absolute -right-[6%] md:right-[3%] top-72">
-                    <x-bubble size="90"/>
-                </div>
-            </div>
         </div>
 
-        <section class="flex flex-col-reverse xl:flex-row pt-36 pb-24 px-[10%] md:px-[15%]">
+        <section class="relative flex flex-col-reverse xl:flex-row pt-36 pb-24 px-[10%] md:mx-[15%]">
+            <div class="absolute right-8 md:right-20 xl:right-44 top-16">
+                <x-bubble size="60"/>
+            </div>
             <div class="flex basis-1/2 relative flex-col self-start gap-5">
                 <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:justify-start xl:text-start">
                     <h2 class="font-semibold text-gray-900 leading-snug">{{ __("content.home.section_1.title_1") }}
@@ -37,7 +32,7 @@
                 </div>
             </div>
             <div class="flex basis-1/2 relative self-center">
-                <img src="{{ asset('graphics/web-1.png') }}" class="h-auto w-full aspect-auto object-center shrink-0"
+                <img src="{{ asset('graphics/web-1.png') }}" class="h-auto max-w-2xl w-full aspect-auto object-center shrink-0"
                      alt="placeholder"/>
             </div>
         </section>
@@ -46,10 +41,13 @@
             <div class="text-2xl lg:text-3xl font-semibold text-gray-400">{{ __("content.home.section_2.title_1") }}
                 <span class="text-website-normal">{{ __("content.home.section_2.title_2") }}</span>
             </div>
-            <div class="absolute z-10 hidden lg:block -left-[10%] lg:-left-[3%] top-0">
+            <div class="absolute -z-10 right-14 md:right-28 -top-48">
+                    <x-bubble size="120"/>
+            </div>
+            <div class="absolute -z-10 hidden lg:block -left-[10%] lg:-left-[3%] top-0">
                 <x-bubble size="250"/>
             </div>
-            <div class="absolute z-10 hidden lg:block -right-[10%] lg:right-[5%] -top-8">
+            <div class="absolute -z-10 hidden lg:block -right-[10%] lg:right-[5%] -top-8">
                 <x-bubble size="200"/>
             </div>
             <div class="grid grid-cols-2 md:flex md:flex-row pb-12 text-gray-400 items-center justify-center mt-10 2xl:gap-12">
@@ -77,8 +75,8 @@
         </section>
 
         <section class="relative">
-            <div class="px-[10%] lg:px-[15%] space-y-10 pt-40 pb-28">
-                <div class="pb-14 text-center">
+            <div class="px-[10%] lg:px-[15%] space-y-10 pt-20 lg:pt-40 lg:pb-28">
+                <div class="pb-8 lg:pb-14 text-center">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.home.section_3.title_1") }}</h2>
                     <span class="font-light leading-relaxed text-md lg:text-lg relative">{{ __("content.home.section_3.subtitle_1") }}</span>
                 </div>
@@ -113,20 +111,32 @@
         </section>
 
         <section class="relative">
-            <div class="px-[10%] lg:px-[15%] space-y-4 lg:space-y-10 pt-28 pb-44">
+            <div class="px-[10%] lg:px-[15%] space-y-4 lg:space-y-10 pt-28 pb-28 md:pb-32 lg:pb-44">
                 <div class="pb-8 text-center">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.home.section_4.title_1") }}</h2>
                     <span
-                        class="font-light leading-relaxed text-md lg:text-lg relative">{{ __("content.home.section_4.subtitle_1") }}</span>
+                        class="font-normal leading-relaxed text-md lg:text-lg relative">{{ __("content.home.section_4.subtitle_1") }}</span>
                     <span
                         class="font-bold leading-relaxed text-md lg:text-lg relative">{{ __("content.home.section_4.subtitle_2") }}</span>
                 </div>
-                <div class="flex justify-center">
+                <div class="relative flex justify-center">
+                    <div class="absolute -z-10 -left-10 top-0">
+                        <x-bubble size="140"/>
+                    </div>
+                    <div class="absolute -z-10 -left-4 2xl:left-28 top-44">
+                        <x-bubble size="60"/>
+                    </div>
                     <x-main-case-study/>
+                    <div class="absolute -z-10 -right-8 sm:-right-28 xl:right-0 3xl:right-36 bottom-40 sm:bottom-72">
+                        <x-bubble size="60"/>
+                    </div>
+                    <div class="absolute -z-10 right-8 sm:-right-12 xl:right-24 3xl:right-56 bottom-60 sm:bottom-80">
+                        <x-bubble size="40"/>
+                    </div>
                 </div>
-                <div class="flex justify-center">
+                <div class="flex gap-4 justify-center flex-col sm:flex-row">
                     <x-primary-button href="" class="px-10 bg-website-normal">{{ __("buttons.case_study") }}</x-primary-button>
-                    <x-secondary-button href="{{ route('case-studies') }}" class="px-10">{{ __("buttons.all_projects") }}</x-secondary-button>
+                    <x-secondary-button href="{{ route('case-studies') }}" class="px-10 justify-center">{{ __("buttons.all_projects") }}</x-secondary-button>
                 </div>
             </div>
         </section>
@@ -136,14 +146,14 @@
                 <img src="{{ asset('graphics/shadow.svg') }}" alt="blob"/>
             </div>
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">{{ __("content.home.section_5.title_1") }}</h2>
-            <span class="font-light text-lg lg:text-xl">{{ __("content.home.section_5.subtitle_1") }}</span>
+            <span class="font-normal text-md lg:text-lg">{{ __("content.home.section_5.subtitle_1") }}</span>
             <div class="relative">
                 <div class="mx-auto max-w-7xl px-6 lg:px-8">
                     @if( count($references) )<x-references :references="$references"/>@endisset
                 </div>
             </div>
         </section>
-        <section class="relative px-[10%] md:px-[15%]">
+        <section class="relative px-[10%]">
             <div class="w-full py-12 sm:py-32">
                 <div class="relative isolate overflow-hidden bg-blue-normal py-24 text-center shadow-2xl px-8  rounded-3xl">
                     <img src="{{ asset('graphics/blobs/blob_1.svg') }}" class="absolute -left-44 2xl:-left-16 -bottom-44 xl:-bottom-32" alt="blob"/>
@@ -151,7 +161,7 @@
                     <img src="{{ asset('graphics/blobs/blob_3.svg') }}" class="absolute -z-20 -right-16 2xl:-right-8 3xl:right-0 top-0" alt="blob"/>
                     <img src="{{ asset('graphics/blobs/blob_4.svg') }}" class="absolute -z-20 -bottom-64 2xl:-bottom-44 3xl:-bottom-32 -right-44 xl:right-6 2xl:right-16" alt="blob"/>
                     <h2 class="mx-auto max-w-5xl text-3xl font-bold tracking-tight text-white sm:text-5xl">{{ __("content.home.section_6.title_1") }}</h2>
-                    <p class="mx-auto max-w-5xl mt-6 text-lg leading-8 text-gray-300">{{ __("content.home.section_6.subtitle_1") }}
+                    <p class="mx-auto max-w-7xl mt-6 text-lg leading-8 text-gray-300">{{ __("content.home.section_6.subtitle_1") }}
                         <span class="font-bold text-white">{{ __("content.home.section_6.subtitle_2") }}</span>
                     </p>
                     <div class="mt-10 flex items-center justify-center gap-x-6">
