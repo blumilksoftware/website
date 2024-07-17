@@ -5,7 +5,7 @@
 
 <nav x-data="{ openLang: false, openMobileMenu: false}"
      class="w-auto bg-navigation">
-    <div :class="{'block': ! openMobileMenu, 'hidden': openMobileMenu}"
+    <div :class="{'flex': ! openMobileMenu, 'hidden': openMobileMenu}"
          class="mx-auto flex items-center justify-between px-14 md:px-6 left-0 right-0 py-8 xl:px-[15%] relative">
         <div>
             <a class="tablet:hidden lg:block items-start" href="{{ route("home") }}">
@@ -84,9 +84,9 @@
 
         <button id="hamburgerMenu" class="flex tablet:hidden" @click="openMobileMenu = ! openMobileMenu">
             <i :class="{'block': ! openMobileMenu, 'hidden': openMobileMenu}"
-               class="fa-solid fa-bars hamburger-menu text-2xl text-brand"></i>
+               class="fa-solid fa-bars hamburger-menu text-2xl text-brand block"></i>
             <i :class="{'block': openMobileMenu, 'hidden': ! openMobileMenu}"
-               class="fa-solid fa-xmark text-2xl text-brand"></i>
+               class="fa-solid fa-xmark text-2xl text-brand hidden"></i>
         </button>
     </div>
     <nav :class="{'block': openMobileMenu, 'hidden': ! openMobileMenu}"
@@ -100,7 +100,7 @@
                 </a>
                 <button class="flex md:hidden" @click="openMobileMenu = ! openMobileMenu">
                     <i :class="{'block': openMobileMenu, 'hidden': ! openMobileMenu}"
-                       class="fa-solid fa-xmark text-2xl text-brand"></i>
+                       class="fa-solid fa-xmark text-2xl text-brand hidden"></i>
                 </button>
             </div>
             <div @class([

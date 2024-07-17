@@ -11,7 +11,7 @@
             </div>
         </div>
 
-        <section class="relative flex flex-col-reverse xl:flex-row pt-36 pb-24 px-[10%] md:mx-[15%]">
+        <section class="relative flex flex-col-reverse xl:flex-row pt-36 pb-24 mx-[10%] md:mx-[15%]">
             <div class="absolute right-8 md:right-20 xl:right-44 top-16">
                 <x-bubble size="60"/>
             </div>
@@ -52,7 +52,7 @@
             </div>
             <div class="grid grid-cols-2 md:flex md:flex-row pb-12 text-gray-400 items-center justify-center mt-10 2xl:gap-12">
                 <div class="m-6">
-                    <img src="{{ asset('images/clients/cwup.svg') }}"
+                    <img src="{{ asset('images/clients/simple.svg') }}"
                          class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110"
                          alt="Collegium Witelona"/>
                 </div>
@@ -63,6 +63,11 @@
                 </div>
                 <div class="m-6">
                     <img src="{{ asset('images/clients/kghm.svg') }}"
+                         class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110"
+                         alt="KGHM"/>
+                </div>
+                <div class="m-6">
+                    <img src="{{ asset('images/clients/sklodowscy.svg') }}"
                          class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110"
                          alt="KGHM"/>
                 </div>
@@ -162,7 +167,7 @@
                     <img src="{{ asset('graphics/blobs/blob_4.svg') }}" class="absolute -z-20 -bottom-64 2xl:-bottom-44 3xl:-bottom-32 -right-44 xl:right-6 2xl:right-16" alt="blob"/>
                     <h2 class="mx-auto max-w-5xl text-3xl font-bold tracking-tight text-white sm:text-5xl">{{ __("content.home.section_6.title_1") }}</h2>
                     <p class="mx-auto max-w-7xl mt-6 text-lg leading-8 text-gray-300">{{ __("content.home.section_6.subtitle_1") }}
-                        <span class="font-bold text-white">{{ __("content.home.section_6.subtitle_2") }}</span>
+                        <span class="font-bold text-white block">{{ __("content.home.section_6.subtitle_2") }}</span>
                     </p>
                     <div class="mt-10 flex items-center justify-center gap-x-6">
                         <x-primary-button href="{{ route('contact') }}" class="px-16 bg-blue-dark opacity-80">
