@@ -14,7 +14,7 @@ module.exports = {
       'tablet': '850px',
       'lg': '1024px',
       'xl': '1280px',
-      '2xl': '1536px', //ta szerokosc ok
+      '2xl': '1536px',
       '3xl': '1921px',
       '4xl': '2560px',
     },
