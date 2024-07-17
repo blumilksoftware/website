@@ -82,11 +82,9 @@
             </div>
         </div>
 
-        <button id="hamburgerMenu" class="flex tablet:hidden" @click="openMobileMenu = ! openMobileMenu">
+        <button class="flex tablet:hidden" @click="openMobileMenu = ! openMobileMenu">
             <i :class="{'block': ! openMobileMenu, 'hidden': openMobileMenu}"
-               class="fa-solid fa-bars hamburger-menu text-2xl text-brand block"></i>
-            <i :class="{'block': openMobileMenu, 'hidden': ! openMobileMenu}"
-               class="fa-solid fa-xmark text-2xl text-brand hidden"></i>
+               class="fa-solid fa-bars text-2xl text-brand block"></i>
         </button>
     </div>
     <nav :class="{'block': openMobileMenu, 'hidden': ! openMobileMenu}"
@@ -98,7 +96,7 @@
                 <a class="items-start" href="{{ route("home") }}">
                     <img class="w-32 shrink-0" src="{{ asset('identification/logo.svg') }}" alt="Blumilk"/>
                 </a>
-                <button class="flex tablet:hidden" @click="openMobileMenu = ! openMobileMenu">
+                <button @click="openMobileMenu = ! openMobileMenu">
                     <i :class="{'block': openMobileMenu, 'hidden': ! openMobileMenu}"
                        class="fa-solid fa-xmark text-2xl text-brand hidden"></i>
                 </button>
