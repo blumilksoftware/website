@@ -1,6 +1,8 @@
 @extends("layout.public")
+
 @section("title", $activity->title)
 @section("description", $activity->subtitle)
+
 @section("content")
     <meta property="og:url"                content="https://blumilk.pl/pl/aktywnosci/{{ $activity->slug }}" />
     <meta property="og:type"               content="article" />

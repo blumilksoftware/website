@@ -1,6 +1,8 @@
 @extends("layout.public")
+
 @section("title", __("meta.home.title"))
 @section("description", __("meta.home.description"))
+
 @section("content")
     <section class="relative overflow-hidden">
         <div class="relative md:block">
