@@ -1,4 +1,4 @@
-<div class="relative flex place-content-center">
+<div class="relative flex mx-auto max-w-4xl place-content-center">
     <div class="size-40 absolute hidden lg:grid lg:-left-32 2xl:-left-44 top-0 grid-cols-3 grid-rows-3 gap-6 place-items-center">
             <div class="bg-blue-light rounded-lg p-2"> <x-icons.crop-rotate/> </div>
             <div class="bg-blue-light rounded-lg p-2"> <x-icons.add-lens/> </div>
