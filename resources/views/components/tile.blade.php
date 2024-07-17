@@ -3,7 +3,7 @@
              alt="{{ $alt }}">
     <div class="2xl:mt-2 text-center 2xl:text-left">
         <span class="font-semibold text-md block pb-2">
-            {{ $title }}
+            {!! $title !!}
         </span>
         <span class="font-normal text-gray-400 text-sm">
             {{ $description }}

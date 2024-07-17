@@ -39,7 +39,7 @@ return [
                 "subtitle" => "We help companies in the digital transformation of their business.",
             ],
             "tile_4" => [
-                "title" => "R+D projects",
+                "title" => "R&D projects",
                 "subtitle" => "We engage in a wide range of popular research topics.",
             ],
             "tile_5" => [
