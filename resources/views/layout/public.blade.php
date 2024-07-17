@@ -2,7 +2,7 @@
 <html lang="{{ App::currentLocale() }}">
 
 <head>
-    <title>Blumilk - @yield('title')</title>
+    <title>@yield('title') - Blumilk</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="description" content=@yield('description')>
