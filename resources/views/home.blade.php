@@ -51,31 +51,13 @@
                 <x-bubble size="200"/>
             </div>
             <div class="grid grid-cols-2 md:flex md:flex-row pb-12 text-gray-400 items-center justify-center mt-10 2xl:gap-12 2xl:max-w-7xl 2xl:mx-auto">
-                <div class="m-6">
-                    <img src="{{ asset('images/clients/simple.svg') }}"
-                         class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110"
-                         alt="Collegium Witelona"/>
-                </div>
-                <div class="m-6 items-center">
-                    <img src="{{ asset('images/clients/insly.svg') }}"
-                         class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110"
-                         alt="Insly"/>
-                </div>
-                <div class="m-6">
-                    <img src="{{ asset('images/clients/kghm.svg') }}"
-                         class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110"
-                         alt="KGHM"/>
-                </div>
-                <div class="m-6">
-                    <img src="{{ asset('images/clients/sklodowscy.svg') }}"
-                         class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110"
-                         alt="KGHM"/>
-                </div>
-                <div class="m-6">
-                    <img src="{{ asset('images/clients/vita.svg') }}"
-                         class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110"
-                         alt="Vita Plus"/>
-                </div>
+                @foreach ($clients as $client)
+                    <div class="m-6">
+                        <img src="{{ asset($client['src']) }}"
+                             class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110"
+                             alt="{{ $client['alt'] }}"/>
+                    </div>
+                @endforeach
             </div>
         </section>
 
