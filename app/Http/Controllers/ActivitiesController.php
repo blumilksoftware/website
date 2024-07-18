@@ -39,8 +39,11 @@ class ActivitiesController extends Controller
             ->with("selectedTag", $tag?->title);
     }
 
-    public function get(Factory $factory, string $slug): View
+    public function get(Request $request, Factory $factory, string $slug): View
     {
+        $urlPath = $request->getRequestUri();
+        $articleUrl = "https://blumilk.pl" . $urlPath;
+
         $activity = Activity::query()->where("slug", $slug)->firstOrFail();
         $activityTags = $activity->getRelatedTagModels();
 
@@ -59,6 +62,7 @@ class ActivitiesController extends Controller
             ->with("activity", new ActivityResource($activity))
             ->with("tags", TagResource::collection($activityTags->where("as_person", false))->resolve())
             ->with("peopleTags", TagResource::collection($activityTags->where("as_person", true))->resolve())
-            ->with("recommendedActivities", ActivityResource::collection($recommendedActivities)->resolve());
+            ->with("recommendedActivities", ActivityResource::collection($recommendedActivities)->resolve())
+            ->with("articleUrl", $articleUrl);
     }
 }

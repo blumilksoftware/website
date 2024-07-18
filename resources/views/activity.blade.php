@@ -3,11 +3,6 @@
 @section("title", $activity->title)
 @section("description", $activity->subtitle)
 
-@php
-    $urlPath = request()->getRequestUri();
-    $articleUrl = "https://blumilk.pl".$urlPath;
-@endphp
-
 @section("content")
     <meta property="og:url" content="{{ $articleUrl }}" />
     <meta property="og:type" content="article" />
