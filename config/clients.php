@@ -5,7 +5,7 @@ declare(strict_types=1);
 return [
     [
         "src" => "images/clients/simple.svg",
-        "alt" => "Collegium Witelona",
+        "alt" => "Simple",
     ],
     [
         "src" => "images/clients/insly.svg",
@@ -13,11 +13,11 @@ return [
     ],
     [
         "src" => "images/clients/kghm.svg",
-        "alt" => "KGHM",
+        "alt" => "KGHM Centrum Analityki",
     ],
     [
         "src" => "images/clients/sklodowscy.svg",
-        "alt" => "Sklodowscy",
+        "alt" => "Skłodowscy",
     ],
     [
         "src" => "images/clients/vita.svg",
