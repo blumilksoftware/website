@@ -5,8 +5,8 @@
 
 <nav x-data="{ openLang: false, openMobileMenu: false}"
      class="w-auto bg-navigation">
-    <div :class="{'block': ! openMobileMenu, 'hidden': openMobileMenu}"
-         class="mx-auto flex items-center justify-between px-14 md:px-6 left-0 right-0 py-8 xl:px-[15%] relative">
+    <div :class="{'flex': ! openMobileMenu, 'hidden': openMobileMenu}"
+         class="flex items-center justify-between px-14 md:px-6 2xl:px-0 py-8 relative mx-auto max-w-7xl">
         <div>
             <a class="tablet:hidden lg:block items-start" href="{{ route("home") }}">
                 <img class="w-32 shrink-0" src="{{ asset('identification/logo.svg') }}" alt="Blumilk"/>
@@ -15,8 +15,8 @@
                 <img class="h-8" src="{{ asset('identification/sygnet.svg') }}" alt="Blumilk"/>
             </a>
         </div>
-        <div class="tablet:flex hidden justify-center items-center text-sm 3xl:text-lg">
-            <p class="font-medium flex items-center text-center gap-2">
+        <div class="tablet:flex hidden justify-center items-center text-sm 3xl:text-md">
+            <div class="font-medium flex items-center text-center gap-2">
                 <a href="{{ route('about') }}"
                    @class([
                         'hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2',
@@ -47,7 +47,7 @@
                         'hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2',
                         'bg-website-extra_light text-website-normal' => Str::contains($current, 'contact')])>{{ __("content.pages.contact") }}
                 </a>
-            </p>
+            </div>
         </div>
         <div class="tablet:flex hidden gap-4">
             <div class="items-center">
@@ -82,25 +82,23 @@
             </div>
         </div>
 
-        <button id="hamburgerMenu" class="flex tablet:hidden" @click="openMobileMenu = ! openMobileMenu">
+        <button class="flex tablet:hidden" @click="openMobileMenu = ! openMobileMenu">
             <i :class="{'block': ! openMobileMenu, 'hidden': openMobileMenu}"
-               class="fa-solid fa-bars hamburger-menu text-2xl text-brand"></i>
-            <i :class="{'block': openMobileMenu, 'hidden': ! openMobileMenu}"
-               class="fa-solid fa-xmark text-2xl text-brand"></i>
+               class="fa-solid fa-bars text-2xl text-brand block"></i>
         </button>
     </div>
     <nav :class="{'block': openMobileMenu, 'hidden': ! openMobileMenu}"
-         class="w-full h-screen px-14 right-0 md:hidden flex flex-col justify-between font-semibold text-xl sm:text-2xl text-start items-start"
+         class="w-full h-screen px-14 right-0 tablet:hidden flex flex-col justify-between font-semibold text-xl sm:text-2xl text-start items-start"
          x-trap.noscroll="openMobileMenu">
 
         <div class="w-full">
             <div class="flex items-center justify-between left-0 right-0 py-8 xl:px-[15%] relative">
-                <a class="md:hidden tablet:block items-start" href="{{ route("home") }}">
+                <a class="items-start" href="{{ route("home") }}">
                     <img class="w-32 shrink-0" src="{{ asset('identification/logo.svg') }}" alt="Blumilk"/>
                 </a>
-                <button class="flex md:hidden" @click="openMobileMenu = ! openMobileMenu">
+                <button @click="openMobileMenu = ! openMobileMenu">
                     <i :class="{'block': openMobileMenu, 'hidden': ! openMobileMenu}"
-                       class="fa-solid fa-xmark text-2xl text-brand"></i>
+                       class="fa-solid fa-xmark text-2xl text-brand hidden"></i>
                 </button>
             </div>
             <div @class([

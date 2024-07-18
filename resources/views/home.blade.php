@@ -11,7 +11,7 @@
             </div>
         </div>
 
-        <section class="relative flex flex-col-reverse xl:flex-row pt-36 pb-24 px-[10%] md:mx-[15%]">
+        <section class="relative flex flex-col-reverse xl:flex-row pt-36 pb-24 mx-[10%] md:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
             <div class="absolute right-8 md:right-20 xl:right-44 top-16">
                 <x-bubble size="60"/>
             </div>
@@ -31,7 +31,7 @@
                                       class="px-12 -ml-1 shadow-xl bg-website-normal">{{ __("buttons.about") }}</x-primary-button>
                 </div>
             </div>
-            <div class="flex basis-1/2 relative self-center">
+            <div class="flex basis-1/2 relative place-content-center xl:place-content-end">
                 <img src="{{ asset('graphics/web-1.png') }}" class="h-auto max-w-2xl w-full aspect-auto object-center shrink-0"
                      alt="placeholder"/>
             </div>
@@ -50,32 +50,19 @@
             <div class="absolute -z-10 hidden lg:block -right-[10%] lg:right-[5%] -top-8">
                 <x-bubble size="200"/>
             </div>
-            <div class="grid grid-cols-2 md:flex md:flex-row pb-12 text-gray-400 items-center justify-center mt-10 2xl:gap-12">
-                <div class="m-6">
-                    <img src="{{ asset('images/clients/cwup.svg') }}"
-                         class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110"
-                         alt="Collegium Witelona"/>
-                </div>
-                <div class="m-6 items-center">
-                    <img src="{{ asset('images/clients/insly.svg') }}"
-                         class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110"
-                         alt="Insly"/>
-                </div>
-                <div class="m-6">
-                    <img src="{{ asset('images/clients/kghm.svg') }}"
-                         class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110"
-                         alt="KGHM"/>
-                </div>
-                <div class="m-6">
-                    <img src="{{ asset('images/clients/vita.svg') }}"
-                         class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110"
-                         alt="Vita Plus"/>
-                </div>
+            <div class="grid grid-cols-2 md:flex md:flex-row pb-12 text-gray-400 items-center justify-center mt-10 2xl:gap-12 2xl:max-w-7xl 2xl:mx-auto">
+                @foreach ($clients as $client)
+                    <div class="m-6">
+                        <img src="{{ asset($client['src']) }}"
+                             class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110"
+                             alt="{{ $client['alt'] }}"/>
+                    </div>
+                @endforeach
             </div>
         </section>
 
         <section class="relative">
-            <div class="px-[10%] lg:px-[15%] space-y-10 pt-20 lg:pt-40 lg:pb-28">
+            <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-10 pt-20 lg:pt-40 lg:pb-28">
                 <div class="pb-8 lg:pb-14 text-center">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.home.section_3.title_1") }}</h2>
                     <span class="font-light leading-relaxed text-md lg:text-lg relative">{{ __("content.home.section_3.subtitle_1") }}</span>
@@ -110,8 +97,8 @@
             </div>
         </section>
 
-        <section class="relative">
-            <div class="px-[10%] lg:px-[15%] space-y-4 lg:space-y-10 pt-28 pb-28 md:pb-32 lg:pb-44">
+        <section class="relative mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
+            <div class="relative pt-28 pb-28 md:pb-32 lg:pb-44">
                 <div class="pb-8 text-center">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.home.section_4.title_1") }}</h2>
                     <span
@@ -119,18 +106,20 @@
                     <span
                         class="font-bold leading-relaxed text-md lg:text-lg relative">{{ __("content.home.section_4.subtitle_2") }}</span>
                 </div>
-                <div class="relative flex justify-center">
-                    <div class="absolute -z-10 -left-10 top-0">
+
+                <x-main-case-study/>
+
+                <div>
+                    <div class="absolute -z-10 -left-64 top-28">
                         <x-bubble size="140"/>
                     </div>
-                    <div class="absolute -z-10 -left-4 2xl:left-28 top-44">
+                    <div class="absolute -z-10 -left-4 2xl:-left-24 top-64">
                         <x-bubble size="60"/>
                     </div>
-                    <x-main-case-study/>
-                    <div class="absolute -z-10 -right-8 sm:-right-28 xl:right-0 3xl:right-36 bottom-40 sm:bottom-72">
+                    <div class="absolute -z-10 -right-8 sm:-right-28 xl:right-0 3xl:right-0 bottom-40 sm:bottom-[400px]">
                         <x-bubble size="60"/>
                     </div>
-                    <div class="absolute -z-10 right-8 sm:-right-12 xl:right-24 3xl:right-56 bottom-60 sm:bottom-80">
+                    <div class="absolute -z-10 right-8 sm:-right-12 xl:right-12 3xl:right-32 bottom-60 sm:bottom-[450px]">
                         <x-bubble size="40"/>
                     </div>
                 </div>
@@ -139,6 +128,7 @@
                     <x-secondary-button href="{{ route('case-studies') }}" class="px-10 justify-center">{{ __("buttons.all_projects") }}</x-secondary-button>
                 </div>
             </div>
+
         </section>
 
         <section @class([ 'hidden' => $references->isEmpty(), 'px-[10%] md:px-[15%] text-center items-center sm:pb-16 relative' ])>
@@ -153,7 +143,7 @@
                 </div>
             </div>
         </section>
-        <section class="relative px-[10%]">
+        <section class="relative mx-[10%] 2xl:max-w-[1500px] 2xl:mx-auto">
             <div class="w-full py-12 sm:py-32">
                 <div class="relative isolate overflow-hidden bg-blue-normal py-24 text-center shadow-2xl px-8  rounded-3xl">
                     <img src="{{ asset('graphics/blobs/blob_1.svg') }}" class="absolute -left-44 2xl:-left-16 -bottom-44 xl:-bottom-32" alt="blob"/>
@@ -162,7 +152,7 @@
                     <img src="{{ asset('graphics/blobs/blob_4.svg') }}" class="absolute -z-20 -bottom-64 2xl:-bottom-44 3xl:-bottom-32 -right-44 xl:right-6 2xl:right-16" alt="blob"/>
                     <h2 class="mx-auto max-w-5xl text-3xl font-bold tracking-tight text-white sm:text-5xl">{{ __("content.home.section_6.title_1") }}</h2>
                     <p class="mx-auto max-w-7xl mt-6 text-lg leading-8 text-gray-300">{{ __("content.home.section_6.subtitle_1") }}
-                        <span class="font-bold text-white">{{ __("content.home.section_6.subtitle_2") }}</span>
+                        <span class="font-bold text-white block">{{ __("content.home.section_6.subtitle_2") }}</span>
                     </p>
                     <div class="mt-10 flex items-center justify-center gap-x-6">
                         <x-primary-button href="{{ route('contact') }}" class="px-16 bg-blue-dark opacity-80">

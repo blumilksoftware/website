@@ -61,24 +61,24 @@ switch (count($references)) {
     </figure>
     @endisset
     <div class="space-y-0 xl:contents xl:space-y-0">
-        <div class="space-y-8 xl:row-span-2">
+        <div class="space-y-8 xl:row-span-2 m-2">
             @isset($references[$topLeft])
                 <x-reference :reference="$references[$topLeft]"/>
             @endisset
         </div>
-        <div class="space-y-8 xl:row-start-1">
+        <div class="space-y-8 xl:row-start-1 m-2">
             @isset($references[$middleLeft])
                 <x-reference :reference="$references[$middleLeft]"/>
             @endisset
         </div>
     </div>
     <div class="space-y-0 xl:contents xl:space-y-0">
-        <div class="space-y-8 xl:row-start-1">
+        <div class="space-y-8 xl:row-start-1 m-2">
             @isset($references[$middleRight])
                 <x-reference :reference="$references[$middleRight]"/>
             @endisset
         </div>
-        <div class="space-y-8 xl:row-span-2">
+        <div class="space-y-8 xl:row-span-2 m-2">
             @isset($references[$topRight])
                 <x-reference :reference="$references[$topRight]"/>
             @endisset
