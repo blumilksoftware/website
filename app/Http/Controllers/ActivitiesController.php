@@ -42,7 +42,7 @@ class ActivitiesController extends Controller
     public function get(Request $request, Factory $factory, string $slug): View
     {
         $urlPath = $request->getRequestUri();
-        $articleUrl = "https://blumilk.pl" . $urlPath;
+        $articleUrl = config("app.url") . $urlPath;
 
         $activity = Activity::query()->where("slug", $slug)->firstOrFail();
         $activityTags = $activity->getRelatedTagModels();
