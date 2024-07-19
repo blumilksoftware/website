@@ -1,6 +1,15 @@
 @extends("layout.public")
 
+@section("title", $activity->title)
+@section("description", $activity->subtitle)
+
 @section("content")
+    <meta property="og:url" content="{{ $articleUrl }}" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="{{ $activity->title }}" />
+    <meta property="og:description" content="{{ $activity->subtitle }}" />
+    <meta property="og:image" content="https://blumilk.pl/storage/{{ $activity->photo }}" />
+
     <div class="relative md:block -z-10">
         <div class="absolute -left-[6%] md:left-[1%] top-28 md:top-40">
             <x-bubble size="80"/>

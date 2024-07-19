@@ -1,5 +1,8 @@
 @extends("layout.public")
 
+@section("title", __("meta.privacy-policy.title"))
+@section("description", __("meta.privacy-policy.description"))
+
 @section("content")
     <div class="relative md:block -z-10">
         <div class="absolute -left-[15%] sm:-left-[8%] md:-left-[2%] xl:-left-[1%]  top-16 md:top-30">
