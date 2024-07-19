@@ -9,7 +9,7 @@ return [
     ],
     "about" => [
         "title" => "O firmie",
-        "description" => "Jesteśmy pasjonatami tworzenia aplikacji web/mobile oraz zaawansowanych projektów B+R.. Zmieniamy koncepcje w działające rozwiązania.",
+        "description" => "Jesteśmy pasjonatami tworzenia aplikacji web/mobile oraz zaawansowanych projektów B+R. Zmieniamy koncepcje w działające rozwiązania.",
     ],
     "case-studies" => [
         "title" => "Case studies",
@@ -29,7 +29,7 @@ return [
     ],
     "contact" => [
         "title" => "Kontakt",
-        "description" => "Jeśli szukasz rozwiązania dostosowanego do Twoich unikalnych potrzeb, jesteśmy dla Ciebie! Czekamy na Twoją wiadomość!",
+        "description" => "Jeśli szukasz rozwiązania idealnie dostosowanego do Twoich potrzeb, jesteśmy dla Ciebie! Czekamy na Twoją wiadomość!",
     ],
     "activities" => [
         "title" => "Aktywności",

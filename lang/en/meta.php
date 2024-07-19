@@ -29,7 +29,7 @@ return [
     ],
     "contact" => [
         "title" => "Contact",
-        "description" => "If you are looking for a solution tailored to your unique needs, we are here for you! We are waiting for your message!",
+        "description" => "If you are looking for a solution perfectly tailored to your needs, we are here for you! We are waiting for your message!",
     ],
     "activities" => [
         "title" => "Activities",
