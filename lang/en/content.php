@@ -13,10 +13,10 @@ return [
     ],
     "home" => [
         "section_1" => [
-            "title_1" => "Software",
-            "title_2" => "tailored",
-            "title_3" => "to your needs",
-            "subtitle_1" => "We are passionate about creating web/mobile applications and advanced R&D projects.",
+            "title_1" => "Software tailored to",
+            "title_2" => "your",
+            "title_3" => "needs",
+            "subtitle_1" => "We are passionate about creating web and mobile applications, AI implementations and advanced R&D projects.",
             "subtitle_2" => "We turn concepts into working solutions.",
         ],
         "section_2" => [
@@ -47,7 +47,7 @@ return [
                 "subtitle" => "We design intuitive interfaces that make using them easy and pleasant.",
             ],
             "tile_6" => [
-                "title" => "Use of AI",
+                "title" => "AI implementations",
                 "subtitle" => "We offer clients optimization of activities using AI.",
             ],
         ],
@@ -135,10 +135,10 @@ return [
         "section_2" => [
             "title_1" => "Benefits",
             "subtitle_1" => "For each team member, we provide not only interesting projects, but also a benefits package.",
-            "benefit_1" => "Flexible working hours",
+            "benefit_1" => "Flexible working hours and hybrid work",
             "benefit_2" => "English with a native speaker",
-            "benefit_3" => "Private medical care",
-            "benefit_4" => "Multisport",
+            "benefit_3" => "Private medical care and insurance",
+            "benefit_4" => "Multisport card",
             "benefit_5" => "Fruit Tuesdays",
             "benefit_6" => "Daily dose of memes",
         ],
