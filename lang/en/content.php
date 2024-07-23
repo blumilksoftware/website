@@ -138,7 +138,7 @@ return [
             "benefit_1" => "Flexible working hours and hybrid work",
             "benefit_2" => "English with a native speaker",
             "benefit_3" => "Private medical care and insurance",
-            "benefit_4" => "Multisport card",
+            "benefit_4" => "MultiSport card",
             "benefit_5" => "Fruit Tuesdays",
             "benefit_6" => "Daily dose of memes",
         ],
