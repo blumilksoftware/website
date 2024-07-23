@@ -14,15 +14,16 @@
             </div>
         </div>
 
-        <section class="relative flex flex-col-reverse xl:flex-row pt-36 pb-24 mx-[10%] md:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
+        <section class="relative flex flex-col-reverse xl:flex-row pt-36 pb-24 mx-[10%] md:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto gap-12">
             <div class="absolute right-8 md:right-20 xl:right-44 top-16">
                 <x-bubble size="60"/>
             </div>
             <div class="flex basis-1/2 relative flex-col self-start gap-5">
                 <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:justify-start xl:text-start">
-                    <h2 class="font-semibold text-gray-900 leading-snug">{{ __("content.home.section_1.title_1") }}
-                        <span class="text-website-normal block"> {{__("content.home.section_1.title_2")}} </span>
-                        {{ __("content.home.section_1.title_3") }}
+                    <h2 class="font-semibold text-gray-900">
+                        <span class="inline">{{ __("content.home.section_1.title_1") }}</span>
+                        <span class="text-website-normal inline"> {{ __("content.home.section_1.title_2") }} </span>
+                        <span class="inline">{{ __("content.home.section_1.title_3") }}</span>
                     </h2>
                 </div>
                 <div class="flex flex-col items-center xl:items-start">
@@ -45,7 +46,7 @@
                 <span class="text-website-normal">{{ __("content.home.section_2.title_2") }}</span>
             </div>
             <div class="absolute -z-10 right-14 md:right-28 -top-48">
-                    <x-bubble size="120"/>
+                <x-bubble size="120"/>
             </div>
             <div class="absolute -z-10 hidden lg:block -left-[10%] lg:-left-[3%] top-0">
                 <x-bubble size="250"/>
@@ -76,10 +77,10 @@
                             alt="benefit-1"
                             title="{{ __('content.home.section_3.tile_1.title') }}"
                             description="{{ __('content.home.section_3.tile_1.subtitle') }}"/>
-                    <x-tile image="{{ asset('graphics/services/file.svg') }}"
+                    <x-tile image="{{ asset('graphics/services/robot.svg') }}"
                             alt="benefit-1"
-                            title="{{ __('content.home.section_3.tile_2.title') }}"
-                            description="{{ __('content.home.section_3.tile_2.subtitle') }}"/>
+                            title="{{ __('content.home.section_3.tile_6.title') }}"
+                            description="{{ __('content.home.section_3.tile_6.subtitle') }}"/>
                     <x-tile image="{{ asset('graphics/services/web.svg') }}"
                             alt="benefit-1"
                             title="{{ __('content.home.section_3.tile_3.title') }}"
@@ -92,14 +93,15 @@
                             alt="benefit-1"
                             title="{{ __('content.home.section_3.tile_5.title') }}"
                             description="{{ __('content.home.section_3.tile_5.subtitle') }}"/>
-                    <x-tile image="{{ asset('graphics/services/robot.svg') }}"
+                    <x-tile image="{{ asset('graphics/services/file.svg') }}"
                             alt="benefit-1"
-                            title="{{ __('content.home.section_3.tile_6.title') }}"
-                            description="{{ __('content.home.section_3.tile_6.subtitle') }}"/>
+                            title="{{ __('content.home.section_3.tile_2.title') }}"
+                            description="{{ __('content.home.section_3.tile_2.subtitle') }}"/>
                 </div>
             </div>
         </section>
 
+        <!-- TODO: Update case study -->
         <section class="relative mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
             <div class="relative pt-28 pb-28 md:pb-32 lg:pb-44">
                 <div class="pb-8 text-center">
