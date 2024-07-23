@@ -138,7 +138,7 @@ return [
             "benefit_1" => "Elastyczne godziny i hybrydowy tryb pracy",
             "benefit_2" => "Język angielski z native speakerem",
             "benefit_3" => "Prywatna opieka medyczna i ubezpieczenie",
-            "benefit_4" => "Karta Multisport",
+            "benefit_4" => "Karta MultiSport",
             "benefit_5" => "Owocowe wtorki",
             "benefit_6" => "Dzienna dawka memów",
         ],
