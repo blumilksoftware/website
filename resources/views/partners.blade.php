@@ -1,46 +1,5 @@
 @extends("layout.public")
 
 @section("content")
-    <div class="divide-y divide-dashed divide-black">
-        <div>
-            @include("components.sections.hero-section.desktop")
-        </div>
-        <div>
-            @include("components.sections.hero-section.gallery")
-        </div>
-        <div>
-            @include("components.sections.hero-section.mobile")
-        </div>
-        <div>
-            @include("components.sections.stack.simple")
-        </div>
-        <div>
-            @include("components.sections.stack.with-text")
-        </div>
-        <div>
-            @include("components.sections.features.three-column")
-        </div>
-        <div>
-            @include("components.sections.features.two-column")
-        </div>
-        <div>
-            @include("components.sections.testimonials.small")
-        </div>
-        <div>
-            @include("components.sections.testimonials.big")
-        </div>
-        <div>
-            @include("components.sections.testimonials.large")
-        </div>
-        <div>
-            @include("components.sections.stats.numbers")
-        </div>
-        <div>
-            @include("components.sections.stats.timeline")
-        </div>
-        <div>
-            @include("components.sections.stats.with-description")
-        </div>
-    </div>
-
+    @include("case-studies.k1")
 @endsection

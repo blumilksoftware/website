@@ -45,6 +45,7 @@ module.exports = {
           dark: '#044088',
           light: '#015FC8',
         },
+        k1: '#FF5555',
       },
       fontFamily: {
         sora: ['Sora', 'sans-serif'],
