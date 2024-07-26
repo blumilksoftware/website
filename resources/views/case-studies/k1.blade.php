@@ -1,126 +1,89 @@
-@php
-$functionalities = [
-    [
-        "icon" => "subtask",
-        "title" => "Zarządzanie",
-        "description" => "programowaniem znajdujących się na komputerach uczelnianych",
-    ],
-    [
-        "icon" => "heart-rate-monitor",
-        "title" => "Monitorowanie",
-        "description" => "liczby przypisanych licencji z możliwością blokady ich instalacji ponad ten stan",
-    ],
-    [
-        "icon" => "users",
-        "title" => "Zarządzanie użytkownikami",
-        "description" => "szeroki zakres możliwości zarządzania",
-    ],
-    [
-        "icon" => "list",
-        "title" => "Synchronizacja listy",
-        "description" => "sal, komputerów i harmonogramów z zewnątrz",
-    ],
-    [
-        "icon" => "calendar-plus",
-        "title" => "Tworzenie harmonogramów",
-        "description" => "możliwość ręcznego tworzenia harmonogramu wraz z listą udostępnianych programów,",
-    ]
-];
-
-@endphp
-
 @extends("layout.case-study")
 
 @section("case-study-content")
     <x-case-studies.title>
-        <span class="text-k1 mt-4">System zarządzania</span>
-        licencjami i dystrybucji oprogramowania
+        <span class="text-k1 mt-4"> {{ __("case_studies.k1.title_1") }} </span>{{ __("case_studies.k1.title_2") }}
     </x-case-studies.title>
 
     <x-case-studies.main-image src="{{ asset('images/case-studies/k1/laptop_1.svg') }}" alt="K1" />
 
-    <x-case-studies.description>
-        System do zarządzania oprogramowaniem znajdującym się na komputerach uczelnianych
-        na podstawie zdefiniowanych reguł i harmonogramów, z uwzględnieniem licencji oprogramowania.
-    </x-case-studies.description>
-
-{{--    <x-case-studies.tiles title="Wyzwania" :tiles="$challenges" />--}}
+    <x-case-studies.description>{{ __("case_studies.k1.project_description") }}</x-case-studies.description>
 
     <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-screen-2xl 2xl:mx-auto space-y-10 py-20 text-center">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8"> Wyzwania </h2>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">  {{ __("case_studies.challenges") }}  </h2>
         <div class="grid md:grid-cols-2 xl:grid-cols-6 gap-4 2xl:gap-10 place-items-center xl:place-items-stretch">
-            <x-tile title="Zapewnienie bezpieczeństwa danych"
-                    description="lorem ipsum tutaj potrzebujemy zdanie uzupełniające"
+            <x-tile title="{{ __('case_studies.k1.challenges.challenge_1.title') }}"
+                    description="{{ __('case_studies.k1.challenges.challenge_1.description') }}"
                     class="xl:col-span-2 size-full">
                     <x-icons.shield-check accent="stroke-k1"/>
             </x-tile>
 
-            <x-tile title="Implementacja modelu przywilejów i ról"
-                    description="zapewniający właściwy rozdział uprawnień"
+            <x-tile title="{{ __('case_studies.k1.challenges.challenge_2.title') }}"
+                    description="{{ __('case_studies.k1.challenges.challenge_2.description') }}"
                     class="xl:col-span-2 size-full">
                     <x-icons.user-check accent="stroke-k1"/>
             </x-tile>
 
-            <x-tile title="Kontrola i nadzór maszyn klienckich"
-                    description="dopuszczonych do funkcjonowania w systemie"
+            <x-tile title="{{ __('case_studies.k1.challenges.challenge_3.title') }}"
+                    description="{{ __('case_studies.k1.challenges.challenge_3.description') }}"
                     class="xl:col-span-2 size-full">
                     <x-icons.devices accent="stroke-k1"/>
             </x-tile>
 
-            <x-tile title="Uruchamianie dostarczanych aplikacji"
-                    description="bez konieczności ich instalacji w systemie operacyjnym"
+            <x-tile title="{{ __('case_studies.k1.challenges.challenge_4.title') }}"
+                    description="{{ __('case_studies.k1.challenges.challenge_4.description') }}"
                     class="xl:col-span-3 xl:max-w-[345px] 2xl:max-w-[485px] xl:place-self-end size-full">
                     <x-icons.app-window accent="stroke-k1"/>
             </x-tile>
 
-            <x-tile title="Interfejs użytkownika"
-                    description="czytelny i intuicyjny"
+            <x-tile title="{{ __('case_studies.k1.challenges.challenge_5.title') }}"
+                    description="{{ __('case_studies.k1.challenges.challenge_5.description') }}"
                     class="md:col-span-2 xl:col-span-3 xl:max-w-[345px] 2xl:max-w-[485px] xl:place-self-start size-full">
                     <x-icons.photo-scan accent="stroke-k1"/>
             </x-tile>
         </div>
     </section>
 
-    <x-case-studies.color-palette description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos"
-                                  primary="#FF5555" secondary="#000000" surface="#F7F6F9" text="#FFFFFF"/>
+    <x-case-studies.color-palette description="{{ __('case_studies.k1.colors_description') }}"
+                                  primary-bg="#FF5555" primary-text="#FFFFFF"
+                                  secondary-bg="#000000" secondary-text="#FFFFFF"
+                                  surface-bg="#F7F6F9" surface-text="#000000"
+                                  text-bg="#FFFFFF" text-color="#000000"/>
 
-    <x-case-studies.typography font="Sora" description="
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos"/>
+    <x-case-studies.typography font="Sora" description="{{ __('case_studies.k1.typography_description') }}"/>
 
     <x-case-studies.image src="{{ asset('images/case-studies/k1/laptop_2.svg') }}" alt="K1" />
 
     <div class="py-40">
-        <x-case-studies.title> Sitemap </x-case-studies.title>
+        <x-case-studies.title>{{ __("case_studies.sitemap") }}</x-case-studies.title>
         <x-case-studies.image src="{{ asset('images/case-studies/k1/sitemap.png') }}" alt="sitemap K1" margin="true" />
-
     </div>
 
-{{--    <x-case-studies.tiles title="Funkcjonalności" :tiles="$functionalities"/>--}}
     <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-screen-2xl 2xl:mx-auto space-y-10 py-20 text-center">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8"> Funkcjonalności </h2>
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">  {{ __("case_studies.key_functionalities") }}  </h2>
         <div class="grid md:grid-cols-2 xl:grid-cols-6 gap-4 2xl:gap-10 place-items-center xl:place-items-stretch">
-            <x-tile title="Zarządzanie"
-                    description="programowaniem znajdujących się na komputerach uczelnianych"
+            <x-tile title="{{ __('case_studies.k1.functionalities.functionality_1.title') }}"
+                    description="{{ __('case_studies.k1.functionalities.functionality_1.description') }}"
                     class="xl:col-span-2 size-full">
                 <x-icons.subtask accent="stroke-k1" />
             </x-tile>
-            <x-tile title="Monitorowanie"
-                    description="liczby przypisanych licencji z możliwością blokady ich instalacji ponad ten stan"
+            <x-tile title="{{ __('case_studies.k1.functionalities.functionality_2.title') }}"
+                    description="{{ __('case_studies.k1.functionalities.functionality_2.description') }}"
                     class="xl:col-span-2 size-full">
                 <x-icons.heart-rate-monitor accent="stroke-k1" />
             </x-tile>
-            <x-tile title="Zarządzanie użytkownikami"
-                    description="szeroki zakres możliwości zarządzania"
+            <x-tile title="{{ __('case_studies.k1.functionalities.functionality_3.title') }}"
+                    description="{{ __('case_studies.k1.functionalities.functionality_3.description') }}"
                     class="xl:col-span-2 size-full">
                 <x-icons.users accent="stroke-k1" />
             </x-tile>
-            <x-tile title="Synchronizacja listy"
-                    description="sal, komputerów i harmonogramów z zewnątrz"
+            <x-tile title="{{ __('case_studies.k1.functionalities.functionality_4.title') }}"
+                    description="{{ __('case_studies.k1.functionalities.functionality_4.description') }}"
                     class="xl:col-span-3 xl:max-w-[345px] 2xl:max-w-[485px] xl:place-self-end size-full">
                 <x-icons.list accent="stroke-k1" />
             </x-tile>
-            <x-tile title="Tworzenie harmonogramów"
-                    description="możliwość ręcznego tworzenia harmonogramu wraz z listą udostępnianych programów,"
+            <x-tile title="{{ __('case_studies.k1.functionalities.functionality_5.title') }}"
+                    description="{{ __('case_studies.k1.functionalities.functionality_5.description') }}"
                     class="md:col-span-2 xl:col-span-3 xl:max-w-[345px] 2xl:max-w-[485px] xl:place-self-start size-full">
                 <x-icons.calendar-plus accent="stroke-k1" />
             </x-tile>
@@ -133,7 +96,7 @@ Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium dolor
     </div>
 
     <div class="py-20">
-        <x-case-studies.title> Schemat architektury systemu </x-case-studies.title>
+        <x-case-studies.title>  {{ __("case_studies.architecture_schema") }}  </x-case-studies.title>
         <x-case-studies.image src="{{ asset('images/case-studies/k1/architecture.png') }}" alt="sitemap K1" margin=true />
     </div>
 
