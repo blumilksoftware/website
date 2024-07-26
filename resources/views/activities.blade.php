@@ -26,7 +26,7 @@
         </div>
     </div>
     <section class="py-16 text-center px-[10%] md:px-[20%] space-y-16">
-        <div class="">
+        <div>
             <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-black my-6 break-words">
                 {{ __("content.activities.section_1.title_1") }}
             </h2>

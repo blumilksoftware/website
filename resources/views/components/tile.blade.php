@@ -10,9 +10,10 @@
             <span class="font-semibold text-md block pb-2">
                 {!! $title !!}
             </span>
-            <span class="font-normal text-gray-400 text-sm">
+            <span class="font-normal text-gray-400 text-sm leading-3">
                 {{ $description }}
             </span>
         </div>
     </div>
+
 </div>

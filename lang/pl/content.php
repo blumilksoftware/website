@@ -13,10 +13,10 @@ return [
     ],
     "home" => [
         "section_1" => [
-            "title_1" => "Oprogramowanie ",
-            "title_2" => "dopasowane ",
-            "title_3" => "do Twoich potrzeb",
-            "subtitle_1" => "Jesteśmy pasjonatami tworzenia aplikacji web/mobile oraz zaawansowanych projektów B+R.",
+            "title_1" => "Oprogramowanie dopasowane do",
+            "title_2" => "Twoich",
+            "title_3" => "potrzeb",
+            "subtitle_1" => "Jesteśmy pasjonatami tworzenia aplikacji webowych i mobilnych, naukowcami zajmującymi się sztuczną inteligencją oraz uczestnikami projektów B+R.",
             "subtitle_2" => "Zmieniamy koncepcje w działające rozwiązania.",
         ],
         "section_2" => [
@@ -47,7 +47,7 @@ return [
                 "subtitle" => "Projektujemy intuicyjne interfejsy, które sprawiają, że korzystanie z nich jest łatwe i przyjemne.",
             ],
             "tile_6" => [
-                "title" => "Wykorzystanie AI",
+                "title" => "Wdrażanie sztucznej inteligencji",
                 "subtitle" => "Proponujemy klientom optymalizację działań z wykorzystaniem AI.",
             ],
         ],
@@ -135,10 +135,10 @@ return [
         "section_2" => [
             "title_1" => "Benefity",
             "subtitle_1" => "Dla każdego członka zespołu zapewniamy nie tylko ciekawe projekty, ale także pakiet benefitów.",
-            "benefit_1" => "Elastyczne godziny",
+            "benefit_1" => "Elastyczne godziny i hybrydowy tryb pracy",
             "benefit_2" => "Język angielski z native speakerem",
-            "benefit_3" => "Prywatna opieka medyczna",
-            "benefit_4" => "Multisport",
+            "benefit_3" => "Prywatna opieka medyczna i ubezpieczenie",
+            "benefit_4" => "Karta MultiSport",
             "benefit_5" => "Owocowe wtorki",
             "benefit_6" => "Dzienna dawka memów",
         ],
