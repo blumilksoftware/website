@@ -69,27 +69,27 @@
                 </div>
                 <div
                     class="grid md:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-12 place-items-center xl:place-items-stretch">
-                    <x-tile image="{{ asset('graphics/services/window.svg') }}"
+                    <x-tile image="{{ asset('graphics/icons/app-window.svg') }}"
                             alt="benefit-1"
                             title="{{ __('content.home.section_3.tile_1.title') }}"
                             description="{{ __('content.home.section_3.tile_1.subtitle') }}"/>
-                    <x-tile image="{{ asset('graphics/services/file.svg') }}"
+                    <x-tile image="{{ asset('graphics/icons/report-search.svg') }}"
                             alt="benefit-1"
                             title="{{ __('content.home.section_3.tile_2.title') }}"
                             description="{{ __('content.home.section_3.tile_2.subtitle') }}"/>
-                    <x-tile image="{{ asset('graphics/services/web.svg') }}"
+                    <x-tile image="{{ asset('graphics/icons/desktop-analytics.svg') }}"
                             alt="benefit-1"
                             title="{{ __('content.home.section_3.tile_3.title') }}"
                             description="{{ __('content.home.section_3.tile_3.subtitle') }}"/>
-                    <x-tile image="{{ asset('graphics/services/analyse.svg') }}"
+                    <x-tile image="{{ asset('graphics/icons/search.svg') }}"
                             alt="benefit-1"
                             title="{{ __('content.home.section_3.tile_4.title') }}"
                             description="{{ __('content.home.section_3.tile_4.subtitle') }}"/>
-                    <x-tile image="{{ asset('graphics/services/gallery.svg') }}"
+                    <x-tile image="{{ asset('graphics/icons/photo-scan.svg') }}"
                             alt="benefit-1"
                             title="{{ __('content.home.section_3.tile_5.title') }}"
                             description="{{ __('content.home.section_3.tile_5.subtitle') }}"/>
-                    <x-tile image="{{ asset('graphics/services/robot.svg') }}"
+                    <x-tile image="{{ asset('graphics/icons/robot.svg') }}"
                             alt="benefit-1"
                             title="{{ __('content.home.section_3.tile_6.title') }}"
                             description="{{ __('content.home.section_3.tile_6.subtitle') }}"/>
@@ -143,7 +143,7 @@
                 </div>
             </div>
         </section>
-        <section class="relative mx-[10%] 2xl:max-w-screen-3xl 2xl:mx-auto">
+        <section class="relative mx-[10%] 2xl:max-w-screen-2xl 2xl:mx-auto">
             <div class="w-full py-12 sm:py-32">
                 <div class="relative isolate overflow-hidden bg-blue-normal py-24 text-center shadow-2xl px-8  rounded-3xl">
                     <img src="{{ asset('graphics/blobs/blob_1.svg') }}" class="absolute -left-44 2xl:-left-16 -bottom-44 xl:-bottom-32" alt="blob"/>

@@ -1,4 +1,4 @@
-<div class="relative max-w-screen-3xl mx-auto">
+<div class="relative 2xl:max-w-screen-3xl 2xl:mx-auto">
     <div class="absolute left-[8%] md:-left-0 top-16">
         <x-bubble size="100"/>
     </div>
@@ -23,9 +23,9 @@
 
 @yield('case-study-content')
 
-<section class="relative mx-[10%] 2xl:max-w-screen-3xl 2xl:mx-auto">
+<section class="relative mx-[10%] 2xl:max-w-screen-2xl 2xl:mx-auto">
     <div class="w-full py-12 sm:py-32">
-        <div class="relative isolate overflow-hidden bg-blue-normal py-24 text-center shadow-2xl px-8  rounded-3xl">
+        <div class="relative isolate overflow-hidden bg-blue-normal py-24 text-center shadow-2xl px-8 rounded-3xl">
             <h2 class="mx-auto max-w-5xl text-3xl font-bold tracking-tight text-white sm:text-5xl">{{ __("content.home.section_6.title_1") }}</h2>
             <p class="mx-auto max-w-7xl mt-6 text-lg leading-8 text-gray-300">{{ __("content.home.section_6.subtitle_1") }}
                 <span class="font-bold text-white block">{{ __("content.home.section_6.subtitle_2") }}</span>
