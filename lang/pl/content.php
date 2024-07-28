@@ -6,7 +6,6 @@ return [
     "pages" => [
         "about" => "O firmie",
         "case_study" => "Case Study",
-        "partners" => "Partnerzy",
         "career" => "Kariera",
         "activities" => "Aktywności",
         "contact" => "Kontakt",
