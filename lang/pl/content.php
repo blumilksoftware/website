@@ -77,9 +77,9 @@ return [
     ],
     "about" => [
         "section_1" => [
-            "title_1" => "Blumilk ",
+            "title_1" => "Blumilk",
             "title_2" => "to przede wszystkim ludzie",
-            "subtitle_1" => "Nasz zespół to ponad ",
+            "subtitle_1" => "Nasz zespół to ponad",
             "subtitle_2" => "25 wyjątkowych pasjonatów technologii",
             "subtitle_3" => "- programiści, testerzy, kierownicy projektów i specjaliści o bogatych doświadczeniach.",
         ],
