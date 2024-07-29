@@ -14,8 +14,6 @@ class AppServiceProvider extends ServiceProvider
         /** @var Request $request */
         $request = app("request");
 
-        dump($request);
-
         if($request->getRequestUri() === "/" && str_starts_with($request->header("Accept-Language"), "pl")) {
             $request->setLocale("pl");
             app()->setLocale("pl");
