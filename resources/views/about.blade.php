@@ -33,7 +33,7 @@
             </div>
         </div>
         <div class="flex basis-3/5">
-            <img src="{{ asset('graphics/web-1.png') }}" class="h-max w-auto align-middle xl:h-auto xl:w-11/12 xl:p-12 "
+            <img src="{{ asset('graphics/web-1.png') }}" class="h-auto max-w-2xl w-full aspect-auto object-center shrink-0"
                  alt="placeholder"/>
         </div>
         <div class="absolute hidden md:block right-[5%] bottom-64">

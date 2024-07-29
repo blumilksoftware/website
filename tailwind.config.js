@@ -46,6 +46,8 @@ module.exports = {
           light: '#015FC8',
         },
         k1: '#FF5555',
+        vita: '#9676F9',
+        gtb: '#F9C83B',
       },
       fontFamily: {
         sora: ['Sora', 'sans-serif'],

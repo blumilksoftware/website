@@ -66,4 +66,56 @@ return [
             ],
         ],
     ],
+    "vita" => [
+        "title_1" => "Application for",
+        "title_2" => "ordering medical services",
+        "title_3" => "from the Vita+ clinic",
+        "project_description" => "Application for ordering medical services from the Vita+ clinic. It allows patients to browse and select the offer, pay online and choose a convenient date for the service. The clinic manages the calendar and offer, adapting the system to its needs.",
+        "challenges" => [
+            "challenge_1" => [
+                "title" => "Translating the vision into functional code",
+                "description" => "understanding the specifics of the industry and needs",
+            ],
+            "challenge_2" => [
+                "title" => "Performance and data security",
+                "description" => "optimization of database processes",
+            ],
+            "challenge_3" => [
+                "title" => "Dedicated application",
+                "description" => "for clinics, employees and customers",
+            ],
+            "challenge_4" => [
+                "title" => "Secure payments",
+                "description" => "ensuring the simplicity and security of the process",
+            ],
+            "challenge_5" => [
+                "title" => "User interface",
+                "description" => "clear and intuitive",
+            ],
+        ],
+        "colors_description" => "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos",
+        "typography_description" => "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+        "functionalities" => [
+            "functionality_1" => [
+                "title" => "Offer management",
+                "description" => "creating a list of available medical services",
+            ],
+            "functionality_2" => [
+                "title" => "Creating a calendar",
+                "description" => "setting available dates for service implementation",
+            ],
+            "functionality_3" => [
+                "title" => "Visit status",
+                "description" => "information about the stage of service implementation",
+            ],
+            "functionality_4" => [
+                "title" => "Ordering medical services",
+                "description" => "the process of choosing services, dates and payments",
+            ],
+            "functionality_5" => [
+                "title" => "Historical data",
+                "description" => "storing the history of completed orders",
+            ],
+        ],
+    ],
 ];
