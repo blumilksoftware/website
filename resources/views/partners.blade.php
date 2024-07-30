@@ -4,5 +4,5 @@
 @section("description", __("meta.partners.description"))
 
 @section("content")
-    @include("case-studies.getthebox")
+    @include("case-studies.k1")
 @endsection

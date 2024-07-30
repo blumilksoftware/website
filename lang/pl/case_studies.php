@@ -43,6 +43,48 @@ return [
         ],
         "colors_description" => "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos",
         "typography_description" => "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+        "sitemap" => [
+            "row_1" => [
+                "tile_1" => "Logowanie",
+            ],
+            "row_2" => [
+                "tile_1" => "Kokpit",
+            ],
+            "row_3" => [
+                "tile_1" => "Komputery",
+                "tile_2" => "Oprogramowanie",
+                "tile_3" => "Harmonogramy",
+                "tile_4" => "Użytkownicy",
+                "tile_5" => "Narzędzia",
+                "tile_6" => "Profil",
+            ],
+            "row_4" => [
+                "tile_1" => "Komputery",
+                "tile_2" => "Oprogramowanie",
+                "tile_3" => "Harmonogramy",
+                "tile_4" => "Użytkownicy",
+                "tile_5" => "Kopie zapasowe",
+                "tile_6" => "Informacje o profilu",
+            ],
+            "row_5" => [
+                "tile_1" => "Grupy komputerów",
+                "tile_2" => "Zestawy oprogramowania",
+                "tile_3" => "Zajęcia",
+                "tile_4" => "Role",
+                "tile_5" => "Tokeny rejestracyjne",
+                "tile_6" => "Zmiana hasła",
+            ],
+            "row_6" => [
+                "tile_1" => "Przesłane pliki",
+                "tile_2" => "Polecenia",
+                "tile_3" => "Ustawienia",
+                "tile_4" => "Uwierzytelnianie dwuskładnikowe",
+            ],
+            "row_7" => [
+                "tile_1" => "Hypervisors",
+                "tile_2" => "Sesje przeglądarki",
+            ],
+        ],
         "functionalities" => [
             "functionality_1" => [
                 "title" => "Zarządzanie",
