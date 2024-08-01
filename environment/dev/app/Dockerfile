@@ -21,7 +21,7 @@ FROM composer/composer:2.7.7-bin AS composer-bin
 FROM node:22.3.0-bookworm-slim AS node
 
 # For other versions check: https://hub.docker.com/_/php/tags
-FROM php:8.3.8-fpm-bookworm
+FROM php:8.3.9-fpm-bookworm
 
 COPY --from=composer-bin ./composer /usr/bin/composer
 COPY --from=secops-tools /usr/local/bin/age /usr/local/bin/age
