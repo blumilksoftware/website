@@ -4,45 +4,63 @@
 @section("description", __("meta.career.description"))
 
 @section("content")
-    <div class="relative md:block">
-        <div class="absolute -left-[15%] md:-left-[2%] lg:left-0 top-28 md:top-40">
-            <x-bubble size="100"/>
-        </div>
-        <div class="absolute left-[8%] md:left-[4%] top-20 md:top-28">
-            <x-bubble size="50"/>
-        </div>
-        <div class="absolute right-[4%] top-36">
-            <x-bubble size="40"/>
-        </div>
-    </div>
-    <section class="flex flex-col-reverse xl:flex-row pt-28 px-[10%] md:px-[20%]">
-        <div class="flex basis-1/2 relative flex-col self-center gap-5">
+    <section class="flex flex-col-reverse xl:flex-row pt-28 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
+        <div class="flex basis-2/5 relative flex-col self-center gap-5">
             <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:justify-start xl:text-start">
                 <h2 class="font-semibold text-gray-900 leading-snug">
-                    {{ __("content.career.section_1.title_1") }}
-                    <span class="text-website-normal"> {{ __("content.career.section_1.title_2") }} </span>
+                    <span class="text-website-normal">{{ __("content.career.section_1.title_1") }}</span>
+                    {{ __("content.career.section_1.title_2") }}
                 </h2>
             </div>
             <div class="flex flex-col items-center xl:items-start">
-                <p class="text-md lg:text-lg font-light text-center xl:text-start leading-relaxed">
-                    {{ __("content.career.section_1.subtitle_1") }}
+                <p class="text-lg font-normal text-center 2xl:text-start pb-12">
+                    <span class="leading-relaxed">{{ __("content.career.section_1.subtitle_1") }}</span>
+                </p>
+                <p class="text-lg font-normal text-center 2xl:text-start">
+                    <span class="leading-relaxed block">{{ __("content.career.section_1.subtitle_2") }}</span>
+                    <span class="leading-relaxed font-semibold">{{ __("content.career.section_1.subtitle_3") }}</span>
                 </p>
                 <div class="hidden sm:block my-6">
                     <x-primary-button href="{{ route('contact') }}" class="px-16 bg-website-normal">{{ __("buttons.join_team") }}</x-primary-button>
                 </div>
             </div>
         </div>
-        <div class="flex relative self-center pb-24 xl:pb-0">
-            <img src="{{ asset('graphics/web-1.png') }}" class="h-auto w-full aspect-auto object-center shrink-0"
+        <div class="flex basis-3/5 relative self-center pb-24 xl:pb-0">
+            <img src="{{ asset('graphics/career.svg') }}" class="h-auto w-full aspect-auto object-center shrink-0"
                  alt="placeholder"/>
         </div>
     </section>
-    <section class="relative bg-gradient-to-r from-gray-dark to-gray-extraLight">
-        <x-waves.wave-1.top></x-waves.wave-1.top>
+    <section class="relative">
         <div class="px-[10%] md:px-[20%] space-y-10 pt-28 pb-28">
             <div class="pb-14 text-center">
                 <h2 class="text-3xl md:text-3xl lg:text-5xl font-semibold pb-8">{{ __("content.career.section_2.title_1") }}</h2>
                 <span class="font-light leading-relaxed text-md lg:text-lg relative">{{ __("content.career.section_2.subtitle_1") }}</span>
+            </div>
+            <div
+                class="grid md:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-12 place-items-center xl:place-items-stretch">
+                <x-tile title="{{ __('content.career.section_2.benefit_1') }}">
+                    <x-icons.clock accent="text-website-normal"/>
+                </x-tile>
+                <x-tile title="{{ __('content.home.section_3.tile_6.title') }}"
+                        description="{{ __('content.home.section_3.tile_6.subtitle') }}">
+                    <x-icons.school accent="text-website-normal"/>
+                </x-tile>
+                <x-tile title="{{ __('content.home.section_3.tile_3.title') }}"
+                        description="{{ __('content.home.section_3.tile_3.subtitle') }}">
+                    <x-icons.stethoscope accent="text-website-normal"/>
+                </x-tile>
+                <x-tile title="{{ __('content.home.section_3.tile_4.title') }}"
+                        description="{{ __('content.home.section_3.tile_4.subtitle') }}">
+                    <x-icons.treadmill accent="text-website-normal"/>
+                </x-tile>
+                <x-tile title="{{ __('content.home.section_3.tile_5.title') }}"
+                        description="{{ __('content.home.section_3.tile_5.subtitle') }}">
+                    <x-icons.lemon accent="text-website-normal"/>
+                </x-tile>
+                <x-tile title="{{ __('content.home.section_3.tile_2.title') }}"
+                        description="{{ __('content.home.section_3.tile_2.subtitle') }}">
+                    <x-icons.smile accent="text-website-normal"/>
+                </x-tile>
             </div>
             <div class="grid xl:grid-cols-3 gap-4 2xl:gap-12 place-items-center xl:place-items-stretch">
                 @for($benefit = 1; $benefit <= 6; $benefit++)
@@ -50,7 +68,6 @@
                 @endfor
             </div>
         </div>
-        <x-waves.wave-3.bottom></x-waves.wave-3.bottom>
     </section>
     <section class="relative flex flex-col-reverse pt-10 xl:flex-row px-[10%] md:px-[20%] gap-x-16 -top-24 2xl:-top-44 gap-32">
         <div class="flex relative self-center">

@@ -9,7 +9,7 @@
                 {!! $title !!}
             </span>
             <span class="font-normal text-gray-400 text-sm leading-3">
-                {{ $description }}
+                @isset( $description ) {!! $description !!} @endisset
             </span>
         </div>
     </div>

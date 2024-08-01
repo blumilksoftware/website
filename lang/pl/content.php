@@ -149,9 +149,11 @@ return [
     ],
     "career" => [
         "section_1" => [
-            "title_1" => "Dołącz do ",
-            "title_2" => "nas!",
-            "subtitle_1" => "Wierzymy w moc każdego z naszych pracowników! Dzięki otwartej i przyjaznej atmosferze każdy członek naszego zespołu śmiało może rozwijać swoje umiejętności i osiągać cele zawodowe. Mamy fajne biuro, w samym centrum miasta. Na tyle się lubimy, że spędzamy ze sobą czas także poza nim. Sprawdźmy czy do siebie pasujemy!",
+            "title_1" => "Dołącz",
+            "title_2" => "do nas!",
+            "subtitle_1" => "Dzięki otwartej i przyjaznej atmosferze każdy członek naszego zespołu śmiało może rozwijać swoje umiejętności i osiągać cele zawodowe.",
+            "subtitle_2" => "Mamy fajne biuro, w samym centrum miasta. Na tyle się lubimy, że spędzamy ze sobą czas także poza nim.",
+            "subtitle_3" => "Sprawdźmy czy do siebie pasujemy!",
         ],
         "section_2" => [
             "title_1" => "Benefity",

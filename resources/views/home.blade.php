@@ -53,8 +53,7 @@
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.home.section_3.title_1") }}</h2>
                     <span class="font-light leading-relaxed text-md lg:text-lg relative">{{ __("content.home.section_3.subtitle_1") }}</span>
                 </div>
-                <div
-                    class="grid md:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-12 place-items-center xl:place-items-stretch">
+                <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-12 place-items-center xl:place-items-stretch">
                     <x-tile image="{{ asset('graphics/services/window.svg') }}"
                             alt="benefit-1"
                             title="{{ __('content.home.section_3.tile_1.title') }}"
