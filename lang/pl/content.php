@@ -81,6 +81,8 @@ return [
             "subtitle_1" => "Nasz zespół to ponad",
             "subtitle_2" => "25 wyjątkowych pasjonatów technologii",
             "subtitle_3" => "- programiści, testerzy, kierownicy projektów i specjaliści o bogatych doświadczeniach.",
+            "subtitle_4" => "Pracujemy w trybie stacjonarnym i hybrydowym",
+            "subtitle_5" => "z Legnicy, łącząc elastyczność z efektywnością.",
         ],
         "section_2" => [
             "stat_1" => "osób w zespole",
@@ -128,7 +130,9 @@ return [
             "title_1" => "Nasze ",
             "title_2" => "projekty",
             "subtitle_1" => "Zobacz nad czym pracowaliśmy dla naszych klientów.",
-            "subtitle_2" => "Każde studium przypadku zawiera szczegółowy opis realizacji projektu.",
+            "subtitle_2" => "Każde studium przypadku zawiera",
+            "subtitle_3" => "szczegółowy opis realizacji",
+            "subtitle_4" => "projektu.",
         ],
         "section_2" => [
             "title_1" => "Zainteresowany współpracą?",

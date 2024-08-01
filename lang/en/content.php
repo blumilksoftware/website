@@ -81,6 +81,8 @@ return [
             "subtitle_1" => "Our team consists of",
             "subtitle_2" => "25 unique technology enthusiasts",
             "subtitle_3" => "- programmers, testers, project managers and specialists with extensive experience.",
+            "subtitle_4" => "We work in stationary and hybrid mode",
+            "subtitle_5" => "from Legnica, combining flexibility with efficiency.",
         ],
         "section_2" => [
             "stat_1" => "people in the team",
@@ -128,7 +130,9 @@ return [
             "title_1" => "Our ",
             "title_2" => "projects",
             "subtitle_1" => "See what we worked on for our clients.",
-            "subtitle_2" => "Each case study contains a detailed description of the project implementation.",
+            "subtitle_2" => "Each case study contains a",
+            "subtitle_3" => "detailed description",
+            "subtitle_4" => "of the project implementation.",
         ],
         "section_2" => [
             "title_1" => "Interested in cooperation?",

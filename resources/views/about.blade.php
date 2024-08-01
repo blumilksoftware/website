@@ -4,20 +4,7 @@
 @section("description", __("meta.about.description"))
 
 @section("content")
-    <div class="relative md:block -z-10">
-        <div class="relative md:block">
-            <div class="absolute -left-[15%] sm:-left-[8%] md:-left-[2%] lg:left-0 top-28 md:top-40">
-                <x-bubble size="100"/>
-            </div>
-            <div class="absolute left-[8%] md:left-[4%] top-20 md:top-28">
-                <x-bubble size="50"/>
-            </div>
-            <div class="absolute right-[4%] top-36">
-                <x-bubble size="40"/>
-            </div>
-        </div>
-    </div>
-    <section class="relative flex flex-col-reverse 2xl:flex-row pt-20 pb-14 md:pt-44 px-[10%] md:px-[20%] place-items-center">
+    <section class="relative flex flex-col-reverse 2xl:flex-row pt-20 pb-14 md:pt-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto place-items-center">
         <div class="flex basis-2/5 flex-col self-center gap-5">
             <div class="text-3xl md:text-4xl xl:text-5xl text-center 2xl:justify-start 2xl:text-start pb-4">
                 <h2 class="font-semibold text-gray-900 leading-snug">
@@ -26,25 +13,20 @@
                 </h2>
             </div>
             <div class="items-center 2xl:items-start">
-                <p class="text-lg lg:text-xl font-light text-center 2xl:text-start 2xl:pr-12">
+                <p class="text-lg font-normal text-center 2xl:text-start pb-12">
                     <span class="leading-relaxed">{{ __("content.about.section_1.subtitle_1") }}</span>
-                    <span class="font-medium leading-relaxed">{{ __("content.about.section_1.subtitle_2") }}</span>
+                    <span class="font-semibold leading-relaxed">{{ __("content.about.section_1.subtitle_2") }}</span>
                     <span class="leading-relaxed">{{ __("content.about.section_1.subtitle_3") }}</span>
+                </p>
+                <p class="text-lg font-normal text-center 2xl:text-start">
+                    <span class="font-semibold leading-relaxed">{{ __("content.about.section_1.subtitle_4") }}</span>
+                    <span class="leading-relaxed">{{ __("content.about.section_1.subtitle_5") }}</span>
                 </p>
             </div>
         </div>
         <div class="flex basis-3/5">
-            <img src="{{ asset('graphics/web-1.png') }}" class="h-max w-auto align-middle xl:h-auto xl:w-11/12 xl:p-12 "
+            <img src="{{ asset('graphics/about.svg') }}" class="size-full align-middle m-4"
                  alt="placeholder"/>
-        </div>
-        <div class="absolute hidden md:block right-[5%] bottom-64">
-            <x-bubble size="100"/>
-        </div>
-        <div class="absolute hidden md:block -left-[10%] lg:-left-[3%] bottom-24">
-            <x-bubble size="250"/>
-        </div>
-        <div class="absolute hidden md:block -right-[10%] md:right-[5%] bottom-14">
-            <x-bubble size="200"/>
         </div>
     </section>
     <section class="bg-white py-12 sm:py-16 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
@@ -93,6 +75,7 @@
             </div>
         </div>
     </section>
+    <!-- TODO: Update images -->
     <section class="relative pt-24 pb-28">
 
         <img src="{{ asset('graphics/shadow.svg') }}" alt="blob" class="absolute -z-10 -right-96 -bottom-0"/>
@@ -148,6 +131,7 @@
             </div>
         </div>
     </section>
+    <!-- TODO: Update team images -->
     <section class="relative pb-16 pt-28 sm:pt-32 mx-auto max-w-7xl px-6 lg:px-8">
             <div class="pb-2 text-center">
                 <h2 class="text-3xl md:text-3xl lg:text-5xl font-semibold pb-8">{{ __("content.about.section_5.title_1") }}</h2>

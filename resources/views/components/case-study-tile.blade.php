@@ -14,8 +14,12 @@
     <div class="flex mt-3 text-lg font-semibold leading-relaxed place-items-end">
         <a href="{{ route('case-studies.entry', $caseStudy->slug) }}">
             <span class="absolute inset-0"></span>
-            <h3 class="flex bg-white min-h-24 w-auto shadow-2xl rounded-lg p-8">
-                {{ $caseStudy->name }}
+            <h3 class="bg-white max-w-md w-auto shadow-2xl rounded-lg p-5 text-left flex place-items-center">
+                <span>
+                    {{ $caseStudy->name_1 }}
+                    <span style="color: {{ $caseStudy->color }}">{{ $caseStudy->name_2 }}</span>
+                    {{ $caseStudy->name_3 }}
+                </span>
 
             </h3>
         </a>

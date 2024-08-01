@@ -17,11 +17,12 @@ class CaseStudyFactory extends Factory
         $locales = config("app.translatable_locales");
 
         return [
-            "name" => $this->translations($locales, $this->faker->sentence),
-            "description" => $this->translations($locales, $this->faker->paragraph),
+            "name_1" => $this->translations($locales, $this->faker->words(2, true)),
+            "name_2" => $this->translations($locales, $this->faker->words(2, true)),
+            "name_3" => $this->translations($locales, $this->faker->words(2, true)),
+            "color" => $this->faker->hexColor,
             "photo" => sprintf("%s/%s", "factory", "case_study.jpg"),
             "published" => $this->faker->boolean,
-            "company" => $this->faker->company,
             "slug" => $this->faker->slug,
             "template" => "base-template.blade.php",
         ];

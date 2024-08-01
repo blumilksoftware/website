@@ -31,15 +31,27 @@ class CaseStudyResource extends Resource
                 Split::make([
                     Section::make([
                         TranslatableContainer::make(
-                            Forms\Components\TextInput::make("name")
-                                ->label("Nazwa realizacji")
+                            Forms\Components\TextInput::make("name_1")
+                                ->label("Część 1 tytułu")
                                 ->required()
                                 ->maxLength(255),
                         )->requiredLocales(config("app.translatable_locales")),
-                        Forms\Components\TextInput::make("company")
-                            ->label("Firma")
-                            ->required()
-                            ->maxLength(255),
+                        TranslatableContainer::make(
+                            Forms\Components\TextInput::make("name_2")
+                                ->label("Część 2 tytułu")
+                                ->required()
+                                ->maxLength(255),
+                        )->requiredLocales(config("app.translatable_locales")),
+                        Forms\Components\ColorPicker::make("color")
+                            ->label("Kolor tekstu części 2")
+                            ->required(),
+                        TranslatableContainer::make(
+                            Forms\Components\TextInput::make("name_3")
+                                ->label("Część 3 tytułu")
+                                ->maxLength(255),
+                        ),
+                    ]),
+                    Section::make([
                         Forms\Components\TextInput::make("slug")
                             ->label("Slug")
                             ->required()
@@ -50,16 +62,6 @@ class CaseStudyResource extends Resource
                             ->label("Szablon")
                             ->options(fn(): array => self::getTemplateOptions())
                             ->native(false),
-                        Forms\Components\Checkbox::make("published")
-                            ->label("Opublikowane"),
-                    ]),
-                    Section::make([
-                        TranslatableContainer::make(
-                            Forms\Components\Textarea::make("description")
-                                ->label("Opis")
-                                ->required()
-                                ->maxLength(65000),
-                        )->requiredLocales(config("app.translatable_locales")),
                         Forms\Components\FileUpload::make("photo")
                             ->label("Zdjęcie")
                             ->directory(CaseStudy::PHOTOS_DIRECTORY)
@@ -68,6 +70,8 @@ class CaseStudyResource extends Resource
                             ->required()
                             ->multiple(false)
                             ->maxSize(1000),
+                        Forms\Components\Checkbox::make("published")
+                            ->label("Opublikowane"),
                     ]),
                 ])->from("lg"),
             ])->columns(1);
@@ -77,7 +81,7 @@ class CaseStudyResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make("name")
+                Tables\Columns\TextColumn::make("name_1")
                     ->label("Nazwa realizacji")
                     ->searchable(),
                 Tables\Columns\TextColumn::make("template")
@@ -126,5 +130,14 @@ class CaseStudyResource extends Resource
         }
 
         return $options;
+    }
+
+    protected static function getRequiredLocales(\Closure $data): array
+    {
+        if (!$data) {
+            return config("app.translatable_locales");
+        }
+
+        return [];
     }
 }
