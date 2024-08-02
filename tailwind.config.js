@@ -50,6 +50,9 @@ module.exports = {
         sora: ['Sora', 'sans-serif'],
       },
     },
+    listStyleType: {
+      square: 'square',
+    }
   },
   plugins: [
     require('@tailwindcss/forms'),

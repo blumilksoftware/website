@@ -37,7 +37,7 @@
                 <span class="font-normal leading-relaxed text-lg relative">{{ __("content.career.section_2.subtitle_1") }}</span>
             </div>
             <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-12 place-items-center xl:place-items-stretch">
-                <x-tile title="{{ __('content.career.section_2.benefit_1') }}">
+                <x-tile title="{{ __('content.career.section_2.benefit_1') }}" class="">
                     <x-icons.clock accent="text-website-normal"/>
                 </x-tile>
                 <x-tile title="{{ __('content.career.section_2.benefit_2') }}">
