@@ -17,9 +17,9 @@ class CaseStudyFactory extends Factory
         $locales = config("app.translatable_locales");
 
         return [
-            "name_1" => $this->translations($locales, $this->faker->words(2, true)),
-            "name_2" => $this->translations($locales, $this->faker->words(2, true)),
-            "name_3" => $this->translations($locales, $this->faker->words(2, true)),
+            "name_first_part" => $this->translations($locales, $this->faker->words(2, true)),
+            "name_second_part" => $this->translations($locales, $this->faker->words(2, true)),
+            "name_third_part" => $this->translations($locales, $this->faker->words(2, true)),
             "color" => $this->faker->hexColor,
             "photo" => sprintf("%s/%s", "factory", "case_study.jpg"),
             "published" => $this->faker->boolean,

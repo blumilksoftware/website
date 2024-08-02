@@ -16,9 +16,9 @@
             <span class="absolute inset-0"></span>
             <h3 class="bg-white max-w-md w-auto shadow-2xl rounded-lg p-5 text-left flex place-items-center">
                 <span>
-                    {{ $caseStudy->name_1 }}
-                    <span style="color: {{ $caseStudy->color }}">{{ $caseStudy->name_2 }}</span>
-                    {{ $caseStudy->name_3 }}
+                    {{ $caseStudy->name_first_part }}
+                    <span style="color: {{ $caseStudy->color }}">{{ $caseStudy->name_second_part }}</span>
+                    {{ $caseStudy->name_third_part }}
                 </span>
 
             </h3>
