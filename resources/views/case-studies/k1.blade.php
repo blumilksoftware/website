@@ -56,7 +56,7 @@
 
     <div class="py-40">
         <x-case-studies.title>{{ __("case_studies.sitemap") }}</x-case-studies.title>
-        <x-case-studies.image src="{{ asset('images/case-studies/k1/sitemap.png') }}" alt="{{ __('case_studies.k1.alt.sitemap') }}" margin="true" />
+        <x-case-studies.image src="{{ asset('images/case-studies/k1/sitemap.svg') }}" alt="{{ __('case_studies.k1.alt.sitemap') }}" margin="true" />
     </div>
 
     <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-screen-2xl 2xl:mx-auto space-y-10 py-20 text-center">
