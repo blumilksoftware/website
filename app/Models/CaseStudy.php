@@ -9,13 +9,14 @@ use Illuminate\Database\Eloquent\Model;
 use Spatie\Translatable\HasTranslations;
 
 /**
- * @property array $name
- * @property array $description
+ * @property array $name_first_part
+ * @property array $name_second_part
+ * @property array $name_third_part
  * @property string $photo
  * @property string $slug
- * @property string $company
  * @property string $template
  * @property bool $published
+ * @property string $color
  */
 class CaseStudy extends Model
 {
@@ -25,21 +26,24 @@ class CaseStudy extends Model
     public const string PHOTOS_DIRECTORY = "case-studies";
 
     public $translatable = [
-        "name",
-        "description",
+        "name_first_part",
+        "name_second_part",
+        "name_third_part",
     ];
     protected $fillable = [
-        "name",
-        "description",
+        "name_first_part",
+        "name_second_part",
+        "name_third_part",
         "photo",
         "published",
-        "company",
         "slug",
         "template",
+        "color",
     ];
     protected $casts = [
-        "name" => "array",
-        "description" => "array",
+        "name_first_part" => "array",
+        "name_second_part" => "array",
+        "name_third_part" => "array",
         "published" => "boolean",
     ];
 }

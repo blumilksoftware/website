@@ -15,10 +15,6 @@ return [
         "title" => "Case studies",
         "description" => "Zobacz, jakie projekty udało nam się zrealizować.",
     ],
-    "partners" => [
-        "title" => "Partnerzy",
-        "description" => "Współpracujemy z najlepszymi, aby dostarczyć Ci najwyższej jakości rozwiązania.",
-    ],
     "career" => [
         "title" => "Kariera",
         "description" => "Dołącz do naszego zespołu!",
