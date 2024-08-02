@@ -105,20 +105,20 @@ return [
             "title_1" => "Our mission",
             "subtitle_1" => "As code enthusiasts, we create modern technological solutions that inspire and make the everyday lives of our customers easier. We improve our skills in order to actively contribute to the programming community in Poland.",
             "activity_1" => [
-                "title" => "Academic environment",
-                "subtitle" => "We conduct classes in Computer Science and Production and Logistics Engineering at Collegium Witelon State University in Legnica. We also organize an open internship program for IT students and are partners in scientific conferences.",
-            ],
-            "activity_2" => [
-                "title" => "SoDA (Software Development Association Poland)",
-                "subtitle" => "We are one of the founders of probably the largest research group in the field of artificial intelligence in Poland - SoDA AI Research Group. We provide expert comments on industry reports and the national press, including Forbes and Dziennik Prawny. We train the public sector in how to use AI. We give expert interviews on television and radio and speak at conferences.",
-            ],
-            "activity_3" => [
                 "title" => "Research and development projects (R&D)",
                 "subtitle" => "We deal with a variety of research issues, including: processing large data sets (big data), solving task scheduling problems, using artificial intelligence, and optimization. Thanks to the experience and knowledge gained by our team members, we are able to effectively manage and implement R&D projects, providing our clients with the highest quality and innovation at every stage of cooperation.",
             ],
-            "activity_4" => [
+            "activity_2" => [
                 "title" => "We connect the technological community in Legnica",
                 "subtitle" => "We are the organizer of Legnica Technology Meetups - open meetings for backend programmers, frontend developers, application testers, graphic designers, project managers and everyone interested in the world of code.",
+            ],
+            "activity_3" => [
+                "title" => "Academic environment",
+                "subtitle" => "We conduct classes in Computer Science and Production and Logistics Engineering at Collegium Witelon State University in Legnica. We also organize an open internship program for IT students and are partners in scientific conferences.",
+            ],
+            "activity_4" => [
+                "title" => "SoDA (Software Development Association Poland)",
+                "subtitle" => "We are one of the founders of probably the largest research group in the field of artificial intelligence in Poland - SoDA AI Research Group. We provide expert comments on industry reports and the national press, including Forbes and Dziennik Prawny. We train the public sector in how to use AI. We give expert interviews on television and radio and speak at conferences.",
             ],
         ],
         "section_5" => [

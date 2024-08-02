@@ -76,13 +76,13 @@
             </div>
         </div>
     </section>
-    <!-- TODO: Update images -->
+    <!-- TODO: Update images (issue #316) -->
     <section class="relative pt-24 pb-28">
 
         <img src="{{ asset('graphics/shadow.svg') }}" alt="blob" class="absolute -z-10 -right-96 -bottom-0"/>
         <img src="{{ asset('graphics/shadow.svg') }}" alt="blob" class="absolute -z-10 -left-[800px] -bottom-64"/>
 
-        <div class="px-[10%] md:px-[20%] 2xl:max-w-screen-3xl 2xl:mx-auto">
+        <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
             <div class="pb-28 text-center">
                 <h2 class="text-3xl md:text-3xl lg:text-5xl font-semibold pb-8">{{ __("content.about.section_4.title_1") }}</h2>
                 <span
@@ -91,40 +91,40 @@
             <div class="grid grid-cols-10 grid-rows-4 gap-10">
                 <div class="row-span-2 col-span-3">
                     <img src="{{ asset('images/photos/lasertag.jpg') }}"
-                         class="size-full object-cover rounded-xl" alt="placeholder"/>
+                         class="h-[440px] w-[350px] object-cover rounded-xl" alt="placeholder"/>
                 </div>
                 <div class="row-span-2 col-span-3">
                     <img src="{{ asset('images/photos/energylandia.jpg') }}"
-                         class="size-full object-cover rounded-xl" alt="placeholder"/>
+                         class="h-[440px] w-[350px] object-cover rounded-xl" alt="placeholder"/>
                 </div>
                 <div class="col-span-4 items-center 2xl:items-start">
-                    <p class="text-sm font-normal text-center 2xl:text-start 2xl:pr-12">
+                    <p class="text-sm font-normal text-center 2xl:text-start 2xl:pr-4">
                         <span class="leading-relaxed font-bold block pb-2">{{ __("content.about.section_4.activity_1.title") }}</span>
                         <span class="leading-relaxed text-gray-400">{{ __("content.about.section_4.activity_1.subtitle") }}</span>
                     </p>
                 </div>
                 <div class="col-span-4 items-center 2xl:items-start">
-                    <p class="text-sm font-normal text-center 2xl:text-start 2xl:pr-12">
+                    <p class="text-sm font-normal text-center 2xl:text-start 2xl:pr-4">
                         <span class="leading-relaxed font-bold block pb-2">{{ __("content.about.section_4.activity_2.title") }}</span>
                         <span class="leading-relaxed text-gray-400">{{ __("content.about.section_4.activity_2.subtitle") }}</span>
                     </p>
                 </div>
-                <div class="col-span-4 items-center 2xl:items-start">
-                    <p class="text-sm font-normal text-center 2xl:text-start 2xl:pr-12">
+                <div class="col-span-4 items-center 2xl:place-content-center">
+                    <p class="text-sm font-normal text-center 2xl:text-start 2xl:pr-4">
                         <span class="leading-relaxed font-bold block pb-2">{{ __("content.about.section_4.activity_3.title") }}</span>
                         <span class="leading-relaxed text-gray-400">{{ __("content.about.section_4.activity_3.subtitle") }}</span>
                     </p>
                 </div>
                 <div class="row-span-2 col-span-3">
                     <img src="{{ asset('images/photos/plane.jpg') }}"
-                         class="size-full object-cover rounded-xl" alt="placeholder"/>
+                         class="h-[440px] w-[350px] object-cover rounded-xl" alt="placeholder"/>
                 </div>
                 <div class="row-span-2 col-span-3">
                     <img src="{{ asset('images/photos/quantum.jpg') }}"
-                         class="size-full object-cover rounded-xl" alt="placeholder"/>
+                         class="h-[440px] w-[350px] object-cover rounded-xl" alt="placeholder"/>
                 </div>
-                <div class="col-span-4 items-center 2xl:items-start place-content-end">
-                    <p class="text-sm font-normal text-center 2xl:text-start 2xl:pr-12">
+                <div class="col-span-4 items-center 2xl:items-start">
+                    <p class="text-sm font-normal text-center 2xl:text-start 2xl:pr-4">
                         <span class="leading-relaxed font-bold block pb-2">{{ __("content.about.section_4.activity_4.title") }}</span>
                         <span class="leading-relaxed text-gray-400">{{ __("content.about.section_4.activity_4.subtitle") }}</span>
                     </p>
@@ -132,7 +132,7 @@
             </div>
         </div>
     </section>
-    <!-- TODO: Update team images -->
+    <!-- TODO: Update team images (issue #316) -->
     <section class="relative pb-16 pt-28 sm:pt-32 mx-auto max-w-7xl px-6 lg:px-8">
             <div class="pb-2 text-center">
                 <h2 class="text-3xl md:text-3xl lg:text-5xl font-semibold pb-8">{{ __("content.about.section_5.title_1") }}</h2>

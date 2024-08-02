@@ -83,7 +83,7 @@
             </div>
         </section>
 
-        <!-- TODO: Update case study -->
+        <!-- TODO: Update case study (issue #294) -->
         <section class="relative mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
             <div class="relative pt-28 pb-28 md:pb-32 lg:pb-44">
                 <div class="pb-8 text-center">
