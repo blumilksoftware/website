@@ -6,7 +6,6 @@ return [
     "about" => "o-firmie",
     "case-studies" => "case-studies",
     "case-studies/{slug}" => "case-studies/{slug}",
-    "partners" => "partnerzy",
     "career" => "kariera",
     "contact" => "kontakt",
     "legal" => "prawne",

@@ -45,7 +45,7 @@ services:
                 condition: service_healthy
 
     database:
-        image: postgres:16.1-alpine3.18
+        image: postgres:16.3-alpine3.18@sha256:64e18e8fb3e9c9aac89ac590c5dd8306b862478404f76cd9b5f7720d012b4c47
         container_name: website-db-dev
         environment:
             - POSTGRES_USER=${DB_USERNAME}
@@ -66,7 +66,7 @@ services:
         restart: unless-stopped
 
     mailpit:
-      image: axllent/mailpit:v1.10.0
+      image: axllent/mailpit:v1.19.3@sha256:8fbe10f22c09c769ad678bd14e2f9858e41d5e199ea043efe207f85f279fd594
       container_name: website-mailpit-dev
       labels:
         - "traefik.enable=true"
@@ -85,7 +85,7 @@ services:
       restart: unless-stopped
 
     redis:
-        image: redis:7.2.3-alpine3.18
+        image: redis:7.2.3-alpine3.18@sha256:3ce533b2b057f74b235d1d8697ae08b1b6ff0a5e16827ea6a377b6365693c7ed
         container_name: website-redis-dev
         ports:
             - ${DOCKER_REDIS_HOST_PORT:-63852}:6379
