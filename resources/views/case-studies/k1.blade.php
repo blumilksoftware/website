@@ -1,6 +1,9 @@
-@extends("layout.case-study")
+@extends("layout.public")
 
-@section("case-study-content")
+@section("title", $caseStudy->name)
+@section("description", $caseStudy->description)
+
+@section("content")
     <x-case-studies.title>
         <span class="text-k1 mt-4"> {{ __("case_studies.k1.title_1") }} </span>{{ __("case_studies.k1.title_2") }}
     </x-case-studies.title>
@@ -9,8 +12,8 @@
 
     <x-case-studies.description>{{ __("case_studies.k1.project_description") }}</x-case-studies.description>
 
-    <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-screen-2xl 2xl:mx-auto space-y-10 py-20 text-center">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8"> {{ __("case_studies.challenges") }} </h2>
+    <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-10 py-20 text-center">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("case_studies.challenges") }}</h2>
         <div class="grid md:grid-cols-2 xl:grid-cols-6 gap-4 2xl:gap-10 place-items-center xl:place-items-stretch">
             <x-tile title="{{ __('case_studies.k1.challenges.challenge_1.title') }}"
                     description="{{ __('case_studies.k1.challenges.challenge_1.description') }}"
@@ -45,12 +48,12 @@
     </section>
 
     <x-case-studies.color-palette description="{{ __('case_studies.k1.colors_description') }}"
-                                  primary-bg="#FF5555" primary-text="text-black"
-                                  secondary-bg="#000000" secondary-text="text-black"
-                                  surface-bg="#F7F6F9" surface-text="text-white"
-                                  text-bg="#FFFFFF" text-color="text-white"/>
+                                  primary-bg="#FF5555" primary-text="text-white"
+                                  secondary-bg="#000000" secondary-text="text-white"
+                                  surface-bg="#F7F6F9" surface-text="text-black"
+                                  text-bg="#FFFFFF" text-color="text-black"/>
 
-    <x-case-studies.typography font="Sora" bg="bg-k1" description="{{ __('case_studies.k1.typography_description') }}"/>
+    <x-case-studies.typography font="sora" bg="bg-k1" description="{{ __('case_studies.k1.typography_description') }}"/>
 
     <x-case-studies.image src="{{ asset('images/case-studies/k1/laptop_2.png') }}" alt="{{ __('case_studies.k1.alt.laptop_2') }}" />
 
@@ -59,8 +62,8 @@
         <x-case-studies.image src="{{ asset('images/case-studies/k1/sitemap.svg') }}" alt="{{ __('case_studies.k1.alt.sitemap') }}" margin="true" />
     </div>
 
-    <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-screen-2xl 2xl:mx-auto space-y-10 py-20 text-center">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8"> {{ __("case_studies.key_functionalities") }} </h2>
+    <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-10 py-20 text-center">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("case_studies.key_functionalities") }}</h2>
         <div class="grid md:grid-cols-2 xl:grid-cols-6 gap-4 2xl:gap-10 place-items-center xl:place-items-stretch">
             <x-tile title="{{ __('case_studies.k1.functionalities.functionality_1.title') }}"
                     description="{{ __('case_studies.k1.functionalities.functionality_1.description') }}"
@@ -97,8 +100,10 @@
 
     <div class="py-20">
         <x-case-studies.title> {{ __("case_studies.architecture_schema") }} </x-case-studies.title>
-        <x-case-studies.image src="{{ asset('images/case-studies/k1/architecture.png') }}" alt="{{ __('case_studies.k1.alt.architecture') }}" margin=true />
+        <x-case-studies.image src="{{ asset('images/case-studies/k1/architecture.svg') }}" alt="{{ __('case_studies.k1.alt.architecture') }}" margin=true />
     </div>
 
     <x-case-studies.image src="{{ asset('images/case-studies/k1/mobile.png') }}" alt="{{ __('case_studies.k1.alt.mobile') }}" />
+
+    <x-text-us-section/>
 @endsection

@@ -4,9 +4,10 @@
         <div class="text-3xl md:text-4xl lg:text-5xl font-semibold"> {{ __("case_studies.typography") }} </div>
         <div class="leading-loose text-md"> {{ $description }} </div>
     </div>
-    <div class="{{ $bg }} w-full rounded-[32px] h-[486px] grid grid-cols-5 justify-items-stretch text-white px-16 py-10">
+    <div class="{{ $bg }} w-full rounded-[32px] h-[486px] grid grid-cols-5 justify-items-stretch text-white px-16 py-10"
+         style="font-family: {{ $font }}">
         <div class="relative flex flex-col col-span-2 font-bold pt-10 place-content-between">
-            <span class="text-6xl"> {{ $font }} </span>
+            <span class="text-6xl capitalize"> {{ $font }} </span>
             <span class="text-[235px] block absolute top-16"> Aa </span>
             <div class="flex justify-between pr-10 pb-6">
                 <div class="items-center rounded-full bg-white bg-opacity-10 px-4 py-1.5 text-xs font-medium text-white">Regular</div>

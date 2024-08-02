@@ -51,6 +51,7 @@ module.exports = {
       },
       fontFamily: {
         sora: ['Sora', 'sans-serif'],
+        montserrat: ['Montserrat'],
       },
     },
   },

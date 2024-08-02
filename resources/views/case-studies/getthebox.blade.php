@@ -1,6 +1,9 @@
-@extends("layout.case-study")
+@extends("layout.public")
 
-@section("case-study-content")
+@section("title", $caseStudy->name)
+@section("description", $caseStudy->description)
+
+@section("content")
     <x-case-studies.title>
         <span class="mt-4"> {{ __("case_studies.gtb.title_1") }} </span>
         <span class="text-gtb"> {{ __("case_studies.gtb.title_2") }}</span>.
@@ -10,8 +13,8 @@
 
     <x-case-studies.description>{{ __("case_studies.gtb.project_description") }}</x-case-studies.description>
 
-    <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-screen-2xl 2xl:mx-auto space-y-10 py-20 text-center">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8"> {{ __("case_studies.challenges") }} </h2>
+    <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-10 py-20 text-center">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("case_studies.challenges") }}</h2>
         <div class="grid md:grid-cols-2 xl:grid-cols-6 gap-4 2xl:gap-10 place-items-center xl:place-items-stretch">
             <x-tile title="{{ __('case_studies.gtb.challenges.challenge_1.title') }}"
                     description="{{ __('case_studies.gtb.challenges.challenge_1.description') }}"
@@ -51,7 +54,7 @@
                                   surface-bg="#E7E9EC" surface-text="text-black"
                                   text-bg="#FFFFFF" text-color="text-black"/>
 
-    <x-case-studies.typography font="Montserrat" bg="bg-[#545555]" description="{{ __('case_studies.gtb.typography_description') }}"/>
+    <x-case-studies.typography font="montserrat" bg="bg-[#545555]" description="{{ __('case_studies.gtb.typography_description') }}"/>
 
     <x-case-studies.image src="{{ asset('images/case-studies/gtb/laptop_2.png') }}" alt="{ __('case_studies.gtb.alt.laptop_2') }}" />
 
@@ -60,8 +63,8 @@
         <x-case-studies.image src="{{ asset('images/case-studies/gtb/sitemap.svg') }}" alt="{ __('case_studies.gtb.alt.sitemap') }}" margin="true" />
     </div>
 
-    <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-screen-2xl 2xl:mx-auto space-y-10 py-20 text-center">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">  {{ __("case_studies.key_functionalities") }}  </h2>
+    <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-10 py-20 text-center">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("case_studies.key_functionalities") }}</h2>
         <div class="grid md:grid-cols-2 xl:grid-cols-6 gap-4 2xl:gap-10 place-items-center xl:place-items-stretch">
             <x-tile title="{{ __('case_studies.gtb.functionalities.functionality_1.title') }}"
                     description="{{ __('case_studies.gtb.functionalities.functionality_1.description') }}"
@@ -92,4 +95,6 @@
     </section>
 
     <x-case-studies.image src="{{ asset('images/case-studies/gtb/mobile.png') }}" alt="{{ __('case_studies.gtb.alt.mobile') }}" />
+
+    <x-text-us-section/>
 @endsection
