@@ -10,18 +10,18 @@ return new class() extends Migration {
     public function up(): void
     {
         Schema::table("case_studies", function (Blueprint $table): void {
-            $table->renameColumn("name", "name_1");
-            $table->string("name_2")->nullable();
-            $table->string("name_3")->nullable();
+            $table->renameColumn("name", "name_first_part");
+            $table->string("name_second_part")->nullable();
+            $table->string("name_third_part")->nullable();
         });
     }
 
     public function down(): void
     {
         Schema::table("case_studies", function (Blueprint $table): void {
-            $table->renameColumn("name_1", "name");
-            $table->dropColumn("name_2");
-            $table->dropColumn("name_3");
+            $table->renameColumn("name_first_part", "name");
+            $table->dropColumn("name_second_part");
+            $table->dropColumn("name_third_part");
         });
     }
 };

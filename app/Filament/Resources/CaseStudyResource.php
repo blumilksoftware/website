@@ -31,13 +31,13 @@ class CaseStudyResource extends Resource
                 Split::make([
                     Section::make([
                         TranslatableContainer::make(
-                            Forms\Components\TextInput::make("name_1")
+                            Forms\Components\TextInput::make("name_first_part")
                                 ->label("Część 1 tytułu")
                                 ->required()
                                 ->maxLength(255),
                         )->requiredLocales(config("app.translatable_locales")),
                         TranslatableContainer::make(
-                            Forms\Components\TextInput::make("name_2")
+                            Forms\Components\TextInput::make("name_second_part")
                                 ->label("Część 2 tytułu")
                                 ->required()
                                 ->maxLength(255),
@@ -46,7 +46,7 @@ class CaseStudyResource extends Resource
                             ->label("Kolor tekstu części 2")
                             ->required(),
                         TranslatableContainer::make(
-                            Forms\Components\TextInput::make("name_3")
+                            Forms\Components\TextInput::make("name_third_part")
                                 ->label("Część 3 tytułu")
                                 ->maxLength(255),
                         ),
@@ -81,7 +81,7 @@ class CaseStudyResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make("name_1")
+                Tables\Columns\TextColumn::make("name_first_part")
                     ->label("Nazwa realizacji")
                     ->searchable(),
                 Tables\Columns\TextColumn::make("template")
@@ -130,14 +130,5 @@ class CaseStudyResource extends Resource
         }
 
         return $options;
-    }
-
-    protected static function getRequiredLocales(\Closure $data): array
-    {
-        if (!$data) {
-            return config("app.translatable_locales");
-        }
-
-        return [];
     }
 }

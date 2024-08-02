@@ -92,7 +92,8 @@ return [
         ],
         "section_3" => [
             "title_1" => "Nasze wartości",
-            "subtitle_1" => "Odkryj kluczowe wartości, które kształtują naszą firmę i stanowią fundament naszej działalności. W Blumilk stawiamy na to co robimy, czyli pasję, innowacyjność i doskonałość techniczną.",
+            "subtitle_1" => "Odkryj kluczowe wartości, które kształtują naszą firmę i stanowią fundament naszej działalności.",
+            "subtitle_2" => "W Blumilk stawiamy na to co robimy, czyli pasję, innowacyjność i doskonałość techniczną.",
             "content_1" => "Pasja",
             "content_2" => "Jesteśmy pasjonatami tworzenia oprogramowania, angażując się zarówno w badania naukowe, jak i edukację, aby dzielić się wiedzą i wspierać rozwój młodych talentów.",
             "content_3" => "Innowacyjność",
@@ -104,20 +105,20 @@ return [
             "title_1" => "Nasza misja",
             "subtitle_1" => "Jako pasjonaci kodu, tworzymy nowoczesne rozwiązania technologiczne, które inspirują i ułatwiają codzienne życie naszych klientów. Doskonalimy umiejętności to po, aby aktywnie współtworzyć społeczność programistyczną w Polsce.",
             "activity_1" => [
-                "title" => "Środowisko akademickie",
-                "subtitle" => "Prowadzimy zajęcia na kierunku Informatyka i Inżynieria Produkcji i Logistyki w Collegium Witelona Uczelnia Państwowa w Legnicy. Organizujemy także otwarty program praktyk dla studentów kierunków informatycznych oraz jesteśmy partnerami w naukowych konferencjach.",
-            ],
-            "activity_2" => [
-                "title" => "SoDA (Software Development Association Poland)",
-                "subtitle" => "Należymy do grona założycieli prawdopodobnie największej grupy badawczej w obszarze sztucznej inteligencji w Polsce - SoDA AI Research Group Udzielamy eksperckich komentarzy do raportów branżowych oraz prasy ogólnopolskiej, w tym Forbes i Dziennik Prawny.  Szkolimy sektor publiczny ze sposobów wykorzystywania AI. Udzielamy eksperckich wywiadów w telewizji i radiu oraz występujemy na konferencjach.",
-            ],
-            "activity_3" => [
                 "title" => "Projekty badawczo-rozwojowe (B+R)",
                 "subtitle" => "Zajmujemy się różnorodnymi zagadnieniami badawczymi, obejmującymi: przetwarzanie dużych zbiorów danych (big data), rozwiązywanie problemów szeregowania zadań, wykorzystywanie sztucznej inteligencji, optymalizacja. Dzięki doświadczeniu i wiedzy zdobytej przez członków naszego zespołu, jesteśmy w stanie skutecznie zarządzać i realizować projekty R&D, zapewniając naszym Klientom najwyższą jakość i innowacyjność w każdym etapie współpracy.",
             ],
-            "activity_4" => [
+            "activity_2" => [
                 "title" => "Łączymy społeczność technologiczną w Legnicy",
-                "subtitle" => "Jesteśmy organizatorem Legnickich Meetupów Technologicznych - otwartych spotkań dla  backendowych programistów, frontendowców, testerów aplikacji, grafików, project managerów i wszystkich, których interesuje świat kodu.",
+                "subtitle" => "Jesteśmy organizatorem Legnickich Meetupów Technologicznych - otwartych spotkań dla backendowych programistów, frontendowców, testerów aplikacji, grafików, project managerów i wszystkich, których interesuje świat kodu.",
+            ],
+            "activity_3" => [
+                "title" => "Środowisko akademickie",
+                "subtitle" => "Prowadzimy zajęcia na kierunku Informatyka i Inżynieria Produkcji i Logistyki w Collegium Witelona Uczelnia Państwowa w Legnicy. Organizujemy także otwarty program praktyk dla studentów kierunków informatycznych oraz jesteśmy partnerami w naukowych konferencjach.",
+            ],
+            "activity_4" => [
+                "title" => "SoDA (Software Development Association Poland)",
+                "subtitle" => "Należymy do grona założycieli prawdopodobnie największej grupy badawczej w obszarze sztucznej inteligencji w Polsce - SoDA AI Research Group Udzielamy eksperckich komentarzy do raportów branżowych oraz prasy ogólnopolskiej, w tym Forbes i Dziennik Prawny.  Szkolimy sektor publiczny ze sposobów wykorzystywania AI. Udzielamy eksperckich wywiadów w telewizji i radiu oraz występujemy na konferencjach.",
             ],
         ],
         "section_5" => [
