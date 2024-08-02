@@ -49,7 +49,7 @@ services:
       - .deployment
 
   blumilk-website-beta-database:
-    image: postgres:16.1-alpine3.18
+    image: postgres:16.3-alpine3.18@sha256:64e18e8fb3e9c9aac89ac590c5dd8306b862478404f76cd9b5f7720d012b4c47
     container_name: blumilk-website-beta-database-container
     logging:
       driver: "json-file"
@@ -79,7 +79,7 @@ services:
     restart: unless-stopped
 
   blumilk-website-beta-redis:
-    image: redis:7.2.3-alpine3.18
+    image: redis:7.2.3-alpine3.18@sha256:3ce533b2b057f74b235d1d8697ae08b1b6ff0a5e16827ea6a377b6365693c7ed
     container_name: blumilk-website-beta-redis-container
     logging:
       driver: "json-file"
