@@ -30,31 +30,32 @@
         </div>
     </section>
     <section class="bg-white py-12 sm:py-16 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
-        <dl class="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4 text-[#0E0B3D]">
-            <div class="flex flex-col p-8 gap-4">
-                <dt class="text-sm font-normal leading-6">{{ __("content.about.section_2.stat_1") }}</dt>
-                <dd class="order-first text-3xl md:text-4xl xl:text-5xl font-semibold">+25</dd>
+        <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:flex xl:justify-between overflow-hidden text-center text-[#0E0B3D] gap-8">
+            <div class="flex flex-col gap-4">
+                <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_1") }}</dt>
+                <dd class="order-first text-4xl md:text-5xl xl:text-6xl font-semibold">+25</dd>
             </div>
-            <div class="flex flex-col bg-gray-400/5 p-8 gap-4">
-                <dt class="text-sm font-normal leading-6">{{ __("content.about.section_2.stat_2") }}</dt>
-                <dd class="order-first text-3xl md:text-4xl xl:text-5xl font-semibold">155</dd>
+            <div class="flex flex-col gap-4">
+                <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_2") }}</dt>
+                <dd class="order-first text-4xl md:text-5xl xl:text-6xl font-semibold">155</dd>
             </div>
-            <div class="flex flex-col bg-gray-400/5 p-8 gap-4">
-                <dt class="text-sm font-normal leading-6">{{ __("content.about.section_2.stat_3") }}</dt>
-                <dd class="order-first text-3xl md:text-4xl xl:text-5xl font-semibold">82</dd>
+            <div class="flex flex-col gap-4">
+                <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_3") }}</dt>
+                <dd class="order-first text-4xl md:text-5xl xl:text-6xl font-semibold">82</dd>
             </div>
-            <div class="flex flex-col bg-gray-400/5 p-8 gap-4">
-                <dt class="text-sm font-normal leading-6">{{ __("content.about.section_2.stat_4") }}</dt>
-                <dd class="order-first text-3xl md:text-4xl xl:text-5xl font-semibold">1000+</dd>
+            <div class="flex flex-col gap-4">
+                <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_4") }}</dt>
+                <dd class="order-first text-4xl md:text-5xl xl:text-6xl font-semibold">1000+</dd>
             </div>
-        </dl>
+        </div>
+
     </section>
     <section class="relative pt-14 pb-24 text-center">
-        <div class="px-[10%] md:px-[20%] space-y-10">
+        <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-10">
             <div class="pb-14">
-                <h2 class="text-3xl md:text-3xl lg:text-5xl font-semibold pb-8">{{ __("content.about.section_3.title_1") }}</h2>
-                <span
-                    class="font-light leading-relaxed text-xl relative">{{ __("content.about.section_3.subtitle_1") }}</span>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.about.section_3.title_1") }}</h2>
+                <span class="font-normal leading-relaxed text-lg block">{{ __("content.about.section_3.subtitle_1") }}</span>
+                <span class="font-normal leading-relaxed text-lg">{{ __("content.about.section_3.subtitle_2") }}</span>
             </div>
             <div class="grid xl:grid-cols-3 gap-4 2xl:gap-10 place-items-center xl:place-items-stretch">
                 <x-tile title="{{ __('content.about.section_3.content_1') }}"

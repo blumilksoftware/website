@@ -92,7 +92,8 @@ return [
         ],
         "section_3" => [
             "title_1" => "Our values",
-            "subtitle_1" => "Discover the key values that shape our company and constitute the foundation of our business. At Blumilk, we focus on what we do, i.e. passion, innovation and technical perfection.",
+            "subtitle_1" => "Discover the key values that shape our company and constitute the foundation of our business.",
+            "subtitle_2" => "At Blumilk, we focus on what we do, i.e. passion, innovation and technical perfection.",
             "content_1" => "Passion",
             "content_2" => "We are passionate about creating software, engaging in both scientific research and education to share knowledge and support the development of young talents.",
             "content_3" => "Innovation",

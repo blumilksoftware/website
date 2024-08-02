@@ -92,7 +92,8 @@ return [
         ],
         "section_3" => [
             "title_1" => "Nasze wartości",
-            "subtitle_1" => "Odkryj kluczowe wartości, które kształtują naszą firmę i stanowią fundament naszej działalności. W Blumilk stawiamy na to co robimy, czyli pasję, innowacyjność i doskonałość techniczną.",
+            "subtitle_1" => "Odkryj kluczowe wartości, które kształtują naszą firmę i stanowią fundament naszej działalności.",
+            "subtitle_2" => "W Blumilk stawiamy na to co robimy, czyli pasję, innowacyjność i doskonałość techniczną.",
             "content_1" => "Pasja",
             "content_2" => "Jesteśmy pasjonatami tworzenia oprogramowania, angażując się zarówno w badania naukowe, jak i edukację, aby dzielić się wiedzą i wspierać rozwój młodych talentów.",
             "content_3" => "Innowacyjność",
