@@ -36,7 +36,7 @@ class ActivityResource extends JsonResource
             "slug" => $activity->slug,
             "photo" => $activity->photo,
             "published" => $activity->published,
-            "published_at" => $activity->published_at?->format(DateFormats::ACTIVITY_DATE_DISPLAY),
+            "published_at" => $activity->published_at?->translatedFormat(DateFormats::ACTIVITY_DATE_DISPLAY),
             "url" => $activity->url,
         ];
     }

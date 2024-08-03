@@ -38,4 +38,12 @@ class Tag extends Model
         parent::boot();
         static::observe(TagObserver::class);
     }
+
+    public function activitiesCount(): int
+    {
+        return Activity::query()
+            ->where("published", true)
+            ->whereJsonContains("tags", $this->id)
+            ->count();
+    }
 }
