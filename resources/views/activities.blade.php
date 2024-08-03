@@ -3,6 +3,10 @@
 @section("title", __("meta.activities.title"))
 @section("description", __("meta.activities.description"))
 
+@php
+    $isFirst = true;
+@endphp
+
 @section("content")
     <section class="py-16 text-center mx-[10%] md:mx-[15%] 2xl:max-w-7xl  space-y-16">
         <div>
@@ -38,7 +42,12 @@
     <section class="relative mx-[10%] 2xl:max-w-screen-2xl 2xl:mx-auto">
         <div class="grid lg:grid-cols-3 gap-16">
             @foreach($activities as $activity)
-                <x-activity-card :activity="$activity->resolve()"/>
+                @if ($isFirst)
+                    <x-activity-card :activity="$activity->resolve()" class="col-span-3" isFirst="true"/>
+                    @php($isFirst = false)
+                @else
+                    <x-activity-card :activity="$activity->resolve()"/>
+                @endif
             @endforeach
         </div>
     </section>

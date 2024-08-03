@@ -77,10 +77,11 @@
                 </div>
                 <div @class(['mt-10', 'hidden' => count($peopleTags) === 0])>
                     <h3 class="text-lg lg:text-xl font-semibold">{{ __("content.activity.section_1.title_3") }}</h3>
-                    <div class="flex flex-col place-content-left">
+                    <div class="flex flex-wrap gap-4 pt-4">
                         @foreach($peopleTags as $tag)
-                            <x-tag href="{{ route('activities', ['tag' => $tag['title']]) }}"
-                                   class="flex my-1 md:my-2 xl:my-3 px-4 py-1 md:px-3 md:py-2 xl:px-4 xl:py-2 2xl:px-6 2xl:py-3 text-center w-fit"> {{ $tag['title'] }}</x-tag>
+                            <span class="capitalize justify-between font-light text-sm text-gray-500 border border-gray-300 w-fit px-3 py-2 rounded-md">
+                                {{ $tag['title'] }}
+                            </span>
                         @endforeach
                     </div>
                 </div>
