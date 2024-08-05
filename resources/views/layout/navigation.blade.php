@@ -20,32 +20,27 @@
                 <a href="{{ route('about') }}"
                    @class([
                         'hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2',
-                        'bg-website-extra_light text-website-normal' => Str::contains($current, 'about')])>{{ __("content.pages.about") }}
+                        'text-website-normal' => Str::contains($current, 'about')])>{{ __("content.pages.about") }}
                 </a>
                 <a href="{{ route('case-studies') }}"
                    @class([
                         'hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2',
-                        'bg-website-extra_light text-website-normal' => Str::contains($current, 'case-studies')])>{{ __("content.pages.case_study") }}
-                </a>
-                <a href="{{ route('partners') }}"
-                   @class([
-                        'hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2',
-                        'bg-website-extra_light text-website-normal' => Str::contains($current, 'partners')])>{{ __("content.pages.partners") }}
+                        'text-website-normal' => Str::contains($current, 'case-studies')])>{{ __("content.pages.case_study") }}
                 </a>
                 <a href="{{ route('career') }}"
                    @class([
                         'hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2',
-                        'bg-website-extra_light text-website-normal' => Str::contains($current, 'career')])>{{ __("content.pages.career") }}
+                        'text-website-normal' => Str::contains($current, 'career')])>{{ __("content.pages.career") }}
                 </a>
                 <a href="{{ route('activities') }}"
                    @class([
                         'hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2',
-                        'bg-website-extra_light text-website-normal' => Str::contains($current, 'activities')])>{{ __("content.pages.activities") }}
+                        'text-website-normal' => Str::contains($current, 'activities')])>{{ __("content.pages.activities") }}
                 </a>
                 <a href="{{ route('contact') }}"
                    @class([
                         'hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2',
-                        'bg-website-extra_light text-website-normal' => Str::contains($current, 'contact')])>{{ __("content.pages.contact") }}
+                        'text-website-normal' => Str::contains($current, 'contact')])>{{ __("content.pages.contact") }}
                 </a>
             </div>
         </div>
@@ -113,13 +108,6 @@
                 'text-website-normal' => Str::contains($current, 'case-studies')])>
                 <a href="{{ route('case-studies') }}" class="my-4 p-2">
                     {{ __("content.pages.case_study") }}
-                </a>
-            </div>
-            <div @class([
-                'w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start',
-                'text-website-normal' => Str::contains($current, 'partners')])>
-                <a href="{{ route('partners') }}" class="my-4 p-2">
-                    {{ __("content.pages.partners") }}
                 </a>
             </div>
             <div @class([
