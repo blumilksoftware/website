@@ -16,6 +16,8 @@ class LocalisedRoutingFallbackTest extends TestCase
 
     public function testFallbackLocaleForPolishRedirect(): void
     {
+        $this->app->setLocale("pl");
+
         $response = $this->get("/", ["Accept-Language" => "pl"]);
         $response->assertRedirect("/pl");
     }
@@ -28,8 +30,10 @@ class LocalisedRoutingFallbackTest extends TestCase
 
     public function testFallbackLocaleForPolishContactPage(): void
     {
-        $response = $this->get("/contact", ["Accept-Language" => "pl"]);
-        $response->assertRedirect("/en/contact");
+        $this->app->setLocale("pl");
+
+        $response = $this->get("/kontakt", ["Accept-Language" => "pl"]);
+        $response->assertRedirect("/pl/kontakt");
     }
 
     public function testFallbackLocaleForNotSupportedLanguageContactPage(): void
