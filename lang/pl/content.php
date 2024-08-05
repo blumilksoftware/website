@@ -184,10 +184,10 @@ return [
         "section_2" => [
             "stack" => [
                 "title_1" => "Na czym pracujemy",
-                "content_1" => "PHP w najnowszej wersji jeżeli jest to możliwe",
+                "content_1" => "PHP w najnowszej wersji, jeżeli jest to możliwe",
                 "content_2" => "Laravel domyślnie i gdy jest to najlepsza opcja",
                 "content_3" => "Bazy danych wedle specyfiki każdego projektu",
-                "content_4" => "PHPUnit a także Behat, Dusk lub Cypress do testowania",
+                "content_4" => "PHPUnit, a także Behat, Dusk lub Cypress do testowania",
                 "content_5" => "PHP CS Fixer do utrzymania jakości kodu",
                 "content_6" => "Docker aby wszystko zamknąć w kontenerach",
                 "content_7" => "GitHub do kontroli wersji, CR-ek i CI/CD",
