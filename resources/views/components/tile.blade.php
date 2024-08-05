@@ -1,6 +1,6 @@
 <div class="{{$attributes->get('class')}}">
     <div class="flex flex-col place-items-center 2xl:flex-row bg-gray-extraLight rounded-xl leading-relaxed lg:text-lg p-6 gap-4 w-full h-full shrink">
-        <div class="bg-white shadow-xl rounded-full p-4 size-14 aspect-square">
+        <div class="bg-white shadow-xl rounded-full p-4 size-16 aspect-square">
             {{ $slot }}
         </div>
 

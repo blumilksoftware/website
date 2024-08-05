@@ -1,6 +1,6 @@
 @extends("layout.public")
 
-@section("title", $caseStudy->name)
+@section("title", $caseStudy->name_first_part . " " . $caseStudy->name_second_part . " " . $caseStudy->name_third_part)
 @section("description", $caseStudy->description)
 
 @section("content")
