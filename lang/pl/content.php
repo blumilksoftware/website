@@ -213,14 +213,15 @@ return [
     ],
     "activities" => [
         "section_1" => [
-            "title_1" => "Nasze aktywności",
+            "title_1" => "Nasze",
+            "title_2" => "aktywności",
         ],
     ],
     "activity" => [
         "section_1" => [
-            "title_1" => "Może Cię zainteresować:",
-            "title_2" => "Tagi",
-            "title_3" => "Osoby",
+            "title_1" => "Mogą Cię zainteresować",
+            "title_2" => "Kategorie",
+            "title_3" => "Powiązane osoby",
         ],
     ],
     "contact" => [

@@ -11,7 +11,8 @@
     <section class="py-16 text-center mx-[10%] md:mx-[15%] 2xl:max-w-7xl  space-y-16">
         <div>
             <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-black my-6 break-words">
-                {{ __("content.activities.section_1.title_1") }}
+                <span class="text-website-normal">{{ __("content.activities.section_1.title_1") }}</span>
+                {{ __("content.activities.section_1.title_2") }}
             </h2>
         </div>
         <div class="flex place-content-center flex-wrap gap-y-4">
