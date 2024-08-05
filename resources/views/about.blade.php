@@ -60,17 +60,17 @@
             <div class="grid xl:grid-cols-3 gap-4 2xl:gap-10 place-items-center xl:place-items-stretch">
                 <x-tile title="{{ __('content.about.section_3.content_1') }}"
                         description="{{ __('content.about.section_3.content_2') }}"
-                        class="size-full">
+                        class="size-full 2xl:place-items-start">
                     <x-icons.heart-code accent="stroke-blue-normalNeon" />
                 </x-tile>
                 <x-tile title="{{ __('content.about.section_3.content_3') }}"
                         description="{{ __('content.about.section_3.content_4') }}"
-                        class="size-full">
+                        class="size-full 2xl:place-items-start">
                     <x-icons.bulb accent="stroke-blue-normalNeon" />
                 </x-tile>
                 <x-tile title="{{ __('content.about.section_3.content_5') }}"
                         description="{{ __('content.about.section_3.content_6') }}"
-                        class="size-full">
+                        class="size-full 2xl:place-items-start">
                     <x-icons.diamond accent="stroke-blue-normalNeon" />
                 </x-tile>
             </div>
@@ -188,5 +188,4 @@
             </div>
     </section>
     <x-text-us-section/>
-
 @endsection
