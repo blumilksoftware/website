@@ -224,10 +224,9 @@ return [
         ],
     ],
     "contact" => [
-        "title_1" => "Napisz",
-        "title_2" => "do nas!",
+        "title_1" => "Napisz do nas!",
         "company" => "Blumilk sp. z o.o.",
-        "subtitle" => "Zainteresowaliśmy Cię na tyle, że chcesz z nami omówić swój projekt, wymienić myśli, zostać naszym partnerem biznesowym, lub z nami pracować? Chętnie z Tobą porozmawiamy!",
+        "subtitle" => "Pozwól nam przekształcić Twoją wizję w rzeczywistość. Masz pomysł na aplikację web/mobile, potrzebujesz transformacji cyfrowej lub planujesz projekt badawczo-rozwojowy? Zrób to z nami!",
         "form" => [
             "email" => "E-mail",
             "title" => "Temat",

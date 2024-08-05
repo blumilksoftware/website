@@ -224,10 +224,9 @@ return [
         ],
     ],
     "contact" => [
-        "title_1" => "Write",
-        "title_2" => "to us!",
+        "title_1" => "Write to us!",
         "company" => "Blumilk sp. z o.o.",
-        "subtitle" => "Are you interested enough to want to discuss your project with us, exchange ideas, become our business partner, or work with us? We would love to talk with you!",
+        "subtitle" => "Let us transform your vision into reality. Do you have an idea for a web/mobile application, need a digital transformation or are you planning a research and development project? Do it with us!",
         "form" => [
             "email" => "Email",
             "title" => "Topic",

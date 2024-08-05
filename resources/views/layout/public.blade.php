@@ -50,9 +50,9 @@
     <div class="min-h-screen z-20 overflow-hidden">
         @yield('content')
     </div>
-    @if (!isset($excludeFooter) || !$excludeFooter)
-        @include('layout.footer')
-    @endif
+
+    @include('layout.footer')
+
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
