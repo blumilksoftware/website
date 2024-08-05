@@ -19,27 +19,27 @@
             <div class="font-medium flex items-center text-center gap-2">
                 <a href="{{ route('about') }}"
                    @class([
-                        'hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2',
+                        'hover:text-website-normal rounded-3xl px-2',
                         'text-website-normal' => Str::contains($current, 'about')])>{{ __("content.pages.about") }}
                 </a>
                 <a href="{{ route('case-studies') }}"
                    @class([
-                        'hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2',
+                        'hover:text-website-normal rounded-3xl px-2',
                         'text-website-normal' => Str::contains($current, 'case-studies')])>{{ __("content.pages.case_study") }}
                 </a>
                 <a href="{{ route('career') }}"
                    @class([
-                        'hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2',
+                        'hover:text-website-normal rounded-3xl px-2',
                         'text-website-normal' => Str::contains($current, 'career')])>{{ __("content.pages.career") }}
                 </a>
                 <a href="{{ route('activities') }}"
                    @class([
-                        'hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2',
+                        'hover:text-website-normal rounded-3xl px-2',
                         'text-website-normal' => Str::contains($current, 'activities')])>{{ __("content.pages.activities") }}
                 </a>
                 <a href="{{ route('contact') }}"
                    @class([
-                        'hover:bg-website-extra_light hover:text-website-normal rounded-3xl px-2',
+                        'hover:text-website-normal rounded-3xl px-2',
                         'text-website-normal' => Str::contains($current, 'contact')])>{{ __("content.pages.contact") }}
                 </a>
             </div>

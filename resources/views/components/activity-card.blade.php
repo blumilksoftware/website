@@ -4,20 +4,26 @@
     <div
          @class([
             'w-auto',
-            'h-[591px]' => $isFirst,
+            'h-[591px] mb-24' => $isFirst,
             'h-[340px]' => !$isFirst,
          ])>
-        <img src="{{ asset("storage/".$activity['photo']) }}" alt="" class="size-full object-cover">
+        <a href="{{ route('activities.entry', $activity['slug']) }}">
+            <span class="absolute inset-0"></span>
+            <img src="{{ asset("storage/".$activity['photo']) }}" alt="" class="size-full object-cover">
+        </a>
     </div>
     <div
          @class([
-             'relative -top-28 pt-6 px-12 flex flex-col w-auto mx-32 gap-6 bg-white'=>$isFirst,
+             'absolute bottom-0 px-12 pb-12 pt-6 flex flex-col w-[80%] place-self-center gap-3 bg-white'=>$isFirst,
+             'flex flex-col gap-2' => !$isFirst,
+
          ])
     >
-        <div class="text-gray-400 text-sm pt-3">
-            <time datetime="{{ $activity['published_at'] }}">
+        <div class="flex text-sm pt-3 justify-between">
+            <time datetime="{{ $activity['published_at'] }}" class="text-gray-400 my-auto">
                 {{ $activity['published_at'] }}
             </time>
+            @if($isFirst) <x-icons.arrow-up-right/> @endif
         </div>
         <div class="font-semibold text-md">
             <h3
@@ -29,8 +35,7 @@
             </h3>
         </div>
         <div class="line-clamp-2 text-gray-400 text-sm">
-            {{ $activity['subtitle'] }}
+            {{ $activity['description'] }}
         </div>
     </div>
-
 </article>

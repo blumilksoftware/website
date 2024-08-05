@@ -13,7 +13,6 @@ use Spatie\Translatable\HasTranslations;
 
 /**
  * @property array $title
- * @property array $subtitle
  * @property array $description
  * @property string $slug
  * @property string $photo
@@ -31,13 +30,11 @@ class Activity extends Model
 
     public $translatable = [
         "title",
-        "subtitle",
         "description",
     ];
     protected $fillable = [
         "photo",
         "title",
-        "subtitle",
         "description",
         "slug",
         "published",
@@ -47,7 +44,6 @@ class Activity extends Model
     ];
     protected $casts = [
         "title" => "array",
-        "subtitle" => "array",
         "description" => "array",
         "published" => "boolean",
         "published_at" => "datetime",

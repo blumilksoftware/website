@@ -44,11 +44,6 @@ class ActivityResource extends Resource
                                 ->required()
                                 ->maxLength(255),
                         )->requiredLocales(config("app.translatable_locales")),
-                        TranslatableContainer::make(
-                            Forms\Components\TextInput::make("subtitle")
-                                ->label("Podtytuł")
-                                ->maxLength(255),
-                        )->requiredLocales(config("app.translatable_locales")),
                         Forms\Components\TextInput::make("slug")
                             ->label("Slug")
                             ->required()
