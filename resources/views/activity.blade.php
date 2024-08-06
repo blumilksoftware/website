@@ -88,7 +88,7 @@
                 <h3 class="text-lg lg:text-xl font-semibold pb-4">{{ __("content.activity.section_1.title_1") }}</h3>
                 <div class="flex flex-col place-items-center md:place-items-start md:flex-row gap-16 w-full mt-4">
                     @foreach($recommendedActivities as $recommendedActivity)
-                        <div class="relative flex flex-col w-[461px] gap-3">
+                        <div class="relative flex flex-col w-full gap-3">
                             <img src="{{ asset("storage/".$recommendedActivity['photo']) }}"
                                  alt=""
                                  class="w-full h-auto xl:h-[343px] object-cover aspect-square xl:aspect-auto">
