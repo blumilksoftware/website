@@ -40,11 +40,11 @@
             @endif
         </div>
     </section>
-    <section class="relative mx-[10%] 2xl:max-w-screen-2xl 2xl:mx-auto">
-        <div class="grid lg:grid-cols-3 gap-16">
+    <section class="relative mx-[10%] 2xl:max-w-screen-2xl 2xl:mx-auto pb-16">
+        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-16">
             @foreach($activities as $activity)
                 @if ($isFirst)
-                    <x-activity-card :activity="$activity->resolve()" class="col-span-3" isFirst="true"/>
+                    <x-activity-card :activity="$activity->resolve()" class="lg:col-span-2 xl:col-span-3" isFirst="true"/>
                     @php($isFirst = false)
                 @else
                     <x-activity-card :activity="$activity->resolve()"/>
@@ -52,7 +52,8 @@
             @endforeach
         </div>
     </section>
-    <section class="mx-[10%] md:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto  pt-16 pb-8 md:pb-0">
+
+    <section class="mx-[10%] md:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
         {{ $activities->onEachSide(1)->links() }}
     </section>
 
