@@ -65,6 +65,14 @@ return [
                 "description" => "the ability to manually create a schedule with a list of available programs",
             ],
         ],
+        "alt" => [
+            "laptop_1" => "laptop with the application website",
+            "laptop_2" => "laptop on a desk with open application website",
+            "sitemap" => "sitemap of the application",
+            "gif" => "animation of software installation",
+            "architecture" => "architecture schema of the system",
+            "mobile" => "phones with open application",
+        ],
     ],
     "vita" => [
         "title_1" => "Application for",
@@ -116,6 +124,69 @@ return [
                 "title" => "Historical data",
                 "description" => "storing the history of completed orders",
             ],
+        ],
+        "alt" => [
+            "laptop_1" => "laptop with the application website",
+            "laptop_2" => "person with a laptop on his laps with open application",
+            "sitemap" => "sitemap of the application",
+            "mobile" => "phones with open application",
+        ],
+    ],
+    "gtb" => [
+        "title_1" => "Shared economy application for",
+        "title_2" => "shipment transportation",
+        "project_description" => "Shared economy application for parcel transportation. As a sender, the user adds the parcels he wants to transport, individually setting the price for the service. As a driver, he looks for packages on the route he will be driving and earns money by delivering them.",
+        "challenges" => [
+            "challenge_1" => [
+                "title" => "Progressive web application",
+                "description" => "available both from your phone and computer",
+            ],
+            "challenge_2" => [
+                "title" => "System management",
+                "description" => "shipments, categories and price ranges",
+            ],
+            "challenge_3" => [
+                "title" => "Online payments",
+                "description" => "securing the interests of users",
+            ],
+            "challenge_4" => [
+                "title" => "Parcel forwarding system",
+                "description" => "verifying the identity of recipients and drivers",
+            ],
+            "challenge_5" => [
+                "title" => "Data safety",
+                "description" => "optimization of database processes",
+            ],
+        ],
+        "colors_description" => "Sed ut perspiciatis unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab  illo inventore veritatis et quasi architecto beatae vitae dicta sunt  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut  odit aut fugit, sed quia consequuntur magni dolores eos",
+        "typography_description" => "Sed ut perspiciatis unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab  illo inventore veritatis et quasi architecto beatae vitae dicta sunt  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut  odit aut fugit, sed quia consequuntur magni dolores eos",
+        "functionalities" => [
+            "functionality_1" => [
+                "title" => "Detailed statistics",
+                "description" => "enabling you to conduct your business strategy",
+            ],
+            "functionality_2" => [
+                "title" => "Adding shipments",
+                "description" => "with the option of setting the price for the service yourself",
+            ],
+            "functionality_3" => [
+                "title" => "Viewing shipments",
+                "description" => "on the designated route",
+            ],
+            "functionality_4" => [
+                "title" => "Secured receipt of shipments",
+                "description" => "pin code verification",
+            ],
+            "functionality_5" => [
+                "title" => "Secure payments",
+                "description" => "handled by the Stripe system",
+            ],
+        ],
+        "alt" => [
+            "laptop_1" => "laptop with the application website",
+            "laptop_2" => "people in the car with opened application on a tablet",
+            "sitemap" => "sitemap of the application",
+            "mobile" => "phone with the application",
         ],
     ],
 ];
