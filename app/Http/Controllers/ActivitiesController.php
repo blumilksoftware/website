@@ -23,20 +23,31 @@ class ActivitiesController extends Controller
                 ->orWhere("title->en", "LIKE", $tagFromQuery)
                 ->firstOrFail()
             : null;
+        $allActivitiesCount = Activity::query()
+            ->where("published", true)
+            ->count();
         $activities = Activity::query()
             ->where("published", true)
             ->when($tag, fn($query, $tag) => $query->whereJsonContains("tags", $tag->id))
             ->latest("published_at")
-            ->paginate(9);
+            ->paginate(7)
+            ->appends(["tag" => $tagFromQuery]);
         $tags = Tag::query()
             ->where("is_primary", true)
-            ->get()
-            ->pluck("title");
+            ->get();
+
+        $tagsActivitiesCount = [];
+
+        foreach ($tags as $singleTag) {
+            $tagsActivitiesCount[$singleTag->title] = $singleTag->activitiesCount();
+        }
 
         return $factory->make("activities")
             ->with("activities", ActivityResource::collection($activities))
-            ->with("tags", $tags)
-            ->with("selectedTag", $tag?->title);
+            ->with("tags", $tags->pluck("title"))
+            ->with("tagsActivitiesCount", $tagsActivitiesCount)
+            ->with("selectedTag", $tag?->title)
+            ->with("allActivitiesCount", $allActivitiesCount);
     }
 
     public function get(Request $request, Factory $factory, string $slug): View
@@ -58,9 +69,18 @@ class ActivitiesController extends Controller
             $recommendedActivities = [$previousActivities->first(), $nextActivities->first()];
         }
 
+        $tagsActivitiesCount = [];
+
+        foreach ($activityTags as $singleTag) {
+            $tagsActivitiesCount[$singleTag->title] = $singleTag->activitiesCount();
+        }
+
+        $activity = new ActivityResource($activity);
+
         return $factory->make("activity")
-            ->with("activity", new ActivityResource($activity))
+            ->with("activity", $activity->resolve())
             ->with("tags", TagResource::collection($activityTags->where("as_person", false))->resolve())
+            ->with("tagsActivitiesCount", $tagsActivitiesCount)
             ->with("peopleTags", TagResource::collection($activityTags->where("as_person", true))->resolve())
             ->with("recommendedActivities", ActivityResource::collection($recommendedActivities)->resolve())
             ->with("articleUrl", $articleUrl);

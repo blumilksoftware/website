@@ -1,20 +1,40 @@
-@props(['activity', 'class' => ''])
+@props(['activity', 'class' => '', 'isFirst' => false])
 
-<article {{ $attributes->class([$class, 'relative isolate flex flex-col justify-end overflow-hidden pb-8 aspect-square']) }}>
-    <img src="{{ asset("storage/".$activity['photo']) }}" alt="" class="absolute inset-0 -z-10 size-full object-cover">
-
-    <div class="flex absolute flex-wrap items-center overflow-hidden text-md text-white font-semibold top-0 right-8 w-14">
-        <time datetime="{{ $activity['published_at'] }}" class="bg-website-normal pt-6 py-2 text-center">
-            {{ $activity['published_at'] }}
-        </time>
-    </div>
-    <div class="flex flex-wrap items-center overflow-hidden text-md text-black font-semibold">
-        <span class="bg-white p-2">{{ $activity['title'] }}</span>
-    </div>
-    <h3 class="mt-3 flex flex-wrap items-center overflow-hidden text-md text-black font-semibold">
-        <a href="{{ route('activities.entry', $activity['slug']) }}" class="bg-white p-2">
+<article {{ $attributes->class([$class, 'relative isolate flex flex-col overflow-hidden gap-3']) }}>
+    <div
+         @class([
+            'w-auto',
+            'lg:h-[591px] lg:mb-24' => $isFirst,
+            'lg:h-[340px]' => !$isFirst,
+         ])>
+        <a href="{{ route('activities.entry', $activity['slug']) }}">
             <span class="absolute inset-0"></span>
-            {{ $activity['subtitle'] }}
+            <img src="{{ asset("storage/".$activity['photo']) }}" alt="" class="h-auto w-full lg:h-full object-cover aspect-square lg:aspect-auto">
         </a>
-    </h3>
+    </div>
+    <div
+         @class([
+             'lg:absolute lg:bottom-0 lg:px-12 lg:pb-12 lg:pt-6 flex flex-col lg:w-[80%] lg:place-self-center gap-2 lg:gap-3 lg:bg-white'=>$isFirst,
+             'flex flex-col gap-2' => !$isFirst,
+
+         ])>
+        <div class="flex text-sm pt-3 justify-between">
+            <time datetime="{{ $activity['published_at'] }}" class="text-gray-400 my-auto">
+                {{ $activity['published_at'] }}
+            </time>
+            @if($isFirst)<span class="hidden lg:block"><x-icons.arrow-up-right/></span>@endif
+        </div>
+        <div class="font-semibold text-md">
+            <h3
+            @class(['lg:text-2xl' => $isFirst])>
+                <a href="{{ route('activities.entry', $activity['slug']) }}">
+                    <span class="absolute inset-0"></span>
+                    {{ $activity['title'] }}
+                </a>
+            </h3>
+        </div>
+        <div class="line-clamp-2 text-gray-400 text-sm prose">
+            {!! $activity['description'] !!}
+        </div>
+    </div>
 </article>
