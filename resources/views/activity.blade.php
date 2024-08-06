@@ -25,7 +25,6 @@
                     <div class="w-full">
                         <div class="text-2xl md:text-3xl lg:text-4xl">
                             <h1 class="font-bold">{{ $activity['title'] }}</h1>
-                            <h1>{{ $activity['subtitle'] }}</h1>
                         </div>
                     </div>
                 </div>

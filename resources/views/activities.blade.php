@@ -25,9 +25,9 @@
                 <x-tag href="{{ route('activities', ['tag' => $tag]) }}"
                        articlesCount="{{ $tagsActivitiesCount[$tag] }}"
                     @class([
-                        "px-4 py-1 md:px-3 md:py-2 xl:px-4 xl:py-2 2xl:px-6 2xl:py-3",
-                        "text-black border-website-normal" => $selectedTag && $tag === $selectedTag,
-                        "text-gray-400" => !($selectedTag && $tag === $selectedTag)
+                        'px-4 py-1 md:px-3 md:py-2 xl:px-4 xl:py-2 2xl:px-6 2xl:py-3',
+                        'text-black border-website-normal' => $selectedTag && $tag === $selectedTag,
+                        'text-gray-400' => !($selectedTag && $tag === $selectedTag),
                     ])>{{ $tag }}</x-tag>
             @endforeach
             @if($selectedTag && $tags->contains($selectedTag) === false)

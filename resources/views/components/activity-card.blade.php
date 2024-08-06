@@ -34,8 +34,8 @@
                 </a>
             </h3>
         </div>
-        <div class="line-clamp-2 text-gray-400 text-sm">
-            {{ $activity['description'] }}
+        <div class="line-clamp-2 text-gray-400 text-sm prose">
+            {!! $activity['description'] !!}
         </div>
     </div>
 </article>
