@@ -26,7 +26,7 @@ module.exports = {
           extraDark: '#EAEBF3',
         },
         blue: {
-          dark: "#0E0B3D",
+          dark: "#000033",
           normalNeon: '#3461fd',
           normal: '#3259E8',
           light: '#F7F8FD',
@@ -54,6 +54,9 @@ module.exports = {
         montserrat: ['Montserrat'],
       },
     },
+    listStyleType: {
+      square: 'square',
+    }
   },
   plugins: [
     require('@tailwindcss/forms'),
