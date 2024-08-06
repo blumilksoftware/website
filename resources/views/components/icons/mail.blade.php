@@ -1,3 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" class="align-middle" viewBox="0 0 20 20">
-    <path id="Vector" d="M2.929,16.376a9.319,9.319,0,0,1,0-13.566,10.3,10.3,0,0,1,14.142,0,9.319,9.319,0,0,1,0,13.566,10.3,10.3,0,0,1-14.142,0ZM10,9.548l5-1.9V6H5V7.648Zm0,1.289-.23-.086L5,8.937V13.19H15V8.937l-4.77,1.814Z" fill="#fff"/>
-</svg>
+<svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="#000000"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
