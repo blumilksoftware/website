@@ -17,7 +17,7 @@
             </p>
         </div>
         <div class="row-span-4 py-12 xl:p-0">
-            <form action="{{ route('contact.create') }}" method="POST" class="flex flex-col gap-y-4 justify-between h-full xl:ml-[15%] xl:bg-[#F4F8FD] md:px-16 md:py-10 rounded-xl">
+            <form action="{{ route('contact.create') }}" method="POST" class="flex flex-col gap-y-4 justify-between h-full xl:ml-[15%] xl:bg-[#F4F8FD] md:px-16 py-10 rounded-xl">
                 @csrf
                 <div class="grid gap-y-3">
                     <div>
@@ -80,10 +80,10 @@
             </form>
         </div>
         <div class="h-full row-span-3">
-            <div id="map" class="h-[40vh] xl:h-[20vh] w-full rounded-xl"></div>
-            <div>
-                <h1 class="text-2xl font-semibold text-black mb-4">{{ __('content.contact.company') }}</h1>
-                <div class="flex text-sm text-gray-400 gap-x-6">
+            <div id="map" class="h-[40vh] xl:h-[20vh] w-full rounded-xl py-16 lg:py-0"></div>
+            <div class="py-16">
+                <h1 class="text-2xl font-semibold text-black mb-4 text-center  md:text-left">{{ __('content.contact.company') }}</h1>
+                <div class="flex flex-col lg:flex-row text-sm text-gray-400 gap-x-6">
                     <div class="flex mt-3 items-start">
                         <span class="sr-only">Location</span>
                         <x-icons.location/>
