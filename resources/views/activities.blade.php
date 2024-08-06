@@ -18,7 +18,7 @@
         <div class="flex place-content-center flex-wrap gap-y-4">
             <x-tag href="{{ route('activities') }}"
                    articlesCount="{{ $allActivitiesCount }}"
-                @class([ "px-4 py-1 md:px-3 md:py-2 xl:px-4 xl:py-2 2xl:px-6 2xl:py-3", "text-black border-website-normal" => $selectedTag === null, "text-gray-400" => $selectedTag !== null ])>
+                @class([ "px-4 py-1 md:px-3 md:py-2 xl:px-4 xl:py-2 2xl:px-6 2xl:py-3 text-center", "text-black border-website-normal" => $selectedTag === null, "text-gray-400" => $selectedTag !== null ])>
                 {{ __("tags.all") }}
             </x-tag>
             @foreach($tags as $tag)
