@@ -25,7 +25,7 @@ return [
                 "description" => "lorem ipsum tutaj potrzebujemy zdanie uzupełniające",
             ],
             "challenge_2" => [
-                "title" => "Implementacja modelu przywilejów i ról",
+                "title" => "Implementacja modelu uprawnień i ról",
                 "description" => "zapewniający właściwy rozdział uprawnień",
             ],
             "challenge_3" => [

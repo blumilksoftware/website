@@ -25,7 +25,7 @@ return [
                 "description" => "lorem ipsum here we need a sentence to complete",
             ],
             "challenge_2" => [
-                "title" => "Implementation of the privileges and roles model",
+                "title" => "Implementation of the permissions and roles model",
                 "description" => "ensuring the proper division of permissions",
             ],
             "challenge_3" => [

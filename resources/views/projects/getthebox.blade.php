@@ -6,7 +6,7 @@
 @section("content")
     <x-case-studies.title>
         <span class="mt-4"> {{ __("case_studies.gtb.title_1") }} </span>
-        <span class="text-gtb"> {{ __("case_studies.gtb.title_2") }}</span>.
+        <span class="text-gtb"> {{ __("case_studies.gtb.title_2") }}</span>
     </x-case-studies.title>
 
     <x-case-studies.main-image src="{{ asset('images/case-studies/gtb/laptop_1.png') }}" alt="{ __('case_studies.gtb.alt.laptop_1') }}" />
