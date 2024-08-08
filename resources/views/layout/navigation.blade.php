@@ -4,7 +4,7 @@
 @endphp
 
 <nav x-data="{ openLang: false, openMobileMenu: false}"
-     class="w-auto bg-navigation">
+     class="w-auto">
     <div :class="{'flex': ! openMobileMenu, 'hidden': openMobileMenu}"
          class="flex items-center justify-between px-14 md:px-6 2xl:px-0 py-8 relative mx-auto max-w-7xl">
         <div>
