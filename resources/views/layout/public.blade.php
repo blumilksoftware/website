@@ -24,36 +24,39 @@
 
 </head>
 
-<body class="font-sora">
-    <div class="relative z-30">
+<body class="font-sora flex flex-col h-screen justify-between">
+    <div class="relative z-10">
         @include('layout.navigation')
     </div>
-    <div class="relative 2xl:max-w-screen-3xl 2xl:mx-auto">
-        <div class="absolute -z-10 left-[8%] md:-left-0 top-16">
-            <x-bubble size="100"/>
-        </div>
-        <div class="absolute left-[8%] md:left-[6%] top-10">
-            <x-bubble size="50"/>
-        </div>
-        <div class="absolute -z-10 hidden lg:block -left-[10%] lg:-left-[3%] top-[600px]">
-            <x-bubble size="250"/>
-        </div>
-        <div class="absolute right-[8%] md:right-[12%] top-0">
-            <x-bubble size="50"/>
-        </div>
-        <div class="absolute -z-10 right-14 md:right-[5%] top-[480px]">
-            <x-bubble size="110"/>
-        </div>
-        <div class="absolute -z-10 hidden lg:block -right-[10%] lg:right-[4%] top-[650px]">
-            <x-bubble size="210"/>
+
+    <div class="mb-auto">
+        <div class="relative 2xl:max-w-screen-3xl 2xl:mx-auto">
+            <div class="absolute -z-10 left-[8%] md:-left-0 top-16">
+                <x-bubble size="100"/>
+            </div>
+            <div class="absolute left-[8%] md:left-[6%] top-10">
+                <x-bubble size="50"/>
+            </div>
+            <div class="absolute -z-10 hidden lg:block -left-[10%] lg:-left-[3%] top-[600px]">
+                <x-bubble size="250"/>
+            </div>
+            <div class="absolute right-[8%] md:right-[12%] top-0">
+                <x-bubble size="50"/>
+            </div>
+            <div class="absolute -z-10 right-14 md:right-[5%] top-[480px]">
+                <x-bubble size="110"/>
+            </div>
+            <div class="absolute -z-10 hidden lg:block -right-[10%] lg:right-[4%] top-[650px]">
+                <x-bubble size="210"/>
+            </div>
         </div>
     </div>
     <div class="relative min-h-screen z-20 overflow-hidden">
         @yield('content')
     </div>
-    @if (!isset($excludeFooter) || !$excludeFooter)
-        @include('layout.footer')
-    @endif
+
+    @include('layout.footer')
+
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
