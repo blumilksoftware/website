@@ -48,7 +48,7 @@
             <x-bubble size="210"/>
         </div>
     </div>
-    <div class="min-h-screen z-20 overflow-hidden">
+    <div class="relative min-h-screen z-20 overflow-hidden">
         @yield('content')
     </div>
     @if (!isset($excludeFooter) || !$excludeFooter)

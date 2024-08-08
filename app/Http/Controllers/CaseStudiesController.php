@@ -14,7 +14,7 @@ class CaseStudiesController extends Controller
     {
         $caseStudies = CaseStudy::query()->where("published", true)->get();
 
-        return $factory->make("case-studies")
+        return $factory->make("projects")
             ->with("caseStudies", $caseStudies);
     }
 
@@ -24,7 +24,7 @@ class CaseStudiesController extends Controller
 
         $view = preg_replace('/\.blade\.php$/', "", $caseStudy->template);
 
-        return $factory->make("case-studies/$view")
+        return $factory->make("projects/$view")
             ->with("caseStudy", $caseStudy);
     }
 }

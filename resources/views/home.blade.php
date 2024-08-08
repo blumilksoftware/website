@@ -114,7 +114,7 @@
                 </div>
                 <div class="flex gap-4 justify-center flex-col sm:flex-row">
                     <x-primary-button href="" class="px-10 bg-website-normal">{{ __("buttons.case_study") }}</x-primary-button>
-                    <x-secondary-button href="{{ route('case-studies') }}" class="px-10 justify-center">{{ __("buttons.all_projects") }}</x-secondary-button>
+                    <x-secondary-button href="{{ route('projects') }}" class="px-10 justify-center">{{ __("buttons.all_projects") }}</x-secondary-button>
                 </div>
             </div>
 

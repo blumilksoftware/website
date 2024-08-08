@@ -52,7 +52,7 @@
             </h2>
             <span class="font-light leading-relaxed text-xl relative">{{ __("content.case_study.section_2.subtitle_1") }}</span>
             <div class="mx-auto flex items-center">
-                <x-secondary-button href="{{ route('case-studies') }}" class="md:px-16">{{ __('buttons.back_to_portfolio') }}</x-secondary-button>
+                <x-secondary-button href="{{ route('projects') }}" class="md:px-16">{{ __('buttons.back_to_portfolio') }}</x-secondary-button>
                 <x-primary-button class="md:px-16 bg-website-normal" href="{{ route('contact') }}">{{ __("buttons.text_us") }}</x-primary-button>
             </div>
         </div>
