@@ -21,8 +21,8 @@ return [
         "project_description" => "System do zarządzania oprogramowaniem znajdującym się na komputerach uczelnianych na podstawie zdefiniowanych reguł i harmonogramów, z uwzględnieniem licencji oprogramowania.",
         "challenges" => [
             "challenge_1" => [
-                "title" => "Zapewnienie bezpieczeństwa danych",
-                "description" => "lorem ipsum tutaj potrzebujemy zdanie uzupełniające",
+                "title" => "Bezpieczeństwo danych",
+                "description" => "w zakresie kontroli dostępu",
             ],
             "challenge_2" => [
                 "title" => "Implementacja modelu uprawnień i ról",
@@ -33,78 +33,35 @@ return [
                 "description" => "dopuszczonych do funkcjonowania w systemie",
             ],
             "challenge_4" => [
-                "title" => "Uruchamianie dostarczanych aplikacji",
-                "description" => "bez konieczności ich instalacji w systemie operacyjnym",
+                "title" => "Automatyczna instalacja dostarczanych aplikacji",
+                "description" => "bez konieczności ingerencji użytkownika",
             ],
             "challenge_5" => [
                 "title" => "Interfejs użytkownika",
-                "description" => "czytelny i intuicyjny",
+                "description" => "czytelny i intuicyjny, dostosowany do grupy odbiorców",
             ],
         ],
-        "colors_description" => "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos",
         "typography_description" => "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
-        "sitemap" => [
-            "row_1" => [
-                "tile_1" => "Logowanie",
-            ],
-            "row_2" => [
-                "tile_1" => "Kokpit",
-            ],
-            "row_3" => [
-                "tile_1" => "Komputery",
-                "tile_2" => "Oprogramowanie",
-                "tile_3" => "Harmonogramy",
-                "tile_4" => "Użytkownicy",
-                "tile_5" => "Narzędzia",
-                "tile_6" => "Profil",
-            ],
-            "row_4" => [
-                "tile_1" => "Komputery",
-                "tile_2" => "Oprogramowanie",
-                "tile_3" => "Harmonogramy",
-                "tile_4" => "Użytkownicy",
-                "tile_5" => "Kopie zapasowe",
-                "tile_6" => "Informacje o profilu",
-            ],
-            "row_5" => [
-                "tile_1" => "Grupy komputerów",
-                "tile_2" => "Zestawy oprogramowania",
-                "tile_3" => "Zajęcia",
-                "tile_4" => "Role",
-                "tile_5" => "Tokeny rejestracyjne",
-                "tile_6" => "Zmiana hasła",
-            ],
-            "row_6" => [
-                "tile_1" => "Przesłane pliki",
-                "tile_2" => "Polecenia",
-                "tile_3" => "Ustawienia",
-                "tile_4" => "Uwierzytelnianie dwuskładnikowe",
-            ],
-            "row_7" => [
-                "tile_1" => "Hypervisors",
-                "tile_2" => "Sesje przeglądarki",
-            ],
-        ],
         "functionalities" => [
             "functionality_1" => [
-                "title" => "Zarządzanie",
-                "description" => "programowaniem znajdujących się na komputerach uczelnianych",
+                "title" => "Zarządzanie oprogramowaniem",
+                "description" => "znajdujących się na komputerach uczelnianych",
             ],
             "functionality_2" => [
-                "title" => "Monitorowanie",
-                "description" => "liczby przypisanych licencji z możliwością blokady ich instalacji ponad ten stan",
+                "title" => "Monitorowanie liczby licencji",
+                "description" => "z możliwością blokady ich instalacji ponad ten stan",
             ],
             "functionality_3" => [
-                "title" => "Zarządzanie użytkownikami",
-                "description" => "szeroki zakres możliwości zarządzania",
+                "title" => "Zarządzanie użytkownikami systemu",
+                "description" => "uprawnienia w zależności od przypisanej roli",
             ],
             "functionality_4" => [
-                "title" => "Synchronizacja listy",
-                "description" => "sal, komputerów i harmonogramów z zewnątrz",
+                "title" => "Synchronizacja danych z zewnątrz",
+                "description" => "listy sal, komputerów i harmonogramów",
             ],
             "functionality_5" => [
-                "title" => "Tworzenie harmonogramów",
-                "description" => "możliwość ręcznego tworzenia harmonogramu wraz z listą udostępnianych programów",
+                "title" => "Tworzenie harmonogrami",
+                "description" => "wraz z listą udostępnianych programów",
             ],
         ],
         "alt" => [

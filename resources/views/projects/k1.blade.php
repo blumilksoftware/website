@@ -47,12 +47,6 @@
         </div>
     </section>
 
-    <x-case-studies.color-palette description="{{ __('case_studies.k1.colors_description') }}"
-                                  primary-bg="#FF5555" primary-text="text-white"
-                                  secondary-bg="#000000" secondary-text="text-white"
-                                  surface-bg="#F7F6F9" surface-text="text-black"
-                                  text-bg="#FFFFFF" text-color="text-black"/>
-
     <x-case-studies.typography font="sora" bg="bg-k1" description="{{ __('case_studies.k1.typography_description') }}"/>
 
     <x-case-studies.image src="{{ asset('images/case-studies/k1/laptop_2.png') }}" alt="{{ __('case_studies.k1.alt.laptop_2') }}" />
