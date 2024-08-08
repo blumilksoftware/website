@@ -33,14 +33,12 @@ module.exports = {
         },
         bubble: '#DAE3F0',
         brand: '#527ABA',
-        background: '#FBFBFB',
         website: {
           normal: '#5379F6',
           light: '#7C9CFC',
           extra_light: '#E2EAFF',
           dark: '#4865D5',
         },
-        navigation: '#FAFAFA',
         footer: {
           dark: '#044088',
           light: '#015FC8',

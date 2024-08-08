@@ -12,6 +12,7 @@ return [
     "case_study" => "Przejdź do case study",
     "see_all" => "Zobacz wszystkie",
     "send" => "Wyślij",
+    "send_message" => "Wyślij wiadomość",
     "read_more" => "Czytaj więcej",
     "join_team" => "Dołącz do zespołu",
     "apply_internship" => "Zgłoś się na praktyki!",
