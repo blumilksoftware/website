@@ -19,7 +19,9 @@
         <div class="self-center">
             <div class="text-4xl md:text-5xl xl:text-6xl text-center pb-4">
                 <h2 class="font-semibold text-gray-900 leading-snug">
-                    {{ $caseStudy->name }}
+                    {{ $caseStudy->name_first_part }}
+                    {{ $caseStudy->name_second_part }}
+                    {{ $caseStudy->name_third_part }}
                 </h2>
             </div>
             <div class="items-center">
