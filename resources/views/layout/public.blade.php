@@ -50,9 +50,10 @@
                 <x-bubble size="210"/>
             </div>
         </div>
-    </div>
-    <div class="relative min-h-screen z-20 overflow-hidden">
-        @yield('content')
+
+        <div class="min-h-screen z-20 overflow-hidden">
+            @yield('content')
+        </div>
     </div>
 
     @include('layout.footer')
