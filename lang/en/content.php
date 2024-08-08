@@ -236,7 +236,7 @@ return [
             "address" => "ul. Najświętszej Marii Panny 5F/5",
             "PostalCode" => "59-220 Legnica",
         ],
-        "phone" => "+48 780 142 367",
+        "phone" => "+48 579 710 703",
         "email" => "office@blumilk.pl",
         "info" => [
             "NIP" => "6912551135",
