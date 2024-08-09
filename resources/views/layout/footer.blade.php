@@ -1,9 +1,9 @@
 <footer class="bg-white">
-    <div class="mx-16 w-auto py-6 md:py-12 md:flex items-center place-items-center md:justify-between border-t-2 border-gray-100">
-        <div class="mb-6 md:order-1 md:mb-0">
-            <img class="w-32 shrink-0 mx-auto" src="{{ asset('identification/logo.svg') }}" alt="Blumilk"/>
+    <div class="mx-16 w-auto py-6 md:py-12 flex items-center place-items-center justify-between border-t-2 border-gray-100">
+        <div class="md:order-1">
+            <img class="w-24 md:w-32 shrink-0 mx-auto" src="{{ asset('identification/logo.svg') }}" alt="Blumilk"/>
         </div>
-        <div class="flex justify-center space-x-6 md:order-2">
+        <div class="flex justify-center space-x-3 md:space-x-6 md:order-2">
             <a href="https://clutch.co/profile/blumilk-0" class="md:m-auto text-gray-400 hover:text-gray-500 -bottom-1 relative md:bottom-0" target="_blank">
                 <span class="sr-only">Clutch</span>
                 <x-icons.clutch></x-icons.clutch>

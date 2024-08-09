@@ -1,7 +1,7 @@
 @extends("layout.public")
 
-@section("title", __("meta.privacy-policy.title"))
-@section("description", __("meta.privacy-policy.description"))
+@section("title", __("meta.company-data.title"))
+@section("description", __("meta.company-data.description"))
 
 @section("content")
     <section class="grid 2xl:grid-cols-5 mx-[10%] md:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto pt-20 gap-16">
@@ -15,7 +15,7 @@
                     {{ __("content.data.subtitle_1") }}
                 </p>
             </div>
-            <div class="flex flex-row text-sm text-gray-400 place-items-center gap-x-10 justify-center 2xl:justify-start">
+            <div class="flex flex-row text-sm text-gray-400 place-items-center gap-x-5 sm:gap-x-10 justify-center 2xl:justify-start">
                 <div class="flex mt-3">
                     <span class="sr-only">Email</span>
                     <x-icons.mail/>
