@@ -38,7 +38,7 @@
                     <span class="block">{{ __("content.data.country") }}</span>
                 </div>
             </div>
-            <div class="order-3 2xl:order-none bg-blue-light p-10 rounded-lg h-full my-auto flex flex-col lg:text-center w-[300px] xl:w-auto 2xl:w-full lg:place-self-center 2xl:place-self-center 2xl:place-items-start 2xl:text-start">
+            <div class="order-3 2xl:order-none bg-blue-light py-10 pl-10 pr-8 xl:p-10 rounded-lg h-full my-auto flex flex-col lg:text-center w-[300px] xl:w-auto 2xl:w-full lg:place-self-center 2xl:place-self-center 2xl:place-items-start 2xl:text-start">
                 <div class="text-lg font-bold mb-3">{{ __("content.data.office_address.title") }}</div>
                 <div class="text-sm text-gray-400 space-y-1">
                     <span class="block">{{ __("content.data.company") }}</span>
