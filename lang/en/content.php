@@ -5,7 +5,7 @@ declare(strict_types=1);
 return [
     "pages" => [
         "about" => "About",
-        "case_study" => "Case Study",
+        "projects" => "Projects",
         "career" => "Career",
         "activities" => "Activities",
         "contact" => "Contact",

@@ -15,4 +15,5 @@
             {!! $description !!}
         </span>
     </div>
+
 </div>

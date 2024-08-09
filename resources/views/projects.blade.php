@@ -4,27 +4,6 @@
 @section("description", __("meta.case-studies.description"))
 
 @section("content")
-    <div class="relative md:block -z-10">
-        <div class="absolute -left-[6%] md:left-[1%] top-28 md:top-40">
-            <x-bubble size="80"/>
-        </div>
-        <div class="absolute left-[8%] md:left-[4%] top-20 md:top-28">
-            <x-bubble size="30"/>
-        </div>
-        <div class="absolute right-[4%] top-36">
-            <x-bubble size="40"/>
-        </div>
-        <div class="relative top-24">
-            <div class="absolute right-[8%] md:right-[3%] top-72">
-                <x-bubble size="90"/>
-            </div>
-        </div>
-        <div class="relative top-24">
-            <div class="absolute hidden md:block md:right-[4%] top-96">
-                <x-bubble size="200"/>
-            </div>
-        </div>
-    </div>
     <section class="py-12 text-center mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
         <div class="pb-24">
             <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-black my-6 break-words">

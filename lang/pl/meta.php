@@ -12,7 +12,7 @@ return [
         "description" => "Jesteśmy pasjonatami tworzenia aplikacji web/mobile oraz zaawansowanych projektów B+R. Zmieniamy koncepcje w działające rozwiązania.",
     ],
     "case-studies" => [
-        "title" => "Case studies",
+        "title" => "Projekty",
         "description" => "Zobacz, jakie projekty udało nam się zrealizować.",
     ],
     "career" => [

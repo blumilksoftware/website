@@ -19,7 +19,9 @@
         <div class="self-center">
             <div class="text-4xl md:text-5xl xl:text-6xl text-center pb-4">
                 <h2 class="font-semibold text-gray-900 leading-snug">
-                    {{ $caseStudy->name }}
+                    {{ $caseStudy->name_first_part }}
+                    {{ $caseStudy->name_second_part }}
+                    {{ $caseStudy->name_third_part }}
                 </h2>
             </div>
             <div class="items-center">
@@ -52,7 +54,7 @@
             </h2>
             <span class="font-light leading-relaxed text-xl relative">{{ __("content.case_study.section_2.subtitle_1") }}</span>
             <div class="mx-auto flex items-center">
-                <x-secondary-button href="{{ route('case-studies') }}" class="md:px-16">{{ __('buttons.back_to_portfolio') }}</x-secondary-button>
+                <x-secondary-button href="{{ route('projects') }}" class="md:px-16">{{ __('buttons.back_to_portfolio') }}</x-secondary-button>
                 <x-primary-button class="md:px-16 bg-website-normal" href="{{ route('contact') }}">{{ __("buttons.text_us") }}</x-primary-button>
             </div>
         </div>

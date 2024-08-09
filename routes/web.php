@@ -20,8 +20,8 @@ $uri = app(UriTranslator::class);
 
 $router->get("/", HomeController::class)->name("home");
 $router->get($uri->translate("about"), AboutController::class)->name("about");
-$router->get($uri->translate("case-studies"), [CaseStudiesController::class, "index"])->name("case-studies");
-$router->get($uri->translate("case-studies/{slug}"), [CaseStudiesController::class, "get"])->name("case-studies.entry");
+$router->get($uri->translate("projects"), [CaseStudiesController::class, "index"])->name("projects");
+$router->get($uri->translate("projects/{slug}"), [CaseStudiesController::class, "get"])->name("projects.entry");
 $router->get($uri->translate("career"), [CareerController::class, "index"])->name("career");
 $router->get($uri->translate("career/software-engineer"), [CareerController::class, "softwareEngineerPage"])->name("career.software-engineer");
 $router->get($uri->translate("contact"), [ContactController::class, "index"])->name("contact");
