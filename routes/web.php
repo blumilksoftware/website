@@ -6,6 +6,7 @@ use Blumilk\Website\Http\Controllers\AboutController;
 use Blumilk\Website\Http\Controllers\ActivitiesController;
 use Blumilk\Website\Http\Controllers\CareerController;
 use Blumilk\Website\Http\Controllers\CaseStudiesController;
+use Blumilk\Website\Http\Controllers\CompanyDataController;
 use Blumilk\Website\Http\Controllers\ContactController;
 use Blumilk\Website\Http\Controllers\HomeController;
 use Blumilk\Website\Http\Controllers\LegalController;
@@ -31,3 +32,4 @@ $router->get($uri->translate("privacy-policy"), PolicyController::class)->name("
 $router->get($uri->translate("activities"), [ActivitiesController::class, "index"])->name("activities");
 $router->get($uri->translate("activities/{slug}"), [ActivitiesController::class, "get"])->name("activities.entry");
 $router->get($uri->translate("legal"), LegalController::class)->name("legal");
+$router->get($uri->translate("company-data"), CompanyDataController::class)->name("data");
