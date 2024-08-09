@@ -238,11 +238,6 @@ return [
         ],
         "phone" => "+48 579 710 703",
         "email" => "office@blumilk.pl",
-        "info" => [
-            "NIP" => "6912551135",
-            "KRS" => "0000866755",
-            "REGON" => "38737620",
-        ],
         "policy" => [
             "part_1" => "I accept the",
             "part_2" => "privacy policy",
@@ -269,5 +264,28 @@ return [
         "subtitle_3" => "Do you have questions?",
         "content_4" => "If you want to learn more about our Privacy Policy, use the contact form or write to us at:",
         "email" => "hello@blumilk.pl",
+    ],
+    "data" => [
+        "title_1" => "Company's",
+        "title_2" => "data",
+        "subtitle_1" => "Blumilk Spółka z ograniczoną odpowiedzialnością with its registered office in Legnica is entered by the District Court for Wrocław-Fabryczna in Wrocław, 9th Commercial Division into the Register of Entrepreneurs of the National Court Register under the number 0000866755.",
+        "company" => "Blumilk  sp. z o.o.",
+        "country" => "Poland",
+        "postalCode" => "59-220 Legnica",
+        "official_address" => [
+            "title" => "Official address",
+            "street" => "ul. rtm. Witolda Pileckiego 14",
+        ],
+        "office_address" => [
+            "title" => "Office address",
+            "street" => "ul. Najświętszej Marii Panny 5F/5",
+        ],
+        "phone" => "+48 579 710 703",
+        "email" => "office@blumilk.pl",
+        "info" => "Company information",
+        "NIP" => "6912551135",
+        "KRS" => "0000866755",
+        "VAT" => "PL6912551135",
+        "REGON" => "38737620",
     ],
 ];

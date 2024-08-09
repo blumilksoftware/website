@@ -279,6 +279,7 @@ return [
         ],
         "phone" => "+48 579 710 703",
         "email" => "office@blumilk.pl",
+        "info" => "Informacje o firmie",
         "NIP" => "6912551135",
         "KRS" => "0000866755",
         "VAT" => "PL6912551135",
