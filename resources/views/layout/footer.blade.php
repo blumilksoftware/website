@@ -29,9 +29,7 @@
     <div class="px-16 w-full py-6 md:py-6 md:flex md:items-center md:justify-between bg-gray-extraLight">
         <div class="md:order-2">
             <p class="text-center text-sm leading-5 text-gray-500">
-                <a href="{{ route('privacy-policy') }}" target="_blank" class="font-normal mr-1">{{ __('footer.policy') }}</a>
-                |
-                <a href="{{ route('data') }}" class="ml-1">{{ __('footer.data') }}</a></p>
+                <a href="{{ route('privacy-policy') }}" target="_blank" class="font-normal whitespace-normal">{{ __('footer.policy') }}</a> | <a href="{{ route('data') }}">{{ __('footer.data') }}</a></p>
         </div>
         <div class="mt-2 md:order-1 md:mt-0">
             <p class="text-center text-sm leading-5 text-gray-500">Copyright &copy; 2024 | Blumilk</p>

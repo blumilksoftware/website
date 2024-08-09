@@ -11,11 +11,11 @@
                     <span class="inline text-website-normal leading-relaxed"> {{ __("content.data.title_1") }}</span>
                     <span class="inline">{{ __("content.data.title_2") }}</span>
                 </h2>
-                <p class="text-sm md:text-lg font-normal text-center 2xl:text-start leading-10">
+                <p class="text-sm md:text-lg font-normal text-center 2xl:text-start leading-8 md:leading-10">
                     {{ __("content.data.subtitle_1") }}
                 </p>
             </div>
-            <div class="flex flex-row text-sm text-gray-400 place-items-center gap-x-5 sm:gap-x-10 justify-center 2xl:justify-start">
+            <div class="flex flex-row text-xs sm:text-sm text-gray-400 place-items-center gap-x-5 sm:gap-x-10 justify-center 2xl:justify-start">
                 <div class="flex mt-3">
                     <span class="sr-only">Email</span>
                     <x-icons.mail/>
@@ -51,9 +51,9 @@
                 <div class="text-lg font-bold mb-3 lg:hidden lg:text-center">{{ __("content.data.info") }}</div>
                 <div class="flex flex-col lg:flex-row space-y-0.5 lg:gap-8 place-self-center 2xl:place-items-end place-content-between text-gray-400">
                     <div><span class="text-sm lg:text-lg lg:font-bold lg:pr-4 lg:text-black">NIP</span><span class="lg:hidden">: </span><span class="2xl:text-sm my-auto 2xl:my-0 2xl:font-medium">{{ __("content.data.NIP") }}</span></div>
-                    <div><span class="text-sm lg:text-lg lg:font-bold lg:pr-4 lg:text-black">KRS</span><span class="lg:hidden">: </span><span class="2xl:text-sm my-auto 2xl:font-medium">{{ __("content.data.KRS") }}</span></div>
                     <div><span class="text-sm lg:text-lg lg:font-bold lg:pr-4 lg:text-black">VAT</span><span class="lg:hidden">: </span><span class="2xl:text-sm my-auto 2xl:font-medium">{{ __("content.data.VAT") }}</span></div>
                     <div><span class="text-sm lg:text-lg lg:font-bold lg:pr-4 lg:text-black">REGON</span><span class="lg:hidden">: </span><span class="2xl:text-sm my-auto 2xl:font-medium">{{ __("content.data.REGON") }}</span></div>
+                    <div><span class="text-sm lg:text-lg lg:font-bold lg:pr-4 lg:text-black">KRS</span><span class="lg:hidden">: </span><span class="2xl:text-sm my-auto 2xl:font-medium">{{ __("content.data.KRS") }}</span></div>
                 </div>
             </div>
         </div>

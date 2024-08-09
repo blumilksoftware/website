@@ -29,7 +29,7 @@
     </div>
 
     <div class="mb-auto">
-        <div class="relative 2xl:max-w-screen-3xl 2xl:mx-auto">
+        <div class="hidden sm:block relative 2xl:max-w-screen-3xl 2xl:mx-auto">
             <div class="absolute -z-10 left-[8%] md:-left-0 top-16">
                 <x-bubble size="100"/>
             </div>
