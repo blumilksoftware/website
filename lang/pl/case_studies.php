@@ -41,26 +41,25 @@ return [
                 "description" => "czytelny i intuicyjny, dostosowany do grupy odbiorców",
             ],
         ],
-        "typography_description" => "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
         "functionalities" => [
             "functionality_1" => [
-                "title" => "Zarządzanie oprogramowaniem",
-                "description" => "znajdujących się na komputerach uczelnianych",
+                "title" => "Zarządzanie",
+                "description" => "oprogramowaniem znajdującym się na komputerach uczelnianych",
             ],
             "functionality_2" => [
-                "title" => "Monitorowanie liczby licencji",
-                "description" => "z możliwością blokady ich instalacji ponad ten stan",
+                "title" => "Monitorowanie",
+                "description" => "liczby licencji z możliwością blokady ich instalacji ponad ten stan",
             ],
             "functionality_3" => [
-                "title" => "Zarządzanie użytkownikami systemu",
-                "description" => "uprawnienia w zależności od przypisanej roli",
+                "title" => "Podział ról",
+                "description" => "pozwala na zarządzanie użytkownikami i nadawanie im adekwatnych uprawnień",
             ],
             "functionality_4" => [
-                "title" => "Synchronizacja danych z zewnątrz",
-                "description" => "listy sal, komputerów i harmonogramów",
+                "title" => "Synchronizacja danych",
+                "description" => "z zewnątrz - listy sal, komputerów i harmonogramów",
             ],
             "functionality_5" => [
-                "title" => "Tworzenie harmonogrami",
+                "title" => "Tworzenie harmonogramu",
                 "description" => "wraz z listą udostępnianych programów",
             ],
         ],
