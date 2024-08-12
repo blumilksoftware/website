@@ -11,7 +11,7 @@
                 {!! $title !!}
             </span>
             <span @class([
-                "font-normal text-gray-400 text-xs sm:text-sm leading-relaxed pr-3" => isset( $description ),
+                "font-normal text-gray-400 text-xs sm:text-sm leading-relaxed pr-4" => isset( $description ),
                 "hidden" => !isset( $description )])>
             {!! $description !!}
         </span>

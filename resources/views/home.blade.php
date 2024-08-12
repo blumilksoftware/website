@@ -8,7 +8,7 @@
         <section class="relative flex flex-col-reverse xl:flex-row pt-8 xl:pt-36 pb-16 sm:pb-24 mx-[10%] md:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto gap-12">
             <div class="flex basis-1/2 relative flex-col self-start gap-5">
                 <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:justify-start xl:text-start">
-                    <h2 class="font-semibold text-gray-900">
+                    <h2 class="font-semibold text-gray-900 leading-normal md:leading-snug">
                         <span class="inline">{{ __("content.home.section_1.title_1") }}</span>
                         <span class="text-website-normal inline"> {{ __("content.home.section_1.title_2") }} </span>
                         <span class="inline">{{ __("content.home.section_1.title_3") }}</span>
