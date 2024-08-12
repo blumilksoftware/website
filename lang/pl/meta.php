@@ -35,4 +35,8 @@ return [
         "title" => "Polityka prywatności",
         "description" => "Zapoznaj się z naszą polityką prywatności.",
     ],
+    "company-data" => [
+        "title" => "Dane firmy",
+        "description" => "Dane firmy Blumilk Sp. z o.o.",
+    ],
 ];
