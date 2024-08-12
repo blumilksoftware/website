@@ -103,8 +103,7 @@
             break;
     }
 @endphp
-<div
-    class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
+<div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
     @isset($main)
         <figure class="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
             <blockquote class="p-6 md:text-lg md:font-semibold leading-7 md:tracking-tight text-gray-900 sm:p-12 sm:text-xl md:leading-8">
@@ -124,16 +123,16 @@
             </figcaption>
         </figure>
     @endisset
-    <div class="space-y-0 xl:contents xl:space-y-0">
+    <div class="space-y-8 xl:contents xl:space-y-0">
         <div class="space-y-8 xl:row-span-2 m-2">
             @isset($references[$c1r1])
                 <x-reference :reference="$references[$c1r1]"/>
             @endisset
             @isset($references[$c1r2])
-                <x-reference :reference="$references[$c1r2]"/>
+                <x-reference :reference="$references[$c1r2]" class="hidden lg:block"/>
             @endisset
             @isset($references[$c1r3])
-                <x-reference :reference="$references[$c1r3]"/>
+                <x-reference :reference="$references[$c1r3]" class="hidden lg:block"/>
             @endisset
         </div>
         <div class="space-y-8 xl:row-start-1 m-2">
@@ -141,17 +140,17 @@
                 <x-reference :reference="$references[$c2r1]"/>
             @endisset
             @isset($references[$c2r2])
-                <x-reference :reference="$references[$c2r2]"/>
+                <x-reference :reference="$references[$c2r2]" class="hidden lg:block"/>
             @endisset
         </div>
     </div>
-    <div class="space-y-0 xl:contents xl:space-y-0">
+    <div class="space-y-8 xl:contents xl:space-y-0">
         <div class="space-y-8 xl:row-start-1 m-2">
             @isset($references[$c3r1])
                 <x-reference :reference="$references[$c3r1]"/>
             @endisset
             @isset($references[$c3r2])
-                <x-reference :reference="$references[$c3r2]"/>
+                <x-reference :reference="$references[$c3r2]" class="hidden lg:block"/>
             @endisset
         </div>
         <div class="space-y-8 xl:row-span-2 m-2">
@@ -159,10 +158,10 @@
                 <x-reference :reference="$references[$c4r1]"/>
             @endisset
             @isset($references[$c4r2])
-                <x-reference :reference="$references[$c4r2]"/>
+                <x-reference :reference="$references[$c4r2]" class="hidden lg:block"/>
             @endisset
             @isset($references[$c4r3])
-                <x-reference :reference="$references[$c4r3]"/>
+                <x-reference :reference="$references[$c4r3]" class="hidden lg:block"/>
             @endisset
 
         </div>
