@@ -4,242 +4,146 @@
 @section("description", __("meta.contact.description"))
 
 @section('content')
-    @php
-        $excludeFooter = true;
-    @endphp
-    @if(Session('success'))
+    @if( Session('success') )
         <x-toast type="success" position="top-right">{{ Session::get('success') }}</x-toast>
     @endif
-    <div class="z-10">
-        <div class="relative w-auto h-auto">
-            <div class="relative md:block">
-                <div class="absolute -left-[15%] sm:-left-[8%] md:-left-[2%] xl:-left-[1%] top-24 md:top-30">
-                    <x-bubble size="100"/>
-                </div>
-                <div class="absolute xl:hidden left-[8%] md:left-[4%] xl:left-[5%] top-8 md:top-18">
-                    <x-bubble size="40"/>
-                </div>
-                <div class="absolute xl:hidden right-[4%] top-8">
-                    <x-bubble size="50"/>
-                </div>
-                <div class="absolute hidden xl:block right-[7%] top-[500px]">
-                    <x-bubble size="50"/>
-                </div>
-                <div class="absolute hidden xl:block -right-[6%] top-24">
-                    <x-bubble size="220"/>
-                </div>
-                <div class="absolute hidden xl:block left-[7%] top-[560px]">
-                    <x-bubble size="60"/>
-                </div>
-                <div class="absolute hidden xl:block right-[2%] top-[600px]">
-                    <x-bubble size="110"/>
-                </div>
-            </div>
+
+    <div class="mx-[10%] md:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto grid xl:grid-cols-2 xl:grid-rows-4 grid-flow-row-dense content-center text-black xl:pb-8 mt-12 items-start">
+        <div class="h-min">
+            <h4 class="text-2xl sm:text-3xl lg:text-4xl text-center xl:text-left font-bold text-black pb-4">
+                {{ __('content.contact.title_1') }}</h4>
+            <p class="text-md leading-relaxed text-gray-500 text-center xl:text-left">
+                {{ __('content.contact.subtitle') }}
+            </p>
         </div>
-        <div
-            class="grid xl:grid-cols-2 justify-center items-center text-black bg-gray-light xl:bg-gradient-to-br from-gray-light via-[#F8F9FC] to-white xl:pb-8">
-            <section class="md:flex flex-col px-[10%] xl:px-[0%] xl:pl-[40%] pt-16 pb-4 z-20">
-                <h4 class="text-3xl sm:text-4xl lg:text-5xl text-center xl:text-left font-semibold text-black"><span
-                        class="text-website-normal">{{ __('content.contact.title_1') }}</span>
-                    {{ __('content.contact.title_2') }}</h4>
-                <p class="text-md xl:text-lg leading-8 text-black text-center xl:text-left py-6">
-                    {{ __('content.contact.subtitle') }}
-                </p>
-                <div class="flex flex-col lg:flex-row">
-                    <form action="{{ route('contact.create') }}" method="POST" class="lg:flex-auto">
-                        @csrf
-                        <div class="grid grid-cols-1 gap-y-6">
-                            <div>
-                                <label for="e-mail"
-                                       class="block text-xs font-semibold leading-6 text-gray-700">{{ __('content.contact.form.email') }}</label>
-                                <div class="mt-2.5">
-                                    <input name="email" id="email" autocomplete="given-e-mail"
-                                           value="{{ old('email') }}"
-                                           class="block w-full xl:w-[90%] h-12 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-website-light sm:text-sm sm:leading-6">
-                                    @error('email')
-                                    <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
-                                    @enderror
-                                </div>
-                            </div>
-                            <div>
-                                <label for="topic"
-                                       class="block text-xs font-semibold leading-6 text-gray-700">{{ __('content.contact.form.title') }}</label>
-                                <div class="mt-2.5">
-                                    <input type="text" name="topic" id="topic" autocomplete="topic"
-                                           value="{{ old('topic') }}"
-                                           class="block w-full xl:w-[90%]  h-12 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-website-light sm:text-sm sm:leading-6">
-                                    @error('topic')
-                                    <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
-                                    @enderror
-                                </div>
-                            </div>
-                            <div>
-                                <label for="message"
-                                       class="block text-xs font-semibold leading-6 text-gray-700">{{ __('content.contact.form.message') }}</label>
-                                <div class="mt-2.5">
-                                <textarea id="message" name="message" rows="4" autocomplete="message"
-                                          class="block w-full xl:w-[90%] rounded-md border-0 px-3.5 py-2 min-h-12 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-website-light sm:text-sm sm:leading-6">{{ old('message') }}</textarea>
-                                    @error('message')
-                                    <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
-                                    @enderror
-                                </div>
-                            </div>
+        <div class="row-span-4 py-12 xl:p-0">
+            <form action="{{ route('contact.create') }}" method="POST" class="flex flex-col gap-y-4 justify-between h-full xl:ml-[15%] xl:bg-[#F4F8FD] md:px-16 py-10 rounded-xl">
+                @csrf
+                <div class="grid gap-y-3">
+                    <div>
+                        <label for="e-mail"
+                               class="block text-sm font-normal leading-6 text-gray-700 ml-2">{{ __('content.contact.form.email') }}</label>
+                        <div class="mt-2.5 ">
+                            <input name="email" id="email" autocomplete="given-e-mail"
+                                   value="{{ old('email') }}"
+                                   class="block w-full h-12 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 xl:bg-[#fafcfe] placeholder:text-gray-400 focus:ring-1 focus:ring-gray-400 sm:text-sm sm:leading-6">
+                            @error('email')
+                            <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
+                            @enderror
                         </div>
-                        <div class="flex flex-col items-left mt-2 xl:w-[90%]">
-                            <label for="consents" class="flex items-center">
-                                <input type="checkbox" name="consents" id="consents"
-                                       class="w-4 h-4 rounded-sm focus:ring-0 checked:text-website-normal">
-                                <span class="text-xs font-normal text-gray-600 ml-2 pt-4">
+                    </div>
+                    <div>
+                        <label for="topic"
+                               class="block text-sm font-normal leading-6 text-gray-700 ml-2">{{ __('content.contact.form.title') }}</label>
+                        <div class="mt-2.5">
+                            <input type="text" name="topic" id="topic" autocomplete="topic"
+                                   value="{{ old('topic') }}"
+                                   class="block w-full h-12 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 xl:bg-[#fafcfe] placeholder:text-gray-400 focus:ring-1 focus:ring-gray-400 sm:text-sm sm:leading-6">
+                            @error('topic')
+                            <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
+                            @enderror
+                        </div>
+                    </div>
+                    <div>
+                        <label for="message"
+                               class="block text-sm font-normal leading-6 text-gray-700 ml-2">{{ __('content.contact.form.message') }}</label>
+                        <div class="mt-2.5">
+                                <textarea id="message" name="message" rows="10" autocomplete="message"
+                                          class="block w-full rounded-md border-0 px-3.5 py-2 min-h-12 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 xl:bg-[#fafcfe] placeholder:text-gray-400 focus:ring-1 focus:ring-gray-400 sm:text-sm sm:leading-6">{{ old('message') }}</textarea>
+                            @error('message')
+                            <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
+                            @enderror
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col items-left mt-2">
+                    <label for="consents" class="flex items-center">
+                        <input type="checkbox" name="consents" id="consents"
+                               class="w-4 h-4 rounded-sm xl:bg-[#fafcfe] border-gray-300 focus:ring-0 checked:text-website-light">
+                        <span class="text-xs font-normal text-gray-500 ml-2 pt-4">
                                     {{ __('content.contact.policy.part_1') }}
                                     <a href="{{ route('privacy-policy') }}" target="_blank"
                                        class="underline font-bold">{{ __('content.contact.policy.part_2') }}</a>
                                     {{ __('content.contact.policy.part_3') }}
                                 </span>
-                            </label>
-                            @error('consents')
-                            <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
-                            @enderror
-                        </div>
-
-                        <div class="mt-3 flex">
-                            <button type="submit"
-                                    class="w-full lg:w-[45%] 2xl:w-[32%] text-xl mx-0 bg-website-dark m-2 p-3 sm:text-lg h-min text-center font-normal text-white shadow-sm transform transition hover:scale-110 hover:rounded-sm flex justify-center items-center space-x-2">
-                                {{ __('buttons.send') }}
-                            </button>
-                        </div>
-                    </form>
+                    </label>
+                    @error('consents')
+                    <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
+                    @enderror
                 </div>
-            </section>
-            <section class="flex flex-col h-full text-black px-[10%] bg-white xl:bg-transparent pb-4">
-                <div class="xl:max-w-[460px] h-full xl:pt-32">
-                    <div
-                        class="hidden absolute xl:flex xl:w-[455px] xl:h-[451px] -translate-y-[30px] translate-x-[25px] rotate-[4deg] bg-gray-dark rounded-3xl shadow-md">
-                    </div>
-                    <div
-                        class="flex flex-col xl:w-[460px] xl:h-[451px] xl:bg-white p-8 self-center rounded-3xl xl:shadow-md bg-opacity-80 gap-x-14 justify-center items-center pt-10 xl:pt-0 relative">
-
-                        <div class="relative">
-                            <h1 class="text-2xl font-bold text-black mb-4">{{ __('content.contact.company') }}</h1>
-                            <div>
-                                <div class="flex mt-3 items-start">
-                                    <span class="sr-only">Location</span>
-                                    <x-icons.marker></x-icons.marker>
-                                    <div class="ml-4 -mt-[2px]">
-                                        <div>{{ __('content.contact.location.address') }}</div>
-                                        <div>{{ __('content.contact.location.PostalCode') }}</div>
-                                    </div>
-                                </div>
-                                <div class="flex mt-3 items-start">
-                                    <span class="sr-only">Phone number</span>
-                                    <x-icons.phone></x-icons.phone>
-                                    <div class="ml-4 -mt-[2px]">{{ __('content.contact.phone') }}</div>
-                                </div>
-                                <div class="flex mt-3 items-start">
-                                    <span class="sr-only">Email</span>
-                                    <x-icons.postcard></x-icons.postcard>
-                                    <div class="ml-4 -mt-[2px]">{{ __('content.contact.email') }}</div>
-                                </div>
-                                <div class="flex mt-3 items-start">
-                                    <span class="sr-only">Info</span>
-                                    <x-icons.info></x-icons.info>
-                                    <div class="ml-4 -mt-[2px]">
-                                        <div>NIP {{ __('content.contact.info.NIP') }}</div>
-                                        <div>KRS {{ __('content.contact.info.KRS') }}</div>
-                                        <div>REGON {{ __('content.contact.info.REGON') }}</div>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="mt-3 flex">
+                    <button type="submit"
+                            class="w-full text-xl mx-0 bg-website-normal m-2 p-3 sm:text-lg h-min text-center font-normal text-white shadow-sm rounded-xl transform transition hover:scale-110 flex justify-center items-center">
+                        {{ __('buttons.send_message') }}
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="h-full row-span-3">
+            <div id="map" class="h-[40vh] xl:h-[20vh] w-full rounded-xl py-16 lg:py-0"></div>
+            <div class="py-16">
+                <h1 class="text-2xl font-semibold text-black mb-4 text-center  md:text-left">{{ __('content.contact.company') }}</h1>
+                <div class="flex flex-col lg:flex-row text-sm text-gray-400 gap-x-6">
+                    <div class="flex mt-3 items-start">
+                        <span class="sr-only">Location</span>
+                        <x-icons.location/>
+                        <div class="ml-4">
+                            <div>{{ __('content.contact.location.address') }}</div>
+                            <div>{{ __('content.contact.location.PostalCode') }}</div>
                         </div>
                     </div>
-                    <div class="hidden xl:flex xl:justify-end space-x-6 md:order-2 items-center xl:mt-32 xl:pr-2">
-                        <a href="https://clutch.co/profile/blumilk-0" class="text-gray-700 align-center fill-current"
-                           target="_blank">
-                            <span class="sr-only">Clutch</span>
-                            <x-icons.clutch class="align-middle"/>
-                        </a>
-
-                        <a href="https://github.com/blumilksoftware" class="text-gray-700" target="_blank">
-                            <span class="sr-only">Github</span>
-                            <i class="fa-brands fa-square-github text-xl lg:text-2xl"></i>
-                        </a>
-                        <a href="https://linkedin.com/company/blumilksoftware" class="text-gray-700" target="_blank">
-                            <span class="sr-only">LinkedIn</span>
-                            <i class="fa-brands fa-linkedin text-xl lg:text-2xl"></i>
-                        </a>
-                        <a href="https://www.youtube.com/@blumilksoftware" class="text-gray-700" target="_blank">
-                            <span class="sr-only">Youtube</span>
-                            <i class="fa-brands fa-square-youtube text-xl lg:text-2xl"></i>
-                        </a>
-                        <a href="https://www.facebook.com/blumilksoftware/" class="text-gray-700" target="_blank">
-                            <span class="sr-only">Facebook</span>
-                            <i class="fa-brands fa-square-facebook text-xl lg:text-2xl"></i>
-                        </a>
+                    <div class="flex mt-3 items-start">
+                        <span class="sr-only">Phone number</span>
+                        <x-icons.phone/>
+                        <div class="ml-4">{{ __('content.contact.phone') }}</div>
+                    </div>
+                    <div class="flex mt-3 items-start">
+                        <span class="sr-only">Email</span>
+                        <x-icons.mail/>
+                        <div class="ml-4">{{ __('content.contact.email') }}</div>
                     </div>
                 </div>
-            </section>
+            </div>
         </div>
-        <div id="map" class="h-[40vh] xl:h-[60vh] w-full"></div>
-        <div class="flex justify-center space-x-6 md:order-2 pt-8 items-center xl:mt-8 xl:pr-2 xl:hidden pb-6">
-            <a href="https://clutch.co/profile/blumilk-0" class="text-gray-700 align-center fill-current"
-               target="_blank">
-                <span class="sr-only">Clutch</span>
-                <x-icons.clutch class="align-middle"/>
-            </a>
+    </div>
 
-            <a href="https://github.com/blumilksoftware" class="text-gray-700" target="_blank">
-                <span class="sr-only">Github</span>
-                <i class="fa-brands fa-square-github text-xl lg:text-2xl"></i>
-            </a>
-            <a href="https://linkedin.com/company/blumilksoftware" class="text-gray-700" target="_blank">
-                <span class="sr-only">LinkedIn</span>
-                <i class="fa-brands fa-linkedin text-xl lg:text-2xl"></i>
-            </a>
-            <a href="https://www.youtube.com/@blumilksoftware" class="text-gray-700" target="_blank">
-                <span class="sr-only">Youtube</span>
-                <i class="fa-brands fa-square-youtube text-xl lg:text-2xl"></i>
-            </a>
-            <a href="https://www.facebook.com/blumilksoftware/" class="text-gray-700" target="_blank">
-                <span class="sr-only">Facebook</span>
-                <i class="fa-brands fa-square-facebook text-xl lg:text-2xl"></i>
-            </a>
-        </div>
-        <script>
-            document.addEventListener('DOMContentLoaded', function () {
-                mapboxgl.accessToken = '{{ config('services.mapbox.access_token') }}'
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            mapboxgl.accessToken = '{{ config('services.mapbox.access_token') }}'
 
-                var map = new mapboxgl.Map({
-                    container: 'map',
-                    style: '{{ config('services.mapbox.style') }}',
-                    center: [16.163200, 51.208200], //[lng, lat]
-                    zoom: 13,
-                })
-                map.scrollZoom.disable()
-                var nav = new mapboxgl.NavigationControl()
-
-                function addRemoveMapControls() {
-
-                    if (window.matchMedia('(min-width: 1024px)').matches) {
-                        map.addControl(nav, 'top-left')
-                    } else {
-                        map.removeControl(nav)
-                    }
-                }
-
-                addRemoveMapControls()
-
-                window.addEventListener('resize', function () {
-                    addRemoveMapControls()
-                })
-
-                const marker = new mapboxgl.Marker({
-                    color: '#5379F6',
-                })
-                    .setLngLat([16.163780, 51.208760])
-                    .addTo(map)
-
-                marker.getElement().addEventListener('click', function () {
-                    window.open('https://maps.app.goo.gl/h6HhaStCsVmwAwF19')
-                })
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: '{{ config('services.mapbox.style') }}',
+                center: [16.163200, 51.208200], //[lng, lat]
+                zoom: 13,
             })
-        </script>
+            map.scrollZoom.disable()
+            var nav = new mapboxgl.NavigationControl()
+
+            function addRemoveMapControls() {
+
+                if (window.matchMedia('(min-width: 1024px)').matches) {
+                    map.addControl(nav, 'top-left')
+                } else {
+                    map.removeControl(nav)
+                }
+            }
+
+            addRemoveMapControls()
+
+            window.addEventListener('resize', function () {
+                addRemoveMapControls()
+            })
+
+            const marker = new mapboxgl.Marker({
+                color: '#5379F6',
+            })
+                .setLngLat([16.163780, 51.208760])
+                .addTo(map)
+
+            marker.getElement().addEventListener('click', function () {
+                window.open('https://maps.app.goo.gl/h6HhaStCsVmwAwF19')
+            })
+        })
+    </script>
 @endsection

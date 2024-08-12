@@ -12,6 +12,7 @@ return [
     "case_study" => "Go to case study",
     "see_all" => "See all",
     "send" => "Send",
+    "send_message" => "Send message",
     "read_more" => "Read more",
     "join_team" => "Join the team",
     "apply_internship" => "Apply for an internship!",

@@ -26,21 +26,19 @@ module.exports = {
           extraDark: '#EAEBF3',
         },
         blue: {
-          dark: "#0E0B3D",
+          dark: "#000033",
           normalNeon: '#3461fd',
           normal: '#3259E8',
           light: '#F7F8FD',
         },
         bubble: '#DAE3F0',
         brand: '#527ABA',
-        background: '#FBFBFB',
         website: {
           normal: '#5379F6',
           light: '#7C9CFC',
           extra_light: '#E2EAFF',
           dark: '#4865D5',
         },
-        navigation: '#FAFAFA',
         footer: {
           dark: '#044088',
           light: '#015FC8',
@@ -50,6 +48,9 @@ module.exports = {
         sora: ['Sora', 'sans-serif'],
       },
     },
+    listStyleType: {
+      square: 'square',
+    }
   },
   plugins: [
     require('@tailwindcss/forms'),
