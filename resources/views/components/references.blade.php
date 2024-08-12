@@ -42,7 +42,7 @@ switch (count($references)) {
     <figure
         class="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
         <blockquote
-            class="p-6 text-lg font-semibold leading-7 tracking-tight text-gray-900 sm:p-12 sm:text-xl sm:leading-8">
+            class="p-6 md:text-lg md:font-semibold leading-7 md:tracking-tight text-gray-900 sm:p-12 sm:text-xl md:leading-8">
             <p>{!! "“".$references[$main]->description."”" !!}</p>
         </blockquote>
         <figcaption

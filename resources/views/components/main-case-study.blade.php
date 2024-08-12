@@ -34,5 +34,6 @@
             </div>
         </div>
     </div>
-    <x-ipad-frame img="{{ asset('graphics/vita.png') }}"/>
+    <img src="{{ asset('graphics/main_case_study/with_frame.svg') }}" class="h-auto w-auto max-w-4xl hidden md:block" alt="placeholder"/>
+    <img src="{{ asset('graphics/main_case_study/no_frame.svg') }}" class="h-auto w-full max-w-4xl md:hidden block mb-8" alt="placeholder"/>
 </div>

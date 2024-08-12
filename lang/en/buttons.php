@@ -8,7 +8,7 @@ return [
     "text_us" => "Text us!",
     "text_us_1" => "Text ",
     "text_us_2" => "us!",
-    "all_projects" => "See all projects",
+    "see_more_projects" => "See more projects",
     "case_study" => "Go to case study",
     "see_all" => "See all",
     "send" => "Send",

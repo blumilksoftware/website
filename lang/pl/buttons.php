@@ -8,7 +8,7 @@ return [
     "text_us" => "Napisz do nas!",
     "text_us_1" => "Napisz ",
     "text_us_2" => "do nas!",
-    "all_projects" => "Zobacz wszystkie projekty",
+    "see_more_projects" => "Zobacz więcej projektów",
     "case_study" => "Przejdź do case study",
     "see_all" => "Zobacz wszystkie",
     "send" => "Wyślij",
