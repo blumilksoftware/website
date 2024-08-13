@@ -39,9 +39,9 @@ class Tag extends Model
         static::observe(TagObserver::class);
     }
 
-    public function activitiesCount(): int
+    public function newsCount(): int
     {
-        return Activity::query()
+        return News::query()
             ->where("published", true)
             ->whereJsonContains("tags", $this->id)
             ->count();

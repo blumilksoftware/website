@@ -28,7 +28,7 @@ return [
         "description" => "If you are looking for a solution perfectly tailored to your needs, we are here for you! We are waiting for your message!",
     ],
     "activities" => [
-        "title" => "Activities",
+        "title" => "News",
         "description" => "See what's going on with us!",
     ],
     "privacy-policy" => [

@@ -1,4 +1,4 @@
-@props(['activity', 'class' => '', 'isFirst' => false])
+@props(['news', 'class' => '', 'isFirst' => false])
 
 <article {{ $attributes->class([$class, 'relative isolate flex flex-col overflow-hidden gap-3']) }}>
     <div
@@ -7,9 +7,9 @@
             'lg:h-[591px] lg:mb-24' => $isFirst,
             'lg:h-[340px]' => !$isFirst,
          ])>
-        <a href="{{ route('activities.entry', $activity['slug']) }}">
+        <a href="{{ route('news.entry', $news['slug']) }}">
             <span class="absolute inset-0"></span>
-            <img src="{{ asset("storage/".$activity['photo']) }}" alt="" class="h-auto w-full lg:h-full object-cover aspect-square lg:aspect-auto">
+            <img src="{{ asset("storage/".$news['photo']) }}" alt="" class="h-auto w-full lg:h-full object-cover aspect-square lg:aspect-auto">
         </a>
     </div>
     <div
@@ -19,22 +19,22 @@
 
          ])>
         <div class="flex text-sm pt-3 justify-between">
-            <time datetime="{{ $activity['published_at'] }}" class="text-gray-400 my-auto">
-                {{ $activity['published_at'] }}
+            <time datetime="{{ $news['published_at'] }}" class="text-gray-400 my-auto">
+                {{ $news['published_at'] }}
             </time>
             @if($isFirst)<span class="hidden lg:block"><x-icons.arrow-up-right/></span>@endif
         </div>
         <div class="font-semibold text-md">
             <h3
             @class(['lg:text-2xl' => $isFirst])>
-                <a href="{{ route('activities.entry', $activity['slug']) }}">
+                <a href="{{ route('news.entry', $news['slug']) }}">
                     <span class="absolute inset-0"></span>
-                    {{ $activity['title'] }}
+                    {{ $news['title'] }}
                 </a>
             </h3>
         </div>
         <div class="line-clamp-2 text-gray-400 text-sm prose">
-            {!! $activity['description'] !!}
+            {!! $news['description'] !!}
         </div>
     </div>
 </article>

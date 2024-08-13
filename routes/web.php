@@ -3,13 +3,13 @@
 declare(strict_types=1);
 
 use Blumilk\Website\Http\Controllers\AboutController;
-use Blumilk\Website\Http\Controllers\ActivitiesController;
 use Blumilk\Website\Http\Controllers\CareerController;
 use Blumilk\Website\Http\Controllers\CaseStudiesController;
 use Blumilk\Website\Http\Controllers\CompanyDataController;
 use Blumilk\Website\Http\Controllers\ContactController;
 use Blumilk\Website\Http\Controllers\HomeController;
 use Blumilk\Website\Http\Controllers\LegalController;
+use Blumilk\Website\Http\Controllers\NewsController;
 use Blumilk\Website\Http\Controllers\PolicyController;
 use CodeZero\UriTranslator\UriTranslator;
 use Illuminate\Routing\Router;
@@ -29,7 +29,7 @@ $router->get($uri->translate("contact"), [ContactController::class, "index"])->n
 $router->post($uri->translate("contact"), [ContactController::class, "store"])->name("contact.create");
 $router->get($uri->translate("privacy-policy"), PolicyController::class)->name("privacy-policy");
 
-$router->get($uri->translate("activities"), [ActivitiesController::class, "index"])->name("activities");
-$router->get($uri->translate("activities/{slug}"), [ActivitiesController::class, "get"])->name("activities.entry");
+$router->get($uri->translate("news"), [NewsController::class, "index"])->name("news");
+$router->get($uri->translate("news/{slug}"), [NewsController::class, "get"])->name("news.entry");
 $router->get($uri->translate("legal"), LegalController::class)->name("legal");
 $router->get($uri->translate("company-data"), CompanyDataController::class)->name("data");

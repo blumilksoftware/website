@@ -9,7 +9,7 @@ use Blumilk\Website\Filament\Resources\BaseResource\Pages\BaseEditRecord;
 use Blumilk\Website\Filament\Resources\ContactFormResource;
 use Filament\Actions;
 
-class EditActivity extends BaseEditRecord
+class EditNews extends BaseEditRecord
 {
     protected static string $resource = ContactFormResource::class;
 

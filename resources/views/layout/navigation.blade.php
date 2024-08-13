@@ -32,10 +32,10 @@
                         'hover:text-website-normal rounded-3xl px-2',
                         'text-website-normal' => Str::contains($current, 'career')])>{{ __("content.pages.career") }}
                 </a>
-                <a href="{{ route('activities') }}"
+                <a href="{{ route('news') }}"
                    @class([
                         'hover:text-website-normal rounded-3xl px-2',
-                        'text-website-normal' => Str::contains($current, 'activities')])>{{ __("content.pages.activities") }}
+                        'text-website-normal' => Str::contains($current, 'news')])>{{ __("content.pages.news") }}
                 </a>
                 <a href="{{ route('contact') }}"
                    @class([
@@ -119,9 +119,9 @@
             </div>
             <div @class([
                 'w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start',
-                'text-website-normal' => Str::contains($current, 'activities')])>
-                <a href="{{ route('activities') }}" class="my-4 p-2">
-                    {{ __("content.pages.activities") }}
+                'text-website-normal' => Str::contains($current, 'news')])>
+                <a href="{{ route('news') }}" class="my-4 p-2">
+                    {{ __("content.pages.news") }}
                 </a>
             </div>
             <div @class([

@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Database\Factories;
 
-use Blumilk\Website\Models\Activity;
+use Blumilk\Website\Models\News;
 use Blumilk\Website\Models\Tag;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends Factory<Activity>
+ * @extends Factory<News>
  */
-class ActivityFactory extends Factory
+class NewsFactory extends Factory
 {
     public function definition(): array
     {

@@ -7,7 +7,7 @@ return [
         "about" => "About",
         "case_study" => "Case Study",
         "career" => "Career",
-        "activities" => "Activities",
+        "news" => "News",
         "contact" => "Contact",
     ],
     "home" => [
@@ -214,7 +214,7 @@ return [
     "activities" => [
         "section_1" => [
             "title_1" => "Our",
-            "title_2" => "activities",
+            "title_2" => "news",
         ],
     ],
     "activity" => [
