@@ -42,9 +42,11 @@ class ActivitiesController extends Controller
             $tagsActivitiesCount[$singleTag->title] = $singleTag->activitiesCount();
         }
 
+        $filteredTags = $tags->filter(fn($tag): bool => $tagsActivitiesCount[$tag->title] > 0);
+
         return $factory->make("activities")
             ->with("activities", ActivityResource::collection($activities))
-            ->with("tags", $tags->pluck("title"))
+            ->with("tags", $filteredTags->pluck("title"))
             ->with("tagsActivitiesCount", $tagsActivitiesCount)
             ->with("selectedTag", $tag?->title)
             ->with("allActivitiesCount", $allActivitiesCount);
