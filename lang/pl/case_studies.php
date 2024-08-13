@@ -18,11 +18,11 @@ return [
     "k1" => [
         "title_1" => "System zarządzania",
         "title_2" => "licencjami i dystrybucji oprogramowania",
-        "project_description" => "System do zarządzania oprogramowaniem znajdującym się na komputerach uczelnianych na podstawie zdefiniowanych reguł i harmonogramów, z uwzględnieniem licencji oprogramowania.",
+        "project_description" => "System do zarządzania oprogramowaniem znajdującym się na komputerach uczelnianych na podstawie zdefiniowanych reguł i harmonogramów, z uwzględnieniem licencji oprogramowania. Użytkownicy otrzymują kontrolowany dostęp do programów i mogą z nich korzystać zgodnie z określonymi zasadami.",
         "challenges" => [
             "challenge_1" => [
                 "title" => "Bezpieczeństwo danych",
-                "description" => "w zakresie kontroli dostępu",
+                "description" => "w zakresie kontroli dostępu i uwierzytelniania",
             ],
             "challenge_2" => [
                 "title" => "Implementacja modelu uprawnień i ról",
@@ -99,8 +99,15 @@ return [
                 "description" => "czytelny i intuicyjny",
             ],
         ],
-        "colors_description" => "Sed ut perspiciatis unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab  illo inventore veritatis et quasi architecto beatae vitae dicta sunt  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut  odit aut fugit, sed quia consequuntur magni dolores eos",
-        "typography_description" => "Sed ut perspiciatis unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab  illo inventore veritatis et quasi architecto beatae vitae dicta sunt  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut  odit aut fugit, sed quia consequuntur magni dolores eos",
+        "colors" => [
+            "first" => "Podstawowy kolor",
+            "second" => "Dodatkowy kolor",
+            "third" => "Kolor akcentujący",
+            "fourth" => "Tekst",
+            "description" => "Paleta kolorów składa się z czterech kluczowych odcieni. Kolor podstawowy to świeży, miętowy odcień, który nadaje projektom nowoczesny i spokojny charakter. Kolor dodatkowy, głęboki fiolet, wprowadza do projektów elegancję i wyróżnia się na tle innych elementów. Kolor akcentujący, ciepły pomarańcz, dodaje energii i podkreśla kluczowe elementy wizualne. Tekst w kolorze białymk zapewnia czytelność i kontrast, harmonizując z resztą palety.",
+        ],
+        "typography_description_1" => "Montserrat",
+        "typography_description_2" => "to nowoczesny, bezszeryfowy font o czytelnych liniach i uniwersalnym charakterze, idealny do zastosowań zarówno cyfrowych, jak i drukowanych. Jego elegancka estetyka nadaje projektom współczesny wygląd, a różnorodność stylów zapewnia elastyczność w projektowaniu. Font jest dostępny bezpłatnie, obsługuje wiele języków i doskonale prezentuje się na wszystkich urządzeniach.",
         "functionalities" => [
             "functionality_1" => [
                 "title" => "Zarządzanie ofertą",
@@ -123,11 +130,14 @@ return [
                 "description" => "przechowywanie historii zrealizowanych zamówień",
             ],
         ],
+        "title_4" => "Rebranding strony internetowej",
+        "rebranding" => "W oparciu o nową identyfikację wizualną strona przychodni przeszła kompleksowy rebranding spójny z designem aplikacji.",
         "alt" => [
             "laptop_1" => "laptop ze stroną aplikacji",
             "laptop_2" => "człowiek z laptopem na kolanach z otwartą aplikacją",
             "sitemap" => "mapa aplikacji",
             "mobile" => "telefony z otwartą aplikacją",
+            "rebranding" => "trzy grafiki z nowym designem strony",
         ],
     ],
     "gtb" => [
@@ -156,8 +166,15 @@ return [
                 "description" => "optymalizacja procesów bazodanowych",
             ],
         ],
-        "colors_description" => "Sed ut perspiciatis unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab  illo inventore veritatis et quasi architecto beatae vitae dicta sunt  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut  odit aut fugit, sed quia consequuntur magni dolores eos",
-        "typography_description" => "Sed ut perspiciatis unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab  illo inventore veritatis et quasi architecto beatae vitae dicta sunt  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut  odit aut fugit, sed quia consequuntur magni dolores eos",
+        "colors" => [
+            "first" => "Kolor podstawowy",
+            "second" => "Kolor dodatkowy",
+            "third" => "Kolor neutralny",
+            "fourth" => "Tekst",
+            "description" => "Paleta kolorów jest zbudowana na bazie pierwotnej wersji aplikacji. Kolor podstawowy to żywy, słoneczny żółty, który wnosi optymizm i energię do projektów. Kolor dodatkowy to głęboka szarość, dodająca nowoczesnego, profesjonalnego charakteru. Kolor neutralny, jasny szary, zapewnia subtelną harmonię i idealnie balansuje paletę. Tekst w kolorze białym gwarantuje doskonałą czytelność i kontrast.",
+        ],
+        "typography_description_1" => "Poppins",
+        "typography_description_2" => "to nowoczesny, geometryczny font bezszeryfowy, który wyróżnia się czystością i czytelnością. Jego proste linie i różnorodne grubości sprawiają, że jest wszechstronny i idealny do różnorodnych zastosowań – od nagłówków po teksty akapitowe. Font wspiera wiele języków i jest dostępny za darmo, co ułatwia jego integrację w projektach. Dzięki swojemu profesjonalnemu wyglądowi, Poppins nadaje projektom nowoczesny charakter.",
         "functionalities" => [
             "functionality_1" => [
                 "title" => "Szczegółowe statystyki",
@@ -179,6 +196,11 @@ return [
                 "title" => "Bezpieczne płatności",
                 "description" => "obsłużone przez system Stripe",
             ],
+        ],
+        "testimonial" => [
+            "name" => "Przemysław Kędzierski",
+            "company" => "GetTheBox",
+            "description" => "Miałem bardzo pozytywne doświadczenie ze współpracy z firmą Blumilk przy tworzeniu aplikacji mobilnej Getthebox. Proces realizacji projektu przebiegał sprawnie i profesjonalnie. Jestem zadowolony z końcowego produktu, który został wykonany zgodnie z moimi oczekiwaniami i działa bez zarzutu.",
         ],
         "alt" => [
             "laptop_1" => "laptop ze stroną aplikacji",

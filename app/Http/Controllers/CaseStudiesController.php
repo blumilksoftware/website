@@ -12,7 +12,7 @@ class CaseStudiesController extends Controller
 {
     public function index(Factory $factory): View
     {
-        $caseStudies = CaseStudy::query()->where("published", true)->get();
+        $caseStudies = CaseStudy::query()->where("published", true)->paginate(4);
 
         return $factory->make("projects")
             ->with("caseStudies", $caseStudies);
@@ -24,7 +24,10 @@ class CaseStudiesController extends Controller
 
         $view = preg_replace('/\.blade\.php$/', "", $caseStudy->template);
 
-        return $factory->make("projects/$view")
-            ->with("caseStudy", $caseStudy);
+        $locale = app()->getLocale();
+
+        return $factory->make("case-studies/$view")
+            ->with("caseStudy", $caseStudy)
+            ->with("locale", $locale);
     }
 }

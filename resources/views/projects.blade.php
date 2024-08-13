@@ -19,6 +19,10 @@
                 <x-case-study-tile :caseStudy="$caseStudy" class="{{ $index >= 3 ? 'hidden lg:grid' : '' }}"/>
             @endforeach
         </div>
+
+        <div class="pt-24">
+            {{ $caseStudies->links() }}
+        </div>
     </section>
     <x-text-us-section/>
 @endsection

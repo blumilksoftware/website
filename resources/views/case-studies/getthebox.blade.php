@@ -9,7 +9,7 @@
         <span class="text-gtb"> {{ __("case_studies.gtb.title_2") }}</span>
     </x-case-studies.title>
 
-    <x-case-studies.main-image src="{{ asset('images/case-studies/gtb/laptop_1.png') }}" alt="{ __('case_studies.gtb.alt.laptop_1') }}" />
+    <x-case-studies.main-image src="{{ asset('images/case-studies/gtb/laptop_1.png') }}" alt="{{ __('case_studies.gtb.alt.laptop_1') }}" />
 
     <x-case-studies.description>{{ __("case_studies.gtb.project_description") }}</x-case-studies.description>
 
@@ -48,19 +48,21 @@
         </div>
     </section>
 
-    <x-case-studies.color-palette description="{{ __('case_studies.gtb.colors_description') }}"
-                                  primary-bg="#FAD12A" primary-text="text-black"
-                                  secondary-bg="#545555" secondary-text="text-white"
-                                  surface-bg="#E7E9EC" surface-text="text-black"
-                                  text-bg="#FFFFFF" text-color="text-black"/>
+    <x-case-studies.color-palette description="{{ __('case_studies.gtb.colors.description') }}"
+                                  first-title="{{ __('case_studies.vita.colors.first') }}" first-bg="#FAD12A" first-text-color="text-black"
+                                  second-title="{{ __('case_studies.vita.colors.second') }}" second-bg="#545555" second-text-color="text-white"
+                                  third-title="{{ __('case_studies.vita.colors.third') }}" third-bg="#E7E9EC" third-text-color="text-black"
+                                  fourth-title="{{ __('case_studies.vita.colors.fourth') }}" fourth-bg="#FFFFFF" fourth-text-color="text-black"/>
 
-    <x-case-studies.typography font="montserrat" bg="bg-[#545555]" description="{{ __('case_studies.gtb.typography_description') }}"/>
+    <x-case-studies.typography font="poppins" bg="bg-[#545555]">
+        <span class="font-semibold">{{ __('case_studies.gtb.typography_description_1') }}</span> {{ __('case_studies.gtb.typography_description_2') }}
+    </x-case-studies.typography>
 
-    <x-case-studies.image src="{{ asset('images/case-studies/gtb/laptop_2.png') }}" alt="{ __('case_studies.gtb.alt.laptop_2') }}" />
+    <x-case-studies.image src="{{ asset('images/case-studies/gtb/laptop_2.png') }}" alt="{{ __('case_studies.gtb.alt.laptop_2') }}" />
 
     <div class="py-40">
         <x-case-studies.title>{{ __("case_studies.sitemap") }}</x-case-studies.title>
-        <x-case-studies.image src="{{ asset('images/case-studies/gtb/sitemap.svg') }}" alt="{ __('case_studies.gtb.alt.sitemap') }}" margin="true" />
+        <x-case-studies.image src="{{ asset('images/case-studies/gtb/'.$locale.'/sitemap.svg') }}" alt="{{ __('case_studies.gtb.alt.sitemap') }}" margin="true" />
     </div>
 
     <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-10 py-20 text-center">
@@ -95,6 +97,12 @@
     </section>
 
     <x-case-studies.image src="{{ asset('images/case-studies/gtb/mobile.png') }}" alt="{{ __('case_studies.gtb.alt.mobile') }}" />
+
+    <x-case-studies.testimonial name="{{ __('case_studies.gtb.testimonial.name') }}"
+                               company="{{ __('case_studies.gtb.testimonial.company') }}"
+                               description="{{ __('case_studies.gtb.testimonial.description') }}"
+                               photo="graphics/placeholders/man.svg"
+                               link="https://www.linkedin.com/in/eduardo-oliveira-1b1b1b1b/"/>
 
     <x-text-us-section/>
 @endsection

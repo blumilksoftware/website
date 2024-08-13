@@ -18,11 +18,11 @@ return [
     "k1" => [
         "title_1" => "License and software",
         "title_2" => " distribution management system",
-        "project_description" => "A system for managing software on university computers based on defined rules and schedules, including software licenses.",
+        "project_description" => "A system for managing software on university computers based on defined rules and schedules, including software licenses. Users receive controlled access to programs and can use them in accordance with specific rules.",
         "challenges" => [
             "challenge_1" => [
                 "title" => "Data security",
-                "description" => "in terms of access control",
+                "description" => "in terms of access control and authentication",
             ],
             "challenge_2" => [
                 "title" => "Implementation of the permissions and roles model",
@@ -99,8 +99,15 @@ return [
                 "description" => "clear and intuitive",
             ],
         ],
-        "colors_description" => "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos",
-        "typography_description" => "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam",
+        "colors" => [
+            "first" => "Primary color",
+            "second" => "Secondary color",
+            "third" => "Accent color",
+            "fourth" => "Text",
+            "description" => "The color palette consists of four key shades. The basic color is a fresh, mint shade that gives the designs a modern and calm character. The additional color, deep purple, adds elegance to the designs and stands out from other elements. The accent color, warm orange, adds energy and highlights key visual elements. The white text ensures readability and contrast, harmonizing with the rest of the palette.",
+        ],
+        "typography_description_1" => "Montserrat",
+        "typography_description_2" => "is a modern, sans-serif font with clear lines and a universal character, ideal for both digital and printed applications. Its elegant aesthetic gives designs a contemporary look, and the variety of styles provides design flexibility. The font is available for free, supports multiple languages and looks great on all devices.",
         "functionalities" => [
             "functionality_1" => [
                 "title" => "Offer management",
@@ -123,11 +130,14 @@ return [
                 "description" => "storing the history of completed orders",
             ],
         ],
+        "title_4" => "Rebranding of the website",
+        "rebranding" => "Based on the new visual identification, the clinic's website underwent a comprehensive rebranding consistent with the design of the application.",
         "alt" => [
             "laptop_1" => "laptop with the application website",
             "laptop_2" => "person with a laptop on his laps with open application",
             "sitemap" => "sitemap of the application",
             "mobile" => "phones with open application",
+            "rebranding" => "three graphics with a new website design",
         ],
     ],
     "gtb" => [
@@ -156,7 +166,13 @@ return [
                 "description" => "optimization of database processes",
             ],
         ],
-        "colors_description" => "Sed ut perspiciatis unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab  illo inventore veritatis et quasi architecto beatae vitae dicta sunt  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut  odit aut fugit, sed quia consequuntur magni dolores eos",
+        "colors" => [
+            "first" => "Primary color",
+            "second" => "Secondary color",
+            "third" => "Neutral color",
+            "fourth" => "Text",
+            "description" => "The color palette is built on the basis of the original version of the application. The basic color is a vibrant, sunny yellow that brings optimism and energy to projects. The additional color is deep gray, adding a modern, professional character. The neutral, light gray color provides subtle harmony and perfectly balances the palette. White text guarantees excellent readability and contrast.",
+        ],
         "typography_description" => "Sed ut perspiciatis unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab  illo inventore veritatis et quasi architecto beatae vitae dicta sunt  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut  odit aut fugit, sed quia consequuntur magni dolores eos",
         "functionalities" => [
             "functionality_1" => [
@@ -179,6 +195,11 @@ return [
                 "title" => "Secure payments",
                 "description" => "handled by the Stripe system",
             ],
+        ],
+        "testimonial" => [
+            "name" => "Przemysław Kędzierski",
+            "company" => "GetTheBox",
+            "description" => "I had a very positive experience working with Blumilk to create the Getthebox mobile app. The project implementation process was efficient and professional. I am pleased with the final product, it was made according to my expectations and works flawlessly.",
         ],
         "alt" => [
             "laptop_1" => "laptop with the application website",

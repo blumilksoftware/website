@@ -3,10 +3,10 @@
         <div class="text-3xl md:text-4xl lg:text-5xl font-semibold"> {{ __("case_studies.color_palette") }} </div>
         <div class="leading-loose text-md"> {{ $description }} </div>
     </div>
-    <div class="w-full h-96 grid grid-cols-3 justify-items-stretch">
-        <div style="background-color: {{ $primaryBg }};"  class="size-full col-span-3 rounded-t-2xl place-content-end pb-8 pl-8 {{ $primaryText }}"><span class="font-semibold block"> {{ __("case_studies.primary") }} </span> {{ $primaryBg }}</div>
-        <div style="background-color: {{ $secondaryBg }};" class="size-full rounded-bl-2xl place-content-end pb-8 pl-8 {{ $secondaryText }}"><span class="font-semibold block">  {{ __("case_studies.secondary") }}  </span> {{ $secondaryBg }}</div>
-        <div style="background-color: {{ $surfaceBg }};" class="size-full place-content-end pb-8 pl-8 {{ $surfaceText }}"><span class="font-semibold block">  {{ __("case_studies.surface_container") }}  </span> {{ $surfaceBg }}</div>
-        <div style="background-color: {{ $textBg }};" class="size-full rounded-br-2xl place-content-end pb-8 pl-8 {{ $textColor }}"><span class="font-semibold block">  {{ __("case_studies.text") }}  </span> {{ $textBg }}</div>
+    <div class="w-full h-96 grid grid-cols-3 justify-items-stretch text-sm">
+        <div style="background-color: {{ $firstBg }};"  class="size-full col-span-3 rounded-t-2xl place-content-end pb-8 pl-8 {{ $firstTextColor }}"><span class="font-semibold block text-lg"> {{$firstTitle}} </span> {{ $firstBg }}</div>
+        <div style="background-color: {{ $secondBg }};" class="size-full rounded-bl-2xl place-content-end pb-8 pl-8 {{ $secondTextColor }}"><span class="font-semibold block text-lg">  {{ $secondTitle }}  </span> {{ $secondBg }}</div>
+        <div style="background-color: {{ $thirdBg }};" class="size-full place-content-end pb-8 pl-8 {{ $thirdTextColor }}"><span class="font-semibold block text-lg">  {{ $thirdTitle }}  </span> {{ $thirdBg }}</div>
+        <div style="background-color: {{ $fourthBg }};" class="size-full rounded-br-2xl place-content-end pb-8 pl-8 {{ $fourthTextColor }}"><span class="font-semibold block text-lg">  {{ $fourthTitle }}  </span> {{ $fourthBg }}</div>
     </div>
 </section>
