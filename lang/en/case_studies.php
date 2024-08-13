@@ -10,10 +10,6 @@ return [
     "key_functionalities" => "Key functionalities",
     "architecture_schema" => "System architecture schema",
     "color_palette" => "Color palette",
-    "primary" => "Primary color",
-    "secondary" => "Secondary color",
-    "surface_container" => "Surface container",
-    "text" => "Text",
     "characters" => "Characters",
     "k1" => [
         "title_1" => "License and software",

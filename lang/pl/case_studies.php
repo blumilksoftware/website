@@ -10,10 +10,6 @@ return [
     "key_functionalities" => "Kluczowe funkcjonalności",
     "architecture_schema" => "Schemat architektury systemu",
     "color_palette" => "Paleta kolorów",
-    "primary" => "Kolor główny",
-    "secondary" => "Kolor dodatkowy",
-    "surface_container" => "Powierzchnia",
-    "text" => "Tekst",
     "characters" => "Znaki",
     "k1" => [
         "title_1" => "System zarządzania",
