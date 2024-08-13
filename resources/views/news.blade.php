@@ -20,19 +20,17 @@
             <button type="button"
                     @click="openTags = ! openTags"
                     class="flex border-b-[3px] border-website-normal text-gray-500 hover:text-black w-full">
-                <span class="relative w-full sm:w-auto flex place-content-center px-1 pt-1 text-sm font-medium">
+                <span class="relative w-full sm:w-auto flex place-content-center px-1 pt-1 mb-1 text-sm font-medium">
                     @if($selectedTag)
                         {{ $selectedTag }}
                     @else
                         {{ __("tags.all") }}
                     @endisset
-                    <span class="text-xs p-1 px-2 ml-2 mb-1 bg-gray-light text-black rounded-full">
                         @if($selectedTag && $tags->contains($selectedTag) !== false)
-                            {{ $tagsNewsCount[$selectedTag] }}
-                        @else
-                            {{ $allNewsCount }}
+                            <span class="text-xs p-1 px-2 ml-2 bg-gray-light text-black rounded-full">{{ $tagsNewsCount[$selectedTag] }}</span>
+                        @elseif (!$selectedTag)
+                            <span class="text-xs p-1 px-2 ml-2 bg-gray-light text-black rounded-full">{{ $allNewsCount }}</span>
                         @endif
-                    </span>
                     <span class="absolute right-0 text-right">
                         <i :class="{'rotate-0': openTags, 'rotate-180': ! openTags}"
                            class="fa-solid fa-chevron-up text-current"></i>
@@ -68,8 +66,6 @@
             </div>
         </div>
 
-
-        {{--        ṭo ma zostać na dekstop--}}
         <div class="hidden sm:flex place-content-center flex-wrap gap-y-4">
             <x-tag href="{{ route('news') }}"
                    articlesCount="{{ $allNewsCount }}"
@@ -88,10 +84,11 @@
             @if($selectedTag && $tags->contains($selectedTag) === false)
                 <x-tag href="{{ route('news') }}"
                     @class([
-                        "my-1 m-2 md:my-2 xl:my-3 px-4 py-1 md:px-3 md:py-2 xl:px-4 xl:py-2 2xl:px-6 2xl:py-3",
-                        "text-black border-website-normal",
-                    ])
-                >{{ $selectedTag }}</x-tag>
+                        'px-4 py-1 md:px-3 md:py-2 xl:px-4 xl:py-2 2xl:px-6 2xl:py-3',
+                        'text-black border-website-normal' => $selectedTag && $tag === $selectedTag,
+                        'text-gray-400' => !($selectedTag && $tag === $selectedTag),
+                    ])>
+                    {{ $selectedTag }}</x-tag>
             @endif
         </div>
     </section>
