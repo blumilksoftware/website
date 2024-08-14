@@ -10,7 +10,7 @@
                 <span class="font-bold text-white block">{{ __("content.home.section_6.subtitle_2") }}</span>
             </p>
             <div class="mt-4 md:mt-10 flex items-center justify-center gap-x-6">
-                <x-primary-button href="{{ route('contact') }}" class="px-16 bg-blue-dark bg-opacity-85 font-semibold">
+                <x-primary-button href="{{ route('contact') }}" class="w-full md:w-auto md:px-16 py-4 bg-blue-dark bg-opacity-85 font-semibold">
                     {{ __("buttons.text_us") }}
                 </x-primary-button>
             </div>

@@ -35,4 +35,8 @@ return [
         "title" => "Privacy policy",
         "description" => "Read our privacy policy.",
     ],
+    "company-data" => [
+        "title" => "Company data",
+        "description" => "Company data of Blumilk Sp. z o.o.",
+    ],
 ];

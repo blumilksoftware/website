@@ -31,7 +31,7 @@
     </div>
 
     <div class="mb-auto">
-        <div class="relative -z-10 2xl:max-w-screen-3xl 2xl:mx-auto">
+        <div class="relative hidden sm:block -z-10 2xl:max-w-screen-3xl 2xl:mx-auto">
             <div class="absolute left-[8%] md:-left-0 top-16">
                 <x-bubble size="100"/>
             </div>
@@ -51,10 +51,7 @@
                 <x-bubble size="210"/>
             </div>
         </div>
-
-        <div class="min-h-screen z-20 overflow-hidden">
-            @yield('content')
-        </div>
+        @yield('content')
     </div>
 
     @include('layout.footer')
