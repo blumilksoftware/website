@@ -92,7 +92,7 @@ return [
             ],
             "challenge_5" => [
                 "title" => "User interface",
-                "description" => "clear and intuitive",
+                "description" => "clear and intuitive, adapted to the target group",
             ],
         ],
         "colors" => [
@@ -151,7 +151,7 @@ return [
             ],
             "challenge_3" => [
                 "title" => "Online payments",
-                "description" => "securing the interests of users",
+                "description" => "securing the interests of the users",
             ],
             "challenge_4" => [
                 "title" => "Parcel forwarding system",
@@ -169,7 +169,8 @@ return [
             "fourth" => "Text",
             "description" => "The color palette is built on the basis of the original version of the application. The basic color is a vibrant, sunny yellow that brings optimism and energy to projects. The additional color is deep gray, adding a modern, professional character. The neutral, light gray color provides subtle harmony and perfectly balances the palette. White text guarantees excellent readability and contrast.",
         ],
-        "typography_description" => "Sed ut perspiciatis unde omnis iste natus error sit voluptatem  accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab  illo inventore veritatis et quasi architecto beatae vitae dicta sunt  explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut  odit aut fugit, sed quia consequuntur magni dolores eos",
+        "typography_description_1" => "Poppins",
+        "typography_description_2" => "is a modern, geometric sans-serif font that stands out for its purity and readability. Its straight lines and varying thicknesses make it versatile and ideal for a variety of uses - from headlines to paragraph texts. The font supports many languages and is available for free, which makes it easy to integrate into your projects. Thanks to its professional appearance, Poppins gives projects a modern character.",
         "functionalities" => [
             "functionality_1" => [
                 "title" => "Detailed statistics",
@@ -181,7 +182,7 @@ return [
             ],
             "functionality_3" => [
                 "title" => "Viewing shipments",
-                "description" => "on the designated route",
+                "description" => "on a designated route to monitor their status",
             ],
             "functionality_4" => [
                 "title" => "Secured receipt of shipments",
@@ -189,7 +190,7 @@ return [
             ],
             "functionality_5" => [
                 "title" => "Secure payments",
-                "description" => "handled by the Stripe system",
+                "description" => "transaction process handled by the Stripe system",
             ],
         ],
         "testimonial" => [

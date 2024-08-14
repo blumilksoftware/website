@@ -92,7 +92,7 @@ return [
             ],
             "challenge_5" => [
                 "title" => "Interfejs użytkownika",
-                "description" => "czytelny i intuicyjny",
+                "description" => "czytelny i intuicyjny, dostosowany do grupy odbiorców",
             ],
         ],
         "colors" => [
@@ -182,7 +182,7 @@ return [
             ],
             "functionality_3" => [
                 "title" => "Przeglądanie przesyłek",
-                "description" => "na wyznaczonej trasie",
+                "description" => "na wyznaczonej trasie w celu monitorowania ich statusu",
             ],
             "functionality_4" => [
                 "title" => "Zabezpieczony odbiór przesyłek",
@@ -190,7 +190,7 @@ return [
             ],
             "functionality_5" => [
                 "title" => "Bezpieczne płatności",
-                "description" => "obsłużone przez system Stripe",
+                "description" => "proces transakcji obsłużony przez system Stripe",
             ],
         ],
         "testimonial" => [

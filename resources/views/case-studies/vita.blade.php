@@ -11,7 +11,8 @@
     </x-case-studies.title>
 
     <x-case-studies.main-image src="{{ asset('images/case-studies/vita/laptop_1.png') }}"
-                               alt="{{ __('case_studies.vita.alt.laptop_1') }}"/>
+                               alt="{{ __('case_studies.vita.alt.laptop_1') }}"
+                               move-right="true"/>
 
     <x-case-studies.description>{{ __("case_studies.vita.project_description") }}</x-case-studies.description>
 
@@ -50,7 +51,7 @@
         </div>
     </section>
 
-    <div class="mb-24">
+    <div class="mb-8 md:mb-24">
         <x-case-studies.color-palette description="{{ __('case_studies.vita.colors.description') }}"
                                       first-title="{{ __('case_studies.vita.colors.first') }}" first-bg="#56C9CD"
                                       first-text-color="text-white"
@@ -63,20 +64,19 @@
     </div>
 
     <x-case-studies.typography font="montserrat" bg="bg-vita">
-        <span
-            class="font-semibold">{{ __('case_studies.vita.typography_description_1') }}</span> {{ __('case_studies.vita.typography_description_2') }}
+        <span class="font-semibold">{{ __('case_studies.vita.typography_description_1') }}</span> {{ __('case_studies.vita.typography_description_2') }}
     </x-case-studies.typography>
 
     <x-case-studies.image src="{{ asset('images/case-studies/vita/laptop_2.png') }}"
                           alt="{{ __('case_studies.vita.alt.laptop_2') }}"/>
 
-    <div class="pt-40 pb-20">
+    <div class="pt-12 md:pt-40 pb-10 md:pb-20">
         <x-case-studies.title>{{ __("case_studies.sitemap") }}</x-case-studies.title>
         <x-case-studies.image src="{{ asset('images/case-studies/vita/'.$locale.'/sitemap.svg') }}"
                               alt="{{ __('case_studies.vita.alt.sitemap') }}" margin="true"/>
     </div>
 
-    <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-10 pt-20 pb-44 text-center">
+    <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-10 pt-10 md:pt-20 pb-20 md:pb-44 text-center">
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("case_studies.key_functionalities") }}</h2>
         <div class="flex place-content-center flex-wrap gap-4 2xl:gap-10">
             <x-tile title="{{ __('case_studies.vita.functionalities.functionality_1.title') }}"
@@ -111,7 +111,7 @@
                           alt="{{ __('case_studies.vita.alt.mobile') }}"/>
 
 
-    <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-7 pt-48 pb-36 text-center">
+    <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-7 pt-20 md:pt-48 pb-16 md:pb-24 xl:pb-36 text-center">
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold">{{ __("case_studies.vita.title_4") }}</h2>
             <div class="font-normal leading-relaxed text-md lg:text-lg relative max-w-[925px] mx-auto">{{ __("case_studies.vita.rebranding") }}</div>
     </section>

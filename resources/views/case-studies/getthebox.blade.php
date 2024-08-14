@@ -11,10 +11,11 @@
 
     <x-case-studies.main-image src="{{ asset('images/case-studies/gtb/laptop_1.png') }}" alt="{{ __('case_studies.gtb.alt.laptop_1') }}" />
 
-    <x-case-studies.description>{{ __("case_studies.gtb.project_description") }}</x-case-studies.description>
-
-    <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-10 py-20 text-center">
-        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("case_studies.challenges") }}</h2>
+    <div class="mt-20 sm:mt-0">
+        <x-case-studies.description>{{ __("case_studies.gtb.project_description") }}</x-case-studies.description>
+    </div>
+    <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-10 py-10 md:py-20 text-center">
+        <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold md:pb-8">{{ __("case_studies.challenges") }}</h2>
         <div class="flex place-content-center flex-wrap gap-4 2xl:gap-10">
             <x-tile title="{{ __('case_studies.gtb.challenges.challenge_1.title') }}"
                     description="{{ __('case_studies.gtb.challenges.challenge_1.description') }}"
@@ -60,12 +61,12 @@
 
     <x-case-studies.image src="{{ asset('images/case-studies/gtb/laptop_2.png') }}" alt="{{ __('case_studies.gtb.alt.laptop_2') }}" />
 
-    <div class="py-40">
+    <div class="py-20 md:py-40">
         <x-case-studies.title>{{ __("case_studies.sitemap") }}</x-case-studies.title>
         <x-case-studies.image src="{{ asset('images/case-studies/gtb/'.$locale.'/sitemap.svg') }}" alt="{{ __('case_studies.gtb.alt.sitemap') }}" margin="true" />
     </div>
 
-    <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-10 py-20 text-center">
+    <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-10 py-10 md:py-20 text-center">
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("case_studies.key_functionalities") }}</h2>
         <div class="flex place-content-center flex-wrap gap-4 2xl:gap-10">
             <x-tile title="{{ __('case_studies.gtb.functionalities.functionality_1.title') }}"
