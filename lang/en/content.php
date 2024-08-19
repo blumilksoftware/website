@@ -7,7 +7,7 @@ return [
         "about" => "About",
         "case_study" => "Case Study",
         "career" => "Career",
-        "activities" => "Activities",
+        "news" => "News",
         "contact" => "Contact",
     ],
     "home" => [
@@ -213,14 +213,15 @@ return [
     ],
     "activities" => [
         "section_1" => [
-            "title_1" => "Our activities",
+            "title_1" => "Our",
+            "title_2" => "news",
         ],
     ],
     "activity" => [
         "section_1" => [
-            "title_1" => "You might find this interesting:",
-            "title_2" => "Tags",
-            "title_3" => "People",
+            "title_1" => "You might find this interesting",
+            "title_2" => "Categories",
+            "title_3" => "Related people",
         ],
     ],
     "contact" => [

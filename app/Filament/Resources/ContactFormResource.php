@@ -125,8 +125,8 @@ class ContactFormResource extends Resource
     public static function getPages(): array
     {
         return [
-            "index" => Pages\ListActivities::route("/"),
-            "edit" => Pages\EditActivity::route("/{record}/edit"),
+            "index" => Pages\ListNews::route("/"),
+            "edit" => Pages\EditNews::route("/{record}/edit"),
         ];
     }
 

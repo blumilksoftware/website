@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace Blumilk\Website\Filament\Resources;
 
 use Blumilk\Website\Enums\DateFormats;
-use Blumilk\Website\Filament\Resources\ActivityResource\Pages;
-use Blumilk\Website\Models\Activity;
+use Blumilk\Website\Filament\Resources\NewsResource\Pages;
+use Blumilk\Website\Models\News;
 use Blumilk\Website\Models\Tag;
 use Exception;
 use Filament\Forms;
@@ -22,11 +22,11 @@ use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Mvenghaus\FilamentPluginTranslatableInline\Forms\Components\TranslatableContainer;
 
-class ActivityResource extends Resource
+class NewsResource extends Resource
 {
     use Translatable;
 
-    protected static ?string $model = Activity::class;
+    protected static ?string $model = News::class;
     protected static ?string $label = "aktualność";
     protected static ?string $pluralLabel = "Aktualności";
     protected static ?string $navigationIcon = "heroicon-o-rectangle-stack";
@@ -42,11 +42,6 @@ class ActivityResource extends Resource
                             Forms\Components\TextInput::make("title")
                                 ->label("Tytuł")
                                 ->required()
-                                ->maxLength(255),
-                        )->requiredLocales(config("app.translatable_locales")),
-                        TranslatableContainer::make(
-                            Forms\Components\TextInput::make("subtitle")
-                                ->label("Podtytuł")
                                 ->maxLength(255),
                         )->requiredLocales(config("app.translatable_locales")),
                         Forms\Components\TextInput::make("slug")
@@ -81,7 +76,7 @@ class ActivityResource extends Resource
                         Forms\Components\FileUpload::make("photo")
                             ->label("Zdjęcie")
                             ->required()
-                            ->directory(Activity::PHOTOS_DIRECTORY)
+                            ->directory(News::PHOTOS_DIRECTORY)
                             ->multiple(false)
                             ->maxSize(1000),
                     ]),
@@ -147,9 +142,9 @@ class ActivityResource extends Resource
     public static function getPages(): array
     {
         return [
-            "index" => Pages\ListActivities::route("/"),
-            "create" => Pages\CreateActivity::route("/create"),
-            "edit" => Pages\EditActivity::route("/{record}/edit"),
+            "index" => Pages\ListNews::route("/"),
+            "create" => Pages\CreateNews::route("/create"),
+            "edit" => Pages\EditNews::route("/{record}/edit"),
         ];
     }
 

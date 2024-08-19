@@ -4,14 +4,14 @@ declare(strict_types=1);
 
 namespace Database\Factories;
 
-use Blumilk\Website\Models\Activity;
+use Blumilk\Website\Models\News;
 use Blumilk\Website\Models\Tag;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends Factory<Activity>
+ * @extends Factory<News>
  */
-class ActivityFactory extends Factory
+class NewsFactory extends Factory
 {
     public function definition(): array
     {
@@ -19,7 +19,6 @@ class ActivityFactory extends Factory
 
         return [
             "title" => $this->translations($locales, $this->faker->sentence),
-            "subtitle" => $this->translations($locales, $this->faker->sentence),
             "description" => $this->translations($locales, $this->faker->paragraph),
             "slug" => $this->faker->slug,
             "photo" => sprintf("%s/%s", "factory", "activity.jpg"),

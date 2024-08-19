@@ -7,7 +7,7 @@ namespace Blumilk\Website\Filament\Resources\ContactFormResource\Pages;
 use Blumilk\Website\Filament\Resources\BaseResource\Pages\BaseListRecord;
 use Blumilk\Website\Filament\Resources\ContactFormResource;
 
-class ListActivities extends BaseListRecord
+class ListNews extends BaseListRecord
 {
     protected static string $resource = ContactFormResource::class;
 }
