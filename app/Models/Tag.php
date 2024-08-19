@@ -38,4 +38,12 @@ class Tag extends Model
         parent::boot();
         static::observe(TagObserver::class);
     }
+
+    public function newsCount(): int
+    {
+        return News::query()
+            ->where("published", true)
+            ->whereJsonContains("tags", $this->id)
+            ->count();
+    }
 }

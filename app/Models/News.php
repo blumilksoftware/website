@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Blumilk\Website\Models;
 
-use Blumilk\Website\Observers\ActivityObserver;
+use Blumilk\Website\Observers\NewsObserver;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -13,7 +13,6 @@ use Spatie\Translatable\HasTranslations;
 
 /**
  * @property array $title
- * @property array $subtitle
  * @property array $description
  * @property string $slug
  * @property string $photo
@@ -22,22 +21,20 @@ use Spatie\Translatable\HasTranslations;
  * @property string $url
  * @property array $tags
  */
-class Activity extends Model
+class News extends Model
 {
     use HasTranslations;
     use HasFactory;
 
-    public const string PHOTOS_DIRECTORY = "activities";
+    public const string PHOTOS_DIRECTORY = "news";
 
     public $translatable = [
         "title",
-        "subtitle",
         "description",
     ];
     protected $fillable = [
         "photo",
         "title",
-        "subtitle",
         "description",
         "slug",
         "published",
@@ -47,7 +44,6 @@ class Activity extends Model
     ];
     protected $casts = [
         "title" => "array",
-        "subtitle" => "array",
         "description" => "array",
         "published" => "boolean",
         "published_at" => "datetime",
@@ -62,6 +58,6 @@ class Activity extends Model
     public static function boot(): void
     {
         parent::boot();
-        static::observe(ActivityObserver::class);
+        static::observe(NewsObserver::class);
     }
 }

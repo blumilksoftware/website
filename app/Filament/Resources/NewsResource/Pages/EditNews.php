@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Blumilk\Website\Filament\Resources\ActivityResource\Pages;
+namespace Blumilk\Website\Filament\Resources\NewsResource\Pages;
 
-use Blumilk\Website\Filament\Resources\ActivityResource;
 use Blumilk\Website\Filament\Resources\BaseResource\Pages\BaseEditRecord;
+use Blumilk\Website\Filament\Resources\NewsResource;
 use Filament\Actions;
 
-class EditActivity extends BaseEditRecord
+class EditNews extends BaseEditRecord
 {
-    protected static string $resource = ActivityResource::class;
+    protected static string $resource = NewsResource::class;
 
     protected function getHeaderActions(): array
     {
