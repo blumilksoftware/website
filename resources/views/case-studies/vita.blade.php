@@ -12,7 +12,7 @@
 
     <x-case-studies.main-image src="{{ asset('images/case-studies/vita/laptop_1.png') }}"
                                alt="{{ __('case_studies.vita.alt.laptop_1') }}"
-                               move-right="true"/>
+                               shift="object-left"/>
 
     <x-case-studies.description>{{ __("case_studies.vita.project_description") }}</x-case-studies.description>
 

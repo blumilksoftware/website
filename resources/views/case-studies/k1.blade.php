@@ -23,7 +23,7 @@
 
             <x-tile title="{{ __('case_studies.k1.challenges.challenge_2.title') }}"
                     description="{{ __('case_studies.k1.challenges.challenge_2.description') }}"
-                    class="max-w-[350px]">
+                    class="max-w-[350px] pr-2">
                     <x-icons.user-check accent="stroke-k1"/>
             </x-tile>
 
@@ -59,7 +59,7 @@
         <div class="flex place-content-center flex-wrap gap-4 2xl:gap-10">
             <x-tile title="{{ __('case_studies.k1.functionalities.functionality_1.title') }}"
                     description="{{ __('case_studies.k1.functionalities.functionality_1.description') }}"
-                    class="max-w-[350px]">
+                    class="max-w-[350px] pr-2">
                 <x-icons.subtask accent="stroke-k1" />
             </x-tile>
             <x-tile title="{{ __('case_studies.k1.functionalities.functionality_2.title') }}"
@@ -69,7 +69,7 @@
             </x-tile>
             <x-tile title="{{ __('case_studies.k1.functionalities.functionality_3.title') }}"
                     description="{{ __('case_studies.k1.functionalities.functionality_3.description') }}"
-                    class="max-w-[350px]">
+                    class="max-w-[350px] pr-2">
                 <x-icons.users accent="stroke-k1" />
             </x-tile>
             <x-tile title="{{ __('case_studies.k1.functionalities.functionality_4.title') }}"

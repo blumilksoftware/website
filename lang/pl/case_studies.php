@@ -22,7 +22,7 @@ return [
             ],
             "challenge_2" => [
                 "title" => "Implementacja modelu uprawnień i ról",
-                "description" => "zapewniający właściwy rozdział uprawnień",
+                "description" => "zapewniający właściwy podział uprawnień",
             ],
             "challenge_3" => [
                 "title" => "Kontrola i nadzór maszyn klienckich",
@@ -96,8 +96,8 @@ return [
             ],
         ],
         "colors" => [
-            "first" => "Podstawowy kolor",
-            "second" => "Dodatkowy kolor",
+            "first" => "Kolor podstawowy",
+            "second" => "Kolor dodatkowy",
             "third" => "Kolor akcentujący",
             "fourth" => "Tekst",
             "description" => "Paleta kolorów składa się z czterech kluczowych odcieni. Kolor podstawowy to świeży, miętowy odcień, który nadaje projektom nowoczesny i spokojny charakter. Kolor dodatkowy, głęboki fiolet, wprowadza do projektów elegancję i wyróżnia się na tle innych elementów. Kolor akcentujący, ciepły pomarańcz, dodaje energii i podkreśla kluczowe elementy wizualne. Tekst w kolorze białymk zapewnia czytelność i kontrast, harmonizując z resztą palety.",

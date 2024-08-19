@@ -9,7 +9,7 @@
         <span class="text-gtb"> {{ __("case_studies.gtb.title_2") }}</span>
     </x-case-studies.title>
 
-    <x-case-studies.main-image src="{{ asset('images/case-studies/gtb/laptop_1.png') }}" alt="{{ __('case_studies.gtb.alt.laptop_1') }}" />
+    <x-case-studies.main-image src="{{ asset('images/case-studies/gtb/laptop_1.png') }}" alt="{{ __('case_studies.gtb.alt.laptop_1') }}" shift="object-[25%_50%]"/>
 
     <div class="mt-20 sm:mt-0">
         <x-case-studies.description>{{ __("case_studies.gtb.project_description") }}</x-case-studies.description>
