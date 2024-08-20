@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 return [
     "about" => "o-firmie",
-    "case-studies" => "case-studies",
-    "case-studies/{slug}" => "case-studies/{slug}",
+    "projects" => "projekty",
+    "projects/{slug}" => "projekty/{slug}",
     "career" => "kariera",
     "contact" => "kontakt",
     "legal" => "prawne",

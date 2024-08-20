@@ -53,31 +53,34 @@
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.home.section_3.title_1") }}</h2>
                     <span class="font-light leading-relaxed text-md lg:text-lg relative">{{ __("content.home.section_3.subtitle_1") }}</span>
                 </div>
-                <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-12 place-items-center xl:place-items-stretch">
-                    <x-tile image="{{ asset('graphics/services/window.svg') }}"
-                            alt="benefit-1"
-                            title="{{ __('content.home.section_3.tile_1.title') }}"
-                            description="{{ __('content.home.section_3.tile_1.subtitle') }}"/>
-                    <x-tile image="{{ asset('graphics/services/robot.svg') }}"
-                            alt="benefit-1"
-                            title="{{ __('content.home.section_3.tile_6.title') }}"
-                            description="{{ __('content.home.section_3.tile_6.subtitle') }}"/>
-                    <x-tile image="{{ asset('graphics/services/web.svg') }}"
-                            alt="benefit-1"
-                            title="{{ __('content.home.section_3.tile_3.title') }}"
-                            description="{{ __('content.home.section_3.tile_3.subtitle') }}"/>
-                    <x-tile image="{{ asset('graphics/services/analyse.svg') }}"
-                            alt="benefit-1"
-                            title="{{ __('content.home.section_3.tile_4.title') }}"
-                            description="{{ __('content.home.section_3.tile_4.subtitle') }}"/>
-                    <x-tile image="{{ asset('graphics/services/gallery.svg') }}"
-                            alt="benefit-1"
-                            title="{{ __('content.home.section_3.tile_5.title') }}"
-                            description="{{ __('content.home.section_3.tile_5.subtitle') }}"/>
-                    <x-tile image="{{ asset('graphics/services/file.svg') }}"
-                            alt="benefit-1"
-                            title="{{ __('content.home.section_3.tile_2.title') }}"
-                            description="{{ __('content.home.section_3.tile_2.subtitle') }}"/>
+                <div
+                    class="grid md:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-12 place-items-center xl:place-items-stretch">
+                    <x-tile title="{{ __('content.home.section_3.tile_1.title') }}"
+                            description="{{ __('content.home.section_3.tile_1.subtitle') }}">
+                        <x-icons.app-window accent="stroke-website-normal"/>
+                    </x-tile>
+
+                    <x-tile title="{{ __('content.home.section_3.tile_2.title') }}"
+                            description="{{ __('content.home.section_3.tile_2.subtitle') }}">
+                        <x-icons.report-search accent="stroke-website-normal"/>
+                    </x-tile>
+
+                    <x-tile title="{{ __('content.home.section_3.tile_3.title') }}"
+                            description="{{ __('content.home.section_3.tile_3.subtitle') }}">
+                        <x-icons.desktop-analytics accent="stroke-website-normal"/>
+                    </x-tile>
+                    <x-tile title="{{ __('content.home.section_3.tile_4.title') }}"
+                            description="{{ __('content.home.section_3.tile_4.subtitle') }}">
+                        <x-icons.search accent="stroke-black"/>
+                    </x-tile>
+                    <x-tile title="{{ __('content.home.section_3.tile_5.title') }}"
+                            description="{{ __('content.home.section_3.tile_5.subtitle') }}">
+                        <x-icons.photo-scan accent="stroke-website-normal"/>
+                    </x-tile>
+                    <x-tile title="{{ __('content.home.section_3.tile_2.title') }}"
+                            description="{{ __('content.home.section_3.tile_2.subtitle') }}">
+                        <x-icons.robot accent="stroke-website-normal"/>
+                    </x-tile>
                 </div>
             </div>
         </section>
@@ -93,7 +96,7 @@
                         class="font-bold leading-relaxed text-md lg:text-lg relative">{{ __("content.home.section_4.subtitle_2") }}</span>
                 </div>
 
-                <x-main-case-study/>
+                <x-main-project/>
 
                 <div>
                     <div class="absolute -z-10 -left-64 top-28">
@@ -111,7 +114,7 @@
                 </div>
                 <div class="flex gap-4 justify-center flex-col sm:flex-row">
                     <x-primary-button href="" class="px-10 bg-website-normal">{{ __("buttons.case_study") }}</x-primary-button>
-                    <x-secondary-button href="{{ route('case-studies') }}" class="px-10 justify-center">{{ __("buttons.all_projects") }}</x-secondary-button>
+                    <x-secondary-button href="{{ route('projects') }}" class="px-10 justify-center">{{ __("buttons.all_projects") }}</x-secondary-button>
                 </div>
             </div>
 

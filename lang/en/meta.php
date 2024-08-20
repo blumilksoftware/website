@@ -12,7 +12,7 @@ return [
         "description" => "We are passionate about creating web/mobile applications and advanced R&D projects. We change concepts into working solutions.",
     ],
     "case-studies" => [
-        "title" => "Case studies",
+        "title" => "Projekty",
         "description" => "See what projects we have managed to complete.",
     ],
     "career" => [

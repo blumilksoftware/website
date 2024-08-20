@@ -16,6 +16,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
     <script src='https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.js'></script>
@@ -28,23 +30,23 @@
         @include('layout.navigation')
     </div>
     <div class="mb-auto">
-        <div class="hidden sm:block relative 2xl:max-w-screen-3xl 2xl:mx-auto">
-            <div class="absolute -z-10 left-[8%] md:-left-0 top-16">
+        <div class="relative hidden sm:block -z-10 2xl:max-w-screen-3xl 2xl:mx-auto">
+            <div class="absolute left-[8%] md:-left-0 top-16">
                 <x-bubble size="100"/>
             </div>
             <div class="absolute left-[8%] md:left-[6%] top-10">
                 <x-bubble size="50"/>
             </div>
-            <div class="absolute -z-10 hidden lg:block -left-[10%] lg:-left-[3%] top-[600px]">
+            <div class="absolute hidden lg:block -left-[10%] lg:-left-[3%] top-[600px]">
                 <x-bubble size="250"/>
             </div>
             <div class="absolute right-[8%] md:right-[12%] top-0">
                 <x-bubble size="50"/>
             </div>
-            <div class="absolute -z-10 right-14 md:right-[5%] top-[480px]">
+            <div class="absolute right-14 md:right-[5%] top-[480px]">
                 <x-bubble size="110"/>
             </div>
-            <div class="absolute -z-10 hidden lg:block -right-[10%] lg:right-[4%] top-[650px]">
+            <div class="absolute hidden lg:block -right-[10%] lg:right-[4%] top-[650px]">
                 <x-bubble size="210"/>
             </div>
         </div>

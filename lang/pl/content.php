@@ -5,7 +5,7 @@ declare(strict_types=1);
 return [
     "pages" => [
         "about" => "O firmie",
-        "case_study" => "Case Study",
+        "projects" => "Projekty",
         "career" => "Kariera",
         "news" => "Aktualności",
         "contact" => "Kontakt",
