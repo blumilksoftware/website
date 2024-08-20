@@ -110,12 +110,10 @@
     "hidden" => !(@isset($main) || @isset($main2))])>
         @isset($main)
             <figure class="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5">
-                <blockquote
-                    class="p-6 md:text-lg md:font-semibold leading-7 md:tracking-tight text-gray-900 sm:p-12 sm:text-xl md:leading-8">
+                <blockquote class="p-6 md:text-lg md:font-semibold leading-7 md:tracking-tight text-gray-900 sm:p-12 sm:text-xl md:leading-8">
                     <p>{!! "“".$references[$main]->description."”" !!}</p>
                 </blockquote>
-                <figcaption
-                    class="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
+                <figcaption class="flex items-center gap-x-4 gap-y-4 md:border-t md:border-gray-900/10 px-6 py-4 sm:flex-nowrap">
                     <img class="h-10 w-10 flex-none rounded-full bg-gray-50"
                          src="{{ asset("storage/" . $references[$main]->photo) }}"
                          alt="">

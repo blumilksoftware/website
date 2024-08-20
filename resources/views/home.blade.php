@@ -52,29 +52,35 @@
                 </div>
                 <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-12 xl:place-items-stretch">
                     <x-tile title="{{ __('content.home.section_3.tile_1.title') }}"
-                            description="{{ __('content.home.section_3.tile_1.subtitle') }}">
+                            description="{{ __('content.home.section_3.tile_1.subtitle') }}"
+                            class="pr-4">
                         <x-icons.app-window accent="stroke-website-normal"/>
                     </x-tile>
 
                     <x-tile title="{{ __('content.home.section_3.tile_2.title') }}"
-                            description="{{ __('content.home.section_3.tile_2.subtitle') }}">
+                            description="{{ __('content.home.section_3.tile_2.subtitle') }}"
+                            class="pr-8">
                         <x-icons.report-search accent="stroke-website-normal"/>
                     </x-tile>
 
                     <x-tile title="{{ __('content.home.section_3.tile_3.title') }}"
-                            description="{{ __('content.home.section_3.tile_3.subtitle') }}">
+                            description="{{ __('content.home.section_3.tile_3.subtitle') }}"
+                            class="pr-4">
                         <x-icons.desktop-analytics accent="stroke-website-normal"/>
                     </x-tile>
                     <x-tile title="{{ __('content.home.section_3.tile_4.title') }}"
-                            description="{{ __('content.home.section_3.tile_4.subtitle') }}">
+                            description="{{ __('content.home.section_3.tile_4.subtitle') }}"
+                            class="pr-4">
                         <x-icons.search accent="stroke-black"/>
                     </x-tile>
                     <x-tile title="{{ __('content.home.section_3.tile_5.title') }}"
-                            description="{{ __('content.home.section_3.tile_5.subtitle') }}">
+                            description="{{ __('content.home.section_3.tile_5.subtitle') }}"
+                            class="pr-4">
                         <x-icons.photo-scan accent="stroke-website-normal"/>
                     </x-tile>
-                    <x-tile title="{{ __('content.home.section_3.tile_2.title') }}"
-                            description="{{ __('content.home.section_3.tile_2.subtitle') }}">
+                    <x-tile title="{{ __('content.home.section_3.tile_6.title') }}"
+                            description="{{ __('content.home.section_3.tile_6.subtitle') }}"
+                            class="pr-6">
                         <x-icons.robot accent="stroke-website-normal"/>
                     </x-tile>
                 </div>
@@ -106,7 +112,7 @@
                         <x-bubble size="40"/>
                     </div>
                 </div>
-                <div class="flex gap-4 justify-center flex-col sm:flex-row">
+                <div class="flex gap-2 justify-center flex-col sm:flex-row">
                     <x-primary-button href="" class="px-10 bg-website-normal">{{ __("buttons.case_study") }}</x-primary-button>
                     <x-secondary-button href="{{ route('case-studies') }}" class="px-10 justify-center">{{ __("buttons.see_more_projects") }}</x-secondary-button>
                 </div>
