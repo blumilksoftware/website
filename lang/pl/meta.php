@@ -12,7 +12,7 @@ return [
         "description" => "Jesteśmy pasjonatami tworzenia aplikacji web/mobile oraz zaawansowanych projektów B+R. Zmieniamy koncepcje w działające rozwiązania.",
     ],
     "case-studies" => [
-        "title" => "Case studies",
+        "title" => "Projekty",
         "description" => "Zobacz, jakie projekty udało nam się zrealizować.",
     ],
     "career" => [
@@ -28,11 +28,15 @@ return [
         "description" => "Jeśli szukasz rozwiązania idealnie dostosowanego do Twoich potrzeb, jesteśmy dla Ciebie! Czekamy na Twoją wiadomość!",
     ],
     "activities" => [
-        "title" => "Aktywności",
+        "title" => "Aktualności",
         "description" => "Zobacz, co u nas słychać!",
     ],
     "privacy-policy" => [
         "title" => "Polityka prywatności",
         "description" => "Zapoznaj się z naszą polityką prywatności.",
+    ],
+    "company-data" => [
+        "title" => "Dane firmy",
+        "description" => "Dane firmy Blumilk Sp. z o.o.",
     ],
 ];

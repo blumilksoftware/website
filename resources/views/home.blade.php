@@ -96,7 +96,7 @@
                     <span class="font-bold leading-relaxed text-sm sm:text-md lg:text-lg relative">{{ __("content.home.section_4.subtitle_2") }}</span>
                 </div>
 
-                <x-main-case-study/>
+                <x-main-project/>
 
                 <div>
                     <div class="absolute -z-10 -left-64 top-28">
@@ -114,9 +114,10 @@
                 </div>
                 <div class="flex gap-2 justify-center flex-col sm:flex-row">
                     <x-primary-button href="" class="px-10 bg-website-normal">{{ __("buttons.case_study") }}</x-primary-button>
-                    <x-secondary-button href="{{ route('case-studies') }}" class="px-10 justify-center">{{ __("buttons.see_more_projects") }}</x-secondary-button>
+                    <x-secondary-button href="{{ route('projects') }}" class="px-10 justify-center">{{ __("buttons.see_more_projects") }}</x-secondary-button>
                 </div>
             </div>
+
         </section>
 
         <section @class([ 'hidden' => $references->isEmpty(), 'px-[10%] md:px-[15%] text-center items-center sm:pb-16 relative' ])>
