@@ -76,9 +76,7 @@
             </div>
         </div>
     </section>
-    <!-- TODO: Update images (issue #316) -->
     <section class="relative pt-10 pb-14 md:pt-24 md:pb-28">
-
         <img src="{{ asset('graphics/shadow.svg') }}" alt="blob" class="absolute -z-10 -right-96 -bottom-0"/>
         <img src="{{ asset('graphics/shadow.svg') }}" alt="blob" class="absolute -z-10 -left-[800px] -bottom-64"/>
 
@@ -89,42 +87,42 @@
                     class="font-normal leading-loose md:leading-relaxed text-sm md:text-xl relative">{{ __("content.about.section_4.subtitle_1") }}</span>
             </div>
             <div class="grid md:grid-cols-10 md:grid-rows-4 gap-10">
-                <div class="row-start-1 md:row-span-2 md:col-span-3">
-                    <img src="{{ asset('images/photos/energylandia.jpg') }}"
-                         class="h-[440px] w-full md:w-[350px] object-cover rounded-xl" alt="placeholder"/>
+                <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-1 2xl:order-none">
+                    <img src="{{ asset('images/photos/projects.jpg') }}"
+                         class="w-full 2xl:w-[350px] 2xl:h-[440px] h-[440px] md:h-[330px] lg:h-[250px] object-cover rounded-xl" alt="placeholder"/>
                 </div>
-                <div class="row-start-3 md:row-span-2 md:col-span-3">
-                    <img src="{{ asset('images/photos/energylandia.jpg') }}"
-                         class="h-[440px] w-full md:w-[350px] object-cover rounded-xl" alt="placeholder"/>
+                <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-3 2xl:order-none">
+                    <img src="{{ asset('images/photos/lmt.jpg') }}"
+                         class="w-full 2xl:w-[350px] 2xl:h-[440px] h-[440px] md:h-[330px] lg:h-[250px] object-cover rounded-xl" alt="placeholder"/>
                 </div>
-                <div class="contents md:block col-span-4 items-center 2xl:items-start">
-                    <p class="row-start-2 text-sm font-normal text-center 2xl:text-start 2xl:pr-4">
+                <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-2 2xl:order-none">
+                    <p class="text-sm font-normal text-center md:text-start 2xl:pr-4">
                         <span class="leading-relaxed font-bold block pb-2">{{ __("content.about.section_4.activity_1.title") }}</span>
                         <span class="leading-relaxed text-gray-400">{{ __("content.about.section_4.activity_1.subtitle") }}</span>
                     </p>
                 </div>
-                <div class="contents md:block col-span-4 items-center 2xl:items-start">
-                    <p class="row-start-4 text-sm font-normal text-center 2xl:text-start 2xl:pr-4">
+                <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-4 2xl:order-none">
+                    <p class="text-sm font-normal text-center md:text-start 2xl:pr-4">
                         <span class="leading-relaxed font-bold block pb-2">{{ __("content.about.section_4.activity_2.title") }}</span>
                         <span class="leading-relaxed text-gray-400">{{ __("content.about.section_4.activity_2.subtitle") }}</span>
                     </p>
                 </div>
-                <div class="contents md:block col-span-4 items-center 2xl:place-content-center">
-                    <p class="row-start-6 text-sm font-normal text-center 2xl:text-start 2xl:pr-4">
+                <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:place-content-center order-6 md:order-5 2xl:order-none">
+                    <p class="text-sm font-normal text-center md:text-start 2xl:pr-4">
                         <span class="leading-relaxed font-bold block pb-2">{{ __("content.about.section_4.activity_3.title") }}</span>
                         <span class="leading-relaxed text-gray-400">{{ __("content.about.section_4.activity_3.subtitle") }}</span>
                     </p>
                 </div>
-                <div class="row-start-5 md:row-span-2 md:col-span-3">
-                    <img src="{{ asset('images/photos/energylandia.jpg') }}"
-                         class="h-[440px] w-full md:w-[350px] object-cover rounded-xl" alt="placeholder"/>
+                <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-5 md:order-6 2xl:order-none">
+                    <img src="{{ asset('images/photos/interns.png') }}"
+                         class="w-full 2xl:w-[350px] 2xl:h-[440px] h-[440px] md:h-[330px] lg:h-[250px] object-cover rounded-xl" alt="placeholder"/>
                 </div>
-                <div class="row-start-7 md:row-span-2 md:col-span-3">
-                    <img src="{{ asset('images/photos/energylandia.jpg') }}"
-                         class="h-[440px] w-full md:w-[350px] object-cover rounded-xl" alt="placeholder"/>
+                <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-7 md:order-8 2xl:order-none h-full">
+                    <img src="{{ asset('images/photos/soda.png') }}"
+                         class="w-full 2xl:w-[350px] 2xl:h-[440px] h-[440px] md:h-[330px] lg:h-[250px] object-cover rounded-xl" alt="placeholder"/>
                 </div>
-                <div class="contents md:block col-span-4 items-center 2xl:items-start">
-                    <p class="row-start-8 text-sm font-normal text-center 2xl:text-start 2xl:pr-4">
+                <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-8 md:order-7">
+                    <p class="text-sm font-normal text-center md:text-start 2xl:pr-4">
                         <span class="leading-relaxed font-bold block pb-2">{{ __("content.about.section_4.activity_4.title") }}</span>
                         <span class="leading-relaxed text-gray-400">{{ __("content.about.section_4.activity_4.subtitle") }}</span>
                     </p>
@@ -132,7 +130,6 @@
             </div>
         </div>
     </section>
-    <!-- TODO: Update team images (issue #316) -->
     <section class="relative md:pb-16 pt-14 md:pt-28 sm:pt-32 mx-[8%] lg:mx-[15%] 2xl:mx-auto 2xl:max-w-7xl px-6 lg:px-8">
             <div class="pb-2 text-center">
                 <h2 class="text-3xl md:text-3xl lg:text-5xl font-semibold pb-8">{{ __("content.about.section_5.title_1") }}</h2>
