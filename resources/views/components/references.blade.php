@@ -132,7 +132,7 @@
                     <p>{!! "“".$references[$main2]->description."”" !!}</p>
                 </blockquote>
                 <figcaption
-                    class="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
+                    class="flex flex-wrap items-center gap-x-4 gap-y-4 md:border-t md:border-gray-900/10 px-6 py-4 sm:flex-nowrap">
                     <img class="h-10 w-10 flex-none rounded-full bg-gray-50"
                          src="{{ asset("storage/" . $references[$main2]->photo) }}"
                          alt="">
