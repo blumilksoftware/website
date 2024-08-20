@@ -96,7 +96,7 @@
                         class="font-bold leading-relaxed text-md lg:text-lg relative">{{ __("content.home.section_4.subtitle_2") }}</span>
                 </div>
 
-                <x-main-case-study/>
+                <x-main-project/>
 
                 <div>
                     <div class="absolute -z-10 -left-64 top-28">

@@ -18,12 +18,12 @@ use Spatie\Translatable\HasTranslations;
  * @property bool $published
  * @property string $color
  */
-class CaseStudy extends Model
+class Project extends Model
 {
     use HasTranslations;
     use HasFactory;
 
-    public const string PHOTOS_DIRECTORY = "case-studies";
+    public const string PHOTOS_DIRECTORY = "projects";
 
     public $translatable = [
         "name_first_part",

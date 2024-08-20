@@ -2,15 +2,15 @@
 
 declare(strict_types=1);
 
-namespace Blumilk\Website\Filament\Resources\CaseStudyResource\Pages;
+namespace Blumilk\Website\Filament\Resources\ProjectResource\Pages;
 
 use Blumilk\Website\Filament\Resources\BaseResource\Pages\BaseEditRecord;
-use Blumilk\Website\Filament\Resources\CaseStudyResource;
+use Blumilk\Website\Filament\Resources\ProjectResource;
 use Filament\Actions;
 
-class EditCaseStudy extends BaseEditRecord
+class EditProject extends BaseEditRecord
 {
-    protected static string $resource = CaseStudyResource::class;
+    protected static string $resource = ProjectResource::class;
 
     protected function getHeaderActions(): array
     {

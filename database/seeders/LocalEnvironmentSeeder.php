@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace Database\Seeders;
 
-use Blumilk\Website\Models\CaseStudy;
 use Blumilk\Website\Models\ContactForm;
 use Blumilk\Website\Models\News;
+use Blumilk\Website\Models\Project;
 use Blumilk\Website\Models\Reference;
 use Blumilk\Website\Models\Tag;
 use Illuminate\Database\Seeder;
@@ -23,15 +23,15 @@ class LocalEnvironmentSeeder extends Seeder
 
         Tag::factory()->count(12)->create();
         News::factory()->count(12)->create();
-        $this->createSpecificCaseStudies();
-        CaseStudy::factory()->count(12)->create();
+        $this->createSpecificProjects();
+        Project::factory()->count(12)->create();
         ContactForm::factory()->count(12)->create();
         Reference::factory()->count(12)->create();
     }
 
-    private function createSpecificCaseStudies(): void
+    private function createSpecificProjects(): void
     {
-        CaseStudy::factory()->create([
+        Project::factory()->create([
             "name_first_part" => [
                 "pl" => "Aplikacja do",
                 "en" => "Application for",
@@ -48,10 +48,10 @@ class LocalEnvironmentSeeder extends Seeder
             "photo" => "factory/case_study.jpg",
             "published" => true,
             "slug" => "vita",
-            "template" => "vita.blade.php",
+            "template" => "vita",
         ]);
 
-        CaseStudy::factory()->create([
+        Project::factory()->create([
             "name_first_part" => [
                 "pl" => "Aplikacja shared economy do",
                 "en" => "Shared economy application for",
@@ -68,10 +68,10 @@ class LocalEnvironmentSeeder extends Seeder
             "photo" => "factory/case_study.jpg",
             "published" => true,
             "slug" => "getthebox",
-            "template" => "getthebox.blade.php",
+            "template" => "getthebox",
         ]);
 
-        CaseStudy::factory()->create([
+        Project::factory()->create([
             "name_first_part" => [
                 "pl" => "System",
                 "en" => "System for",
@@ -88,7 +88,7 @@ class LocalEnvironmentSeeder extends Seeder
             "photo" => "factory/case_study.jpg",
             "published" => true,
             "slug" => "k1",
-            "template" => "k1.blade.php",
+            "template" => "k1",
         ]);
     }
 }

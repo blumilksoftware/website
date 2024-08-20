@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Blumilk\Website\Filament\Resources;
 
-use Blumilk\Website\Filament\Resources\CaseStudyResource\Pages;
-use Blumilk\Website\Models\CaseStudy;
+use Blumilk\Website\Filament\Resources\ProjectResource\Pages;
+use Blumilk\Website\Models\Project;
 use Filament\Forms;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Split;
@@ -16,11 +16,11 @@ use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 use Mvenghaus\FilamentPluginTranslatableInline\Forms\Components\TranslatableContainer;
 
-class CaseStudyResource extends Resource
+class ProjectResource extends Resource
 {
-    protected static ?string $model = CaseStudy::class;
-    protected static ?string $label = "case study";
-    protected static ?string $pluralLabel = "Case studies";
+    protected static ?string $model = Project::class;
+    protected static ?string $label = "projekt";
+    protected static ?string $pluralLabel = "Projekty";
     protected static ?string $navigationIcon = "heroicon-o-swatch";
     protected static bool $hasTitleCaseModelLabel = false;
 
@@ -64,7 +64,7 @@ class CaseStudyResource extends Resource
                             ->native(false),
                         Forms\Components\FileUpload::make("photo")
                             ->label("Zdjęcie")
-                            ->directory(CaseStudy::PHOTOS_DIRECTORY)
+                            ->directory(Project::PHOTOS_DIRECTORY)
                             ->imageEditor()
                             ->rules(["mimes:jpeg,png,webp"])
                             ->required()
@@ -85,7 +85,7 @@ class CaseStudyResource extends Resource
                     ->label("Nazwa realizacji")
                     ->searchable(),
                 Tables\Columns\TextColumn::make("template")
-                    ->getStateUsing(fn(CaseStudy $record): string => $record->template ?: "-")
+                    ->getStateUsing(fn(Project $record): string => $record->template ?: "-")
                     ->label("Szablon"),
                 Tables\Columns\CheckboxColumn::make("published")
                     ->label("Opublikowane"),
@@ -112,20 +112,20 @@ class CaseStudyResource extends Resource
     public static function getPages(): array
     {
         return [
-            "index" => Pages\ListCaseStudies::route("/"),
-            "create" => Pages\CreateCaseStudy::route("/create"),
-            "edit" => Pages\EditCaseStudy::route("/{record}/edit"),
+            "index" => Pages\ListProject::route("/"),
+            "create" => Pages\CreateProject::route("/create"),
+            "edit" => Pages\EditProject::route("/{record}/edit"),
         ];
     }
 
     protected static function getTemplateOptions(): array
     {
-        $files = scandir(resource_path("views/case-studies"));
+        $files = scandir(resource_path("views/projects"));
         $options = [];
 
         foreach ($files as $file) {
             if (str_ends_with($file, ".blade.php")) {
-                $options[$file] = $file;
+                $options[$file] = str_replace(".blade.php", "", $file);
             }
         }
 

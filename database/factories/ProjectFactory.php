@@ -4,13 +4,13 @@ declare(strict_types=1);
 
 namespace Database\Factories;
 
-use Blumilk\Website\Models\CaseStudy;
+use Blumilk\Website\Models\Project;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends Factory<CaseStudy>
+ * @extends Factory<Project>
  */
-class CaseStudyFactory extends Factory
+class ProjectFactory extends Factory
 {
     public function definition(): array
     {
@@ -24,7 +24,7 @@ class CaseStudyFactory extends Factory
             "photo" => sprintf("%s/%s", "factory", "case_study.jpg"),
             "published" => $this->faker->boolean,
             "slug" => $this->faker->slug,
-            "template" => "base-template.blade.php",
+            "template" => "base-template",
         ];
     }
 }
