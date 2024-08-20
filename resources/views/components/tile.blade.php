@@ -7,14 +7,14 @@
         </div>
 
         <div class="2xl:mt-2 text-left">
-            <span class="font-semibold text-sm sm:text-md lg:text-lg block pb-2 pr-16">
+            <span class="font-semibold text-sm sm:text-md lg:text-lg block pb-2 pr-12">
                 {!! $title !!}
             </span>
-            <span @class([
-                "font-normal text-gray-400 text-xs sm:text-sm leading-relaxed pr-4" => isset( $description ),
+            <div @class([
+                "font-normal text-gray-400 text-xs sm:text-sm leading-relaxed mr-4" => isset( $description ),
                 "hidden" => !isset( $description )])>
             {!! $description !!}
-        </span>
+        </div>
         </div>
     </div>
 </div>

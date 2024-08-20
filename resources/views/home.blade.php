@@ -52,35 +52,29 @@
                 </div>
                 <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-12 xl:place-items-stretch">
                     <x-tile title="{{ __('content.home.section_3.tile_1.title') }}"
-                            description="{{ __('content.home.section_3.tile_1.subtitle') }}"
-                            class="pr-4">
+                            description="{{ __('content.home.section_3.tile_1.subtitle') }}">
                         <x-icons.app-window accent="stroke-website-normal"/>
                     </x-tile>
 
                     <x-tile title="{{ __('content.home.section_3.tile_2.title') }}"
-                            description="{{ __('content.home.section_3.tile_2.subtitle') }}"
-                            class="pr-8">
+                            description="{{ __('content.home.section_3.tile_2.subtitle') }}">
                         <x-icons.report-search accent="stroke-website-normal"/>
                     </x-tile>
 
                     <x-tile title="{{ __('content.home.section_3.tile_3.title') }}"
-                            description="{{ __('content.home.section_3.tile_3.subtitle') }}"
-                            class="pr-4">
+                            description="{{ __('content.home.section_3.tile_3.subtitle') }}">
                         <x-icons.desktop-analytics accent="stroke-website-normal"/>
                     </x-tile>
                     <x-tile title="{{ __('content.home.section_3.tile_4.title') }}"
-                            description="{{ __('content.home.section_3.tile_4.subtitle') }}"
-                            class="pr-4">
+                            description="{{ __('content.home.section_3.tile_4.subtitle') }}">
                         <x-icons.search accent="stroke-black"/>
                     </x-tile>
                     <x-tile title="{{ __('content.home.section_3.tile_5.title') }}"
-                            description="{{ __('content.home.section_3.tile_5.subtitle') }}"
-                            class="pr-4">
+                            description="{{ __('content.home.section_3.tile_5.subtitle') }}">
                         <x-icons.photo-scan accent="stroke-website-normal"/>
                     </x-tile>
                     <x-tile title="{{ __('content.home.section_3.tile_6.title') }}"
-                            description="{{ __('content.home.section_3.tile_6.subtitle') }}"
-                            class="pr-6">
+                            description="{{ __('content.home.section_3.tile_6.subtitle') }}">
                         <x-icons.robot accent="stroke-website-normal"/>
                     </x-tile>
                 </div>
