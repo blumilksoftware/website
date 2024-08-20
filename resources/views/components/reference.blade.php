@@ -1,4 +1,4 @@
-<figure class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5">
+<figure class="{{$attributes->get('class')}} rounded-2xl bg-white p-6 shadow-lg ring-1 ring-gray-900/5 size-fit max-w-96 place-self-center">
     <blockquote class="text-gray-900">
         <p>{!! "“".$reference->description."”" !!}</p>
     </blockquote>

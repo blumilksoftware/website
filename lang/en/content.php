@@ -15,11 +15,11 @@ return [
             "title_1" => "Software tailored to",
             "title_2" => "your",
             "title_3" => "needs",
-            "subtitle_1" => "We are passionate about creating web and mobile applications, AI implementations and advanced R&D projects.",
+            "subtitle_1" => "We are passionate about creating web/mobile applications and advanced R&D projects.",
             "subtitle_2" => "We turn concepts into working solutions.",
         ],
         "section_2" => [
-            "title_1" => "Join the ranks of ",
+            "title_1" => "Join the ranks of",
             "title_2" => "satisfied Blumilk clients",
         ],
         "section_3" => [
@@ -65,7 +65,7 @@ return [
             "badge" => "Here is also an example badge from the application.",
         ],
         "section_5" => [
-            "title_1" => "What others say about us",
+            "title_1" => "What they say about us",
             "subtitle_1" => "Our clients' opinions are very important, they attest to the quality of our services and inspire us to constantly improve.",
         ],
         "section_6" => [

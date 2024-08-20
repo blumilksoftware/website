@@ -15,11 +15,11 @@ return [
             "title_1" => "Oprogramowanie dopasowane do",
             "title_2" => "Twoich",
             "title_3" => "potrzeb",
-            "subtitle_1" => "Jesteśmy pasjonatami tworzenia aplikacji webowych i mobilnych, naukowcami zajmującymi się sztuczną inteligencją oraz uczestnikami projektów B+R.",
+            "subtitle_1" => "Jesteśmy pasjonatami tworzenia aplikacji web/mobile oraz zaawansowanych projektów B+R.",
             "subtitle_2" => "Zmieniamy koncepcje w działające rozwiązania.",
         ],
         "section_2" => [
-            "title_1" => "Dołącz do grona ",
+            "title_1" => "Dołącz do grona",
             "title_2" => "zadowolonych klientów Blumilk",
         ],
         "section_3" => [
@@ -52,7 +52,7 @@ return [
         ],
         "section_4" => [
             "title_1" => "Case study",
-            "subtitle_1" => "Dowiedz się, jak nasze realizacje przekształciły wyzwania klientów w ",
+            "subtitle_1" => "Dowiedz się, jak nasze realizacje przekształciły wyzwania klientów w",
             "subtitle_2" => "skuteczne rozwiązania.",
             "tile_1" => [
                 "title_1" => "Powiadomienie",
@@ -65,7 +65,7 @@ return [
             "badge" => "Tutaj też przykładowy badge z aplikacji.",
         ],
         "section_5" => [
-            "title_1" => "Co mówią o nas inni",
+            "title_1" => "Co o nas mówią",
             "subtitle_1" => "Opinie naszych klientów są bardzo ważne, świadczą o jakości naszych usług i inspirują nas do nieustannego doskonalenia.",
         ],
         "section_6" => [
