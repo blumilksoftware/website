@@ -76,7 +76,7 @@
             </div>
         </div>
     </section>
-    <section class="relative pt-10 pb-14 md:pt-24 md:pb-28">
+    <section class="relative overflow-hidden pt-10 pb-14 md:pt-24 md:pb-28">
         <img src="{{ asset('graphics/shadow.svg') }}" alt="blob" class="absolute -z-10 -right-96 -bottom-0"/>
         <img src="{{ asset('graphics/shadow.svg') }}" alt="blob" class="absolute -z-10 -left-[800px] -bottom-64"/>
 
@@ -88,47 +88,46 @@
             </div>
             <div class="grid md:grid-cols-10 md:grid-rows-4 gap-10">
                 <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-1 2xl:order-none">
-                    <img src="{{ asset('images/photos/projects.jpg') }}"
+                    <img src="{{ asset('images/photos/projects.webp') }}"
                          class="w-full 2xl:w-[350px] 2xl:h-[440px] h-[440px] md:h-[330px] lg:h-[250px] object-cover rounded-xl" alt="placeholder"/>
                 </div>
                 <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-3 2xl:order-none">
-                    <img src="{{ asset('images/photos/lmt.jpg') }}"
+                    <img src="{{ asset('images/photos/lmt.webp') }}"
                          class="w-full 2xl:w-[350px] 2xl:h-[440px] h-[440px] md:h-[330px] lg:h-[250px] object-cover rounded-xl" alt="placeholder"/>
                 </div>
                 <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-2 2xl:order-none">
-                    <p class="text-sm font-normal text-center md:text-start 2xl:pr-4">
-                        <span class="leading-relaxed font-bold block pb-2">{{ __("content.about.section_4.activity_1.title") }}</span>
-                        <span class="leading-relaxed text-gray-400">{{ __("content.about.section_4.activity_1.subtitle") }}</span>
+                    <p class="font-normal text-center md:text-start 2xl:pr-4">
+                        <span class="leading-relaxed text-md font-semibold md:font-bold block pb-3 px-4">{{ __("content.about.section_4.activity_1.title") }}</span>
+                        <span class="leading-6 md:leading-relaxed text-xs md:text-sm text-gray-400 px-5">{{ __("content.about.section_4.activity_1.subtitle") }}</span>
                     </p>
                 </div>
                 <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-4 2xl:order-none">
-                    <p class="text-sm font-normal text-center md:text-start 2xl:pr-4">
-                        <span class="leading-relaxed font-bold block pb-2">{{ __("content.about.section_4.activity_2.title") }}</span>
-                        <span class="leading-relaxed text-gray-400">{{ __("content.about.section_4.activity_2.subtitle") }}</span>
+                    <p class="font-normal text-center md:text-start 2xl:pr-4">
+                        <span class="leading-relaxed text-md font-semibold md:font-bold block pb-3 px-4">{{ __("content.about.section_4.activity_2.title") }}</span>
+                        <span class="leading-6 md:leading-relaxed text-xs md:text-sm text-gray-400 px-5">{{ __("content.about.section_4.activity_2.subtitle") }}</span>
                     </p>
                 </div>
                 <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:place-content-center order-6 md:order-5 2xl:order-none">
-                    <p class="text-sm font-normal text-center md:text-start 2xl:pr-4">
-                        <span class="leading-relaxed font-bold block pb-2">{{ __("content.about.section_4.activity_3.title") }}</span>
-                        <span class="leading-relaxed text-gray-400">{{ __("content.about.section_4.activity_3.subtitle") }}</span>
+                    <p class="font-normal text-center md:text-start 2xl:pr-4">
+                        <span class="leading-relaxed text-md font-semibold md:font-bold block pb-3 px-4">{{ __("content.about.section_4.activity_3.title") }}</span>
+                        <span class="leading-6 md:leading-relaxed text-xs md:text-sm text-gray-400 px-5">{{ __("content.about.section_4.activity_3.subtitle") }}</span>
                     </p>
                 </div>
                 <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-5 md:order-6 2xl:order-none">
-                    <img src="{{ asset('images/photos/interns.png') }}"
+                    <img src="{{ asset('images/photos/interns.webp') }}"
                          class="w-full 2xl:w-[350px] 2xl:h-[440px] h-[440px] md:h-[330px] lg:h-[250px] object-cover rounded-xl" alt="placeholder"/>
                 </div>
                 <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-7 md:order-8 2xl:order-none h-full">
-                    <img src="{{ asset('images/photos/soda.png') }}"
+                    <img src="{{ asset('images/photos/soda.webp') }}"
                          class="w-full 2xl:w-[350px] 2xl:h-[440px] h-[440px] md:h-[330px] lg:h-[250px] object-cover rounded-xl" alt="placeholder"/>
                 </div>
                 <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-8 md:order-7">
-                    <p class="text-sm font-normal text-center md:text-start 2xl:pr-4">
-                        <span class="leading-relaxed font-bold block pb-2">{{ __("content.about.section_4.activity_4.title") }}</span>
-                        <span class="leading-relaxed text-gray-400">{{ __("content.about.section_4.activity_4.subtitle") }}</span>
+                    <p class="font-normal text-center md:text-start 2xl:pr-4">
+                        <span class="leading-relaxed text-md font-semibold md:font-bold block pb-3 px-4">{{ __("content.about.section_4.activity_4.title") }}</span>
+                        <span class="leading-6 md:leading-relaxed text-xs md:text-sm text-gray-400 px-5">{{ __("content.about.section_4.activity_4.subtitle") }}</span>
                     </p>
                 </div>
             </div>
-        </div>
     </section>
     <section class="relative md:pb-16 pt-14 md:pt-28 sm:pt-32 mx-[8%] lg:mx-[15%] 2xl:mx-auto 2xl:max-w-7xl px-6 lg:px-8">
             <div class="pb-2 text-center">
@@ -138,38 +137,38 @@
             </div>
             <div class="mx-auto mt-8 md:mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
                 <figure class="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
-                    <img class="md:h-96 w-full object-cover rounded-2xl transition hover:scale-105" src="{{ asset('images/photos/archery.jpg') }}" alt="">
+                    <img class="md:h-96 w-full object-cover rounded-2xl transition hover:scale-105" src="{{ asset('images/photos/archery.webp') }}" alt="">
                 </figure>
                 <div class="space-y-8 xl:contents xl:space-y-0">
                     <div class="space-y-8 xl:row-span-2">
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/czech.jpg') }}" alt="">
+                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/czech.webp') }}" alt="">
                         </figure>
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-48 w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/lasertag.jpg') }}" alt="">
+                            <img class="h-48 w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/lasertag.webp') }}" alt="">
                         </figure>
                     </div>
                     <div class="space-y-8 xl:row-start-1 hidden sm:block">
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-60 w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/energylandia.jpg') }}" alt="">
+                            <img class="h-60 w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/energylandia.webp') }}" alt="">
                         </figure>
                     </div>
                 </div>
                 <div class="space-y-8 xl:contents xl:space-y-0 hidden sm:block">
                     <div class="space-y-8 xl:row-start-1">
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-60 w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/laravel.jpg') }}" alt="">
+                            <img class="h-60 w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/laravel.webp') }}" alt="">
                         </figure>
                     </div>
                     <div class="space-y-8 xl:row-span-2">
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/beer.jpg') }}" alt="">
+                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/beer.webp') }}" alt="">
                         </figure>
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/fireplace.jpg') }}" alt="">
+                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/fireplace.webp') }}" alt="">
                         </figure>
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/sea.jpg') }}" alt="">
+                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/sea.webp') }}" alt="">
                         </figure>
                     </div>
                 </div>
