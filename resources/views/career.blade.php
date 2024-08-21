@@ -112,28 +112,28 @@
             </div>
         </div>
     </section>
-    <section class="flex flex-col md:mt-10 md:pb-5 xl:flex-row mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto gap-x-24">
-        <div class="self-center basis-3/5">
-            <img src="{{ asset('graphics/career_3.svg') }}" class="h-auto w-full object-center shrink-0 pb-10 md:pb-0"
-                 alt="{{ __("content.career.section_3.title_1") }}"/>
-        </div>
-        <div class="flex basis-2/5 relative flex-col justify-center md:pb-24 xl:pb-0">
-            <div class="text-center xl:justify-start xl:text-start pb-5 xl:pb-10">
-                <h2 class="font-semibold text-gray-900 leading-snug text-md md:text-4xl lg:text-5xl mb-4 md:mb-10">{{ __("content.career.section_4.title_1") }}</h2>
-                <p class="text-xs md:text-lg font-normal text-center xl:text-start text-gray-400 leading-loose md:leading-relaxed mx-8">{{ __("content.career.section_4.subtitle_1") }}</p>
+    <section class="relative overflow-hidden">
+        <div class="flex flex-col md:mt-10 md:pb-5 xl:flex-row mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto gap-x-24">
+            <div class="self-center basis-3/5">
+                <img src="{{ asset('graphics/career_3.svg') }}" class="h-auto w-full object-center shrink-0 pb-10 md:pb-0"
+                     alt="{{ __("content.career.section_3.title_1") }}"/>
             </div>
-            <x-primary-button href="{{ route('career.software-engineer') }}" class="px-16 my-6 flex w-full m-auto xl:m-0 xl:mr-auto xl:justify-start bg-website-normal">{{ __("buttons.apply_now") }}</x-primary-button>
+            <div class="flex basis-2/5 relative flex-col justify-center md:pb-24 xl:pb-0">
+                <div class="text-center xl:justify-start xl:text-start pb-5 xl:pb-10">
+                    <h2 class="font-semibold text-gray-900 leading-snug text-md md:text-4xl lg:text-5xl mb-4 md:mb-10">{{ __("content.career.section_4.title_1") }}</h2>
+                    <p class="text-xs md:text-lg font-normal text-center xl:text-start text-gray-400 leading-loose md:leading-relaxed mx-8 md:mx-0">{{ __("content.career.section_4.subtitle_1") }}</p>
+                </div>
+                <x-primary-button href="{{ route('career.software-engineer') }}" class="px-16 my-6 flex w-full m-auto xl:m-0 xl:mr-auto xl:justify-start bg-website-normal">{{ __("buttons.apply_now") }}</x-primary-button>
+            </div>
         </div>
-    </section>
-    <section class="relative overflow-hidden md:pt-5 md:mb-16 xl:mb-28">
-        <img src="{{ asset('graphics/shadow.svg') }}" alt="blob" class="hidden md:block absolute -z-10 -right-[60%] -bottom-44"/>
-        <img src="{{ asset('graphics/shadow.svg') }}" alt="blob" class="hidden md:block absolute -z-10 -left-[80%] -top-60"/>
+        <img src="{{ asset('graphics/shadow.svg') }}" alt="blob" class="hidden md:block absolute -z-10 -right-[50%] -bottom-44"/>
+        <img src="{{ asset('graphics/shadow.svg') }}" alt="blob" class="hidden md:block absolute -z-10 -left-[80%] top-40 object-cover"/>
 
-        <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto flex flex-col-reverse xl:flex-row gap-x-24">
+        <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto flex flex-col-reverse xl:flex-row gap-x-24 md:pt-5 md:mb-16 xl:mb-44">
             <div class="flex xl:basis-2/5 flex-col justify-start xl:justify-center overflow-visible">
                 <div class="text-center xl:justify-start xl:text-start pb-5 xl:pb-10">
                     <h2 class="font-semibold text-gray-900 leading-snug text-md md:text-4xl lg:text-5xl mb-4 md:mb-10">{{ __("content.career.section_3.title_1") }}</h2>
-                    <p class="text-xs md:text-lg font-normal text-center xl:text-start text-gray-400 leading-loose md:leading-relaxed mx-8">{{ __("content.career.section_3.subtitle_1") }}</p>
+                    <p class="text-xs md:text-lg font-normal text-center xl:text-start text-gray-400 leading-loose md:leading-relaxed mx-8 md:mx-0">{{ __("content.career.section_3.subtitle_1") }}</p>
                 </div>
                 <x-primary-button href="https://praktyki.blumilk.pl/" target="_blank" class="px-16 my-6 flex w-full m-auto xl:m-0 xl:mr-auto xl:justify-start bg-website-normal">{{ __("buttons.apply_internship") }}</x-primary-button>
             </div>
