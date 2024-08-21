@@ -151,7 +151,7 @@ return [
     "career" => [
         "section_1" => [
             "title_1" => "Dołącz",
-            "title_2" => "do nas!",
+            "title_2" => "do Nas!",
             "subtitle_1" => "Dzięki otwartej i przyjaznej atmosferze każdy członek naszego zespołu śmiało może rozwijać swoje umiejętności i osiągać cele zawodowe.",
             "subtitle_2" => "Mamy fajne biuro, w samym centrum miasta. Na tyle się lubimy, że spędzamy ze sobą czas także poza nim.",
             "subtitle_3" => "Sprawdźmy czy do siebie pasujemy!",

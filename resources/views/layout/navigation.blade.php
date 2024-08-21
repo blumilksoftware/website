@@ -79,7 +79,7 @@
 
         <button class="flex tablet:hidden" @click="openMobileMenu = ! openMobileMenu">
             <i :class="{'block': ! openMobileMenu, 'hidden': openMobileMenu}"
-               class="fa-solid fa-bars text-2xl text-brand block"></i>
+               class="fa-solid fa-bars text-2xl text-black block"></i>
         </button>
     </div>
     <nav :class="{'block': openMobileMenu, 'hidden': ! openMobileMenu}"
@@ -93,7 +93,7 @@
                 </a>
                 <button @click="openMobileMenu = ! openMobileMenu">
                     <i :class="{'block': openMobileMenu, 'hidden': ! openMobileMenu}"
-                       class="fa-solid fa-xmark text-2xl text-brand hidden"></i>
+                       class="fa-solid fa-xmark text-2xl text-black hidden"></i>
                 </button>
             </div>
             <div @class([

@@ -1,5 +1,5 @@
 <section class="relative mx-[10%] 2xl:max-w-screen-2xl 2xl:mx-auto">
-    <div class="w-full pb-10 pt-24 sm:py-32">
+    <div class="w-full pb-10 pt-12 md:pt-24 sm:py-32">
         <div class="relative isolate overflow-hidden bg-blue-normal py-8 md:py-24 text-center shadow-2xl px-8  rounded-3xl">
             <img src="{{ asset('graphics/blobs/blob_1.svg') }}" class="absolute -left-44 2xl:-left-16 -bottom-44 xl:-bottom-32" alt="blob"/>
             <img src="{{ asset('graphics/blobs/blob_2.svg') }}" class="absolute -z-20 -left-32 -top-24 xl:-top-16 2xl:-top-8 3xl:top-0" alt="blob"/>

@@ -151,7 +151,7 @@ return [
     "career" => [
         "section_1" => [
             "title_1" => "Join",
-            "title_2" => "us!",
+            "title_2" => "Us!",
             "subtitle_1" => "Thanks to the open and friendly atmosphere, each member of our team can confidently develop their skills and achieve their professional goals.",
             "subtitle_2" => "We have a nice office, right in the city center. We like each other so much that we also spend time together outside of it.",
             "subtitle_3" => "Let's see if we fit together!",
