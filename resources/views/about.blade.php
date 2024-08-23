@@ -142,10 +142,10 @@
                 <div class="space-y-8 xl:contents xl:space-y-0">
                     <div class="space-y-8 xl:row-span-2">
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/czech.webp') }}" alt="">
+                            <img class="h-80 w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/czech.webp') }}" alt="">
                         </figure>
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-48 w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/lasertag.webp') }}" alt="">
+                            <img class="h-48 w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/fireplace.webp') }}" alt="">
                         </figure>
                     </div>
                     <div class="space-y-8 xl:row-start-1 hidden sm:block">
@@ -162,10 +162,10 @@
                     </div>
                     <div class="space-y-8 xl:row-span-2">
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/beer.webp') }}" alt="">
+                            <img class="h-60 w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/beer.webp') }}" alt="">
                         </figure>
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/fireplace.webp') }}" alt="">
+                            <img class="h-56 w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/lasertag.webp') }}" alt="">
                         </figure>
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
                             <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/sea.webp') }}" alt="">
