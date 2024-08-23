@@ -43,7 +43,7 @@
                             <x-icons.clock accent="text-website-normal"/>
                         </div>
                         <div class="self-center 2xl:mt-2 text-left">
-                            <span class="font-semibold text-lg block pr-16 leading-6">
+                            <span class="font-semibold text-lg block pr-10 leading-6">
                                 {{ __('content.career.section_2.benefit_1') }}
                             </span>
                         </div>
@@ -55,7 +55,7 @@
                             <x-icons.school accent="text-website-normal"/>
                         </div>
                         <div class="self-center 2xl:mt-2 text-left">
-                            <span class="font-semibold text-lg block pr-16 leading-6">
+                            <span class="font-semibold text-lg block pr-3 2xl:pr-10 leading-6">
                                 {{ __('content.career.section_2.benefit_2') }}
                             </span>
                         </div>
@@ -67,7 +67,7 @@
                             <x-icons.stethoscope accent="text-website-normal"/>
                         </div>
                         <div class="self-center 2xl:mt-2 text-left">
-                            <span class="font-semibold text-lg block pr-16 leading-6">
+                            <span class="font-semibold text-lg block pr-6 md:pr-8 leading-6">
                                 {{ __('content.career.section_2.benefit_3') }}
                             </span>
                         </div>
@@ -79,7 +79,7 @@
                             <x-icons.treadmill accent="text-website-normal"/>
                         </div>
                         <div class="self-center 2xl:mt-2 text-left">
-                            <span class="font-semibold text-lg block pr-16 leading-6">
+                            <span class="font-semibold text-lg block pr-10 leading-6">
                                 {{ __('content.career.section_2.benefit_4') }}
                             </span>
                         </div>
@@ -91,7 +91,7 @@
                             <x-icons.lemon accent="text-website-normal"/>
                         </div>
                         <div class="self-center 2xl:mt-2 text-left">
-                            <span class="font-semibold text-lg block pr-16 leading-6">
+                            <span class="font-semibold text-lg block pr-24 leading-6">
                                 {{ __('content.career.section_2.benefit_5') }}
                             </span>
                         </div>
@@ -103,7 +103,7 @@
                             <x-icons.smile accent="text-website-normal"/>
                         </div>
                         <div class="self-center 2xl:mt-2 text-left">
-                            <span class="font-semibold text-lg block pr-16 leading-6">
+                            <span class="font-semibold text-lg block pr-10 leading-6">
                                 {{ __('content.career.section_2.benefit_6') }}
                             </span>
                         </div>
