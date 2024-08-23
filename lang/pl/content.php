@@ -103,7 +103,7 @@ return [
         ],
         "section_4" => [
             "title_1" => "Nasza misja",
-            "subtitle_1" => "Jako pasjonaci kodu, tworzymy nowoczesne rozwiązania technologiczne, które inspirują i ułatwiają codzienne życie naszych klientów. Doskonalimy umiejętności to po, aby aktywnie współtworzyć społeczność programistyczną w Polsce.",
+            "subtitle_1" => "Jako pasjonaci kodu, tworzymy nowoczesne rozwiązania technologiczne, które inspirują i ułatwiają codzienne życie naszych klientów. Doskonalimy umiejętności po to, aby aktywnie współtworzyć społeczność programistyczną w Polsce.",
             "activity_1" => [
                 "title" => "Projekty badawczo-rozwojowe (B+R)",
                 "subtitle" => "Zajmujemy się różnorodnymi zagadnieniami badawczymi, obejmującymi: przetwarzanie dużych zbiorów danych (big data), rozwiązywanie problemów szeregowania zadań, wykorzystywanie sztucznej inteligencji, optymalizacja. Dzięki doświadczeniu i wiedzy zdobytej przez członków naszego zespołu, jesteśmy w stanie skutecznie zarządzać i realizować projekty R&D, zapewniając naszym Klientom najwyższą jakość i innowacyjność w każdym etapie współpracy.",
