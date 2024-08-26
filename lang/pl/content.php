@@ -287,6 +287,7 @@ return [
         "REGON" => "38737620",
     ],
     "404" => [
+        "title" => "Nie znaleziono",
         "title_1" => "Strona",
         "title_2" => "niedostępna",
         "subtitle_1" => "Wygląda na to, że strona, której szukasz, wybrała się na urlop.",

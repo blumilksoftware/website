@@ -1,6 +1,6 @@
 @extends('errors.layout')
 
-@section('title', __('Not Found'))
+@section('title', __('content.404.title'))
 @section('message')
     <section class="flex flex-col-reverse xl:flex-row md:pt-10 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:gap-5">
         <div class="flex basis-2/5 relative flex-col self-center gap-5">

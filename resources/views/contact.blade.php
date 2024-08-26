@@ -1,12 +1,9 @@
-@extends('layout.public')
+@extends('layout.public', ["excludeBigBubbles" => true])
 
 @section("title", __("meta.contact.title"))
 @section("description", __("meta.contact.description"))
 
 @section('content')
-    @php
-        $excludeBigBubbles = true;
-    @endphp
 
     @if( Session('success') )
         <x-toast type="success" position="top-right">{{ Session::get('success') }}</x-toast>

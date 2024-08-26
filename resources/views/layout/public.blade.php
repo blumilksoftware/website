@@ -25,6 +25,8 @@
 </head>
 
 <body class="font-sora flex flex-col h-screen justify-between">
+    @php $excludeBigBubbles = false; @endphp
+
     <div class="relative z-10">
         @include('layout.navigation')
     </div>
@@ -40,7 +42,7 @@
                 <x-bubble size="50"/>
             </div>
 
-            @if (!isset($excludeBigBubbles) || !$excludeBigBubbles)
+            @if (!$excludeBigBubbles)
                 <div class="absolute right-14 md:right-[5%] top-[480px]">
                     <x-bubble size="110"/>
                 </div>

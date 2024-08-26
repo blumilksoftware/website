@@ -290,6 +290,7 @@ return [
         "REGON" => "38737620",
     ],
     "404" => [
+        "title" => "Not found",
         "title_1" => "Page",
         "title_2" => "not available",
         "subtitle_1" => "It looks like the site you are looking for has gone on vacation.",
