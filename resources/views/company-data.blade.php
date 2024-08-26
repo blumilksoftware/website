@@ -4,6 +4,10 @@
 @section("description", __("meta.company-data.description"))
 
 @section("content")
+    @php
+        $excludeBigBubbles = true;
+    @endphp
+
     <section class="grid 2xl:grid-cols-5 mx-[10%] md:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto pt-20 gap-16">
         <div class="2xl:col-span-2 xl:pt-24 2xl:pt-0 justify-between flex flex-col gap-12">
             <div>

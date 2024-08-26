@@ -28,5 +28,10 @@
             {{ $projects->links() }}
         </div>
     </section>
-    <x-text-us-section/>
+    <img src="{{ asset('graphics/shadow.svg') }}" alt="blob" class="hidden md:block absolute -z-10 -right-32 -bottom-2/3 h-2/3"/>
+    <div class="relative overflow-hidden">
+        <img src="{{ asset('graphics/shadow.svg') }}" alt="blob" class="hidden md:block absolute -z-10 -left-[800px] -top-44"/>
+{{--        <img src="{{ asset('graphics/shadow.svg') }}" alt="blob" class="hidden md:block absolute -z-10 -left-[80%] top-40 object-cover"/>--}}
+        <x-text-us-section/>
+    </div>
 @endsection

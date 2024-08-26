@@ -30,24 +30,29 @@
     </div>
     <div class="mb-auto">
         <div class="relative hidden sm:block -z-10 2xl:max-w-screen-3xl mx-auto">
-            <div class="absolute left-[8%] md:-left-0 top-16">
+            <div class="absolute left-[8%] md:-left-0 top-28 xl:top-16">
                 <x-bubble size="100"/>
             </div>
             <div class="absolute left-[8%] md:left-[6%] top-10">
                 <x-bubble size="50"/>
             </div>
-            <div class="absolute hidden lg:block -left-[10%] lg:-left-[3%] top-[600px]">
-                <x-bubble size="250"/>
-            </div>
             <div class="absolute right-[8%] md:right-[12%] top-0">
                 <x-bubble size="50"/>
             </div>
-            <div class="absolute right-14 md:right-[5%] top-[480px]">
-                <x-bubble size="110"/>
-            </div>
-            <div class="absolute hidden lg:block -right-[10%] lg:right-[4%] top-[650px]">
-                <x-bubble size="210"/>
-            </div>
+
+            @if (!isset($excludeBigBubbles) || !$excludeBigBubbles)
+                <div class="absolute right-14 md:right-[5%] top-[480px]">
+                    <x-bubble size="110"/>
+                </div>
+                <div class="absolute hidden lg:block -right-[10%] lg:right-[4%] top-[650px]">
+                    <x-bubble size="210"/>
+                </div>
+                <div class="absolute hidden lg:block -left-[10%] lg:-left-[3%] top-[600px]">
+                    <x-bubble size="250"/>
+                </div>
+            @endif
+
+
         </div>
         @yield('content')
     </div>

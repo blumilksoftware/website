@@ -4,6 +4,10 @@
 @section("description", __("meta.contact.description"))
 
 @section('content')
+    @php
+        $excludeBigBubbles = true;
+    @endphp
+
     @if( Session('success') )
         <x-toast type="success" position="top-right">{{ Session::get('success') }}</x-toast>
     @endif
@@ -17,7 +21,7 @@
             </p>
         </div>
         <div class="row-span-4 py-12 xl:p-0">
-            <form action="{{ route('contact.create') }}" method="POST" class="flex flex-col gap-y-4 justify-between h-full xl:ml-[15%] xl:bg-[#F4F8FD] md:px-16 py-10 rounded-xl">
+            <form action="{{ route('contact.create') }}" method="POST" class="flex flex-col gap-y-4 justify-between md:shadow-lg rounded-2xl h-full xl:ml-[15%] md:px-16 py-10">
                 @csrf
                 <div class="grid gap-y-3">
                     <div>
@@ -26,7 +30,7 @@
                         <div class="mt-2.5 ">
                             <input name="email" id="email" autocomplete="given-e-mail"
                                    value="{{ old('email') }}"
-                                   class="block w-full h-12 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 xl:bg-[#fafcfe] placeholder:text-gray-400 focus:ring-1 focus:ring-gray-400 sm:text-sm sm:leading-6">
+                                   class="block w-full h-12 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-gray-400 sm:text-sm sm:leading-6">
                             @error('email')
                             <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
                             @enderror
@@ -38,7 +42,7 @@
                         <div class="mt-2.5">
                             <input type="text" name="topic" id="topic" autocomplete="topic"
                                    value="{{ old('topic') }}"
-                                   class="block w-full h-12 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 xl:bg-[#fafcfe] placeholder:text-gray-400 focus:ring-1 focus:ring-gray-400 sm:text-sm sm:leading-6">
+                                   class="block w-full h-12 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-gray-400 sm:text-sm sm:leading-6">
                             @error('topic')
                             <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
                             @enderror
@@ -49,7 +53,7 @@
                                class="block text-sm font-normal leading-6 text-gray-700 ml-2">{{ __('content.contact.form.message') }}</label>
                         <div class="mt-2.5">
                                 <textarea id="message" name="message" rows="10" autocomplete="message"
-                                          class="block w-full rounded-md border-0 px-3.5 py-2 min-h-12 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 xl:bg-[#fafcfe] placeholder:text-gray-400 focus:ring-1 focus:ring-gray-400 sm:text-sm sm:leading-6">{{ old('message') }}</textarea>
+                                          class="block w-full rounded-md border-0 px-3.5 py-2 min-h-12 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-gray-400 sm:text-sm sm:leading-6">{{ old('message') }}</textarea>
                             @error('message')
                             <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
                             @enderror
@@ -59,11 +63,11 @@
                 <div class="flex flex-col items-left mt-2">
                     <label for="consents" class="flex items-center">
                         <input type="checkbox" name="consents" id="consents"
-                               class="w-4 h-4 rounded-sm xl:bg-[#fafcfe] border-gray-300 focus:ring-0 checked:text-website-light">
+                               class="w-4 h-4 rounded-sm border-gray-300 focus:ring-0 checked:text-website-light">
                         <span class="text-xs font-normal text-gray-500 ml-2 pt-4">
                                     {{ __('content.contact.policy.part_1') }}
                                     <a href="{{ route('privacy-policy') }}" target="_blank"
-                                       class="underline font-bold">{{ __('content.contact.policy.part_2') }}</a>
+                                       class="text-website-normal">{{ __('content.contact.policy.part_2') }}</a>
                                     {{ __('content.contact.policy.part_3') }}
                                 </span>
                     </label>
