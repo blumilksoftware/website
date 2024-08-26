@@ -29,7 +29,7 @@
         @include('layout.navigation')
     </div>
     <div class="mb-auto">
-        <div class="relative hidden sm:block -z-10 2xl:max-w-screen-3xl 2xl:mx-auto">
+        <div class="relative hidden sm:block -z-10 2xl:max-w-screen-3xl mx-auto">
             <div class="absolute left-[8%] md:-left-0 top-16">
                 <x-bubble size="100"/>
             </div>

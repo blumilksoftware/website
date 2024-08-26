@@ -11,6 +11,7 @@ use Blumilk\Website\Http\Controllers\LegalController;
 use Blumilk\Website\Http\Controllers\NewsController;
 use Blumilk\Website\Http\Controllers\PolicyController;
 use Blumilk\Website\Http\Controllers\ProjectsController;
+use CodeZero\LocalizedRoutes\Controllers\FallbackController;
 use CodeZero\UriTranslator\UriTranslator;
 use Illuminate\Routing\Router;
 
@@ -33,3 +34,5 @@ $router->get($uri->translate("news"), [NewsController::class, "index"])->name("n
 $router->get($uri->translate("news/{slug}"), [NewsController::class, "get"])->name("news.entry");
 $router->get($uri->translate("legal"), LegalController::class)->name("legal");
 $router->get($uri->translate("company-data"), CompanyDataController::class)->name("data");
+
+$router->fallback(FallbackController::class);
