@@ -36,7 +36,7 @@
                     <img class="w-32 shrink-0" src="{{ asset('identification/logo.svg') }}" alt="Blumilk logo"/>
                 </a>
                 <a class="hidden tablet:block lg:hidden items-start" href="{{ route('home') }}">
-                    <img class="h-8" src="{{ asset('identification/sygnet.svg') }}" alt="Blumilk loho"/>
+                    <img class="h-8" src="{{ asset('identification/sygnet.svg') }}" alt="Blumilk logo"/>
                 </a>
             </div>
             <div class="tablet:flex hidden justify-center items-center text-sm 3xl:text-md">
