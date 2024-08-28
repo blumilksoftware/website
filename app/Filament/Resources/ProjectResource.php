@@ -125,7 +125,8 @@ class ProjectResource extends Resource
 
         foreach ($files as $file) {
             if (str_ends_with($file, ".blade.php")) {
-                $options[$file] = str_replace(".blade.php", "", $file);
+                $file = str_replace(".blade.php", "", $file);
+                $options[$file] = $file;
             }
         }
 
