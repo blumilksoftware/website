@@ -1,5 +1,5 @@
 <div class="flex bg-white rounded-full border aspect-square border-gray-200">
-    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31">
+    <svg xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" aria-hidden="true">
         <g id="Group_517" data-name="Group 517" transform="translate(-365 -535.822)">
             <g id="Ellipse_18" data-name="Ellipse 18" transform="translate(365 535.822)" fill="#fff" stroke="rgba(112,112,112,0.13)" stroke-width="1">
                 <circle cx="15.5" cy="15.5" r="15.5" stroke="none"/>

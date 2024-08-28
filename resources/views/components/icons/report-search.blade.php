@@ -1,6 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-     class="icon icon-tabler icons-tabler-outline icon-tabler-report-search fill-none @isset($accent) {{ $accent }} @else stroke-current @endisset">
+     class="icon icon-tabler icons-tabler-outline icon-tabler-report-search fill-none @isset($accent) {{ $accent }} @else stroke-current @endisset"
+     aria-hidden="true">
     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
     <path stroke="#000000" d="M8 5h-2a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h5.697"/>
     <path stroke="#000000" d="M18 12v-5a2 2 0 0 0 -2 -2h-2"/>

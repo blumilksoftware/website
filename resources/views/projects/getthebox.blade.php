@@ -99,7 +99,7 @@
 
     <x-projects.image src="{{ asset('images/projects/gtb/mobile.png') }}" alt="{{ __('projects.gtb.alt.mobile') }}" />
 
-    <x-projects.testimonial name="{{ __('projects.gtb.testimonial.name') }}"
+    <x-projects.reference      name="{{ __('projects.gtb.testimonial.name') }}"
                                company="{{ __('projects.gtb.testimonial.company') }}"
                                description="{{ __('projects.gtb.testimonial.description') }}"
                                photo="graphics/placeholders/man.svg"

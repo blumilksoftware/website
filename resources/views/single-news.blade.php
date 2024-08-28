@@ -13,7 +13,7 @@
     <section class="2xl:mx-[10%] 3xl:max-w-screen-2xl 3xl:mx-auto -mb-32">
         <div class="w-full h-[232px] sm:h-[594px] overflow-hidden order-2 lg:order-1 lg:mt-0">
             <img src="{{ asset("storage/".$news['photo']) }}"
-                 alt=""
+                 alt="{{ $news['title'] }}"
                  class="inset-0 size-full object-cover">
         </div>
         <div class="flex flex-col lg:gap-24 xl:gap-32 lg:flex-row lg:place-content-between">
@@ -37,7 +37,7 @@
                         @foreach($recommendedNews as $recommendedSingleNews)
                             <div class="relative flex flex-col w-[461px] gap-3">
                                 <img src="{{ asset("storage/".$recommendedSingleNews['photo']) }}"
-                                     alt=""
+                                     alt="{{ $recommendedSingleNews['title'] }}"
                                      class="w-full h-auto xl:h-[343px] object-cover aspect-square xl:aspect-auto">
                                 <time datetime="{{ $recommendedSingleNews['published_at'] }}" class="text-sm text-gray-400 mt-3">
                                     {{ $recommendedSingleNews['published_at'] }}
@@ -90,7 +90,7 @@
                     @foreach($recommendedNews as $recommendedSingleNews)
                         <div class="relative flex flex-col w-full gap-3">
                             <img src="{{ asset("storage/".$recommendedSingleNews['photo']) }}"
-                                 alt=""
+                                 alt="{{ $recommendedSingleNews['title'] }}"
                                  class="w-full h-auto xl:h-[343px] object-cover aspect-square xl:aspect-auto">
                             <time datetime="{{ $recommendedSingleNews['published_at'] }}" class="text-sm text-gray-400 mt-3">
                                 {{ $recommendedSingleNews['published_at'] }}
@@ -110,8 +110,7 @@
             </div>
         </div>
     </section>
-
     <span class="relative sm:-top-14 lg:top-0">
-            <x-text-us-section/>
+        <x-text-us-section/>
     </span>
 @endsection
