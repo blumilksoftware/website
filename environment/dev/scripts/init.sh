@@ -14,7 +14,7 @@ if [ -z "${APP_KEY}" ]; then
     php artisan key:generate
 fi
 
-php artisan migrate --seed
+php artisan migrate:fresh --seed
 php artisan storage:link
 
 echo "Running NPM stuff:"

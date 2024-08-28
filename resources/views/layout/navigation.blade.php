@@ -49,8 +49,8 @@
                 <x-small-primary-button href="{{ route('contact') }}">{{ __("buttons.lets_talk") }}</x-small-primary-button>
             </div>
             <div class="relative inline-block text-left">
-                @foreach(LocaleConfig::getLocales() as $locale)
-                    @if (App::isLocale($locale))
+                @foreach( LocaleConfig::getLocales() as $locale )
+                    @if ( App::isLocale($locale) )
                         <button type="button"
                                 @click="openLang = ! openLang"
                                 class="flex rounded-lg h-full items-center place-content-center gap-x-1.5 bg-white px-4 py-2 text-sm 3xl:text-md font-semibold text-gray-500 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 uppercase"
@@ -65,11 +65,11 @@
                      class="hidden absolute right-0 z-10 w-full mt-2 origin-top-right bg-white shadow-lg ring-1 ring-black ring-opacity-5 rounded-lg focus:outline-none"
                      tabindex="-1">
                     <div class="text-start" role="none">
-                        @foreach(LocaleConfig::getLocales() as $locale)
-                            <a href="{{route(Route::currentRouteName(), Route::getCurrentRoute()->parameters(), true, $locale)}}"
+                        @foreach( LocaleConfig::getLocales() as $locale )
+                            <a href="{{ route(Route::currentRouteName(), Route::getCurrentRoute()->parameters(), true, $locale) }}"
                                class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-light uppercase"
                                role="menuitem" tabindex="-1">
-                                {{$locale}}
+                                {{ $locale }}
                             </a>
                         @endforeach
                     </div>
@@ -133,8 +133,8 @@
             </div>
             <div class="w-full px-2">
                 <div class="relative flex flex-col text-left">
-                    @foreach(LocaleConfig::getLocales() as $locale)
-                        @if (App::isLocale($locale))
+                    @foreach( LocaleConfig::getLocales() as $locale )
+                        @if ( App::isLocale($locale) )
                             <button type="button"
                                     @click="openLang = ! openLang"
                                     class="flex w-full h-full justify-between items-center place-content-center gap-x-1.5 mt-4 text-lg sm:text-xl font-semibold text-black hover:text-website-normal uppercase"
@@ -148,11 +148,11 @@
                          :class="{'block': openLang, 'hidden': ! openLang}"
                          class="hidden">
                         <div class="text-end" role="none">
-                            @foreach(LocaleConfig::getLocales() as $locale)
-                                <a href="{{route(Route::currentRouteName(), Route::getCurrentRoute()->parameters(), true, $locale)}}"
+                            @foreach( LocaleConfig::getLocales() as $locale )
+                                <a href="{{ route(Route::currentRouteName(), Route::getCurrentRoute()->parameters(), true, $locale) }}"
                                    class="text-gray-500 block text-lg font-normal pt-4 sm:text-xl hover:text-website-normal uppercase text-start"
                                    role="menuitem" tabindex="-1">
-                                    {{$locale}}
+                                    {{ $locale }}
                                 </a>
                             @endforeach
                         </div>

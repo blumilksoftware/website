@@ -32,6 +32,7 @@ module.exports = {
           light: '#F7F8FD',
         },
         bubble: '#DAE3F0',
+        tile: '#F7F8FB',
         brand: '#527ABA',
         website: {
           normal: '#5379F6',

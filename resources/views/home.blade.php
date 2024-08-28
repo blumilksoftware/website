@@ -5,8 +5,8 @@
 
 @section("content")
     <section class="relative overflow-hidden">
-        <section class="relative flex flex-col-reverse xl:flex-row pt-8 xl:pt-36 pb-16 sm:pb-24 mx-[10%] md:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto gap-12">
-            <div class="flex basis-1/2 relative flex-col self-start gap-5">
+        <section class="flex flex-col-reverse xl:flex-row pt-8 xl:pt-24 pb-16 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:gap-5">
+            <div class="flex basis-2/5 relative flex-col self-center gap-5">
                 <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:justify-start xl:text-start">
                     <h2 class="font-semibold text-gray-900 leading-normal md:leading-snug">
                         <span class="inline">{{ __("content.home.section_1.title_1") }}</span>
@@ -23,14 +23,13 @@
                                       class="w-full sm:w-auto sm:px-12 -ml-1 shadow-xl bg-website-normal">{{ __("buttons.about") }}</x-primary-button>
                 </div>
             </div>
-            <div class="flex basis-1/2 relative place-content-center xl:place-content-end">
-                <img src="{{ asset('graphics/home.svg') }}" class="h-auto max-w-2xl w-full aspect-auto object-center shrink-0"
+            <div class="flex basis-3/5 relative self-center pb-8 md:pb-24 xl:pb-4 xl:left-16">
+                <img src="{{ asset('graphics/home.svg') }}" class="h-auto w-full aspect-auto object-center shrink-0"
                      alt="placeholder"/>
             </div>
         </section>
-
         <section class="relative text-center px-[10%] md:px-[15%]">
-            <div class="text-lg sm:text-2xl lg:text-3xl font-semibold text-gray-400">{{ __("content.home.section_2.title_1") }}
+            <div class="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-400">{{ __("content.home.section_2.title_1") }}
                 <span class="text-website-normal">{{ __("content.home.section_2.title_2") }}</span>
             </div>
             <div class="grid grid-cols-2 md:flex md:flex-row pb-12 text-gray-400 items-center justify-center mt-10 2xl:gap-12 2xl:max-w-7xl 2xl:mx-auto">
@@ -82,8 +81,8 @@
         </section>
 
         <!-- TODO: Update case study (issue #294) -->
-        <section class="relative mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
-            <div class="relative pt-28 pb-20 md:pb-32 lg:pb-44">
+        <section class="relative">
+            <div class="relative mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto pt-28 pb-20 md:pb-32 lg:pb-44">
                 <div class="pb-8 text-center">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-4 md:pb-8">{{ __("content.home.section_4.title_1") }}</h2>
                     <span class="font-normal leading-relaxed text-sm sm:text-md lg:text-lg relative">{{ __("content.home.section_4.subtitle_1") }}</span>
@@ -111,7 +110,6 @@
                     <x-secondary-button href="{{ route('projects') }}" class="px-10 justify-center">{{ __("buttons.see_more_projects") }}</x-secondary-button>
                 </div>
             </div>
-
         </section>
 
         <section @class([ 'hidden' => $references->isEmpty(), 'px-[10%] md:px-[15%] text-center items-center sm:pb-16 relative' ])>
