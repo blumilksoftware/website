@@ -76,8 +76,8 @@
         </div>
     </section>
     <section class="relative overflow-hidden pt-10 pb-14 md:pt-24 md:pb-28">
-        <img src="{{ asset('graphics/shadow.svg') }}" alt="{{ __('alt.shadow') }}" class="absolute -z-10 -right-96 -bottom-0"/>
-        <img src="{{ asset('graphics/shadow.svg') }}" alt="{{ __('alt.shadow') }}" class="absolute -z-10 -left-[800px] -bottom-64"/>
+        <img src="{{ asset('graphics/shadow.svg') }}" alt="{{ __('alt.shadow') }}" aria-hidden="true" class="absolute -z-10 -right-96 -bottom-0"/>
+        <img src="{{ asset('graphics/shadow.svg') }}" alt="{{ __('alt.shadow') }}" aria-hidden="true" class="absolute -z-10 -left-[800px] -bottom-64"/>
 
         <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
             <div class="pb-28 text-center">

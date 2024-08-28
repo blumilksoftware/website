@@ -114,7 +114,7 @@
 
         <section @class([ 'hidden' => $references->isEmpty(), 'px-[10%] md:px-[15%] text-center items-center sm:pb-16 relative' ])>
             <div class="absolute -z-10 -right-80 -bottom-64">
-                <img src="{{ asset('graphics/shadow.svg') }}" alt="{{ __('alt.shadow') }}"/>
+                <img src="{{ asset('graphics/shadow.svg') }}" alt="{{ __('alt.shadow') }}" aria-hidden="true"/>
             </div>
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">{{ __("content.home.section_5.title_1") }}</h2>
             <span class="font-normal text-sm sm:text-md lg:text-lg">{{ __("content.home.section_5.subtitle_1") }}</span>

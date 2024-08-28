@@ -126,8 +126,8 @@
                 <x-primary-button href="{{ route('career.software-engineer') }}" class="px-16 my-6 flex w-full md:w-auto m-auto xl:m-0 xl:mr-auto xl:justify-start bg-website-normal">{{ __("buttons.apply_now") }}</x-primary-button>
             </div>
         </div>
-        <img src="{{ asset('graphics/shadow.svg') }}" alt="{{ __('alt.shadow') }}" class="hidden md:block absolute -z-10 -right-[50%] -bottom-44"/>
-        <img src="{{ asset('graphics/shadow.svg') }}" alt="{{ __('alt.shadow') }}" class="hidden md:block absolute -z-10 -left-[80%] top-40 object-cover"/>
+        <img src="{{ asset('graphics/shadow.svg') }}" alt="{{ __('alt.shadow') }}" aria-hidden="true" class="hidden md:block absolute -z-10 -right-[50%] -bottom-44"/>
+        <img src="{{ asset('graphics/shadow.svg') }}" alt="{{ __('alt.shadow') }}" aria-hidden="true" class="hidden md:block absolute -z-10 -left-[80%] top-40 object-cover"/>
 
         <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto flex flex-col-reverse xl:flex-row gap-x-24 md:pt-5 md:mb-16 xl:mb-44">
             <div class="flex xl:basis-2/5 flex-col justify-start xl:justify-center overflow-visible">
