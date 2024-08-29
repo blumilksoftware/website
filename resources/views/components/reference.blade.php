@@ -5,7 +5,7 @@
     <figcaption class="mt-6 flex items-center gap-x-4">
         <img class="h-10 w-10 rounded-full bg-gray-50"
              src="{{ asset("storage/" . $reference->photo) }}"
-             alt="{{ __('alt.reference') . $reference->creator_name }}">
+             alt="{{ __('alt.reference') . " " . $reference->creator_name }}">
         <div>
             <a href="{{ $reference->associate_link }}" target="_blank">
                 <div class="font-semibold text-left">{{ $reference->creator_name }}</div>

@@ -22,7 +22,7 @@
                 @csrf
                 <div class="grid gap-y-3">
                     <div>
-                        <label for="e-mail"
+                        <label for="email"
                                class="block text-sm font-normal leading-6 text-gray-700 ml-2">{{ __('content.contact.form.email') }}</label>
                         <div class="mt-2.5 ">
                             <input name="email" id="email" autocomplete="given-e-mail"
