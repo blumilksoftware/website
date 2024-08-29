@@ -85,22 +85,22 @@
             <div class="py-16">
                 <h1 class="text-2xl font-semibold text-blue-dark mb-4 text-center  md:text-left">{{ __('content.contact.company') }}</h1>
                 <div class="flex flex-col lg:flex-row text-sm text-[#6B6E70] gap-x-6">
-                    <div class="flex mt-3 items-start">
+                    <div class="flex mt-3 items-center">
                         <span class="sr-only">{{ __('alt.location') }}</span>
-                        <x-icons.location/>
+                        <i class="ti ti-map-pin text-2xl text-blue-dark"></i>
                         <div class="ml-4">
                             <div>{{ __('content.contact.location.address') }}</div>
                             <div>{{ __('content.contact.location.PostalCode') }}</div>
                         </div>
                     </div>
-                    <div class="flex mt-3 items-start">
+                    <div class="flex mt-3 items-center">
                         <span class="sr-only">{{ __('alt.phone') }}</span>
-                        <x-icons.phone/>
+                        <i class="ti ti-phone text-2xl text-blue-dark"></i>
                         <div class="ml-4">{{ __('content.contact.phone') }}</div>
                     </div>
-                    <div class="flex mt-3 items-start">
+                    <div class="flex mt-3 items-center">
                         <span class="sr-only">{{ __('alt.mail') }}</span>
-                        <x-icons.mail/>
+                        <i class="ti ti-mail text-2xl text-blue-dark"></i>
                         <div class="ml-4">{{ __('content.contact.email') }}</div>
                     </div>
                 </div>

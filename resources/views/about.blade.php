@@ -247,12 +247,14 @@
                     class="fixed inset-0 z-[99] flex items-center justify-center bg-black bg-opacity-50 select-none cursor-zoom-out" x-cloak>
                     <div class="relative flex items-center justify-center w-11/12 xl:w-4/5 h-11/12">
                         <div @click="$event.stopPropagation(); $dispatch('image-gallery-prev')" class="absolute left-0 flex items-center justify-center text-white translate-x-10 rounded-full cursor-pointer xl:-translate-x-24 2xl:-translate-x-32 bg-white/10 w-14 h-14 hover:bg-white/20">
+                            <span class="sr-only">{{ __('alt.prev') }}</span>
                             <i class="ti ti-chevron-left text-3xl"></i>
                         </div>
                         <div class="flex items-center justify-center h-full p-8 rounded-lg cursor-auto">
                             <img :src="imageGalleryActiveUrl" :alt="imageGallery[imageGalleryImageIndex].alt" class="h-full transition select-none md:max-h-[600px]"/>
                         </div>
                         <div @click="$event.stopPropagation(); $dispatch('image-gallery-next')" class="absolute right-0 flex items-center justify-center text-white -translate-x-10 rounded-full cursor-pointer xl:translate-x-24 2xl:translate-x-32 bg-white/10 w-14 h-14 hover:bg-white/20">
+                            <span class="sr-only">{{ __('alt.next') }}</span>
                             <i class="ti ti-chevron-right text-3xl"></i>
                         </div>
                     </div>

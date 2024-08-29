@@ -25,7 +25,7 @@
         <div class="flex flex-col lg:flex-row gap-4 2xl:gap-8">
             <div class="flex flex-col place-items-start sm:flex-row bg-gray-extraLight rounded-xl leading-relaxed py-6 px-12 gap-4 size-auto md:justify-center">
                 <div class="bg-white shadow-md rounded-full size-16 aspect-square mt-4 xl:mx-auto sm:mx-0 flex place-items-center justify-center">
-                    <x-icons.device-desktop/>
+                    <i class="ti ti-device-desktop text-4xl"></i>
                 </div>
                 <div class="2xl:mt-2 text-left ml-4">
                     <span class="font-semibold text-sm md:text-lg block pb-2 -ml-4">
@@ -42,7 +42,7 @@
             </div>
             <div class="flex flex-col place-items-start sm:flex-row bg-gray-extraLight rounded-xl leading-relaxed py-6 px-12 gap-4 size-auto md:justify-center">
                 <div class="bg-white shadow-md rounded-full size-16 aspect-square mt-4 xl:mx-auto sm:mx-0 flex place-items-center justify-center">
-                    <x-icons.crown/>
+                    <i class="ti ti-crown text-4xl"></i>
                 </div>
                 <div class="2xl:mt-2 text-left ml-4">
                     <span class="font-semibold text-sm md:text-lg block pb-2 -ml-4">

@@ -3,6 +3,8 @@
 declare(strict_types=1);
 
 return [
+    "prev" => "previous",
+    "next" => "next",
     "shadow" => "blue shadow",
     "wave" => "blue line art waves",
     "reference" => "reference from",
