@@ -16,7 +16,7 @@
         </div>
         <div class="flex basis-3/5 relative xl:-bottom-36 xl:-right-20 place-content-center xl:place-content-end w-full">
             <img src="{{ asset('graphics/policy.svg') }}" class="h-auto w-full aspect-auto object-center shrink-0 py-10 xl:py-0"
-                 alt="placeholder"/>
+                 alt="{{ __('alt.policy') }}"/>
         </div>
     </section>
     <section class="mx-[10%] md:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto text-center text-gray-400 xl:text-lg grid grid-cols-1 gap-6 xl:text-left leading-loose mb-4 xl:mb-16">

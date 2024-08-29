@@ -9,7 +9,7 @@
          ])>
         <a href="{{ route('news.entry', $news['slug']) }}">
             <span class="absolute inset-0"></span>
-            <img src="{{ asset("storage/".$news['photo']) }}" alt="" class="h-auto w-full lg:h-full object-cover aspect-square lg:aspect-auto">
+            <img src="{{ asset("storage/".$news['photo']) }}" alt="{{ $news['title'] }}" class="h-auto w-full lg:h-full object-cover aspect-square lg:aspect-auto">
         </a>
     </div>
     <div
@@ -22,7 +22,7 @@
             <time datetime="{{ $news['published_at'] }}" class="text-gray-400 my-auto">
                 {{ $news['published_at'] }}
             </time>
-            @if($isFirst)<span class="hidden lg:block"><x-icons.arrow-up-right/></span>@endif
+            @if($isFirst) <span class="hidden lg:block"><x-icons.arrow-up-right/></span> @endif
         </div>
         <div class="font-semibold text-md">
             <h3

@@ -22,7 +22,7 @@
                 @csrf
                 <div class="grid gap-y-3">
                     <div>
-                        <label for="e-mail"
+                        <label for="email"
                                class="block text-sm font-normal leading-6 text-gray-700 ml-2">{{ __('content.contact.form.email') }}</label>
                         <div class="mt-2.5 ">
                             <input name="email" id="email" autocomplete="given-e-mail"
@@ -86,7 +86,7 @@
                 <h1 class="text-2xl font-semibold text-black mb-4 text-center  md:text-left">{{ __('content.contact.company') }}</h1>
                 <div class="flex flex-col lg:flex-row text-sm text-gray-400 gap-x-6">
                     <div class="flex mt-3 items-start">
-                        <span class="sr-only">Location</span>
+                        <span class="sr-only">{{ __('alt.location') }}</span>
                         <x-icons.location/>
                         <div class="ml-4">
                             <div>{{ __('content.contact.location.address') }}</div>
@@ -94,12 +94,12 @@
                         </div>
                     </div>
                     <div class="flex mt-3 items-start">
-                        <span class="sr-only">Phone number</span>
+                        <span class="sr-only">{{ __('alt.phone') }}</span>
                         <x-icons.phone/>
                         <div class="ml-4">{{ __('content.contact.phone') }}</div>
                     </div>
                     <div class="flex mt-3 items-start">
-                        <span class="sr-only">Email</span>
+                        <span class="sr-only">{{ __('alt.mail') }}</span>
                         <x-icons.mail/>
                         <div class="ml-4">{{ __('content.contact.email') }}</div>
                     </div>

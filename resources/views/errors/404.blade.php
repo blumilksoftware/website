@@ -22,7 +22,7 @@
         </div>
         <div class="flex basis-3/5 relative self-center pb-8 md:pb-24 xl:pb-4 xl:left-16">
             <img src="{{ asset('graphics/404.svg') }}" class="h-auto w-full aspect-auto object-center shrink-0"
-                 alt="placeholder"/>
+                 alt="{{ __('alt.404') }}"/>
         </div>
     </section>
 @endsection

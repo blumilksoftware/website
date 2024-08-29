@@ -26,7 +26,7 @@
         </div>
         <div class="flex basis-3/5">
             <img src="{{ asset('graphics/about.svg') }}" class="size-full align-middle m-4 relative 2xl:left-24"
-                 alt="placeholder"/>
+                 alt="{{ __('alt.about') }}"/>
         </div>
     </section>
     <section class="bg-white py-12 sm:py-16 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
@@ -48,7 +48,6 @@
                 <dd class="order-first text-6xl font-semibold">1000+</dd>
             </div>
         </div>
-
     </section>
     <section class="relative pt-14 pb-12 md:pb-24 text-center">
         <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:space-y-10">
@@ -77,8 +76,8 @@
         </div>
     </section>
     <section class="relative overflow-hidden pt-10 pb-14 md:pt-24 md:pb-28">
-        <img src="{{ asset('graphics/shadow.svg') }}" alt="blob" class="absolute -z-10 -right-96 -bottom-0"/>
-        <img src="{{ asset('graphics/shadow.svg') }}" alt="blob" class="absolute -z-10 -left-[800px] -bottom-64"/>
+        <img src="{{ asset('graphics/shadow.svg') }}" alt="{{ __('alt.shadow') }}" aria-hidden="true" class="absolute -z-10 -right-96 -bottom-0"/>
+        <img src="{{ asset('graphics/shadow.svg') }}" alt="{{ __('alt.shadow') }}" aria-hidden="true" class="absolute -z-10 -left-[800px] -bottom-64"/>
 
         <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
             <div class="pb-28 text-center">
@@ -89,11 +88,11 @@
             <div class="grid md:grid-cols-10 md:grid-rows-4 gap-10">
                 <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-1 2xl:order-none">
                     <img src="{{ asset('images/photos/projects.webp') }}"
-                         class="w-full 2xl:w-[350px] 2xl:h-[440px] h-[440px] md:h-[330px] lg:h-[250px] object-cover rounded-xl" alt="placeholder"/>
+                         class="w-full 2xl:w-[350px] 2xl:h-[440px] h-[440px] md:h-[330px] lg:h-[250px] object-cover rounded-xl" alt="{{ __('alt.projects') }}"/>
                 </div>
                 <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-3 2xl:order-none">
                     <img src="{{ asset('images/photos/lmt.webp') }}"
-                         class="w-full 2xl:w-[350px] 2xl:h-[440px] h-[440px] md:h-[330px] lg:h-[250px] object-cover rounded-xl" alt="placeholder"/>
+                         class="w-full 2xl:w-[350px] 2xl:h-[440px] h-[440px] md:h-[330px] lg:h-[250px] object-cover rounded-xl" alt="{{ __('alt.lmt') }}"/>
                 </div>
                 <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-2 2xl:order-none">
                     <p class="font-normal text-center md:text-start 2xl:pr-4">
@@ -115,11 +114,11 @@
                 </div>
                 <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-5 md:order-6 2xl:order-none">
                     <img src="{{ asset('images/photos/interns.webp') }}"
-                         class="w-full 2xl:w-[350px] 2xl:h-[440px] h-[440px] md:h-[330px] lg:h-[250px] object-cover rounded-xl" alt="placeholder"/>
+                         class="w-full 2xl:w-[350px] 2xl:h-[440px] h-[440px] md:h-[330px] lg:h-[250px] object-cover rounded-xl" alt="{{ __('alt.interns') }}"/>
                 </div>
                 <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-7 md:order-8 2xl:order-none h-full">
                     <img src="{{ asset('images/photos/soda.webp') }}"
-                         class="w-full 2xl:w-[350px] 2xl:h-[440px] h-[440px] md:h-[330px] lg:h-[250px] object-cover rounded-xl" alt="placeholder"/>
+                         class="w-full 2xl:w-[350px] 2xl:h-[440px] h-[440px] md:h-[330px] lg:h-[250px] object-cover rounded-xl" alt="{{ __('alt.soda') }}"/>
                 </div>
                 <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-8 md:order-7">
                     <p class="font-normal text-center md:text-start 2xl:pr-4">
@@ -137,38 +136,38 @@
             </div>
             <div class="mx-auto mt-8 md:mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
                 <figure class="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
-                    <img class="md:h-96 w-full object-cover rounded-2xl transition hover:scale-105" src="{{ asset('images/photos/archery.webp') }}" alt="">
+                    <img class="md:h-96 w-full object-cover rounded-2xl transition hover:scale-105" src="{{ asset('images/photos/archery.webp') }}" alt="{{ __('alt.archery') }}">
                 </figure>
                 <div class="space-y-8 xl:contents xl:space-y-0">
                     <div class="space-y-8 xl:row-span-2">
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/czech.webp') }}" alt="">
+                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/czech.webp') }}" alt="{{ __('alt.czech') }}">
                         </figure>
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-48 w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/fireplace.webp') }}" alt="">
+                            <img class="h-48 w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/fireplace.webp') }}" alt="{{ __('alt.fireplace') }}">
                         </figure>
                     </div>
                     <div class="space-y-8 xl:row-start-1 hidden sm:block">
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-60 w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/energylandia.webp') }}" alt="">
+                            <img class="h-60 w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/energylandia.webp') }}" alt="{{ __('alt.energylandia') }}">
                         </figure>
                     </div>
                 </div>
                 <div class="space-y-8 xl:contents xl:space-y-0 hidden sm:block">
                     <div class="space-y-8 xl:row-start-1">
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-60 w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/laravel.webp') }}" alt="">
+                            <img class="h-60 w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/laravel.webp') }}" alt="{{ __('alt.laravel') }}">
                         </figure>
                     </div>
                     <div class="space-y-8 xl:row-span-2">
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/beer.webp') }}" alt="">
+                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/beer.webp') }}" alt="{{ __('alt.beer') }}">
                         </figure>
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/lasertag.webp') }}" alt="">
+                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/lasertag.webp') }}" alt="{{ __('alt.lasertag') }}">
                         </figure>
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/sea.webp') }}" alt="">
+                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/sea.webp') }}" alt="{{ __('alt.sea') }}">
                         </figure>
                     </div>
                 </div>

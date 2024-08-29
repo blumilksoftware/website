@@ -27,7 +27,7 @@
         </div>
         <div class="flex basis-3/5 relative self-center pb-8 md:pb-24 xl:pb-0">
             <img src="{{ asset('graphics/career.svg') }}" class="h-auto w-full aspect-auto object-center shrink-0"
-                 alt="placeholder"/>
+                 alt="{{ __('alt.career') }}"/>
         </div>
     </section>
     <section class="relative">
@@ -116,7 +116,7 @@
         <div class="flex flex-col md:mt-10 md:pb-5 xl:flex-row mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto gap-x-24">
             <div class="self-center basis-3/5">
                 <img src="{{ asset('graphics/career_3.svg') }}" class="h-auto w-full object-center shrink-0 pb-10 md:pb-0"
-                     alt="{{ __("content.career.section_3.title_1") }}"/>
+                     alt="{{ __("alt.career_3") }}"/>
             </div>
             <div class="flex basis-2/5 relative flex-col justify-center md:pb-24 xl:pb-0">
                 <div class="text-center xl:justify-start xl:text-start pb-5 xl:pb-10">
@@ -126,8 +126,8 @@
                 <x-primary-button href="{{ route('career.software-engineer') }}" class="px-16 my-6 flex w-full md:w-auto m-auto xl:m-0 xl:mr-auto xl:justify-start bg-website-normal">{{ __("buttons.apply_now") }}</x-primary-button>
             </div>
         </div>
-        <img src="{{ asset('graphics/shadow.svg') }}" alt="blob" class="hidden md:block absolute -z-10 -right-[50%] -bottom-44"/>
-        <img src="{{ asset('graphics/shadow.svg') }}" alt="blob" class="hidden md:block absolute -z-10 -left-[80%] top-40 object-cover"/>
+        <img src="{{ asset('graphics/shadow.svg') }}" alt="{{ __('alt.shadow') }}" aria-hidden="true" class="hidden md:block absolute -z-10 -right-[50%] -bottom-44"/>
+        <img src="{{ asset('graphics/shadow.svg') }}" alt="{{ __('alt.shadow') }}" aria-hidden="true" class="hidden md:block absolute -z-10 -left-[80%] top-40 object-cover"/>
 
         <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto flex flex-col-reverse xl:flex-row gap-x-24 md:pt-5 md:mb-16 xl:mb-44">
             <div class="flex xl:basis-2/5 flex-col justify-start xl:justify-center overflow-visible">
@@ -139,7 +139,7 @@
             </div>
             <div class="flex relative self-center basis-3/5">
                 <img src="{{ asset('graphics/career_2.svg') }}" class="h-auto w-full object-center shrink-0 pt-4 pb-10 md:pb-0"
-                     alt="{{ __("content.career.section_4.title_1") }}"/>
+                     alt="{{ __("alt.career_2") }}"/>
             </div>
         </div>
     </section>

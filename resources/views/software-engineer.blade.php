@@ -18,7 +18,7 @@
         </div>
         <div class="flex basis-3/5 relative self-center pb-8 md:pb-24 xl:pb-0">
             <img src="{{ asset('graphics/software-engineer.svg') }}" class="h-auto w-full aspect-auto object-center shrink-0"
-                 alt="placeholder"/>
+                 alt="{{ __('alt.software_engineer') }}"/>
         </div>
     </section>
     <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:pt-28 pb-8">

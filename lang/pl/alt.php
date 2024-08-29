@@ -1,0 +1,38 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    "shadow" => "niebieski cień",
+    "wave" => "niebieskie fale w stylu line art",
+    "reference" => "referencja autorstwa",
+    "about" => "Izometryczna ilustracja w temacie sztucznej inteligencji z ludźmi wchodzącymi w interakcję z elementami technologicznymi.",
+    "career" => "Izometryczna ilustracja przedstawiająca ludzi wchodzących w interakcję z dużą stroną internetową, wskazująca na tworzenie treści cyfrowych.",
+    "career_2" => "Izometryczna ilustracja przedstawiająca ludzi korzystających z dużych stron internetowych i elementów cyfrowych, przedstawiająca naukę online i dostęp do informacji.",
+    "career_3" => "Izometryczna ilustracja przedstawiająca osoby programujące przy użyciu laptopów, fragmenty kodu i ikony programistyczne.",
+    "home" => "Izometryczna ilustracja przedstawiająca ludzi z ikonami marketingu cyfrowego, w tym lupą, dronem i wykresami.",
+    "policy" => "Izometryczna ilustracja przedstawiająca osobę sprawdzającą listę za pomocą dużego schowka, lupy i zegara.",
+    "software_engineer" => "Izometryczna ilustracja przedstawiająca dwie osoby kodujące z gigantycznym laptopem i ikonami technologii dookoła.",
+    "404" => "Izometryczna ilustracja krytego basenu z leżakami, roślinami i fontanną.",
+    "home_project" => "Strona internetowa poświęcona tematyce medycznej zawierająca pasek wyszukiwania, katalog produktów i koszyk zakupów.",
+    "projects" => "Ludzie współpracujący w biurze, jedna osoba wskazuje na ekran komputera wyświetlający grafikę. Inni członkowie zespołu wchodzą w interakcję w tle.",
+    "lmt" => "Publiczność ogląda prezentację na Legnickim Meetupie Technologicznym.",
+    "interns" => "Stażyści Blumilk stoją obok kierownika i baneru Blumilk.",
+    "soda" => "kobieta siedząca przed ekranem komputera, na którym widnieje napis SoDa.",
+    "archery" => "Grupa ludzi stoi na zewnątrz, niektórzy trzymają łuki, pod zachmurzonym niebem.",
+    "czech" => "Grupa ludzi siedzi na schodach przed ozdobnym budynkiem z zielenią i posągami.",
+    "fireplace" => "Grupa ludzi siedzi przy ognisku nocą, w tle widać altanę.",
+    "energylandia" => "Grupa osób stoi przed wejściem do atrakcji Abyssus w Energylandii w Zatorze.",
+    "laravel" => "Zespół Blumilk stoi przed prezentacją na spotkaniu Laravel Poland",
+    "beer" => "Grupa ludzi siedzących przy stolikach w słabo oświetlonym barze z telewizorem na ścianie.",
+    "lasertag" => "Grupa ludzi stojących obok siebie i trzymających pistolety laserowe.",
+    "sea" => "Grupa ludzi na skalistym brzegu morza, pod czystym, błękitnym niebem.",
+    "location" => "ikona lokalizacji",
+    "mail" => "ikona poczty",
+    "phone" => "ikona telefonu",
+    "clutch" => "ikona Clutch",
+    "github" => "ikona GitHub",
+    "linkedin" => "ikona LinkedIn",
+    "facebook" => "ikona Facebook",
+    "youtube" => "ikona YouTube",
+];

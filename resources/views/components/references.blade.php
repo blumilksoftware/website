@@ -116,7 +116,7 @@
                 <figcaption class="flex items-center gap-x-4 gap-y-4 md:border-t md:border-gray-900/10 px-6 py-4 sm:flex-nowrap">
                     <img class="h-10 w-10 flex-none rounded-full bg-gray-50"
                          src="{{ asset("storage/" . $references[$main]->photo) }}"
-                         alt="">
+                         alt="{{ __('alt.reference') . " " . $references[$main]->creator_name }}">
                     <div class="flex-auto">
                         <a href="{{ $references[$main]->associate_link }}" target="_blank">
                             <div class="font-semibold text-left">{{ $references[$main]->creator_name }}</div>
@@ -131,11 +131,10 @@
                 <blockquote class="p-6 md:text-lg md:font-semibold leading-7 md:tracking-tight text-gray-900 sm:p-12 sm:text-xl md:leading-8">
                     <p>{!! "“".$references[$main2]->description."”" !!}</p>
                 </blockquote>
-                <figcaption
-                    class="flex flex-wrap items-center gap-x-4 gap-y-4 md:border-t md:border-gray-900/10 px-6 py-4 sm:flex-nowrap">
+                <figcaption class="flex flex-wrap items-center gap-x-4 gap-y-4 md:border-t md:border-gray-900/10 px-6 py-4 sm:flex-nowrap">
                     <img class="h-10 w-10 flex-none rounded-full bg-gray-50"
                          src="{{ asset("storage/" . $references[$main2]->photo) }}"
-                         alt="">
+                         alt="{{ __('alt.reference') . " " . $references[$main2]->creator_name }}">
                     <div class="flex-auto">
                         <a href="{{ $references[$main2]->associate_link }}" target="_blank">
                             <div class="font-semibold text-left">{{ $references[$main2]->creator_name }}</div>
