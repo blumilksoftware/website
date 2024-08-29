@@ -6,11 +6,9 @@
         <img class="size-16 flex-none rounded-full bg-gray-50"
              src="{{ asset($photo) }}"
              alt="{{ __('alt.reference') . " " . $name }}">
-        <div class="flex text-sm md:text-md md:text-xl">
-            <a href="{{ $link }}" target="_blank">
-                <div class="font-semibold text-left break-words">{{ $name }}</div>
-                <div class="text-gray-600 text-left">{{ $company }}</div>
-            </a>
+        <div class="text-sm md:text-md md:text-xl">
+            <div class="font-semibold text-left break-words block">{{ $name }}</div>
+            <div class="text-gray-600 text-left">{{ $company }}</div>
         </div>
     </figcaption>
 </figure>

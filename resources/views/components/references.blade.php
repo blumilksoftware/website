@@ -109,37 +109,49 @@
     "sm:col-span-2 xl:col-start-2 xl:row-end-1 space-y-8",
     "hidden" => !(@isset($main) || @isset($main2))])>
         @isset($main)
+            @php
+                $mainPhotoPath = (file_exists(storage_path('app/public/' . $references[$main]->photo)) && !!$references[$main]->photo)
+                             ? asset('storage/' . $references[$main]->photo)
+                             : null;
+                $mainPlaceholder = $references[$main]->sex === 'female'
+                               ? asset('graphics/placeholders/female.svg')
+                               : asset('graphics/placeholders/male.svg');
+            @endphp
             <figure class="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5">
                 <blockquote class="p-6 md:text-lg md:font-semibold leading-7 md:tracking-tight text-gray-900 sm:p-12 sm:text-xl md:leading-8">
                     <p>{!! "“".$references[$main]->description."”" !!}</p>
                 </blockquote>
                 <figcaption class="flex items-center gap-x-4 gap-y-4 md:border-t md:border-gray-900/10 px-6 py-4 sm:flex-nowrap">
                     <img class="h-10 w-10 flex-none rounded-full bg-gray-50"
-                         src="{{ asset("storage/" . $references[$main]->photo) }}"
+                         src="{{ $mainPhotoPath ?? $mainPlaceholder }}"
                          alt="{{ __('alt.reference') . " " . $references[$main]->creator_name }}">
                     <div class="flex-auto">
-                        <a href="{{ $references[$main]->associate_link }}" target="_blank">
-                            <div class="font-semibold text-left">{{ $references[$main]->creator_name }}</div>
-                            <div class="text-gray-600 text-left">{{ $references[$main]->company }}</div>
-                        </a>
+                        <div class="font-semibold text-left">{{ $references[$main]->creator_name }}</div>
+                        <div class="text-gray-600 text-left">{{ $references[$main]->company }}</div>
                     </div>
                 </figcaption>
             </figure>
         @endisset
         @isset($main2)
+                @php
+                    $main2PhotoPath = (file_exists(storage_path('app/public/' . $references[$main2]->photo)) && !!$references[$main2]->photo)
+                                 ? asset('storage/' . $references[$main2]->photo)
+                                 : null;
+                    $main2Placeholder = $references[$main2]->sex === 'female'
+                                   ? asset('graphics/placeholders/female.svg')
+                                   : asset('graphics/placeholders/male.svg');
+                @endphp
             <figure class="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5">
                 <blockquote class="p-6 md:text-lg md:font-semibold leading-7 md:tracking-tight text-gray-900 sm:p-12 sm:text-xl md:leading-8">
                     <p>{!! "“".$references[$main2]->description."”" !!}</p>
                 </blockquote>
                 <figcaption class="flex flex-wrap items-center gap-x-4 gap-y-4 md:border-t md:border-gray-900/10 px-6 py-4 sm:flex-nowrap">
                     <img class="h-10 w-10 flex-none rounded-full bg-gray-50"
-                         src="{{ asset("storage/" . $references[$main2]->photo) }}"
+                         src="{{ $main2PhotoPath ?? $main2Placeholder }}"
                          alt="{{ __('alt.reference') . " " . $references[$main2]->creator_name }}">
                     <div class="flex-auto">
-                        <a href="{{ $references[$main2]->associate_link }}" target="_blank">
-                            <div class="font-semibold text-left">{{ $references[$main2]->creator_name }}</div>
-                            <div class="text-gray-600 text-left">{{ $references[$main2]->company }}</div>
-                        </a>
+                        <div class="font-semibold text-left">{{ $references[$main2]->creator_name }}</div>
+                        <div class="text-gray-600 text-left">{{ $references[$main2]->company }}</div>
                     </div>
                 </figcaption>
             </figure>

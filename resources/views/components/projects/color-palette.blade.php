@@ -7,6 +7,6 @@
         <div style="background-color: {{ $firstBg }};"  class="size-full pt-32 md:pt-0 md:col-span-3 rounded-t-2xl place-content-end pb-8 pl-8 {{ $firstTextColor }}"><span class="font-semibold block text-lg"> {{$firstTitle}} </span> {{ $firstBg }}</div>
         <div style="background-color: {{ $secondBg }};" class="size-full pt-16 md:pt-0 md:rounded-bl-2xl place-content-end pb-8 pl-8 {{ $secondTextColor }}"><span class="font-semibold block text-lg">  {{ $secondTitle }}  </span> {{ $secondBg }}</div>
         <div style="background-color: {{ $thirdBg }};" class="size-full pt-16 md:pt-0 place-content-end pb-8 pl-8 {{ $thirdTextColor }}"><span class="font-semibold block text-lg">  {{ $thirdTitle }}  </span> {{ $thirdBg }}</div>
-        <div style="background-color: {{ $fourthBg }};" class="size-full pt-16 md:pt-0 rounded-b-2xl md:rounded-br-2xl place-content-end pb-8 pl-8 {{ $fourthTextColor }}"><span class="font-semibold block text-lg">  {{ $fourthTitle }}  </span> {{ $fourthBg }}</div>
+        <div style="background-color: {{ $fourthBg }};" class="size-full pt-16 md:pt-0 rounded-b-2xl md:rounded-bl-none place-content-end pb-8 pl-8 {{ $fourthTextColor }}"><span class="font-semibold block text-lg">  {{ $fourthTitle }}  </span> {{ $fourthBg }}</div>
     </div>
 </section>

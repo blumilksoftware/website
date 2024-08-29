@@ -22,7 +22,7 @@ class ReferenceFactory extends Factory
             "photo" => sprintf("%s/%s", "factory", "reference.jpg"),
             "published" => $this->faker->boolean,
             "company" => $this->faker->company,
-            "associate_link" => $this->faker->url,
+            "sex" => $this->faker->randomElement(["male", "female"]),
         ];
     }
 }

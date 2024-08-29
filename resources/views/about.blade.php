@@ -41,7 +41,7 @@
             </div>
             <div class="flex flex-col gap-4">
                 <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_3") }}</dt>
-                <dd class="order-first text-6xl font-semibold">82</dd>
+                <dd class="order-first text-6xl font-semibold">85</dd>
             </div>
             <div class="flex flex-col gap-4">
                 <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_4") }}</dt>
@@ -95,21 +95,21 @@
                          class="w-full 2xl:w-[350px] 2xl:h-[440px] h-[440px] md:h-[330px] lg:h-[250px] object-cover rounded-xl" alt="{{ __('alt.lmt') }}"/>
                 </div>
                 <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-2 2xl:order-none">
-                    <p class="font-normal text-center md:text-start 2xl:pr-4">
-                        <span class="leading-relaxed text-md font-semibold md:font-bold block pb-3 px-4">{{ __("content.about.section_4.activity_1.title") }}</span>
-                        <span class="leading-6 md:leading-relaxed text-xs md:text-sm text-gray-400 px-5">{{ __("content.about.section_4.activity_1.subtitle") }}</span>
+                    <p class="font-normal text-center md:text-start 2xl:pr-4 px-3">
+                        <span class="leading-relaxed text-md font-semibold md:font-bold block pb-3">{{ __("content.about.section_4.activity_1.title") }}</span>
+                        <span class="leading-6 md:leading-relaxed text-xs md:text-sm text-gray-400">{{ __("content.about.section_4.activity_1.subtitle") }}</span>
                     </p>
                 </div>
                 <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-4 2xl:order-none">
-                    <p class="font-normal text-center md:text-start 2xl:pr-4">
-                        <span class="leading-relaxed text-md font-semibold md:font-bold block pb-3 px-4">{{ __("content.about.section_4.activity_2.title") }}</span>
-                        <span class="leading-6 md:leading-relaxed text-xs md:text-sm text-gray-400 px-5">{{ __("content.about.section_4.activity_2.subtitle") }}</span>
+                    <p class="font-normal text-center md:text-start 2xl:pr-4 px-3">
+                        <span class="leading-relaxed text-md font-semibold md:font-bold block pb-3">{{ __("content.about.section_4.activity_2.title") }}</span>
+                        <span class="leading-6 md:leading-relaxed text-xs md:text-sm text-gray-400">{{ __("content.about.section_4.activity_2.subtitle") }}</span>
                     </p>
                 </div>
                 <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:place-content-center order-6 md:order-5 2xl:order-none">
-                    <p class="font-normal text-center md:text-start 2xl:pr-4">
-                        <span class="leading-relaxed text-md font-semibold md:font-bold block pb-3 px-4">{{ __("content.about.section_4.activity_3.title") }}</span>
-                        <span class="leading-6 md:leading-relaxed text-xs md:text-sm text-gray-400 px-5">{{ __("content.about.section_4.activity_3.subtitle") }}</span>
+                    <p class="font-normal text-center md:text-start 2xl:pr-4 px-3">
+                        <span class="leading-relaxed text-md font-semibold md:font-bold block pb-3">{{ __("content.about.section_4.activity_3.title") }}</span>
+                        <span class="leading-6 md:leading-relaxed text-xs md:text-sm text-gray-400">{{ __("content.about.section_4.activity_3.subtitle") }}</span>
                     </p>
                 </div>
                 <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-5 md:order-6 2xl:order-none">
@@ -121,14 +121,76 @@
                          class="w-full 2xl:w-[350px] 2xl:h-[440px] h-[440px] md:h-[330px] lg:h-[250px] object-cover rounded-xl" alt="{{ __('alt.soda') }}"/>
                 </div>
                 <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-8 md:order-7">
-                    <p class="font-normal text-center md:text-start 2xl:pr-4">
-                        <span class="leading-relaxed text-md font-semibold md:font-bold block pb-3 px-4">{{ __("content.about.section_4.activity_4.title") }}</span>
-                        <span class="leading-6 md:leading-relaxed text-xs md:text-sm text-gray-400 px-5">{{ __("content.about.section_4.activity_4.subtitle") }}</span>
+                    <p class="font-normal text-center md:text-start 2xl:pr-4 px-3">
+                        <span class="leading-relaxed text-md font-semibold md:font-bold block pb-3">{{ __("content.about.section_4.activity_4.title") }}</span>
+                        <span class="leading-6 md:leading-relaxed text-xs md:text-sm text-gray-400">{{ __("content.about.section_4.activity_4.subtitle") }}</span>
                     </p>
                 </div>
             </div>
+        </div>
     </section>
     <section class="relative md:pb-16 pt-14 md:pt-28 sm:pt-32 mx-[8%] lg:mx-[15%] 2xl:mx-auto 2xl:max-w-7xl px-6 lg:px-8">
+        <div x-data="{
+    imageGalleryOpened: false,
+    imageGalleryActiveUrl: 0,
+    imageGalleryImageIndex: 0,
+    imageGallery: [
+        {
+            'photo': '{{ asset('images/photos/archery.webp') }}',
+            'alt': '{{ __('alt.archery') }}'
+        },
+        {
+            'photo': '{{ asset('images/photos/czech.webp') }}',
+            'alt': '{{ __('alt.czech') }}'
+        },
+        {
+            'photo': '{{ asset('images/photos/fireplace.webp') }}',
+            'alt': '{{ __('alt.fireplace') }}'
+        },
+        {
+            'photo': '{{ asset('images/photos/energylandia.webp') }}',
+            'alt': '{{ __('alt.energylandia') }}'
+        },
+        {
+            'photo': '{{ asset('images/photos/laravel.webp') }}',
+            'alt': '{{ __('alt.laravel') }}'
+        },
+        {
+            'photo': '{{ asset('images/photos/beer.webp') }}',
+            'alt': '{{ __('alt.beer') }}'
+        },
+        {
+            'photo': '{{ asset('images/photos/lasertag.webp') }}',
+            'alt': '{{ __('alt.lasertag') }}'
+        },
+        {
+            'photo': '{{ asset('images/photos/sea.webp') }}',
+            'alt': '{{ __('alt.sea') }}'
+        }
+    ],
+    imageGalleryOpen(event) {
+        this.imageGalleryImageIndex = parseInt(event.target.dataset.index);
+        this.imageGalleryActiveUrl = event.target.src;
+        this.imageGalleryOpened = true;
+    },
+    imageGalleryClose() {
+        this.imageGalleryOpened = false;
+        setTimeout(() => this.imageGalleryActiveUrl = null, 300);
+    },
+    imageGalleryNext(){
+        this.imageGalleryImageIndex = (this.imageGalleryImageIndex >= this.imageGallery.length - 1) ? 0 : (this.imageGalleryImageIndex + 1);
+        this.imageGalleryActiveUrl = this.imageGallery[this.imageGalleryImageIndex].photo;
+    },
+    imageGalleryPrev() {
+        this.imageGalleryImageIndex = (this.imageGalleryImageIndex <= 0) ? (this.imageGallery.length - 1) : (this.imageGalleryImageIndex - 1);
+        this.imageGalleryActiveUrl = this.imageGallery[this.imageGalleryImageIndex].photo;
+    }
+    }"
+             @image-gallery-next.window="imageGalleryNext()"
+             @image-gallery-prev.window="imageGalleryPrev()"
+             @keyup.right.window="imageGalleryNext();"
+             @keyup.left.window="imageGalleryPrev();"
+             class="w-full h-full select-none">
             <div class="pb-2 text-center">
                 <h2 class="text-3xl md:text-3xl lg:text-5xl font-semibold pb-8">{{ __("content.about.section_5.title_1") }}</h2>
                 <span
@@ -136,42 +198,67 @@
             </div>
             <div class="mx-auto mt-8 md:mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
                 <figure class="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
-                    <img class="md:h-96 w-full object-cover rounded-2xl transition hover:scale-105" src="{{ asset('images/photos/archery.webp') }}" alt="{{ __('alt.archery') }}">
+                    <img class="md:h-96 w-full object-cover rounded-2xl transition hover:scale-105 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[0].photo" :alt="imageGallery[0].alt" data-index="0">
                 </figure>
                 <div class="space-y-8 xl:contents xl:space-y-0">
                     <div class="space-y-8 xl:row-span-2">
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/czech.webp') }}" alt="{{ __('alt.czech') }}">
+                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[1].photo" :alt="imageGallery[1].alt" data-index="1">
                         </figure>
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-48 w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/fireplace.webp') }}" alt="{{ __('alt.fireplace') }}">
+                            <img class="h-48 w-full object-cover rounded-2xl transition hover:scale-110 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[2].photo" :alt="imageGallery[2].alt" data-index="2">
                         </figure>
                     </div>
                     <div class="space-y-8 xl:row-start-1 hidden sm:block">
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-60 w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/energylandia.webp') }}" alt="{{ __('alt.energylandia') }}">
+                            <img class="h-60 w-full object-cover rounded-2xl transition hover:scale-110 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[3].photo" :alt="imageGallery[3].alt" data-index="3">
                         </figure>
                     </div>
                 </div>
                 <div class="space-y-8 xl:contents xl:space-y-0 hidden sm:block">
                     <div class="space-y-8 xl:row-start-1">
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-60 w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/laravel.webp') }}" alt="{{ __('alt.laravel') }}">
+                            <img class="h-60 w-full object-cover rounded-2xl transition hover:scale-110 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[4].photo" :alt="imageGallery[4].alt" data-index="4">
                         </figure>
                     </div>
                     <div class="space-y-8 xl:row-span-2">
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/beer.webp') }}" alt="{{ __('alt.beer') }}">
+                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[5].photo" :alt="imageGallery[5].alt" data-index="5">
                         </figure>
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/lasertag.webp') }}" alt="{{ __('alt.lasertag') }}">
+                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[6].photo" :alt="imageGallery[6].alt" data-index="6">
                         </figure>
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110" src="{{ asset('images/photos/sea.webp') }}" alt="{{ __('alt.sea') }}">
+                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[7].photo" :alt="imageGallery[7].alt" data-index="7">
                         </figure>
                     </div>
                 </div>
             </div>
+            <template x-teleport="body">
+                <div
+                    x-show="imageGalleryOpened"
+                    x-transition:enter="transition ease-in-out duration-300"
+                    x-transition:enter-start="opacity-0"
+                    x-transition:leave="transition ease-in-in duration-300"
+                    x-transition:leave-end="opacity-0"
+                    @click="imageGalleryClose"
+                    @keydown.window.escape="imageGalleryClose"
+                    x-trap.inert.noscroll="imageGalleryOpened"
+                    class="fixed inset-0 z-[99] flex items-center justify-center bg-black bg-opacity-50 select-none cursor-zoom-out" x-cloak>
+                    <div class="relative flex items-center justify-center w-11/12 xl:w-4/5 h-11/12">
+                        <div @click="$event.stopPropagation(); $dispatch('image-gallery-prev')" class="absolute left-0 flex items-center justify-center text-white translate-x-10 rounded-full cursor-pointer xl:-translate-x-24 2xl:-translate-x-32 bg-white/10 w-14 h-14 hover:bg-white/20">
+                            <i class="ti ti-chevron-left text-3xl"></i>
+                        </div>
+                        <div class="flex items-center justify-center h-full p-8 rounded-lg cursor-auto">
+                            <img :src="imageGalleryActiveUrl" :alt="imageGallery[imageGalleryImageIndex].alt" class="h-full transition select-none md:max-h-[600px]"/>
+                        </div>
+                        <div @click="$event.stopPropagation(); $dispatch('image-gallery-next')" class="absolute right-0 flex items-center justify-center text-white -translate-x-10 rounded-full cursor-pointer xl:translate-x-24 2xl:translate-x-32 bg-white/10 w-14 h-14 hover:bg-white/20">
+                            <i class="ti ti-chevron-right text-3xl"></i>
+                        </div>
+                    </div>
+                </div>
+            </template>
+        </div>
     </section>
     <x-text-us-section/>
 @endsection

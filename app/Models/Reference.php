@@ -14,7 +14,7 @@ use Spatie\Translatable\HasTranslations;
  * @property string $photo
  * @property string $company
  * @property bool $published
- * @property string $associate_link
+ * @property string $sex
  */
 class Reference extends Model
 {
@@ -32,7 +32,7 @@ class Reference extends Model
         "company",
         "description",
         "published",
-        "associate_link",
+        "sex",
     ];
     protected $casts = [
         "description" => "array",
