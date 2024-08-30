@@ -81,7 +81,7 @@
 
         <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
             <div class="pb-28 text-center">
-                <h2 class="text-3xl md:text-3xl lg:text-5xl font-semibold pb-8">{{ __("content.about.section_4.title_1") }}</h2>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.about.section_4.title_1") }}</h2>
                 <span class="font-normal leading-loose md:leading-relaxed text-sm md:text-lg">{{ __("content.about.section_4.subtitle_1") }}</span>
             </div>
             <div class="grid md:grid-cols-10 md:grid-rows-4 gap-10">
@@ -191,9 +191,8 @@
              @keyup.left.window="imageGalleryPrev();"
              class="w-full h-full select-none">
             <div class="pb-2 text-center">
-                <h2 class="text-3xl md:text-3xl lg:text-5xl font-semibold pb-8">{{ __("content.about.section_5.title_1") }}</h2>
-                <span
-                    class="md:font-light leading-8 md:leading-relaxed text-sm md:text-xl relative">{{ __("content.about.section_5.subtitle_1") }}</span>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.about.section_5.title_1") }}</h2>
+                <span class="font-normal leading-loose md:leading-relaxed text-sm md:text-lg relative">{{ __("content.about.section_5.subtitle_1") }}</span>
             </div>
             <div class="mx-auto mt-8 md:mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-6 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
                 <figure class="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
