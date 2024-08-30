@@ -7,7 +7,7 @@
         </div>
 
         <div class="2xl:mt-2 text-left">
-            <span class="font-semibold text-sm sm:text-md lg:text-lg block pb-2 pr-4">
+            <span class="font-semibold text-sm sm:text-md lg:text-lg block pb-2">
                 {!! $title !!}
             </span>
             <div @class([

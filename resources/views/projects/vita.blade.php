@@ -21,31 +21,31 @@
         <div class="flex place-content-center flex-wrap gap-4 2xl:gap-10">
             <x-tile title="{{ __('projects.vita.challenges.challenge_1.title') }}"
                     description="{{ __('projects.vita.challenges.challenge_1.description') }}"
-                    class="max-w-[350px]">
+                    class="max-w-[350px] pr-4">
                 <x-icons.eye-code accent="stroke-vita"/>
             </x-tile>
 
             <x-tile title="{{ __('projects.vita.challenges.challenge_2.title') }}"
                     description="{{ __('projects.vita.challenges.challenge_2.description') }}"
-                    class="max-w-[350px]">
+                    class="max-w-[350px] pr-4">
                 <x-icons.shield-check accent="stroke-vita"/>
             </x-tile>
 
             <x-tile title="{{ __('projects.vita.challenges.challenge_3.title') }}"
                     description="{{ __('projects.vita.challenges.challenge_3.description') }}"
-                    class="max-w-[350px] lg:pr-6">
+                    class="max-w-[350px] pr-4 lg:pr-10">
                 <x-icons.app-window accent="stroke-vita"/>
             </x-tile>
 
             <x-tile title="{{ __('projects.vita.challenges.challenge_4.title') }}"
                     description="{{ __('projects.vita.challenges.challenge_4.description') }}"
-                    class="max-w-[350px]">
+                    class="max-w-[350px] pr-4">
                 <x-icons.credit-card accent="stroke-vita"/>
             </x-tile>
 
             <x-tile title="{{ __('projects.vita.challenges.challenge_5.title') }}"
                     description="{{ __('projects.vita.challenges.challenge_5.description') }}"
-                    class="max-w-[350px] lg:pr-10">
+                    class="max-w-[350px] pr-4 lg:pr-14">
                 <x-icons.photo-scan accent="stroke-vita"/>
             </x-tile>
         </div>
@@ -81,27 +81,27 @@
         <div class="flex place-content-center flex-wrap gap-4 2xl:gap-10">
             <x-tile title="{{ __('projects.vita.functionalities.functionality_1.title') }}"
                     description="{{ __('projects.vita.functionalities.functionality_1.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start">
+                    class="max-w-[350px] 2xl:place-items-start pr-4">
                 <x-icons.list accent="stroke-vita"/>
             </x-tile>
             <x-tile title="{{ __('projects.vita.functionalities.functionality_2.title') }}"
                     description="{{ __('projects.vita.functionalities.functionality_2.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start">
+                    class="max-w-[350px] 2xl:place-items-start pr-4">
                 <x-icons.calendar accent="stroke-vita"/>
             </x-tile>
             <x-tile title="{{ __('projects.vita.functionalities.functionality_3.title') }}"
                     description="{{ __('projects.vita.functionalities.functionality_3.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start">
+                    class="max-w-[350px] 2xl:place-items-start pr-4">
                 <x-icons.replace accent="stroke-vita"/>
             </x-tile>
             <x-tile title="{{ __('projects.vita.functionalities.functionality_4.title') }}"
                     description="{{ __('projects.vita.functionalities.functionality_4.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start">
+                    class="max-w-[350px] 2xl:place-items-start pr-4">
                 <x-icons.nurse accent="stroke-vita"/>
             </x-tile>
             <x-tile title="{{ __('projects.vita.functionalities.functionality_5.title') }}"
                     description="{{ __('projects.vita.functionalities.functionality_5.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start">
+                    class="max-w-[350px] 2xl:place-items-start pr-4">
                 <x-icons.archive accent="stroke-vita"/>
             </x-tile>
         </div>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+     class="icon icon-tabler icons-tabler-outline icon-tabler-math-symbols fill-none @isset($accent) {{ $accent }} @else stroke-current @endisset"
+     aria-hidden="true">
+    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+    <path stroke="#000000" d="M3 12l18 0"/>
+    <path stroke="#000000" d="M12 3l0 18"/>
+    <path d="M16.5 4.5l3 3"/>
+    <path d="M19.5 4.5l-3 3"/>
+    <path d="M6 4l0 4"/>
+    <path d="M4 6l4 0"/>
+    <path d="M18 16l.01 0"/>
+    <path d="M18 20l.01 0"/>
+    <path d="M4 18l4 0"/>
+</svg>

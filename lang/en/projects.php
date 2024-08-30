@@ -220,7 +220,7 @@ return [
             ],
             "challenge_3" => [
                 "title" => "Data security",
-                "description" => "in terms of access control",
+                "description" => "in the field of access control and authentication",
             ],
         ],
         "functionalities" => [
@@ -234,11 +234,11 @@ return [
             ],
             "functionality_3" => [
                 "title" => "CO2 Emissions Calculator",
-                "description" => "for the whole process",
+                "description" => "for the entire process based on indicators",
             ],
             "functionality_4" => [
                 "title" => "Generating a report",
-                "description" => "for the selected year and location",
+                "description" => "for a selected year and location with the option of export",
             ],
             "functionality_5" => [
                 "title" => "Controlled access to the system",

@@ -19,31 +19,31 @@
         <div class="flex place-content-center flex-wrap gap-4 2xl:gap-10">
             <x-tile title="{{ __('projects.gtb.challenges.challenge_1.title') }}"
                     description="{{ __('projects.gtb.challenges.challenge_1.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start">
+                    class="max-w-[350px] 2xl:place-items-start pr-4">
                 <x-icons.app-window accent="stroke-gtb"/>
             </x-tile>
 
             <x-tile title="{{ __('projects.gtb.challenges.challenge_2.title') }}"
                     description="{{ __('projects.gtb.challenges.challenge_2.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start">
+                    class="max-w-[350px] 2xl:place-items-start pr-4">
                 <x-icons.category accent="stroke-gtb"/>
             </x-tile>
 
             <x-tile title="{{ __('projects.gtb.challenges.challenge_3.title') }}"
                     description="{{ __('projects.gtb.challenges.challenge_3.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start">
+                    class="max-w-[350px] 2xl:place-items-start pr-4">
                 <x-icons.credit-card accent="stroke-gtb"/>
             </x-tile>
 
             <x-tile title="{{ __('projects.gtb.challenges.challenge_4.title') }}"
                     description="{{ __('projects.gtb.challenges.challenge_4.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start">
+                    class="max-w-[350px] 2xl:place-items-start pr-4">
                 <x-icons.package-export accent="stroke-gtb"/>
             </x-tile>
 
             <x-tile title="{{ __('projects.gtb.challenges.challenge_5.title') }}"
                     description="{{ __('projects.gtb.challenges.challenge_5.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start      ">
+                    class="max-w-[350px] 2xl:place-items-start pr-4">
                 <x-icons.shield-check accent="stroke-gtb"/>
             </x-tile>
         </div>
@@ -71,27 +71,27 @@
         <div class="flex place-content-center flex-wrap gap-4 2xl:gap-10">
             <x-tile title="{{ __('projects.gtb.functionalities.functionality_1.title') }}"
                     description="{{ __('projects.gtb.functionalities.functionality_1.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start">
+                    class="max-w-[350px] 2xl:place-items-start pr-4">
                 <x-icons.chart-infographic accent="stroke-gtb" />
             </x-tile>
             <x-tile title="{{ __('projects.gtb.functionalities.functionality_2.title') }}"
                     description="{{ __('projects.gtb.functionalities.functionality_2.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start">
+                    class="max-w-[350px] 2xl:place-items-start pr-4">
                 <x-icons.box accent="stroke-gtb" />
             </x-tile>
             <x-tile title="{{ __('projects.gtb.functionalities.functionality_3.title') }}"
                     description="{{ __('projects.gtb.functionalities.functionality_3.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start">
+                    class="max-w-[350px] 2xl:place-items-start pr-4">
                 <x-icons.packages accent="stroke-gtb" />
             </x-tile>
             <x-tile title="{{ __('projects.gtb.functionalities.functionality_4.title') }}"
                     description="{{ __('projects.gtb.functionalities.functionality_4.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start">
+                    class="max-w-[350px] 2xl:place-items-start pr-4">
                 <x-icons.key accent="stroke-gtb" />
             </x-tile>
             <x-tile title="{{ __('projects.gtb.functionalities.functionality_5.title') }}"
                     description="{{ __('projects.gtb.functionalities.functionality_5.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start">
+                    class="max-w-[350px] 2xl:place-items-start pr-4">
                 <x-icons.shield-check accent="stroke-gtb" />
             </x-tile>
         </div>

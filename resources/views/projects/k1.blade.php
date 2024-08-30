@@ -17,25 +17,25 @@
         <div class="flex place-content-center flex-wrap gap-4 lg:gap-10">
             <x-tile title="{{ __('projects.k1.challenges.challenge_1.title') }}"
                     description="{{ __('projects.k1.challenges.challenge_1.description') }}"
-                    class="max-w-[350px] pr-16 md:pr-0 lg:pr-9">
+                    class="max-w-[350px] pr-16 md:pr-4 lg:pr-12">
                     <x-icons.shield-check accent="stroke-k1"/>
             </x-tile>
 
             <x-tile title="{{ __('projects.k1.challenges.challenge_2.title') }}"
                     description="{{ __('projects.k1.challenges.challenge_2.description') }}"
-                    class="max-w-[350px] pr-2">
+                    class="max-w-[350px] pr-6">
                     <x-icons.user-check accent="stroke-k1"/>
             </x-tile>
 
             <x-tile title="{{ __('projects.k1.challenges.challenge_3.title') }}"
                     description="{{ __('projects.k1.challenges.challenge_3.description') }}"
-                    class="max-w-[350px] pr-3 md:pr-0">
+                    class="max-w-[350px] pr-8 md:pr-4">
                     <x-icons.devices accent="stroke-k1"/>
             </x-tile>
 
             <x-tile title="{{ __('projects.k1.challenges.challenge_4.title') }}"
                     description="{{ __('projects.k1.challenges.challenge_4.description') }}"
-                    class="max-w-[350px]">
+                    class="max-w-[350px] pr-4">
                     <x-icons.app-window accent="stroke-k1"/>
             </x-tile>
 
@@ -59,27 +59,27 @@
         <div class="flex place-content-center flex-wrap gap-4 2xl:gap-10">
             <x-tile title="{{ __('projects.k1.functionalities.functionality_1.title') }}"
                     description="{{ __('projects.k1.functionalities.functionality_1.description') }}"
-                    class="max-w-[350px] pr-2">
+                    class="max-w-[350px] pr-6">
                 <x-icons.subtask accent="stroke-k1" />
             </x-tile>
             <x-tile title="{{ __('projects.k1.functionalities.functionality_2.title') }}"
                     description="{{ __('projects.k1.functionalities.functionality_2.description') }}"
-                    class="max-w-[350px]">
+                    class="max-w-[350px] pr-4">
                 <x-icons.heart-rate-monitor accent="stroke-k1" />
             </x-tile>
             <x-tile title="{{ __('projects.k1.functionalities.functionality_3.title') }}"
                     description="{{ __('projects.k1.functionalities.functionality_3.description') }}"
-                    class="max-w-[350px] pr-2">
+                    class="max-w-[350px] pr-6">
                 <x-icons.users accent="stroke-k1" />
             </x-tile>
             <x-tile title="{{ __('projects.k1.functionalities.functionality_4.title') }}"
                     description="{{ __('projects.k1.functionalities.functionality_4.description') }}"
-                    class="max-w-[350px]">
+                    class="max-w-[350px] pr-4">
                 <x-icons.list accent="stroke-k1" />
             </x-tile>
             <x-tile title="{{ __('projects.k1.functionalities.functionality_5.title') }}"
                     description="{{ __('projects.k1.functionalities.functionality_5.description') }}"
-                    class="max-w-[350px]">
+                    class="max-w-[350px] pr-4">
                 <x-icons.calendar-plus accent="stroke-k1" />
             </x-tile>
         </div>

@@ -220,7 +220,7 @@ return [
             ],
             "challenge_3" => [
                 "title" => "Bezpieczeństwo danych",
-                "description" => "w zakresie kontroli dostępu",
+                "description" => "w zakresie kontroli dostępu i uwierzytelniania",
             ],
         ],
         "functionalities" => [
@@ -234,11 +234,11 @@ return [
             ],
             "functionality_3" => [
                 "title" => "Kalkulator emisji CO2",
-                "description" => "dla całego procesu",
+                "description" => "dla całego procesu na podstawie wskaźników",
             ],
             "functionality_4" => [
                 "title" => "Generowanie raportu",
-                "description" => "dla wybranego roku i lokalizacji",
+                "description" => "dla wybranego roku i lokalizacji z możliwością eksportu",
             ],
             "functionality_5" => [
                 "title" => "Kontrolowany dostęp do systemu",
