@@ -31,6 +31,14 @@
                 <div class="order-3">
                     <div class="prose">{!! $news['description'] !!}</div>
                 </div>
+                <div class="order-4">
+                    @if(!empty($news['url']))
+                        <a class="block text-md lg:text-lg font-light"
+                           href="{{ $news['url'] }}"
+                           target="_blank">
+                            <i class="ti ti-caret-right-filled text-xl md:text-2xl"></i> {{ $news['url'] }}</a>
+                    @endif
+                </div>
                 <div class="lg:block hidden order-4 mt-20">
                     <h3 class="text-lg lg:text-xl font-semibold pb-4">{{ __("content.activity.section_1.title_1") }}</h3>
                     <div class="flex flex-col place-items-center md:place-items-start md:flex-row gap-16 w-full mt-4">
@@ -77,9 +85,11 @@
                     <h3 class="text-lg lg:text-xl font-semibold">{{ __("content.activity.section_1.title_3") }}</h3>
                     <div class="flex flex-wrap gap-4 pt-4">
                         @foreach($peopleTags as $tag)
+                            <a href="{{ route('news', ['tag' => $tag]) }}">
                             <span class="capitalize justify-between font-light text-sm text-gray-500 border border-gray-300 w-fit px-3 py-2 rounded-md">
                                 {{ $tag['title'] }}
                             </span>
+                            </a>
                         @endforeach
                     </div>
                 </div>

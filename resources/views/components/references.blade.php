@@ -115,13 +115,11 @@
                 </blockquote>
                 <figcaption class="flex items-center gap-x-4 gap-y-4 md:border-t md:border-gray-900/10 px-6 py-4 sm:flex-nowrap">
                     <img class="h-10 w-10 flex-none rounded-full bg-gray-50"
-                         src="{{ asset("storage/" . $references[$main]->photo) }}"
+                         src="{{ $references[$main]->getPhotoPath() }}"
                          alt="{{ __('alt.reference') . " " . $references[$main]->creator_name }}">
                     <div class="flex-auto">
-                        <a href="{{ $references[$main]->associate_link }}" target="_blank">
-                            <div class="font-semibold text-left">{{ $references[$main]->creator_name }}</div>
-                            <div class="text-gray-600 text-left">{{ $references[$main]->company }}</div>
-                        </a>
+                        <div class="font-semibold text-left">{{ $references[$main]->creator_name }}</div>
+                        <div class="text-gray-600 text-left">{{ $references[$main]->company }}</div>
                     </div>
                 </figcaption>
             </figure>
@@ -133,13 +131,11 @@
                 </blockquote>
                 <figcaption class="flex flex-wrap items-center gap-x-4 gap-y-4 md:border-t md:border-gray-900/10 px-6 py-4 sm:flex-nowrap">
                     <img class="h-10 w-10 flex-none rounded-full bg-gray-50"
-                         src="{{ asset("storage/" . $references[$main2]->photo) }}"
+                         src="{{ $references[$main2]->getPhotoPath() }}"
                          alt="{{ __('alt.reference') . " " . $references[$main2]->creator_name }}">
                     <div class="flex-auto">
-                        <a href="{{ $references[$main2]->associate_link }}" target="_blank">
-                            <div class="font-semibold text-left">{{ $references[$main2]->creator_name }}</div>
-                            <div class="text-gray-600 text-left">{{ $references[$main2]->company }}</div>
-                        </a>
+                        <div class="font-semibold text-left">{{ $references[$main2]->creator_name }}</div>
+                        <div class="text-gray-600 text-left">{{ $references[$main2]->company }}</div>
                     </div>
                 </figcaption>
             </figure>

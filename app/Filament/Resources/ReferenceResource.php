@@ -34,13 +34,16 @@ class ReferenceResource extends Resource
                             ->label("Imię i nazwisko autora")
                             ->required()
                             ->maxLength(255),
+                        Forms\Components\Radio::make("sex")
+                            ->label("Płeć")
+                            ->required()
+                            ->options([
+                                "male" => "Mężczyzna",
+                                "female" => "Kobieta",
+                            ]),
                         Forms\Components\TextInput::make("company")
                             ->label("Firma")
                             ->required()
-                            ->maxLength(255),
-                        Forms\Components\TextInput::make("associate_link")
-                            ->label("Link do LinkedIn")
-                            ->url()
                             ->maxLength(255),
                         Forms\Components\Checkbox::make("published")
                             ->label("Opublikowane"),
@@ -57,7 +60,6 @@ class ReferenceResource extends Resource
                             ->directory(Reference::PHOTOS_DIRECTORY)
                             ->imageEditor()
                             ->rules(["mimes:jpeg,png,webp"])
-                            ->required()
                             ->multiple(false)
                             ->maxSize(1000),
                     ]),

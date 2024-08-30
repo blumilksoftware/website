@@ -53,7 +53,7 @@
                                   first-title="{{ __('projects.vita.colors.first') }}" first-bg="#FAD12A" first-text-color="text-black"
                                   second-title="{{ __('projects.vita.colors.second') }}" second-bg="#545555" second-text-color="text-white"
                                   third-title="{{ __('projects.vita.colors.third') }}" third-bg="#E7E9EC" third-text-color="text-black"
-                                  fourth-title="{{ __('projects.vita.colors.fourth') }}" fourth-bg="#FFFFFF" fourth-text-color="text-black"/>
+                                  fourth-title="{{ __('projects.vita.colors.fourth') }}" fourth-bg="#333534" fourth-text-color="text-white"/>
 
     <x-projects.typography font="poppins" bg="bg-[#545555]">
         <span class="font-semibold">{{ __('projects.gtb.typography_description_1') }}</span> {{ __('projects.gtb.typography_description_2') }}
@@ -102,8 +102,7 @@
     <x-projects.reference      name="{{ __('projects.gtb.testimonial.name') }}"
                                company="{{ __('projects.gtb.testimonial.company') }}"
                                description="{{ __('projects.gtb.testimonial.description') }}"
-                               photo="graphics/placeholders/man.svg"
-                               link="https://www.linkedin.com/in/eduardo-oliveira-1b1b1b1b/"/>
+                               photo="{{ asset('graphics/placeholders/male.svg') }}"/>
 
     <x-text-us-section/>
 @endsection

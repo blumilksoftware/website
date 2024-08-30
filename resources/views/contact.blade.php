@@ -11,9 +11,9 @@
 
     <div class="mx-[10%] md:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto grid xl:grid-cols-2 xl:grid-rows-4 grid-flow-row-dense content-center text-black xl:pb-8 mt-12 items-start">
         <div class="h-min">
-            <h4 class="text-2xl sm:text-3xl lg:text-4xl text-center xl:text-left font-bold text-black pb-4">
+            <h4 class="text-2xl sm:text-3xl lg:text-4xl text-center xl:text-left font-bold text-blue-dark pb-4">
                 {{ __('content.contact.title_1') }}</h4>
-            <p class="text-md leading-relaxed text-gray-500 text-center xl:text-left">
+            <p class="text-md leading-relaxed text-[#6B6E70] text-center xl:text-left">
                 {{ __('content.contact.subtitle') }}
             </p>
         </div>
@@ -23,7 +23,7 @@
                 <div class="grid gap-y-3">
                     <div>
                         <label for="email"
-                               class="block text-sm font-normal leading-6 text-gray-700 ml-2">{{ __('content.contact.form.email') }}</label>
+                               class="block text-sm font-normal leading-6 text-blue-dark ml-2">{{ __('content.contact.form.email') }}</label>
                         <div class="mt-2.5 ">
                             <input name="email" id="email" autocomplete="given-e-mail"
                                    value="{{ old('email') }}"
@@ -35,7 +35,7 @@
                     </div>
                     <div>
                         <label for="topic"
-                               class="block text-sm font-normal leading-6 text-gray-700 ml-2">{{ __('content.contact.form.title') }}</label>
+                               class="block text-sm font-normal leading-6 text-blue-dark ml-2">{{ __('content.contact.form.title') }}</label>
                         <div class="mt-2.5">
                             <input type="text" name="topic" id="topic" autocomplete="topic"
                                    value="{{ old('topic') }}"
@@ -47,7 +47,7 @@
                     </div>
                     <div>
                         <label for="message"
-                               class="block text-sm font-normal leading-6 text-gray-700 ml-2">{{ __('content.contact.form.message') }}</label>
+                               class="block text-sm font-normal leading-6 text-blue-dark ml-2">{{ __('content.contact.form.message') }}</label>
                         <div class="mt-2.5">
                                 <textarea id="message" name="message" rows="10" autocomplete="message"
                                           class="block w-full rounded-md border-0 px-3.5 py-2 min-h-12 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-gray-400 sm:text-sm sm:leading-6">{{ old('message') }}</textarea>
@@ -60,8 +60,8 @@
                 <div class="flex flex-col items-left mt-2">
                     <label for="consents" class="flex items-center">
                         <input type="checkbox" name="consents" id="consents"
-                               class="w-4 h-4 rounded-sm border-gray-300 focus:ring-0 checked:text-website-light">
-                        <span class="text-xs font-normal text-gray-500 ml-2 pt-4">
+                               class="w-4 h-4 rounded-sm border-[#6B6E70] focus:ring-0 checked:text-website-light">
+                        <span class="text-xs font-normal text-[#6B6E70] ml-2 pt-4">
                                     {{ __('content.contact.policy.part_1') }}
                                     <a href="{{ route('privacy-policy') }}" target="_blank"
                                        class="text-website-normal">{{ __('content.contact.policy.part_2') }}</a>
@@ -83,24 +83,24 @@
         <div class="h-full row-span-3">
             <div id="map" class="h-[40vh] xl:h-[20vh] w-full rounded-xl py-16 lg:py-0"></div>
             <div class="py-16">
-                <h1 class="text-2xl font-semibold text-black mb-4 text-center  md:text-left">{{ __('content.contact.company') }}</h1>
-                <div class="flex flex-col lg:flex-row text-sm text-gray-400 gap-x-6">
-                    <div class="flex mt-3 items-start">
+                <h1 class="text-2xl font-semibold text-blue-dark mb-4 text-center  md:text-left">{{ __('content.contact.company') }}</h1>
+                <div class="flex flex-col lg:flex-row text-sm text-[#6B6E70] gap-x-6">
+                    <div class="flex mt-3 items-center">
                         <span class="sr-only">{{ __('alt.location') }}</span>
-                        <x-icons.location/>
+                        <i class="ti ti-map-pin text-2xl text-blue-dark"></i>
                         <div class="ml-4">
                             <div>{{ __('content.contact.location.address') }}</div>
                             <div>{{ __('content.contact.location.PostalCode') }}</div>
                         </div>
                     </div>
-                    <div class="flex mt-3 items-start">
+                    <div class="flex mt-3 items-center">
                         <span class="sr-only">{{ __('alt.phone') }}</span>
-                        <x-icons.phone/>
+                        <i class="ti ti-phone text-2xl text-blue-dark"></i>
                         <div class="ml-4">{{ __('content.contact.phone') }}</div>
                     </div>
-                    <div class="flex mt-3 items-start">
+                    <div class="flex mt-3 items-center">
                         <span class="sr-only">{{ __('alt.mail') }}</span>
-                        <x-icons.mail/>
+                        <i class="ti ti-mail text-2xl text-blue-dark"></i>
                         <div class="ml-4">{{ __('content.contact.email') }}</div>
                     </div>
                 </div>

@@ -14,7 +14,7 @@ use Spatie\Translatable\HasTranslations;
  * @property string $photo
  * @property string $company
  * @property bool $published
- * @property string $associate_link
+ * @property string $sex
  */
 class Reference extends Model
 {
@@ -32,10 +32,21 @@ class Reference extends Model
         "company",
         "description",
         "published",
-        "associate_link",
+        "sex",
     ];
     protected $casts = [
         "description" => "array",
         "published" => "boolean",
     ];
+
+    public function getPhotoPath(): string
+    {
+        if (file_exists(storage_path("app/public/" . $this->photo)) && !!$this->photo) {
+            return asset("storage/" . $this->photo);
+        }
+
+        return $this->sex === "female"
+            ? asset("graphics/placeholders/female.svg")
+            : asset("graphics/placeholders/male.svg");
+    }
 }

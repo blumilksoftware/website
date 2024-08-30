@@ -26,12 +26,12 @@
             </a>
         </div>
     </div>
-    <div class="px-16 w-full py-6 md:py-6 md:flex md:items-center md:justify-between bg-gray-extraLight">
+    <div class="px-16 w-full py-6 md:py-6 md:flex md:items-center md:justify-between bg-gray-extraLight text-[#6B6E70]">
         <div>
-            <p class="text-center text-sm leading-5 text-gray-500">Copyright &copy; 2024 | Blumilk</p>
+            <p class="text-center text-sm leading-5">Copyright &copy; 2024 | Blumilk</p>
         </div>
         <div class="mt-2 md:mt-0">
-            <p class="text-center text-sm leading-5 text-gray-500">
+            <p class="text-center text-sm leading-5">
                 <a href="{{ route('privacy-policy') }}" target="_blank" class="font-normal whitespace-normal">{{ __('footer.policy') }}</a> | <a href="{{ route('data') }}">{{ __('footer.data') }}</a></p>
         </div>
     </div>

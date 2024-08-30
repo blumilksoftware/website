@@ -22,7 +22,7 @@
             <time datetime="{{ $news['published_at'] }}" class="text-gray-400 my-auto">
                 {{ $news['published_at'] }}
             </time>
-            @if($isFirst) <span class="hidden lg:block"><x-icons.arrow-up-right/></span> @endif
+            @if($isFirst) <span class="hidden lg:block"><i class="ti ti-arrow-up-right text-5xl"></i></span> @endif
         </div>
         <div class="font-semibold text-md">
             <h3
