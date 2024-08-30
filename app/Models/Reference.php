@@ -38,4 +38,15 @@ class Reference extends Model
         "description" => "array",
         "published" => "boolean",
     ];
+
+    public function getPhotoPath(): string
+    {
+        if (file_exists(storage_path("app/public/" . $this->photo)) && !!$this->photo) {
+            return asset("storage/" . $this->photo);
+        }
+
+        return $this->sex === "female"
+            ? asset("graphics/placeholders/female.svg")
+            : asset("graphics/placeholders/male.svg");
+    }
 }

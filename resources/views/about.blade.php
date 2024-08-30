@@ -82,8 +82,7 @@
         <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
             <div class="pb-28 text-center">
                 <h2 class="text-3xl md:text-3xl lg:text-5xl font-semibold pb-8">{{ __("content.about.section_4.title_1") }}</h2>
-                <span
-                    class="font-normal leading-loose md:leading-relaxed text-sm md:text-xl relative">{{ __("content.about.section_4.subtitle_1") }}</span>
+                <span class="font-normal leading-loose md:leading-relaxed text-sm md:text-lg">{{ __("content.about.section_4.subtitle_1") }}</span>
             </div>
             <div class="grid md:grid-cols-10 md:grid-rows-4 gap-10">
                 <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-1 2xl:order-none">
