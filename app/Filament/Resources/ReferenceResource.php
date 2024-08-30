@@ -36,6 +36,7 @@ class ReferenceResource extends Resource
                             ->maxLength(255),
                         Forms\Components\Radio::make("sex")
                             ->label("Płeć")
+                            ->required()
                             ->options([
                                 "male" => "Mężczyzna",
                                 "female" => "Kobieta",

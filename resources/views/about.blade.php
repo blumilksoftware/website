@@ -132,7 +132,7 @@
     <section class="relative md:pb-16 pt-14 md:pt-28 sm:pt-32 mx-[8%] lg:mx-[15%] 2xl:mx-auto 2xl:max-w-7xl px-6 lg:px-8">
         <div x-data="{
     imageGalleryOpened: false,
-    imageGalleryActiveUrl: 0,
+    imageGalleryActiveUrl: null,
     imageGalleryImageIndex: 0,
     imageGallery: [
         {
