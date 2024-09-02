@@ -17,7 +17,7 @@
         <div class="flex place-content-center flex-wrap gap-4 lg:gap-10">
             <x-tile title="{{ __('projects.k1.challenges.challenge_1.title') }}"
                     description="{{ __('projects.k1.challenges.challenge_1.description') }}"
-                    class="max-w-[350px] pr-16 md:pr-4 lg:pr-12">
+                    class="max-w-[350px] pr-8 md:pr-4 lg:pr-12">
                     <x-icons.shield-check accent="stroke-k1"/>
             </x-tile>
 
@@ -27,10 +27,10 @@
                     <x-icons.user-check accent="stroke-k1"/>
             </x-tile>
 
-            <x-tile title="{{ __('projects.k1.challenges.challenge_3.title') }}"
-                    description="{{ __('projects.k1.challenges.challenge_3.description') }}"
-                    class="max-w-[350px] pr-8 md:pr-4">
-                    <x-icons.devices accent="stroke-k1"/>
+            <x-tile description="{{ __('projects.k1.challenges.challenge_3.description') }}"
+                    class="max-w-[350px] pr-6 md:pr-4">
+                <x-slot:title><span class="md:pr-12">{{ __('projects.k1.challenges.challenge_3.title') }}</span></x-slot:title>
+                <x-icons.devices accent="stroke-k1"/>
             </x-tile>
 
             <x-tile title="{{ __('projects.k1.challenges.challenge_4.title') }}"
@@ -39,10 +39,10 @@
                     <x-icons.app-window accent="stroke-k1"/>
             </x-tile>
 
-            <x-tile title="{{ __('projects.k1.challenges.challenge_5.title') }}"
-                    description="{{ __('projects.k1.challenges.challenge_5.description') }}"
-                    class="max-w-[350px] pr-2 md:pr-0 lg:pr-8">
-                    <x-icons.photo-scan accent="stroke-k1"/>
+            <x-tile description="{{ __('projects.k1.challenges.challenge_5.description') }}"
+                    class="max-w-[350px]">
+                <x-slot:title><span class="pr-12">{{ __('projects.k1.challenges.challenge_5.title') }}</span></x-slot:title>
+                <x-icons.photo-scan accent="stroke-k1"/>
             </x-tile>
         </div>
     </section>
@@ -75,6 +75,7 @@
             <x-tile title="{{ __('projects.k1.functionalities.functionality_4.title') }}"
                     description="{{ __('projects.k1.functionalities.functionality_4.description') }}"
                     class="max-w-[350px] pr-4">
+                <x-slot:title><span class="pr-6">{{ __('projects.k1.functionalities.functionality_4.title') }}</span></x-slot:title>
                 <x-icons.list accent="stroke-k1" />
             </x-tile>
             <x-tile title="{{ __('projects.k1.functionalities.functionality_5.title') }}"
