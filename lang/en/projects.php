@@ -205,4 +205,56 @@ return [
             "mobile" => "phone with the application",
         ],
     ],
+    "carbon" => [
+        "title_1" => "Application for collecting data and generating reports",
+        "title_2" => "regarding carbon footprint",
+        "project_description" => "The tool allows users to independently calculate CO2 emissions, providing a large set of indicators that are the basis for calculations.",
+        "challenges" => [
+            "challenge_1" => [
+                "title" => "Advanced role system",
+                "description" => "enabling work in the system on many levels",
+            ],
+            "challenge_2" => [
+                "title" => "Implementation of CO2 counting algorithms",
+                "description" => "understanding the complexity of calculations",
+            ],
+            "challenge_3" => [
+                "title" => "Data security",
+                "description" => "in the field of access control and authentication",
+            ],
+        ],
+        "functionalities" => [
+            "functionality_1" => [
+                "title" => "Application management",
+                "description" => "in the context of users, locations, processes and products",
+            ],
+            "functionality_2" => [
+                "title" => "Indicator database",
+                "description" => "global and individual user list",
+            ],
+            "functionality_3" => [
+                "title" => "CO2 Emissions Calculator",
+                "description" => "for the entire process based on indicators",
+            ],
+            "functionality_4" => [
+                "title" => "Generating a report",
+                "description" => "for a selected year and location with the option of export",
+            ],
+            "functionality_5" => [
+                "title" => "Controlled access to the system",
+                "description" => "managed from the administrator level",
+            ],
+        ],
+        "testimonial" => [
+            "name" => "Dominika Pasternak",
+            "company" => "Deputy Chief Accountant",
+            "description" => "The created application significantly improved the processes within the company. The team demonstrated experience, great flexibility and understanding of our specific needs. Thanks to free communication, we were able to participate in the development of the software on an ongoing basis and submit our suggestions.",
+        ],
+        "alt" => [
+            "laptop_1" => "laptop with application page",
+            "laptop_2" => "laptop standing on a desk with an open application",
+            "sitemap" => "sitemap",
+            "monitor" => "monitor on yellow background with application",
+        ],
+    ],
 ];

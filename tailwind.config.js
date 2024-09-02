@@ -47,6 +47,7 @@ module.exports = {
         k1: '#FF5555',
         vita: '#9676F9',
         gtb: '#F9C83B',
+        carbon: '#F39200',
       },
       fontFamily: {
         sora: ['Sora', 'sans-serif'],

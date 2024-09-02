@@ -205,4 +205,56 @@ return [
             "mobile" => "telefon z aplikacją",
         ],
     ],
+    "carbon" => [
+        "title_1" => "Aplikacja do zbierania danych i generowania raportów",
+        "title_2" => "dotyczących śladu węglowego",
+        "project_description" => "Narzędzie pozwala użytkownikom na samodzielne wyliczenie emisyjności CO2, dostarczając duży zasób wskaźników będących podstawą wyliczeń.",
+        "challenges" => [
+            "challenge_1" => [
+                "title" => "Zaawansowany system ról",
+                "description" => "umożliwiający pracę w systemie na wielu poziomach",
+            ],
+            "challenge_2" => [
+                "title" => "Implementacja algorytmów do liczenia CO2",
+                "description" => "zrozumienie złożoności wyliczeń",
+            ],
+            "challenge_3" => [
+                "title" => "Bezpieczeństwo danych",
+                "description" => "w zakresie kontroli dostępu i uwierzytelniania",
+            ],
+        ],
+        "functionalities" => [
+            "functionality_1" => [
+                "title" => "Zarządzanie aplikacją",
+                "description" => "w kontekście użytkowników, lokalizacji, procesów i produktów",
+            ],
+            "functionality_2" => [
+                "title" => "Baza wskaźników",
+                "description" => "globalna oraz indywidualna lista użytkownika",
+            ],
+            "functionality_3" => [
+                "title" => "Kalkulator emisji CO2",
+                "description" => "dla całego procesu na podstawie wskaźników",
+            ],
+            "functionality_4" => [
+                "title" => "Generowanie raportu",
+                "description" => "dla wybranego roku i lokalizacji z możliwością eksportu",
+            ],
+            "functionality_5" => [
+                "title" => "Kontrolowany dostęp do systemu",
+                "description" => "zarządzany z poziomu administratora",
+            ],
+        ],
+        "testimonial" => [
+            "name" => "Dominika Pasternak",
+            "company" => "Deputy Chief Accountant",
+            "description" => "Stworzona aplikacja znacznie usprawniła procesy wewnątrz firmy. Zespół wykazał się doświadczeniem, dużą elastycznością i zrozumieniem naszych specyficznych potrzeb. Dzięki swobodnej komunikacji mogliśmy na bieżąco uczestniczyć w tworzeniu oprogramowania i zgłaszać swoje sugestie.",
+        ],
+        "alt" => [
+            "laptop_1" => "laptop ze stroną aplikacji",
+            "laptop_2" => "laptop stojący na biurku z otwartą aplikacją",
+            "sitemap" => "mapa aplikacji",
+            "monitor" => "monitor na żółtym tle z aplikacją",
+        ],
+    ],
 ];
