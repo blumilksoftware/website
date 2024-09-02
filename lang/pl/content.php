@@ -55,14 +55,14 @@ return [
             "subtitle_1" => "Dowiedz się, jak nasze realizacje przekształciły wyzwania klientów w",
             "subtitle_2" => "skuteczne rozwiązania.",
             "tile_1" => [
-                "title_1" => "Powiadomienie",
-                "description_1" => "Tutaj jest miejsce na przykładowy komponent użyty w aplikacji. Może to być modal, dropdown czy cokolwiek.",
+                "title_1" => "Cel projektu",
+                "description_1" => "Stworzenie aplikacji do zamawiania usług medycznych z dedykowanym panelem dla pracowników i klientów.",
             ],
             "tile_2" => [
-                "title_1" => "Tytuł",
-                "description_1" => "Staraj się, aby Twoje wiadomości były krótkie, ale upewnij się, że obejmują wszystko, co masz do powiedzenia.",
+                "title_1" => "Zarządzaj swoimi wizytami",
+                "description_1" => "Bezpieczny i intuicyjny proces zamawiania oraz płatności za wybrane usługi.",
             ],
-            "badge" => "Tutaj też przykładowy badge z aplikacji.",
+            "badge" => "Design wpasowujący się w specyfikę branży",
         ],
         "section_5" => [
             "title_1" => "Co o nas mówią",
