@@ -80,13 +80,12 @@
             </div>
         </section>
 
-        <!-- TODO: Update case study (issue #294) -->
         <section class="relative">
             <div class="relative mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto pt-28 pb-20 md:pb-32 lg:pb-44">
                 <div class="pb-8 text-center">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-4 md:pb-8">{{ __("content.home.section_4.title_1") }}</h2>
-                    <span class="font-normal leading-relaxed text-sm sm:text-md lg:text-lg relative">{{ __("content.home.section_4.subtitle_1") }}</span>
-                    <span class="font-bold leading-relaxed text-sm sm:text-md lg:text-lg relative">{{ __("content.home.section_4.subtitle_2") }}</span>
+                    <span class="font-normal leading-relaxed text-sm sm:text-md lg:text-lg">{{ __("content.home.section_4.subtitle_1") }}</span>
+                    <span class="font-bold leading-relaxed text-sm sm:text-md lg:text-lg">{{ __("content.home.section_4.subtitle_2") }}</span>
                 </div>
 
                 <x-main-project/>

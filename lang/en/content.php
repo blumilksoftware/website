@@ -55,14 +55,14 @@ return [
             "subtitle_1" => "Learn how our implementations transformed clients' challenges into ",
             "subtitle_2" => "effective solutions",
             "tile_1" => [
-                "title_1" => "Notification",
-                "description_1" => "Here is a place for an example component used in the application. It could be a modal, dropdown or whatever.",
+                "title_1" => "Project objective",
+                "description_1" => "Creation of an application for ordering medical services with a dedicated panel for employees and clients.",
             ],
             "tile_2" => [
-                "title_1" => "Title",
-                "description_1" => "Keep your messages short, but make sure they cover everything you need to say.",
+                "title_1" => "Manage your visits",
+                "description_1" => "Safe and intuitive ordering and payment process for selected services.",
             ],
-            "badge" => "Here is also an example badge from the application.",
+            "badge" => "Design that fits the specifics of the industry",
         ],
         "section_5" => [
             "title_1" => "What they say about us",
