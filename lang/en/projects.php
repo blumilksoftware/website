@@ -211,7 +211,7 @@ return [
         "project_description" => "The tool allows users to independently calculate CO2 emissions, providing a large set of indicators that are the basis for calculations.",
         "challenges" => [
             "challenge_1" => [
-                "title" => "Advanced Role System",
+                "title" => "Advanced role system",
                 "description" => "enabling work in the system on many levels",
             ],
             "challenge_2" => [
