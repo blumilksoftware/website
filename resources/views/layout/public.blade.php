@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="description" content=@yield('description')>
     <meta name="robots" content="index, follow">
+    @yield('meta')
     <link rel="shortcut icon" href="{{ asset('identification/sygnet.svg') }}" type="image/x-icon">
     @vite('resources/js/app.ts')
     <script src="https://kit.fontawesome.com/f6187d55ef.js" crossorigin="anonymous"></script>
