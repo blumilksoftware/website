@@ -60,7 +60,7 @@ return [
             ],
             "tile_2" => [
                 "title_1" => "Zarządzaj swoimi wizytami",
-                "description_1" => "Bezpieczny i intuicyjny proces zamawiania i płatności za wybrane usługi.",
+                "description_1" => "Bezpieczny i intuicyjny proces zamawiania oraz płatności za wybrane usługi.",
             ],
             "badge" => "Design wpasowujący się w specyfikę branży",
         ],
