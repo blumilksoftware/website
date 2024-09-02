@@ -3,13 +3,15 @@
 @section("title", $news['title'])
 @section("description", $news['subtitle'])
 
-@section("content")
+@section("meta")
     <meta property="og:url" content="{{ $articleUrl }}"/>
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="{{ $news['title'] }}"/>
     <meta property="og:description" content="{{ $news['subtitle'] }}"/>
     <meta property="og:image" content="https://blumilk.pl/storage/{{ $news['photo'] }}"/>
+@endsection
 
+@section("content")
     <section class="2xl:mx-[10%] 3xl:max-w-screen-2xl 3xl:mx-auto -mb-32">
         <div class="w-full h-[232px] sm:h-[594px] overflow-hidden order-2 lg:order-1 lg:mt-0">
             <img src="{{ asset("storage/".$news['photo']) }}"
