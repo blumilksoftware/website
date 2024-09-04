@@ -12,6 +12,6 @@ on:
 jobs:
   check-pr-title:
     name: Check the PR title
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - uses: blumilksoftware/action-pr-title@e05fc76a1cc45b33644f1de51218be43ac121dd0 # v1.2.0
