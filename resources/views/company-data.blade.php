@@ -20,12 +20,12 @@
             <div class="flex flex-row text-xs sm:text-sm text-gray-400 place-items-center gap-x-5 sm:gap-x-10 justify-center 2xl:justify-start">
                 <div class="flex mt-3">
                     <span class="sr-only">{{ __('alt.mail') }}</span>
-                    <x-icons.mail/>
+                    <i class="ti ti-mail text-2xl text-blue-dark"></i>
                     <div class="ml-3 my-auto">{{ __('content.data.email') }}</div>
                 </div>
                 <div class="flex mt-3">
                     <span class="sr-only">{{ __('alt.phone') }}</span>
-                    <x-icons.phone/>
+                    <i class="ti ti-phone text-2xl text-blue-dark"></i>
                     <div class="ml-3 my-auto">{{ __('content.data.phone') }}</div>
                 </div>
             </div>
