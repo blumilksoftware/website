@@ -9,6 +9,8 @@ volumes:
     name: blumilk-website-beta-pgsql-data
   blumilk-website-beta-redis-data:
     name: blumilk-website-beta-redis-data
+  blumilk-website-beta-storage-data:
+    name: blumilk-website-beta-storage-data
 
 services:
   blumilk-website-beta-app:
@@ -41,6 +43,7 @@ services:
     working_dir: /application
     volumes:
       - ./.env:/application/.env:ro
+      - blumilk-website-beta-storage-data:/application/storage
     networks:
       - blumilk-website-beta
       - traefik-proxy
