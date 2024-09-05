@@ -28,8 +28,9 @@
             {{ $projects->links() }}
         </div>
     </section>
-    <img src="{{ asset('graphics/shadow.svg') }}" alt="{{ __('alt.shadow') }}" aria-hidden="true" class="hidden md:block absolute -z-10 -right-32 -bottom-2/3 h-2/3"/>
     <div class="relative overflow-hidden">
+            <img src="{{ asset('graphics/shadow.svg') }}" alt="{{ __('alt.shadow') }}" aria-hidden="true" class="hidden md:block absolute -z-10 -right-32 h-5/6"/>
+
         <img src="{{ asset('graphics/shadow.svg') }}" alt="{{ __('alt.shadow') }}" aria-hidden="true" class="hidden md:block absolute -z-10 -left-[800px] -top-44"/>
         <x-text-us-section/>
     </div>

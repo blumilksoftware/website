@@ -245,11 +245,6 @@ return [
                 "description" => "managed from the administrator level",
             ],
         ],
-        "testimonial" => [
-            "name" => "Dominika Pasternak",
-            "company" => "Deputy Chief Accountant",
-            "description" => "The created application significantly improved the processes within the company. The team demonstrated experience, great flexibility and understanding of our specific needs. Thanks to free communication, we were able to participate in the development of the software on an ongoing basis and submit our suggestions.",
-        ],
         "alt" => [
             "laptop_1" => "laptop with application page",
             "laptop_2" => "laptop standing on a desk with an open application",
