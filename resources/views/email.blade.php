@@ -35,14 +35,14 @@
         }
 
         h1 {
-            margin: 0;
+            margin: 85px 0 0 0;
             text-align: center;
             color: #000000;
         }
 
         .wrapper {
             box-sizing: border-box;
-            padding: 24px 16px;
+            padding: 24px 16px 150px;
         }
 
         .message {
