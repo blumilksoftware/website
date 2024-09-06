@@ -17,6 +17,7 @@ use Spatie\Translatable\HasTranslations;
  * @property string $template
  * @property bool $published
  * @property string $color
+ * @property int $sort_order
  */
 class Project extends Model
 {

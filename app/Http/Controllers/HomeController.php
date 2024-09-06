@@ -14,7 +14,7 @@ class HomeController extends Controller
     public function __invoke(Request $request, Factory $factory): View
     {
         $clients = config("clients");
-        $references = Reference::query()->where("published", true)->get();
+        $references = Reference::query()->where("published", true)->orderBy("sort_order")->get();
 
         return $factory->make("home")
             ->with("references", $references)

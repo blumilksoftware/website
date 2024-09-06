@@ -15,6 +15,7 @@ use Spatie\Translatable\HasTranslations;
  * @property string $company
  * @property bool $published
  * @property string $sex
+ * @property int $sort_order
  */
 class Reference extends Model
 {
