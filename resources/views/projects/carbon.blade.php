@@ -76,15 +76,4 @@
     </section>
 
     <x-projects.image src="{{ asset('images/projects/carbon/desktop.png') }}" alt="{{ __('projects.carbon.alt.desktop') }}" />
-
-    <div class="relative overflow-hidden">
-    <x-projects.reference      name="{{ __('projects.carbon.testimonial.name') }}"
-                               company="{{ __('projects.carbon.testimonial.company') }}"
-                               description="{{ __('projects.carbon.testimonial.description') }}"
-                               photo="graphics/placeholders/female.svg"/>
-        <img src="{{ asset('graphics/shadow.svg') }}" alt="{{ __('alt.shadow') }}" aria-hidden="true" class="hidden md:block absolute -z-10 -right-32 bottom-20 h-2/3"/>
-
-        <img src="{{ asset('graphics/shadow.svg') }}" alt="{{ __('alt.shadow') }}" aria-hidden="true" class="hidden md:block absolute -z-10 -left-[800px] -bottom-[500px]"/>
-        <x-text-us-section/>
-    </div>
 @endsection

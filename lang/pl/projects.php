@@ -245,11 +245,6 @@ return [
                 "description" => "zarządzany z poziomu administratora",
             ],
         ],
-        "testimonial" => [
-            "name" => "Dominika Pasternak",
-            "company" => "Deputy Chief Accountant",
-            "description" => "Stworzona aplikacja znacznie usprawniła procesy wewnątrz firmy. Zespół wykazał się doświadczeniem, dużą elastycznością i zrozumieniem naszych specyficznych potrzeb. Dzięki swobodnej komunikacji mogliśmy na bieżąco uczestniczyć w tworzeniu oprogramowania i zgłaszać swoje sugestie.",
-        ],
         "alt" => [
             "laptop_1" => "laptop ze stroną aplikacji",
             "laptop_2" => "laptop stojący na biurku z otwartą aplikacją",
