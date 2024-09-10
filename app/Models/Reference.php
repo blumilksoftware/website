@@ -16,6 +16,7 @@ use Spatie\Translatable\HasTranslations;
  * @property bool $published
  * @property string $sex
  * @property int $sort_order
+ * @property string $position
  */
 class Reference extends Model
 {
@@ -34,6 +35,7 @@ class Reference extends Model
         "description",
         "published",
         "sex",
+        "position",
     ];
     protected $casts = [
         "description" => "array",

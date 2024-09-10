@@ -8,7 +8,12 @@
              alt="{{ __('alt.reference') . ' ' . $reference->creator_name }}">
         <div>
             <div class="font-semibold text-left">{{ $reference->creator_name }}</div>
-            <div class="text-gray-600 text-left">{{ $reference->company }}</div>
+            <div class="text-gray-600 text-left">
+                @isset( $reference->position ){{ $reference->position }}@endisset
+                @if( isset($reference->position) && isset($reference->company) ){{ __('at') }}@endif
+                @isset( $reference->company ){{ $reference->company }}@endisset
+            </div>
+
         </div>
     </figcaption>
 </figure>
