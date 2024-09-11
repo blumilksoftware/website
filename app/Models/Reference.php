@@ -12,11 +12,11 @@ use Spatie\Translatable\HasTranslations;
  * @property string $creator_name
  * @property array $description
  * @property string $photo
- * @property string $company
+ * @property ?string $company
  * @property bool $published
  * @property string $sex
- * @property int $sort_order
- * @property string $position
+ * @property ?int $sort_order
+ * @property ?string $position
  */
 class Reference extends Model
 {

@@ -122,11 +122,8 @@
                          alt="{{ __('alt.reference') . " " . $references[$main]->creator_name }}">
                     <div class="flex-auto">
                         <div class="font-semibold text-left">{{ $references[$main]->creator_name }}</div>
-                        <div
-                            class="text-gray-600 text-left">
-                            @isset( $references[$main]->position ){{ $references[$main]->position }}@endisset
-                            @if( isset($references[$main]->position) && isset($references[$main]->company) ){{ __('at') }}@endif
-                            @isset( $references[$main]->company ){{ $references[$main]->company }}@endisset
+                        <div class="text-gray-600 text-left break-words">
+                            <x-references.position-company-display :reference="$references[$main]" />
                         </div>
                     </div>
                 </figcaption>
@@ -146,9 +143,7 @@
                     <div class="flex-auto">
                         <div class="font-semibold text-left">{{ $references[$main2]->creator_name }}</div>
                         <div class="text-gray-600 text-left">
-                            @isset( $references[$main2]->position ){{ $references[$main2]->position }}@endisset
-                            @if( isset($references[$main2]->position) && isset($references[$main2]->company) ){{ __('at') }}@endif
-                            @isset( $references[$main2]->company ){{ $references[$main2]->company }}@endisset
+                            <x-references.position-company-display :reference="$references[$main2]" />
                         </div>
                     </div>
                 </figcaption>
@@ -158,42 +153,42 @@
     <div class="xl:contents xl:space-y-0">
         <div class="space-y-8 xl:row-span-2 m-2">
             @isset($references[$c1r1])
-                <x-reference :reference="$references[$c1r1]"/>
+                <x-references.reference :reference="$references[$c1r1]"/>
             @endisset
             @isset($references[$c1r2])
-                <x-reference :reference="$references[$c1r2]" class="hidden lg:block"/>
+                <x-references.reference :reference="$references[$c1r2]" class="hidden lg:block"/>
             @endisset
             @isset($references[$c1r3])
-                <x-reference :reference="$references[$c1r3]" class="hidden lg:block"/>
+                <x-references.reference :reference="$references[$c1r3]" class="hidden lg:block"/>
             @endisset
         </div>
         <div class="space-y-8 xl:row-start-1 m-2">
             @isset($references[$c2r1])
-                <x-reference :reference="$references[$c2r1]" class="hidden lg:block"/>
+                <x-references.reference :reference="$references[$c2r1]" class="hidden lg:block"/>
             @endisset
             @isset($references[$c2r2])
-                <x-reference :reference="$references[$c2r2]" class="hidden lg:block"/>
+                <x-references.reference :reference="$references[$c2r2]" class="hidden lg:block"/>
             @endisset
         </div>
     </div>
     <div class="xl:contents xl:space-y-0">
         <div class="space-y-8 xl:row-start-1 m-2">
             @isset($references[$c3r1])
-                <x-reference :reference="$references[$c3r1]" class="hidden lg:block"/>
+                <x-references.reference :reference="$references[$c3r1]" class="hidden lg:block"/>
             @endisset
             @isset($references[$c3r2])
-                <x-reference :reference="$references[$c3r2]" class="hidden lg:block"/>
+                <x-references.reference :reference="$references[$c3r2]" class="hidden lg:block"/>
             @endisset
         </div>
         <div class="space-y-8 xl:row-span-2 m-2">
             @isset($references[$c4r1])
-                <x-reference :reference="$references[$c4r1]"/>
+                <x-references.reference :reference="$references[$c4r1]"/>
             @endisset
             @isset($references[$c4r2])
-                <x-reference :reference="$references[$c4r2]" class="hidden lg:block"/>
+                <x-references.reference :reference="$references[$c4r2]" class="hidden lg:block"/>
             @endisset
             @isset($references[$c4r3])
-                <x-reference :reference="$references[$c4r3]" class="hidden lg:block"/>
+                <x-references.reference :reference="$references[$c4r3]" class="hidden lg:block"/>
             @endisset
         </div>
     </div>
