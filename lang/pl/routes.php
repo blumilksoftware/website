@@ -8,7 +8,6 @@ return [
     "projects/{slug}" => "projekty/{slug}",
     "career" => "kariera",
     "contact" => "kontakt",
-    "legal" => "prawne",
     "news" => "aktualnosci",
     "news/{slug}" => "aktualnosci/{slug}",
     "software-engineer" => "inzynier-oprogramowania",

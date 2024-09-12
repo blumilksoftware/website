@@ -57,6 +57,9 @@ module.exports = {
     },
     listStyleType: {
       square: 'square',
+      decimal: 'decimal',
+      alpha: 'lower-alpha',
+
     }
   },
   plugins: [
