@@ -15,13 +15,13 @@ RUN wget --output-document age.tar.gz "https://github.com/FiloSottile/age/releas
     && chmod +x /usr/local/bin/sops
 
 # For other versions check: https://hub.docker.com/_/composer/tags
-FROM composer/composer:2.7.7-bin@sha256:1832641f1ba36c8e748f4b4462f77e7c8836cca7730fdf0540580d703b78f2e7 AS composer-bin
+FROM composer/composer:2.7.9-bin@sha256:16b920d0d55d162e3f624a6c4de2ad444a985318ac38566351d31958cbcf382b AS composer-bin
 
 # For other versions check: https://hub.docker.com/_/node/tags
-FROM node:22.5.1-bookworm-slim@sha256:2fb92fe9d7350866a73c5cc311c1a19919ffd47e8592d4233374ee330e3bdb1e AS node
+FROM node:22.8.0-bookworm-slim@sha256:377674fd5bb6fc2a5a1ec4e0462c4bfd4cee1c51f705bbf4bda0ec2c9a73af72 AS node
 
 # For other versions check: https://hub.docker.com/_/php/tags
-FROM php:8.3.10-fpm-bookworm@sha256:c07fc99f042e567b6cb825ba39a8f6b907f1a44869a19d3b7f581449d1a4ca3a
+FROM php:8.3.11-fpm-bookworm@sha256:64f4020404a790a1ffef730873b54661cc45333bec7e55fffe88daef2a43ddd9
 
 COPY --from=composer-bin ./composer /usr/bin/composer
 COPY --from=secops-tools /usr/local/bin/age /usr/local/bin/age
