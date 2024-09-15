@@ -18,4 +18,5 @@ return [
     "apply_internship" => "Zgłoś się na praktyki",
     "apply_now" => "Aplikuj teraz!",
     "back_to_portfolio" => "Wróć do portfolio",
+    "accept_all" => "Akceptuj wszystkie",
 ];
