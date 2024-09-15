@@ -31,7 +31,7 @@
     })
 </script>
 
-<section class="fixed max-w-3xl p-4 bg-white border border-gray-200 sm:gap-x-4 mx-12 bottom-16 dark:bg-gray-900 sm:flex sm:items-center dark:border-gray-700 rounded-2xl" x-data="cookieConsent" x-bind="dialogue" x-cloak>
+<section class="z-10 fixed max-w-3xl p-4 bg-white border border-gray-200 sm:gap-x-4 mx-12 bottom-16 dark:bg-gray-900 sm:flex sm:items-center dark:border-gray-700 rounded-2xl" x-data="cookieConsent" x-bind="dialogue" x-cloak>
     <div class="flex items-center gap-x-4">
         <span class="inline-flex p-2 text-website-normal rounded-lg shrink-0 dark:bg-gray-800 bg-website-light/30 show">
             <i class="ti ti-cookie text-4xl"></i>
