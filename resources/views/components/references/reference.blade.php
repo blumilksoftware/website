@@ -5,10 +5,13 @@
     <figcaption class="mt-6 flex items-center gap-x-4">
         <img class="h-10 w-10 rounded-full bg-gray-50"
              src="{{ $reference->getPhotoPath() }}"
-             alt="{{ __('alt.reference') . ' ' . $reference->creator_name }}">
+             alt="{{ __('alt.reference') . ' reference.blade.php' . $reference->creator_name }}">
         <div>
             <div class="font-semibold text-left">{{ $reference->creator_name }}</div>
-            <div class="text-gray-600 text-left">{{ $reference->company }}</div>
+            <div class="text-gray-600 text-left">
+                <x-references.position-company-display :reference="$reference" />
+            </div>
+
         </div>
     </figcaption>
 </figure>

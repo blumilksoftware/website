@@ -12,9 +12,11 @@ use Spatie\Translatable\HasTranslations;
  * @property string $creator_name
  * @property array $description
  * @property string $photo
- * @property string $company
+ * @property ?string $company
  * @property bool $published
  * @property string $sex
+ * @property ?int $sort_order
+ * @property ?string $position
  */
 class Reference extends Model
 {
@@ -33,6 +35,7 @@ class Reference extends Model
         "description",
         "published",
         "sex",
+        "position",
     ];
     protected $casts = [
         "description" => "array",

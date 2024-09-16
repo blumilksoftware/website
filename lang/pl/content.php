@@ -298,4 +298,5 @@ return [
         "text_1" => "Na naszej stronie używamy plików cookies („ciasteczek”), aby zapewnić jak najlepszą jakość usług i dostosować stronę do Twoich potrzeb. Klikając „Akceptuj wszystkie”, wyrażasz zgodę na używanie przez nas plików cookie. Aby dowiedzieć się więcej, sprawdź naszą",
         "text_2" => "politykę prywatności.",
     ],
+    "at" => "w",
 ];
