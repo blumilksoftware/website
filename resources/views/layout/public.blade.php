@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
 
     <script src='https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.js'></script>
-    <link href='https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.css' rel='stylesheet' />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.css' rel='stylesheet'/>
 </head>
 
 <body class="font-sora flex flex-col h-screen justify-between">
@@ -52,10 +52,9 @@
                     <x-bubble size="250"/>
                 </div>
             @endif
-
-
         </div>
         @yield('content')
+        @include('components.cookies')
     </div>
 
     @include('layout.footer')
