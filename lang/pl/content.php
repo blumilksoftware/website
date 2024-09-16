@@ -257,9 +257,15 @@ return [
         ],
         "point_2" => "Jak możesz się z nami skontaktować?",
         "text_2" => [
-            "a" => "Możesz się z nami skontaktować mailowo: office@blumilk.pl lub telefonicznie: +48 579 710 703.",
-            "b" => "Jeśli masz pytania dotyczące ochrony danych osobowych, pisz na:",
-            "link" => "iod@blumilk.pl",
+            "a" => [
+                "text_1" => "Możesz się z nami skontaktować mailowo:",
+                "text_2" => "office@blumilk.pl",
+                "text_3" => "lub telefonicznie: +48 579 710 703.",
+            ],
+            "b" => [
+                "text_1" => "Jeśli masz pytania dotyczące ochrony danych osobowych, pisz na:",
+                "text_2" => "iod@blumilk.pl",
+            ],
         ],
         "point_3" => "Jakie dane przetwarzamy?",
         "text_3" => [

@@ -36,10 +36,17 @@
                     <h4 class="font-semibold text-lg text-black pt-12 xl:pt-6 mb-4">{{ __("content.policy.point_2") }}</h4>
                     <div class="leading-loose md:leading-relaxed pl-6">
                         <ol class="list-alpha text-sm md:text-lg leading-loose md:leading-relaxed">
-                            <li>{{ __("content.policy.text_2.a") }}</li>
-                            <li>{{ __("content.policy.text_2.b") }}
-                                <a href="mailto:{{ __("content.policy.text_2.link") }}" class="text-website-normal" rel="noopener noreferrer">
-                                    {{ __("content.policy.text_9.text_2") }}.
+                            <li>
+                                {{ __("content.policy.text_2.a.text_1") }}
+                                <a href="mailto:{{ __("content.policy.text_2.a.text_2") }}" class="text-website-normal" rel="noopener noreferrer">
+                                    {{ __("content.policy.text_2.a.text_2") }}
+                                </a>
+                                {{ __("content.policy.text_2.a.text_3") }}
+                            </li>
+                            <li>
+                                {{ __("content.policy.text_2.b.text_1") }}
+                                <a href="mailto:{{ __("content.policy.text_2.b.text_2") }}" class="text-website-normal" rel="noopener noreferrer">
+                                    {{ __("content.policy.text_2.b.text_2") }}.
                                 </a>
                             </li>
                         </ol>

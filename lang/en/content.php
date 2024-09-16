@@ -260,9 +260,15 @@ return [
         ],
         "point_2" => "How can you contact us?",
         "text_2" => [
-            "a" => "You can contact us by e-mail: office@blumilk.pl or by phone: +48 579 710 703.",
-            "b" => "If you have any questions regarding the protection of personal data, please write to:",
-            "link" => "iod@blumilk.pl",
+            "a" => [
+                "text_1" => "You can contact us by e-mail:",
+                "text_2" => "office@blumilk.pl",
+                "text_3" => "or by phone: +48 579 710 703.",
+            ],
+            "b" => [
+                "text_1" => "If you have any questions regarding the protection of personal data, please write to:",
+                "text_2" => "iod@blumilk.pl",
+            ],
         ],
         "point_3" => "What data do we process?",
         "text_3" => [
