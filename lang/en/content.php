@@ -248,12 +248,12 @@ return [
     "policy" => [
         "title_1" => "Privacy",
         "title_2" => "policy",
-        "title_3" => "Obowiązująca od 6 września 2024 r.",
-        "content_1" => "The functioning of this website involves the processing of your personal data and the use of cookies, so below we present the principles we follow in this regard. We encourage you to read it carefully. If you have any questions, feel free to write to the address indicated in point 2 b).",
+        "content_1" => "Valid from 6 September 2024",
+        "content_2" => "The functioning of this website involves the processing of your personal data and the use of cookies, so below we present the principles we follow in this regard. We encourage you to read it carefully. If you have any questions, feel free to write to the address indicated in point 2 b).",
         "point_1" => "Who is responsible for your data?",
         "text_1" => [
             "text_1" => "The administrator of your personal data is:",
-            "text_2" => "Blumilk Limited Liability Company,",
+            "text_2" => "Blumilk sp. z o.o.,",
             "text_3" => "with its registered office in Legnica, entered by the District Court for Wrocław-Fabryczna in Wrocław, 9th Commercial Division, into the register of entrepreneurs of the National Court Register under the number 0000866755.",
             "text_4" => "Official address: Blumilk Sp. z o. o., ul. rtm. Witolda Pilecki 14, 59-220 Legnica, Poland.",
             "text_5" => "Office address: Blumilk Sp. z o. o., ul. Najściej Marii Panny 5F/5, 59-220 Legnica, Poland.",
@@ -261,7 +261,8 @@ return [
         "point_2" => "How can you contact us?",
         "text_2" => [
             "a" => "You can contact us by e-mail: office@blumilk.pl or by phone: +48 579 710 703.",
-            "b" => "If you have any questions regarding the protection of personal data, please write to: iod@blumilk.pl.",
+            "b" => "If you have any questions regarding the protection of personal data, please write to:",
+            "link" => "iod@blumilk.pl",
         ],
         "point_3" => "What data do we process?",
         "text_3" => [

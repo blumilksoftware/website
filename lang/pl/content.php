@@ -245,8 +245,8 @@ return [
     "policy" => [
         "title_1" => "Polityka",
         "title_2" => "prywatności",
-        "title_3" => "Obowiązująca od 6 września 2024 r.",
-        "content_1" => "Funkcjonowanie tej strony wiąże się z przetwarzaniem Twoich danych osobowych oraz wykorzystaniem plików cookies, dlatego poniżej przedstawiamy zasady, jakimi kierujemy się w tym zakresie. Zachęcamy do uważnego przeczytania. Jeśli masz pytania, śmiało pisz na adres wskazany w pkt 2 b).",
+        "content_1" => "Obowiązująca od 6 września 2024 r.",
+        "content_2" => "Funkcjonowanie tej strony wiąże się z przetwarzaniem Twoich danych osobowych oraz wykorzystaniem plików cookies, dlatego poniżej przedstawiamy zasady, jakimi kierujemy się w tym zakresie. Zachęcamy do uważnego przeczytania. Jeśli masz pytania, śmiało pisz na adres wskazany w pkt 2 b).",
         "point_1" => "Kto odpowiada za Twoje dane?",
         "text_1" => [
             "text_1" => "Administratorem Twoich danych osobowych jest:",
@@ -258,7 +258,8 @@ return [
         "point_2" => "Jak możesz się z nami skontaktować?",
         "text_2" => [
             "a" => "Możesz się z nami skontaktować mailowo: office@blumilk.pl lub telefonicznie: +48 579 710 703.",
-            "b" => "Jeśli masz pytania dotyczące ochrony danych osobowych, pisz na: iod@blumilk.pl.",
+            "b" => "Jeśli masz pytania dotyczące ochrony danych osobowych, pisz na:",
+            "link" => "iod@blumilk.pl",
         ],
         "point_3" => "Jakie dane przetwarzamy?",
         "text_3" => [

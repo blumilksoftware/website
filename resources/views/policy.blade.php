@@ -11,7 +11,8 @@
                     <span class="inline">{{ __("content.policy.title_2") }}</span>
                 </h2>
                 <p class="text-sm md:text-lg font-normal text-center xl:text-start leading-loose md:leading-relaxed">
-                    {{ __("content.policy.content_1") }}
+                    <span class="block pb-4">{{ __("content.policy.content_1") }}</span>
+                    {{ __("content.policy.content_2") }}
                 </p>
         </div>
         <div class="flex basis-3/5 relative xl:-bottom-36 xl:-right-20 place-content-center xl:place-content-end w-full">
@@ -20,10 +21,10 @@
         </div>
     </section>
     <section class="mx-[10%] md:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto text-gray-400 xl:text-lg grid grid-cols-1 gap-6 text-left leading-loose mb-4 xl:mb-16 md:pt-16">
-            <ol class="list-decimal text-sm md:text-lg">
+            <ol class="list-decimal text-lg">
                 <li>
                     <h4 class="font-semibold text-lg text-black pt-12 xl:pt-0 mb-4">{{ __("content.policy.point_1") }}</h4>
-                    <p class="leading-loose md:leading-relaxed">
+                    <p class="leading-loose md:leading-relaxed text-sm md:text-lg">
                         {{ __("content.policy.text_1.text_1") }}
                         <span class="text-black">{{ __("content.policy.text_1.text_2") }}</span>
                         {{ __("content.policy.text_1.text_3") }}
@@ -34,16 +35,19 @@
                 <li>
                     <h4 class="font-semibold text-lg text-black pt-12 xl:pt-6 mb-4">{{ __("content.policy.point_2") }}</h4>
                     <div class="leading-loose md:leading-relaxed pl-6">
-                        <ol class="list-alpha">
+                        <ol class="list-alpha text-sm md:text-lg leading-loose md:leading-relaxed">
                             <li>{{ __("content.policy.text_2.a") }}</li>
-                            <li>{{ __("content.policy.text_2.b") }}</li>
+                            <li>{{ __("content.policy.text_2.b") }}
+                                <a href="mailto:{{ __("content.policy.text_2.link") }}" class="text-website-normal" rel="noopener noreferrer">
+                                    {{ __("content.policy.text_9.text_2") }}.
+                                </a>
+                            </li>
                         </ol>
-
                     </div>
                 </li>
                 <li>
                     <h4 class="font-semibold text-lg text-black pt-12 xl:pt-6 mb-4">{{ __("content.policy.point_3") }}</h4>
-                    <p>{{ __("content.policy.text_3.text_1") }}
+                    <p class="text-sm md:text-lg leading-loose md:leading-relaxed">{{ __("content.policy.text_3.text_1") }}
                         <a href="{{ __("content.policy.text_3.link") }}" target="_blank" class="text-website-normal hover:underline">
                             {{ __("content.policy.text_3.text_2") }}
                         </a>
@@ -51,37 +55,37 @@
                 </li>
                 <li>
                     <h4 class="font-semibold text-lg text-black pt-12 xl:pt-6 mb-4">{{ __("content.policy.point_4") }}</h4>
-                    <p class="leading-loose md:leading-relaxed">{{ __("content.policy.text_4.text_1") }}</p>
-                    <ul class="list-square pl-12">
+                    <p class="leading-loose md:leading-relaxed text-sm md:text-lg">{{ __("content.policy.text_4.text_1") }}</p>
+                    <ul class="list-square pl-12 py-2 text-sm md:text-lg leading-loose md:leading-relaxed">
                         <li>{{ __("content.policy.text_4.a") }}</li>
                         <li>{{ __("content.policy.text_4.b") }}</li>
                         <li>{{ __("content.policy.text_4.c") }}</li>
                         <li>{{ __("content.policy.text_4.d") }}</li>
                     </ul>
-                    <p class="leading-loose md:leading-relaxed">{{ __("content.policy.text_4.text_2") }}</p>
+                    <p class="leading-loose md:leading-relaxed text-sm md:text-lg">{{ __("content.policy.text_4.text_2") }}</p>
                 </li>
                 <li>
                     <h4 class="font-semibold text-lg text-black pt-12 xl:pt-6 mb-4">{{ __("content.policy.point_5") }}</h4>
-                    <p class="leading-loose md:leading-relaxed">{{ __("content.policy.text_5.text_1") }}</p>
-                    <ul class="list-square pl-12">
+                    <p class="leading-loose md:leading-relaxed text-sm md:text-lg">{{ __("content.policy.text_5.text_1") }}</p>
+                    <ul class="list-square pl-12 py-2 text-sm md:text-lg leading-loose md:leading-relaxed">
                         <li>{{ __("content.policy.text_5.a") }}</li>
                     </ul>
-                    <p class="leading-loose md:leading-relaxed">{{ __("content.policy.text_5.text_2") }}</p>
+                    <p class="leading-loose md:leading-relaxed text-sm md:text-lg">{{ __("content.policy.text_5.text_2") }}</p>
                 </li>
                 <li>
                     <h4 class="font-semibold text-lg text-black pt-12 xl:pt-6 mb-4">{{ __("content.policy.point_6") }}</h4>
-                    <p class="leading-loose md:leading-relaxed">{{ __("content.policy.text_6") }}</p>
+                    <p class="leading-loose md:leading-relaxed text-sm md:text-lg">{{ __("content.policy.text_6") }}</p>
                 </li>
                 <li>
                     <h4 class="font-semibold text-lg text-black pt-12 xl:pt-6 mb-4">{{ __("content.policy.point_7") }}</h4>
-                    <p class="leading-loose md:leading-relaxed">{{ __("content.policy.text_7.text_1") }}</p>
-                    <ul class="list-square pl-12">
+                    <p class="leading-loose md:leading-relaxed text-sm md:text-lg">{{ __("content.policy.text_7.text_1") }}</p>
+                    <ul class="list-square pl-12 py-2 text-sm md:text-lg leading-loose md:leading-relaxed">
                         <li>{{ __("content.policy.text_7.a") }}</li>
                         <li>{{ __("content.policy.text_7.b") }}</li>
                         <li>{{ __("content.policy.text_7.c") }}</li>
                         <li>{{ __("content.policy.text_7.d") }}</li>
                     </ul>
-                    <p class="leading-loose md:leading-relaxed">{{ __("content.policy.text_7.text_2") }}
+                    <p class="leading-loose md:leading-relaxed text-sm md:text-lg">{{ __("content.policy.text_7.text_2") }}
                         <a href="mailto:{{ __("content.policy.text_7.text_3") }}" class="text-website-normal" rel="noopener noreferrer">
                             {{ __("content.policy.text_7.text_3") }}
                         </a>
@@ -89,12 +93,12 @@
                 </li>
                 <li>
                     <h4 class="font-semibold text-lg text-black pt-12 xl:pt-6 mb-4">{{ __("content.policy.point_8") }}</h4>
-                    <p class="leading-loose md:leading-relaxed">{{ __("content.policy.text_8.text_1") }}</p>
-                    <ul class="list-square pl-12">
+                    <p class="leading-loose md:leading-relaxed text-sm md:text-lg">{{ __("content.policy.text_8.text_1") }}</p>
+                    <ul class="list-square pl-12 py-2 text-sm md:text-lg leading-loose md:leading-relaxed">
                         <li>{{ __("content.policy.text_8.a") }}</li>
                         <li>{{ __("content.policy.text_8.b") }}</li>
                     </ul>
-                    <p class="leading-loose md:leading-relaxed">{{ __("content.policy.text_8.text_2") }}
+                    <p class="leading-loose md:leading-relaxed text-sm md:text-lg">{{ __("content.policy.text_8.text_2") }}
                         <span class="font-semibold">{{ __("content.policy.text_8.text_3") }}</span>
                         {{ __("content.policy.text_8.text_4") }}
                         <a class="text-website-normal" href="{{ __("content.policy.text_8.text_5") }}" target="_blank">
@@ -109,7 +113,7 @@
                 </li>
                 <li>
                     <h4 class="font-semibold text-lg text-black pt-12 xl:pt-6 mb-4">{{ __("content.policy.point_9") }}</h4>
-                    <p class="leading-loose md:leading-relaxed">
+                    <p class="leading-loose md:leading-relaxed text-sm md:text-lg">
                         {{ __("content.policy.text_9.text_1") }}
                         <a href="mailto:{{ __("content.policy.text_9.text_2") }}" class="text-website-normal" rel="noopener noreferrer">
                             {{ __("content.policy.text_9.text_2") }}
