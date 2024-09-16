@@ -41,9 +41,11 @@ class ReferenceResource extends Resource
                                 "male" => "Mężczyzna",
                                 "female" => "Kobieta",
                             ]),
+                        Forms\Components\TextInput::make("position")
+                            ->label("Stanowisko")
+                            ->maxLength(255),
                         Forms\Components\TextInput::make("company")
                             ->label("Firma")
-                            ->required()
                             ->maxLength(255),
                         Forms\Components\Checkbox::make("published")
                             ->label("Opublikowane"),
@@ -71,6 +73,9 @@ class ReferenceResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\TextColumn::make("creator_name")
+                    ->label("Autor")
+                    ->searchable(),
                 Tables\Columns\TextColumn::make("company")
                     ->label("Firma")
                     ->searchable(),
@@ -93,7 +98,9 @@ class ReferenceResource extends Resource
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
                 ]),
-            ]);
+            ])
+            ->reorderable("sort_order")
+            ->defaultSort("sort_order");
     }
 
     public static function getPages(): array

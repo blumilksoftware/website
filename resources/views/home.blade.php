@@ -118,7 +118,7 @@
             <span class="font-normal text-sm sm:text-md lg:text-lg">{{ __("content.home.section_5.subtitle_1") }}</span>
             <div class="relative">
                 <div class="mx-auto max-w-7xl px-6 lg:px-8">
-                    @includeWhen( count($references), 'components.references', ['references' => $references] )
+                    @includeWhen( count($references), 'components.references.references', ['references' => $references] )
                 </div>
             </div>
         </section>

@@ -21,8 +21,9 @@ class ReferenceFactory extends Factory
             "description" => $this->translations($locales, $this->faker->paragraph),
             "photo" => sprintf("%s/%s", "factory", "reference.jpg"),
             "published" => $this->faker->boolean,
-            "company" => $this->faker->company,
+            "company" => $this->faker->boolean ? $this->faker->company : null,
             "sex" => $this->faker->randomElement(["male", "female"]),
+            "position" => $this->faker->boolean ? $this->faker->jobTitle : null,
         ];
     }
 }

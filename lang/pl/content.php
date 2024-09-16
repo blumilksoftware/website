@@ -294,4 +294,5 @@ return [
         "subtitle_2" => "Wróć do strony głównej",
         "subtitle_3" => "lub skorzystaj z menu, aby znaleźć to, czego potrzebujesz.",
     ],
+    "at" => "w",
 ];

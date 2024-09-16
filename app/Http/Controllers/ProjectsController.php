@@ -12,7 +12,7 @@ class ProjectsController extends Controller
 {
     public function index(Factory $factory): View
     {
-        $projects = Project::query()->where("published", true)->paginate(4);
+        $projects = Project::query()->where("published", true)->orderBy("sort_order")->paginate(4);
 
         return $factory->make("projects")
             ->with("projects", $projects);
