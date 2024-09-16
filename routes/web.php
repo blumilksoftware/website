@@ -7,7 +7,6 @@ use Blumilk\Website\Http\Controllers\CareerController;
 use Blumilk\Website\Http\Controllers\CompanyDataController;
 use Blumilk\Website\Http\Controllers\ContactController;
 use Blumilk\Website\Http\Controllers\HomeController;
-use Blumilk\Website\Http\Controllers\LegalController;
 use Blumilk\Website\Http\Controllers\NewsController;
 use Blumilk\Website\Http\Controllers\PolicyController;
 use Blumilk\Website\Http\Controllers\ProjectsController;
@@ -32,7 +31,6 @@ $router->get($uri->translate("privacy-policy"), PolicyController::class)->name("
 
 $router->get($uri->translate("news"), [NewsController::class, "index"])->name("news");
 $router->get($uri->translate("news/{slug}"), [NewsController::class, "get"])->name("news.entry");
-$router->get($uri->translate("legal"), LegalController::class)->name("legal");
 $router->get($uri->translate("company-data"), CompanyDataController::class)->name("data");
 
 $router->fallback(FallbackController::class);
