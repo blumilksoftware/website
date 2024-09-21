@@ -16,7 +16,7 @@
     </div>
     <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-10 py-10 md:py-20 text-center">
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold md:pb-8">{{ __("projects.challenges") }}</h2>
-        <div class="flex place-content-center flex-wrap gap-4 2xl:gap-7 pb-24">
+        <div class="flex place-content-center flex-wrap gap-4 2xl:gap-6 pb-24">
             <x-tile description="{{ __('projects.carbon.challenges.challenge_1.description') }}"
                     class="max-w-[360px] 2xl:place-items-start pr-4 md:pr-0">
                 <x-slot:title><span class="pr-20">{{ __('projects.carbon.challenges.challenge_1.title') }}</span></x-slot:title>
@@ -41,7 +41,9 @@
 
     <div class="py-20 md:py-40">
         <x-projects.title>{{ __("projects.sitemap") }}</x-projects.title>
-        <x-projects.image src="{{ asset('images/projects/carbon/'.$locale.'/sitemap.svg') }}" alt="{{ __('projects.carbon.alt.sitemap') }}" margin="true" />
+        <div class="px-20">
+            <x-projects.image src="{{ asset('images/projects/carbon/'.$locale.'/sitemap.svg') }}" alt="{{ __('projects.carbon.alt.sitemap') }}" />
+        </div>
     </div>
 
     <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-10 py-10 md:py-20 text-center">

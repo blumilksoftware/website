@@ -32,7 +32,11 @@ module.exports = {
           light: '#F7F8FD',
         },
         bubble: '#DAE3F0',
-        tile: '#F7F8FB',
+        tile: {
+          title: '#0E0B3D',
+          content: '#6B7280',
+          background: '#F7F8FB'
+        },
         brand: '#527ABA',
         website: {
           normal: '#5379F6',
@@ -53,6 +57,9 @@ module.exports = {
         sora: ['Sora', 'sans-serif'],
         montserrat: ['Montserrat'],
         poppins: ['Poppins'],
+      },
+      lineHeight: {
+        '7.5': '30px',
       },
     },
     listStyleType: {
