@@ -59,7 +59,7 @@
                                     </a>
                                 </h3>
                                 <div class="line-clamp-2 text-sm text-gray-400">
-                                    {{ $recommendedSingleNews['description'] }}
+                                    {!! $recommendedSingleNews['description'] !!}
                                 </div>
                             </div>
                         @endforeach
