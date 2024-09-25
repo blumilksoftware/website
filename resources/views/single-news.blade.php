@@ -13,10 +13,13 @@
 
 @section("content")
     <section class="2xl:mx-[10%] 3xl:max-w-screen-2xl 3xl:mx-auto -mb-32">
-        <div class="w-full h-[232px] sm:h-[594px] overflow-hidden order-2 lg:order-1 lg:mt-0">
+        <div class="relative w-full h-[232px] sm:h-[594px] overflow-hidden order-2 lg:order-1 lg:mt-0">
             <img src="{{ asset("storage/".$news['photo']) }}"
                  alt="{{ $news['title'] }}"
-                 class="inset-0 size-full object-cover">
+                 class="absolute inset-0 size-full object-cover blur-md">
+            <img src="{{ asset("storage/".$news['photo']) }}"
+                 alt="{{ $news['title'] }}"
+                 class="absolute inset-0 size-full object-contain">
         </div>
         <div class="flex flex-col lg:gap-24 xl:gap-32 lg:flex-row lg:place-content-between">
             <div class="relative sm:-top-28 mx-auto lg:left-16 pt-8 sm:pt-16 px-12 flex flex-col sm:bg-white sm:w-[70%] gap-8">
