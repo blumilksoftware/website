@@ -29,7 +29,7 @@
     <div class="relative z-10">
         @include('layout.navigation')
     </div>
-    <div class="mb-auto">
+    <div class="my-auto">
         <div class="relative hidden sm:block -z-10 2xl:max-w-screen-3xl mx-auto">
             <div class="absolute left-[8%] md:-left-0 top-28 xl:top-16">
                 <x-bubble size="100"/>

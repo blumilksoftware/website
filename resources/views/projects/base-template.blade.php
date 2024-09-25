@@ -15,7 +15,7 @@
             </div>
             <div class="items-center">
                 <p class="text-lg lg:text-xl font-light text-center">
-                    <span class="leading-relaxed">{{ $project->description }}</span>
+                    <span class="leading-7.5">{{ $project->description }}</span>
                 </p>
             </div>
         </div>

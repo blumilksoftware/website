@@ -78,7 +78,7 @@ class NewsResource extends Resource
                             ->required()
                             ->directory(News::PHOTOS_DIRECTORY)
                             ->multiple(false)
-                            ->maxSize(1000),
+                            ->maxSize(2500),
                     ]),
                 ])->from("lg"),
             ])->columns(1);

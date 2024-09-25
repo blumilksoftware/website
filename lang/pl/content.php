@@ -106,7 +106,7 @@ return [
             "subtitle_1" => "Jako pasjonaci kodu, tworzymy nowoczesne rozwiązania technologiczne, które inspirują i ułatwiają codzienne życie naszych klientów. Doskonalimy umiejętności po to, aby aktywnie współtworzyć społeczność programistyczną w Polsce.",
             "activity_1" => [
                 "title" => "Projekty badawczo-rozwojowe (B+R)",
-                "subtitle" => "Zajmujemy się różnorodnymi zagadnieniami badawczymi, obejmującymi: przetwarzanie dużych zbiorów danych (big data), rozwiązywanie problemów szeregowania zadań, wykorzystywanie sztucznej inteligencji, optymalizacja. Dzięki doświadczeniu i wiedzy zdobytej przez członków naszego zespołu, jesteśmy w stanie skutecznie zarządzać i realizować projekty R&D, zapewniając naszym Klientom najwyższą jakość i innowacyjność w każdym etapie współpracy.",
+                "subtitle" => "Zajmujemy się różnorodnymi zagadnieniami badawczymi, obejmującymi przetwarzanie dużych zbiorów danych (big data), rozwiązywanie problemów szeregowania zadań, wykorzystywanie sztucznej inteligencji, optymalizację. Dzięki doświadczeniu i&nbsp;wiedzy zdobytej przez członków naszego zespołu, jesteśmy w&nbsp;stanie skutecznie zarządzać i realizować projekty R&D, zapewniając naszym Klientom najwyższą jakość i innowacyjność w każdym etapie współpracy.",
             ],
             "activity_2" => [
                 "title" => "Łączymy społeczność technologiczną w Legnicy",
@@ -114,11 +114,11 @@ return [
             ],
             "activity_3" => [
                 "title" => "Środowisko akademickie",
-                "subtitle" => "Prowadzimy zajęcia na kierunku Informatyka i Inżynieria Produkcji i Logistyki w Collegium Witelona Uczelnia Państwowa w Legnicy. Organizujemy także otwarty program praktyk dla studentów kierunków informatycznych oraz jesteśmy partnerami w naukowych konferencjach.",
+                "subtitle" => "Prowadzimy zajęcia na kierunkach Informatyka i Inżynieria Produkcji i Logistyki w Collegium Witelona Uczelnia Państwowa w Legnicy. Organizujemy także otwarty program praktyk dla studentów kierunków informatycznych oraz jesteśmy partnerami w&nbsp;naukowych konferencjach.",
             ],
             "activity_4" => [
                 "title" => "SoDA (Software Development Association Poland)",
-                "subtitle" => "Należymy do grona założycieli prawdopodobnie największej grupy badawczej w obszarze sztucznej inteligencji w Polsce - SoDA AI Research Group Udzielamy eksperckich komentarzy do raportów branżowych oraz prasy ogólnopolskiej, w tym Forbes i Dziennik Prawny.  Szkolimy sektor publiczny ze sposobów wykorzystywania AI. Udzielamy eksperckich wywiadów w telewizji i radiu oraz występujemy na konferencjach.",
+                "subtitle" => "Należymy do grona założycieli prawdopodobnie największej grupy badawczej w obszarze sztucznej inteligencji w Polsce - SoDA AI Research Group. Udzielamy eksperckich komentarzy do raportów branżowych oraz prasy ogólnopolskiej, w tym Forbes i&nbsp;Dziennik Prawny. Szkolimy sektor publiczny ze sposobów wykorzystywania AI. Udzielamy eksperckich wywiadów w&nbsp;telewizji i radiu oraz występujemy na konferencjach.",
             ],
         ],
         "section_5" => [

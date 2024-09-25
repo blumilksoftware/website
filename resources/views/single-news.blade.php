@@ -59,7 +59,7 @@
                                     </a>
                                 </h3>
                                 <div class="line-clamp-2 text-sm text-gray-400">
-                                    {{ $recommendedSingleNews['description'] }}
+                                    {!! $recommendedSingleNews['description'] !!}
                                 </div>
                             </div>
                         @endforeach
@@ -69,7 +69,7 @@
             <div class="w-full lg:mr-[5%] 2xl:mr-0 relative sm:-top-28 lg:top-0 sm:w-[70%] mx-auto px-12">
                 <div @class(['mt-10', 'hidden' => count($tags) === 0])>
                     <h3 class="text-lg lg:text-xl font-semibold pb-8">{{ __("content.activity.section_1.title_2") }}</h3>
-                    <div class="flex flex-col divide-y-2 divide-dotted">
+                    <div class="flex flex-col divide-y-4 divide-dotted">
                         @foreach($tags as $tag)
                             <a href="{{ route('news', ['tag' => $tag]) }}"
                                class="flex justify-between py-3 font-light hover:text-website-normal hover:font-normal">
@@ -84,7 +84,7 @@
                     </div>
                 </div>
                 <div @class(['mt-10', 'hidden' => count($peopleTags) === 0])>
-                    <h3 class="text-lg lg:text-xl font-semibold">{{ __("content.activity.section_1.title_3") }}</h3>
+                    <h3 class="text-lg lg:text-xl font-semibold pb-2">{{ __("content.activity.section_1.title_3") }}</h3>
                     <div class="flex flex-wrap gap-4 pt-4">
                         @foreach($peopleTags as $tag)
                             <a href="{{ route('news', ['tag' => $tag]) }}">

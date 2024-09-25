@@ -15,7 +15,7 @@
     <div
          @class([
              'lg:absolute lg:bottom-0 lg:px-12 lg:pb-12 lg:pt-6 flex flex-col lg:w-[80%] lg:place-self-center gap-2 lg:gap-3 lg:bg-white'=>$isFirst,
-             'flex flex-col gap-2' => !$isFirst,
+             'flex flex-col gap-3' => !$isFirst,
 
          ])>
         <div class="flex text-sm pt-3 justify-between">

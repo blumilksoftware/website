@@ -1,5 +1,5 @@
 <footer class="bg-white">
-    <div class="mx-10 w-auto py-6 md:py-12 flex items-center place-items-center justify-between md:border-t-2 md:border-gray-100">
+    <div class="mx-16 w-auto py-6 md:py-12 flex items-center place-items-center justify-between md:border-t-2 md:border-gray-100">
         <div class="">
             <img class="w-24 md:w-32 shrink-0 mx-auto" src="{{ asset('identification/logo.svg') }}" alt="Blumilk logo"/>
         </div>
@@ -32,7 +32,9 @@
         </div>
         <div class="mt-2 md:mt-0">
             <p class="text-center text-sm leading-5">
-                <a href="{{ route('privacy-policy') }}" target="_blank" class="font-normal whitespace-normal">{{ __('footer.policy') }}</a> | <a href="{{ route('data') }}">{{ __('footer.data') }}</a></p>
+                <a href="{{ route('privacy-policy') }}" target="_blank" class="font-normal whitespace-normal pr-1">{{ __('footer.policy') }}</a>
+                |
+                <a href="{{ route('data') }}" class="pl-1">{{ __('footer.data') }}</a></p>
         </div>
     </div>
 </footer>
