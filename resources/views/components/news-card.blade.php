@@ -11,10 +11,10 @@
             @if($isFirst)
                 <img src="{{ asset("storage/".$news['photo']) }}"
                      alt="{{ $news['title'] }}"
-                     class="absolute h-auto w-full lg:h-full object-cover aspect-square blur-md lg:aspect-auto">
+                     class="hidden lg:block lg:absolute h-auto w-full lg:h-full object-cover aspect-square blur-md lg:aspect-auto">
                 <img src="{{ asset("storage/".$news['photo']) }}"
                      alt="{{ $news['title'] }}"
-                     class="absolute h-auto w-full lg:h-full object-contain aspect-square lg:aspect-auto">
+                     class="lg:absolute h-auto w-full lg:h-full object-contain aspect-square lg:aspect-auto">
             @else
                 <img src="{{ asset("storage/".$news['photo']) }}" alt="{{ $news['title'] }}" class="h-auto w-full lg:h-full object-cover aspect-square lg:aspect-auto">
             @endif
