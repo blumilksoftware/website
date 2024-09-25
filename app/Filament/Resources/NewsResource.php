@@ -10,9 +10,11 @@ use Blumilk\Website\Models\News;
 use Blumilk\Website\Models\Tag;
 use Exception;
 use Filament\Forms;
+use Filament\Forms\Components\Component;
 use Filament\Forms\Components\Section;
 use Filament\Forms\Components\Split;
 use Filament\Forms\Form;
+use Filament\Forms\Set;
 use Filament\Resources\Concerns\Translatable;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -20,6 +22,7 @@ use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Support\Str;
 use Mvenghaus\FilamentPluginTranslatableInline\Forms\Components\TranslatableContainer;
 
 class NewsResource extends Resource
@@ -42,7 +45,13 @@ class NewsResource extends Resource
                             Forms\Components\TextInput::make("title")
                                 ->label("Tytuł")
                                 ->required()
-                                ->maxLength(255),
+                                ->maxLength(255)
+                                ->live(onBlur: true)
+                                ->afterStateUpdated(
+                                    fn(Set $set, Component $component, ?string $state) => $component->getMeta("locale") === "pl"
+                                        ? $set("../slug", Str::slug($state))
+                                        : null,
+                                ),
                         )->requiredLocales(config("app.translatable_locales")),
                         Forms\Components\TextInput::make("slug")
                             ->label("Slug")
