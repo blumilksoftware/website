@@ -30,12 +30,12 @@ return [
                 "subtitle" => "We create dedicated software in the form of mobile and web applications.",
             ],
             "tile_2" => [
-                "title" => "Audits of IT solutions",
-                "subtitle" => "We analyze the source codes of ready-made IT solutions.",
-            ],
-            "tile_3" => [
                 "title" => "Digitization of business and processes",
                 "subtitle" => "We help companies in the digital transformation of their business.",
+            ],
+            "tile_3" => [
+                "title" => "Audits of IT solutions",
+                "subtitle" => "We analyze the source codes of ready-made IT solutions.",
             ],
             "tile_4" => [
                 "title" => "R&D projects",

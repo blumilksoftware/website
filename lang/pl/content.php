@@ -30,12 +30,12 @@ return [
                 "subtitle" => "Tworzymy dedykowane oprogramowanie w formie aplikacji mobilnych i webowych.",
             ],
             "tile_2" => [
-                "title" => "Audyty rozwiązań IT",
-                "subtitle" => "Analizujemy kody źródłowe gotowych rozwiązań informatycznych.",
-            ],
-            "tile_3" => [
                 "title" => "Cyfryzacja biznesu i procesów",
                 "subtitle" => "Pomagamy klientom przejść przez transformację cyfrową w ich firmach.",
+            ],
+            "tile_3" => [
+                "title" => "Audyty rozwiązań IT",
+                "subtitle" => "Analizujemy kody źródłowe gotowych rozwiązań informatycznych.",
             ],
             "tile_4" => [
                 "title" => "Projekty B+R",
