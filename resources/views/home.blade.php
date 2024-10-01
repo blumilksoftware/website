@@ -57,12 +57,12 @@
 
                     <x-tile title="{{ __('content.home.section_3.tile_2.title') }}"
                             description="{{ __('content.home.section_3.tile_2.subtitle') }}">
-                        <x-icons.report-search accent="stroke-website-normal"/>
+                        <x-icons.desktop-analytics accent="stroke-website-normal"/>
                     </x-tile>
 
                     <x-tile title="{{ __('content.home.section_3.tile_3.title') }}"
                             description="{{ __('content.home.section_3.tile_3.subtitle') }}">
-                        <x-icons.desktop-analytics accent="stroke-website-normal"/>
+                        <x-icons.report-search accent="stroke-website-normal"/>
                     </x-tile>
                     <x-tile title="{{ __('content.home.section_3.tile_4.title') }}"
                             description="{{ __('content.home.section_3.tile_4.subtitle') }}">
