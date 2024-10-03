@@ -11,12 +11,12 @@
         "ext-pdo": "*",
         "codezero/laravel-localized-routes": "^4.0.1",
         "codezero/laravel-unique-translation": "^4.3.1",
-        "filament/filament": "^3.2.110",
-        "filament/spatie-laravel-translatable-plugin": "^3.2.110",
+        "filament/filament": "^3.2.115",
+        "filament/spatie-laravel-translatable-plugin": "^3.2.115",
         "guzzlehttp/guzzle": "^7.9.2",
-        "laravel/framework": "^11.21.0",
-        "laravel/sanctum": "^4.0.2",
-        "laravel/tinker": "^2.9",
+        "laravel/framework": "^11.25.0",
+        "laravel/sanctum": "^4.0.3",
+        "laravel/tinker": "^2.10.0",
         "mvenghaus/filament-plugin-translatable-inline": "^3.0.8",
         "nesbot/carbon": "^3.8.0"
     },
@@ -26,7 +26,7 @@
         "mockery/mockery": "^1.6.12",
         "nunomaduro/collision": "^8.4.0",
         "larastan/larastan": "^2.9.8",
-        "phpunit/phpunit": "^11.3.1",
+        "phpunit/phpunit": "^11.3.6",
         "spatie/laravel-ignition": "^2.8.0"
     },
     "autoload": {
