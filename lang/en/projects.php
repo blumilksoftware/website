@@ -137,7 +137,7 @@ return [
         ],
     ],
     "gtb" => [
-        "title_1" => "Shared economy application for",
+        "title_1" => "Shared economy web application for",
         "title_2" => "shipment transportation",
         "project_description" => "Shared economy application for parcel transportation. As a sender, the user adds the parcels he wants to transport, individually setting the price for the service. As a driver, he looks for packages on the route he will be driving and earns money by delivering them.",
         "challenges" => [
@@ -206,7 +206,7 @@ return [
         ],
     ],
     "carbon" => [
-        "title_1" => "Application for collecting data and generating reports",
+        "title_1" => "Web application for collecting data and generating reports",
         "title_2" => "regarding carbon footprint",
         "project_description" => "The tool allows users to independently calculate CO2 emissions, providing a large set of indicators that are the basis for calculations.",
         "challenges" => [
