@@ -41,7 +41,7 @@
             </div>
             <div class="flex flex-col gap-4">
                 <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_3") }}</dt>
-                <dd class="order-first text-6xl font-semibold">85</dd>
+                <dd class="order-first text-6xl font-semibold">95</dd>
             </div>
             <div class="flex flex-col gap-4">
                 <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_4") }}</dt>
@@ -105,7 +105,7 @@
                         <span class="leading-7.5 text-xs md:text-sm text-tile-content">{!!__("content.about.section_4.activity_2.subtitle") !!}</span>
                     </p>
                 </div>
-                <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:place-content-center order-6 md:order-5 2xl:order-none">
+                <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-6 md:order-5 2xl:order-none">
                     <p class="font-normal text-center md:text-start 2xl:pr-4 px-3">
                         <span class="leading-7.5 text-md font-semibold md:font-bold block pb-3">{{ __("content.about.section_4.activity_3.title") }}</span>
                         <span class="leading-7.5 text-xs md:text-sm text-tile-content">{!! __("content.about.section_4.activity_3.subtitle") !!}</span>

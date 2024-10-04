@@ -15,7 +15,7 @@ return [
             "title_1" => "Software tailored to",
             "title_2" => "your",
             "title_3" => "needs",
-            "subtitle_1" => "We are passionate about creating web/mobile applications and advanced R&D projects.",
+            "subtitle_1" => "We help clients with digital transformation and develop complex web/mobile applications and advanced R&D projects.",
             "subtitle_2" => "We turn concepts into working solutions.",
         ],
         "section_2" => [
@@ -46,13 +46,13 @@ return [
                 "subtitle" => "We design intuitive interfaces that make using them easy and pleasant.",
             ],
             "tile_6" => [
-                "title" => "AI implementations",
+                "title" => "AI solutions",
                 "subtitle" => "We offer clients optimization of activities using AI.",
             ],
         ],
         "section_4" => [
             "title_1" => "Case Study",
-            "subtitle_1" => "Learn how our implementations transformed clients' challenges into ",
+            "subtitle_1" => "Learn how our implementations transformed clients' ideas into ",
             "subtitle_2" => "effective solutions",
             "tile_1" => [
                 "title_1" => "Project objective",
@@ -80,7 +80,7 @@ return [
             "title_2" => "is primarily people",
             "subtitle_1" => "Our team consists of",
             "subtitle_2" => "25 unique technology enthusiasts",
-            "subtitle_3" => "- programmers, testers, project managers and specialists with extensive experience.",
+            "subtitle_3" => "- programmers, testers, devops, graphic designers, project managers and specialists with extensive experience.",
             "subtitle_4" => "We work in stationary and hybrid mode",
             "subtitle_5" => "from Legnica, combining flexibility with efficiency.",
         ],
@@ -92,21 +92,21 @@ return [
         ],
         "section_3" => [
             "title_1" => "Our values",
-            "subtitle_1" => "Discover the key values that shape our company and constitute the foundation of our business.",
-            "subtitle_2" => "At Blumilk, we focus on what we do, i.e. passion, innovation and technical perfection.",
+            "subtitle_1" => "",
+            "subtitle_2" => "In our daily work, we focus on passion, innovation and technical excellence.",
             "content_1" => "Passion",
-            "content_2" => "We are passionate about creating software, engaging in both scientific research and education to share knowledge and support the development of young talents.",
+            "content_2" => "We work with a passion for technology, committed to creating innovative solutions that not only meet customer expectations, but also inspire further development.",
             "content_3" => "Innovation",
-            "content_4" => "We operate in the areas of big data processing, artificial intelligence, and optimization, developing modern technologies and promoting innovations.",
+            "content_4" => "We are constantly looking for new technologies and solutions to stay ahead of market expectations and provide customers with the highest quality products, giving them a competitive edge.",
             "content_5" => "Technical excellence",
-            "content_6" => "We create software that works efficiently and reliably, is safe and easy to use. We hone our skills to create products that stand out in the market.",
+            "content_6" => "Our products are not only functional, but also efficient and in line with the latest industry standards. We take care of every detail, perfect our processes and use innovative approaches.",
         ],
         "section_4" => [
             "title_1" => "Our mission",
-            "subtitle_1" => "As code enthusiasts, we create modern technological solutions that inspire and make the everyday lives of our customers easier. We improve our skills in order to actively contribute to the programming community in Poland.",
+            "subtitle_1" => "We promote a culture of innovation, collaboration and continuous development in the IT industry.",
             "activity_1" => [
                 "title" => "Research and development projects (R&D)",
-                "subtitle" => "We deal with a variety of research issues, including: processing large data sets (big data), solving task scheduling problems, using artificial intelligence, and optimization. Thanks to the experience and knowledge gained by our team members, we are able to effectively manage and implement R&D projects, providing our clients with the highest quality and innovation at every stage of cooperation.",
+                "subtitle" => "Thanks to the experience and knowledge gained by our team members, we are able to effectively manage and implement R&D projects, providing our clients with the highest quality and innovation at every stage of cooperation.",
             ],
             "activity_2" => [
                 "title" => "We connect the technological community in Legnica",
