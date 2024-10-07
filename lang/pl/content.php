@@ -93,7 +93,7 @@ return [
         "section_3" => [
             "title_1" => "Nasze wartości",
             "subtitle_1" => "",
-            "subtitle_2" => "W codziennej pracy stawiamy na, innowacyjność i doskonałość techniczną.",
+            "subtitle_2" => "W codziennej pracy stawiamy na innowacyjność i doskonałość techniczną.",
             "content_1" => "Pasja",
             "content_2" => "Działamy z pasją do technologii, angażując się w tworzenie nowatorskich rozwiązań, które nie tylko spełniają oczekiwania klientów, ale także inspirują do dalszego rozwoju.",
             "content_3" => "Innowacyjność",
