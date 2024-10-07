@@ -14,7 +14,7 @@ return [
     "k1" => [
         "title_1" => "System zarządzania",
         "title_2" => "licencjami i dystrybucji oprogramowania",
-        "project_description" => "System do zarządzania oprogramowaniem znajdującym się na komputerach uczelnianych na podstawie zdefiniowanych reguł i harmonogramów, z uwzględnieniem licencji oprogramowania. Użytkownicy otrzymują kontrolowany dostęp do programów i mogą z nich korzystać zgodnie z określonymi zasadami.",
+        "project_description" => "System do zarządzania oprogramowaniem na komputerach uczelnianych, oparty na zdefiniowanych regułach i harmonogramach, z uwzględnieniem licencji oprogramowania.",
         "challenges" => [
             "challenge_1" => [
                 "title" => "Bezpieczeństwo danych",
@@ -22,7 +22,7 @@ return [
             ],
             "challenge_2" => [
                 "title" => "Implementacja modelu uprawnień i ról",
-                "description" => "zapewniający właściwy podział uprawnień",
+                "description" => "zapewniającego właściwy podział uprawnień",
             ],
             "challenge_3" => [
                 "title" => "Kontrola i nadzór maszyn klienckich",
@@ -75,12 +75,12 @@ return [
         "project_description" => "Aplikacja do zamawiania usług medycznych z przychodni Vita+. Pozwala pacjentom na przeglądanie i wybór oferty, płatność online i wybór wygodnego terminu realizacji usługi. Przychodnia zaś zarządza kalendarzem i ofertą, dostosowując system do swoich potrzeb.",
         "challenges" => [
             "challenge_1" => [
-                "title" => "Przeniesienie wizji na funkcjonalny kod",
-                "description" => "zrozumienie specyfiki branży i potrzeb",
+                "title" => "Zrozumienie specyfiki branży",
+                "description" => "w celu przeniesienia wizji na funkcjonalny kod",
             ],
             "challenge_2" => [
-                "title" => "Wydajność i bezpieczeństwo danych",
-                "description" => "optymalizacja procesów bazodanowych",
+                "title" => "Optymalizacja procesów bazodanowych",
+                "description" => "oraz zapewnienie bezpieczeństwa danych",
             ],
             "challenge_3" => [
                 "title" => "Dedykowana aplikacja",
@@ -88,7 +88,7 @@ return [
             ],
             "challenge_4" => [
                 "title" => "Bezpieczne płatności",
-                "description" => "zapewnienie prostoty i bezpieczeństwa procesu",
+                "description" => "obsłużone przez prosty i intuicyjny system transakcji",
             ],
             "challenge_5" => [
                 "title" => "Interfejs użytkownika",
@@ -100,30 +100,30 @@ return [
             "second" => "Kolor dodatkowy",
             "third" => "Kolor akcentujący",
             "fourth" => "Tekst",
-            "description" => "Paleta kolorów składa się z czterech kluczowych odcieni. Kolor podstawowy to świeży, miętowy odcień, który nadaje projektom nowoczesny i spokojny charakter. Kolor dodatkowy, głęboki fiolet, wprowadza do projektów elegancję i wyróżnia się na tle innych elementów. Kolor akcentujący, ciepły pomarańcz, dodaje energii i podkreśla kluczowe elementy wizualne. Tekst w kolorze białymk zapewnia czytelność i kontrast, harmonizując z resztą palety.",
+            "description" => "Paleta kolorów składa się z czterech kluczowych odcieni. Kolor podstawowy to świeży, miętowy odcień, który nadaje projektom nowoczesny i spokojny charakter. Kolor dodatkowy - głęboki fiolet - wprowadza do projektów elegancję i wyróżnia się na tle innych elementów. Kolor akcentujący, ciepły pomarańcz, dodaje energii i podkreśla kluczowe elementy wizualne. Tekst w kolorze szarym zapewnia czytelność i kontrast, harmonizując z resztą palety.",
         ],
         "typography_description_1" => "Montserrat",
         "typography_description_2" => "to nowoczesny, bezszeryfowy font o czytelnych liniach i uniwersalnym charakterze, idealny do zastosowań zarówno cyfrowych, jak i drukowanych. Jego elegancka estetyka nadaje projektom współczesny wygląd, a różnorodność stylów zapewnia elastyczność w projektowaniu. Font jest dostępny bezpłatnie, obsługuje wiele języków i doskonale prezentuje się na wszystkich urządzeniach.",
         "functionalities" => [
             "functionality_1" => [
                 "title" => "Zarządzanie ofertą",
-                "description" => "tworzenie listy dostępnych usług medycznych",
+                "description" => "poprzez tworzenie listy dostępnych usług medycznych",
             ],
             "functionality_2" => [
                 "title" => "Tworzenie kalendarza",
-                "description" => "ustalanie dostępnym terminów realizacji usług",
+                "description" => "w celu ustalenia dostępnych terminów realizacji usług",
             ],
             "functionality_3" => [
                 "title" => "Statusowanie wizyt",
-                "description" => "informacja o etapie realizacji usługi",
+                "description" => "dostarcza informacji o etapie realizacji usługi",
             ],
             "functionality_4" => [
                 "title" => "Zamawianie usług medycznych",
-                "description" => "proces wyboru usług, terminu oraz płatności",
+                "description" => "obejmuje proces wyboru usług, ustalania terminu oraz dokonywania płatności",
             ],
             "functionality_5" => [
                 "title" => "Dane historyczne",
-                "description" => "przechowywanie historii zrealizowanych zamówień",
+                "description" => "dotyczą przechowywania historii zrealizowanych zamówień",
             ],
         ],
         "title_4" => "Rebranding strony internetowej",
@@ -139,15 +139,15 @@ return [
     "gtb" => [
         "title_1" => "Aplikacja shared economy do",
         "title_2" => "przewozów przesyłek",
-        "project_description" => "Aplikacja shared economy do przewozów przesyłek. Jako nadawca użytkownik dodaje paczki, które chce przewieźć, indywidualnie ustalając cenę za usługę. Zaś jako kierowca szuka paczek na trasie, którą będzie jechał i zarabia na ich dostarczeniu.",
+        "project_description" => "Aplikacja typu shared economy do przewozu przesyłek. Użytkownik w roli nadawcy dodaje paczki do przewiezienia, samodzielnie ustalając cenę za usługę. Z kolei kierowca wyszukuje paczki na trasie, którą planuje przejechać i zarabia na ich dostarczeniu.",
         "challenges" => [
             "challenge_1" => [
                 "title" => "Progresywna aplikacja internetowa",
                 "description" => "dostępna zarówno z telefonu jak i komputera",
             ],
             "challenge_2" => [
-                "title" => "Zarządzanie systemem",
-                "description" => "przesyłkami, kategoriami i zakresami cenowymi",
+                "title" => "Zarządzanie systemem przesyłek",
+                "description" => "w tym kategoriami i zakresami cenowymi",
             ],
             "challenge_3" => [
                 "title" => "Płatności online",
@@ -158,8 +158,8 @@ return [
                 "description" => "weryfikujący tożsamość odbiorców i kierowców",
             ],
             "challenge_5" => [
-                "title" => "Bezpieczeństwo danych",
-                "description" => "optymalizacja procesów bazodanowych",
+                "title" => "Optymalizacja procesów bazodanowych",
+                "description" => "oraz zapewnienie bezpieczeństwa danych",
             ],
         ],
         "colors" => [
@@ -167,10 +167,10 @@ return [
             "second" => "Kolor dodatkowy",
             "third" => "Kolor neutralny",
             "fourth" => "Tekst",
-            "description" => "Paleta kolorów jest zbudowana na bazie pierwotnej wersji aplikacji. Kolor podstawowy to żywy, słoneczny żółty, który wnosi optymizm i energię do projektów. Kolor dodatkowy to głęboka szarość, dodająca nowoczesnego, profesjonalnego charakteru. Kolor neutralny, jasny szary, zapewnia subtelną harmonię i idealnie balansuje paletę. Tekst w kolorze białym gwarantuje doskonałą czytelność i kontrast.",
+            "description" => "Paleta kolorów jest zbudowana na bazie pierwotnej wersji aplikacji. Kolor podstawowy to żywy, słoneczny żółty, który wnosi optymizm i energię do projektów. Kolor dodatkowy to głęboka szarość, dodająca nowoczesnego, profesjonalnego charakteru. Kolor neutralny, jasny szary, zapewnia subtelną harmonię i idealnie balansuje paletę. Tekst w kolorze czarnym gwarantuje doskonałą czytelność i kontrast.",
         ],
         "typography_description_1" => "Poppins",
-        "typography_description_2" => "to nowoczesny, geometryczny font bezszeryfowy, który wyróżnia się czystością i czytelnością. Jego proste linie i różnorodne grubości sprawiają, że jest wszechstronny i idealny do różnorodnych zastosowań – od nagłówków po teksty akapitowe. Font wspiera wiele języków i jest dostępny za darmo, co ułatwia jego integrację w projektach. Dzięki swojemu profesjonalnemu wyglądowi, Poppins nadaje projektom nowoczesny charakter.",
+        "typography_description_2" => "to nowoczesny, geometryczny font bezszeryfowy, który wyróżnia się czytelnością. Jego proste linie i różnorodne grubości sprawiają, że jest wszechstronny. Font wspiera wiele języków i jest dostępny za darmo, co ułatwia jego integrację w projektach. Dzięki swojemu profesjonalnemu wyglądowi, Poppins nadaje projektom nowoczesny charakter.",
         "functionalities" => [
             "functionality_1" => [
                 "title" => "Szczegółowe statystyki",
@@ -186,17 +186,17 @@ return [
             ],
             "functionality_4" => [
                 "title" => "Zabezpieczony odbiór przesyłek",
-                "description" => "weryfikacja za pomocą kodu pin",
+                "description" => "za pomocą weryfikacji kodu pin",
             ],
             "functionality_5" => [
                 "title" => "Bezpieczne płatności",
-                "description" => "proces transakcji obsłużony przez system Stripe",
+                "description" => "obsłużone przez system transakcji Stripe",
             ],
         ],
         "testimonial" => [
             "name" => "Przemysław Kędzierski",
             "company" => "GetTheBox",
-            "description" => "Miałem bardzo pozytywne doświadczenie ze współpracy z firmą Blumilk przy tworzeniu aplikacji mobilnej Getthebox. Proces realizacji projektu przebiegał sprawnie i profesjonalnie. Jestem zadowolony z końcowego produktu, który został wykonany zgodnie z moimi oczekiwaniami i działa bez zarzutu.",
+            "description" => "Miałem bardzo pozytywne doświadczenie we współpracy z firmą Blumilk przy tworzeniu aplikacji mobilnej Getthebox. Proces realizacji projektu przebiegał sprawnie i profesjonalnie. Jestem zadowolony z końcowego produktu, który został wykonany zgodnie z moimi oczekiwaniami i działa bez zarzutu.",
         ],
         "alt" => [
             "laptop_1" => "laptop ze stroną aplikacji",

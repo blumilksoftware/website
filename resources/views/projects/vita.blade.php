@@ -59,8 +59,8 @@
                                       second-text-color="text-white"
                                       third-title="{{ __('projects.vita.colors.third') }}" third-bg="#F0A53A"
                                       third-text-color="text-white"
-                                      fourth-title="{{ __('projects.vita.colors.fourth') }}" fourth-bg="#F9FAFB"
-                                      fourth-text-color="text-black"/>
+                                      fourth-title="{{ __('projects.vita.colors.fourth') }}" fourth-bg="#6B7280"
+                                      fourth-text-color="text-white"/>
     </div>
 
     <x-projects.typography font="montserrat" bg="bg-vita">
