@@ -14,7 +14,7 @@ return [
     "k1" => [
         "title_1" => "License and software",
         "title_2" => " distribution management system",
-        "project_description" => "A system for managing software on university computers based on defined rules and schedules, including software licenses. Users receive controlled access to programs and can use them in accordance with specific rules.",
+        "project_description" => "A system for managing software on university computers, based on defined rules and schedules, taking into account software licenses.",
         "challenges" => [
             "challenge_1" => [
                 "title" => "Data security",
@@ -75,12 +75,12 @@ return [
         "project_description" => "Application for ordering medical services from the Vita+ clinic. It allows patients to browse and select the offer, pay online and choose a convenient date for the service. The clinic manages the calendar and offer, adapting the system to its needs.",
         "challenges" => [
             "challenge_1" => [
-                "title" => "Translating the vision into functional code",
-                "description" => "understanding the specifics of the industry and needs",
+                "title" => "Understand industry specifics",
+                "description" => "to transfer vision into functional code",
             ],
             "challenge_2" => [
-                "title" => "Performance and data security",
-                "description" => "optimization of database processes",
+                "title" => "Optimize database processes",
+                "description" => "and ensure data security",
             ],
             "challenge_3" => [
                 "title" => "Dedicated application",
@@ -88,7 +88,7 @@ return [
             ],
             "challenge_4" => [
                 "title" => "Secure payments",
-                "description" => "ensuring the simplicity and security of the process",
+                "description" => "handled by a simple and intuitive transaction system",
             ],
             "challenge_5" => [
                 "title" => "User interface",
@@ -100,30 +100,30 @@ return [
             "second" => "Secondary color",
             "third" => "Accent color",
             "fourth" => "Text",
-            "description" => "The color palette consists of four key shades. The basic color is a fresh, mint shade that gives the designs a modern and calm character. The additional color, deep purple, adds elegance to the designs and stands out from other elements. The accent color, warm orange, adds energy and highlights key visual elements. The white text ensures readability and contrast, harmonizing with the rest of the palette.",
+            "description" => "The color palette consists of four key shades. The basic color is a fresh, mint shade that gives the designs a modern and calm character. The additional color - deep purple - adds elegance to the designs and stands out from other elements. The accent color, warm orange, adds energy and highlights key visual elements. The gray text ensures readability and contrast, harmonizing with the rest of the palette.",
         ],
         "typography_description_1" => "Montserrat",
         "typography_description_2" => "is a modern, sans-serif font with clear lines and a universal character, ideal for both digital and printed applications. Its elegant aesthetic gives designs a contemporary look, and the variety of styles provides design flexibility. The font is available for free, supports multiple languages and looks great on all devices.",
         "functionalities" => [
             "functionality_1" => [
                 "title" => "Offer management",
-                "description" => "creating a list of available medical services",
+                "description" => "by creating a list of available medical services",
             ],
             "functionality_2" => [
-                "title" => "Creating a calendar",
-                "description" => "setting available dates for service implementation",
+                "title" => "Create a calendar",
+                "description" => "to determine available service dates",
             ],
             "functionality_3" => [
-                "title" => "Visit status",
-                "description" => "information about the stage of service implementation",
+                "title" => "Status of visits",
+                "description" => "provides information about the stage of the service",
             ],
             "functionality_4" => [
                 "title" => "Ordering medical services",
-                "description" => "the process of choosing services, dates and payments",
+                "description" => "involves the process of selecting services, scheduling and making payments",
             ],
             "functionality_5" => [
                 "title" => "Historical data",
-                "description" => "storing the history of completed orders",
+                "description" => "refers to the storage of the history of completed orders",
             ],
         ],
         "title_4" => "Rebranding of the website",
@@ -137,17 +137,17 @@ return [
         ],
     ],
     "gtb" => [
-        "title_1" => "Shared economy application for",
+        "title_1" => "Shared economy web application for",
         "title_2" => "shipment transportation",
-        "project_description" => "Shared economy application for parcel transportation. As a sender, the user adds the parcels he wants to transport, individually setting the price for the service. As a driver, he looks for packages on the route he will be driving and earns money by delivering them.",
+        "project_description" => "A shared economy application for parcel transportation. The user in the role of shipper adds parcels to be transported, setting the price for the service himself. On the other hand, the driver searches for parcels along the route he plans to take and earns money for delivering them.",
         "challenges" => [
             "challenge_1" => [
                 "title" => "Progressive web application",
                 "description" => "available both from your phone and computer",
             ],
             "challenge_2" => [
-                "title" => "System management",
-                "description" => "shipments, categories and price ranges",
+                "title" => "Management of the parcel delivery system",
+                "description" => "including categories and price ranges",
             ],
             "challenge_3" => [
                 "title" => "Online payments",
@@ -158,8 +158,8 @@ return [
                 "description" => "verifying the identity of recipients and drivers",
             ],
             "challenge_5" => [
-                "title" => "Data safety",
-                "description" => "optimization of database processes",
+                "title" => "Optimize database processes",
+                "description" => "and ensure data security",
             ],
         ],
         "colors" => [
@@ -167,10 +167,10 @@ return [
             "second" => "Secondary color",
             "third" => "Neutral color",
             "fourth" => "Text",
-            "description" => "The color palette is built on the basis of the original version of the application. The basic color is a vibrant, sunny yellow that brings optimism and energy to projects. The additional color is deep gray, adding a modern, professional character. The neutral, light gray color provides subtle harmony and perfectly balances the palette. White text guarantees excellent readability and contrast.",
+            "description" => "The color palette is built on the basis of the original version of the application. The basic color is a vibrant, sunny yellow that brings optimism and energy to projects. The additional color is deep gray, adding a modern, professional character. The neutral, light gray color provides subtle harmony and perfectly balances the palette. Black text guarantees excellent readability and contrast.",
         ],
         "typography_description_1" => "Poppins",
-        "typography_description_2" => "is a modern, geometric sans-serif font that stands out for its purity and readability. Its straight lines and varying thicknesses make it versatile and ideal for a variety of uses - from headlines to paragraph texts. The font supports many languages and is available for free, which makes it easy to integrate into your projects. Thanks to its professional appearance, Poppins gives projects a modern character.",
+        "typography_description_2" => "is a modern, geometric sans-serif font that stands out for its readability. Its straight lines and varying thicknesses make it versatile. The font supports many languages and is available for free, which makes it easy to integrate into your projects. Thanks to its professional appearance, Poppins gives projects a modern character.",
         "functionalities" => [
             "functionality_1" => [
                 "title" => "Detailed statistics",
@@ -185,12 +185,12 @@ return [
                 "description" => "on a designated route to monitor their status",
             ],
             "functionality_4" => [
-                "title" => "Secured receipt of shipments",
-                "description" => "pin code verification",
+                "title" => "Secure parcel pickup",
+                "description" => "through PIN code verification",
             ],
             "functionality_5" => [
                 "title" => "Secure payments",
-                "description" => "transaction process handled by the Stripe system",
+                "description" => "handled by Stripe transaction system",
             ],
         ],
         "testimonial" => [
@@ -206,7 +206,7 @@ return [
         ],
     ],
     "carbon" => [
-        "title_1" => "Application for collecting data and generating reports",
+        "title_1" => "Web application for collecting data and generating reports",
         "title_2" => "regarding carbon footprint",
         "project_description" => "The tool allows users to independently calculate CO2 emissions, providing a large set of indicators that are the basis for calculations.",
         "challenges" => [
@@ -215,8 +215,8 @@ return [
                 "description" => "enabling work in the system on many levels",
             ],
             "challenge_2" => [
-                "title" => "Implementation of CO2 counting algorithms",
-                "description" => "understanding the complexity of calculations",
+                "title" => "Implementation of algorithms for calculating CO2 emissions",
+                "description" => "understanding the complexity of these calculations",
             ],
             "challenge_3" => [
                 "title" => "Data security",
@@ -233,7 +233,7 @@ return [
                 "description" => "global and individual user list",
             ],
             "functionality_3" => [
-                "title" => "CO2 Emissions Calculator",
+                "title" => "CO2 emissions calculator",
                 "description" => "for the entire process based on indicators",
             ],
             "functionality_4" => [

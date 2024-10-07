@@ -2,7 +2,7 @@
     <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-5xl 2xl:mx-auto space-y-24 pt-20 pb-24 md:pb-44">
         <div class="grid md:grid-cols-2 text-center md:text-left">
             <div class="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4"> {{ __("projects.typography") }} </div>
-            <div class="leading-9 text-sm font-normal"> {{ $slot }} </div>
+            <div class="leading-loose text-sm font-normal"> {{ $slot }} </div>
         </div>
         <div class="{{ $bg }} w-full rounded-[32px] h-fit md:h-[486px] grid md:grid-cols-2 xl:grid-cols-5 md:grid-rows-4 justify-items-stretch text-white px-4 sm:px-12 tablet:px-16 pb-4 sm:pb-12 pt-12 gap-4 sm:gap-0 xl:gap-16 2xl:gap-0"
             style="font-family: {{ $font }}">
