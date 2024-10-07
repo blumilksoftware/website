@@ -215,8 +215,8 @@ return [
                 "description" => "umożliwiający pracę w systemie na wielu poziomach",
             ],
             "challenge_2" => [
-                "title" => "Implementacja algorytmów do liczenia CO2",
-                "description" => "zrozumienie złożoności wyliczeń",
+                "title" => "Implementacja algorytmów do obliczania emisji CO2",
+                "description" => "oraz zrozumienie złożoności tych wyliczeń",
             ],
             "challenge_3" => [
                 "title" => "Bezpieczeństwo danych",

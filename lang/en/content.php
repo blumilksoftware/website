@@ -110,7 +110,7 @@ return [
             ],
             "activity_2" => [
                 "title" => "We connect the technological community in Legnica",
-                "subtitle" => "We are the organizer of Legnica Technology Meetups - open meetings for backend programmers, frontend developers, application testers, graphic designers, project managers and everyone interested in the world of code.",
+                "subtitle" => "We organize Legnica Technology Meetups, where willing individuals present their experiences and thoughts in the IT industry in any form. The meetings are open to everyone, regardless of their level of professional experience or the technology used.",
             ],
             "activity_3" => [
                 "title" => "Academic environment",
@@ -118,7 +118,7 @@ return [
             ],
             "activity_4" => [
                 "title" => "SoDA (Software Development Association Poland)",
-                "subtitle" => "We are one of the founders of probably the largest research group in the field of artificial intelligence in Poland - SoDA AI Research Group. We provide expert comments on industry reports and the national press, including Forbes and Dziennik Prawny. We train the public sector in how to use AI. We give expert interviews on television and radio and speak at conferences.",
+                "subtitle" => "We are one of the founders of probably the largest research group in the field of artificial intelligence in Poland - SoDA AI Research Group. We provide expert comments on industry reports and in the media. We also train the public sector in how to use AI. We give expert interviews on television and radio and speak at conferences.",
             ],
         ],
         "section_5" => [
@@ -196,15 +196,15 @@ return [
             ],
             "requirements" => [
                 "title_1" => "Ideal candidate:",
-                "content_1" => "Has knowledge of using PHP in a containerized environment.",
-                "content_2" => "Uses dependency injection in every project.",
-                "content_3" => "Tests their code, even before writing the first line.",
-                "content_4" => "Knows the difference between composer install and update commands.",
-                "content_5" => "Understands PHP object-oriented programming.",
-                "content_6" => "Can avoid the n+1 query problem in Eloquent.",
-                "content_7" => "Uses automated tools to maintain code quality.",
-                "content_8" => "Debugs their applications with Xdebug.",
-                "content_9" => "Can join GitHub Flow, CRs, and CI/CD processes.",
+                "content_1" => "Has knowledge of using PHP in a containerized environment",
+                "content_2" => "Uses dependency injection in every project",
+                "content_3" => "Tests their code, even before writing the first line",
+                "content_4" => "Knows the difference between composer install and update commands",
+                "content_5" => "Understands PHP object-oriented programming",
+                "content_6" => "Can avoid the n+1 query problem in Eloquent",
+                "content_7" => "Uses automated tools to maintain code quality",
+                "content_8" => "Debugs their applications with Xdebug",
+                "content_9" => "Can join GitHub Flow, CRs, and CI/CD processes",
             ],
         ],
         "section_3" => [
