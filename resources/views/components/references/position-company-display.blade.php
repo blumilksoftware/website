@@ -3,7 +3,7 @@
 @endif
 
 @if(isset($reference->position) && isset($reference->company))
-    {{ __('at') }}
+    {{ __('content.at') }}
 @endif
 
 @if(isset($reference->company))

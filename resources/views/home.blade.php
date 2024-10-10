@@ -117,7 +117,7 @@
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">{{ __("content.home.section_5.title_1") }}</h2>
             <span class="font-normal text-sm sm:text-md lg:text-lg">{{ __("content.home.section_5.subtitle_1") }}</span>
             <div class="relative">
-                <div class="mx-auto max-w-7xl px-6 lg:px-8">
+                <div class="mx-auto max-w-[1900px]">
                     @includeWhen( count($references), 'components.references.references', ['references' => $references] )
                 </div>
             </div>
