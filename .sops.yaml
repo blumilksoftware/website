@@ -4,3 +4,8 @@ creation_rules:
     path_regex: \.env\.beta\.secrets.*$
     age: >-
       age190mrz0t9rhvwqsnjkt5g3evm8s0dw5fwxkq9hjqcedsq5h0a696s0nrr6q
+
+  - name: prod
+    path_regex: \.env\.prod\.secrets.*$
+    age: >-
+      age1y8wjw4ypc2q9z266w9tdetgtzxrgjjnjvp74pz08pv5csgkh5u2qmm9mfu

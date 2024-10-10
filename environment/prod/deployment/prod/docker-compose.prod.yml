@@ -1,0 +1,107 @@
+networks:
+  traefik-proxy:
+    external: true
+  blumilk-website-prod:
+    driver: bridge
+
+volumes:
+  blumilk-website-prod-pgsql-data:
+    name: blumilk-website-prod-pgsql-data
+  blumilk-website-prod-redis-data:
+    name: blumilk-website-prod-redis-data
+  blumilk-website-prod-storage-data:
+    name: blumilk-website-prod-storage-data
+
+services:
+  blumilk-website-prod-app:
+    image: registry.blumilk.pl/internal-public/website:latest
+    container_name: blumilk-website-prod-app-container
+    pull_policy: always
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+    deploy:
+      mode: replicated
+      replicas: 1
+      resources:
+        limits:
+          memory: 512M
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.blumilk-website-prod-app.rule=Host(`${BLUMILK_WEBSITE_HOST_NAME}`)"
+      - "traefik.http.routers.blumilk-website-prod-app.entrypoints=websecure"
+      - "traefik.http.routers.blumilk-website-prod-app.tls=true"
+      - "traefik.http.routers.blumilk-website-prod-app.tls.certresolver=lets-encrypt-resolver"
+      - "traefik.http.routers.blumilk-website-prod-app.middlewares=authelia@file,response-gzip-compress@file"
+    depends_on:
+      blumilk-website-prod-database:
+        condition: service_healthy
+      blumilk-website-prod-redis:
+        condition: service_healthy
+    working_dir: /application
+    volumes:
+      - ./.env:/application/.env:ro
+      - blumilk-website-prod-storage-data:/application/storage
+    networks:
+      - blumilk-website-prod
+      - traefik-proxy
+    restart: unless-stopped
+    env_file:
+      - .deployment
+
+  blumilk-website-prod-database:
+    image: postgres:16.3-alpine3.18@sha256:64e18e8fb3e9c9aac89ac590c5dd8306b862478404f76cd9b5f7720d012b4c47
+    container_name: blumilk-website-prod-database-container
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+    deploy:
+      mode: replicated
+      replicas: 1
+      resources:
+        limits:
+          memory: 1G
+    environment:
+      - PGPASSWORD=${DB_ROOT_PASSWORD}
+      - POSTGRES_DB=${DB_DATABASE}
+      - POSTGRES_USER=${DB_USERNAME}
+      - POSTGRES_PASSWORD=${DB_PASSWORD}
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready --dbname ${DB_DATABASE} --username ${DB_USERNAME}"]
+      interval: 3s
+      timeout: 3s
+      retries: 5
+    volumes:
+      - blumilk-website-prod-pgsql-data:/var/lib/postgresql/data
+    networks:
+      - blumilk-website-prod
+    restart: unless-stopped
+
+  blumilk-website-prod-redis:
+    image: redis:7.2.3-alpine3.18@sha256:3ce533b2b057f74b235d1d8697ae08b1b6ff0a5e16827ea6a377b6365693c7ed
+    container_name: blumilk-website-prod-redis-container
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "50m"
+        max-file: "5"
+    deploy:
+      mode: replicated
+      replicas: 1
+      resources:
+        limits:
+          memory: 1G
+    healthcheck:
+      test: [ "CMD-SHELL", "redis-cli ping | grep PONG" ]
+      interval: 3s
+      timeout: 3s
+      retries: 5
+    volumes:
+      - blumilk-website-prod-redis-data:/data
+    networks:
+      - blumilk-website-prod
+    restart: unless-stopped
