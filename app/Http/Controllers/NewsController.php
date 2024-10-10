@@ -19,8 +19,12 @@ class NewsController extends Controller
         $tagFromQuery = $request->get("tag");
         $tag = $tagFromQuery
             ? Tag::query()
-                ->where("title->pl", "LIKE", $tagFromQuery)
-                ->orWhere("title->en", "LIKE", $tagFromQuery)
+                ->where(
+                    fn($query) => $query
+                        ->where("title->pl", "LIKE", $tagFromQuery)
+                        ->orWhere("title->en", "LIKE", $tagFromQuery),
+                )
+                ->where("is_primary", true)
                 ->firstOrFail()
             : null;
         $allNewsCount = News::query()
