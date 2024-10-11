@@ -303,7 +303,7 @@ return [
             "e" => "objection to processing,",
             "f" => "transferring data to another service provider.",
             "text_2" => "To exercise your rights, write to us at:",
-            "text_3" => "office@blumilk.pl.",
+            "text_3" => "office@blumilk.pl",
         ],
         "point_8" => "Cookies",
         "text_8" => [
