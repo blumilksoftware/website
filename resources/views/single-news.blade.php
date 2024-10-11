@@ -77,10 +77,10 @@
                             <a href="{{ route('news', ['tag' => $tag]) }}"
                                class="flex justify-between py-3 font-light hover:text-website-normal hover:font-normal">
                                 <span>
-                                {{ $tag['title'] }}
+                                {{ $tag }}
                                 </span>
                                 <span>
-                                {{ $tagsNewsCount[$tag['title']] }}
+                                {{ $tagsNewsCount[$tag] }}
                                 </span>
                             </a>
                         @endforeach
@@ -92,7 +92,7 @@
                         @foreach($peopleTags as $tag)
                             <a href="{{ route('news', ['tag' => $tag]) }}">
                             <span class="capitalize justify-between font-light text-sm text-gray-500 border border-gray-300 w-fit px-3 py-2 rounded-md">
-                                {{ $tag['title'] }}
+                                {{ $tag }}
                             </span>
                             </a>
                         @endforeach

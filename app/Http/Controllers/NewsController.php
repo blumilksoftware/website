@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Blumilk\Website\Http\Controllers;
 
 use Blumilk\Website\Http\Resources\NewsResource;
-use Blumilk\Website\Http\Resources\TagResource;
 use Blumilk\Website\Models\News;
 use Blumilk\Website\Models\Tag;
 use Illuminate\Contracts\View\Factory;
@@ -30,8 +29,7 @@ class NewsController extends Controller
             ->where("published", true)
             ->when($tag, fn($query, $tag) => $query->whereJsonContains("tags", $tag->id))
             ->latest("published_at")
-            ->paginate(7)
-            ->appends(["tag" => $tagFromQuery]);
+            ->paginate(7);
         $tags = Tag::query()
             ->where("is_primary", true)
             ->get();
@@ -81,9 +79,9 @@ class NewsController extends Controller
 
         return $factory->make("single-news")
             ->with("news", $news->resolve())
-            ->with("tags", TagResource::collection($newsTags->where("as_person", false))->resolve())
+            ->with("tags", $newsTags->where("as_person", false)->pluck("title"))
             ->with("tagsNewsCount", $tagsNewsCount)
-            ->with("peopleTags", TagResource::collection($newsTags->where("as_person", true))->resolve())
+            ->with("peopleTags", $newsTags->where("as_person", true)->pluck("title"))
             ->with("recommendedNews", NewsResource::collection($recommendedNews)->resolve())
             ->with("articleUrl", $articleUrl);
     }
