@@ -65,7 +65,7 @@ return [
             "badge" => "Design that fits the specifics of the industry",
         ],
         "section_5" => [
-            "title_1" => "What they say about us",
+            "title_1" => "Customer reviews",
             "subtitle_1" => "Our clients' opinions are very important, they attest to the quality of our services and inspire us to constantly improve.",
         ],
         "section_6" => [
