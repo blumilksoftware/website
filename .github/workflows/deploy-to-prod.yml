@@ -1,0 +1,33 @@
+name: Deploy to prod Blumilk Website
+
+concurrency:
+  group: deploy-prod
+  cancel-in-progress: true
+
+on:
+  push:
+    tags:
+      - v*
+  workflow_dispatch:
+
+jobs:
+
+  deploy:
+    environment: prod
+    name: Deploy to prod
+    runs-on: ubuntu-22.04
+    env:
+      DOCKER_REGISTRY: registry.blumilk.pl
+      DOCKER_REGISTRY_USER_NAME: robot@blumilkbot-harbor
+      DOCKER_REGISTRY_PROJECT_NAME: internal-public
+      DOCKER_REGISTRY_REPO_NAME: website
+      TARGET_DIR_ON_SERVER: /blumilk/production
+    steps:
+      - name: set branch name
+        run: echo "BRANCH_NAME=$GITHUB_REF_NAME" >> $GITHUB_ENV
+
+      - name: checkout
+        uses: actions/checkout@d632683dd7b4114ad314bca15554477dd762a938 # v4.2.0
+        with:
+          fetch-depth: 0
+          ref: ${{ env.BRANCH_NAME }}
