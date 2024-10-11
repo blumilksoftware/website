@@ -44,7 +44,7 @@
         </section>
 
         <section class="relative">
-            <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-10 pt-8 sm:pt-20 lg:pt-40 lg:pb-28">
+            <div class="mx-[10%] 2xl:max-w-[1400px] 2xl:mx-auto space-y-10 pt-8 sm:pt-20 lg:pt-40 lg:pb-28">
                 <div class="pb-6 lg:pb-14 text-center">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.home.section_3.title_1") }}</h2>
                     <span class="font-light leading-7.5 text-sm sm:text-md lg:text-lg relative">{{ __("content.home.section_3.subtitle_1") }}</span>
@@ -105,7 +105,7 @@
                     </div>
                 </div>
                 <div class="flex md:gap-2 justify-center flex-col sm:flex-row">
-                    <x-secondary-button href="{{ route('projects') }}" class="px-10 justify-center">{{ __("buttons.see_more_projects") }}</x-secondary-button>
+                    <x-small-primary-button href="{{ route('projects') }}" class="px-10 justify-center">{{ __("buttons.see_more_projects") }}</x-small-primary-button>
                 </div>
             </div>
         </section>

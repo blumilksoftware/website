@@ -231,7 +231,7 @@ return [
             "message" => "Wiadomość",
         ],
         "location" => [
-            "address" => "ul. Najświętszej Marii Panny 5F/5",
+            "address" => "ul. Najświętszej Marii Panny 5F/3",
             "PostalCode" => "59-220 Legnica",
         ],
         "phone" => "+48 579 710 703",
@@ -253,7 +253,7 @@ return [
             "text_2" => "Blumilk Spółka z ograniczoną odpowiedzialnością,",
             "text_3" => "z siedzibą w Legnicy, wpisana przez Sąd Rejonowy dla Wrocławia-Fabrycznej we Wrocławiu IX Wydział Gospodarczy do rejestru przedsiębiorców KRS pod numerem 0000866755.",
             "text_4" => "Adres urzędowy: Blumilk Sp. z o.o., ul. rtm. Witolda Pileckiego 14, 59-220 Legnica, Polska.",
-            "text_5" => "Adres biura: Blumilk Sp. z o.o., ul. Najświętszej Marii Panny 5F/5, 59-220 Legnica, Polska.",
+            "text_5" => "Adres biura: Blumilk Sp. z o.o., ul. Najświętszej Marii Panny 5F/3, 59-220 Legnica, Polska.",
         ],
         "point_2" => "Jak możesz się z nami skontaktować?",
         "text_2" => [
@@ -333,7 +333,7 @@ return [
         ],
         "office_address" => [
             "title" => "Adres biura",
-            "street" => "ul. Najświętszej Marii Panny 5F/5",
+            "street" => "ul. Najświętszej Marii Panny 5F/3",
         ],
         "phone" => "+48 579 710 703",
         "email" => "office@blumilk.pl",

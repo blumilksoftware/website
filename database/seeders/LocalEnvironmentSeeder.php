@@ -22,7 +22,7 @@ class LocalEnvironmentSeeder extends Seeder
         $this->call(ProjectsSeeder::class);
 
         Tag::factory()->count(12)->create();
-        News::factory()->count(12)->create();
+        News::factory()->count(70)->create();
         ContactForm::factory()->count(12)->create();
         Reference::factory()->count(12)->create();
     }
