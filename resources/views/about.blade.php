@@ -29,7 +29,7 @@
                  alt="{{ __('alt.about') }}"/>
         </div>
     </section>
-    <section class="bg-white py-12 sm:py-16 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
+    <section class="bg-white py-12 sm:pt-16 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
         <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:flex xl:justify-between overflow-hidden text-center text-[#0E0B3D] gap-16 md:gap-8">
             <div class="flex flex-col gap-4">
                 <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_1") }}</dt>
