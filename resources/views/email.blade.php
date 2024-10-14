@@ -165,7 +165,10 @@
                 flex-direction: column;
                 justify-content: center;
                 padding: 1rem 16px;
-                gap: 4px;
+            }
+
+            .footer-copy {
+                margin-right: 4px;
             }
         }
     </style>
@@ -201,24 +204,24 @@
                         </div>
                         <div class="footer-socials">
                             <a href="https://clutch.co/profile/blumilk-0" class="social-link" target="_blank">
-                                <x-icons.clutch></x-icons.clutch>
+                                <img src="{{ asset('images/mail_icons/clutch.png') }}" alt="Clutch logo"/>
                             </a>
                             <a href="https://github.com/blumilksoftware" class="social-link" target="_blank">
-                                <x-icons.github></x-icons.github>
+                                <img src="{{ asset('images/mail_icons/github.png') }}" alt="GitHub logo"/>
                             </a>
                             <a href="https://linkedin.com/company/blumilksoftware" class="social-link" target="_blank">
-                                <x-icons.linkedin></x-icons.linkedin>
+                                <img src="{{ asset('images/mail_icons/linkedin.png') }}" alt="LinkedIn logo"/>
                             </a>
                             <a href="https://www.facebook.com/blumilksoftware/" class="social-link" target="_blank">
-                                <x-icons.facebook></x-icons.facebook>
+                                <img src="{{ asset('images/mail_icons/facebook.png') }}" alt="Facebook logo"/>
                             </a>
                             <a href="https://www.youtube.com/@blumilksoftware" class="social-link" target="_blank">
-                                <x-icons.youtube></x-icons.youtube>
+                                <img src="{{ asset('images/mail_icons/youtube.png') }}" alt="YouTube logo"/>
                             </a>
                         </div>
                     </div>
                     <div class="footer-bottom">
-                        <p>Copyright &copy; 2024 | Blumilk</p>
+                        <p class="footer-copy">Copyright &copy; 2024 | Blumilk</p>
                         <p>
                             <a href="{{ route('privacy-policy') }}" target="_blank">{{ __('footer.policy') }}</a> |
                             <a href="{{ route('data') }}">{{ __('footer.data') }}</a>
