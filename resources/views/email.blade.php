@@ -165,6 +165,7 @@
                 flex-direction: column;
                 justify-content: center;
                 padding: 1rem 16px;
+                gap: 4px;
             }
         }
     </style>
@@ -196,7 +197,7 @@
                 <footer>
                     <div class="footer-top">
                         <div class="footer-logo">
-                            <img src="{{ asset('identification/logo.svg') }}" alt="Blumilk logo"/>
+                            <img src="https://blumilk.pl/identification/logo.svg" alt="Blumilk logo"/>
                         </div>
                         <div class="footer-socials">
                             <a href="https://clutch.co/profile/blumilk-0" class="social-link" target="_blank">
