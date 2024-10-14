@@ -300,7 +300,7 @@ return [
             "e" => "sprzeciwu wobec przetwarzania,",
             "f" => "przenoszenia danych do innego usługodawcy.",
             "text_2" => "Aby skorzystać ze swoich praw, napisz do nas na:",
-            "text_3" => "office@blumilk.pl.",
+            "text_3" => "office@blumilk.pl",
         ],
         "point_8" => "Pliki cookies",
         "text_8" => [

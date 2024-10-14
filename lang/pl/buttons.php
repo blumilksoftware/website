@@ -15,7 +15,7 @@ return [
     "send_message" => "Wyślij wiadomość",
     "read_more" => "Czytaj więcej",
     "join_team" => "Dołącz do zespołu",
-    "apply_internship" => "Zgłoś się na praktyki",
+    "apply_internship" => "Zgłoś się na praktyki!",
     "apply_now" => "Aplikuj teraz!",
     "back_to_portfolio" => "Wróć do portfolio",
     "accept_all" => "Akceptuj wszystkie",
