@@ -1,5 +1,5 @@
 <footer class="bg-white">
-    <div class="mx-16 w-auto py-6 md:py-12 flex items-center place-items-center justify-between md:border-t-2 md:border-gray-100">
+    <div class="mx-16 w-auto py-6 md:py-12 flex flex-col md:flex-row gap-4 items-center place-items-center justify-between md:border-t-2 md:border-gray-100">
         <div class="">
             <img class="w-24 md:w-32 shrink-0 mx-auto" src="{{ asset('identification/logo.svg') }}" alt="Blumilk logo"/>
         </div>
@@ -30,17 +30,17 @@
         <div>
             <p class="text-center text-sm leading-5">
                 <span class="pr-1">Copyright &copy; 2024</span>
-                |
-                <span class="pl-1">Blumilk sp. z o.o.</span>
+                <span class="hidden md:inline">|</span>
+                <span class="pl-1">Blumilk <span class="hidden md:inline">sp. z o.o.</span></span>
             </p>
         </div>
         <div class="mt-2 md:mt-0">
             <p class="text-center text-sm leading-5">
-                <a href="https://github.com/blumilksoftware/website" target="_blank" class="font-normal whitespace-normal pr-1">{{ __('footer.code') }}</a>
-                |
-                <a href="{{ route('privacy-policy') }}" class="font-normal whitespace-normal px-1">{{ __('footer.policy') }}</a>
-                |
-                <a href="{{ route('data') }}" class="pl-1">{{ __('footer.data') }}</a></p>
+                <a href="https://github.com/blumilksoftware/website" target="_blank" class="block md:inline font-normal whitespace-normal pr-1">{{ __('footer.code') }}</a>
+                <span class="hidden md:inline">|</span>
+                <a href="{{ route('privacy-policy') }}" class="block md:inline font-normal whitespace-normal px-1">{{ __('footer.policy') }}</a>
+                <span class="hidden md:inline">|</span>
+                <a href="{{ route('data') }}" class="block md:inline pl-1">{{ __('footer.data') }}</a></p>
         </div>
     </div>
 </footer>
