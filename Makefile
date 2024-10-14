@@ -91,4 +91,4 @@ encrypt-secrets:
 			&& sops --encrypt --input-type=dotenv --output-type=dotenv --output .env.${SECRETS_ENV}.secrets .env.${SECRETS_ENV}.secrets.decrypted \
 			&& echo 'Done'"
 
-.PHONY: init check-env-file build run stop restart shell shell-root test fix create-test-db queue analyse encrypt-beta-secrets decrypt-beta-secrets ncrypt-prod-secrets decrypt-prod-secrets decrypt-secrets encrypt-secrets dev
+.PHONY: init check-env-file build run stop restart shell shell-root test fix create-test-db queue analyse encrypt-beta-secrets decrypt-beta-secrets encrypt-prod-secrets decrypt-prod-secrets decrypt-secrets encrypt-secrets dev
