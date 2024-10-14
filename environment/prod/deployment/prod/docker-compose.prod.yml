@@ -34,7 +34,7 @@ services:
       - "traefik.http.routers.blumilk-website-prod-app.entrypoints=websecure"
       - "traefik.http.routers.blumilk-website-prod-app.tls=true"
       - "traefik.http.routers.blumilk-website-prod-app.tls.certresolver=lets-encrypt-resolver"
-      - "traefik.http.routers.blumilk-website-prod-app.middlewares=response-gzip-compress@file"
+      - "traefik.http.routers.blumilk-website-prod-app.middlewares=authelia@file,response-gzip-compress@file"
     depends_on:
       blumilk-website-prod-database:
         condition: service_healthy
