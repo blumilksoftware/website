@@ -90,7 +90,8 @@
                         <i class="ti ti-map-pin text-2xl text-blue-dark"></i>
                         <div class="ml-4">
                             <div>{{ __('content.contact.location.address') }}</div>
-                            <div>{{ __('content.contact.location.PostalCode') }}</div>
+                            <div>{{ __('content.contact.location.postal_code') }}</div>
+                            <div>{{ __('content.contact.location.country') }}</div>
                         </div>
                     </div>
                     <div class="flex mt-3 items-center">
