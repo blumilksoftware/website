@@ -18,7 +18,8 @@
         "laravel/sanctum": "^4.0.3",
         "laravel/tinker": "^2.10.0",
         "mvenghaus/filament-plugin-translatable-inline": "^3.0.8",
-        "nesbot/carbon": "^3.8.0"
+        "nesbot/carbon": "^3.8.0",
+        "sentry/sentry-laravel": "^4.9"
     },
     "require-dev": {
         "blumilksoftware/codestyle": "^3.3.0",
