@@ -179,7 +179,7 @@
                 <footer>
                     <div class="footer-top">
                         <div class="footer-logo">
-                            <a href="https://blumilk.pl" class="social-link" target="_blank">
+                            <a href="{{ config('app.url') }}" class="social-link" target="_blank">
                                 <img src="{{ asset('identification/logo.png') }}" alt="Blumilk logo"/>
                             </a>
                         </div>
