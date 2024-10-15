@@ -105,6 +105,10 @@
             color: #718096;
         }
 
+        .footer-socials .social-link img {
+           margin-right: 10px;
+        }
+
         .footer-bottom {
             padding: 1rem 2rem;
             display: flex;
@@ -202,23 +206,25 @@
                 <footer>
                     <div class="footer-top">
                         <div class="footer-logo">
-                            <img src="{{ asset('identification/logo.png') }}" alt="Blumilk logo"/>
+                            <a href="https://blumilk.pl" class="social-link" target="_blank">
+                                <img src="{{ asset('identification/logo.png') }}" alt="Blumilk logo"/>
+                            </a>
                         </div>
                         <div class="footer-socials">
                             <a href="https://clutch.co/profile/blumilk-0" class="social-link" target="_blank">
-                                <img src="{{ asset('images/mail_icons/clutch.png') }}" alt="Clutch logo"/>
+                                <img src="{{ asset('images/mail_icons/clutch-icon.png') }}" alt="Clutch logo"/>
                             </a>
                             <a href="https://github.com/blumilksoftware" class="social-link" target="_blank">
-                                <img src="{{ asset('images/mail_icons/github.png') }}" alt="GitHub logo"/>
+                                <img src="{{ asset('images/mail_icons/github-icon.png') }}" alt="GitHub logo"/>
                             </a>
                             <a href="https://linkedin.com/company/blumilksoftware" class="social-link" target="_blank">
-                                <img src="{{ asset('images/mail_icons/linkedin.png') }}" alt="LinkedIn logo"/>
+                                <img src="{{ asset('images/mail_icons/linkedin-icon.png') }}" alt="LinkedIn logo"/>
                             </a>
                             <a href="https://www.facebook.com/blumilksoftware/" class="social-link" target="_blank">
-                                <img src="{{ asset('images/mail_icons/facebook.png') }}" alt="Facebook logo"/>
+                                <img src="{{ asset('images/mail_icons/facebook-icon.png') }}" alt="Facebook logo"/>
                             </a>
                             <a href="https://www.youtube.com/@blumilksoftware" class="social-link" target="_blank">
-                                <img src="{{ asset('images/mail_icons/youtube.png') }}" alt="YouTube logo"/>
+                                <img src="{{ asset('images/mail_icons/youtube-icon.png') }}" alt="YouTube logo"/>
                             </a>
                         </div>
                     </div>
