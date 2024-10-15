@@ -5,10 +5,10 @@ declare(strict_types=1);
 use CodeZero\LocalizedRoutes\Controllers\FallbackController;
 use CodeZero\LocalizedRoutes\Middleware\SetLocale;
 use Illuminate\Foundation\Application;
+use Illuminate\Foundation\Configuration\Exceptions;
 use Illuminate\Foundation\Configuration\Middleware;
 use Illuminate\Routing\Middleware\SubstituteBindings;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Foundation\Configuration\Exceptions;
 use Sentry\Laravel\Integration;
 
 return Application::configure(basePath: dirname(__DIR__))
@@ -31,6 +31,6 @@ return Application::configure(basePath: dirname(__DIR__))
         ])->redirectGuestsTo("admin")
             ->trustProxies(at: "*");
     })
-    ->withExceptions(function (Exceptions $exceptions) {
+    ->withExceptions(function (Exceptions $exceptions): void {
         Integration::handles($exceptions);
     })->create();
