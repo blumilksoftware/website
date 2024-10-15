@@ -88,27 +88,6 @@
             margin: 0 auto;
         }
 
-        .footer-socials {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-        }
-
-        .footer-socials .social-link {
-            color: #A0AEC0;
-            transition: color 0.3s;
-            position: relative;
-            bottom: -0.25rem;
-        }
-
-        .footer-socials .social-link:hover {
-            color: #718096;
-        }
-
-        .footer-socials .social-link img {
-           margin-right: 10px;
-        }
-
         .footer-bottom {
             padding: 1rem 2rem;
             display: flex;
@@ -161,15 +140,9 @@
                 width: 5rem;
             }
 
-            .footer-socials {
-                gap: 0.5rem;
-                display: flex;
-                justify-content: flex-start;
-            }
-
             .footer-bottom {
                 flex-direction: column;
-                justify-content: center;
+                justify-content: space-between;
                 padding: 1rem 16px;
             }
 
@@ -210,30 +183,13 @@
                                 <img src="{{ asset('identification/logo.png') }}" alt="Blumilk logo"/>
                             </a>
                         </div>
-                        <div class="footer-socials">
-                            <a href="https://clutch.co/profile/blumilk-0" class="social-link" target="_blank">
-                                <img src="{{ asset('images/mail_icons/clutch-icon.png') }}" alt="Clutch logo"/>
-                            </a>
-                            <a href="https://github.com/blumilksoftware" class="social-link" target="_blank">
-                                <img src="{{ asset('images/mail_icons/github-icon.png') }}" alt="GitHub logo"/>
-                            </a>
-                            <a href="https://linkedin.com/company/blumilksoftware" class="social-link" target="_blank">
-                                <img src="{{ asset('images/mail_icons/linkedin-icon.png') }}" alt="LinkedIn logo"/>
-                            </a>
-                            <a href="https://www.facebook.com/blumilksoftware/" class="social-link" target="_blank">
-                                <img src="{{ asset('images/mail_icons/facebook-icon.png') }}" alt="Facebook logo"/>
-                            </a>
-                            <a href="https://www.youtube.com/@blumilksoftware" class="social-link" target="_blank">
-                                <img src="{{ asset('images/mail_icons/youtube-icon.png') }}" alt="YouTube logo"/>
-                            </a>
-                        </div>
                     </div>
                     <div class="footer-bottom">
-                        <p class="footer-copy">Copyright &copy; 2024 | Blumilk</p>
-                        <p>
+                        <div class="footer-copy">Copyright &copy; 2024 | Blumilk</div>
+                        <div>
                             <a href="{{ route('privacy-policy') }}" target="_blank">{{ __('footer.policy') }}</a> |
                             <a href="{{ route('data') }}">{{ __('footer.data') }}</a>
-                        </p>
+                        </div>
                     </div>
                 </footer>
             </div>
