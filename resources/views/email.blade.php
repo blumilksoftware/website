@@ -159,6 +159,8 @@
 
             .footer-socials {
                 gap: 0.5rem;
+                display: flex;
+                justify-content: flex-start;
             }
 
             .footer-bottom {
