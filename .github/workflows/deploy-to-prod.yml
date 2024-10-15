@@ -31,3 +31,77 @@ jobs:
         with:
           fetch-depth: 0
           ref: ${{ env.BRANCH_NAME }}
+
+      - name: sync with main branch
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          git merge --no-commit --no-ff origin/main
+
+      - name: set deployment project version
+        run: echo "DEPLOYMENT_PROJECT_VERSION=$(bash ./environment/prod/deployment/scripts/version.sh --long)" >> $GITHUB_ENV
+
+      - name: set up Docker Buildx
+        uses: docker/setup-buildx-action@988b5a0280414f521da01fcc63a27aeeb4b104db # v3.6.1
+
+      - name: login to GitHub Container Registry
+        uses: docker/login-action@9780b0c442fbb1117ed29e0efdff1e18412f7567 # v3.3.0
+        with:
+          registry: ${{ env.DOCKER_REGISTRY }}
+          username: ${{ env.DOCKER_REGISTRY_USER_NAME }}
+          password: ${{ secrets.BLUMILKBOT_HARBOR_TOKEN }}
+
+      - name: set docker image name
+        run: echo "DOCKER_IMAGE_NAME=${{ env.DOCKER_REGISTRY }}/${{ env.DOCKER_REGISTRY_PROJECT_NAME }}/${{ env.DOCKER_REGISTRY_REPO_NAME }}" >> $GITHUB_ENV
+
+      - name: Docker meta
+        id: meta
+        uses: docker/metadata-action@8e5442c4ef9f78752691e2d8f8d19755c6f78e81 # v5.5.1
+        with:
+          images: ${{ env.DOCKER_IMAGE_NAME }}
+          tags: |
+            type=raw,value=latest
+            type=raw,value=${{ github.ref_name }}
+          context: workflow
+
+      - name: build and push image
+        uses: docker/build-push-action@32945a339266b759abcbdc89316275140b0fc960 # v6.8.0
+        with:
+          context: .
+          file: ./environment/prod/app/Dockerfile
+          build-args: DEPLOYMENT_PROJECT_VERSION_ARG=${{ env.DEPLOYMENT_PROJECT_VERSION }}
+          labels: ${{ steps.meta.outputs.labels }}
+          tags: ${{ steps.meta.outputs.tags }}
+          push: true
+          cache-from: type=gha, ref=${{ env.DOCKER_IMAGE_NAME }}-prod-build-cache
+          cache-to: type=gha, ref=${{ env.DOCKER_IMAGE_NAME }}-prod-build-cache, mode=max
+
+      - name: copy files via ssh
+        uses: appleboy/scp-action@917f8b81dfc1ccd331fef9e2d61bdc6c8be94634 # v0.1.7
+        with:
+          timeout: 10s
+          command_timeout: 10m
+          host: ${{ secrets.VPS_OVH_BF7EC892_HOST }}
+          port: ${{ secrets.VPS_OVH_BF7EC892_PORT }}
+          username: ${{ secrets.VPS_OVH_BF7EC892_USERNAME }}
+          key: ${{ secrets.VPS_OVH_BF7EC892_SSH_PRIVATE_KEY }}
+          passphrase: ${{ secrets.VPS_OVH_BF7EC892_SSH_PRIVATE_KEY_PASSPHRASE }}
+          source: "./environment/prod/deployment/prod/*"
+          target: ${{ env.TARGET_DIR_ON_SERVER }}/${{ env.DOCKER_REGISTRY_REPO_NAME }}
+          rm: true
+
+      - name: run deployment script over ssh
+        uses: appleboy/ssh-action@029f5b4aeeeb58fdfe1410a5d17f967dacf36262 # v1.0.3
+        with:
+          timeout: 10s
+          command_timeout: 10m
+          host: ${{ secrets.VPS_OVH_BF7EC892_HOST }}
+          port: ${{ secrets.VPS_OVH_BF7EC892_PORT }}
+          username: ${{ secrets.VPS_OVH_BF7EC892_USERNAME }}
+          key: ${{ secrets.VPS_OVH_BF7EC892_SSH_PRIVATE_KEY }}
+          passphrase: ${{ secrets.VPS_OVH_BF7EC892_SSH_PRIVATE_KEY_PASSPHRASE }}
+          script_stop: true
+          script: |
+            cd ${{ env.TARGET_DIR_ON_SERVER }}/${{ env.DOCKER_REGISTRY_REPO_NAME }}/environment/prod/deployment/prod
+            make prod-deploy SOPS_AGE_KEY=${{ secrets.SOPS_AGE_PROD_SECRET_KEY }}
+            docker images --filter dangling=true | grep "${{ env.DOCKER_IMAGE_NAME }}" | awk '{print $3}'| xargs --no-run-if-empty docker rmi
