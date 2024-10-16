@@ -38,7 +38,7 @@
                 </div>
                 <div class="order-4">
                     @if(!empty($news['url']))
-                        <a class="block text-md lg:text-lg font-light"
+                        <a class="block text-md lg:text-lg font-light break-all"
                            href="{{ $news['url'] }}"
                            target="_blank">
                             <i class="ti ti-caret-right-filled text-xl md:text-2xl"></i> {{ $news['url'] }}</a>
@@ -51,7 +51,7 @@
                             <div class="relative flex flex-col w-[461px] gap-3">
                                 <img src="{{ asset("storage/".$recommendedSingleNews['photo']) }}"
                                      alt="{{ $recommendedSingleNews['title'] }}"
-                                     class="w-full h-auto xl:h-[343px] object-cover aspect-square xl:aspect-auto">
+                                     class="w-full h-[232px] xl:h-[343px] object-cover aspect-square xl:aspect-auto">
                                 <time datetime="{{ $recommendedSingleNews['published_at'] }}" class="text-sm text-gray-400 mt-3">
                                     {{ $recommendedSingleNews['published_at'] }}
                                 </time>
