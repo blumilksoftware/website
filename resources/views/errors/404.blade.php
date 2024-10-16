@@ -5,7 +5,7 @@
     <section class="flex flex-col-reverse xl:flex-row md:pt-10 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:gap-5">
         <div class="flex basis-2/5 relative flex-col self-center gap-5">
             <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:justify-start xl:text-start">
-                <h2 class="font-semibold text-gray-900  leading-10">{{ __("content.404.title_1") }}
+                <h2 class="font-semibold text-gray-900 leading-10">{{ __("content.404.title_1") }}
                     <span class="block">{{ __("content.404.title_2") }}</span>
                 </h2>
             </div>
