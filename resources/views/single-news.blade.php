@@ -51,7 +51,7 @@
                             <div class="relative flex flex-col w-[461px] gap-3">
                                 <img src="{{ asset("storage/".$recommendedSingleNews['photo']) }}"
                                      alt="{{ $recommendedSingleNews['title'] }}"
-                                     class="w-full h-auto xl:h-[343px] object-cover aspect-square xl:aspect-auto">
+                                     class="w-full h-[232px] xl:h-[343px] object-cover aspect-square xl:aspect-auto">
                                 <time datetime="{{ $recommendedSingleNews['published_at'] }}" class="text-sm text-gray-400 mt-3">
                                     {{ $recommendedSingleNews['published_at'] }}
                                 </time>
