@@ -30,7 +30,7 @@ services:
           memory: 512M
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.blumilk-website-prod-app.rule=Host(`${BLUMILK_WEBSITE_HOST_NAME}`)"
+      - "traefik.http.routers.blumilk-website-prod-app.rule=Host(`${BLUMILK_WEBSITE_HOST_NAME}`) || Host(`www.${BLUMILK_WEBSITE_HOST_NAME}`)"
       - "traefik.http.routers.blumilk-website-prod-app.entrypoints=websecure"
       - "traefik.http.routers.blumilk-website-prod-app.tls=true"
       - "traefik.http.routers.blumilk-website-prod-app.tls.certresolver=lets-encrypt-resolver"
