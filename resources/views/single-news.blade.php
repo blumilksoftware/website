@@ -38,7 +38,7 @@
                 </div>
                 <div class="order-4">
                     @if(!empty($news['url']))
-                        <a class="block text-md lg:text-lg font-light"
+                        <a class="block text-md lg:text-lg font-light break-all"
                            href="{{ $news['url'] }}"
                            target="_blank">
                             <i class="ti ti-caret-right-filled text-xl md:text-2xl"></i> {{ $news['url'] }}</a>
