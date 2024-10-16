@@ -4,7 +4,7 @@
             <img class="w-24 md:w-32 shrink-0 mx-auto" src="{{ asset('identification/logo.svg') }}" alt="Blumilk logo"/>
         </div>
         <div class="flex justify-center space-x-4 md:space-x-6">
-            <a href="https://clutch.co/profile/blumilk-0" class="md:m-auto text-gray-400 hover:text-gray-500 -bottom-1 relative md:bottom-0" target="_blank">
+            <a href="https://clutch.co/profile/blumilk-0" class="md:m-auto text-gray-400 hover:text-gray-500 my-auto" target="_blank">
                 <span class="sr-only">{{ __('alt.clutch') }}</span>
                 <x-icons.clutch></x-icons.clutch>
             </a>
