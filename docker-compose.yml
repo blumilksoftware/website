@@ -81,7 +81,7 @@ services:
         - website-dev
         - traefik-proxy-blumilk-local
       ports:
-        - ${DOCKER_MAILPIT_DASHBOARD_HOST_PORT:-63854}:8025
+        - ${DOCKER_MAILPIT_DASHBOARD_HOST_PORT:-34622}:8025
       restart: unless-stopped
 
     redis:

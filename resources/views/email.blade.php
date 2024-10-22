@@ -1,9 +1,9 @@
 <!doctype html>
-<html lang="pl">
+<html lang="{{ app()->getLocale() }}">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Odpowiedź na formularz kontaktowy</title>
+    <title>{{ __('email.subject') }}</title>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
@@ -157,17 +157,17 @@
     <tr>
         <td class="container">
             <div class="content">
-                <h1>Odpowiedź z formularza kontaktowego</h1>
+                <h1>{{ __('email.header') }}</h1>
                 <table role="presentation" style="width: 100%;" class="main">
                     <tr>
                         <td class="wrapper">
                             <div class="message">
-                                <h3>Twoja wiadomość</h3>
+                                <h3>{{ __('email.your_message') }}</h3>
                                 <div class="message-box">
                                     <p>{!! $details->messageDescription !!}</p>
                                 </div>
                             </div>
-                            <h3>Odpowiedź</h3>
+                            <h3>{{ __('email.response') }}</h3>
                             <div class="response-box">
                                 {!! $details->response !!}
                             </div>

@@ -26,6 +26,7 @@ class StoreRequest extends FormRequest
             "email" => $this->get("email"),
             "topic" => $this->get("topic"),
             "message" => $this->get("message"),
+            "lang" => app()->getLocale(),
         ];
     }
 }

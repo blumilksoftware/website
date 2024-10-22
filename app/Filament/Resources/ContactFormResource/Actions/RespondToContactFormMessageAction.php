@@ -48,6 +48,8 @@ class RespondToContactFormMessageAction extends Action
                     ->required(),
             ])
             ->action(function (ContactForm $record, array $data): void {
+                app()->setLocale($record->lang);
+
                 $details = ContactFormResponse::fromArray($record, $data);
 
                 Mail::to($record->email)->send(new ContactFormResponded($details));

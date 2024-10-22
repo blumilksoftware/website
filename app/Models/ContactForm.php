@@ -12,6 +12,7 @@ use Illuminate\Database\Eloquent\Model;
  * @property string $email
  * @property string $topic
  * @property string $message
+ * @property string $lang
  * @property ContactFormStatus $status
  */
 class ContactForm extends Model
@@ -24,6 +25,7 @@ class ContactForm extends Model
         "message",
         "status",
         "response",
+        "lang",
     ];
     protected $casts = [
         "status" => ContactFormStatus::class,
