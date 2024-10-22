@@ -27,6 +27,7 @@ class Reference extends Model
 
     public $translatable = [
         "description",
+        "position",
     ];
     protected $fillable = [
         "creator_name",

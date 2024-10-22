@@ -41,9 +41,11 @@ class ReferenceResource extends Resource
                                 "male" => "Mężczyzna",
                                 "female" => "Kobieta",
                             ]),
-                        Forms\Components\TextInput::make("position")
+                        TranslatableContainer::make(
+                            Forms\Components\TextInput::make("position")
                             ->label("Stanowisko")
-                            ->maxLength(255),
+                            ->maxLength(255)
+                        )->requiredLocales(config("app.translatable_locales")),
                         Forms\Components\TextInput::make("company")
                             ->label("Firma")
                             ->maxLength(255),
