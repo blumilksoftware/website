@@ -21,6 +21,7 @@ class ContactFormResponded extends Mailable
     public function build(): self
     {
         return $this->subject($this->details->subject)
-            ->view("email");
+            ->view("email")
+            ->with(["details" => $this->details]);
     }
 }
