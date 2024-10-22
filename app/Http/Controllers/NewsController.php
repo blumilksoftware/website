@@ -15,7 +15,8 @@ class NewsController extends Controller
 {
     public function index(Request $request, Factory $factory): View
     {
-        $tagFromQuery = $request->get("tag");
+        $tagFromQuery = mb_convert_encoding($request->input("tag"), 'UTF-8', 'auto');
+
         $tag = $tagFromQuery
             ? Tag::query()
                 ->where("title->pl", "LIKE", $tagFromQuery)
