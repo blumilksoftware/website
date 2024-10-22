@@ -18,7 +18,7 @@ class NewsController extends Controller
         $tagFromQuery = $request->input("tag");
 
         if ($tagFromQuery) {
-            $tagFromQuery = mb_convert_encoding($tagFromQuery, 'UTF-8', 'auto');
+            $tagFromQuery = mb_convert_encoding($tagFromQuery, "UTF-8", "auto");
         }
 
         $tag = $tagFromQuery
