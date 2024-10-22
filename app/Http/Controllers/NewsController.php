@@ -15,7 +15,11 @@ class NewsController extends Controller
 {
     public function index(Request $request, Factory $factory): View
     {
-        $tagFromQuery = mb_convert_encoding($request->input("tag"), "UTF-8", "auto");
+        $tagFromQuery = $request->input("tag");
+
+        if ($tagFromQuery) {
+            $tagFromQuery = mb_convert_encoding($tagFromQuery, 'UTF-8', 'auto');
+        }
 
         $tag = $tagFromQuery
             ? Tag::query()
