@@ -43,8 +43,8 @@ class ReferenceResource extends Resource
                             ]),
                         TranslatableContainer::make(
                             Forms\Components\TextInput::make("position")
-                            ->label("Stanowisko")
-                            ->maxLength(255)
+                                ->label("Stanowisko")
+                                ->maxLength(255),
                         )->requiredLocales(config("app.translatable_locales")),
                         Forms\Components\TextInput::make("company")
                             ->label("Firma")
