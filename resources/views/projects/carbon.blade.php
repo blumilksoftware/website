@@ -78,4 +78,6 @@
     </section>
 
     <x-projects.image src="{{ asset('images/projects/carbon/desktop.png') }}" alt="{{ __('projects.carbon.alt.desktop') }}" />
+
+    <x-text-us-section/>
 @endsection
