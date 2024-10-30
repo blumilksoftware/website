@@ -21,7 +21,7 @@ return [
     ],
     [
         "src" => "images/clients/taxorder.svg",
-        "alt" => "Taxorder",
+        "alt" => "TaxOrder",
     ],
     [
         "src" => "images/clients/getthebox.svg",
