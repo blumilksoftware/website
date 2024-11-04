@@ -19,12 +19,12 @@
                 <div class="flex mt-3">
                     <span class="sr-only">{{ __('alt.mail') }}</span>
                     <i class="ti ti-mail text-2xl text-blue-dark"></i>
-                    <div class="ml-3 my-auto">{{ __('content.data.email') }}</div>
+                    <div class="ml-3 my-auto"><a href="mailto:{{ __('content.data.email') }}">{{ __('content.data.email') }}</a></div>
                 </div>
                 <div class="flex mt-3">
                     <span class="sr-only">{{ __('alt.phone') }}</span>
                     <i class="ti ti-phone text-2xl text-blue-dark"></i>
-                    <div class="ml-3 my-auto">{{ __('content.data.phone') }}</div>
+                    <div class="ml-3 my-auto"><a href="callto:{{ __('content.data.phone') }}">{{ __('content.data.phone') }}</a></div>
                 </div>
             </div>
         </div>
@@ -50,10 +50,26 @@
             <div class="order-1 2xl:order-none bg-blue-light p-10 2xl:p-0 lg:bg-transparent rounded-lg lg:col-span-2 w-[300px] lg:w-auto 2xl:w-full">
                 <div class="text-lg font-bold mb-3 lg:hidden lg:text-center">{{ __("content.data.info") }}</div>
                 <div class="flex flex-col lg:flex-row space-y-0.5 lg:gap-8 place-self-center 2xl:place-items-end place-content-between text-blue-dark">
-                    <div><span class="text-sm lg:text-lg lg:font-bold lg:pr-4">NIP</span><span class="lg:hidden">: </span><span class="2xl:text-sm my-auto 2xl:my-0 2xl:font-medium">{{ __("content.data.NIP") }}</span></div>
-                    <div><span class="text-sm lg:text-lg lg:font-bold lg:pr-4">VAT</span><span class="lg:hidden">: </span><span class="2xl:text-sm my-auto 2xl:font-medium">{{ __("content.data.VAT") }}</span></div>
-                    <div><span class="text-sm lg:text-lg lg:font-bold lg:pr-4">REGON</span><span class="lg:hidden">: </span><span class="2xl:text-sm my-auto 2xl:font-medium">{{ __("content.data.REGON") }}</span></div>
-                    <div><span class="text-sm lg:text-lg lg:font-bold lg:pr-4">KRS</span><span class="lg:hidden">: </span><span class="2xl:text-sm my-auto 2xl:font-medium">{{ __("content.data.KRS") }}</span></div>
+                    <div class="flex items-center">
+                        <div class="text-sm lg:text-lg lg:font-bold lg:pr-4">NIP</div>
+                        <div class="lg:hidden">:&nbsp;</div>
+                        <div class="2xl:text-sm my-auto 2xl:my-0 2xl:font-medium">{{ __("content.data.NIP") }}</div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="text-sm lg:text-lg lg:font-bold lg:pr-4">VAT</div>
+                        <div class="lg:hidden">:&nbsp;</div>
+                        <div class="2xl:text-sm my-auto 2xl:font-medium">{{ __("content.data.VAT") }}</div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="text-sm lg:text-lg lg:font-bold lg:pr-4">REGON</div>
+                        <div class="lg:hidden">:&nbsp;</div>
+                        <div class="2xl:text-sm my-auto 2xl:font-medium">{{ __("content.data.REGON") }}</div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="text-sm lg:text-lg lg:font-bold lg:pr-4">KRS</div>
+                        <div class="lg:hidden">:&nbsp;</div>
+                        <div class="2xl:text-sm my-auto 2xl:font-medium">{{ __("content.data.KRS") }}</div>
+                    </div>
                 </div>
             </div>
         </div>
