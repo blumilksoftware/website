@@ -35,9 +35,9 @@
             </div>
             <div class="grid grid-cols-2 md:grid-cols-3 xl:flex xl:justify-center xl:gap-8 pb-12 text-gray-400 xl:items-center mt-10 2xl:max-w-7xl 2xl:mx-auto">
                 @foreach ($clients as $client)
-                    <div class="m-6 flex justify-center">
+                    <div class="m-4 flex justify-center h-16 w-48 xl:w-56">
                         <img src="{{ asset($client['src']) }}"
-                             class="client-icon h-auto w-44 xl:w-56 grayscale hover:grayscale-0 transform transition hover:scale-110"
+                             class="client-icon object-fit grayscale hover:grayscale-0 transform transition hover:scale-110"
                              alt="{{ $client['alt'] }}"/>
                     </div>
                 @endforeach
