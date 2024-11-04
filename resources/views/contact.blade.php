@@ -22,8 +22,7 @@
                 @csrf
                 <div class="grid gap-y-3">
                     <div>
-                        <label for="email"
-                               class="block text-sm font-normal leading-6 text-blue-dark ml-2">{{ __('content.contact.form.email') }}</label>
+                        <label for="email" class="block text-sm font-normal leading-6 text-blue-dark ml-2">{{ __('content.contact.form.email') }}</label>
                         <div class="mt-2.5 ">
                             <input name="email" id="email" autocomplete="given-e-mail"
                                    value="{{ old('email') }}"
@@ -97,12 +96,12 @@
                     <div class="flex mt-3 items-center">
                         <span class="sr-only">{{ __('alt.phone') }}</span>
                         <i class="ti ti-phone text-2xl text-blue-dark"></i>
-                        <div class="ml-4">{{ __('content.contact.phone') }}</div>
+                        <div class="ml-4"><a href="callto:{{ __('content.contact.phone') }}">{{ __('content.contact.phone') }}</a></div>
                     </div>
                     <div class="flex mt-3 items-center">
                         <span class="sr-only">{{ __('alt.mail') }}</span>
                         <i class="ti ti-mail text-2xl text-blue-dark"></i>
-                        <div class="ml-4">{{ __('content.contact.email') }}</div>
+                        <div class="ml-4"><a href="mailto:{{ __('content.contact.email') }}">{{ __('content.contact.email') }}</a></div>
                     </div>
                 </div>
             </div>
