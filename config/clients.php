@@ -20,11 +20,11 @@ return [
         "alt" => "Simple",
     ],
     [
-        "src" => "images/clients/sklodowscy.svg",
-        "alt" => "Skłodowscy",
+        "src" => "images/clients/taxorder.svg",
+        "alt" => "TaxOrder",
     ],
     [
-        "src" => "images/clients/vita.svg",
-        "alt" => "Vita Plus",
+        "src" => "images/clients/getthebox.svg",
+        "alt" => "Getthebox",
     ],
 ];

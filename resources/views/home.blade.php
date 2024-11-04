@@ -29,14 +29,15 @@
             </div>
         </section>
         <section class="relative text-center px-[10%] md:px-[15%]">
-            <div class="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-400">{{ __("content.home.section_2.title_1") }}
+            <div class="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-400">
+                {{ __("content.home.section_2.title_1") }}
                 <span class="text-website-normal">{{ __("content.home.section_2.title_2") }}</span>
             </div>
-            <div class="grid grid-cols-2 md:flex md:flex-row pb-12 text-gray-400 items-center justify-center mt-10 2xl:gap-12 2xl:max-w-7xl 2xl:mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-3 xl:flex xl:justify-center xl:gap-8 pb-12 text-gray-400 xl:items-center mt-10 2xl:max-w-7xl 2xl:mx-auto">
                 @foreach ($clients as $client)
-                    <div class="m-6">
+                    <div class="m-4 flex justify-center h-16 w-fit">
                         <img src="{{ asset($client['src']) }}"
-                             class="client-icon h-auto w-44 m-auto grayscale hover:grayscale-0 transform transition hover:scale-110"
+                             class="client-icon grayscale hover:grayscale-0 transform transition hover:scale-110"
                              alt="{{ $client['alt'] }}"/>
                     </div>
                 @endforeach
