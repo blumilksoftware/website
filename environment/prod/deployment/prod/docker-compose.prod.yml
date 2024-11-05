@@ -34,7 +34,11 @@ services:
       - "traefik.http.routers.blumilk-website-prod-app.entrypoints=websecure"
       - "traefik.http.routers.blumilk-website-prod-app.tls=true"
       - "traefik.http.routers.blumilk-website-prod-app.tls.certresolver=lets-encrypt-resolver"
-      - "traefik.http.routers.blumilk-website-prod-app.middlewares=authelia@file,response-gzip-compress@file"
+      # https://doc.traefik.io/traefik/v3.0/middlewares/http/redirectregex/
+      - "traefik.http.middlewares.blumilk-website-redirect-to-non-www.redirectregex.regex=^https://www.${BLUMILK_WEBSITE_HOST_NAME}(.*)"
+      - "traefik.http.middlewares.blumilk-website-redirect-to-non-www.redirectregex.replacement=https://${BLUMILK_WEBSITE_HOST_NAME}$${1}"
+      - "traefik.http.middlewares.blumilk-website-redirect-to-non-www.redirectregex.permanent=true"
+      - "traefik.http.routers.blumilk-website-prod-app.middlewares=blumilk-website-redirect-to-non-www@docker,authelia@file,response-gzip-compress@file"
     depends_on:
       blumilk-website-prod-database:
         condition: service_healthy
