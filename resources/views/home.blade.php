@@ -33,7 +33,7 @@
                 {{ __("content.home.section_2.title_1") }}
                 <span class="text-website-normal">{{ __("content.home.section_2.title_2") }}</span>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-3 xl:flex xl:justify-center xl:gap-8 pb-12 text-gray-400 xl:items-center mt-10 2xl:max-w-7xl 2xl:mx-auto">
+            <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 xl:gap-8 pb-12 text-gray-400 mt-10 2xl:max-w-7xl 2xl:mx-auto">
                 @foreach ($clients as $client)
                     <div class="m-4 flex justify-center h-16 w-fit">
                         <img src="{{ asset($client['src']) }}"

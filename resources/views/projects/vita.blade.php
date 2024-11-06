@@ -18,34 +18,34 @@
 
     <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-10 py-20 text-center">
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("projects.challenges") }}</h2>
-        <div class="flex place-content-center flex-wrap gap-4 2xl:gap-10">
+        <div class="flex place-content-center flex-wrap gap-4">
             <x-tile title="{{ __('projects.vita.challenges.challenge_1.title') }}"
                     description="{{ __('projects.vita.challenges.challenge_1.description') }}"
-                    class="max-w-[350px] pr-4">
+                    class="max-w-[340px] pr-4">
                 <x-icons.eye-code accent="stroke-vita"/>
             </x-tile>
 
             <x-tile title="{{ __('projects.vita.challenges.challenge_2.title') }}"
                     description="{{ __('projects.vita.challenges.challenge_2.description') }}"
-                    class="max-w-[350px] pr-4">
+                    class="max-w-[340px] pr-4">
                 <x-icons.shield-check accent="stroke-vita"/>
             </x-tile>
 
             <x-tile title="{{ __('projects.vita.challenges.challenge_3.title') }}"
                     description="{{ __('projects.vita.challenges.challenge_3.description') }}"
-                    class="max-w-[350px] pr-4 lg:pr-10">
+                    class="max-w-[340px] pr-4 lg:pr-10">
                 <x-icons.app-window accent="stroke-vita"/>
             </x-tile>
 
             <x-tile title="{{ __('projects.vita.challenges.challenge_4.title') }}"
                     description="{{ __('projects.vita.challenges.challenge_4.description') }}"
-                    class="max-w-[350px] pr-4">
+                    class="max-w-[340px] pr-4">
                 <x-icons.credit-card accent="stroke-vita"/>
             </x-tile>
 
             <x-tile title="{{ __('projects.vita.challenges.challenge_5.title') }}"
                     description="{{ __('projects.vita.challenges.challenge_5.description') }}"
-                    class="max-w-[350px] pr-4 lg:pr-14">
+                    class="max-w-[340px] pr-4 lg:pr-14">
                 <x-icons.photo-scan accent="stroke-vita"/>
             </x-tile>
         </div>
@@ -78,30 +78,30 @@
 
     <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-10 pt-10 md:pt-20 pb-20 md:pb-44 text-center">
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("projects.key_functionalities") }}</h2>
-        <div class="flex place-content-center flex-wrap gap-4 2xl:gap-10">
+        <div class="flex place-content-center flex-wrap gap-4">
             <x-tile title="{{ __('projects.vita.functionalities.functionality_1.title') }}"
                     description="{{ __('projects.vita.functionalities.functionality_1.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start pr-4">
+                    class="max-w-[340px] 2xl:place-items-start pr-4">
                 <x-icons.list accent="stroke-vita"/>
             </x-tile>
             <x-tile title="{{ __('projects.vita.functionalities.functionality_2.title') }}"
                     description="{{ __('projects.vita.functionalities.functionality_2.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start pr-4">
+                    class="max-w-[340px] 2xl:place-items-start pr-4">
                 <x-icons.calendar accent="stroke-vita"/>
             </x-tile>
             <x-tile title="{{ __('projects.vita.functionalities.functionality_3.title') }}"
                     description="{{ __('projects.vita.functionalities.functionality_3.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start pr-4">
+                    class="max-w-[340px] 2xl:place-items-start pr-4">
                 <x-icons.replace accent="stroke-vita"/>
             </x-tile>
             <x-tile title="{{ __('projects.vita.functionalities.functionality_4.title') }}"
                     description="{{ __('projects.vita.functionalities.functionality_4.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start pr-4">
+                    class="max-w-[340px] 2xl:place-items-start pr-4">
                 <x-icons.nurse accent="stroke-vita"/>
             </x-tile>
             <x-tile title="{{ __('projects.vita.functionalities.functionality_5.title') }}"
                     description="{{ __('projects.vita.functionalities.functionality_5.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start pr-4">
+                    class="max-w-[340px] 2xl:place-items-start pr-4">
                 <x-icons.archive accent="stroke-vita"/>
             </x-tile>
         </div>

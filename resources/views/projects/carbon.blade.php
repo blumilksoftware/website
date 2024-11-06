@@ -16,22 +16,22 @@
     </div>
     <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-10 py-10 md:py-20 text-center">
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold md:pb-8">{{ __("projects.challenges") }}</h2>
-        <div class="flex place-content-center flex-wrap gap-4 2xl:gap-6 pb-24">
+        <div class="flex place-content-center flex-wrap gap-4 pb-24">
             <x-tile description="{{ __('projects.carbon.challenges.challenge_1.description') }}"
-                    class="max-w-[360px] 2xl:place-items-start pr-4 md:pr-0">
+                    class="max-w-[340px] 2xl:place-items-start pr-4 md:pr-0">
                 <x-slot:title><span class="pr-20">{{ __('projects.carbon.challenges.challenge_1.title') }}</span></x-slot:title>
                 <x-icons.users accent="stroke-carbon"/>
             </x-tile>
 
             <x-tile title="{{ __('projects.carbon.challenges.challenge_2.title') }}"
-                    class="max-w-[360px] 2xl:place-items-start mr-2">
+                    class="max-w-[340px] 2xl:place-items-start mr-2">
                 <x-slot:description><span class="pr-12 sm:pr-24">{{ __('projects.carbon.challenges.challenge_2.description') }}</span></x-slot:description>
                 <x-icons.chart-dots accent="stroke-carbon"/>
             </x-tile>
 
             <x-tile title="{{ __('projects.carbon.challenges.challenge_3.title') }}"
                     description="{{ __('projects.carbon.challenges.challenge_3.description') }}"
-                    class="max-w-[360px] 2xl:place-items-start pr-8 md:pr-10">
+                    class="max-w-[340px] 2xl:place-items-start pr-8 md:pr-10">
                 <x-icons.shield-check accent="stroke-carbon"/>
             </x-tile>
         </div>
@@ -48,7 +48,7 @@
 
     <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-10 py-10 md:py-20 text-center">
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("projects.key_functionalities") }}</h2>
-        <div class="flex place-content-center flex-wrap gap-4 2xl:gap-10 pb-24">
+        <div class="flex place-content-center flex-wrap gap-4 pb-24">
             <x-tile description="{{ __('projects.carbon.functionalities.functionality_1.description') }}"
                     class="max-w-[350px] 2xl:place-items-start">
                 <x-slot:title><span class="pr-20">{{ __('projects.carbon.functionalities.functionality_1.title') }}</span></x-slot:title>
