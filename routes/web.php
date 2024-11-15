@@ -7,6 +7,7 @@ use Blumilk\Website\Http\Controllers\CareerController;
 use Blumilk\Website\Http\Controllers\CompanyDataController;
 use Blumilk\Website\Http\Controllers\ContactController;
 use Blumilk\Website\Http\Controllers\HomeController;
+use Blumilk\Website\Http\Controllers\LogoController;
 use Blumilk\Website\Http\Controllers\NewsController;
 use Blumilk\Website\Http\Controllers\PolicyController;
 use Blumilk\Website\Http\Controllers\ProjectsController;
@@ -28,6 +29,7 @@ $router->get($uri->translate("career/software-engineer"), [CareerController::cla
 $router->get($uri->translate("contact"), [ContactController::class, "index"])->name("contact");
 $router->post($uri->translate("contact"), [ContactController::class, "store"])->name("contact.create");
 $router->get($uri->translate("privacy-policy"), PolicyController::class)->name("privacy-policy");
+$router->get($uri->translate("logo"), LogoController::class)->name("logo");
 
 $router->get($uri->translate("news"), [NewsController::class, "index"])->name("news");
 $router->get($uri->translate("news/{slug}"), [NewsController::class, "get"])->name("news.entry");

@@ -37,4 +37,5 @@ return [
     "linkedin" => "LinkedIn icon",
     "facebook" => "Facebook icon",
     "youtube" => "YouTube icon",
+    "download" => "download icon",
 ];

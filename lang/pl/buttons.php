@@ -19,4 +19,5 @@ return [
     "apply_now" => "Aplikuj teraz!",
     "back_to_portfolio" => "Wróć do portfolio",
     "accept_all" => "Akceptuj wszystkie",
+    "download" => "Pobierz",
 ];

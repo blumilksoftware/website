@@ -39,4 +39,8 @@ return [
         "title" => "Dane firmy",
         "description" => "Dane firmy Blumilk Sp. z o.o.",
     ],
+    "logo" => [
+        "title" => "Materiały do pobrania",
+        "description" => "Materiały do pobrania takie jak logo czy księga znaków.",
+    ],
 ];

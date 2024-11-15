@@ -39,4 +39,8 @@ return [
         "title" => "Company data",
         "description" => "Company data of Blumilk Sp. z o.o.",
     ],
+    "logo" => [
+        "title" => "Downloads",
+        "description" => "Downloads materials like logo or brand guide.",
+    ],
 ];
