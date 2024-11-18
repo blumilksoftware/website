@@ -3,24 +3,15 @@
 @php
     $materials = [
         [
-            'title' => 'Księga znaków',
-            'description' => 'Zbiór zasad wykorzystania logotypu',
+            'key' => 'brand_book',
             'file_type' => 'pdf',
             'file_size' => '2 MB',
             'download_url' => '#',
         ],
         [
-            'title' => 'Logo',
-            'description' => 'Logo w formatach png, pdf, svg',
+            'key' => 'logo',
             'file_type' => 'zip',
             'file_size' => '7 MB',
-            'download_url' => '#',
-        ],
-        [
-            'title' => 'Przewodnik graficzny',
-            'description' => 'Szczegółowe wytyczne dla projektantów',
-            'file_type' => 'docx',
-            'file_size' => '3 MB',
             'download_url' => '#',
         ],
     ];
@@ -48,8 +39,8 @@
                     </span>
                     </div>
                     <div class="text-center md:text-left space-y-2 md:space-y-3">
-                        <h2 class="text-lg font-semibold text-gray-800">{{ $material['title'] }}</h2>
-                        <p class="text-sm text-gray-500">{{ $material['description'] }}</p>
+                        <h2 class="text-lg font-semibold text-gray-800">{{ __("materials.{$material['key']}.title") }}</h2>
+                        <p class="text-sm text-gray-500">{{ __("materials.{$material['key']}.description") }}</p>
                     </div>
                 </div>
                 <x-small-primary-button href="{{ $material['download_url'] }}" class="font-semibold text-sm w-full md:w-auto">

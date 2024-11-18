@@ -360,5 +360,5 @@ return [
     "logo" => [
         "title_1" => "Materiały",
         "title_2" => "do pobrania",
-    ]
+    ],
 ];
