@@ -3,7 +3,7 @@
 @php
     $materials = [
         [
-            'title' => 'Księga znaku',
+            'title' => 'Księga znaków',
             'description' => 'Zbiór zasad wykorzystania logotypu',
             'file_type' => 'pdf',
             'file_size' => '2 MB',
