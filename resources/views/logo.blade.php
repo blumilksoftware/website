@@ -6,13 +6,13 @@
             'key' => 'brand_book',
             'file_type' => 'pdf',
             'file_size' => '2.4 MB',
-            'download_url' => '#',
+            'download_url' => url('materials/blumilk_brand_book_2024.pdf'),
         ],
         [
             'key' => 'logo',
             'file_type' => 'rar',
             'file_size' => '1 MB',
-            'download_url' => '#',
+            'download_url' => url('materials/blumilk_logo.rar'),
         ],
     ];
 @endphp
