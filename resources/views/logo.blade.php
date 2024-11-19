@@ -10,9 +10,9 @@
         ],
         [
             'key' => 'logo',
-            'file_type' => 'rar',
+            'file_type' => 'zip',
             'file_size' => '1 MB',
-            'download_url' => url('materials/blumilk_logo.rar'),
+            'download_url' => url('materials/blumilk_logo.zip'),
         ],
     ];
 @endphp
