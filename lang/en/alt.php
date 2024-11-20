@@ -27,7 +27,7 @@ return [
     "energylandia" => "Group of people standing in front of the Abyssus ride entrance at Energylandia, Zator.",
     "laravel" => "Blumilk team standing in front of presentation on Laravel Poland Meetup",
     "beer" => "Group of people seated at tables in a dimly lit bar with a TV on the wall.",
-    "lasertag" => " A group of people standing next to each other holding laser guns.",
+    "meetup" => "A group of people sitting on chairs during an event, a selfie taken by one person, with part of the room visible in the background.",
     "sea" => "Group of people on rocky shore by the sea, under clear blue sky.",
     "paintball" => "A group of people wearing camouflage and protective gear poses with paintball markers in front of a brick and tire barricade on a grassy field under a clear sky.",
     "beer_2" => "A group of people sitting around a long wooden table in a restaurant with large arched windows.",

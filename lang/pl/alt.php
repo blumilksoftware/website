@@ -27,7 +27,7 @@ return [
     "energylandia" => "Grupa osób stoi przed wejściem do atrakcji Abyssus w Energylandii w Zatorze.",
     "laravel" => "Zespół Blumilk stoi przed prezentacją na spotkaniu Laravel Poland",
     "beer" => "Grupa ludzi siedzących przy stolikach w słabo oświetlonym barze z telewizorem na ścianie.",
-    "lasertag" => "Grupa ludzi stojących obok siebie i trzymających pistolety laserowe.",
+    "meetup" => "Grupa osób siedząca na krzesłach w trakcie wydarzenia, selfie zrobione przez jedną osobę, w tle widoczna część sali.",
     "sea" => "Grupa ludzi na skalistym brzegu morza, pod czystym, błękitnym niebem.",
     "paintball" => "Grupa osób ubranych w kamuflaż i sprzęt ochronny pozuje z markerami paintballowymi przed barykadą z cegieł i opon na trawiastym polu pod gołym niebem.",
     "beer_2" => "Grupa ludzi siedzi przy długim drewnianym stole w restauracji z dużymi łukowatymi oknami.",

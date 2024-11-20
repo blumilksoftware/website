@@ -159,8 +159,8 @@
             'alt': '{{ __('alt.beer') }}'
         },
         {
-            'photo': '{{ asset('images/photos/lasertag.webp') }}',
-            'alt': '{{ __('alt.lasertag') }}'
+            'photo': '{{ asset('images/photos/meetup.webp') }}',
+            'alt': '{{ __('alt.meetup') }}'
         },
         {
             'photo': '{{ asset('images/photos/sea.webp') }}',
@@ -212,7 +212,7 @@
             </div>
             <div class="mx-auto mt-8 md:mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-7.5 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
                 <figure class="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">
-                    <img class="md:h-96 w-full object-cover rounded-2xl transition hover:scale-105 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[0].photo" :alt="imageGallery[0].alt" data-index="0">
+                    <img class="md:h-96 w-full object-cover rounded-2xl transition hover:scale-105 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[10].photo" :alt="imageGallery[10].alt" data-index="10">
                 </figure>
                 <div class="space-y-8 xl:contents xl:space-y-0">
                     <div class="space-y-8 xl:row-span-2">
@@ -223,7 +223,7 @@
                             <img class="h-48 w-full object-cover rounded-2xl transition hover:scale-110 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[2].photo" :alt="imageGallery[2].alt" data-index="2">
                         </figure>
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-60 w-full object-cover rounded-2xl transition hover:scale-110 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[8].photo" :alt="imageGallery[8].alt" data-index="8">
+                            <img class="h-60 w-full object-cover rounded-2xl transition hover:scale-110 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[9].photo" :alt="imageGallery[9].alt" data-index="9">
                         </figure>
                     </div>
                     <div class="space-y-8 xl:row-start-1 hidden sm:block">
@@ -231,7 +231,7 @@
                             <img class="h-60 w-full object-cover rounded-2xl transition hover:scale-110 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[3].photo" :alt="imageGallery[3].alt" data-index="3">
                         </figure>
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-48 w-full object-cover rounded-2xl transition hover:scale-110 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[9].photo" :alt="imageGallery[9].alt" data-index="9">
+                            <img class="h-48 w-full object-cover rounded-2xl transition hover:scale-110 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[8].photo" :alt="imageGallery[8].alt" data-index="8">
                         </figure>
                     </div>
                 </div>
@@ -241,12 +241,12 @@
                             <img class="h-60 w-full object-cover rounded-2xl transition hover:scale-110 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[4].photo" :alt="imageGallery[4].alt" data-index="4">
                         </figure>
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-48 w-full object-cover rounded-2xl transition hover:scale-110 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[10].photo" :alt="imageGallery[10].alt" data-index="10">
+                            <img class="h-48 w-full object-cover rounded-2xl transition hover:scale-110 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[0].photo" :alt="imageGallery[0].alt" data-index="0">
                         </figure>
                     </div>
                     <div class="space-y-8 xl:row-span-2">
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[5].photo" :alt="imageGallery[5].alt" data-index="5">
+                            <img class="h-60 w-full object-cover rounded-2xl transition hover:scale-110 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[11].photo" :alt="imageGallery[11].alt" data-index="11">
                         </figure>
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
                             <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[6].photo" :alt="imageGallery[6].alt" data-index="6">
@@ -255,7 +255,7 @@
                             <img class="h-full w-full object-cover rounded-2xl transition hover:scale-110 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[7].photo" :alt="imageGallery[7].alt" data-index="7">
                         </figure>
                         <figure class="shadow-lg ring-1 ring-gray-900/5 rounded-2xl">
-                            <img class="h-60 w-full object-cover rounded-2xl transition hover:scale-110 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[11].photo" :alt="imageGallery[11].alt" data-index="11">
+                            <img class="h-60 w-full object-cover rounded-2xl transition hover:scale-110 hover:cursor-pointer" x-on:click="imageGalleryOpen" :src="imageGallery[5].photo" :alt="imageGallery[5].alt" data-index="5">
                         </figure>
                     </div>
                 </div>
