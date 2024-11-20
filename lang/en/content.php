@@ -360,4 +360,8 @@ return [
         "text_2" => "privacy policy.",
     ],
     "at" => "at",
+    "logo" => [
+        "title_1" => "Download",
+        "title_2" => "materials",
+    ],
 ];

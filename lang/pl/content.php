@@ -357,4 +357,8 @@ return [
         "text_2" => "politykę prywatności.",
     ],
     "at" => "w",
+    "logo" => [
+        "title_1" => "Materiały",
+        "title_2" => "do pobrania",
+    ],
 ];

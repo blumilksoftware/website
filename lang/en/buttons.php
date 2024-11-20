@@ -19,4 +19,5 @@ return [
     "apply_now" => "Apply now!",
     "back_to_portfolio" => "Back to portfolio",
     "accept_all" => "Accept all",
+    "download" => "Download",
 ];
