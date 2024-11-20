@@ -20,7 +20,7 @@ return [
     "projects" => "People collaborating in an office, with one person pointing at a computer screen displaying graphics. Other team members are interacting in the background.",
     "lmt" => "Audience viewing a presentation at a Legnica Tech Meetup.",
     "interns" => "Blumilk interns standing next to supervisor and Blumilk banner.",
-    "soda" => "A woman sitting in front of a computer screen with the word SoDa on it.",
+    "soda" => "Two people at a SoDA event; one is sitting in a deck chair, and the other is standing.",
     "archery" => "A group of people standing outdoors, some holding archery bows up, under a cloudy sky.",
     "czech" => "Group of people sitting on steps in front of an ornate building with greenery and statues.",
     "fireplace" => "Group of people sitting around a campfire at night, with a gazebo in the background.",

@@ -20,7 +20,7 @@ return [
     "projects" => "Ludzie współpracujący w biurze, jedna osoba wskazuje na ekran komputera wyświetlający grafikę. Inni członkowie zespołu wchodzą w interakcję w tle.",
     "lmt" => "Publiczność ogląda prezentację na Legnickim Meetupie Technologicznym.",
     "interns" => "Stażyści Blumilk stoją obok kierownika i baneru Blumilk.",
-    "soda" => "kobieta siedząca przed ekranem komputera, na którym widnieje napis SoDa.",
+    "soda" => "Dwie osoby na wydarzeniu SoDA; jedna siedzi na leżaku, a druga stoi.",
     "archery" => "Grupa ludzi stoi na zewnątrz, niektórzy trzymają łuki, pod zachmurzonym niebem.",
     "czech" => "Grupa ludzi siedzi na schodach przed ozdobnym budynkiem z zielenią i posągami.",
     "fireplace" => "Grupa ludzi siedzi przy ognisku nocą, w tle widać altanę.",
