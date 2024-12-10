@@ -1,6 +1,6 @@
 ### PHP DEPENDENCIES ###
 # https://hub.docker.com/_/composer/tags
-FROM composer:2.7.9@sha256:cb3483dc851665462a66c59982577dfbbde0ae2059e8b5550c2f49f44b8c333e AS vendor
+FROM composer:2.8.3@sha256:26bbf85fccb36247181de6f4a2beddac47d4b352c0c19249a3b4fa2abf1e38ad AS vendor
 
 WORKDIR /app_composer_dependencies
 
@@ -15,7 +15,7 @@ RUN composer install \
 
 ### FRONTEND ###
 # https://hub.docker.com/_/node/tags
-FROM node:22.9.0-bookworm-slim@sha256:6e6df5c992a4b2ca100d9f99f2fff6e1bc7a978c60c39630a2390adbbc7b332b AS frontend
+FROM node:22.12.0-bookworm-slim@sha256:a4b757cd491c7f0b57f57951f35f4e85b7e1ad54dbffca4cf9af0725e1650cd8 AS frontend
 
 WORKDIR /app_frontend_dependencies
 
@@ -32,7 +32,7 @@ RUN npm run build
 
 ### APPLICATION ###
 # https://hub.docker.com/_/php/tags
-FROM php:8.3.12-fpm-bookworm@sha256:833fd3764a6e9a69e829d95344596ffe921735c9f96b0e864edc326be15c6175 AS app
+FROM php:8.4.1-fpm-bookworm@sha256:319fef0a241cb9ff1afd0b8c689633214be7c3bb4a4029c305dec103b5695d6b AS app
 
 COPY --from=vendor /usr/bin/composer /usr/local/bin/composer
 
