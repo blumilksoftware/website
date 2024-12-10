@@ -29,12 +29,6 @@ class NewsResource extends Resource
 {
     use Translatable;
 
-    protected static ?string $model = News::class;
-    protected static ?string $label = "aktualność";
-    protected static ?string $pluralLabel = "Aktualności";
-    protected static ?string $navigationIcon = "heroicon-o-rectangle-stack";
-    protected static bool $hasTitleCaseModelLabel = false;
-
     public static function form(Form $form): Form
     {
         return $form
@@ -161,4 +155,10 @@ class NewsResource extends Resource
     {
         return config("app.translatable_locales");
     }
+
+    protected static ?string $model = News::class;
+    protected static ?string $label = "aktualność";
+    protected static ?string $pluralLabel = "Aktualności";
+    protected static ?string $navigationIcon = "heroicon-o-rectangle-stack";
+    protected static bool $hasTitleCaseModelLabel = false;
 }

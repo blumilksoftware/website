@@ -16,11 +16,6 @@ use Mvenghaus\FilamentPluginTranslatableInline\Forms\Components\TranslatableCont
 
 class TagResource extends Resource
 {
-    protected static ?string $model = Tag::class;
-    protected static ?string $label = "tag";
-    protected static ?string $pluralLabel = "Tagi";
-    protected static ?string $navigationIcon = "heroicon-o-rectangle-stack";
-
     public static function form(Form $form): Form
     {
         return $form
@@ -72,4 +67,9 @@ class TagResource extends Resource
             "edit" => Pages\EditTag::route("/{record}/edit"),
         ];
     }
+
+    protected static ?string $model = Tag::class;
+    protected static ?string $label = "tag";
+    protected static ?string $pluralLabel = "Tagi";
+    protected static ?string $navigationIcon = "heroicon-o-rectangle-stack";
 }

@@ -50,14 +50,14 @@ class News extends Model
         "tags" => "array",
     ];
 
-    public function getRelatedTagModels(): Collection
-    {
-        return Tag::query()->whereIn("id", $this->tags)->get();
-    }
-
     public static function boot(): void
     {
         parent::boot();
         static::observe(NewsObserver::class);
+    }
+
+    public function getRelatedTagModels(): Collection
+    {
+        return Tag::query()->whereIn("id", $this->tags)->get();
     }
 }
