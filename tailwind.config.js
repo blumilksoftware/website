@@ -3,13 +3,13 @@ import typography from '@tailwindcss/typography'
 
 module.exports = {
   content: {
-      relative: true,
-      files: [
-        './resources/**/*.blade.php',
-        './resources/**/*.js',
-        './resources/**/*.vue',
-      ],
-    },
+    relative: true,
+    files: [
+      './resources/**/*.blade.php',
+      './resources/**/*.js',
+      './resources/**/*.vue',
+    ],
+  },
   theme: {
     screens: {
       'sm': '640px',
@@ -29,7 +29,7 @@ module.exports = {
           extraDark: '#EAEBF3',
         },
         blue: {
-          dark: "#0E0B3D",
+          dark: '#0E0B3D',
           normalNeon: '#3461fd',
           normal: '#3259E8',
           light: '#F7F8FD',
@@ -38,7 +38,7 @@ module.exports = {
         tile: {
           title: '#0E0B3D',
           content: '#6B7280',
-          background: '#F7F8FB'
+          background: '#F7F8FB',
         },
         brand: '#527ABA',
         website: {
@@ -70,10 +70,10 @@ module.exports = {
       decimal: 'decimal',
       alpha: 'lower-alpha',
 
-    }
+    },
   },
   plugins: [
-   forms,
-   typography,
+    forms,
+    typography,
   ],
-};
+}
