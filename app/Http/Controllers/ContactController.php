@@ -19,7 +19,7 @@ class ContactController extends Controller
 
     public function store(StoreRequest $request): RedirectResponse
     {
-        ContactForm::create($request->data());
+        ContactForm::create($request->getData());
 
         return redirect()->back()->with(["success" => __("toast.contact.success")]);
     }
