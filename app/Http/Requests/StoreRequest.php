@@ -23,9 +23,9 @@ class StoreRequest extends FormRequest
     public function getData(): array
     {
         return [
-            "email" => $this->get("email"),
-            "topic" => $this->get("topic"),
-            "message" => $this->get("message"),
+            "email" => mb_convert_encoding($this->get("email"), "UTF-8", "auto"),
+            "topic" => mb_convert_encoding($this->get("topic"), "UTF-8", "auto"),
+            "message" => mb_convert_encoding($this->get("message"), "UTF-8", "auto"),
             "lang" => app()->getLocale(),
         ];
     }
