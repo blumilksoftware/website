@@ -29,7 +29,7 @@
     <div class="px-16 w-full py-6 md:py-6 md:flex md:items-center md:justify-between bg-gray-extraLight text-[#6B6E70]">
         <div>
             <p class="text-center text-sm leading-5">
-                <span class="pr-1">Copyright &copy; 2024</span>
+                <span class="pr-1">Copyright &copy; {{ date('Y') }}</span>
                 <span class="hidden md:inline">|</span>
                 <span class="pl-1">Blumilk <span class="hidden md:inline">sp. z o.o.</span></span>
             </p>

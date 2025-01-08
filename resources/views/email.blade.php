@@ -185,7 +185,7 @@
                         </div>
                     </div>
                     <div class="footer-bottom">
-                        <div class="footer-copy">Copyright &copy; 2024 | Blumilk</div>
+                        <div class="footer-copy">Copyright &copy; {{ date('Y') }} | Blumilk</div>
                         <div>
                             <a href="{{ route('privacy-policy') }}" target="_blank">{{ __('footer.policy') }}</a> |
                             <a href="{{ route('data') }}">{{ __('footer.data') }}</a>
