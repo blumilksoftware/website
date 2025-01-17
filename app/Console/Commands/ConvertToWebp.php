@@ -28,6 +28,10 @@ class ConvertToWebp extends Command
         $models = $class::all();
 
         foreach ($models as $model) {
+            if (empty($model->photo)) {
+                continue;
+            }
+
             if (!Storage::exists("public/$model->photo")) {
                 continue;
             }
