@@ -14,6 +14,9 @@ use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
+use Illuminate\Support\Facades\Storage;
+use Intervention\Image\Laravel\Facades\Image;
+use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
 use Mvenghaus\FilamentPluginTranslatableInline\Forms\Components\TranslatableContainer;
 
 class ProjectResource extends Resource
@@ -60,6 +63,16 @@ class ProjectResource extends Resource
                             ->label("Zdjęcie")
                             ->directory(Project::PHOTOS_DIRECTORY)
                             ->imageEditor()
+                            ->saveUploadedFileUsing(function (TemporaryUploadedFile $file): string {
+                                $image = Image::read($file->getContent());
+                                $newName = "{$file->getBasename()}.webp";
+
+                                $path = Project::PHOTOS_DIRECTORY . "/$newName";
+
+                                Storage::put("public/$path", $image->toWebp()->toString());
+
+                                return $path;
+                            })
                             ->rules(["mimes:jpeg,png,webp"])
                             ->required()
                             ->multiple(false)

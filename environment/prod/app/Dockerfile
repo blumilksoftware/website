@@ -50,13 +50,19 @@ RUN apt-get update \
         libzip-dev \
         libpq-dev \
         libicu-dev \
+        libjpeg-dev \
+        libpng-dev \
+        libwebp-dev \
         supervisor \
         cron \
     && pecl install redis-${PHPREDIS_VERSION} \
+    && docker-php-ext-configure \
+        gd --with-jpeg --with-webp \
     && docker-php-ext-install \
         zip \
         pdo_pgsql \
         intl \
+        gd \
         bcmath \
         calendar \
         opcache \
