@@ -14,8 +14,7 @@ use Intervention\Image\Laravel\Facades\Image;
 class ConvertToWebp extends Command
 {
     protected $signature = "app:convert-to-webp";
-
-    protected $description = 'Convert storage images to webp';
+    protected $description = "Convert storage images to webp";
 
     public function handle(): void
     {
@@ -39,7 +38,7 @@ class ConvertToWebp extends Command
 
             $dir = $model::PHOTOS_DIRECTORY;
 
-            $image = Image::read(storage_path('app/public/' . $model->photo));
+            $image = Image::read(storage_path("app/public/" . $model->photo));
 
             $newPath = $dir . "/" . pathinfo($model->photo, PATHINFO_FILENAME) . ".webp";
 
