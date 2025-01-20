@@ -118,5 +118,10 @@
     <x-projects.image src="{{ asset('images/projects/vita/rebranding.png') }}"
                           alt="{{ __('projects.vita.alt.rebranding') }}"/>
 
+    <x-projects.reference      name="{{ __('projects.vita.testimonial.name') }}"
+                               company="{{ __('projects.vita.testimonial.company') }}"
+                               description="{{ __('projects.vita.testimonial.description') }}"
+                               photo="{{ asset('graphics/placeholders/female.svg') }}"/>
+
     <x-text-us-section/>
 @endsection
