@@ -6,6 +6,7 @@ namespace Blumilk\Website\Filament\Resources;
 
 use Blumilk\Website\Enums\DateFormats;
 use Blumilk\Website\Filament\Resources\NewsResource\Pages;
+use Blumilk\Website\Helpers\ImageConverter;
 use Blumilk\Website\Models\News;
 use Blumilk\Website\Models\Tag;
 use Exception;
@@ -23,6 +24,7 @@ use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Support\Str;
+use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
 use Mvenghaus\FilamentPluginTranslatableInline\Forms\Components\TranslatableContainer;
 
 class NewsResource extends Resource
@@ -80,6 +82,8 @@ class NewsResource extends Resource
                             ->label("Zdjęcie")
                             ->required()
                             ->directory(News::PHOTOS_DIRECTORY)
+                            ->saveUploadedFileUsing(fn(TemporaryUploadedFile $file): string => ImageConverter::convertToWebp($file, News::PHOTOS_DIRECTORY))
+                            ->rules(["mimes:jpeg,png,webp"])
                             ->multiple(false)
                             ->maxSize(2500),
                     ]),

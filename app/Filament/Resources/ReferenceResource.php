@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Blumilk\Website\Filament\Resources;
 
 use Blumilk\Website\Filament\Resources\ReferenceResource\Pages;
+use Blumilk\Website\Helpers\ImageConverter;
 use Blumilk\Website\Models\Reference;
 use Filament\Forms;
 use Filament\Forms\Components\Section;
@@ -14,6 +15,7 @@ use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
+use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
 use Mvenghaus\FilamentPluginTranslatableInline\Forms\Components\TranslatableContainer;
 
 class ReferenceResource extends Resource
@@ -57,6 +59,7 @@ class ReferenceResource extends Resource
                             ->label("Zdjęcie")
                             ->directory(Reference::PHOTOS_DIRECTORY)
                             ->imageEditor()
+                            ->saveUploadedFileUsing(fn(TemporaryUploadedFile $file): string => ImageConverter::convertToWebp($file, Reference::PHOTOS_DIRECTORY))
                             ->rules(["mimes:jpeg,png,webp"])
                             ->multiple(false)
                             ->maxSize(1000),
