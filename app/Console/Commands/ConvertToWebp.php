@@ -42,7 +42,7 @@ class ConvertToWebp extends Command
 
             $dir = $model::PHOTOS_DIRECTORY;
 
-            $image = Image::read(storage_path("app/public/" . $model->photo));
+            $image = Image::read(Storage::get("public/$model->photo"));
 
             $newPath = $dir . "/" . pathinfo($model->photo, PATHINFO_FILENAME) . ".webp";
 

@@ -6,6 +6,7 @@ namespace Blumilk\Website\Filament\Resources;
 
 use Blumilk\Website\Enums\DateFormats;
 use Blumilk\Website\Filament\Resources\NewsResource\Pages;
+use Blumilk\Website\Helpers\ImageConverter;
 use Blumilk\Website\Models\News;
 use Blumilk\Website\Models\Tag;
 use Exception;
@@ -22,9 +23,7 @@ use Filament\Tables\Filters\Filter;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
 use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
-use Intervention\Image\Laravel\Facades\Image;
 use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
 use Mvenghaus\FilamentPluginTranslatableInline\Forms\Components\TranslatableContainer;
 
@@ -83,16 +82,7 @@ class NewsResource extends Resource
                             ->label("Zdjęcie")
                             ->required()
                             ->directory(News::PHOTOS_DIRECTORY)
-                            ->saveUploadedFileUsing(function (TemporaryUploadedFile $file): string {
-                                $image = Image::read($file->getContent());
-                                $newName = "{$file->getBasename()}.webp";
-
-                                $path = News::PHOTOS_DIRECTORY . "/$newName";
-
-                                Storage::put("public/$path", $image->toWebp()->toString());
-
-                                return $path;
-                            })
+                            ->saveUploadedFileUsing(fn(TemporaryUploadedFile $file): string => ImageConverter::convertToWebp($file, News::PHOTOS_DIRECTORY))
                             ->rules(["mimes:jpeg,png,webp"])
                             ->multiple(false)
                             ->maxSize(2500),

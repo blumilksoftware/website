@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Blumilk\Website\Models;
 
+use Blumilk\Website\Helpers\ImageConverter;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\Translatable\HasTranslations;
@@ -23,6 +24,7 @@ class Project extends Model
 {
     use HasTranslations;
     use HasFactory;
+    use ImageConverter;
 
     public const string PHOTOS_DIRECTORY = "projects";
 

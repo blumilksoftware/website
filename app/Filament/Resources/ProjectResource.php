@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace Blumilk\Website\Filament\Resources;
 
 use Blumilk\Website\Filament\Resources\ProjectResource\Pages;
+use Blumilk\Website\Helpers\ImageConverter;
 use Blumilk\Website\Models\Project;
 use Filament\Forms;
 use Filament\Forms\Components\Section;
@@ -14,8 +15,6 @@ use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Filters\TernaryFilter;
 use Filament\Tables\Table;
-use Illuminate\Support\Facades\Storage;
-use Intervention\Image\Laravel\Facades\Image;
 use Livewire\Features\SupportFileUploads\TemporaryUploadedFile;
 use Mvenghaus\FilamentPluginTranslatableInline\Forms\Components\TranslatableContainer;
 
@@ -63,16 +62,7 @@ class ProjectResource extends Resource
                             ->label("Zdjęcie")
                             ->directory(Project::PHOTOS_DIRECTORY)
                             ->imageEditor()
-                            ->saveUploadedFileUsing(function (TemporaryUploadedFile $file): string {
-                                $image = Image::read($file->getContent());
-                                $newName = "{$file->getBasename()}.webp";
-
-                                $path = Project::PHOTOS_DIRECTORY . "/$newName";
-
-                                Storage::put("public/$path", $image->toWebp()->toString());
-
-                                return $path;
-                            })
+                            ->saveUploadedFileUsing(fn(TemporaryUploadedFile $file): string => ImageConverter::convertToWebp($file, Project::PHOTOS_DIRECTORY))
                             ->rules(["mimes:jpeg,png,webp"])
                             ->required()
                             ->multiple(false)
