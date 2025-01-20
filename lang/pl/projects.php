@@ -128,6 +128,11 @@ return [
         ],
         "title_4" => "Rebranding strony internetowej",
         "rebranding" => "W oparciu o nową identyfikację wizualną strona przychodni przeszła kompleksowy rebranding spójny z designem aplikacji.",
+        "testimonial" => [
+            "name" => "Kinga Żeberecka",
+            "company" => "Vita Plus Centrum Zdrowia",
+            "description" => "Jesteśmy zadowoleni ze współpracy z lokalnym software housem jakim jest Blumilk. Zespół nie tylko dostarczył planowane rozwiązanie na czas, ale także wykazał się inicjatywą, dostosowując się do naszych wymagań. Komunikacja była jasna i regularna, co było dla nas dodatkowym plusem.",
+        ],
         "alt" => [
             "laptop_1" => "laptop ze stroną aplikacji",
             "laptop_2" => "człowiek z laptopem na kolanach z otwartą aplikacją",

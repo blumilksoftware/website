@@ -128,6 +128,11 @@ return [
         ],
         "title_4" => "Rebranding of the website",
         "rebranding" => "Based on the new visual identification, the clinic's website underwent a comprehensive rebranding consistent with the design of the application.",
+        "testimonial" => [
+            "name" => "Kinga Żeberecka",
+            "company" => "Vita Plus Centrum Zdrowia",
+            "description" => "We are satisfied with the cooperation with a local software house like Blumilk. The team not only delivered the planned solution on time, but also showed initiative by adapting to our requirements. Communication was clear and regular, which was an added plus for us.",
+        ],
         "alt" => [
             "laptop_1" => "laptop with the application website",
             "laptop_2" => "person with a laptop on his laps with open application",
