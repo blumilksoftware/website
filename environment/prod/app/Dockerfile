@@ -37,9 +37,9 @@ FROM php:8.4.3-fpm-bookworm@sha256:5148d67c6a67e00736c7a1be2e3b5287e370fd64d24f7
 COPY --from=vendor /usr/bin/composer /usr/local/bin/composer
 
 # For other versions check: http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx/
-ARG NGINX_VERSION="1.27.0-2~bookworm"
+ARG NGINX_VERSION="1.27.3-1~bookworm"
 # For other versions check: https://pecl.php.net/package/redis
-ARG PHPREDIS_VERSION=6.0.2
+ARG PHPREDIS_VERSION=6.1.0
 
 RUN apt-get update \
     && apt-get install --assume-yes gpg \

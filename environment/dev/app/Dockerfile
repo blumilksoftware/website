@@ -54,9 +54,10 @@ RUN ln --symbolic /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/
 RUN mv "${PHP_INI_DIR}/php.ini-development" "${PHP_INI_DIR}/php.ini"
 
 # For other versions check: http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx/
-ARG NGINX_VERSION="1.27.0-2~bookworm"
+ARG NGINX_VERSION="1.27.3-1~bookworm"
 # For other versions check: https://pecl.php.net/package/redis
-ARG PHPREDIS_VERSION=6.0.2
+# renovate: datasource=github-tags depName=phpredis/phpredis
+ARG PHPREDIS_VERSION=6.1.0
 
 RUN apt-get update \
     && apt-get install --assume-yes gpg \
@@ -86,7 +87,8 @@ RUN apt-get update \
         redis
 
 # For other versions check: https://pecl.php.net/package/xdebug
-ARG XDEBUG_VERSION=3.3.2
+# renovate: datasource=github-tags depName=xdebug/xdebug
+ARG XDEBUG_VERSION=3.4.1
 ARG INSTALL_XDEBUG=true
 
 RUN if [ ${INSTALL_XDEBUG} = true ]; then \
