@@ -6,7 +6,7 @@
     "keywords": ["framework", "laravel"],
     "license": "MIT",
     "require": {
-        "php": "^8.3",
+        "php": "^8.4",
         "ext-gd": "*",
         "ext-intl": "*",
         "ext-pdo": "*",
@@ -58,8 +58,8 @@
             "@php artisan test"
         ],
         "analyse": "./vendor/bin/phpstan analyse",
-        "cs": "./vendor/bin/php-cs-fixer fix --dry-run --diff --config codestyle.php",
-        "csf": "./vendor/bin/php-cs-fixer fix --diff --config codestyle.php",
+        "cs": "PHP_CS_FIXER_IGNORE_ENV=1 ./vendor/bin/php-cs-fixer fix --dry-run --diff --config codestyle.php",
+        "csf": "PHP_CS_FIXER_IGNORE_ENV=1 ./vendor/bin/php-cs-fixer fix --diff --config codestyle.php",
         "fresh:demo": "@php artisan migrate:fresh --seed"
     },
     "extra": {
