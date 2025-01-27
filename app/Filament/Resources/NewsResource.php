@@ -31,6 +31,12 @@ class NewsResource extends Resource
 {
     use Translatable;
 
+    protected static ?string $model = News::class;
+    protected static ?string $label = "aktualność";
+    protected static ?string $pluralLabel = "Aktualności";
+    protected static ?string $navigationIcon = "heroicon-o-rectangle-stack";
+    protected static bool $hasTitleCaseModelLabel = false;
+
     public static function form(Form $form): Form
     {
         return $form
@@ -122,17 +128,15 @@ class NewsResource extends Resource
                         Forms\Components\DatePicker::make("published_to")
                             ->label("Data publikacji do")
                             ->format(DateFormats::DATE_DISPLAY),
-                    ])->query(function (Builder $query, array $data): Builder {
-                        return $query
-                            ->when(
-                                $data["published_from"],
-                                fn(Builder $query, $date): Builder => $query->whereDate("published_at", ">=", $date),
-                            )
-                            ->when(
-                                $data["published_to"],
-                                fn(Builder $query, $date): Builder => $query->whereDate("published_at", "<=", $date),
-                            );
-                    }),
+                    ])->query(fn(Builder $query, array $data): Builder => $query
+                    ->when(
+                        $data["published_from"],
+                        fn(Builder $query, $date): Builder => $query->whereDate("published_at", ">=", $date),
+                    )
+                    ->when(
+                        $data["published_to"],
+                        fn(Builder $query, $date): Builder => $query->whereDate("published_at", "<=", $date),
+                    )),
             ])
             ->actions([
                 Tables\Actions\ViewAction::make(),
@@ -159,10 +163,4 @@ class NewsResource extends Resource
     {
         return config("app.translatable_locales");
     }
-
-    protected static ?string $model = News::class;
-    protected static ?string $label = "aktualność";
-    protected static ?string $pluralLabel = "Aktualności";
-    protected static ?string $navigationIcon = "heroicon-o-rectangle-stack";
-    protected static bool $hasTitleCaseModelLabel = false;
 }

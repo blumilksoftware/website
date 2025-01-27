@@ -20,6 +20,12 @@ use Mvenghaus\FilamentPluginTranslatableInline\Forms\Components\TranslatableCont
 
 class ProjectResource extends Resource
 {
+    protected static ?string $model = Project::class;
+    protected static ?string $label = "projekt";
+    protected static ?string $pluralLabel = "Projekty";
+    protected static ?string $navigationIcon = "heroicon-o-swatch";
+    protected static bool $hasTitleCaseModelLabel = false;
+
     public static function form(Form $form): Form
     {
         return $form
@@ -116,12 +122,6 @@ class ProjectResource extends Resource
             "edit" => Pages\EditProject::route("/{record}/edit"),
         ];
     }
-
-    protected static ?string $model = Project::class;
-    protected static ?string $label = "projekt";
-    protected static ?string $pluralLabel = "Projekty";
-    protected static ?string $navigationIcon = "heroicon-o-swatch";
-    protected static bool $hasTitleCaseModelLabel = false;
 
     protected static function getTemplateOptions(): array
     {

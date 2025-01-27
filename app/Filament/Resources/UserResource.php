@@ -19,6 +19,12 @@ use Illuminate\Support\Facades\Hash;
 
 class UserResource extends Resource
 {
+    protected static ?string $model = User::class;
+    protected static ?string $label = "użytkownika";
+    protected static ?string $pluralLabel = "Użytkownicy";
+    protected static ?string $navigationIcon = "heroicon-o-user-group";
+    protected static bool $hasTitleCaseModelLabel = false;
+
     public static function form(Form $form): Form
     {
         /** @var User $authUser */
@@ -112,10 +118,4 @@ class UserResource extends Resource
 
         return $user->isAdmin() && $record->id !== $user->id;
     }
-
-    protected static ?string $model = User::class;
-    protected static ?string $label = "użytkownika";
-    protected static ?string $pluralLabel = "Użytkownicy";
-    protected static ?string $navigationIcon = "heroicon-o-user-group";
-    protected static bool $hasTitleCaseModelLabel = false;
 }
