@@ -17,6 +17,9 @@ jobs:
     timeout-minutes: 10
     if: github.event.pull_request.draft == false
     runs-on: ubuntu-latest
+    env:
+      # renovate: datasource=docker depName=php
+      PHP_VERSION: 8.4.3
     services:
       pgsql:
         image: postgres:16.3-alpine3.18@sha256:64e18e8fb3e9c9aac89ac590c5dd8306b862478404f76cd9b5f7720d012b4c47 # https://hub.docker.com/_/postgres
@@ -49,7 +52,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@9e72090525849c5e82e596468b86eb55e9cc5401 # 2.32.0 # https://github.com/shivammathur/setup-php
         with:
-          php-version: 8.3
+          php-version: ${{ env.PHP_VERSION }}
           extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, pdo_pgsql, intl
           coverage: none
 
