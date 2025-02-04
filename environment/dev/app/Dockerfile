@@ -1,5 +1,5 @@
 # https://hub.docker.com/_/alpine
-FROM alpine:3.21.0@sha256:21dc6063fd678b478f57c0e13f47560d0ea4eeba26dfc947b2a4f81f686b9f45 AS secops-tools
+FROM alpine:3.21.2@sha256:56fa17d2a7e7f168a043a2712e63aed1f8543aeafdcee47c58dcffe38ed51099 AS secops-tools
 
 # https://github.com/FiloSottile/age/releases
 ARG AGE_VERSION="1.1.1"
@@ -15,13 +15,13 @@ RUN wget --output-document age.tar.gz "https://github.com/FiloSottile/age/releas
     && chmod +x /usr/local/bin/sops
 
 # For other versions check: https://hub.docker.com/_/composer/tags
-FROM composer/composer:2.8.3-bin@sha256:9f83907ae037ada989775f462a19932cdd388fefcbf3b697780363bba1767f94 AS composer-bin
+FROM composer/composer:2.8.5-bin@sha256:f39305913df47b4de56c64f4719d35eedbd65d7d96ff554110b9e9bd0c7a18c0 AS composer-bin
 
 # For other versions check: https://hub.docker.com/_/node/tags
-FROM node:22.6.0-bullseye-slim@sha256:a4b9a4773f239be06956f24fdf0b371ef87da3ad2d3eb877669254da947fa8b2 AS node
+FROM node:22.13.1-bullseye-slim@sha256:8d01d258d1c400417c3ea058b10e6e0c93a605276aac84b3ec7cb0c08b8c5d33 AS node
 
 # For other versions check: https://hub.docker.com/_/php/tags
-FROM php:8.3.12-fpm-bookworm@sha256:833fd3764a6e9a69e829d95344596ffe921735c9f96b0e864edc326be15c6175
+FROM php:8.4.3-fpm-bookworm@sha256:5148d67c6a67e00736c7a1be2e3b5287e370fd64d24f7777f5e39bf4c45b9175
 
 COPY --from=composer-bin ./composer /usr/bin/composer
 COPY --from=secops-tools /usr/local/bin/age /usr/local/bin/age
@@ -54,9 +54,10 @@ RUN ln --symbolic /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/
 RUN mv "${PHP_INI_DIR}/php.ini-development" "${PHP_INI_DIR}/php.ini"
 
 # For other versions check: http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx/
-ARG NGINX_VERSION="1.27.0-2~bookworm"
+ARG NGINX_VERSION="1.27.3-1~bookworm"
 # For other versions check: https://pecl.php.net/package/redis
-ARG PHPREDIS_VERSION=6.0.2
+# renovate: datasource=github-tags depName=phpredis/phpredis
+ARG PHPREDIS_VERSION=6.1.0
 
 RUN apt-get update \
     && apt-get install --assume-yes gpg \
@@ -86,7 +87,8 @@ RUN apt-get update \
         redis
 
 # For other versions check: https://pecl.php.net/package/xdebug
-ARG XDEBUG_VERSION=3.3.2
+# renovate: datasource=github-tags depName=xdebug/xdebug
+ARG XDEBUG_VERSION=3.4.1
 ARG INSTALL_XDEBUG=true
 
 RUN if [ ${INSTALL_XDEBUG} = true ]; then \

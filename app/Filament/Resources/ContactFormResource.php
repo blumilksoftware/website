@@ -23,6 +23,12 @@ use Illuminate\Database\Eloquent\Builder;
 
 class ContactFormResource extends Resource
 {
+    protected static ?string $model = ContactForm::class;
+    protected static ?string $label = "wiadomość";
+    protected static ?string $pluralLabel = "Wiadomości";
+    protected static ?string $navigationIcon = "heroicon-o-envelope-open";
+    protected static bool $hasTitleCaseModelLabel = false;
+
     public static function form(Form $form): Form
     {
         return $form
@@ -88,17 +94,15 @@ class ContactFormResource extends Resource
                         Forms\Components\DatePicker::make("created_to")
                             ->label("Data do")
                             ->format(DateFormats::DATE_DISPLAY),
-                    ])->query(function (Builder $query, array $data): Builder {
-                        return $query
-                            ->when(
-                                $data["created_from"],
-                                fn(Builder $query, $date): Builder => $query->whereDate("created_at", ">=", $date),
-                            )
-                            ->when(
-                                $data["created_to"],
-                                fn(Builder $query, $date): Builder => $query->whereDate("created_at", "<=", $date),
-                            );
-                    }),
+                    ])->query(fn(Builder $query, array $data): Builder => $query
+                    ->when(
+                        $data["created_from"],
+                        fn(Builder $query, $date): Builder => $query->whereDate("created_at", ">=", $date),
+                    )
+                    ->when(
+                        $data["created_to"],
+                        fn(Builder $query, $date): Builder => $query->whereDate("created_at", "<=", $date),
+                    )),
                 SelectFilter::make("status")
                     ->label("Status wiadomości")
                     ->options(ContactFormStatus::class),
@@ -128,10 +132,4 @@ class ContactFormResource extends Resource
     {
         return false;
     }
-
-    protected static ?string $model = ContactForm::class;
-    protected static ?string $label = "wiadomość";
-    protected static ?string $pluralLabel = "Wiadomości";
-    protected static ?string $navigationIcon = "heroicon-o-envelope-open";
-    protected static bool $hasTitleCaseModelLabel = false;
 }

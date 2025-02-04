@@ -1,6 +1,6 @@
 ### PHP DEPENDENCIES ###
 # https://hub.docker.com/_/composer/tags
-FROM composer:2.8.3@sha256:26bbf85fccb36247181de6f4a2beddac47d4b352c0c19249a3b4fa2abf1e38ad AS vendor
+FROM composer:2.8.5@sha256:e0c9ac329256c25b0dee572df37d986570fb26bb6baaa7d0abe69b84181701e1 AS vendor
 
 WORKDIR /app_composer_dependencies
 
@@ -15,7 +15,7 @@ RUN composer install \
 
 ### FRONTEND ###
 # https://hub.docker.com/_/node/tags
-FROM node:22.6.0-bullseye-slim@sha256:a4b9a4773f239be06956f24fdf0b371ef87da3ad2d3eb877669254da947fa8b2 AS frontend
+FROM node:22.13.1-bullseye-slim@sha256:8d01d258d1c400417c3ea058b10e6e0c93a605276aac84b3ec7cb0c08b8c5d33 AS frontend
 
 WORKDIR /app_frontend_dependencies
 
@@ -32,14 +32,14 @@ RUN npm run build
 
 ### APPLICATION ###
 # https://hub.docker.com/_/php/tags
-FROM php:8.3.12-fpm-bookworm@sha256:833fd3764a6e9a69e829d95344596ffe921735c9f96b0e864edc326be15c6175 AS app
+FROM php:8.4.3-fpm-bookworm@sha256:5148d67c6a67e00736c7a1be2e3b5287e370fd64d24f7777f5e39bf4c45b9175 AS app
 
 COPY --from=vendor /usr/bin/composer /usr/local/bin/composer
 
 # For other versions check: http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx/
-ARG NGINX_VERSION="1.27.0-2~bookworm"
+ARG NGINX_VERSION="1.27.3-1~bookworm"
 # For other versions check: https://pecl.php.net/package/redis
-ARG PHPREDIS_VERSION=6.0.2
+ARG PHPREDIS_VERSION=6.1.0
 
 RUN apt-get update \
     && apt-get install --assume-yes gpg \
