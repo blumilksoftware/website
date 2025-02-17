@@ -26,7 +26,7 @@
         </div>
         <div class="flex basis-3/5">
             <img src="{{ asset('graphics/about.svg') }}" class="size-full align-middle m-4 relative 2xl:left-24"
-                 alt="{{ __('alt.about') }}"/>
+                 alt="{{ __('alt.about') }}" aria-hidden="true"/>
         </div>
     </section>
     <section class="bg-white py-12 sm:pt-16 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
