@@ -3,6 +3,10 @@
 @section("title", __("meta.home.title"))
 @section("description", __("meta.home.description"))
 
+@section("meta")
+    <meta property="og:description" content="{{ __("meta.home.description") }}"/>
+@endsection
+
 @section("content")
     <section class="relative overflow-hidden">
         <section class="flex flex-col-reverse xl:flex-row pt-8 xl:pt-24 pb-16 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:gap-5">
@@ -25,7 +29,7 @@
             </div>
             <div class="flex basis-3/5 relative self-center pb-8 md:pb-24 xl:pb-4 xl:left-16">
                 <img src="{{ asset('graphics/home.svg') }}" class="h-auto w-full aspect-auto object-center shrink-0"
-                     alt="{{ __('alt.home') }}"/>
+                     alt="{{ __('alt.home') }}" aria-hidden="true"/>
             </div>
         </section>
         <section class="relative text-center px-[10%] md:px-[15%]">
