@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
     <meta name="description" content="@yield('description')">
     <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="QCB2LFVYnUSGvJgRjtceHW6LDr8p8ksYCWAVDTcYyTM" />
     @yield('meta')
     <link rel="shortcut icon" href="{{ asset('identification/sygnet.svg') }}" type="image/x-icon">
     @vite('resources/js/app.ts')
