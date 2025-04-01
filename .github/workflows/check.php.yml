@@ -9,7 +9,8 @@ on:
       - 'composer.json'
       - 'composer.lock'
       - 'phpunit.xml'
-      - 'env.ci'
+      - '.env.ci'
+      - 'check.php.yml'
 
 jobs:
   test-and-lint-php:
@@ -21,11 +22,11 @@ jobs:
       # renovate: datasource=github-releases depName=php packageName=containerbase/php-prebuild
       PHP_VERSION: 8.4.5
     services:
-      pgsql:
+      postgres:
         image: postgres:16.3-alpine3.18@sha256:64e18e8fb3e9c9aac89ac590c5dd8306b862478404f76cd9b5f7720d012b4c47 # https://hub.docker.com/_/postgres
         env:
-          POSTGRES_DB: website-ci
-          POSTGRES_USER: website-ci
+          POSTGRES_DB: website-test
+          POSTGRES_USER: website
           POSTGRES_PASSWORD: password
         # Set health checks to wait until postgres has started
         options: >-
@@ -63,4 +64,6 @@ jobs:
         run: composer cs
 
       - name: Execute tests
-        run: php artisan test --env=ci
+        run: |
+          cp .env.ci .env
+          php artisan test --colors=always
