@@ -66,7 +66,7 @@ services:
         restart: unless-stopped
 
     mailpit:
-      image: axllent/mailpit:v1.21.8@sha256:81370195cd4a0eab9604d17c2617a7525b0486f9365555253b6c5376c6350f1a
+      image: axllent/mailpit:v1.24.0@sha256:06cf27fde6ea653c68b5c80f7d5d7280d56d17248e34de4b4ef15f9f4f86662c
       container_name: website-mailpit-dev
       labels:
         - "traefik.enable=true"
