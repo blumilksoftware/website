@@ -9,7 +9,8 @@ on:
       - 'composer.json'
       - 'composer.lock'
       - 'phpunit.xml'
-      - 'env.ci'
+      - '.env.ci'
+      - 'check.php.yml'
 
 jobs:
   test-and-lint-php:
@@ -18,14 +19,14 @@ jobs:
     if: github.event.pull_request.draft == false
     runs-on: ubuntu-latest
     env:
-      # renovate: datasource=docker depName=php
-      PHP_VERSION: 8.4.3
+      # renovate: datasource=github-releases depName=php packageName=containerbase/php-prebuild
+      PHP_VERSION: 8.4.5
     services:
-      pgsql:
+      postgres:
         image: postgres:16.3-alpine3.18@sha256:64e18e8fb3e9c9aac89ac590c5dd8306b862478404f76cd9b5f7720d012b4c47 # https://hub.docker.com/_/postgres
         env:
-          POSTGRES_DB: website-ci
-          POSTGRES_USER: website-ci
+          POSTGRES_DB: website-test
+          POSTGRES_USER: website
           POSTGRES_PASSWORD: password
         # Set health checks to wait until postgres has started
         options: >-
@@ -43,7 +44,7 @@ jobs:
         run: composer validate
 
       - name: Cache dependencies
-        uses: actions/cache@1bd1e32a3bdc45362d1e726936510720a7c30a57 # v4.2.0 # https://github.com/actions/cache
+        uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4.2.3 # https://github.com/actions/cache
         with:
           path: vendor
           key: ${{ runner.os }}-composer-dependencies-${{ hashFiles('composer.lock') }}
@@ -63,4 +64,6 @@ jobs:
         run: composer cs
 
       - name: Execute tests
-        run: php artisan test --env=ci
+        run: |
+          cp .env.ci .env
+          php artisan test --colors=always

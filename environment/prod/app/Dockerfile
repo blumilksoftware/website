@@ -1,6 +1,6 @@
 ### PHP DEPENDENCIES ###
 # https://hub.docker.com/_/composer/tags
-FROM composer:2.8.5@sha256:e0c9ac329256c25b0dee572df37d986570fb26bb6baaa7d0abe69b84181701e1 AS vendor
+FROM composer:2.8.6@sha256:685473b4cd31d70bfe71926409f812d5dd9245972d38b659ba35d70f4007808c AS vendor
 
 WORKDIR /app_composer_dependencies
 
@@ -15,7 +15,7 @@ RUN composer install \
 
 ### FRONTEND ###
 # https://hub.docker.com/_/node/tags
-FROM node:22.13.1-bullseye-slim@sha256:8d01d258d1c400417c3ea058b10e6e0c93a605276aac84b3ec7cb0c08b8c5d33 AS frontend
+FROM node:22.14.0-bullseye-slim@sha256:d69b7c7ea65e223e1837a03784c6caa987e50bd2f1fcc174156554adfbe7ca6e AS frontend
 
 WORKDIR /app_frontend_dependencies
 
@@ -32,7 +32,7 @@ RUN npm run build
 
 ### APPLICATION ###
 # https://hub.docker.com/_/php/tags
-FROM php:8.4.3-fpm-bookworm@sha256:5148d67c6a67e00736c7a1be2e3b5287e370fd64d24f7777f5e39bf4c45b9175 AS app
+FROM php:8.4.5-fpm-bookworm@sha256:182b3466ea500120199794457bc7563dfc599f742f6833722dc7d3ca3f69a328 AS app
 
 COPY --from=vendor /usr/bin/composer /usr/local/bin/composer
 
