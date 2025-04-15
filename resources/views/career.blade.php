@@ -135,7 +135,9 @@
                     <h2 class="font-semibold text-gray-900 leading-7.5 text-md md:text-4xl lg:text-5xl mb-4 md:mb-10">{{ __("content.career.section_3.title_1") }}</h2>
                     <p class="text-xs md:text-lg font-normal text-center xl:text-start text-gray-400 leading-7.5 mx-8 md:mx-0">{{ __("content.career.section_3.subtitle_1") }}</p>
                 </div>
-                <x-primary-button href="https://praktyki.blumilk.pl/" target="_blank" class="px-16 my-6 flex w-full md:w-auto m-auto xl:m-0 xl:mr-auto xl:justify-start bg-website-normal">{{ __("buttons.apply_internship") }}</x-primary-button>
+                <x-primary-button href="https://praktyki.blumilk.pl/" target="_blank"
+                                  data-umami-event="outbound-link-click" data-umami-event-url="https://praktyki.blumilk.pl/"
+                                  class="px-16 my-6 flex w-full md:w-auto m-auto xl:m-0 xl:mr-auto xl:justify-start bg-website-normal">{{ __("buttons.apply_internship") }}</x-primary-button>
             </div>
             <div class="flex relative self-center basis-3/5">
                 <img src="{{ asset('graphics/career_2.svg') }}" class="h-auto w-full object-center shrink-0 pt-4 pb-10 md:pb-0"
