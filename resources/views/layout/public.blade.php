@@ -24,6 +24,11 @@
 
     <script src='https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.css' rel='stylesheet'/>
+    <script
+        defer src="https://analytics.blumilk.pl/script.js"
+        data-website-id="f07919bb-dcef-4970-9efb-e732177147ab"
+        data-domains="dev.website.blumilk.pl">
+    </script>
 </head>
 
 <body class="font-sora flex flex-col h-screen justify-between">
