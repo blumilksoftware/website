@@ -1,7 +1,7 @@
 networks:
     website-dev:
         driver: bridge
-    traefik-proxy-blumilk-local:
+    traefik-proxy-blumilk-local-environment:
         external: true
 
 volumes:
@@ -20,12 +20,24 @@ services:
                 - USER_ID=${DOCKER_HOST_USER_ID:-1000}
         labels:
             - "traefik.enable=true"
-            - "traefik.blumilk.environment=true"
-            - "traefik.http.routers.website-http-router.rule=Host(`website.blumilk.localhost`)"
+            - "traefik.blumilk.local.environment=true"
+            # HTTP
+            - "traefik.http.routers.website-http-router.rule=Host(`${APP_DOCKER_HOST_NAME}`)"
             - "traefik.http.routers.website-http-router.entrypoints=web"
-            - "traefik.http.routers.website-https-router.rule=Host(`website.blumilk.localhost`)"
+            - "traefik.http.routers.website-http-router.service=website-app"
+            # HTTPS
+            - "traefik.http.routers.website-https-router.rule=Host(`${APP_DOCKER_HOST_NAME}`)"
             - "traefik.http.routers.website-https-router.entrypoints=websecure"
             - "traefik.http.routers.website-https-router.tls=true"
+            - "traefik.http.routers.website-https-router.service=website-app"
+            # APP LOADBALANCER
+            - "traefik.http.services.website-app.loadbalancer.server.port=80"
+            # VITE DEV SERVER
+            - "traefik.http.routers.website-vite-dev-server-https-router.rule=Host(`${VITE_DEV_SERVER_DOCKER_HOST_NAME}`)"
+            - "traefik.http.routers.website-vite-dev-server-https-router.entrypoints=websecure"
+            - "traefik.http.routers.website-vite-dev-server-https-router.tls=true"
+            - "traefik.http.routers.website-vite-dev-server-https-router.service=website-vite-dev-server"
+            - "traefik.http.services.website-vite-dev-server.loadbalancer.server.port=5173"
         container_name: website-app-dev
         working_dir: /application
         volumes:
@@ -38,7 +50,7 @@ services:
             - ${DOCKER_APP_HOST_PORT:-63851}:80
         networks:
             - website-dev
-            - traefik-proxy-blumilk-local
+            - traefik-proxy-blumilk-local-environment
         restart: unless-stopped
         depends_on:
             database:
@@ -70,16 +82,16 @@ services:
       container_name: website-mailpit-dev
       labels:
         - "traefik.enable=true"
-        - "traefik.blumilk.environment=true"
-        - "traefik.http.routers.website-mailpit-http-router.rule=Host(`website-mailpit.blumilk.localhost`)"
+        - "traefik.blumilk.local.environment=true"
+        - "traefik.http.routers.website-mailpit-http-router.rule=Host(`${MAILPIT_DOCKER_HOST_NAME}`)"
         - "traefik.http.routers.website-mailpit-http-router.entrypoints=web"
-        - "traefik.http.routers.website-mailpit-https-router.rule=Host(`website-mailpit.blumilk.localhost`)"
+        - "traefik.http.routers.website-mailpit-https-router.rule=Host(`${MAILPIT_DOCKER_HOST_NAME}`)"
         - "traefik.http.routers.website-mailpit-https-router.entrypoints=websecure"
         - "traefik.http.routers.website-mailpit-https-router.tls=true"
         - "traefik.http.services.website-mailpit.loadbalancer.server.port=8025"
       networks:
         - website-dev
-        - traefik-proxy-blumilk-local
+        - traefik-proxy-blumilk-local-environment
       ports:
         - ${DOCKER_MAILPIT_DASHBOARD_HOST_PORT:-34622}:8025
       restart: unless-stopped
