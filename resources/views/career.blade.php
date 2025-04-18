@@ -136,7 +136,7 @@
                     <p class="text-xs md:text-lg font-normal text-center xl:text-start text-gray-400 leading-7.5 mx-8 md:mx-0">{{ __("content.career.section_3.subtitle_1") }}</p>
                 </div>
                 <x-primary-button href="https://praktyki.blumilk.pl/" target="_blank"
-                                  data-umami-event="outbound-link-click" data-umami-event-url="https://praktyki.blumilk.pl/"
+                                  data-umami-event="praktyki-link-click" data-umami-event-url="https://praktyki.blumilk.pl/"
                                   class="px-16 my-6 flex w-full md:w-auto m-auto xl:m-0 xl:mr-auto xl:justify-start bg-website-normal">{{ __("buttons.apply_internship") }}</x-primary-button>
             </div>
             <div class="flex relative self-center basis-3/5">
