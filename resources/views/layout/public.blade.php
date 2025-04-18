@@ -26,8 +26,8 @@
     <link href='https://api.mapbox.com/mapbox-gl-js/v3.4.0/mapbox-gl.css' rel='stylesheet'/>
     <script
         defer src="https://analytics.blumilk.pl/script.js"
-        data-website-id="f07919bb-dcef-4970-9efb-e732177147ab"
-        data-domains="dev.website.blumilk.pl">
+        data-website-id="a60fb021-70a4-4829-9209-a690f6fcb79f"
+        data-domains="blumilk.pl">
     </script>
 </head>
 
