@@ -73,7 +73,8 @@
                 </div>
                 <div class="mt-3 flex">
                     <button type="submit"
-                            class="w-full text-xl mx-0 bg-website-normal m-2 p-3 sm:text-lg h-min text-center font-normal text-white shadow-sm rounded-xl transform transition hover:scale-110 flex justify-center items-center">
+                            class="w-full text-xl mx-0 bg-website-normal m-2 p-3 sm:text-lg h-min text-center font-normal text-white shadow-sm rounded-xl transform transition hover:scale-110 flex justify-center items-center"
+                            data-umami-event="send-contact-form-button-click">
                         {{ __('buttons.send_message') }}
                     </button>
                 </div>
