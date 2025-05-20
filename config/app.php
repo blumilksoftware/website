@@ -26,5 +26,6 @@ return [
         "pl",
         "en",
     ],
+    "contact_form_notify_email" => env("CONTACT_FORM_NOTIFY_EMAIL"),
     "dashboard_locale" => "pl",
 ];

@@ -115,6 +115,7 @@ return [
     "uploaded" => "Nie udało się wgrać pliku :attribute.",
     "url" => "Format pola :attribute jest nieprawidłowy.",
     "uuid" => "Pole :attribute musi być poprawnym identyfikatorem UUID.",
+    "recaptchav3" => "Nie udało się zweryfikować zabezpieczenia CAPTCHA. Spróbuj ponownie za chwilę lub odśwież stronę.",
     "custom" => [],
     "attributes" => [
         "name" => "imię i nazwisko",

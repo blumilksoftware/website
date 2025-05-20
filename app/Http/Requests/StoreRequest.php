@@ -17,6 +17,7 @@ class StoreRequest extends FormRequest
             "topic" => ["required", "string", "max:255"],
             "message" => ["required", "string", "max:65000"],
             "consents" => ["accepted"],
+            "g-recaptcha-response" => "required|recaptchav3:contact,0.5",
         ];
     }
 
