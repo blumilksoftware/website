@@ -19,7 +19,7 @@ class ContactFormCreated extends Mailable
         public ContactForm $contactForm,
     ) {}
 
-    public function build(): self
+    public function build(): static
     {
         return $this->subject($this->contactForm->topic)
             ->view("notification")
