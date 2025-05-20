@@ -16,7 +16,7 @@ class ContactFormCreated extends Mailable
     use SerializesModels;
 
     public function __construct(
-        public ContactForm $contactForm,
+        protected ContactForm $contactForm,
     ) {}
 
     public function build(): static
