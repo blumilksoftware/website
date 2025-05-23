@@ -120,6 +120,11 @@ class ContactFormResource extends Resource
             ]);
     }
 
+    public static function getNavigationBadge(): string
+    {
+        return (string)static::$model::where("status", ContactFormStatus::Unread)->count();
+    }
+
     public static function getPages(): array
     {
         return [

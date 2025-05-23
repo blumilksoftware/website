@@ -3,8 +3,12 @@
 @section("title", __("meta.contact.title"))
 @section("description", __("meta.contact.description"))
 
-@section('content')
+@php
+    $fieldId = uniqid("g-recaptcha-response");
+    $siteKey = config("recaptchav3.sitekey");
+@endphp
 
+@section('content')
     @if( Session('success') )
         <x-toast type="success" position="top-right">{{ Session::get('success') }}</x-toast>
     @endif
@@ -20,6 +24,7 @@
         <div class="row-span-4 py-12 xl:p-0">
             <form action="{{ route('contact.create') }}" method="POST" class="flex flex-col gap-y-4 justify-between md:shadow-lg rounded-2xl h-full xl:ml-[15%] md:px-16 py-10">
                 @csrf
+                <input type="hidden" name="g-recaptcha-response" id="{{ $fieldId }}" />
                 <div class="grid gap-y-3">
                     <div>
                         <label for="email" class="block text-sm font-normal leading-6 text-blue-dark ml-2">{{ __('content.contact.form.email') }}</label>
@@ -78,6 +83,9 @@
                         {{ __('buttons.send_message') }}
                     </button>
                 </div>
+                @error('g-recaptcha-response')
+                <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
+                @enderror
             </form>
         </div>
         <div class="h-full row-span-3">
@@ -146,6 +154,12 @@
             marker.getElement().addEventListener('click', function () {
                 window.open('https://maps.app.goo.gl/h6HhaStCsVmwAwF19')
             })
+
+            grecaptcha.ready(function() {
+                grecaptcha.execute('{{ $siteKey }}', {action: 'contact'}).then(function(token) {
+                    document.getElementById('{{ $fieldId }}').value = token;
+                });
+            });
         })
     </script>
 @endsection

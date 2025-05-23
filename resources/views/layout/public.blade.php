@@ -29,6 +29,7 @@
         data-website-id="a60fb021-70a4-4829-9209-a690f6fcb79f"
         data-domains="blumilk.pl">
     </script>
+    {!! RecaptchaV3::initJs() !!}
 </head>
 
 <body class="font-sora flex flex-col h-screen justify-between">

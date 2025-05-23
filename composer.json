@@ -16,6 +16,7 @@
         "filament/spatie-laravel-translatable-plugin": "^3.3.7",
         "guzzlehttp/guzzle": "^7.9.3",
         "intervention/image-laravel": "^1.5.5",
+        "josiasmontag/laravel-recaptchav3": "^1.0",
         "laravel/framework": "^11.44.2",
         "laravel/sanctum": "^4.0.8",
         "laravel/tinker": "^2.10.1",
