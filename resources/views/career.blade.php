@@ -26,7 +26,7 @@
             </div>
         </div>
         <div class="flex basis-3/5 relative self-center pb-8 md:pb-24 xl:pb-0">
-            <img src="{{ asset('graphics/career.svg') }}" class="h-auto w-full aspect-auto object-center shrink-0"
+            <img src="{{ asset('graphics/career.webp') }}" class="h-auto w-full aspect-auto object-center shrink-0"
                  alt="{{ __('alt.career') }}" aria-hidden="true"/>
         </div>
     </section>
@@ -115,7 +115,7 @@
     <section class="relative overflow-hidden space-y-4">
         <div class="flex flex-col md:mt-10 md:pb-5 xl:flex-row mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto gap-x-36">
             <div class="self-center basis-3/5">
-                <img src="{{ asset('graphics/career_3.svg') }}" class="h-auto w-full object-center shrink-0 pb-10 md:pb-0"
+                <img src="{{ asset('graphics/career_3.webp') }}" class="h-auto w-full object-center shrink-0 pb-10 md:pb-0"
                      alt="{{ __("alt.career_3") }}" aria-hidden="true"/>
             </div>
             <div class="flex basis-2/5 relative flex-col justify-center md:pb-24 xl:pb-0">
@@ -140,7 +140,7 @@
                                   class="px-16 my-6 flex w-full md:w-auto m-auto xl:m-0 xl:mr-auto xl:justify-start bg-website-normal">{{ __("buttons.apply_internship") }}</x-primary-button>
             </div>
             <div class="flex relative self-center basis-3/5">
-                <img src="{{ asset('graphics/career_2.svg') }}" class="h-auto w-full object-center shrink-0 pt-4 pb-10 md:pb-0"
+                <img src="{{ asset('graphics/career_2.webp') }}" class="h-auto w-full object-center shrink-0 pt-4 pb-10 md:pb-0"
                      alt="{{ __("alt.career_2") }}" aria-hidden="true"/>
             </div>
         </div>

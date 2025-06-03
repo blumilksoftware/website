@@ -3,7 +3,7 @@
 <head>
     <title>@yield('title') - Blumilk</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <meta name="robots" content="noindex, nofollow">
     <link rel="shortcut icon" href="{{ asset('identification/sygnet.svg') }}" type="image/x-icon">
     @vite('resources/js/app.ts')

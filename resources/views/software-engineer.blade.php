@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="flex basis-3/5 relative self-center pb-8 md:pb-24 xl:pb-0">
-            <img src="{{ asset('graphics/software-engineer.svg') }}" class="h-auto w-full aspect-auto object-center shrink-0"
+            <img src="{{ asset('graphics/software-engineer.webp') }}" class="h-auto w-full aspect-auto object-center shrink-0"
                  alt="{{ __('alt.software_engineer') }}" aria-hidden="true"/>
         </div>
     </section>

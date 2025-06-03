@@ -42,4 +42,6 @@ return [
     "facebook" => "ikona Facebook",
     "youtube" => "ikona YouTube",
     "download" => "ikona pobierania",
+    "openMenu" => "Otwórz menu",
+    "closeMenu" => "Zamknij menu",
 ];

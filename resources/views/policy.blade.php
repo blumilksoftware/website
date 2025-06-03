@@ -16,7 +16,7 @@
                 </p>
         </div>
         <div class="flex basis-3/5 relative xl:-bottom-36 xl:-right-20 place-content-center xl:place-content-end w-full">
-            <img src="{{ asset('graphics/policy.svg') }}" class="reh-auto w-full aspect-auto object-center shrink-0 py-10 xl:py-0"
+            <img src="{{ asset('graphics/policy.webp') }}" class="reh-auto w-full aspect-auto object-center shrink-0 py-10 xl:py-0"
                  alt="{{ __('alt.policy') }}" aria-hidden="true"/>
         </div>
     </section>

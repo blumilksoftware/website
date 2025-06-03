@@ -14,7 +14,7 @@
                 <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:justify-start xl:text-start">
                     <h2 class="font-semibold text-gray-900 leading-7.5 md:leading-snug">
                         <span class="inline">{{ __("content.home.section_1.title_1") }}</span>
-                        <span class="text-website-normal inline"> {{ __("content.home.section_1.title_2") }} </span>
+                        <span class="text-blue-normal inline"> {{ __("content.home.section_1.title_2") }} </span>
                         <span class="inline">{{ __("content.home.section_1.title_3") }}</span>
                     </h2>
                 </div>
@@ -24,18 +24,18 @@
                         <span class="font-semibold leading-7.5">{{ __("content.home.section_1.subtitle_2") }}</span>
                     </p>
                     <x-primary-button href="{{ route('about') }}"
-                                      class="w-full sm:w-auto sm:px-12 -ml-1 shadow-xl bg-website-normal">{{ __("buttons.about") }}</x-primary-button>
+                                      class="w-full sm:w-auto sm:px-12 -ml-1 shadow-xl bg-blue-normal">{{ __("buttons.about") }}</x-primary-button>
                 </div>
             </div>
             <div class="flex basis-3/5 relative self-center pb-8 md:pb-24 xl:pb-4 xl:left-16">
-                <img src="{{ asset('graphics/home.svg') }}" class="h-auto w-full aspect-auto object-center shrink-0"
+                <img src="{{ asset('graphics/home.webp') }}" class="h-auto w-full aspect-auto object-center shrink-0"
                      alt="{{ __('alt.home') }}" aria-hidden="true"/>
             </div>
         </section>
         <section class="relative text-center px-[10%] md:px-[15%]">
-            <div class="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-400">
+            <div class="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-500">
                 {{ __("content.home.section_2.title_1") }}
-                <span class="text-website-normal">{{ __("content.home.section_2.title_2") }}</span>
+                <span class="text-blue-normal">{{ __("content.home.section_2.title_2") }}</span>
             </div>
             <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 xl:gap-8 pb-12 text-gray-400 mt-10 2xl:max-w-7xl 2xl:mx-auto">
                 @foreach ($clients as $client)

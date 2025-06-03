@@ -8,7 +8,7 @@
         <div class="flex basis-2/5 flex-col self-center">
             <div class="text-3xl md:text-4xl xl:text-5xl text-center 2xl:justify-start 2xl:text-start pb-4 pt-4 md:pt-0">
                 <h2 class="font-semibold text-gray-900 leading-snug">
-                    <span class="text-website-normal"> {{ __("content.about.section_1.title_1") }}</span>
+                    <span class="text-blue-normal"> {{ __("content.about.section_1.title_1") }}</span>
                     {{ __("content.about.section_1.title_2") }}
                 </h2>
             </div>
@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="flex basis-3/5">
-            <img src="{{ asset('graphics/about.svg') }}" class="size-full align-middle m-4 relative 2xl:left-24"
+            <img src="{{ asset('graphics/about.webp') }}" class="size-full align-middle m-4 relative 2xl:left-24"
                  alt="{{ __('alt.about') }}" aria-hidden="true"/>
         </div>
     </section>
@@ -96,19 +96,19 @@
                 <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-2 2xl:order-none">
                     <p class="font-normal text-center md:text-start 2xl:pr-4 px-3">
                         <span class="leading-7.5 text-md font-semibold md:font-bold block pb-3">{{ __("content.about.section_4.activity_1.title") }}</span>
-                        <span class="leading-7.5 text-xs md:text-sm text-tile-content">{!! __("content.about.section_4.activity_1.subtitle") !!}</span>
+                        <span class="leading-7.5 text-xs md:text-sm text-gray-600">{!! __("content.about.section_4.activity_1.subtitle") !!}</span>
                     </p>
                 </div>
                 <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-4 2xl:order-none">
                     <p class="font-normal text-center md:text-start 2xl:pr-4 px-3">
                         <span class="leading-7.5 text-md font-semibold md:font-bold block pb-3">{{ __("content.about.section_4.activity_2.title") }}</span>
-                        <span class="leading-7.5 text-xs md:text-sm text-tile-content">{!!__("content.about.section_4.activity_2.subtitle") !!}</span>
+                        <span class="leading-7.5 text-xs md:text-sm text-gray-600">{!!__("content.about.section_4.activity_2.subtitle") !!}</span>
                     </p>
                 </div>
                 <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-6 md:order-5 2xl:order-none">
                     <p class="font-normal text-center md:text-start 2xl:pr-4 px-3">
                         <span class="leading-7.5 text-md font-semibold md:font-bold block pb-3">{{ __("content.about.section_4.activity_3.title") }}</span>
-                        <span class="leading-7.5 text-xs md:text-sm text-tile-content">{!! __("content.about.section_4.activity_3.subtitle") !!}</span>
+                        <span class="leading-7.5 text-xs md:text-sm text-gray-600">{!! __("content.about.section_4.activity_3.subtitle") !!}</span>
                     </p>
                 </div>
                 <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-5 md:order-6 2xl:order-none">
@@ -122,7 +122,7 @@
                 <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-8 md:order-7">
                     <p class="font-normal text-center md:text-start 2xl:pr-4 px-3">
                         <span class="leading-7.5 text-md font-semibold md:font-bold block pb-3">{{ __("content.about.section_4.activity_4.title") }}</span>
-                        <span class="leading-7.5 text-xs md:text-sm text-tile-content">{!! __("content.about.section_4.activity_4.subtitle") !!}</span>
+                        <span class="leading-7.5 text-xs md:text-sm text-gray-600">{!! __("content.about.section_4.activity_4.subtitle") !!}</span>
                     </p>
                 </div>
             </div>

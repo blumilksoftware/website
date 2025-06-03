@@ -19,28 +19,28 @@
             <div class="font-medium flex items-center text-center gap-2">
                 <a href="{{ route('about') }}"
                    @class([
-                        'hover:text-website-normal rounded-3xl px-2',
-                        'text-website-normal' => Str::contains($current, 'about')])>{{ __("content.pages.about") }}
+                        'hover:text-blue-normal rounded-3xl px-2',
+                        'text-blue-normal' => Str::contains($current, 'about')])>{{ __("content.pages.about") }}
                 </a>
                 <a href="{{ route('projects') }}"
                    @class([
-                        'hover:text-website-normal rounded-3xl px-2',
-                        'text-website-normal' => Str::contains($current, 'projects')])>{{ __("content.pages.projects") }}
+                        'hover:text-blue-normal rounded-3xl px-2',
+                        'text-blue-normal' => Str::contains($current, 'projects')])>{{ __("content.pages.projects") }}
                 </a>
                 <a href="{{ route('career') }}"
                    @class([
-                        'hover:text-website-normal rounded-3xl px-2',
-                        'text-website-normal' => Str::contains($current, 'career')])>{{ __("content.pages.career") }}
+                        'hover:text-blue-normal rounded-3xl px-2',
+                        'text-blue-normal' => Str::contains($current, 'career')])>{{ __("content.pages.career") }}
                 </a>
                 <a href="{{ route('news') }}"
                    @class([
-                        'hover:text-website-normal rounded-3xl px-2',
-                        'text-website-normal' => Str::contains($current, 'news')])>{{ __("content.pages.news") }}
+                        'hover:text-blue-normal rounded-3xl px-2',
+                        'text-blue-normal' => Str::contains($current, 'news')])>{{ __("content.pages.news") }}
                 </a>
                 <a href="{{ route('contact') }}"
                    @class([
-                        'hover:text-website-normal rounded-3xl px-2',
-                        'text-website-normal' => Str::contains($current, 'contact')])>{{ __("content.pages.contact") }}
+                        'hover:text-blue-normal rounded-3xl px-2',
+                        'text-blue-normal' => Str::contains($current, 'contact')])>{{ __("content.pages.contact") }}
                 </a>
             </div>
         </div>
@@ -77,7 +77,7 @@
             </div>
         </div>
 
-        <button class="flex tablet:hidden" @click="openMobileMenu = ! openMobileMenu">
+        <button class="flex tablet:hidden" @click="openMobileMenu = ! openMobileMenu" aria-label="{{ __('alt.openMenu') }}">
             <i :class="{'block': ! openMobileMenu, 'hidden': openMobileMenu}"
                class="fa-solid fa-bars text-2xl text-black block"></i>
         </button>
@@ -93,7 +93,7 @@
                 </a>
                 <button @click="openMobileMenu = ! openMobileMenu">
                     <i :class="{'block': openMobileMenu, 'hidden': ! openMobileMenu}"
-                       class="fa-solid fa-xmark text-2xl text-black hidden"></i>
+                       class="fa-solid fa-xmark text-2xl text-black hidden" aria-label="{{ __('alt.closeMenu') }}"></i>
                 </button>
             </div>
             <div @class([

@@ -6,7 +6,7 @@
             <img src="{{ asset('graphics/waves/wave_3.svg') }}" class="absolute -z-20 -right-16 2xl:-right-8 3xl:right-0 top-0" alt="{{ __('alt.wave') }}" aria-hidden="true"/>
             <img src="{{ asset('graphics/waves/wave_4.svg') }}" class="absolute -z-20 -bottom-64 2xl:-bottom-44 3xl:-bottom-32 -right-44 xl:right-6 2xl:right-16" alt="{{ __('alt.wave') }}" aria-hidden="true"/>
             <h2 class="mx-auto max-w-5xl text-3xl font-bold tracking-tight text-white sm:text-5xl">{{ __("content.home.section_6.title_1") }}</h2>
-            <p class="mx-auto max-w-7xl mt-6 text-xs md:text-lg leading-7.5 text-gray-300">{{ __("content.home.section_6.subtitle_1") }}
+            <p class="mx-auto max-w-7xl mt-6 text-xs md:text-lg leading-7.5 text-gray-200">{{ __("content.home.section_6.subtitle_1") }}
                 <span class="font-bold text-white block">{{ __("content.home.section_6.subtitle_2") }}</span>
             </p>
             <div class="mt-4 md:mt-10 flex items-center justify-center gap-x-6">
