@@ -9,7 +9,7 @@
         <span class="text-gtb"> {{ __("projects.gtb.title_2") }}</span>
     </x-projects.title>
 
-    <x-projects.main-image src="{{ asset('images/projects/gtb/laptop_1.png') }}" alt="{{ __('projects.gtb.alt.laptop_1') }}" shift="object-[25%_50%]"/>
+    <x-projects.main-image src="{{ asset('images/projects/gtb/laptop_1.webp') }}" alt="{{ __('projects.gtb.alt.laptop_1') }}" shift="object-[25%_50%]"/>
 
     <div class="mt-20 sm:mt-0">
         <x-projects.description>{{ __("projects.gtb.project_description") }}</x-projects.description>
@@ -59,11 +59,11 @@
         <span class="font-semibold">{{ __('projects.gtb.typography_description_1') }}</span> {{ __('projects.gtb.typography_description_2') }}
     </x-projects.typography>
 
-    <x-projects.image src="{{ asset('images/projects/gtb/laptop_2.png') }}" alt="{{ __('projects.gtb.alt.laptop_2') }}" />
+    <x-projects.image src="{{ asset('images/projects/gtb/laptop_2.webp') }}" alt="{{ __('projects.gtb.alt.laptop_2') }}" />
 
     <div class="py-20 md:py-40">
         <x-projects.title>{{ __("projects.sitemap") }}</x-projects.title>
-        <x-projects.image src="{{ asset('images/projects/gtb/'.$locale.'/sitemap.svg') }}" alt="{{ __('projects.gtb.alt.sitemap') }}" margin="true" />
+        <x-projects.image src="{{ asset('images/projects/gtb/'.$locale.'/sitemap.webp') }}" alt="{{ __('projects.gtb.alt.sitemap') }}" margin="true" />
     </div>
 
     <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-10 py-10 md:py-20 text-center">
@@ -97,7 +97,7 @@
         </div>
     </section>
 
-    <x-projects.image src="{{ asset('images/projects/gtb/mobile.png') }}" alt="{{ __('projects.gtb.alt.mobile') }}" />
+    <x-projects.image src="{{ asset('images/projects/gtb/mobile.webp') }}" alt="{{ __('projects.gtb.alt.mobile') }}" />
 
     <x-projects.reference      name="{{ __('projects.gtb.testimonial.name') }}"
                                company="{{ __('projects.gtb.testimonial.company') }}"
