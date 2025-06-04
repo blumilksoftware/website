@@ -41,19 +41,19 @@
             </div>
             <div class="tablet:flex hidden justify-center items-center text-sm 3xl:text-md">
                 <div class="font-medium flex items-center text-center gap-2">
-                    <a href="{{ route('about') }}" class="hover:text-website-normal rounded-3xl px-2">
+                    <a href="{{ route('about') }}" class="hover:text-blue-normal rounded-3xl px-2">
                         {{ __("content.pages.about") }}
                     </a>
-                    <a href="{{ route('projects') }}" class="hover:text-website-normal rounded-3xl px-2">
+                    <a href="{{ route('projects') }}" class="hover:text-blue-normal rounded-3xl px-2">
                         {{ __("content.pages.projects") }}
                     </a>
-                    <a href="{{ route('career') }}" class="hover:text-website-normal rounded-3xl px-2">
+                    <a href="{{ route('career') }}" class="hover:text-blue-normal rounded-3xl px-2">
                         {{ __("content.pages.career") }}
                     </a>
-                    <a href="{{ route('news') }}" class="hover:text-website-normal rounded-3xl px-2">
+                    <a href="{{ route('news') }}" class="hover:text-blue-normal rounded-3xl px-2">
                         {{ __("content.pages.news") }}
                     </a>
-                    <a href="{{ route('contact') }}" class="hover:text-website-normal rounded-3xl px-2">
+                    <a href="{{ route('contact') }}" class="hover:text-blue-normal rounded-3xl px-2">
                         {{ __("content.pages.contact") }}
                     </a>
                 </div>
@@ -106,27 +106,27 @@
                            class="fa-solid fa-xmark text-xl text-black hidden"></i>
                     </button>
                 </div>
-                <div class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start">
+                <div class="w-full group hover:text-blue-normal py-4 text-lg sm:text-xl text-start">
                     <a href="{{ route('about') }}" class="my-4 p-2 start">
                         {{ __("content.pages.about") }}
                     </a>
                 </div>
-                <div class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start">
+                <div class="w-full group hover:text-blue-normal py-4 text-lg sm:text-xl text-start">
                     <a href="{{ route('projects') }}" class="my-4 p-2">
                         {{ __("content.pages.projects") }}
                     </a>
                 </div>
-                <div class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start">
+                <div class="w-full group hover:text-blue-normal py-4 text-lg sm:text-xl text-start">
                     <a href="{{ route('career') }}" class="my-4 p-2">
                         {{ __("content.pages.career") }}
                     </a>
                 </div>
-                <div class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start">
+                <div class="w-full group hover:text-blue-normal py-4 text-lg sm:text-xl text-start">
                     <a href="{{ route('news') }}" class="my-4 p-2">
                         {{ __("content.pages.news") }}
                     </a>
                 </div>
-                <div class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start">
+                <div class="w-full group hover:text-blue-normal py-4 text-lg sm:text-xl text-start">
                     <a href="{{ route('contact') }}" class="my-4 p-2">
                         {{ __("content.pages.contact") }}
                     </a>
@@ -135,7 +135,7 @@
                     <div class="relative flex flex-col text-left">
                         <button type="button"
                                 @click="openLang = ! openLang"
-                                class="flex w-full h-full justify-between items-center place-content-center gap-x-1.5 mt-4 text-lg sm:text-xl font-semibold text-black hover:text-website-normal uppercase"
+                                class="flex w-full h-full justify-between items-center place-content-center gap-x-1.5 mt-4 text-lg sm:text-xl font-semibold text-black hover:text-blue-normal uppercase"
                                 id="mobileLocalesButton" aria-expanded="true" aria-haspopup="true">
                             {{ $currentLocale }}
                             <i :class="{'rotate-0': openLang, 'rotate-180': ! openLang}" class="fa-solid fa-chevron-up text-gray-500"></i>
@@ -146,7 +146,7 @@
                             <div class="text-end" role="none">
                                 @foreach ( LocaleConfig::getLocales() as $locale )
                                     <a href="{{ url($locale) . $suffix }}"
-                                       class="text-gray-500 block text-lg font-normal pt-4 sm:text-xl hover:text-website-normal uppercase text-start"
+                                       class="text-gray-500 block text-lg font-normal pt-4 sm:text-xl hover:text-blue-normal uppercase text-start"
                                        role="menuitem" tabindex="-1">
                                         {{ $locale }}
                                     </a>

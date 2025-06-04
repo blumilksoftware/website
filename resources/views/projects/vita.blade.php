@@ -10,7 +10,7 @@
         {{ __("projects.vita.title_3") }}
     </x-projects.title>
 
-    <x-projects.main-image src="{{ asset('images/projects/vita/laptop_1.png') }}"
+    <x-projects.main-image src="{{ asset('images/projects/vita/laptop_1.webp') }}"
                                alt="{{ __('projects.vita.alt.laptop_1') }}"
                                shift="object-left"/>
 
@@ -67,12 +67,12 @@
         <span class="font-semibold">{{ __('projects.vita.typography_description_1') }}</span> {{ __('projects.vita.typography_description_2') }}
     </x-projects.typography>
 
-    <x-projects.image src="{{ asset('images/projects/vita/laptop_2.png') }}"
+    <x-projects.image src="{{ asset('images/projects/vita/laptop_2.webp') }}"
                           alt="{{ __('projects.vita.alt.laptop_2') }}"/>
 
     <div class="pt-12 md:pt-40 pb-10 md:pb-20">
         <x-projects.title>{{ __("projects.sitemap") }}</x-projects.title>
-        <x-projects.image src="{{ asset('images/projects/vita/'.$locale.'/sitemap.svg') }}"
+        <x-projects.image src="{{ asset('images/projects/vita/'.$locale.'/sitemap.webp') }}"
                               alt="{{ __('projects.vita.alt.sitemap') }}" margin="true"/>
     </div>
 
@@ -107,7 +107,7 @@
         </div>
     </section>
 
-    <x-projects.image src="{{ asset('images/projects/vita/mobile.png') }}"
+    <x-projects.image src="{{ asset('images/projects/vita/mobile.webp') }}"
                           alt="{{ __('projects.vita.alt.mobile') }}"/>
 
 
@@ -115,7 +115,7 @@
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold">{{ __("projects.vita.title_4") }}</h2>
             <div class="font-normal leading-7.5 text-md lg:text-lg relative max-w-[925px] mx-auto">{{ __("projects.vita.rebranding") }}</div>
     </section>
-    <x-projects.image src="{{ asset('images/projects/vita/rebranding.png') }}"
+    <x-projects.image src="{{ asset('images/projects/vita/rebranding.webp') }}"
                           alt="{{ __('projects.vita.alt.rebranding') }}"/>
 
     <x-projects.reference      name="{{ __('projects.vita.testimonial.name') }}"

@@ -8,7 +8,7 @@
         <span class="text-k1 mt-4"> {{ __("projects.k1.title_1") }} </span>{{ __("projects.k1.title_2") }}
     </x-projects.title>
 
-    <x-projects.main-image src="{{ asset('images/projects/k1/laptop_1.png') }}" alt="{{ __('projects.k1.alt.laptop_1') }}" />
+    <x-projects.main-image src="{{ asset('images/projects/k1/laptop_1.webp') }}" alt="{{ __('projects.k1.alt.laptop_1') }}" />
 
     <x-projects.description>{{ __("projects.k1.project_description") }}</x-projects.description>
 
@@ -47,11 +47,11 @@
         </div>
     </section>
 
-    <x-projects.image src="{{ asset('images/projects/k1/laptop_2.png') }}" alt="{{ __('projects.k1.alt.laptop_2') }}" />
+    <x-projects.image src="{{ asset('images/projects/k1/laptop_2.webp') }}" alt="{{ __('projects.k1.alt.laptop_2') }}" />
 
     <div class="py-10 md:py-40">
         <x-projects.title>{{ __("projects.sitemap") }}</x-projects.title>
-        <x-projects.image src="{{ asset('images/projects/k1/'.$locale.'/sitemap.svg') }}" alt="{{ __('projects.k1.alt.sitemap') }}" margin="true" />
+        <x-projects.image src="{{ asset('images/projects/k1/'.$locale.'/sitemap.webp') }}" alt="{{ __('projects.k1.alt.sitemap') }}" margin="true" />
     </div>
 
     <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-10 pt-20 md:pb-20 text-center">
@@ -88,10 +88,10 @@
 
     <div class="pt-10 pb-20 md:pt-20 md:pb-44">
         <x-projects.title> {{ __("projects.architecture_schema") }} </x-projects.title>
-        <x-projects.image src="{{ asset('images/projects/k1/'.$locale.'/architecture.svg') }}" alt="{{ __('projects.k1.alt.architecture') }}" margin=true />
+        <x-projects.image src="{{ asset('images/projects/k1/'.$locale.'/architecture.webp') }}" alt="{{ __('projects.k1.alt.architecture') }}" margin=true />
     </div>
 
-    <x-projects.image src="{{ asset('images/projects/k1/mobile.png') }}" alt="{{ __('projects.k1.alt.mobile') }}" />
+    <x-projects.image src="{{ asset('images/projects/k1/mobile.webp') }}" alt="{{ __('projects.k1.alt.mobile') }}" />
 
     <x-text-us-section/>
 @endsection

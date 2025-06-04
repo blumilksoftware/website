@@ -97,36 +97,36 @@
                 </button>
             </div>
             <div @class([
-                'w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start',
-                'text-website-normal' => Str::contains($current, 'about')])>
+                'w-full group hover:text-blue-normal py-4 text-lg sm:text-xl text-start',
+                'text-blue-normal' => Str::contains($current, 'about')])>
                 <a href="{{ route('about') }}" class="my-4 p-2 start">
                     {{ __("content.pages.about") }}
                 </a>
             </div>
             <div @class([
-                'w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start',
-                'text-website-normal' => Str::contains($current, 'projects')])>
+                'w-full group hover:text-blue-normal py-4 text-lg sm:text-xl text-start',
+                'text-blue-normal' => Str::contains($current, 'projects')])>
                 <a href="{{ route('projects') }}" class="my-4 p-2">
                     {{ __("content.pages.projects") }}
                 </a>
             </div>
             <div @class([
-                'w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start',
-                'text-website-normal' => Str::contains($current, 'career')])>
+                'w-full group hover:text-blue-normal py-4 text-lg sm:text-xl text-start',
+                'text-blue-normal' => Str::contains($current, 'career')])>
                 <a href="{{ route('career') }}" class="my-4 p-2">
                     {{ __("content.pages.career") }}
                 </a>
             </div>
             <div @class([
-                'w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start',
-                'text-website-normal' => Str::contains($current, 'news')])>
+                'w-full group hover:text-blue-normal py-4 text-lg sm:text-xl text-start',
+                'text-blue-normal' => Str::contains($current, 'news')])>
                 <a href="{{ route('news') }}" class="my-4 p-2">
                     {{ __("content.pages.news") }}
                 </a>
             </div>
             <div @class([
-                'w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start',
-                'text-website-normal' => Str::contains($current, 'contact')])>
+                'w-full group hover:text-blue-normal py-4 text-lg sm:text-xl text-start',
+                'text-blue-normal' => Str::contains($current, 'contact')])>
                 <a href="{{ route('contact') }}" class="my-4 p-2">
                     {{ __("content.pages.contact") }}
                 </a>
@@ -137,7 +137,7 @@
                         @if ( App::isLocale($locale) )
                             <button type="button"
                                     @click="openLang = ! openLang"
-                                    class="flex w-full h-full justify-between items-center place-content-center gap-x-1.5 mt-4 text-lg sm:text-xl font-semibold text-black hover:text-website-normal uppercase"
+                                    class="flex w-full h-full justify-between items-center place-content-center gap-x-1.5 mt-4 text-lg sm:text-xl font-semibold text-black hover:text-blue-normal uppercase"
                                     id="mobileLocalesButton" aria-expanded="true" aria-haspopup="true">
                                 {{ $locale }}
                                 <i :class="{'rotate-0': openLang, 'rotate-180': ! openLang}" class="fa-solid fa-chevron-up text-gray-500"></i>
@@ -150,7 +150,7 @@
                         <div class="text-end" role="none">
                             @foreach( LocaleConfig::getLocales() as $locale )
                                 <a href="{{ route(Route::currentRouteName(), Route::getCurrentRoute()->parameters(), true, $locale) }}"
-                                   class="text-gray-500 block text-lg font-normal pt-4 sm:text-xl hover:text-website-normal uppercase text-start"
+                                   class="text-gray-500 block text-lg font-normal pt-4 sm:text-xl hover:text-blue-normal uppercase text-start"
                                    role="menuitem" tabindex="-1">
                                     {{ $locale }}
                                 </a>

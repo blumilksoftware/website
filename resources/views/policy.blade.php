@@ -7,7 +7,7 @@
     <section class="relative 2xl:-top-16 flex flex-col-reverse xl:flex-row mx-[10%] md:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto place-items-end">
         <div class="basis-2/5 md:pb-16 xl:pt-24 2xl:pt-0">
                 <h2 class="font-semibold text-gray-900 text-3xl md:text-4xl lg:text-5xl text-center xl:justify-start xl:text-start pb-6">
-                    <span class="inline text-website-normal leading-7.5"> {{ __("content.policy.title_1") }}</span>
+                    <span class="inline text-blue-normal leading-7.5"> {{ __("content.policy.title_1") }}</span>
                     <span class="inline">{{ __("content.policy.title_2") }}</span>
                 </h2>
                 <p class="text-sm md:text-lg font-normal text-center xl:text-start leading-7.5">
@@ -20,7 +20,7 @@
                  alt="{{ __('alt.policy') }}" aria-hidden="true"/>
         </div>
     </section>
-    <section class="mx-[10%] md:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto text-gray-400 xl:text-lg grid grid-cols-1 gap-6 text-left leading-7.5 mb-4 xl:mb-16 md:pt-16">
+    <section class="mx-[10%] md:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto text-gray-500 xl:text-lg grid grid-cols-1 gap-6 text-left leading-7.5 mb-4 xl:mb-16 md:pt-16">
             <ol class="list-decimal text-lg">
                 <li>
                     <h4 class="font-semibold text-lg text-black pt-12 xl:pt-0 mb-4">{{ __("content.policy.point_1") }}</h4>
@@ -38,14 +38,14 @@
                         <ol class="list-alpha text-sm md:text-lg leading-7.5">
                             <li>
                                 {{ __("content.policy.text_2.a.text_1") }}
-                                <a href="mailto:{{ __("content.policy.text_2.a.text_2") }}" class="text-website-normal" rel="noopener noreferrer">
+                                <a href="mailto:{{ __("content.policy.text_2.a.text_2") }}" class="text-blue-normal" rel="noopener noreferrer">
                                     {{ __("content.policy.text_2.a.text_2") }}
                                 </a>
                                 {{ __("content.policy.text_2.a.text_3") }}
                             </li>
                             <li>
                                 {{ __("content.policy.text_2.b.text_1") }}
-                                <a href="mailto:{{ __("content.policy.text_2.b.text_2") }}" class="text-website-normal" rel="noopener noreferrer">
+                                <a href="mailto:{{ __("content.policy.text_2.b.text_2") }}" class="text-blue-normal" rel="noopener noreferrer">
                                     {{ __("content.policy.text_2.b.text_2") }}.
                                 </a>
                             </li>
@@ -55,7 +55,7 @@
                 <li>
                     <h4 class="font-semibold text-lg text-black pt-12 xl:pt-6 mb-4">{{ __("content.policy.point_3") }}</h4>
                     <p class="text-sm md:text-lg leading-7.5">{{ __("content.policy.text_3.text_1") }}
-                        <a href="{{ __("content.policy.text_3.link") }}" target="_blank" class="text-website-normal hover:underline">
+                        <a href="{{ __("content.policy.text_3.link") }}" target="_blank" class="text-blue-normal hover:underline">
                             {{ __("content.policy.text_3.text_2") }}
                         </a>
                     </p>
@@ -93,7 +93,7 @@
                         <li>{{ __("content.policy.text_7.d") }}</li>
                     </ul>
                     <p class="leading-7.5 text-sm md:text-lg">{{ __("content.policy.text_7.text_2") }}
-                        <a href="mailto:{{ __("content.policy.text_7.text_3") }}" class="text-website-normal" rel="noopener noreferrer">
+                        <a href="mailto:{{ __("content.policy.text_7.text_3") }}" class="text-blue-normal" rel="noopener noreferrer">
                             {{ __("content.policy.text_7.text_3") }}
                         </a>
                     </p>
@@ -108,11 +108,11 @@
                     <p class="leading-7.5 text-sm md:text-lg">{{ __("content.policy.text_8.text_2") }}
                         <span class="font-semibold">{{ __("content.policy.text_8.text_3") }}</span>
                         {{ __("content.policy.text_8.text_4") }}
-                        <a class="text-website-normal" href="{{ __("content.policy.text_8.text_5") }}" target="_blank">
+                        <a class="text-blue-normal" href="{{ __("content.policy.text_8.text_5") }}" target="_blank">
                             {{ __("content.policy.text_8.text_5") }}
                         </a>
                         {{ __("content.policy.text_8.text_6") }}
-                        <a class="text-website-normal" href="{{ __("content.policy.text_8.text_7") }}" target="_blank">
+                        <a class="text-blue-normal" href="{{ __("content.policy.text_8.text_7") }}" target="_blank">
                             {{ __("content.policy.text_8.text_7") }}
                         </a>
                         .
@@ -122,7 +122,7 @@
                     <h4 class="font-semibold text-lg text-black pt-12 xl:pt-6 mb-4">{{ __("content.policy.point_9") }}</h4>
                     <p class="leading-7.5 text-sm md:text-lg">
                         {{ __("content.policy.text_9.text_1") }}
-                        <a href="mailto:{{ __("content.policy.text_9.text_2") }}" class="text-website-normal" rel="noopener noreferrer">
+                        <a href="mailto:{{ __("content.policy.text_9.text_2") }}" class="text-blue-normal" rel="noopener noreferrer">
                             {{ __("content.policy.text_9.text_2") }}
                         </a>
                     </p>

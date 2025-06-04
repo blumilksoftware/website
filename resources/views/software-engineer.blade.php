@@ -31,7 +31,7 @@
                     <span class="font-semibold text-sm md:text-lg block pb-2 -ml-4">
                         {{ __('content.software_engineer.section_2.stack.title_1') }}
                     </span>
-                    <ul class="list-square font-normal text-gray-400 text-xs md:text-sm">
+                    <ul class="list-square font-normal text-gray-600 text-xs md:text-sm">
                         @for($stackListItem = 1; $stackListItem <= 9; $stackListItem++)
                             <li class="text-md leading-7.5">
                                 {{ __("content.software_engineer.section_2.stack.content_$stackListItem") }}
@@ -48,7 +48,7 @@
                     <span class="font-semibold text-sm md:text-lg block pb-2 -ml-4">
                         {{ __('content.software_engineer.section_2.requirements.title_1') }}
                     </span>
-                    <ul class="list-square font-normal text-gray-400 text-xs md:text-sm">
+                    <ul class="list-square font-normal text-gray-600 text-xs md:text-sm">
                         @for($stackListItem = 1; $stackListItem <= 9; $stackListItem++)
                             <li class="text-md leading-7.5">
                                 {{ __("content.software_engineer.section_2.requirements.content_$stackListItem") }}

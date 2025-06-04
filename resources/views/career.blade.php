@@ -8,7 +8,7 @@
         <div class="flex basis-2/5 relative flex-col self-center gap-5">
             <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:justify-start xl:text-start">
                 <h2 class="font-semibold text-gray-900 leading-7.5">
-                    <span class="text-website-normal">{{ __("content.career.section_1.title_1") }}</span>
+                    <span class="text-blue-normal">{{ __("content.career.section_1.title_1") }}</span>
                     {{ __("content.career.section_1.title_2") }}
                 </h2>
             </div>
@@ -21,13 +21,13 @@
                     <span class="leading-7.5 font-semibold">{{ __("content.career.section_1.subtitle_3") }}</span>
                 </p>
                 <div class="hidden sm:block my-6">
-                    <x-primary-button href="{{ route('contact') }}" class="mx-0 px-16 bg-website-normal">{{ __("buttons.join_team") }}</x-primary-button>
+                    <x-primary-button href="{{ route('contact') }}" class="mx-0 px-16 bg-blue-normal">{{ __("buttons.join_team") }}</x-primary-button>
                 </div>
             </div>
         </div>
         <div class="flex basis-3/5 relative self-center pb-8 md:pb-24 xl:pb-0">
             <img src="{{ asset('graphics/career.webp') }}" class="h-auto w-full aspect-auto object-center shrink-0"
-                 alt="{{ __('alt.career') }}" aria-hidden="true"/>
+                 alt=""/>
         </div>
     </section>
     <section class="relative">
@@ -116,32 +116,32 @@
         <div class="flex flex-col md:mt-10 md:pb-5 xl:flex-row mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto gap-x-36">
             <div class="self-center basis-3/5">
                 <img src="{{ asset('graphics/career_3.webp') }}" class="h-auto w-full object-center shrink-0 pb-10 md:pb-0"
-                     alt="{{ __("alt.career_3") }}" aria-hidden="true"/>
+                     alt=""/>
             </div>
             <div class="flex basis-2/5 relative flex-col justify-center md:pb-24 xl:pb-0">
                 <div class="text-center xl:justify-start xl:text-start pb-5 xl:pb-10">
                     <h2 class="font-semibold text-gray-900 leading-7.5 text-md md:text-4xl lg:text-5xl mb-4 md:mb-10">{{ __("content.career.section_4.title_1") }}</h2>
-                    <p class="text-xs md:text-lg font-normal text-center xl:text-start text-gray-400 leading-7.5 mx-8 md:mx-0">{{ __("content.career.section_4.subtitle_1") }}</p>
+                    <p class="text-xs md:text-lg font-normal text-center xl:text-start text-gray-500 leading-7.5 mx-8 md:mx-0">{{ __("content.career.section_4.subtitle_1") }}</p>
                 </div>
-                <x-primary-button href="{{ route('career.software-engineer') }}" class="px-16 my-6 flex w-full md:w-auto m-auto xl:m-0 xl:mr-auto xl:justify-start bg-website-normal">{{ __("buttons.apply_now") }}</x-primary-button>
+                <x-primary-button href="{{ route('career.software-engineer') }}" class="px-16 my-6 flex w-full md:w-auto m-auto xl:m-0 xl:mr-auto xl:justify-start bg-blue-normal">{{ __("buttons.apply_now") }}</x-primary-button>
             </div>
         </div>
-        <img src="{{ asset('graphics/shadow.svg') }}" alt="{{ __('alt.shadow') }}" aria-hidden="true" class="hidden md:block absolute -z-10 -right-[50%] -bottom-44"/>
-        <img src="{{ asset('graphics/shadow.svg') }}" alt="{{ __('alt.shadow') }}" aria-hidden="true" class="hidden md:block absolute -z-10 -left-[80%] top-40 object-cover"/>
+        <img src="{{ asset('graphics/shadow.webp') }}" alt="" class="hidden md:block absolute -z-10 -right-[50%] -bottom-44"/>
+        <img src="{{ asset('graphics/shadow.webp') }}" alt="" class="hidden md:block absolute -z-10 -left-[80%] top-40 object-cover"/>
 
         <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto flex flex-col-reverse xl:flex-row gap-x-24 md:pt-5 md:mb-16 xl:mb-44">
             <div class="flex xl:basis-2/5 flex-col justify-start xl:justify-center overflow-visible">
                 <div class="text-center xl:justify-start xl:text-start pb-5 xl:pb-10">
                     <h2 class="font-semibold text-gray-900 leading-7.5 text-md md:text-4xl lg:text-5xl mb-4 md:mb-10">{{ __("content.career.section_3.title_1") }}</h2>
-                    <p class="text-xs md:text-lg font-normal text-center xl:text-start text-gray-400 leading-7.5 mx-8 md:mx-0">{{ __("content.career.section_3.subtitle_1") }}</p>
+                    <p class="text-xs md:text-lg font-normal text-center xl:text-start text-gray-500 leading-7.5 mx-8 md:mx-0">{{ __("content.career.section_3.subtitle_1") }}</p>
                 </div>
                 <x-primary-button href="https://praktyki.blumilk.pl/" target="_blank"
                                   data-umami-event="praktyki-link-click" data-umami-event-url="https://praktyki.blumilk.pl/"
-                                  class="px-16 my-6 flex w-full md:w-auto m-auto xl:m-0 xl:mr-auto xl:justify-start bg-website-normal">{{ __("buttons.apply_internship") }}</x-primary-button>
+                                  class="px-16 my-6 flex w-full md:w-auto m-auto xl:m-0 xl:mr-auto xl:justify-start bg-blue-normal">{{ __("buttons.apply_internship") }}</x-primary-button>
             </div>
             <div class="flex relative self-center basis-3/5">
                 <img src="{{ asset('graphics/career_2.webp') }}" class="h-auto w-full object-center shrink-0 pt-4 pb-10 md:pb-0"
-                     alt="{{ __("alt.career_2") }}" aria-hidden="true"/>
+                     alt=""/>
             </div>
         </div>
     </section>

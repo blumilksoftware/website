@@ -8,7 +8,7 @@
         <div class="2xl:col-span-2 xl:pt-24 2xl:pt-0 justify-between flex flex-col gap-12">
             <div>
                 <h2 class="font-semibold text-gray-900 text-3xl md:text-4xl lg:text-5xl text-center 2xl:justify-start 2xl:text-start pb-4">
-                    <span class="inline text-website-normal leading-7.5"> {{ __("content.data.title_1") }}</span>
+                    <span class="inline text-blue-normal leading-7.5"> {{ __("content.data.title_1") }}</span>
                     <span class="inline">{{ __("content.data.title_2") }}</span>
                 </h2>
                 <p class="text-sm md:text-lg font-normal text-center 2xl:text-start leading-7.5">
