@@ -102,7 +102,7 @@
     <x-projects.reference      name="{{ __('projects.gtb.testimonial.name') }}"
                                company="{{ __('projects.gtb.testimonial.company') }}"
                                description="{{ __('projects.gtb.testimonial.description') }}"
-                               photo="{{ asset('graphics/placeholders/male.svg') }}"/>
+                               photo="{{ asset('graphics/placeholders/male.webp') }}"/>
 
     <x-text-us-section/>
 @endsection

@@ -121,7 +121,7 @@
     <x-projects.reference      name="{{ __('projects.vita.testimonial.name') }}"
                                company="{{ __('projects.vita.testimonial.company') }}"
                                description="{{ __('projects.vita.testimonial.description') }}"
-                               photo="{{ asset('graphics/placeholders/female.svg') }}"/>
+                               photo="{{ asset('graphics/placeholders/female.webp') }}"/>
 
     <x-text-us-section/>
 @endsection
