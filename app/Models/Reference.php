@@ -50,7 +50,7 @@ class Reference extends Model
         }
 
         return $this->sex === "female"
-            ? asset("graphics/placeholders/female.svg")
-            : asset("graphics/placeholders/male.svg");
+            ? asset("graphics/placeholders/female.webp")
+            : asset("graphics/placeholders/male.webp");
     }
 }

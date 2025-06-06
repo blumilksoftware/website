@@ -17,8 +17,8 @@
             </div>
         </div>
         <div class="flex basis-3/5 relative self-center pb-8 md:pb-24 xl:pb-0">
-            <img src="{{ asset('graphics/software-engineer.svg') }}" class="h-auto w-full aspect-auto object-center shrink-0"
-                 alt="{{ __('alt.software_engineer') }}" aria-hidden="true"/>
+            <img src="{{ asset('graphics/software-engineer.webp') }}" class="h-auto w-full aspect-auto object-center shrink-0"
+                 alt=""/>
         </div>
     </section>
     <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:pt-28 pb-8">
@@ -31,7 +31,7 @@
                     <span class="font-semibold text-sm md:text-lg block pb-2 -ml-4">
                         {{ __('content.software_engineer.section_2.stack.title_1') }}
                     </span>
-                    <ul class="list-square font-normal text-gray-400 text-xs md:text-sm">
+                    <ul class="list-square font-normal text-gray-600 text-xs md:text-sm">
                         @for($stackListItem = 1; $stackListItem <= 9; $stackListItem++)
                             <li class="text-md leading-7.5">
                                 {{ __("content.software_engineer.section_2.stack.content_$stackListItem") }}
@@ -48,7 +48,7 @@
                     <span class="font-semibold text-sm md:text-lg block pb-2 -ml-4">
                         {{ __('content.software_engineer.section_2.requirements.title_1') }}
                     </span>
-                    <ul class="list-square font-normal text-gray-400 text-xs md:text-sm">
+                    <ul class="list-square font-normal text-gray-600 text-xs md:text-sm">
                         @for($stackListItem = 1; $stackListItem <= 9; $stackListItem++)
                             <li class="text-md leading-7.5">
                                 {{ __("content.software_engineer.section_2.requirements.content_$stackListItem") }}

@@ -8,7 +8,7 @@
         <div class="flex basis-2/5 flex-col self-center">
             <div class="text-3xl md:text-4xl xl:text-5xl text-center 2xl:justify-start 2xl:text-start pb-4 pt-4 md:pt-0">
                 <h2 class="font-semibold text-gray-900 leading-snug">
-                    <span class="text-website-normal"> {{ __("content.about.section_1.title_1") }}</span>
+                    <span class="text-blue-normal"> {{ __("content.about.section_1.title_1") }}</span>
                     {{ __("content.about.section_1.title_2") }}
                 </h2>
             </div>
@@ -25,27 +25,35 @@
             </div>
         </div>
         <div class="flex basis-3/5">
-            <img src="{{ asset('graphics/about.svg') }}" class="size-full align-middle m-4 relative 2xl:left-24"
-                 alt="{{ __('alt.about') }}" aria-hidden="true"/>
+            <img src="{{ asset('graphics/about.webp') }}" class="size-full align-middle m-4 relative 2xl:left-24"
+                 alt=""/>
         </div>
     </section>
     <section class="bg-white py-12 sm:pt-16 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
         <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:flex xl:justify-between overflow-hidden text-center text-[#0E0B3D] gap-16 md:gap-8">
             <div class="flex flex-col gap-4">
-                <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_1") }}</dt>
-                <dd class="order-first text-6xl font-semibold">+25</dd>
+                <dl>
+                    <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_1") }}</dt>
+                    <dd class="order-first text-6xl font-semibold">+25</dd>
+                </dl>
             </div>
             <div class="flex flex-col gap-4">
-                <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_2") }}</dt>
-                <dd class="order-first text-6xl font-semibold">155</dd>
+                <dl>
+                    <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_2") }}</dt>
+                    <dd class="order-first text-6xl font-semibold">155</dd>
+                </dl>
             </div>
             <div class="flex flex-col gap-4">
-                <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_3") }}</dt>
-                <dd class="order-first text-6xl font-semibold">95</dd>
+                <dl>
+                    <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_3") }}</dt>
+                    <dd class="order-first text-6xl font-semibold">100</dd>
+                </dl>
             </div>
             <div class="flex flex-col gap-4">
-                <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_4") }}</dt>
-                <dd class="order-first text-6xl font-semibold">1000+</dd>
+                <dl>
+                    <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_4") }}</dt>
+                    <dd class="order-first text-6xl font-semibold">1000+</dd>
+                </dl>
             </div>
         </div>
     </section>
@@ -76,8 +84,8 @@
         </div>
     </section>
     <section class="relative overflow-hidden pt-10 pb-14 md:pt-24 md:pb-28">
-        <img src="{{ asset('graphics/shadow.svg') }}" alt="{{ __('alt.shadow') }}" aria-hidden="true" class="absolute -z-10 -right-96 -bottom-0"/>
-        <img src="{{ asset('graphics/shadow.svg') }}" alt="{{ __('alt.shadow') }}" aria-hidden="true" class="absolute -z-10 -left-[800px] -bottom-64"/>
+        <img src="{{ asset('graphics/shadow.webp') }}" alt="" class="absolute -z-10 -right-96 -bottom-0"/>
+        <img src="{{ asset('graphics/shadow.webp') }}" alt="" class="absolute -z-10 -left-[800px] -bottom-64"/>
 
         <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
             <div class="pb-28 text-center max-w-[886px] mx-auto">
@@ -96,19 +104,19 @@
                 <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-2 2xl:order-none">
                     <p class="font-normal text-center md:text-start 2xl:pr-4 px-3">
                         <span class="leading-7.5 text-md font-semibold md:font-bold block pb-3">{{ __("content.about.section_4.activity_1.title") }}</span>
-                        <span class="leading-7.5 text-xs md:text-sm text-tile-content">{!! __("content.about.section_4.activity_1.subtitle") !!}</span>
+                        <span class="leading-7.5 text-xs md:text-sm text-gray-600">{!! __("content.about.section_4.activity_1.subtitle") !!}</span>
                     </p>
                 </div>
                 <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-4 2xl:order-none">
                     <p class="font-normal text-center md:text-start 2xl:pr-4 px-3">
                         <span class="leading-7.5 text-md font-semibold md:font-bold block pb-3">{{ __("content.about.section_4.activity_2.title") }}</span>
-                        <span class="leading-7.5 text-xs md:text-sm text-tile-content">{!!__("content.about.section_4.activity_2.subtitle") !!}</span>
+                        <span class="leading-7.5 text-xs md:text-sm text-gray-600">{!!__("content.about.section_4.activity_2.subtitle") !!}</span>
                     </p>
                 </div>
                 <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-6 md:order-5 2xl:order-none">
                     <p class="font-normal text-center md:text-start 2xl:pr-4 px-3">
                         <span class="leading-7.5 text-md font-semibold md:font-bold block pb-3">{{ __("content.about.section_4.activity_3.title") }}</span>
-                        <span class="leading-7.5 text-xs md:text-sm text-tile-content">{!! __("content.about.section_4.activity_3.subtitle") !!}</span>
+                        <span class="leading-7.5 text-xs md:text-sm text-gray-600">{!! __("content.about.section_4.activity_3.subtitle") !!}</span>
                     </p>
                 </div>
                 <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-5 md:order-6 2xl:order-none">
@@ -122,7 +130,7 @@
                 <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-8 md:order-7">
                     <p class="font-normal text-center md:text-start 2xl:pr-4 px-3">
                         <span class="leading-7.5 text-md font-semibold md:font-bold block pb-3">{{ __("content.about.section_4.activity_4.title") }}</span>
-                        <span class="leading-7.5 text-xs md:text-sm text-tile-content">{!! __("content.about.section_4.activity_4.subtitle") !!}</span>
+                        <span class="leading-7.5 text-xs md:text-sm text-gray-600">{!! __("content.about.section_4.activity_4.subtitle") !!}</span>
                     </p>
                 </div>
             </div>

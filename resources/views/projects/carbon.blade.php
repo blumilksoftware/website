@@ -9,7 +9,7 @@
         <span class="text-carbon"> {{ __("projects.carbon.title_2") }}</span>
     </x-projects.title>
 
-    <x-projects.main-image src="{{ asset('images/projects/carbon/laptop_1.png') }}" alt="{{ __('projects.carbon.alt.laptop_1') }}" shift="object-[25%_50%]"/>
+    <x-projects.main-image src="{{ asset('images/projects/carbon/laptop_1.webp') }}" alt="{{ __('projects.carbon.alt.laptop_1') }}" shift="object-[25%_50%]"/>
 
     <div class="mt-20 sm:mt-0">
         <x-projects.description>{{ __("projects.carbon.project_description") }}</x-projects.description>
@@ -37,12 +37,12 @@
         </div>
     </section>
 
-    <x-projects.image src="{{ asset('images/projects/carbon/laptop_2.png') }}" alt="{{ __('projects.carbon.alt.laptop_2') }}" />
+    <x-projects.image src="{{ asset('images/projects/carbon/laptop_2.webp') }}" alt="{{ __('projects.carbon.alt.laptop_2') }}" />
 
     <div class="py-20 md:py-40">
         <x-projects.title>{{ __("projects.sitemap") }}</x-projects.title>
         <div class="px-20">
-            <x-projects.image src="{{ asset('images/projects/carbon/'.$locale.'/sitemap.svg') }}" alt="{{ __('projects.carbon.alt.sitemap') }}" />
+            <x-projects.image src="{{ asset('images/projects/carbon/'.$locale.'/sitemap.webp') }}" alt="{{ __('projects.carbon.alt.sitemap') }}" />
         </div>
     </div>
 
@@ -77,7 +77,7 @@
         </div>
     </section>
 
-    <x-projects.image src="{{ asset('images/projects/carbon/desktop.png') }}" alt="{{ __('projects.carbon.alt.desktop') }}" />
+    <x-projects.image src="{{ asset('images/projects/carbon/desktop.webp') }}" alt="{{ __('projects.carbon.alt.desktop') }}" />
 
     <x-text-us-section/>
 @endsection

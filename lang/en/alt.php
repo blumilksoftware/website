@@ -42,4 +42,6 @@ return [
     "facebook" => "Facebook icon",
     "youtube" => "YouTube icon",
     "download" => "download icon",
+    "openMenu" => "Open menu",
+    "closeMenu" => "Close menu",
 ];

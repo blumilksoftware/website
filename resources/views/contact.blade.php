@@ -68,7 +68,7 @@
                         <span class="text-xs font-normal text-[#6B6E70] ml-2 pt-4">
                                     {{ __('content.contact.policy.part_1') }}
                                     <a href="{{ route('privacy-policy') }}" target="_blank"
-                                       class="text-website-normal">{{ __('content.contact.policy.part_2') }}</a>
+                                       class="text-blue-normal">{{ __('content.contact.policy.part_2') }}</a>
                                     {{ __('content.contact.policy.part_3') }}
                                 </span>
                     </label>
@@ -78,7 +78,7 @@
                 </div>
                 <div class="mt-3 flex">
                     <button type="submit"
-                            class="w-full text-xl mx-0 bg-website-normal m-2 p-3 sm:text-lg h-min text-center font-normal text-white shadow-sm rounded-xl transform transition hover:scale-110 flex justify-center items-center"
+                            class="w-full text-xl mx-0 bg-blue-normal m-2 p-3 sm:text-lg h-min text-center font-normal text-white shadow-sm rounded-xl transform transition hover:scale-110 flex justify-center items-center"
                             data-umami-event="send-contact-form-button-click">
                         {{ __('buttons.send_message') }}
                     </button>
@@ -146,7 +146,7 @@
             })
 
             const marker = new mapboxgl.Marker({
-                color: '#5379F6',
+                color: '#3259E8',
             })
                 .setLngLat([16.163780, 51.208760])
                 .addTo(map)
