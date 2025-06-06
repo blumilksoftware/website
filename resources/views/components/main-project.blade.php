@@ -34,7 +34,7 @@
             </div>
         </div>
     </div>
-    <img src="{{ asset('graphics/main_project/with_frame.webp') }}" class="h-auto w-auto max-w-4xl hidden md:block" alt="{{ __('alt.home_project') }}"/>
+    <img src="{{ asset('graphics/main_project/with_frame.webp') }}" class="h-[550px] w-[750px] max-w-4xl hidden md:block" alt="{{ __('alt.home_project') }}"/>
     <img src="{{ asset('graphics/main_project/no_frame.webp') }}" class="h-auto w-full max-w-4xl md:hidden block mb-8" alt="{{ __('alt.home_project') }}"/>
     <img src="{{ asset('graphics/shadow_2.webp') }}" alt="" class="hidden md:block absolute -z-10"/>
 </div>

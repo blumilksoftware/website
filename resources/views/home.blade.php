@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="flex basis-3/5 relative self-center pb-8 md:pb-24 xl:pb-4 xl:left-16">
-                <img src="{{ asset('graphics/home.webp') }}" class="h-auto w-full aspect-auto object-center shrink-0"
+                <img src="{{ asset('graphics/home.webp') }}" class="h-[250px] w-[350px] tablet:h-[550px] tablet:w-[750px] aspect-auto object-center shrink-0"
                      alt=""/>
             </div>
         </section>

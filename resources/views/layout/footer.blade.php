@@ -35,7 +35,7 @@
             </p>
         </div>
         <div class="mt-2 md:mt-0">
-            <p class="text-center text-sm leading-5">
+            <p class="text-center text-sm leading-5 space-y-2 md:space-y-0">
                 <a href="https://github.com/blumilksoftware/website" target="_blank" data-umami-event="github-source-code-link-click" data-umami-event-url="https://github.com/blumilksoftware/website" class="block md:inline font-normal whitespace-normal pr-1">{{ __('footer.code') }}</a>
                 <span class="hidden md:inline">|</span>
                 <a href="{{ route('privacy-policy') }}" class="block md:inline font-normal whitespace-normal px-1">{{ __('footer.policy') }}</a>
