@@ -29,9 +29,9 @@
         </div>
     </section>
     <div class="relative overflow-hidden">
-            <img src="{{ asset('graphics/shadow.webp') }}" alt=""  class="hidden md:block absolute -z-10 -right-32 h-5/6"/>
+            <img src="{{ asset('graphics/shadow.svg') }}" alt=""  class="hidden md:block absolute -z-10 -right-32 h-5/6"/>
 
-        <img src="{{ asset('graphics/shadow.webp') }}" alt="" class="hidden md:block absolute -z-10 -left-[800px] -top-44"/>
+        <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="hidden md:block absolute -z-10 -left-[800px] -top-44"/>
         <x-text-us-section/>
     </div>
 @endsection
