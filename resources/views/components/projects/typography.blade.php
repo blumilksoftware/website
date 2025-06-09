@@ -1,4 +1,4 @@
-<section class="bg-gray-extraLight">
+<section class="bg-gray-extra-light">
     <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-5xl 2xl:mx-auto space-y-24 pt-20 pb-24 md:pb-44">
         <div class="grid md:grid-cols-2 text-center md:text-left">
             <div class="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4"> {{ __("projects.typography") }} </div>

@@ -29,7 +29,7 @@
             </div>
         </div>
         <div class="2xl:col-span-3 grid lg:grid-cols-2 gap-10 place-self-center place-items-center 2xl:place-content-between 2xl:place-self-stretch h-full w-fit">
-            <div class="order-2 2xl:order-none bg-blue-light p-10 rounded-lg h-full my-auto flex flex-col lg:text-center w-[300px] xl:w-auto 2xl:w-full lg:place-self-center 2xl:place-self-center 2xl:place-items-start 2xl:text-start">
+            <div class="order-2 2xl:order-0 bg-blue-light p-10 rounded-lg h-full my-auto flex flex-col lg:text-center w-[300px] xl:w-auto 2xl:w-full lg:place-self-center 2xl:place-self-center 2xl:place-items-start 2xl:text-start">
                 <div class="text-lg font-bold mb-3">{{ __("content.data.official_address.title") }}</div>
                 <div class="text-sm text-tile-content space-y-1">
                     <span class="block">{{ __("content.data.company") }}</span>
@@ -38,7 +38,7 @@
                     <span class="block">{{ __("content.data.country") }}</span>
                 </div>
             </div>
-            <div class="order-3 2xl:order-none bg-blue-light py-10 pl-10 pr-8 xl:p-10 rounded-lg h-full my-auto flex flex-col lg:text-center w-[300px] xl:w-auto 2xl:w-full lg:place-self-center 2xl:place-self-center 2xl:place-items-start 2xl:text-start">
+            <div class="order-3 2xl:order-0 bg-blue-light py-10 pl-10 pr-8 xl:p-10 rounded-lg h-full my-auto flex flex-col lg:text-center w-[300px] xl:w-auto 2xl:w-full lg:place-self-center 2xl:place-self-center 2xl:place-items-start 2xl:text-start">
                 <div class="text-lg font-bold mb-3">{{ __("content.data.office_address.title") }}</div>
                 <div class="text-sm text-tile-content space-y-1">
                     <span class="block">{{ __("content.data.company") }}</span>
@@ -47,7 +47,7 @@
                     <span class="block">{{ __("content.data.country") }}</span>
                 </div>
             </div>
-            <div class="order-1 2xl:order-none bg-blue-light p-10 2xl:p-0 lg:bg-transparent rounded-lg lg:col-span-2 w-[300px] lg:w-auto 2xl:w-full">
+            <div class="order-1 2xl:order-0 bg-blue-light p-10 2xl:p-0 lg:bg-transparent rounded-lg lg:col-span-2 w-[300px] lg:w-auto 2xl:w-full">
                 <div class="text-lg font-bold mb-3 lg:hidden lg:text-center">{{ __("content.data.info") }}</div>
                 <div class="flex flex-col lg:flex-row space-y-0.5 lg:gap-8 place-self-center 2xl:place-items-end place-content-between text-blue-dark">
                     <div class="flex items-center">

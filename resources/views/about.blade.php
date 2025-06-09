@@ -68,17 +68,17 @@
                 <x-tile title="{{ __('content.about.section_3.content_1') }}"
                         description="{{ __('content.about.section_3.content_2') }}"
                         class="size-full 2xl:place-items-start">
-                    <x-icons.heart-code accent="stroke-blue-normalNeon" />
+                    <x-icons.heart-code accent="stroke-blue-normal-neon" />
                 </x-tile>
                 <x-tile title="{{ __('content.about.section_3.content_3') }}"
                         description="{{ __('content.about.section_3.content_4') }}"
                         class="size-full 2xl:place-items-start">
-                    <x-icons.bulb accent="stroke-blue-normalNeon" />
+                    <x-icons.bulb accent="stroke-blue-normal-neon" />
                 </x-tile>
                 <x-tile title="{{ __('content.about.section_3.content_5') }}"
                         description="{{ __('content.about.section_3.content_6') }}"
                         class="size-full 2xl:place-items-start">
-                    <x-icons.diamond accent="stroke-blue-normalNeon" />
+                    <x-icons.diamond accent="stroke-blue-normal-neon" />
                 </x-tile>
             </div>
         </div>
@@ -93,37 +93,37 @@
                 <span class="font-normal leading-7.5 text-sm md:text-lg">{{ __("content.about.section_4.subtitle_1") }}</span>
             </div>
             <div class="grid md:grid-cols-10 md:grid-rows-4 gap-10">
-                <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-1 2xl:order-none">
+                <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-1 2xl:order-0">
                     <img src="{{ asset('images/photos/projects.webp') }}"
                          class="w-full 2xl:w-[350px] 2xl:h-[440px] h-[440px] md:h-[330px] lg:h-[250px] object-cover rounded-xl" alt="{{ __('alt.projects') }}"/>
                 </div>
-                <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-3 2xl:order-none">
+                <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-3 2xl:order-0">
                     <img src="{{ asset('images/photos/lmt.webp') }}"
                          class="w-full 2xl:w-[350px] 2xl:h-[440px] h-[440px] md:h-[330px] lg:h-[250px] object-cover rounded-xl" alt="{{ __('alt.lmt') }}"/>
                 </div>
-                <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-2 2xl:order-none">
+                <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-2 2xl:order-0">
                     <p class="font-normal text-center md:text-start 2xl:pr-4 px-3">
                         <span class="leading-7.5 text-md font-semibold md:font-bold block pb-3">{{ __("content.about.section_4.activity_1.title") }}</span>
                         <span class="leading-7.5 text-xs md:text-sm text-gray-600">{!! __("content.about.section_4.activity_1.subtitle") !!}</span>
                     </p>
                 </div>
-                <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-4 2xl:order-none">
+                <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-4 2xl:order-0">
                     <p class="font-normal text-center md:text-start 2xl:pr-4 px-3">
                         <span class="leading-7.5 text-md font-semibold md:font-bold block pb-3">{{ __("content.about.section_4.activity_2.title") }}</span>
                         <span class="leading-7.5 text-xs md:text-sm text-gray-600">{!!__("content.about.section_4.activity_2.subtitle") !!}</span>
                     </p>
                 </div>
-                <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-6 md:order-5 2xl:order-none">
+                <div class="md:block md:col-span-5 2xl:col-span-4 items-center 2xl:items-start order-6 md:order-5 2xl:order-0">
                     <p class="font-normal text-center md:text-start 2xl:pr-4 px-3">
                         <span class="leading-7.5 text-md font-semibold md:font-bold block pb-3">{{ __("content.about.section_4.activity_3.title") }}</span>
                         <span class="leading-7.5 text-xs md:text-sm text-gray-600">{!! __("content.about.section_4.activity_3.subtitle") !!}</span>
                     </p>
                 </div>
-                <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-5 md:order-6 2xl:order-none">
+                <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-5 md:order-6 2xl:order-0">
                     <img src="{{ asset('images/photos/interns.webp') }}"
                          class="w-full 2xl:w-[350px] 2xl:h-[440px] h-[440px] md:h-[330px] lg:h-[250px] object-cover rounded-xl" alt="{{ __('alt.interns') }}"/>
                 </div>
-                <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-7 md:order-8 2xl:order-none h-full">
+                <div class="md:col-span-5 2xl:row-span-2 2xl:col-span-3 order-7 md:order-8 2xl:order-0 h-full">
                     <img src="{{ asset('images/photos/soda.webp') }}"
                          class="w-full 2xl:w-[350px] 2xl:h-[440px] h-[440px] md:h-[330px] lg:h-[250px] object-cover rounded-xl" alt="{{ __('alt.soda') }}"/>
                 </div>
@@ -278,7 +278,7 @@
                     @click="imageGalleryClose"
                     @keydown.window.escape="imageGalleryClose"
                     x-trap.inert.noscroll="imageGalleryOpened"
-                    class="fixed inset-0 z-[99] flex items-center justify-center bg-black bg-opacity-50 select-none cursor-zoom-out" x-cloak>
+                    class="fixed inset-0 z-99 flex items-center justify-center bg-black bg-opacity-50 select-none cursor-zoom-out" x-cloak>
                     <div class="relative flex items-center justify-center w-11/12 xl:w-4/5 h-11/12">
                         <div @click="$event.stopPropagation(); $dispatch('image-gallery-prev')" class="absolute left-0 flex items-center justify-center text-white translate-x-10 rounded-full cursor-pointer xl:-translate-x-24 2xl:-translate-x-32 bg-white/10 w-14 h-14 hover:bg-white/20">
                             <span class="sr-only">{{ __('alt.prev') }}</span>

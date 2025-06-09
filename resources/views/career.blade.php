@@ -37,7 +37,7 @@
                 <span class="font-normal leading-7.5 text-sm md:text-lg relative">{{ __("content.career.section_2.subtitle_1") }}</span>
             </div>
             <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-12 xl:place-items-stretch">
-                <div class="bg-gray-extraLight rounded-xl md:px-6">
+                <div class="bg-gray-extra-light rounded-xl md:px-6">
                     <div class="flex flex-row leading-7.5 lg:text-lg py-6 w-fit h-full">
                         <div class="self-start bg-white shadow-md rounded-full mr-5 ml-10 p-4 size-16 aspect-square">
                             <x-icons.clock accent="text-website-normal"/>
@@ -49,7 +49,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-extraLight rounded-xl md:px-6">
+                <div class="bg-gray-extra-light rounded-xl md:px-6">
                     <div class="flex flex-row leading-7.5 lg:text-lg py-6 w-fit h-full">
                         <div class="self-start bg-white shadow-md rounded-full mr-5 ml-10 p-4 size-16 aspect-square">
                             <x-icons.school accent="text-website-normal"/>
@@ -61,7 +61,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-extraLight rounded-xl md:px-6">
+                <div class="bg-gray-extra-light rounded-xl md:px-6">
                     <div class="flex flex-row leading-7.5 lg:text-lg py-6 w-fit h-full">
                         <div class="self-start bg-white shadow-md rounded-full mr-5 ml-10 p-4 size-16 aspect-square">
                             <x-icons.stethoscope accent="text-website-normal"/>
@@ -73,7 +73,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-extraLight rounded-xl md:px-6">
+                <div class="bg-gray-extra-light rounded-xl md:px-6">
                     <div class="flex flex-row leading-7.5 lg:text-lg py-6 w-fit h-full">
                         <div class="self-start bg-white shadow-md rounded-full mr-5 ml-10 p-4 size-16 aspect-square">
                             <x-icons.treadmill accent="text-website-normal"/>
@@ -85,7 +85,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-extraLight rounded-xl md:px-6">
+                <div class="bg-gray-extra-light rounded-xl md:px-6">
                     <div class="flex flex-row leading-7.5 lg:text-lg py-6 w-fit h-full">
                         <div class="self-start bg-white shadow-md rounded-full mr-5 ml-10 p-4 size-16 aspect-square">
                             <x-icons.lemon accent="text-website-normal"/>
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="bg-gray-extraLight rounded-xl md:px-6">
+                <div class="bg-gray-extra-light rounded-xl md:px-6">
                     <div class="flex flex-row leading-7.5 lg:text-lg py-6 w-fit h-full">
                         <div class="self-start bg-white shadow-md rounded-full mr-5 ml-10 p-4 size-16 aspect-square">
                             <x-icons.smile accent="text-website-normal"/>

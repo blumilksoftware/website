@@ -65,14 +65,14 @@
                 <div class="relative inline-block text-left">
                     <button type="button"
                             @click="openLang = ! openLang"
-                            class="flex rounded-lg h-full items-center place-content-center gap-x-1.5 bg-white px-4 py-2 text-sm 3xl:text-md font-semibold text-gray-500 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 uppercase"
+                            class="flex rounded-lg h-full items-center place-content-center gap-x-1.5 bg-white px-4 py-2 text-sm 3xl:text-md font-semibold text-gray-500 shadow-xs ring-1 ring-inset ring-gray-300 hover:bg-gray-50 uppercase"
                             id="desktopLocalesButton" aria-expanded="true" aria-haspopup="true">
                         {{ $currentLocale }}
                         <i :class="{'rotate-0': openLang, 'rotate-180': ! openLang}" class="fa-solid fa-chevron-up text-gray-500"></i>
                     </button>
                     <div id="desktopLocalesMenu"
                          :class="{'block': openLang, 'hidden': ! openLang}"
-                         class="hidden absolute right-0 z-10 w-full mt-2 origin-top-right bg-white shadow-lg ring-1 ring-black ring-opacity-5 rounded-lg focus:outline-none"
+                         class="hidden absolute right-0 z-10 w-full mt-2 origin-top-right bg-white shadow-lg ring-1 ring-black ring-opacity-5 rounded-lg focus:outline-hidden"
                          tabindex="-1">
                         <div class="text-start" role="none">
                             @foreach ( LocaleConfig::getLocales() as $locale )
@@ -163,7 +163,7 @@
     </nav>
 </div>
 <div class="my-auto">
-    <div class="relative hidden sm:block -z-10 2xl:max-w-screen-3xl 2xl:mx-auto">
+    <div class="relative hidden sm:block -z-10 2xl:max-w-(--breakpoint-3xl) 2xl:mx-auto">
         <div class="absolute left-[8%] md:-left-0 top-28 xl:top-16">
             <x-bubble size="100"/>
         </div>

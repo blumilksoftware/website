@@ -5,7 +5,7 @@ declare(strict_types=1);
 return [
     "prev" => "poprzedni",
     "next" => "następny",
-    "shadow" => "niebieski cień",
+    "shadow-sm" => "niebieski cień",
     "wave" => "niebieskie fale w stylu line art",
     "reference" => "referencja autorstwa",
     "about" => "Robot i człowiek stoją obok siebie przy komputerze, symbolizując współpracę ludzi i maszyn.",

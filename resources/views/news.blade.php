@@ -87,7 +87,7 @@
             @endif
         </div>
     </section>
-    <section class="relative mx-[10%] 2xl:max-w-screen-2xl 2xl:mx-auto pb-16">
+    <section class="relative mx-[10%] 2xl:max-w-(--breakpoint-2xl) 2xl:mx-auto pb-16">
         <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-16">
             @foreach($news as $singleNews)
                 @if ($isFirst)

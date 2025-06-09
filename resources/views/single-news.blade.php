@@ -12,7 +12,7 @@
 @endsection
 
 @section("content")
-    <section class="2xl:mx-[10%] 3xl:max-w-screen-2xl 3xl:mx-auto -mb-32">
+    <section class="2xl:mx-[10%] 3xl:max-w-(--breakpoint-2xl) 3xl:mx-auto -mb-32">
         <div class="relative w-full h-[232px] sm:h-[594px] overflow-hidden order-2 lg:order-1 lg:mt-0">
             <img src="{{ asset("storage/".$news['photo']) }}"
                  alt="{{ $news['title'] }}"

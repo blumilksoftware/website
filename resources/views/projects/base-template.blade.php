@@ -21,7 +21,7 @@
         </div>
         <div class="pt-12 md:py-24 w-full">
             <img src="{{ asset("storage/" . $project->photo) }}"
-                 class="relative aspect-[5/3] w-auto h-full mx-auto rounded-3xl bg-white shadow-md"
+                 class="relative aspect-5/3 w-auto h-full mx-auto rounded-3xl bg-white shadow-md"
                  alt="{{ $project->company }}"/>
         </div>
     </section>

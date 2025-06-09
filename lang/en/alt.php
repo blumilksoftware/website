@@ -5,7 +5,7 @@ declare(strict_types=1);
 return [
     "prev" => "previous",
     "next" => "next",
-    "shadow" => "blue shadow",
+    "shadow-sm" => "blue shadow-sm",
     "wave" => "blue line art waves",
     "reference" => "reference from",
     "about" => "A robot and a human stand side by side at a computer, symbolizing the cooperation between humans and machines.",

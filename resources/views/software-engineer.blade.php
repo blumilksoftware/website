@@ -23,7 +23,7 @@
     </section>
     <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:pt-28 pb-8">
         <div class="flex flex-col lg:flex-row gap-4 2xl:gap-8">
-            <div class="flex flex-col place-items-start sm:flex-row bg-gray-extraLight rounded-xl leading-7.5 py-6 px-12 gap-4 size-auto md:justify-center">
+            <div class="flex flex-col place-items-start sm:flex-row bg-gray-extra-light rounded-xl leading-7.5 py-6 px-12 gap-4 size-auto md:justify-center">
                 <div class="bg-white shadow-md rounded-full size-16 aspect-square mt-4 xl:mx-auto sm:mx-0 flex place-items-center justify-center">
                     <i class="ti ti-device-desktop text-4xl"></i>
                 </div>
@@ -40,7 +40,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="flex flex-col place-items-start sm:flex-row bg-gray-extraLight rounded-xl leading-7.5 py-6 px-12 gap-4 size-auto md:justify-center">
+            <div class="flex flex-col place-items-start sm:flex-row bg-gray-extra-light rounded-xl leading-7.5 py-6 px-12 gap-4 size-auto md:justify-center">
                 <div class="bg-white shadow-md rounded-full size-16 aspect-square mt-4 xl:mx-auto sm:mx-0 flex place-items-center justify-center">
                     <i class="ti ti-crown text-4xl"></i>
                 </div>

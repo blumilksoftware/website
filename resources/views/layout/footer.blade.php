@@ -26,7 +26,7 @@
             </a>
         </div>
     </div>
-    <div class="px-16 w-full py-6 md:py-6 md:flex md:items-center md:justify-between bg-gray-extraLight text-gray-700">
+    <div class="px-16 w-full py-6 md:py-6 md:flex md:items-center md:justify-between bg-gray-extra-light text-gray-700">
         <div>
             <p class="text-center text-sm leading-5">
                 <span class="pr-1">Copyright &copy; {{ date('Y') }}</span>

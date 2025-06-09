@@ -35,7 +35,7 @@
         </div>
 
         @foreach($materials as $material)
-            <div class="bg-white border border-gray-200 rounded-lg flex flex-col md:flex-row justify-center md:justify-between py-4 md:py-8 px-5 md:px-10 items-center shadow-sm mb-6 space-y-4 md:space-y-0">
+            <div class="bg-white border border-gray-200 rounded-lg flex flex-col md:flex-row justify-center md:justify-between py-4 md:py-8 px-5 md:px-10 items-center shadow-xs mb-6 space-y-4 md:space-y-0">
                 <div class="flex flex-col md:flex-row items-center space-y-4 md:space-y-0">
                     <div class="relative w-[220px] md:w-[180px] h-[150px] sm:h-[180px] md:h-[105px] bg-gray-100 flex items-center justify-center rounded-md md:mr-4">
                         <i class="ti ti-paperclip text-website-normal -rotate-45 text-xl"></i>

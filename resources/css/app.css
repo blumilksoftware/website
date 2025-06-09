@@ -1,6 +1,78 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/forms';
+@plugin '@tailwindcss/typography';
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-tablet: 850px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+  --breakpoint-3xl: 1921px;
+
+  --list-style-type-*: initial;
+  --list-style-type-square: square;
+  --list-style-type-decimal: decimal;
+  --list-style-type-alpha: lower-alpha;
+
+  --color-gray-extra-light: #f5f6fa;
+  --color-gray-light: #f0f1f7;
+  --color-gray-dark: #f1f3f6;
+  --color-gray-extra-dark: #eaebf3;
+
+  --color-blue-dark: #0e0b3d;
+  --color-blue-normal-neon: #3461fd;
+  --color-blue-normal: #3259e8;
+  --color-blue-light: #f7f8fd;
+
+  --color-bubble: #dae3f0;
+
+  --color-tile-title: #0e0b3d;
+  --color-tile-content: #6b7280;
+  --color-tile-background: #f7f8fb;
+
+  --color-brand: #527aba;
+
+  --color-website-normal: #5379f6;
+  --color-website-light: #7c9cfc;
+  --color-website-extra_light: #e2eaff;
+  --color-website-dark: #4865d5;
+
+  --color-footer-dark: #044088;
+  --color-footer-light: #015fc8;
+
+  --color-k1: #ff5555;
+  --color-vita: #9676f9;
+  --color-gtb: #f9c83b;
+  --color-carbon: #f39200;
+
+  --font-sora: Sora, sans-serif;
+  --font-montserrat: Montserrat;
+  --font-poppins: Poppins;
+
+  --leading-7_5: 30px;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
 
 .tech-icon:active {
   filter: grayscale(0%);
