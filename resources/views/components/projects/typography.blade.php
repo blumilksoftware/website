@@ -17,9 +17,9 @@
                 <span class="block">0 1 2 3 4 5 6 7 8 9 ! “ # $ % & / ( ) @ = ? , -</span>
             </div>
             <div class="order-2 md:order-3 sm:w-full xl:col-span-2 flex space-x-2 md:space-x-0 md:justify-between place-self-end py-4 lg:py-0 lg:pr-8 xl:pr-0 2xl:pr-10 pb-6 mx-auto sm:mx-0">
-                <div class="items-center rounded-full bg-white bg-opacity-10 px-4 py-1.5 text-xs font-normal text-white">Regular</div>
-                <div class="items-center rounded-full bg-white bg-opacity-10 px-4 py-1.5 text-xs font-normal text-white">Medium</div>
-                <div class="items-center rounded-full bg-white bg-opacity-10 px-3 sm:px-4 py-1.5 text-xs font-normal text-white">Semi-bold</div>
+                <div class="items-center rounded-full bg-white/10 px-4 py-1.5 text-xs font-normal text-white">Regular</div>
+                <div class="items-center rounded-full bg-white/10 px-4 py-1.5 text-xs font-normal text-white">Medium</div>
+                <div class="items-center rounded-full bg-white/10 px-3 sm:px-4 py-1.5 text-xs font-normal text-white">Semi-bold</div>
             </div>
         </div>
     </div>

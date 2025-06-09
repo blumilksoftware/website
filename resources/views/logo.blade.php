@@ -30,7 +30,7 @@
         <div class="pb-24">
             <h2 class="font-semibold text-gray-900 text-3xl md:text-4xl lg:text-5xl text-center 2xl:justify-start 2xl:text-start pb-4">
                 <span class="inline">{{ __("content.logo.title_1") }}</span>
-                <span class="inline text-website-normal leading-7.5">{{ __("content.logo.title_2") }}</span>
+                <span class="inline text-website-normal leading-7">{{ __("content.logo.title_2") }}</span>
             </h2>
         </div>
 

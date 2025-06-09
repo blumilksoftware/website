@@ -31,7 +31,7 @@
             <p class="text-center text-sm leading-5">
                 <span class="pr-1">Copyright &copy; {{ date('Y') }}</span>
                 <span class="hidden md:inline">|</span>
-                <span class="pl-1">Blumilk <span class="hidden md:inline">sp. z o.o.</span></span>
+                <span class="md:pl-1">Blumilk <span class="hidden md:inline">sp. z o.o.</span></span>
             </p>
         </div>
         <div class="mt-2 md:mt-0">

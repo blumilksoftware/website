@@ -62,7 +62,7 @@
                 @endforeach
                 <div id="desktopLocalesMenu"
                      :class="{'block': openLang, 'hidden': ! openLang}"
-                     class="hidden absolute right-0 z-10 w-full mt-2 origin-top-right bg-white shadow-lg ring-1 ring-black ring-opacity-5 rounded-lg focus:outline-hidden"
+                     class="hidden absolute right-0 z-10 w-full mt-2 origin-top-right bg-white shadow-lg ring-1 ring-gray-200 ring-opacity-5 rounded-lg focus:outline-hidden"
                      tabindex="-1">
                     <div class="text-start" role="none">
                         @foreach( LocaleConfig::getLocales() as $locale )

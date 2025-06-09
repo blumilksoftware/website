@@ -17,7 +17,7 @@
         <div class="h-min">
             <h4 class="text-2xl sm:text-3xl lg:text-4xl text-center xl:text-left font-bold text-blue-dark pb-4">
                 {{ __('content.contact.title_1') }}</h4>
-            <p class="text-md leading-7.5 text-[#6B6E70] text-center xl:text-left">
+            <p class="text-md leading-7 text-[#6B6E70] text-center xl:text-left">
                 {{ __('content.contact.subtitle') }}
             </p>
         </div>

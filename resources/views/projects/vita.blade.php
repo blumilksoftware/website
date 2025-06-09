@@ -113,7 +113,7 @@
 
     <section class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-7 pt-20 md:pt-48 pb-16 md:pb-24 xl:pb-36 text-center">
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold">{{ __("projects.vita.title_4") }}</h2>
-            <div class="font-normal leading-7.5 text-md lg:text-lg relative max-w-[925px] mx-auto">{{ __("projects.vita.rebranding") }}</div>
+            <div class="font-normal leading-7 text-md lg:text-lg relative max-w-[925px] mx-auto">{{ __("projects.vita.rebranding") }}</div>
     </section>
     <x-projects.image src="{{ asset('images/projects/vita/rebranding.webp') }}"
                           alt="{{ __('projects.vita.alt.rebranding') }}"/>

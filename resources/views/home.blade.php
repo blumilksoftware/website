@@ -12,7 +12,7 @@
         <section class="flex flex-col-reverse xl:flex-row pt-8 xl:pt-24 pb-16 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:gap-5">
             <div class="flex basis-2/5 relative flex-col self-center gap-5">
                 <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:justify-start xl:text-start">
-                    <h2 class="font-semibold text-gray-900 leading-7.5 md:leading-snug">
+                    <h2 class="font-semibold text-gray-900 leading-7 md:leading-snug">
                         <span class="inline">{{ __("content.home.section_1.title_1") }}</span>
                         <span class="text-blue-normal inline"> {{ __("content.home.section_1.title_2") }} </span>
                         <span class="inline">{{ __("content.home.section_1.title_3") }}</span>
@@ -20,8 +20,8 @@
                 </div>
                 <div class="flex flex-col items-center xl:items-start">
                     <p class="text-sm sm:text-lg lg:text-xl font-light text-center xl:text-start pb-10">
-                        <span class="leading-7.5">{{ __("content.home.section_1.subtitle_1") }}</span>
-                        <span class="font-semibold leading-7.5">{{ __("content.home.section_1.subtitle_2") }}</span>
+                        <span class="leading-7">{{ __("content.home.section_1.subtitle_1") }}</span>
+                        <span class="font-semibold leading-7">{{ __("content.home.section_1.subtitle_2") }}</span>
                     </p>
                     <x-primary-button href="{{ route('about') }}"
                                       class="w-full sm:w-auto sm:px-12 -ml-1 shadow-xl bg-blue-normal">{{ __("buttons.about") }}</x-primary-button>
@@ -52,7 +52,7 @@
             <div class="mx-[10%] 2xl:max-w-[1400px] 2xl:mx-auto space-y-10 pt-8 sm:pt-20 lg:pt-40 lg:pb-28">
                 <div class="pb-6 lg:pb-14 text-center">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.home.section_3.title_1") }}</h2>
-                    <span class="font-light leading-7.5 text-sm sm:text-md lg:text-lg relative">{{ __("content.home.section_3.subtitle_1") }}</span>
+                    <span class="font-light leading-7 text-sm sm:text-md lg:text-lg relative">{{ __("content.home.section_3.subtitle_1") }}</span>
                 </div>
                 <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-12 xl:place-items-stretch">
                     <x-tile title="{{ __('content.home.section_3.tile_1.title') }}"
@@ -89,8 +89,8 @@
             <div class="relative mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto pt-28 pb-20 md:pb-32 lg:pb-44">
                 <div class="pb-8 text-center">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-4 md:pb-8">{{ __("content.home.section_4.title_1") }}</h2>
-                    <span class="font-normal leading-7.5 text-sm sm:text-md lg:text-lg">{{ __("content.home.section_4.subtitle_1") }}</span>
-                    <span class="font-bold leading-7.5 text-sm sm:text-md lg:text-lg">{{ __("content.home.section_4.subtitle_2") }}</span>
+                    <span class="font-normal leading-7 text-sm sm:text-md lg:text-lg">{{ __("content.home.section_4.subtitle_1") }}</span>
+                    <span class="font-bold leading-7 text-sm sm:text-md lg:text-lg">{{ __("content.home.section_4.subtitle_2") }}</span>
                 </div>
 
                 <x-main-project/>
