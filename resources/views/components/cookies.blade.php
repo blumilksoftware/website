@@ -36,7 +36,7 @@
     </div>
     <div class="flex items-center shrink-0 mt-6 sm:mt-0">
         <button x-bind="accept" type="button"
-                class=" text-xs w-full sm:w-auto max-w-80 ml-auto sm:mx-auto font-medium bg-website-normal rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-none">
+                class=" text-xs w-full sm:w-auto max-w-80 ml-auto sm:mx-auto font-medium bg-website-normal rounded-lg hover:bg-gray-700 text-white px-4 py-2.5 duration-300 transition-colors focus:outline-hidden">
             {{ __("buttons.accept_all") }}
         </button>
     </div>

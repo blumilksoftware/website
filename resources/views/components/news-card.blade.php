@@ -26,7 +26,7 @@
              'flex flex-col gap-3' => !$isFirst,
          ])>
         <div class="flex text-sm pt-3 justify-between">
-            <time datetime="{{ $news['published_at'] }}" class="text-gray-400 my-auto">
+            <time datetime="{{ $news['published_at'] }}" class="text-gray-500 my-auto">
                 {{ $news['published_at'] }}
             </time>
             @if($isFirst) <span class="hidden lg:block"><i class="ti ti-arrow-up-right text-5xl"></i></span> @endif
@@ -40,7 +40,7 @@
                 </a>
             </h3>
         </div>
-        <div class="line-clamp-2 text-gray-400 text-sm prose">
+        <div class="line-clamp-2 text-gray-500 text-sm prose">
             {!! $news['description'] !!}
         </div>
     </div>

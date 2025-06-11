@@ -15,13 +15,13 @@
             </div>
             <div class="items-center">
                 <p class="text-lg lg:text-xl font-light text-center">
-                    <span class="leading-7.5">{{ $project->description }}</span>
+                    <span class="leading-7">{{ $project->description }}</span>
                 </p>
             </div>
         </div>
         <div class="pt-12 md:py-24 w-full">
             <img src="{{ asset("storage/" . $project->photo) }}"
-                 class="relative aspect-[5/3] w-auto h-full mx-auto rounded-3xl bg-white shadow-md"
+                 class="relative aspect-5/3 w-auto h-full mx-auto rounded-3xl bg-white shadow-md"
                  alt="{{ $project->company }}"/>
         </div>
     </section>

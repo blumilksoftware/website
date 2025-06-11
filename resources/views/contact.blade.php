@@ -17,7 +17,7 @@
         <div class="h-min">
             <h4 class="text-2xl sm:text-3xl lg:text-4xl text-center xl:text-left font-bold text-blue-dark pb-4">
                 {{ __('content.contact.title_1') }}</h4>
-            <p class="text-md leading-7.5 text-[#6B6E70] text-center xl:text-left">
+            <p class="text-md leading-7 text-[#6B6E70] text-center xl:text-left">
                 {{ __('content.contact.subtitle') }}
             </p>
         </div>
@@ -31,7 +31,7 @@
                         <div class="mt-2.5 ">
                             <input name="email" id="email" autocomplete="given-e-mail"
                                    value="{{ old('email') }}"
-                                   class="block w-full h-12 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-gray-400 sm:text-sm sm:leading-6">
+                                   class="block w-full h-12 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-xs ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-gray-400 sm:text-sm sm:leading-6">
                             @error('email')
                             <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
                             @enderror
@@ -43,7 +43,7 @@
                         <div class="mt-2.5">
                             <input type="text" name="topic" id="topic" autocomplete="topic"
                                    value="{{ old('topic') }}"
-                                   class="block w-full h-12 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-gray-400 sm:text-sm sm:leading-6">
+                                   class="block w-full h-12 rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-xs ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-gray-400 sm:text-sm sm:leading-6">
                             @error('topic')
                             <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
                             @enderror
@@ -54,7 +54,7 @@
                                class="block text-sm font-normal leading-6 text-blue-dark ml-2">{{ __('content.contact.form.message') }}</label>
                         <div class="mt-2.5">
                                 <textarea id="message" name="message" rows="10" autocomplete="message"
-                                          class="block w-full rounded-md border-0 px-3.5 py-2 min-h-12 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-gray-400 sm:text-sm sm:leading-6">{{ old('message') }}</textarea>
+                                          class="block w-full rounded-md border-0 px-3.5 py-2 min-h-12 text-gray-900 shadow-xs ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-gray-400 sm:text-sm sm:leading-6">{{ old('message') }}</textarea>
                             @error('message')
                             <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
                             @enderror
@@ -64,11 +64,11 @@
                 <div class="flex flex-col items-left mt-2">
                     <label for="consents" class="flex items-center">
                         <input type="checkbox" name="consents" id="consents"
-                               class="w-4 h-4 rounded-sm border-[#6B6E70] focus:ring-0 checked:text-website-light">
+                               class="w-4 h-4 rounded-xs border-[#6B6E70] focus:ring-0 checked:text-website-light">
                         <span class="text-xs font-normal text-[#6B6E70] ml-2 pt-4">
                                     {{ __('content.contact.policy.part_1') }}
                                     <a href="{{ route('privacy-policy') }}" target="_blank"
-                                       class="text-website-normal">{{ __('content.contact.policy.part_2') }}</a>
+                                       class="text-blue-normal">{{ __('content.contact.policy.part_2') }}</a>
                                     {{ __('content.contact.policy.part_3') }}
                                 </span>
                     </label>
@@ -78,7 +78,7 @@
                 </div>
                 <div class="mt-3 flex">
                     <button type="submit"
-                            class="w-full text-xl mx-0 bg-website-normal m-2 p-3 sm:text-lg h-min text-center font-normal text-white shadow-sm rounded-xl transform transition hover:scale-110 flex justify-center items-center"
+                            class="w-full text-xl mx-0 bg-blue-normal m-2 p-3 sm:text-lg h-min text-center font-normal text-white shadow-xs rounded-xl transform transition hover:scale-110 flex justify-center items-center"
                             data-umami-event="send-contact-form-button-click">
                         {{ __('buttons.send_message') }}
                     </button>
@@ -146,7 +146,7 @@
             })
 
             const marker = new mapboxgl.Marker({
-                color: '#5379F6',
+                color: '#3259E8',
             })
                 .setLngLat([16.163780, 51.208760])
                 .addTo(map)

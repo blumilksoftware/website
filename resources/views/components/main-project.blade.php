@@ -20,7 +20,7 @@
             </div>
         </div>
     </div>
-    <div class="h-auto w-auto bg-blue-normalNeon text-white text-sm text-center place-self-center py-3 px-6 font-normal rounded-3xl absolute hidden lg:flex lg:-right-32 xl:-right-44 2xl:-right-52 top-72">
+    <div class="h-auto w-auto bg-blue-normal-neon text-white text-sm text-center place-self-center py-3 px-6 font-normal rounded-3xl absolute hidden lg:flex lg:-right-32 xl:-right-44 2xl:-right-52 top-72">
         {{ __('content.home.section_4.badge') }}
     </div>
     <div class="h-36 lg:flex items-center bg-white rounded-2xl absolute hidden lg:-left-36 xl:-left-48 2xl:-left-64 shadow-lg border-gray-100 border-2 bottom-8">
@@ -34,7 +34,7 @@
             </div>
         </div>
     </div>
-    <img src="{{ asset('graphics/main_project/with_frame.svg') }}" class="h-auto w-auto max-w-4xl hidden md:block" alt="{{ __('alt.home_project') }}"/>
-    <img src="{{ asset('graphics/main_project/no_frame.svg') }}" class="h-auto w-full max-w-4xl md:hidden block mb-8" alt="{{ __('alt.home_project') }}"/>
-    <img src="{{ asset('graphics/shadow_2.svg') }}" alt="{{ __('alt.shadow') }}" aria-hidden="true" class="hidden md:block absolute -z-10"/>
+    <img src="{{ asset('graphics/main_project/with_frame.webp') }}" class="h-[550px] w-[750px] max-w-4xl hidden md:block" alt="{{ __('alt.home_project') }}"/>
+    <img src="{{ asset('graphics/main_project/no_frame.webp') }}" class="h-auto w-full max-w-4xl md:hidden block mb-8" alt="{{ __('alt.home_project') }}"/>
+    <img src="{{ asset('graphics/shadow_2.svg') }}" alt="" class="hidden md:block absolute -z-10"/>
 </div>

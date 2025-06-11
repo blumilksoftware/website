@@ -10,7 +10,7 @@
                 </h2>
             </div>
             <div class="flex flex-col items-center xl:items-start pb-12 xl:pb-0">
-                <p class="text-sm sm:text-md lg:text-lg font-normal text-center xl:text-start leading-7.5">
+                <p class="text-sm sm:text-md lg:text-lg font-normal text-center xl:text-start leading-7">
                     <span class="block pb-6 xl:pr-20">{{ __("content.404.subtitle_1") }}</span>
                     <a type="button" href="{{ route("home") }}"
                        class="text-website-normal hover:border-b-2 border-website-normal">
@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="flex basis-3/5 relative self-center pb-8 md:pb-24 xl:pb-4 xl:left-16">
-            <img src="{{ asset('graphics/404.svg') }}" class="h-auto w-full aspect-auto object-center shrink-0"
+            <img src="{{ asset('graphics/404.webp') }}" class="h-auto w-full aspect-auto object-center shrink-0"
                  alt="{{ __('alt.404') }}"/>
         </div>
     </section>

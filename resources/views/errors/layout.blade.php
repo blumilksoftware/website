@@ -3,7 +3,7 @@
 <head>
     <title>@yield('title') - Blumilk</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <meta name="robots" content="noindex, nofollow">
     <link rel="shortcut icon" href="{{ asset('identification/sygnet.svg') }}" type="image/x-icon">
     @vite('resources/js/app.ts')
@@ -41,19 +41,19 @@
             </div>
             <div class="tablet:flex hidden justify-center items-center text-sm 3xl:text-md">
                 <div class="font-medium flex items-center text-center gap-2">
-                    <a href="{{ route('about') }}" class="hover:text-website-normal rounded-3xl px-2">
+                    <a href="{{ route('about') }}" class="hover:text-blue-normal rounded-3xl px-2">
                         {{ __("content.pages.about") }}
                     </a>
-                    <a href="{{ route('projects') }}" class="hover:text-website-normal rounded-3xl px-2">
+                    <a href="{{ route('projects') }}" class="hover:text-blue-normal rounded-3xl px-2">
                         {{ __("content.pages.projects") }}
                     </a>
-                    <a href="{{ route('career') }}" class="hover:text-website-normal rounded-3xl px-2">
+                    <a href="{{ route('career') }}" class="hover:text-blue-normal rounded-3xl px-2">
                         {{ __("content.pages.career") }}
                     </a>
-                    <a href="{{ route('news') }}" class="hover:text-website-normal rounded-3xl px-2">
+                    <a href="{{ route('news') }}" class="hover:text-blue-normal rounded-3xl px-2">
                         {{ __("content.pages.news") }}
                     </a>
-                    <a href="{{ route('contact') }}" class="hover:text-website-normal rounded-3xl px-2">
+                    <a href="{{ route('contact') }}" class="hover:text-blue-normal rounded-3xl px-2">
                         {{ __("content.pages.contact") }}
                     </a>
                 </div>
@@ -65,14 +65,14 @@
                 <div class="relative inline-block text-left">
                     <button type="button"
                             @click="openLang = ! openLang"
-                            class="flex rounded-lg h-full items-center place-content-center gap-x-1.5 bg-white px-4 py-2 text-sm 3xl:text-md font-semibold text-gray-500 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 uppercase"
+                            class="flex rounded-lg h-full items-center place-content-center gap-x-1.5 bg-white px-4 py-2 text-sm 3xl:text-md font-semibold text-gray-500 shadow-xs ring-1 ring-inset ring-gray-300 hover:bg-gray-50 uppercase"
                             id="desktopLocalesButton" aria-expanded="true" aria-haspopup="true">
                         {{ $currentLocale }}
                         <i :class="{'rotate-0': openLang, 'rotate-180': ! openLang}" class="fa-solid fa-chevron-up text-gray-500"></i>
                     </button>
                     <div id="desktopLocalesMenu"
                          :class="{'block': openLang, 'hidden': ! openLang}"
-                         class="hidden absolute right-0 z-10 w-full mt-2 origin-top-right bg-white shadow-lg ring-1 ring-black ring-opacity-5 rounded-lg focus:outline-none"
+                         class="hidden absolute right-0 z-10 w-full mt-2 origin-top-right bg-white shadow-lg ring-1 ring-black ring-opacity-5 rounded-lg focus:outline-hidden"
                          tabindex="-1">
                         <div class="text-start" role="none">
                             @foreach ( LocaleConfig::getLocales() as $locale )
@@ -106,27 +106,27 @@
                            class="fa-solid fa-xmark text-xl text-black hidden"></i>
                     </button>
                 </div>
-                <div class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start">
+                <div class="w-full group hover:text-blue-normal py-4 text-lg sm:text-xl text-start">
                     <a href="{{ route('about') }}" class="my-4 p-2 start">
                         {{ __("content.pages.about") }}
                     </a>
                 </div>
-                <div class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start">
+                <div class="w-full group hover:text-blue-normal py-4 text-lg sm:text-xl text-start">
                     <a href="{{ route('projects') }}" class="my-4 p-2">
                         {{ __("content.pages.projects") }}
                     </a>
                 </div>
-                <div class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start">
+                <div class="w-full group hover:text-blue-normal py-4 text-lg sm:text-xl text-start">
                     <a href="{{ route('career') }}" class="my-4 p-2">
                         {{ __("content.pages.career") }}
                     </a>
                 </div>
-                <div class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start">
+                <div class="w-full group hover:text-blue-normal py-4 text-lg sm:text-xl text-start">
                     <a href="{{ route('news') }}" class="my-4 p-2">
                         {{ __("content.pages.news") }}
                     </a>
                 </div>
-                <div class="w-full group hover:text-website-normal py-4 text-lg sm:text-xl text-start">
+                <div class="w-full group hover:text-blue-normal py-4 text-lg sm:text-xl text-start">
                     <a href="{{ route('contact') }}" class="my-4 p-2">
                         {{ __("content.pages.contact") }}
                     </a>
@@ -135,7 +135,7 @@
                     <div class="relative flex flex-col text-left">
                         <button type="button"
                                 @click="openLang = ! openLang"
-                                class="flex w-full h-full justify-between items-center place-content-center gap-x-1.5 mt-4 text-lg sm:text-xl font-semibold text-black hover:text-website-normal uppercase"
+                                class="flex w-full h-full justify-between items-center place-content-center gap-x-1.5 mt-4 text-lg sm:text-xl font-semibold text-black hover:text-blue-normal uppercase"
                                 id="mobileLocalesButton" aria-expanded="true" aria-haspopup="true">
                             {{ $currentLocale }}
                             <i :class="{'rotate-0': openLang, 'rotate-180': ! openLang}" class="fa-solid fa-chevron-up text-gray-500"></i>
@@ -146,7 +146,7 @@
                             <div class="text-end" role="none">
                                 @foreach ( LocaleConfig::getLocales() as $locale )
                                     <a href="{{ url($locale) . $suffix }}"
-                                       class="text-gray-500 block text-lg font-normal pt-4 sm:text-xl hover:text-website-normal uppercase text-start"
+                                       class="text-gray-500 block text-lg font-normal pt-4 sm:text-xl hover:text-blue-normal uppercase text-start"
                                        role="menuitem" tabindex="-1">
                                         {{ $locale }}
                                     </a>
@@ -163,7 +163,7 @@
     </nav>
 </div>
 <div class="my-auto">
-    <div class="relative hidden sm:block -z-10 2xl:max-w-screen-3xl 2xl:mx-auto">
+    <div class="relative hidden sm:block -z-10 2xl:max-w-(--breakpoint-3xl) 2xl:mx-auto">
         <div class="absolute left-[8%] md:-left-0 top-28 xl:top-16">
             <x-bubble size="100"/>
         </div>

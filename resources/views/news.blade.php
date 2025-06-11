@@ -12,14 +12,14 @@
              class="py-16 text-center mx-[10%] md:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto space-y-16">
         <div>
             <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-black my-6 break-words">
-                <span class="text-website-normal">{{ __("content.activities.section_1.title_1") }}</span>
+                <span class="text-blue-normal">{{ __("content.activities.section_1.title_1") }}</span>
                 {{ __("content.activities.section_1.title_2") }}
             </h2>
         </div>
         <div class="sm:hidden">
             <button type="button"
                     @click="openTags = ! openTags"
-                    class="flex border-b-[3px] border-website-normal text-gray-500 hover:text-black w-full">
+                    class="flex border-b-[3px] border-website-normal text-gray-600 hover:text-black w-full">
                 <span class="relative w-full sm:w-auto flex place-content-center px-1 pt-1 mb-1 text-sm font-medium">
                     @if($selectedTag)
                         {{ $selectedTag }}
@@ -69,7 +69,7 @@
         <div class="hidden sm:flex place-content-center flex-wrap gap-y-4">
             <x-tag href="{{ route('news') }}"
                    articlesCount="{{ $allNewsCount }}"
-                @class([ "px-4 py-1 md:px-3 md:py-2 xl:px-4 xl:py-2 2xl:px-6 2xl:py-3 text-center", "text-black border-website-normal" => $selectedTag === null, "text-gray-400" => $selectedTag !== null ])>
+                @class([ "px-4 py-1 md:px-3 md:py-2 xl:px-4 xl:py-2 2xl:px-6 2xl:py-3 text-center", "text-black border-website-normal" => $selectedTag === null, "text-gray-500" => $selectedTag !== null ])>
                 {{ __("tags.all") }}
             </x-tag>
             @foreach($tags as $tag)
@@ -78,7 +78,7 @@
                     @class([
                         'px-4 py-1 md:px-3 md:py-2 xl:px-4 xl:py-2 2xl:px-6 2xl:py-3',
                         'text-black border-website-normal' => $selectedTag && $tag === $selectedTag,
-                        'text-gray-400' => !($selectedTag && $tag === $selectedTag),
+                        'text-gray-500' => !($selectedTag && $tag === $selectedTag),
                     ])>{{ $tag }}</x-tag>
             @endforeach
             @if($selectedTag && $tags->contains($selectedTag) === false)
@@ -87,7 +87,7 @@
             @endif
         </div>
     </section>
-    <section class="relative mx-[10%] 2xl:max-w-screen-2xl 2xl:mx-auto pb-16">
+    <section class="relative mx-[10%] 2xl:max-w-(--breakpoint-2xl) 2xl:mx-auto pb-16">
         <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-16">
             @foreach($news as $singleNews)
                 @if ($isFirst)

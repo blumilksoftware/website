@@ -12,7 +12,7 @@
 @endsection
 
 @section("content")
-    <section class="2xl:mx-[10%] 3xl:max-w-screen-2xl 3xl:mx-auto -mb-32">
+    <section class="2xl:mx-[10%] 3xl:max-w-(--breakpoint-2xl) 3xl:mx-auto -mb-32">
         <div class="relative w-full h-[232px] sm:h-[594px] overflow-hidden order-2 lg:order-1 lg:mt-0">
             <img src="{{ asset("storage/".$news['photo']) }}"
                  alt="{{ $news['title'] }}"
@@ -23,7 +23,7 @@
         </div>
         <div class="flex flex-col lg:gap-24 xl:gap-32 lg:flex-row lg:place-content-between">
             <div class="relative sm:-top-28 mx-auto lg:left-16 pt-8 sm:pt-16 px-12 flex flex-col sm:bg-white sm:w-[70%] gap-8">
-                <time datetime="{{ $news['published_at'] }}" class="text-sm text-gray-400">
+                <time datetime="{{ $news['published_at'] }}" class="text-sm text-gray-500">
                     {{ $news['published_at'] }}
                 </time>
                 <div class="w-full max-w-2xl lg:max-w-none order-1 lg:order-2">
@@ -52,7 +52,7 @@
                                 <img src="{{ asset("storage/".$recommendedSingleNews['photo']) }}"
                                      alt="{{ $recommendedSingleNews['title'] }}"
                                      class="w-full h-[232px] xl:h-[343px] object-cover aspect-square xl:aspect-auto">
-                                <time datetime="{{ $recommendedSingleNews['published_at'] }}" class="text-sm text-gray-400 mt-3">
+                                <time datetime="{{ $recommendedSingleNews['published_at'] }}" class="text-sm text-gray-500 mt-3">
                                     {{ $recommendedSingleNews['published_at'] }}
                                 </time>
                                 <h3 class="text-gray-900 text-left text-base font-bold">
@@ -61,7 +61,7 @@
                                         {{ $recommendedSingleNews['title'] }}
                                     </a>
                                 </h3>
-                                <div class="line-clamp-2 text-sm text-gray-400">
+                                <div class="line-clamp-2 text-sm text-gray-500">
                                     {!! $recommendedSingleNews['description'] !!}
                                 </div>
                             </div>

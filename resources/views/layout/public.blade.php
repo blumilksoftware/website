@@ -4,7 +4,7 @@
 <head>
     <title>@yield('title') - Blumilk</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
     <meta name="description" content="@yield('description')">
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="QCB2LFVYnUSGvJgRjtceHW6LDr8p8ksYCWAVDTcYyTM" />
@@ -37,7 +37,7 @@
         @include('layout.navigation')
     </div>
     <div class="my-auto">
-        <div class="relative hidden sm:block -z-10 2xl:max-w-screen-3xl mx-auto">
+        <div class="relative hidden sm:block -z-10 2xl:max-w-(--breakpoint-3xl) mx-auto">
             <div class="absolute left-[8%] md:-left-0 top-28 xl:top-16">
                 <x-bubble size="100"/>
             </div>

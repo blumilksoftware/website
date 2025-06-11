@@ -19,7 +19,7 @@ FROM node:22.14.0-bullseye-slim@sha256:d69b7c7ea65e223e1837a03784c6caa987e50bd2f
 
 WORKDIR /app_frontend_dependencies
 
-COPY package.json package-lock.json postcss.config.js tailwind.config.js vite.config.js tsconfig.json ./
+COPY package.json package-lock.json postcss.config.js vite.config.js tsconfig.json ./
 COPY ./environment/prod/app/vite.env .env
 
 RUN npm clean-install
@@ -94,7 +94,6 @@ RUN rm --recursive --force \
     ./environment/prod/app \
     eslint.config.js \
     postcss.config.js \
-    tailwind.config.js \
     tsconfig.json \
     vite.config.js \
     .dockerignore

@@ -5,8 +5,6 @@ declare(strict_types=1);
 return [
     "prev" => "poprzedni",
     "next" => "następny",
-    "shadow" => "niebieski cień",
-    "wave" => "niebieskie fale w stylu line art",
     "reference" => "referencja autorstwa",
     "about" => "Robot i człowiek stoją obok siebie przy komputerze, symbolizując współpracę ludzi i maszyn.",
     "career" => "Ludzie wchodzący w interakcję z dużą stroną internetową, wskazującą na tworzenie treści cyfrowych.",
@@ -42,4 +40,6 @@ return [
     "facebook" => "ikona Facebook",
     "youtube" => "ikona YouTube",
     "download" => "ikona pobierania",
+    "openMenu" => "Otwórz menu",
+    "closeMenu" => "Zamknij menu",
 ];

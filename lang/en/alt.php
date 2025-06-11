@@ -5,8 +5,6 @@ declare(strict_types=1);
 return [
     "prev" => "previous",
     "next" => "next",
-    "shadow" => "blue shadow",
-    "wave" => "blue line art waves",
     "reference" => "reference from",
     "about" => "A robot and a human stand side by side at a computer, symbolizing the cooperation between humans and machines.",
     "career" => "People interacting with a large webpage, indicating digital content creation.",
@@ -42,4 +40,6 @@ return [
     "facebook" => "Facebook icon",
     "youtube" => "YouTube icon",
     "download" => "download icon",
+    "openMenu" => "Open menu",
+    "closeMenu" => "Close menu",
 ];
