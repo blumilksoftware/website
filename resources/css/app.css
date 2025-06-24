@@ -49,9 +49,15 @@
   --color-gtb: #f9c83b;
   --color-carbon: #f39200;
 
+  --color-edu-gray: #686770;
+  --color-edu-gray-dark: #2e2e32;
+  --color-edu-normal: #3559c7;
+  --color-edu-dark: #2a47a4;
+
   --font-sora: Sora, sans-serif;
   --font-montserrat: Montserrat;
   --font-poppins: Poppins;
+  --font-outfit: Outfit;
 
   --leading-7: 30px;
 }

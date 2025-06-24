@@ -20,4 +20,9 @@ class HomeController extends Controller
             ->with("references", $references)
             ->with("clients", $clients);
     }
+
+    public function eduLanding(): View
+    {
+        return view('edulanding/edu-landing');
+    }
 }
