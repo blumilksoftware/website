@@ -33,18 +33,18 @@
                     </h2>
                     </div>
                     <p class="mt-6 text-lg text-gray-600 max-w-xl">
-                        Przyszłość edukacji zaczyna się od dobrze zaprojektowanego systemu. Tworzymy narzędzia, które realnie usprawniają codzienne funkcjonowanie placówek oświatowych.
+                        {{ __("edulanding.hero_section.description") }}
                     </p>
                     <a href="#"
                        class="mt-10 inline-flex items-center gap-2 bg-edu-normal text-white text-base font-medium px-6 py-3 rounded-lg shadow hover:bg-edu-dark transition">
-                        Dowiedz się więcej
+                        {{ __("edulanding.hero_section.button") }}
                         <i class="ti ti-arrow-right"></i>
                     </a>
                 </div>
                 <div>
-                    <img src="{{ asset('images/hero-section.png') }}"
-                         alt="Uczniowie przy komputerach"
-                         class="rounded-r-[32px] w-full h-auto object-cover"/>
+                    <img src="{{ asset('images/edulanding/hero-section.webp') }}"
+                         alt=""
+                         class="rounded-[32px] w-full h-auto object-cover"/>
                 </div>
             </div>
         </section>
