@@ -35,6 +35,6 @@ $router->get($uri->translate("news"), [NewsController::class, "index"])->name("n
 $router->get($uri->translate("news/{slug}"), [NewsController::class, "get"])->name("news.entry");
 $router->get($uri->translate("company-data"), CompanyDataController::class)->name("data");
 
-$router->get('/edu-landing', [HomeController::class, 'eduLanding']);
+$router->get("/edu-landing", [HomeController::class, "eduLanding"]);
 
 $router->fallback(FallbackController::class);

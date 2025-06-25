@@ -23,6 +23,6 @@ class HomeController extends Controller
 
     public function eduLanding(): View
     {
-        return view('edulanding/edu-landing');
+        return view("edulanding/edu-landing");
     }
 }
