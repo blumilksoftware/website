@@ -53,6 +53,7 @@
   --color-edu-gray-dark: #2e2e32;
   --color-edu-normal: #3559c7;
   --color-edu-dark: #2a47a4;
+  --color-edu-light: #e1e9fe;
 
   --font-sora: Sora, sans-serif;
   --font-montserrat: Montserrat;
@@ -147,5 +148,11 @@
   50% {
     transform: translateY(0);
     animation-timing-function: cubic-bezier(0.5, 0.5, 1, 1);
+  }
+}
+
+@layer utilities {
+  .max-w-4xl {
+    max-width: 1000px;
   }
 }

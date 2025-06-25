@@ -34,4 +34,15 @@ return [
             "description" => "Cyfrowa transformacja dokumentów i pełna archiwizacja elektroniczna umożliwiają ograniczenie użycia papieru nawet o 90%. To nie tylko oszczędność materiałów i przestrzeni, ale też szybszy dostęp do danych i zgodność z przepisami RODO.",
         ],
     ],
+    "our_solutions" => [
+        "title" => "Co oferujemy?",
+        "description_1" => "Wiemy z czym mierzy się administracja, jak wygląda ochrona danych osobowych, rekrutacja, integracja systemów czy wdrażanie AI. To nie są dla nas „funkcje” – to codzienne wyzwania, które",
+        "description_2" => "rozumiemy i rozwiązujemy.",
+        "tile_1" => "Dedykowane systemy IT dla sektora edukacji",
+        "tile_2" => "Bezpieczna integracja z bazami danych i systemami uczelnianymi",
+        "tile_3" => "Rozwiązania z wykorzystaniem AI i automatyzacji",
+        "tile_4" => "Nowoczesne platformy rekrutacyjne i informacyjne",
+        "tile_5" => "Zgodność z RODO i najwyższe standardy bezpieczeństwa danych",
+        "tile_6" => "Systemy do zarządzania projektami naukowymi i dydaktyką",
+    ],
 ];
