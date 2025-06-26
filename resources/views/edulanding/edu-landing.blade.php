@@ -83,7 +83,7 @@
         </section>
     </section>
     <section class="relative" id="our_solutions">
-        <div class="px-4 sm:px-6 lg:px-12 2xl:max-w-[1200px] mx-auto space-y-10 pt-8 sm:pt-20 lg:pb-28 bg-edu-light rounded-3xl lg:mb-12">
+        <div class="px-4 sm:px-6 lg:px-12 2xl:max-w-[1200px] mx-auto space-y-10 py-8 sm:pt-20 lg:pb-28 bg-edu-light rounded-3xl lg:mb-12">
             <div class="flex text-center flex-col items-center gap-y-6 lg:gap-y-12">
                 <div class="text-3xl md:text-5xl lg:text-6xl text-center">
                     <h2 class="font-semibold text-gray-900 leading-7 md:leading-tight">
@@ -131,7 +131,7 @@
                     {{ __("edulanding.case_studies.description") }}
                 </p>
             </div>
-            <div class="grid md:grid-cols-2 gap-4 lg:gap-28 xl:place-items-stretch max-w-4xl mx-auto lg:mt-20">
+            <div class="grid md:grid-cols-2 gap-8 lg:gap-28 xl:place-items-stretch max-w-4xl mx-auto lg:mt-20">
                 <x-edulanding.card-with-image
                     title="{{ __('edulanding.case_studies.k1.title') }}"
                     description="{{ __('edulanding.case_studies.k1.description') }}"
