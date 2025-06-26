@@ -21,7 +21,7 @@ class AppServiceProvider extends ServiceProvider
             app()->setLocale("pl");
         }
 
-        $this->app["validator"]->extend("recaptchav3", function ($attribute, $value, $parameters) {
+        $this->app["validator"]->extend("recaptchav3", function ($attribute, $value, $parameters): bool {
             $action = $parameters[0];
             $minScore = isset($parameters[1]) ? (float)$parameters[1] : 0.5;
 
