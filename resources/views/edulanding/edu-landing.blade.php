@@ -39,7 +39,7 @@
                         <span class="leading-7"> {{ __("edulanding.hero_section.description") }}</span>
                     </p>
                     <x-edulanding.button href="#contact"
-                                         class="w-full sm:w-auto">{{ __("edulanding.hero_section.button")}}
+                                         class="w-full sm:w-auto py-3 px-9">{{ __("edulanding.hero_section.button")}}
                         <i class="ti ti-arrow-right"></i>
                     </x-edulanding.button>
                 </div>
@@ -83,7 +83,7 @@
         </section>
     </section>
     <section class="relative" id="our_solutions">
-        <div class="px-4 sm:px-6 lg:px-12 2xl:max-w-[1200px] mx-auto space-y-10 pt-8 sm:pt-20 lg:pb-28 bg-edu-light rounded-3xl">
+        <div class="px-4 sm:px-6 lg:px-12 2xl:max-w-[1200px] mx-auto space-y-10 pt-8 sm:pt-20 lg:pb-28 bg-edu-light rounded-3xl lg:mb-12">
             <div class="flex text-center flex-col items-center gap-y-6 lg:gap-y-12">
                 <div class="text-3xl md:text-5xl lg:text-6xl text-center">
                     <h2 class="font-semibold text-gray-900 leading-7 md:leading-tight">
@@ -119,9 +119,34 @@
             </div>
         </div>
     </section>
-    <div id="case_studies">
-        Realizacje
-    </div>
+    <section class="relative" id="case_studies">
+        <div class="px-4 sm:px-6 lg:px-12 2xl:max-w-[1200px] mx-auto space-y-10 pt-8 sm:pt-20 lg:pb-28">
+            <div class="flex text-center flex-col items-center gap-y-6 lg:gap-y-12">
+                <div class="text-3xl md:text-5xl lg:text-6xl text-center">
+                    <h2 class="font-semibold text-gray-900 leading-7 md:leading-tight">
+                        <span class="inline">{{ __("edulanding.case_studies.title") }}</span>
+                    </h2>
+                </div>
+                <p class="leading-7 text-sm sm:text-lg text-edu-gray max-w-4xl text-center">
+                    {{ __("edulanding.case_studies.description") }}
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-4 lg:gap-28 xl:place-items-stretch max-w-4xl mx-auto lg:mt-20">
+                <x-edulanding.card-with-image
+                    title="{{ __('edulanding.case_studies.k1.title') }}"
+                    description="{{ __('edulanding.case_studies.k1.description') }}"
+                    image="{{ asset('images/edulanding/k1.webp') }}"
+                    url="#"
+                />
+                <x-edulanding.card-with-image
+                    title="{{ __('edulanding.case_studies.erasmus.title') }}"
+                    description="{{ __('edulanding.case_studies.erasmus.description') }}"
+                    image="{{ asset('images/edulanding/erasmus.webp') }}"
+                    url="#"
+                />
+            </div>
+        </div>
+    </section>
     <div id="contact">
         Kontakt
     </div>
