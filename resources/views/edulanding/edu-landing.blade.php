@@ -28,7 +28,7 @@
                  class="flex flex-col-reverse xl:flex-row pt-8 xl:pt-24 pb-16 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:gap-6">
             <div class="flex basis-3/7 relative flex-col self-center justify-between gap-5">
                 <div class="text-3xl md:text-5xl lg:text-6xl text-center xl:justify-start xl:text-start">
-                    <h2 class="font-semibold text-gray-900 leading-7 md:leading-tight">
+                    <h2 class="font-semibold text-edu-gray-dark leading-7 md:leading-tight">
                         <span class="inline">{{ __("edulanding.hero_section.title_1") }}</span>
                         <span class="text-edu-normal inline"> {{ __("edulanding.hero_section.title_2") }} </span>
                         <span class="inline">{{ __("edulanding.hero_section.title_3") }}</span>
@@ -56,7 +56,7 @@
             <div class="mx-[10%] 2xl:max-w-[1200px] 2xl:mx-auto space-y-10 pt-8 sm:pt-20 lg:pt-40 lg:pb-28 pb-10">
                 <div class="pb-6 flex text-center flex-col items-center gap-y-6">
                     <div class="text-3xl md:text-5xl lg:text-6xl text-center">
-                        <h2 class="font-semibold text-gray-900 leading-7 md:leading-tight">
+                        <h2 class="font-semibold text-edu-gray-dark leading-7 md:leading-tight">
                             <span class="inline">{{ __("edulanding.intro_section.title_1") }}</span>
                             <span class="text-edu-normal inline"> {{ __("edulanding.intro_section.title_2") }} </span>
                             <span class="inline">{{ __("edulanding.intro_section.title_3") }}</span>
@@ -86,7 +86,7 @@
         <div class="px-4 sm:px-6 lg:px-12 2xl:max-w-[1200px] mx-auto space-y-10 py-8 sm:pt-20 lg:pb-28 bg-edu-light rounded-3xl lg:mb-12">
             <div class="flex text-center flex-col items-center gap-y-6 lg:gap-y-12">
                 <div class="text-3xl md:text-5xl lg:text-6xl text-center">
-                    <h2 class="font-semibold text-gray-900 leading-7 md:leading-tight">
+                    <h2 class="font-semibold text-edu-gray-dark leading-7 md:leading-tight">
                         <span class="inline">{{ __("edulanding.our_solutions.title") }}</span>
                     </h2>
                 </div>
@@ -123,7 +123,7 @@
         <div class="px-4 sm:px-6 lg:px-12 2xl:max-w-[1200px] mx-auto space-y-10 pt-8 sm:pt-20 lg:pb-28">
             <div class="flex text-center flex-col items-center gap-y-6 lg:gap-y-12">
                 <div class="text-3xl md:text-5xl lg:text-6xl text-center">
-                    <h2 class="font-semibold text-gray-900 leading-7 md:leading-tight">
+                    <h2 class="font-semibold text-edu-gray-dark leading-7 md:leading-tight">
                         <span class="inline">{{ __("edulanding.case_studies.title") }}</span>
                     </h2>
                 </div>
@@ -149,13 +149,13 @@
     </section>
     <section class="relative">
         <div class="px-4 sm:px-6 lg:px-12 lg:max-w-[1200px] mx-auto space-y-10 lg:space-y-24 py-8">
-            <div class="absolute -z-10 hidden lg:block top-12" >
+            <div class="absolute -z-10 hidden lg:block top-12">
                 <img src="{{ asset('images/edulanding/plus-icons.svg') }}"
                      alt=""/>
             </div>
             <div class="flex text-center flex-col items-center gap-y-6 lg:gap-y-12">
                 <div class="text-3xl md:text-5xl lg:text-6xl text-center">
-                    <h2 class="font-semibold text-gray-900 leading-7 md:leading-tight">
+                    <h2 class="font-semibold text-edu-gray-dark leading-7 md:leading-tight">
                         <span class="inline">{{ __("edulanding.audience.title") }}</span>
                     </h2>
                 </div>
@@ -208,7 +208,7 @@
         <div class="px-4 sm:px-6 lg:px-12 lg:max-w-[1200px] mx-auto space-y-10 py-8">
             <div class="flex text-center flex-col items-center gap-y-6 lg:gap-y-12">
                 <div class="text-3xl md:text-5xl lg:text-6xl text-center">
-                    <h2 class="font-semibold text-gray-900 leading-7 md:leading-tight">
+                    <h2 class="font-semibold text-edu-gray-dark leading-7 md:leading-tight">
                         <span class="text-edu-normal inline">{{ __("edulanding.security.title_1") }}</span>
                         <span class="inline"> {{ __("edulanding.security.title_2") }} </span>
                     </h2>
@@ -219,9 +219,10 @@
             </div>
         </div>
     </section>
-    <div id="contact">
-        Kontakt
-    </div>
+    <x-edulanding.contact-form
+        :title="__('edulanding.contact.title')"
+        :description="__('edulanding.contact.description')"
+    />
 </div>
 @include('layout.footer')
 </body>

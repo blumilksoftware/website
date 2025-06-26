@@ -68,8 +68,17 @@ return [
         ],
     ],
     "security" => [
-      "title_1" => "Bezpieczeństwo",
-      "title_2" => "przede wszystkim",
-      "description" => "Tworzymy systemy, które realnie usprawniają codzienne funkcjonowanie uczelni - od automatyzacji procesów po bezpieczeństwo danych.",
+        "title_1" => "Bezpieczeństwo",
+        "title_2" => "przede wszystkim",
+        "description" => "Tworzymy systemy, które realnie usprawniają codzienne funkcjonowanie uczelni - od automatyzacji procesów po bezpieczeństwo danych.",
+    ],
+    "contact" => [
+        "title" => "Porozmawiajmy o Twoim projekcie",
+        "description" => "Szukasz zaufanego partnera IT, który zna realia edukacji, a nie tylko deklaruje to w ofercie? Wypełnij formularz kontaktowy - skontaktujemy się z Tobą i porozmawiamy o rozwiązaniu idealnie dopasowanym do potrzeb Twojej instytucji.",
+        "name" => "Imię i nazwisko",
+        "company" => "Nazwa firmy",
+        "email" => "E-mail",
+        "message" => "Treść wiadomości",
+        "button" => "Wyślij wiadomość",
     ],
 ];
