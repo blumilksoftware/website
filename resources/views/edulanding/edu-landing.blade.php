@@ -147,6 +147,62 @@
             </div>
         </div>
     </section>
+    <section class="relative">
+        <div class="px-4 sm:px-6 lg:px-12 2xl:max-w-[1200px] mx-auto space-y-10 py-8">
+            <div class="flex text-center flex-col items-center gap-y-6 lg:gap-y-12">
+                <div class="text-3xl md:text-5xl lg:text-6xl text-center">
+                    <h2 class="font-semibold text-gray-900 leading-7 md:leading-tight">
+                        <span class="inline">{{ __("edulanding.audience.title") }}</span>
+                    </h2>
+                </div>
+                <p class="leading-7 text-sm sm:text-lg text-edu-gray max-w-4xl text-center">
+                    {{ __("edulanding.audience.description") }}
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 tablet:grid-cols-2 gap-12 items-center">
+                <div class="flex flex-col tablet:flex-row gap-4 h-auto tablet:h-[400px] justify-between">
+                    <div class="rounded-3xl overflow-hidden self-auto tablet:self-end">
+                        <img src="{{ asset('images/edulanding/audience1.webp') }}" alt="" class="w-full tablet:w-auto object-cover" />
+                    </div>
+                    <div class="rounded-3xl overflow-hidden self-auto tablet:self-start">
+                        <img src="{{ asset('images/edulanding/audience2.webp') }}" alt="" class="w-full tablet:w-auto object-cover" />
+                    </div>
+                    <div class="rounded-3xl overflow-hidden self-auto tablet:self-center">
+                        <img src="{{ asset('images/edulanding/audience3.webp') }}" alt="" class="w-full tablet:w-auto object-cover" />
+                    </div>
+                </div>
+
+                <div class="space-y-6">
+                    <div class="flex items-center bg-white rounded-xl shadow-lg/5 p-5 gap-4 border border-gray-light">
+                        <div class="size-16 flex items-center justify-center bg-edu-light text-edu-normal rounded-2xl">
+                            <i class="ti ti-school text-3xl"></i>
+                        </div>
+                        <span class="text-edu-gray-dark font-medium text-xl">
+                        {{ __("edulanding.audience.groups.higher_education") }}
+                    </span>
+                    </div>
+                    <div class="flex items-center bg-white rounded-xl shadow-lg/5 p-5 gap-4 border border-gray-light">
+                        <div class="size-16 flex items-center justify-center bg-[#FFEED2] text-[#FF9900] rounded-2xl">
+                            <i class="ti ti-backpack text-3xl"></i>
+                        </div>
+                        <span class="text-edu-gray-dark font-medium text-xl">
+                        {{ __("edulanding.audience.groups.secondary_schools") }}
+                    </span>
+                    </div>
+                    <div class="flex items-center bg-white rounded-xl shadow-lg/5 p-5 gap-4 border border-gray-light">
+                        <div class="size-16 flex items-center justify-center bg-[#F6E2FF] text-[#AA16EF] rounded-2xl">
+                            <i class="ti ti-microscope text-3xl"></i>
+                        </div>
+                        <span class="text-edu-gray-dark font-medium text-xl">
+                        {{ __("edulanding.audience.groups.training_research_institutions") }}
+                    </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div id="contact">
         Kontakt
     </div>

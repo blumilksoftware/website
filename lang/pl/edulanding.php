@@ -58,4 +58,13 @@ return [
        ],
        "button" => "Zobacz case study",
     ],
+    "audience" => [
+        "title" => "Dla kogo pracujemy?",
+        "description" => "Tworzymy rozwiązania cyfrowe we współpracy z uczelniami, odpowiadające na realne potrzeby, zgodne z regulacjami i gotowe do działania w środowisku oświatowym.",
+        "groups" => [
+            "higher_education" => "Uczelnie wyższe",
+            "secondary_schools" => "Szkoły policealne i średnie",
+            "training_research_institutions" => "Instytucje szkoleniowe i badawcze",
+        ],
+    ],
 ];
