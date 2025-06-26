@@ -67,4 +67,9 @@ return [
             "training_research_institutions" => "Instytucje szkoleniowe i badawcze",
         ],
     ],
+    "security" => [
+      "title_1" => "Bezpieczeństwo",
+      "title_2" => "przede wszystkim",
+      "description" => "Tworzymy systemy, które realnie usprawniają codzienne funkcjonowanie uczelni - od automatyzacji procesów po bezpieczeństwo danych.",
+    ],
 ];

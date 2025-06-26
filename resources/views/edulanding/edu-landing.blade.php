@@ -148,7 +148,7 @@
         </div>
     </section>
     <section class="relative">
-        <div class="px-4 sm:px-6 lg:px-12 2xl:max-w-[1200px] mx-auto space-y-10 py-8">
+        <div class="px-4 sm:px-6 lg:px-12 lg:max-w-[1200px] mx-auto space-y-10 py-8">
             <div class="flex text-center flex-col items-center gap-y-6 lg:gap-y-12">
                 <div class="text-3xl md:text-5xl lg:text-6xl text-center">
                     <h2 class="font-semibold text-gray-900 leading-7 md:leading-tight">
@@ -199,6 +199,21 @@
                     </span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="relative">
+        <div class="px-4 sm:px-6 lg:px-12 lg:max-w-[1200px] mx-auto space-y-10 py-8">
+            <div class="flex text-center flex-col items-center gap-y-6 lg:gap-y-12">
+                <div class="text-3xl md:text-5xl lg:text-6xl text-center">
+                    <h2 class="font-semibold text-gray-900 leading-7 md:leading-tight">
+                        <span class="text-edu-normal inline">{{ __("edulanding.security.title_1") }}</span>
+                        <span class="inline"> {{ __("edulanding.security.title_2") }} </span>
+                    </h2>
+                </div>
+                <p class="leading-7 text-sm sm:text-lg text-edu-gray max-w-2xl text-center">
+                    {{ __("edulanding.security.description") }}
+                </p>
             </div>
         </div>
     </section>
