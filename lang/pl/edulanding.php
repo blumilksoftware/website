@@ -46,17 +46,17 @@ return [
         "tile_6" => "Systemy do zarządzania projektami naukowymi i dydaktyką",
     ],
     "case_studies" => [
-      "title" => "Przykłady naszych realizacji",
-      "description" => "Znamy rytm uczelni - tworzymy rozwiązania, które z nim współgrają. Nasze doświadczenie to efekt lat współpracy z instytucjami edukacyjnymi, a nie jednorazowych projektów Dlatego potrafimy doradzić, zaprojektować i wdrożyć dokładnie takie rozwiązanie, jakiego potrzebujesz. Zobacz nasze przykładowe wdrożenia.",
-       "k1" => [
-           "title" => "K1",
-           "description" => "System zarządzania oprogramowaniem na uczelnianych komputerach."
-       ],
-       "erasmus" => [
+        "title" => "Przykłady naszych realizacji",
+        "description" => "Znamy rytm uczelni - tworzymy rozwiązania, które z nim współgrają. Nasze doświadczenie to efekt lat współpracy z instytucjami edukacyjnymi, a nie jednorazowych projektów Dlatego potrafimy doradzić, zaprojektować i wdrożyć dokładnie takie rozwiązanie, jakiego potrzebujesz. Zobacz nasze przykładowe wdrożenia.",
+        "k1" => [
+            "title" => "K1",
+            "description" => "System zarządzania oprogramowaniem na uczelnianych komputerach.",
+        ],
+        "erasmus" => [
             "title" => "Erasmus",
-            "description" => "Kompleksowa platforma do obsługi międzynarodowej wymiany studentów oraz kadry akademickiej."
-       ],
-       "button" => "Zobacz case study",
+            "description" => "Kompleksowa platforma do obsługi międzynarodowej wymiany studentów oraz kadry akademickiej.",
+        ],
+        "button" => "Zobacz case study",
     ],
     "audience" => [
         "title" => "Dla kogo pracujemy?",

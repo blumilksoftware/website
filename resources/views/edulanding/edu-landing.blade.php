@@ -48,7 +48,7 @@
                 <img src="{{ asset('images/edulanding/plus-icons.svg') }}"
                      class="absolute z-0 hidden xl:block xl:bottom-[-100px] xl:right-[-60px]" alt=""/>
                 <img src="{{ asset('images/edulanding/hero-section.webp') }}"
-                     class="h-[250px] w-[350px] tablet:h-[400px] tablet:w-[600px] lg:h-[500px] lg:w-[750px] aspect-auto object-center rounded-[32px] z-10"
+                     class=" h-[200px] xs:h-[230px] w-[350px] tablet:h-[400px] tablet:w-[600px] lg:h-[500px] lg:w-[750px] aspect-auto object-center rounded-[32px] z-10"
                      alt=""/>
             </div>
         </section>
@@ -161,7 +161,7 @@
             </div>
 
             <div class="grid grid-cols-1 tablet:grid-cols-2 gap-12 items-center">
-                <div class="flex flex-col tablet:flex-row gap-4 h-auto tablet:h-[400px] justify-between">
+                <div class="hidden tablet:flex flex-col tablet:flex-row gap-4 h-auto tablet:h-[400px] justify-between">
                     <div class="rounded-3xl overflow-hidden self-auto tablet:self-end">
                         <img src="{{ asset('images/edulanding/audience1.webp') }}" alt="" class="w-full tablet:w-auto object-cover" />
                     </div>
