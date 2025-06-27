@@ -21,7 +21,7 @@
 </head>
 
 <body class="font-outfit flex flex-col h-screen justify-between">
-<div class="relative z-10">
+<div class="relative z-20">
     @include('edulanding.navigation')
     <section class="relative flex flex-col xl:flex-row items-center justify-center pt-8 xl:pt-24 pb-16 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:gap-6">
         <div class="text-4xl flex flex-col md:text-5xl lg:text-6xl text-center justify-center items-center gap-y-3 lg:gap-y-6">
@@ -136,11 +136,14 @@
         <section>
             <img src="{{ asset('images/edulanding/erasmus-mobile.webp') }}" alt="" class="w-full object-cover h-auto"/>
         </section>
-
+        <x-edulanding.security-tile
+            :title="__('edulanding.erasmus.security.title')"
+            :description="__('edulanding.erasmus.security.description')"
+        />
         <x-edulanding.contact-form
         :title="__('edulanding.erasmus.contact.title')"
         :description="__('edulanding.erasmus.contact.description')"
-    />
+        />
     @include('layout.footer')
 </div>
 </body>

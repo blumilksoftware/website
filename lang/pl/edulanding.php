@@ -124,6 +124,10 @@ return [
             "tile_4" => "Zgodność RODO i pełne bezpieczeństwo danych",
             "tile_5" => "Pełna kontrola nad danymi i dostępami",
         ],
+        "security" => [
+            "title" => "Bezpieczeństwo w standardzie",
+            "description" => "Platforma zapewnia najwyższe standardy bezpieczeństwa. Dane użytkowników są przechowywane zgodnie z RODO, a dostęp do systemu mają wyłącznie uprawnieni użytkownicy.",
+        ],
         "contact" => [
             "title" => "Gotowy na transformację cyfrową Twojej uczelni?",
             "description" => "Szukasz sprawdzonego partnera, który zdigitalizuje obsługę programu Erasmus w Twojej instytucji? Wypełnij formularz, a my skontaktujemy się z Tobą.",
