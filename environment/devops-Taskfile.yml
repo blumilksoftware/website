@@ -1,0 +1,10 @@
+# https://taskfile.dev
+version: "3.42.1"
+
+silent: true
+
+tasks:
+  generate-age-keys:
+    desc: "Generate age keys"
+    cmds:
+      - cmd: docker run --rm registry.blumilk.pl/internal-public/secops-tools-bin:v1.0.0 age-keygen

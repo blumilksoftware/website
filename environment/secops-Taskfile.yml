@@ -1,0 +1,38 @@
+# https://taskfile.dev
+version: "3.42.1"
+
+silent: true
+
+tasks:
+  encrypt-staging-secrets:
+    desc: "Encrypt app staging secrets"
+    cmds:
+      - task: _encrypt-secrets
+        vars:
+          ENVIRONMENT: staging
+
+  decrypt-staging-secrets:
+    desc: "Decrypt app staging secrets"
+    cmds:
+      - task: _decrypt-secrets
+        vars:
+          ENVIRONMENT: staging
+          AGE_SECRET_KEY: ${SOPS_AGE_STAGING_SECRET_KEY}
+
+  _encrypt-secrets:
+    internal: true
+    cmds:
+      - cmd: echo "Encrypting {{ .ENVIRONMENT }} secrets"
+      - cmd: |
+          docker compose exec --user $CURRENT_USER_ID --workdir /application/environment/.deployment/{{ .ENVIRONMENT }} $DOCKER_COMPOSE_APP_CONTAINER \
+          sops --encrypt --input-type=dotenv --output-type=dotenv --output .env.{{ .ENVIRONMENT }}.secrets .env.{{ .ENVIRONMENT }}.secrets.decrypted
+      - cmd: echo "Done"
+
+  _decrypt-secrets:
+    internal: true
+    cmds:
+      - cmd: echo "Decrypting {{ .ENVIRONMENT }} secrets"
+      - cmd: |
+          docker compose exec --user $CURRENT_USER_ID --env SOPS_AGE_KEY={{ .AGE_SECRET_KEY }} --workdir /application/environment/.deployment/{{ .ENVIRONMENT }} $DOCKER_COMPOSE_APP_CONTAINER \
+          sops --decrypt --input-type=dotenv --output-type=dotenv --output .env.{{ .ENVIRONMENT }}.secrets.decrypted .env.{{ .ENVIRONMENT }}.secrets
+      - cmd: echo 'Done'
