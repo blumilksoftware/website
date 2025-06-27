@@ -81,4 +81,52 @@ return [
         "message" => "Treść wiadomości",
         "button" => "Wyślij wiadomość",
     ],
+    "erasmus" => [
+        "hero_section" => [
+            "title_1" => "Erasmus",
+            "title_2" => "- case study",
+            "description" => "Kompleksowa platforma do obsługi wymiany międzynarodowej studentów oraz kadry akademickiej. Platforma, która porządkuje i upraszcza każdy etap - od rekrutacji, przez dokumenty aż po komunikację z uczelniami partnerskimi. Wszystko w ramach Erasmus Without Papers.",
+        ],
+        "challenges" => [
+            "title" => "Wyzwania",
+            "description" => "Tradycyjna obsługa wymiany międzynarodowej opiera się na papierowych dokumentach i ręcznych aktualizacjach. Dla uczelni oznacza to nadmiar pracy administracyjnej, ryzyko błędów i brak kontroli nad całym procesem.",
+            "tile_1" => [
+                "title" => "Złożone procesy administracyjne",
+                "description" => "Obsługa wymiany międzynarodowej wymaga współpracy wielu działów, ręcznego uzupełniania dokumentów, koordynacji terminów oraz komunikacji z uczelniami partnerskimi. Brak jednolitego narzędzia sprawia, że każda zmiana wymaga dodatkowego czasu i wysiłku.",
+            ],
+            "tile_2" => [
+                "title" => "Brak automatyzacji i spójności danych",
+                "description" => "Informacje są rozproszone między różnymi systemami. Brakuje jednego źródła prawdy, co utrudnia szybki dostęp do aktualnych danych i generowanie raportów. Automatyzacja nie istnieje lub jest niewystarczająca, przez co wiele działań trzeba powtarzać ręcznie.",
+            ],
+            "tile_3" => [
+                "title" => "Ryzyko błędów manualnych",
+                "description" => "Ręczne przepisywanie danych i obsługa dokumentów zwiększają ryzyko pomyłek. Błędy w danych studentów, terminach czy dokumentacji mogą prowadzić do opóźnień, problemów z finansowaniem oraz niezgodności z wymogami wymiany.",
+            ],
+        ],
+        "features" => [
+            "title" => "Kluczowe funkcjonalności",
+            "description_1" => "Wiemy z czym mierzy się administracja, jak wygląda ochrona danych osobowych, rekrutacja, integracja systemów czy wdrażanie AI. To nie są dla nas „funkcje” – to codzienne wyzwania, które",
+            "description_2" => "rozumiemy i rozwiązujemy.",
+            "tile_1" => "Mobilna obsługa",
+            "tile_2" => "Rekrutacja online",
+            "tile_3" => "Dokumenty i procedury dostępne w formie cyfrowej",
+            "tile_4" => "Baza wiedzy z dostępnymi miejscami wymiany",
+            "tile_5" => "Integracja z systemami wewnętrznymi uczelni",
+            "tile_6" => "Automatyzacja synchronizacji i ujednolicenie procesu",
+        ],
+        "benefits" => [
+            "title_1" => "Korzyści",
+            "title_2" => "dla Twojej uczelni",
+            "description" => "Zyskujesz przejrzystość, oszczędność czasu i pełną kontrolę nad procesem międzynarodowej wymiany akademickiej. Platforma upraszcza pracę administracji, poprawia doświadczenie studentów i zwiększa bezpieczeństwo danych - zgodnie z potrzebami Twojej instytucji.",
+            "tile_1" => "Skrócenie czasu realizacji procesów",
+            "tile_2" => "Wzrost wydajności operacyjnej",
+            "tile_3" => "Redukcja dokumentacji papierowej",
+            "tile_4" => "Zgodność RODO i pełne bezpieczeństwo danych",
+            "tile_5" => "Pełna kontrola nad danymi i dostępami",
+        ],
+        "contact" => [
+            "title" => "Gotowy na transformację cyfrową Twojej uczelni?",
+            "description" => "Szukasz sprawdzonego partnera, który zdigitalizuje obsługę programu Erasmus w Twojej instytucji? Wypełnij formularz, a my skontaktujemy się z Tobą."
+        ]
+    ],
 ];
