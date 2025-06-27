@@ -1,7 +1,7 @@
-@props([ 'title', 'description' => null, 'background' => 'bg-white' ])
+@props([ 'title', 'description' => null])
 
-<div class="{{ $background }} rounded-xl shadow-md px-4 md:px-10 lg:py-8">
-    <div class="{{ $attributes->get('class') }} flex flex-col leading-7 lg:text-xl py-6 w-fit h-full gap-2">
+<div {{ $attributes->merge(['class' => 'rounded-xl shadow-md px-4 md:px-10 lg:py-8']) }}>
+    <div class="flex flex-col leading-7 lg:text-xl py-6 w-fit h-full gap-2">
 
         @if (trim($slot))
             <div class="flex items-center gap-4">

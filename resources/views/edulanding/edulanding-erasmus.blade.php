@@ -51,15 +51,15 @@
             <div class="grid xl:grid-cols-3 gap-4 2xl:gap-12 xl:place-items-stretch">
                 <x-edulanding.tile title="{{ __('edulanding.erasmus.challenges.tile_1.title') }}"
                                    description="{{ __('edulanding.erasmus.challenges.tile_1.description') }}"
-                                   background="bg-edu-light">
+                                   class="bg-edu-light">
                 </x-edulanding.tile>
                 <x-edulanding.tile title="{{ __('edulanding.erasmus.challenges.tile_2.title') }}"
                                    description="{{ __('edulanding.erasmus.challenges.tile_2.description') }}"
-                                   background="bg-edu-gray-light">
+                                   class="bg-edu-gray-light">
                 </x-edulanding.tile>
                 <x-edulanding.tile title="{{ __('edulanding.erasmus.challenges.tile_3.title') }}"
                                    description="{{ __('edulanding.erasmus.challenges.tile_3.description') }}"
-                                   background="bg-edu-light">
+                                   class="bg-edu-light">
                 </x-edulanding.tile>
             </div>
         </div>
@@ -100,7 +100,39 @@
                 </x-edulanding.card>
             </div>
         </div>
-    </section>
+        <section class="relative">
+            <div class="mx-[10%] 2xl:max-w-[1200px] 2xl:mx-auto space-y-10 pt-8 sm:pt-20 lg:pt-40 lg:pb-28 pb-10">
+                <div class="pb-6 flex text-center flex-col items-center gap-y-6">
+                    <div class="text-3xl md:text-5xl lg:text-6xl text-center">
+                        <h2 class="font-semibold text-edu-gray-dark leading-7 md:leading-tight">
+                            <span class="text-edu-normal inline">{{ __("edulanding.erasmus.benefits.title_1") }}</span>
+                            <span class="inline"> {{ __("edulanding.erasmus.benefits.title_2") }} </span>
+                        </h2>
+                    </div>
+                    <div
+                        class="font-light leading-7 text-sm sm:text-md lg:text-lg text-edu-gray max-w-3xl">{{ __("edulanding.erasmus.benefits.description") }}</div>
+                </div>
+                <div class="grid md:grid-cols-2 xl:grid-cols-6 gap-4 2xl:gap-12 xl:place-items-stretch">
+                    <x-edulanding.tile title="{{ __('edulanding.erasmus.benefits.tile_1') }}" class="xl:col-span-2">
+                        <x-edulanding.progress-circle :value="80"/>
+                    </x-edulanding.tile>
+                    <x-edulanding.tile title="{{ __('edulanding.erasmus.benefits.tile_2') }}" class="xl:col-span-2">
+                        <x-edulanding.progress-circle :value="70"/>
+                    </x-edulanding.tile>
+                    <x-edulanding.tile title="{{ __('edulanding.erasmus.benefits.tile_3') }}" class="xl:col-span-2">
+                        <x-edulanding.progress-circle :value="90"/>
+                    </x-edulanding.tile>
+
+                    <x-edulanding.tile title="{{ __('edulanding.erasmus.benefits.tile_4') }}" class="xl:col-span-3">
+                        <x-edulanding.progress-circle :value="100"/>
+                    </x-edulanding.tile>
+                    <x-edulanding.tile title="{{ __('edulanding.erasmus.benefits.tile_5') }}" class="xl:col-span-3">
+                        <x-edulanding.progress-circle :value="100"/>
+                    </x-edulanding.tile>
+                </div>
+
+            </div>
+        </section>
     <x-edulanding.contact-form
         :title="__('edulanding.erasmus.contact.title')"
         :description="__('edulanding.erasmus.contact.description')"
