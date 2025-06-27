@@ -133,7 +133,11 @@
 
             </div>
         </section>
-    <x-edulanding.contact-form
+        <section>
+            <img src="{{ asset('images/edulanding/erasmus-mobile.webp') }}" alt="" class="w-full object-cover h-auto"/>
+        </section>
+
+        <x-edulanding.contact-form
         :title="__('edulanding.erasmus.contact.title')"
         :description="__('edulanding.erasmus.contact.description')"
     />

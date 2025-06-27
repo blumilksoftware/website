@@ -126,7 +126,7 @@ return [
         ],
         "contact" => [
             "title" => "Gotowy na transformację cyfrową Twojej uczelni?",
-            "description" => "Szukasz sprawdzonego partnera, który zdigitalizuje obsługę programu Erasmus w Twojej instytucji? Wypełnij formularz, a my skontaktujemy się z Tobą."
-        ]
+            "description" => "Szukasz sprawdzonego partnera, który zdigitalizuje obsługę programu Erasmus w Twojej instytucji? Wypełnij formularz, a my skontaktujemy się z Tobą.",
+        ],
     ],
 ];
