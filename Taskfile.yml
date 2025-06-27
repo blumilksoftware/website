@@ -1,0 +1,137 @@
+# https://taskfile.dev
+version: "3.42.1"
+
+silent: true
+
+env:
+  COMPOSE_DOCKER_CLI_BUILD: 1
+  DOCKER_BUILDKIT: 1
+  CURRENT_USER_ID:
+    sh: id --user
+  DOCKER_COMPOSE_APP_CONTAINER: app
+  DOCKER_COMPOSE_DATABASE_CONTAINER: database
+
+dotenv:
+  - .env
+
+includes:
+  secops: ./environment/secops-Taskfile.yml
+  devops: ./environment/devops-Taskfile.yml
+
+tasks:
+  default:
+    desc: "List all available tasks"
+    cmds:
+      - task --list-all
+
+  init-project:
+    desc: "Initialize the project"
+    aliases: [init]
+    deps: [run]
+    cmds:
+      - cmd: docker compose exec --user $CURRENT_USER_ID $DOCKER_COMPOSE_APP_CONTAINER composer install
+      - task: _set-app-key
+      - cmd: docker compose exec --user $CURRENT_USER_ID $DOCKER_COMPOSE_APP_CONTAINER php artisan migrate --seed
+      - cmd: docker compose exec --user $CURRENT_USER_ID $DOCKER_COMPOSE_APP_CONTAINER php artisan storage:link
+      - cmd: docker compose exec --user $CURRENT_USER_ID $DOCKER_COMPOSE_APP_CONTAINER npm install
+      - task: create-test-database
+
+  dev:
+    desc: "Run Vite local dev server"
+    deps: [run]
+    cmds:
+      - cmd: docker compose exec --user $CURRENT_USER_ID $DOCKER_COMPOSE_APP_CONTAINER npm run dev
+
+  run-containers:
+    desc: "Run containers"
+    aliases: [run]
+    deps: [build]
+    preconditions:
+      - sh: test -f .env
+        msg: "Please create .env for app."
+    cmds:
+      - cmd: docker compose up --detach
+
+  stop-containers:
+    desc: "Stop containers"
+    aliases: [stop]
+    cmds:
+      - cmd: docker compose stop
+
+  restart-containers:
+    desc: "Restart containers"
+    aliases: [restart]
+    cmds:
+      - task: stop-containers
+      - task: run-containers
+
+  build-containers:
+    desc: "Build containers"
+    aliases: [build]
+    cmds:
+      - cmd: docker compose build --pull
+
+  shell-app:
+    desc: "Enter app shell"
+    aliases: [shell]
+    deps: [run]
+    cmds:
+      - cmd: docker compose exec --user $CURRENT_USER_ID $DOCKER_COMPOSE_APP_CONTAINER bash
+
+  shell-app-root:
+    desc: "Enter app shell as root"
+    aliases: [shell-root]
+    deps: [run]
+    cmds:
+      - cmd: docker compose exec --user root $DOCKER_COMPOSE_APP_CONTAINER bash
+
+  test:
+    desc: "Run tests"
+    deps: [run]
+    cmds:
+      - cmd: docker compose exec --user $CURRENT_USER_ID $DOCKER_COMPOSE_APP_CONTAINER composer test
+
+  fix:
+    desc: "Run fixers"
+    deps: [run]
+    cmds:
+      - cmd: docker compose exec --user $CURRENT_USER_ID $DOCKER_COMPOSE_APP_CONTAINER composer fix
+
+  analyse:
+    desc: "Run composer analyse"
+    deps: [run]
+    cmds:
+      - cmd: docker compose exec --user $CURRENT_USER_ID $DOCKER_COMPOSE_APP_CONTAINER composer analyse
+
+  type-check:
+    desc: "Run npm type-check"
+    deps: [run]
+    cmds:
+      - cmd: docker compose exec --user $CURRENT_USER_ID $DOCKER_COMPOSE_APP_CONTAINER npm run type-check
+
+  queue:
+    desc: "Run queue:work"
+    deps: [run]
+    cmds:
+      - cmd: docker compose exec --user $CURRENT_USER_ID $DOCKER_COMPOSE_APP_CONTAINER php artisan queue:work
+
+  create-test-database:
+    desc: "Create test database"
+    deps: [run]
+    aliases: [create-test-db]
+    vars:
+      TEST_DB_NAME: blumilk-website-test
+    cmds:
+      - cmd: docker compose exec $DOCKER_COMPOSE_DATABASE_CONTAINER bash -c "createdb --username=$DB_USERNAME {{ .TEST_DB_NAME }} && echo 'Created database for tests ({{ .TEST_DB_NAME }}).'"
+        ignore_error: true
+
+  _set-app-key:
+    desc: "Create APP_KEY if not set"
+    internal: true
+    cmds:
+      - |
+        APP_KEY_VALUE=$(grep APP_KEY .env | cut --delimiter '=' --fields 2-)
+        if [ -z "${APP_KEY_VALUE}" ]; then
+          echo "APP_KEY is not set. Creating:"
+          docker compose exec $DOCKER_COMPOSE_APP_CONTAINER php artisan key:generate
+        fi

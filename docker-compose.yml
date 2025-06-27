@@ -1,5 +1,5 @@
 networks:
-    website-dev:
+    website-local:
         driver: bridge
     traefik-proxy-blumilk-local-environment:
         external: true
@@ -13,18 +13,15 @@ volumes:
 services:
     app:
         build:
-            context: ./environment/dev/app
-            dockerfile: Dockerfile
+            context: .
+            dockerfile: environment/.docker/app/Dockerfile
+            target: local
             args:
                 - INSTALL_XDEBUG=${DOCKER_INSTALL_XDEBUG:-true}
                 - USER_ID=${DOCKER_HOST_USER_ID:-1000}
         labels:
             - "traefik.enable=true"
             - "traefik.blumilk.local.environment=true"
-            # HTTP
-            - "traefik.http.routers.website-http-router.rule=Host(`${APP_DOCKER_HOST_NAME}`)"
-            - "traefik.http.routers.website-http-router.entrypoints=web"
-            - "traefik.http.routers.website-http-router.service=website-app"
             # HTTPS
             - "traefik.http.routers.website-https-router.rule=Host(`${APP_DOCKER_HOST_NAME}`)"
             - "traefik.http.routers.website-https-router.entrypoints=websecure"
@@ -32,24 +29,23 @@ services:
             - "traefik.http.routers.website-https-router.service=website-app"
             # APP LOADBALANCER
             - "traefik.http.services.website-app.loadbalancer.server.port=80"
-            # VITE DEV SERVER
-            - "traefik.http.routers.website-vite-dev-server-https-router.rule=Host(`${VITE_DEV_SERVER_DOCKER_HOST_NAME}`)"
-            - "traefik.http.routers.website-vite-dev-server-https-router.entrypoints=websecure"
-            - "traefik.http.routers.website-vite-dev-server-https-router.tls=true"
-            - "traefik.http.routers.website-vite-dev-server-https-router.service=website-vite-dev-server"
-            - "traefik.http.services.website-vite-dev-server.loadbalancer.server.port=5173"
-        container_name: website-app-dev
+            # VITE LOCAL SERVER
+            - "traefik.http.routers.website-vite-local-server-https-router.rule=Host(`${VITE_LOCAL_SERVER_DOCKER_HOST_NAME}`)"
+            - "traefik.http.routers.website-vite-local-server-https-router.entrypoints=websecure"
+            - "traefik.http.routers.website-vite-local-server-https-router.tls=true"
+            - "traefik.http.routers.website-vite-local-server-https-router.service=website-vite-local-server"
+            - "traefik.http.services.website-vite-local-server.loadbalancer.server.port=5173"
+        container_name: website-app-local
         working_dir: /application
         volumes:
-            - ./environment/dev/app/nginx.conf:/etc/nginx/nginx.conf:ro
-            - ./environment/dev/app/php.ini:/usr/local/etc/php/conf.d/zzz-overrides.ini:ro
-            - ./environment/dev/app/php-fpm.conf:/usr/local/etc/php-fpm.d/zzz-overrides.conf:ro
-            - ./environment/dev/app/supervisord.conf:/etc/supervisor/custom-supervisord.conf:ro
+            - ./environment/local/app/php.ini:/usr/local/etc/php/conf.d/zzz-overrides.ini:ro
+            - ./environment/local/app/php-fpm.conf:/usr/local/etc/php-fpm.d/zzz-overrides.conf:ro
+            - ./environment/local/app/supervisord.conf:/etc/supervisor/custom-supervisord.conf:ro
             - .:/application
         ports:
             - ${DOCKER_APP_HOST_PORT:-63851}:80
         networks:
-            - website-dev
+            - website-local
             - traefik-proxy-blumilk-local-environment
         restart: unless-stopped
         depends_on:
@@ -58,7 +54,7 @@ services:
 
     database:
         image: postgres:16.3-alpine3.18@sha256:64e18e8fb3e9c9aac89ac590c5dd8306b862478404f76cd9b5f7720d012b4c47
-        container_name: website-db-dev
+        container_name: website-db-local
         environment:
             - POSTGRES_USER=${DB_USERNAME}
             - POSTGRES_PASSWORD=${DB_PASSWORD}
@@ -74,35 +70,35 @@ services:
         volumes:
             - website-postgres-data:/var/lib/postgresql/data
         networks:
-            - website-dev
+            - website-local
         restart: unless-stopped
 
     mailpit:
-      image: axllent/mailpit:v1.24.0@sha256:06cf27fde6ea653c68b5c80f7d5d7280d56d17248e34de4b4ef15f9f4f86662c
-      container_name: website-mailpit-dev
-      labels:
-        - "traefik.enable=true"
-        - "traefik.blumilk.local.environment=true"
-        - "traefik.http.routers.website-mailpit-http-router.rule=Host(`${MAILPIT_DOCKER_HOST_NAME}`)"
-        - "traefik.http.routers.website-mailpit-http-router.entrypoints=web"
-        - "traefik.http.routers.website-mailpit-https-router.rule=Host(`${MAILPIT_DOCKER_HOST_NAME}`)"
-        - "traefik.http.routers.website-mailpit-https-router.entrypoints=websecure"
-        - "traefik.http.routers.website-mailpit-https-router.tls=true"
-        - "traefik.http.services.website-mailpit.loadbalancer.server.port=8025"
-      networks:
-        - website-dev
-        - traefik-proxy-blumilk-local-environment
-      ports:
-        - ${DOCKER_MAILPIT_DASHBOARD_HOST_PORT:-34622}:8025
-      restart: unless-stopped
+        image: axllent/mailpit:v1.24.0@sha256:06cf27fde6ea653c68b5c80f7d5d7280d56d17248e34de4b4ef15f9f4f86662c
+        container_name: website-mailpit-local
+        labels:
+            - "traefik.enable=true"
+            - "traefik.blumilk.local.environment=true"
+            - "traefik.http.routers.website-mailpit-http-router.rule=Host(`${MAILPIT_DOCKER_HOST_NAME}`)"
+            - "traefik.http.routers.website-mailpit-http-router.entrypoints=web"
+            - "traefik.http.routers.website-mailpit-https-router.rule=Host(`${MAILPIT_DOCKER_HOST_NAME}`)"
+            - "traefik.http.routers.website-mailpit-https-router.entrypoints=websecure"
+            - "traefik.http.routers.website-mailpit-https-router.tls=true"
+            - "traefik.http.services.website-mailpit.loadbalancer.server.port=8025"
+        networks:
+            - website-local
+            - traefik-proxy-blumilk-local-environment
+        ports:
+            - ${DOCKER_MAILPIT_DASHBOARD_HOST_PORT:-34622}:8025
+        restart: unless-stopped
 
     redis:
         image: redis:7.2.3-alpine3.18@sha256:3ce533b2b057f74b235d1d8697ae08b1b6ff0a5e16827ea6a377b6365693c7ed
-        container_name: website-redis-dev
+        container_name: website-redis-local
         ports:
             - ${DOCKER_REDIS_HOST_PORT:-63852}:6379
         volumes:
             - website-redis-data:/data
         networks:
-            - website-dev
+            - website-local
         restart: unless-stopped
