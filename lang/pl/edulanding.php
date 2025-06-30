@@ -125,11 +125,11 @@ return [
             "tile_5" => "Pełna kontrola nad danymi i dostępami",
         ],
         "scientific_publication" => [
-          "label" => "Publikacja naukowa",
-          "title" => "System Erasmus",
-          "description_1" => "Efekt ścisłej współpracy z uczelniami",
-          "description_2" => " i pracy opartej na wiedzy akademickiej. Jego rozwiązania zostały przedstawione w publikacji naukowej: Rozszerzone sieci komunikacji na przykładzie integracji z systemem Erasmus Without Papers zaprezentowanej na Międzynarodowej Konferencji Innowacyjne rozwiązania w gospodarce. Transport, Logistics & Production w 2023 roku oraz opublikowane w książce Innovative economy and industry.",
-          "authors" => "autorzy:"
+            "label" => "Publikacja naukowa",
+            "title" => "System Erasmus",
+            "description_1" => "Efekt ścisłej współpracy z uczelniami",
+            "description_2" => " i pracy opartej na wiedzy akademickiej. Jego rozwiązania zostały przedstawione w publikacji naukowej: Rozszerzone sieci komunikacji na przykładzie integracji z systemem Erasmus Without Papers zaprezentowanej na Międzynarodowej Konferencji Innowacyjne rozwiązania w gospodarce. Transport, Logistics & Production w 2023 roku oraz opublikowane w książce Innovative economy and industry.",
+            "authors" => "autorzy:",
         ],
         "security" => [
             "title" => "Bezpieczeństwo w standardzie",
