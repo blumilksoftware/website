@@ -16,7 +16,7 @@
                     <span class="inline">{{ $title }}</span>
                 </h2>
             </div>
-            <p class="leading-6 text-sm sm:text-md text-white max-w-2xl text-center">
+            <p class="leading-7 text-md text-white max-w-3xl text-center">
                 {{ $description }}
             </p>
         </div>

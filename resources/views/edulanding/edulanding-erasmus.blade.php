@@ -33,7 +33,7 @@
                 {{ __("edulanding.erasmus.hero_section.description") }}
             </p>
             <div class="rounded-xl p-2 border border-gray-extra-dark shadow-md mt-2 lg:mt-8">
-                <img src="{{ asset('images/edulanding/erasmus-desktop.webp') }}" alt=""   class="w-full max-w-4xl aspect-[3/2] object-cover mx-auto"/>
+                <img src="{{ asset('images/edulanding/erasmus-desktop.webp') }}" alt="" class="w-full max-w-4xl aspect-[3/2] object-cover mx-auto"/>
             </div>
         </div>
     </section>
@@ -130,11 +130,29 @@
                         <x-edulanding.progress-circle :value="100"/>
                     </x-edulanding.tile>
                 </div>
-
             </div>
         </section>
         <section>
             <img src="{{ asset('images/edulanding/erasmus-mobile.webp') }}" alt="" class="w-full object-cover h-auto"/>
+        </section>
+        <section>
+            <div class="mx-[10%] 2xl:max-w-[1200px] 2xl:mx-auto space-y-10 lg:space-x-32 pt-8 mt-16 md:mt-48 lg:mt-54 flex flex-col lg:flex-row items-stretch">
+                <div class="bg-edu-light rounded-xl px-4 lg:px-16 lg:pt-16 overflow-visible relative">
+                    <img src="{{ asset('images/edulanding/scientific-publication.webp') }}" alt="" class="max-w-[200px] lg:max-w-md -mt-8 lg:-mt-36 mx-auto"/>
+                </div>
+                <div class="flex flex-col gap-y-4 my-auto">
+                 <div class="uppercase text-edu-normal font-bold">{{ __('edulanding.erasmus.scientific_publication.label') }}</div>
+                    <h2 class="text-3xl md:text-5xl lg:text-6xl font-semibold text-edu-gray-dark leading-7 md:leading-tight">{{ __('edulanding.erasmus.scientific_publication.title') }}</h2>
+                <div class="leading-7 text-sm sm:text-lg text-edu-gray lg:max-w-xl">
+                    <span class="font-semibold"> {{ __('edulanding.erasmus.scientific_publication.description_1') }}</span>
+                     {{ __('edulanding.erasmus.scientific_publication.description_2') }}
+                </div>
+                    <a href="https://ludzie.nauka.gov.pl/ln/profiles/krzysztof.rewak.J7BAUthOF6v/publications/866d4a86-ca9d-45ab-a5a1-2b417aeb306c" target="_blank" rel="noopener noreferrer" class="text-edu-normal font-semibold underline hover:text-edu-dark break-all">
+                        https://ludzie.nauka.gov.pl/ln/profiles/krzysztof.rewak.J7BAUthOF6v/publications/866d4a86-ca9d-45ab-a5a1-2b417aeb306c
+                    </a>
+                    <div class="font-semibold text-md lg:text-lg">{{ __('edulanding.erasmus.scientific_publication.authors') }} Krzysztof Rewak, Kamil Piech</div>
+             </div>
+            </div>
         </section>
         <x-edulanding.security-tile
             :title="__('edulanding.erasmus.security.title')"

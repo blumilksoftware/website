@@ -98,15 +98,17 @@
                     </div>
                 </div>
                 <div class="flex items-center mt-2">
-                    <input type="checkbox" name="consents" id="consents"
-                           class="w-4 h-4 rounded-xs border-edu-gray focus:ring-0 checked:text-edu-gray-dark" />
-                    <span class="text-xs font-normal text-edu-gray ml-2">
-                        {{ __('content.contact.policy.part_1') }}
-                        <a href="{{ route('privacy-policy') }}" target="_blank" class="text-edu-gray-dark font-semibold" >
-                         {{ __('content.contact.policy.part_2') }}
-                         </a>
-                         {{ __('content.contact.policy.part_3') }}
-                    </span>
+                    <label for="consents" class="flex items-center">
+                        <input type="checkbox" name="consents" id="consents"
+                               class="w-4 h-4 rounded-xs border-edu-gray focus:ring-0 checked:text-edu-gray-dark" />
+                        <span class="text-xs font-normal text-edu-gray ml-2">
+                            {{ __('content.contact.policy.part_1') }}
+                            <a href="{{ route('privacy-policy') }}" target="_blank" class="text-edu-gray-dark font-semibold" >
+                             {{ __('content.contact.policy.part_2') }}
+                             </a>
+                             {{ __('content.contact.policy.part_3') }}
+                        </span>
+                    </label>
                 </div>
                 <div class="mt-3 flex justify-center">
                     <button type="submit"

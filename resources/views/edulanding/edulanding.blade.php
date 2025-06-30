@@ -206,7 +206,7 @@
     </section>
     <section class="relative z-20">
         <div class="px-4 sm:px-6 lg:px-12 lg:max-w-[1200px] mx-auto space-y-10 py-12 lg:py-48">
-            <div class="flex text-center flex-col items-center gap-y-6 lg:gap-y-12">
+            <div class="flex text-center flex-col items-center gap-y-6 lg:gap-y-10">
                 <div class="text-3xl md:text-5xl lg:text-6xl text-center">
                     <h2 class="font-semibold text-edu-gray-dark leading-7 md:leading-tight">
                         <span class="text-edu-normal inline">{{ __("edulanding.security.title_1") }}</span>
