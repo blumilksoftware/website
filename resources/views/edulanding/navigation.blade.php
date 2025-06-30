@@ -35,11 +35,11 @@
                         x-transition
                         class="absolute left-0 mt-2 w-24 z-50 bg-white shadow-lg/15 rounded-lg px-2 py-3 focus:outline-hidden"
                     >
-                        <a href="#"
+                        <a href="/k1"
                            class="block px-3 py-2 text-sm text-edu-gray hover:text-edu-gray-dark hover:text-blue-normal">
                             K1
                         </a>
-                        <a href="#"
+                        <a href="/erasmus"
                            class="block px-3 py-2 text-sm text-edu-gray hover:text-edu-gray-dark hover:text-blue-normal">
                             Erasmus
                         </a>
@@ -66,15 +66,15 @@
                          :class="{'block': openLang, 'hidden': ! openLang}"
                          class="hidden absolute right-0 z-10 w-full mt-2 origin-top-right bg-white shadow-lg ring-1 ring-gray-200 ring-opacity-5 rounded-lg focus:outline-hidden"
                          tabindex="-1">
-{{--                                            <div class="text-start" role="none">--}}
-{{--                                                @foreach( LocaleConfig::getLocales() as $locale )--}}
-{{--                                                    <a href="{{ route(Route::currentRouteName(), Route::getCurrentRoute()->parameters(), true, $locale) }}"--}}
-{{--                                                       class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-light uppercase"--}}
-{{--                                                       role="menuitem" tabindex="-1">--}}
-{{--                                                        {{ $locale }}--}}
-{{--                                                    </a>--}}
-{{--                                                @endforeach--}}
-{{--                                            </div>--}}
+                            <div class="text-start" role="none">
+                                @foreach( LocaleConfig::getLocales() as $locale )
+                                    <a href="{{ route(Route::currentRouteName(), Route::getCurrentRoute()->parameters(), true, $locale) }}"
+                                       class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-light uppercase"
+                                       role="menuitem" tabindex="-1">
+                                        {{ $locale }}
+                                    </a>
+                                @endforeach
+                            </div>
                     </div>
                 </div>
             </div>
@@ -144,13 +144,13 @@
                          :class="{'block': openLang, 'hidden': ! openLang}"
                          class="hidden">
                         <div class="text-end" role="none">
-{{--                            @foreach( LocaleConfig::getLocales() as $locale )--}}
-{{--                                <a href="{{ route(Route::currentRouteName(), Route::getCurrentRoute()->parameters(), true, $locale) }}"--}}
-{{--                                   class="text-gray-500 block text-lg font-normal pt-4 sm:text-xl hover:text-blue-normal uppercase text-start"--}}
-{{--                                   role="menuitem" tabindex="-1">--}}
-{{--                                    {{ $locale }}--}}
-{{--                                </a>--}}
-{{--                            @endforeach--}}
+                            @foreach( LocaleConfig::getLocales() as $locale )
+                                <a href="{{ route(Route::currentRouteName(), Route::getCurrentRoute()->parameters(), true, $locale) }}"
+                                   class="text-gray-500 block text-lg font-normal pt-4 sm:text-xl hover:text-blue-normal uppercase text-start"
+                                   role="menuitem" tabindex="-1">
+                                    {{ $locale }}
+                                </a>
+                            @endforeach
                         </div>
                     </div>
                 </div>

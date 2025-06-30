@@ -30,4 +30,9 @@ class HomeController extends Controller
     {
         return view("edulanding/edulanding-erasmus");
     }
+
+    public function eduLandingK1(): View
+    {
+        return view("edulanding/edulanding-k1");
+    }
 }

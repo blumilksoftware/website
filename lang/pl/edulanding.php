@@ -140,4 +140,62 @@ return [
             "description" => "Szukasz sprawdzonego partnera, który zdigitalizuje obsługę programu Erasmus w Twojej instytucji? Wypełnij formularz, a my skontaktujemy się z Tobą.",
         ],
     ],
+    "k1" => [
+        "hero_section" => [
+            "title_1" => "K1",
+            "title_2" => "- case study",
+            "description" => "System do zarządzania oprogramowaniem znajdującym się na komputerach uczelnianych na podstawie zdefiniowanych reguł i harmonogramów, z uwzględnieniem licencji oprogramowania.",
+        ],
+        "challenges" => [
+            "title" => "Wyzwania",
+            "description" => "Zarządzanie oprogramowaniem na uczelni to złożone zadanie, wymagające precyzji, bezpieczeństwa i skalowalności. Zmierzyliśmy się z wyzwaniami, które wynikają ze specyfiki środowiska akademickiego - od kontroli dostępu, przez różnorodne potrzeby użytkowników, po pełną automatyzację procesów instalacyjnych.",
+            "tile_1" => [
+                "title" => "Bezpieczeństwo danych",
+                "description" => "Uczelniane sieci komputerowe operują na wrażliwych danych studentów i pracowników. Kluczowe było zaprojektowanie systemu, który skutecznie ogranicza dostęp do zasobów tylko dla uprawnionych osób, z wykorzystaniem nowoczesnych mechanizmów uwierzytelniania i szyfrowania komunikacji.",
+            ],
+            "tile_2" => [
+                "title" => "Implementacja modelu uprawnień i ról",
+                "description" => "Zespół IT, kadra dydaktyczna i administratorzy mają różne potrzeby i poziomy odpowiedzialności. Stworzenie elastycznego modelu ról i uprawnień pozwoliło precyzyjnie określić, kto może instalować, modyfikować lub nadzorować konkretne aplikacje i działania w systemie.",
+            ],
+            "tile_3" => [
+                "title" => "Kontrola i nadzór maszyn klienckich",
+                "description" => "Wyzwanie polegało na zbudowaniu mechanizmu, który pozwala monitorować, zarządzać i autoryzować wyłącznie wybrane komputery uczelniane. Dzięki temu możliwe jest zapewnienie pełnej kontroli nad środowiskiem IT i eliminacja ryzyka wynikającego z niezweryfikowanych komputerów w sieci.",
+            ],
+            "tile_4" => [
+                "title" => "Automatyczna instalacja dostarczanych aplikacji",
+                "description" => "System musiał umożliwiać ciche, bezobsługowe wdrażanie oprogramowania na wielu stanowiskach jednocześnie, bez przerywania pracy użytkownikom i bez potrzeby angażowania działu IT w każdą instalację. Automatyzacja tego procesu znacząco zwiększyła efektywność i skalowalność działania.",
+            ],
+            "tile_5" => [
+                "title" => "Interfejs użytkownika",
+                "description" => "Szczególny nacisk położono na zaprojektowanie interfejsu, który będzie czytelny zarówno dla specjalistów IT, jak i mniej zaawansowanych użytkowników. Złożone operacje zostały ukryte za prostym i logicznym układem graficznym, co znacznie obniżyło próg wejścia i zredukowało liczbę błędów użytkowników.",
+            ],
+        ],
+        "features" => [
+            "title" => "Kluczowe funkcjonalności",
+            "description" => "K1 to narzędzie stworzone z myślą o realnych potrzebach uczelni – elastyczne, skalowalne i gotowe do działania w złożonym środowisku akademickim. Jego funkcjonalności odpowiadają na konkretne problemy działów IT, zapewniając pełną kontrolę nad oprogramowaniem, zgodność z licencjami oraz prostotę zarządzania w codziennej pracy administracyjnej i technicznej.",
+            "tile_1" => "Zarządzanie oprogramowaniem znajdującym się na komputerach",
+            "tile_2" => "Monitorowanie liczby licencji z możliwością blokady ich instalacji ponad ten stan",
+            "tile_3" => "Podział ról pozwalający na zarządzanie użytkownikami i uprawnieniami",
+            "tile_4" => "Synchronizacja danych z zewnątrz, która pobiera listy sal, komputerów i harmonogramów",
+            "tile_5" => "Tworzenie harmonogramu wraz z listą udostępnianych programów",
+        ],
+        "benefits" => [
+            "title_1" => "Korzyści",
+            "title_2" => "dla Twojej uczelni",
+            "description" => "Dzięki wdrożeniu systemu zyskujesz nie tylko porządek i automatyzację, ale też realne oszczędności czasu, zgodność z przepisami i wygodę dla wszystkich użytkowników.",
+            "tile_1" => "Redukcja czasu instalacji oprogramowania",
+            "tile_2" => "Ograniczenie naruszeń licencyjnych",
+            "tile_3" => "Mniej operacji manualnych",
+            "tile_4" => "Wzrost poziomu zabezpieczeń",
+            "tile_5" => "Pełna kontrola nad licencjami i oprogramowaniem",
+        ],
+        "security" => [
+            "title" => "Bezpieczeństwo w standardzie",
+            "description" => "Platforma zapewnia najwyższe standardy bezpieczeństwa. Dane użytkowników są przechowywane zgodnie z RODO, a dostęp do systemu mają wyłącznie uprawnieni użytkownicy.",
+        ],
+        "contact" => [
+            "title" => "Twoja uczelnia potrzebuje transformacji cyfrowej?",
+            "description" => "Szukasz sprawdzonego partnera, który zdigitalizuje Twoją uczelnię? Wypełnij formularz, a my skontaktujemy się z Tobą.",
+        ],
+    ],
 ];

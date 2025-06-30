@@ -20,22 +20,32 @@ $router = app(Router::class);
 /** @var UriTranslator $uri */
 $uri = app(UriTranslator::class);
 
-$router->get("/", HomeController::class)->name("home");
-$router->get($uri->translate("about"), AboutController::class)->name("about");
-$router->get($uri->translate("projects"), [ProjectsController::class, "index"])->name("projects");
-$router->get($uri->translate("projects/{slug}"), [ProjectsController::class, "get"])->name("projects.entry");
-$router->get($uri->translate("career"), [CareerController::class, "index"])->name("career");
-$router->get($uri->translate("career/software-engineer"), [CareerController::class, "softwareEngineerPage"])->name("career.software-engineer");
-$router->get($uri->translate("contact"), [ContactController::class, "index"])->name("contact");
-$router->post($uri->translate("contact"), [ContactController::class, "store"])->name("contact.create");
-$router->get($uri->translate("privacy-policy"), PolicyController::class)->name("privacy-policy");
-$router->get($uri->translate("logo"), LogoController::class)->name("logo");
+$url = config("app.url");
 
-$router->get($uri->translate("news"), [NewsController::class, "index"])->name("news");
-$router->get($uri->translate("news/{slug}"), [NewsController::class, "get"])->name("news.entry");
-$router->get($uri->translate("company-data"), CompanyDataController::class)->name("data");
+$router->domain($url)
+    ->group(function (Router $router) use ($uri): void {
+        $router->get("/", HomeController::class)->name("home");
+        $router->get($uri->translate("about"), AboutController::class)->name("about");
+        $router->get($uri->translate("projects"), [ProjectsController::class, "index"])->name("projects");
+        $router->get($uri->translate("projects/{slug}"), [ProjectsController::class, "get"])->name("projects.entry");
+        $router->get($uri->translate("career"), [CareerController::class, "index"])->name("career");
+        $router->get($uri->translate("career/software-engineer"), [CareerController::class, "softwareEngineerPage"])->name("career.software-engineer");
+        $router->get($uri->translate("contact"), [ContactController::class, "index"])->name("contact");
+        $router->post($uri->translate("contact"), [ContactController::class, "store"])->name("contact.create");
+        $router->get($uri->translate("privacy-policy"), PolicyController::class)->name("privacy-policy");
+        $router->get($uri->translate("logo"), LogoController::class)->name("logo");
 
-$router->get("/edulanding", [HomeController::class, "eduLanding"]);
-$router->get("/edulanding/erasmus", [HomeController::class, "eduLandingErasmus"]);
+        $router->get($uri->translate("news"), [NewsController::class, "index"])->name("news");
+        $router->get($uri->translate("news/{slug}"), [NewsController::class, "get"])->name("news.entry");
+        $router->get($uri->translate("company-data"), CompanyDataController::class)->name("data");
+    });
+
+$router->domain("edulanding.$url")
+    ->name("edu-landing.")
+    ->group(function (Router $router): void {
+        $router->get("/", [HomeController::class, "eduLanding"])->name("home");
+        $router->get("/erasmus", [HomeController::class, "eduLandingErasmus"])->name("erasmus");
+        $router->get("/k1", [HomeController::class, "eduLandingK1"])->name("k1");
+    });
 
 $router->fallback(FallbackController::class);
