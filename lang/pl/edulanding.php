@@ -85,7 +85,7 @@ return [
         "hero_section" => [
             "title_1" => "Erasmus",
             "title_2" => "- case study",
-            "description" => "Kompleksowa platforma do obsługi wymiany międzynarodowej studentów oraz kadry akademickiej. Platforma, która porządkuje i upraszcza każdy etap - od rekrutacji, przez dokumenty aż po komunikację z uczelniami partnerskimi. Wszystko w ramach Erasmus Without Papers.",
+            "description" => "Kompleksowa platforma do obsługi wymiany międzynarodowej studentów oraz kadry akademickiej. Platforma, która porządkuje i upraszcza każdy etap - od rekrutacji, przez dokumenty aż po komunikację z uczelniami partnerskimi. Wszystko w ramach Erasmus Without Papers (EWP).",
         ],
         "challenges" => [
             "title" => "Wyzwania",
@@ -195,7 +195,7 @@ return [
         ],
         "contact" => [
             "title" => "Twoja uczelnia potrzebuje transformacji cyfrowej?",
-            "description" => "Szukasz sprawdzonego partnera, który zdigitalizuje Twoją uczelnię? Wypełnij formularz, a my skontaktujemy się z Tobą.",
+            "description" => "Szukasz sprawdzonego partnera, który zdigitalizuje Twoją uczelnię? Wypełnij formularz, a my skontaktujemy się z Tobą.",
         ],
     ],
 ];
