@@ -145,7 +145,7 @@
             <img src="{{ asset('images/edulanding/k1-laptop.webp') }}" alt="" class="w-full object-cover h-auto"/>
         </section>
         <section class="mt-8 lg:mt-48 lg:mb-8">
-            <img src="{{ asset('images/edulanding/k1-sitemap.webp') }}" alt="" class="h-auto mx-auto"/>
+            <img src="{{ asset('images/edulanding/k1-architecture-'.$locale.'.webp') }}" alt="" class="h-auto mx-auto"/>
         </section>
 
         <x-edulanding.security-tile

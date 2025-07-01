@@ -41,7 +41,7 @@ $router->domain($url)
     });
 
 $router->domain("edulanding.$url")
-    ->name("edu-landing.")
+    ->name("edulanding.")
     ->group(function (Router $router): void {
         $router->get("/", [HomeController::class, "eduLanding"])->name("home");
         $router->get("/erasmus", [HomeController::class, "eduLandingErasmus"])->name("erasmus");

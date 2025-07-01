@@ -33,6 +33,9 @@ class HomeController extends Controller
 
     public function eduLandingK1(): View
     {
-        return view("edulanding/edulanding-k1");
+        $locale = app()->getLocale();
+
+        return view("edulanding/edulanding-k1")
+            ->with("locale", $locale);
     }
 }
