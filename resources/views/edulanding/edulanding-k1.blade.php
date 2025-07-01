@@ -24,7 +24,7 @@
 <div class="relative z-20">
     @include('edulanding.navigation')
     <section class="relative flex flex-col xl:flex-row items-center justify-center pt-8 xl:pt-24 pb-16 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:gap-6">
-        <div class="text-4xl flex flex-col md:text-5xl lg:text-6xl text-center justify-center items-center gap-y-3 lg:gap-y-6">
+        <div class="text-4xl flex flex-col md:text-5xl lg:text-6xl text-center justify-center items-center gap-y-4 lg:gap-y-6">
             <h2 class="font-semibold text-edu-gray-dark leading-7 md:leading-tight">
                 <span class="text-k1 inline">{{ __("edulanding.k1.hero_section.title_1") }}</span>
                 <span class="inline"> {{ __("edulanding.k1.hero_section.title_2") }} </span>

@@ -116,7 +116,7 @@
                 <div id="mobileCaseStudiesMenu"
                      :class="{'block': openCaseStudies, 'hidden': ! openCaseStudies}"
                      class="hidden">
-                    <div class="font-normal">
+                    <div class="font-normal -mt-4">
                         <a href="{{ route("edulanding.k1") }}"
                            class="block px-3 py-4 text-edu-gray hover:text-edu-gray-dark">
                             K1
@@ -146,7 +146,7 @@
                     @endforeach
                     <div id="mobileLocalesMenu"
                          :class="{'block': openLang, 'hidden': ! openLang}"
-                         class="hidden">
+                         class="hidden mt-2">
                         <div class="text-end" role="none">
                             @foreach( LocaleConfig::getLocales() as $locale )
                                 <a href="{{ route(Route::currentRouteName(), Route::getCurrentRoute()->parameters(), true, $locale) }}"
