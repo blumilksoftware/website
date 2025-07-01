@@ -13,7 +13,7 @@
                 </span>
             </div>
         @else
-            <span class="font-semibold text-sm sm:text-md lg:text-lg text-tile-title block xl:max-w-50">
+            <span class="font-semibold text-sm sm:text-md lg:text-lg text-tile-title block xl:max-w-55">
                 {!! $title !!}
             </span>
         @endif

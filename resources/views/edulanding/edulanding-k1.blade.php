@@ -67,11 +67,11 @@
                 <div class="flex flex-col xl:flex-row xl:justify-center gap-4 2xl:gap-12">
                    <x-edulanding.tile title="{{ __('edulanding.k1.challenges.tile_4.title') }}"
                                       description="{{ __('edulanding.k1.challenges.tile_4.description') }}"
-                                      class="bg-k1-light xl:max-w-[30%]">
+                                      class="bg-k1-light xl:max-w-[32%]">
                    </x-edulanding.tile>
                    <x-edulanding.tile title="{{ __('edulanding.k1.challenges.tile_5.title') }}"
                                       description="{{ __('edulanding.k1.challenges.tile_5.description') }}"
-                                      class="bg-edu-gray-light xl:max-w-[30%]">
+                                      class="bg-edu-gray-light xl:max-w-[32%]">
                    </x-edulanding.tile>
                </div>
             </div>
