@@ -49,27 +49,31 @@
                 <div
                     class="font-light leading-7 text-sm sm:text-md lg:text-lg text-edu-gray max-w-4xl">{{ __("edulanding.k1.challenges.description") }}</div>
             </div>
-            <div class="grid xl:grid-cols-3 gap-4 2xl:gap-12 xl:place-items-stretch">
-                <x-edulanding.tile title="{{ __('edulanding.k1.challenges.tile_1.title') }}"
-                                   description="{{ __('edulanding.k1.challenges.tile_1.description') }}"
-                                   class="bg-k1-light">
-                </x-edulanding.tile>
-                <x-edulanding.tile title="{{ __('edulanding.k1.challenges.tile_2.title') }}"
-                                   description="{{ __('edulanding.k1.challenges.tile_2.description') }}"
-                                   class="bg-edu-gray-light">
-                </x-edulanding.tile>
-                <x-edulanding.tile title="{{ __('edulanding.k1.challenges.tile_3.title') }}"
-                                   description="{{ __('edulanding.k1.challenges.tile_3.description') }}"
-                                   class="bg-k1-light">
-                </x-edulanding.tile>
-                <x-edulanding.tile title="{{ __('edulanding.k1.challenges.tile_4.title') }}"
-                                   description="{{ __('edulanding.k1.challenges.tile_4.description') }}"
-                                   class="bg-k1-light">
-                </x-edulanding.tile>
-                <x-edulanding.tile title="{{ __('edulanding.k1.challenges.tile_5.title') }}"
-                                   description="{{ __('edulanding.k1.challenges.tile_5.description') }}"
-                                   class="bg-edu-gray-light">
-                </x-edulanding.tile>
+            <div class="flex flex-col gap-4 2xl:gap-12">
+                <div class="flex flex-col xl:flex-row xl:justify-between gap-4 2xl:gap-12">
+                    <x-edulanding.tile title="{{ __('edulanding.k1.challenges.tile_1.title') }}"
+                                       description="{{ __('edulanding.k1.challenges.tile_1.description') }}"
+                                       class="bg-k1-light xl:w-1/3">
+                    </x-edulanding.tile>
+                    <x-edulanding.tile title="{{ __('edulanding.k1.challenges.tile_2.title') }}"
+                                       description="{{ __('edulanding.k1.challenges.tile_2.description') }}"
+                                       class="bg-edu-gray-light xl:w-1/3">
+                    </x-edulanding.tile>
+                    <x-edulanding.tile title="{{ __('edulanding.k1.challenges.tile_3.title') }}"
+                                       description="{{ __('edulanding.k1.challenges.tile_3.description') }}"
+                                       class="bg-k1-light xl:w-1/3">
+                    </x-edulanding.tile>
+                </div>
+                <div class="flex flex-col xl:flex-row xl:justify-center gap-4 2xl:gap-12">
+                   <x-edulanding.tile title="{{ __('edulanding.k1.challenges.tile_4.title') }}"
+                                      description="{{ __('edulanding.k1.challenges.tile_4.description') }}"
+                                      class="bg-k1-light xl:max-w-[30%]">
+                   </x-edulanding.tile>
+                   <x-edulanding.tile title="{{ __('edulanding.k1.challenges.tile_5.title') }}"
+                                      description="{{ __('edulanding.k1.challenges.tile_5.description') }}"
+                                      class="bg-edu-gray-light xl:max-w-[30%]">
+                   </x-edulanding.tile>
+               </div>
             </div>
         </div>
     </section>
