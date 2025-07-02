@@ -18,7 +18,6 @@
         "josiasmontag/laravel-recaptchav3": "^1.0",
         "laravel/framework": "^12.17.0",
         "laravel/sanctum": "^4.0.8",
-        "laravel/telescope": "^5.9",
         "laravel/tinker": "^2.10.1",
         "mvenghaus/filament-plugin-translatable-inline": "^3.0.8",
         "nesbot/carbon": "^3.8.6",
