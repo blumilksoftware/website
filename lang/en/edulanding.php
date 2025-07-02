@@ -76,8 +76,8 @@ return [
     "contact" => [
         "title" => "Let’s talk about your project",
         "description" => "Are you looking for a trusted IT partner who truly understands the realities of the education sector, not just one who claims to? Fill out the contact form and we'll contact you to discuss a solution precisely aligned with your institution's needs.",
-        "name" => "Full name",
-        "company" => "Company name",
+        "full_name" => "Full name",
+        "company_name" => "Company name",
         "email" => "Email",
         "message" => "Message",
         "button" => "Send message",

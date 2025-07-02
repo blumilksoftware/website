@@ -100,10 +100,10 @@
                 </button>
             </div>
             <div class="font-semibold flex flex-col gap-8 text-lg sm:text-xl text-edu-gray">
-                <a href="#key_benefits" class="hover:text-edu-gray-dark mt-4">
+                <a href="#key_benefits" class="hover:text-edu-gray-dark mt-4" @click="openMobileMenu = false">
                     {{ __("edulanding.navigation.key_benefits") }}
                 </a>
-                <a href="#our_solutions" class="hover:text-edu-gray-dark">
+                <a href="#our_solutions" class="hover:text-edu-gray-dark" @click="openMobileMenu = false">
                     {{ __("edulanding.navigation.our_solutions") }}
                 </a>
                 <button type="button"
@@ -127,7 +127,7 @@
                         </a>
                     </div>
                 </div>
-                <a href="#contact" class="hover:text-edu-gray-dark">
+                <a href="#contact" class="hover:text-edu-gray-dark" @click="openMobileMenu = false">
                     {{ __("edulanding.navigation.contact") }}
                 </a>
             </div>

@@ -136,13 +136,13 @@
                     title="{{ __('edulanding.case_studies.k1.title') }}"
                     description="{{ __('edulanding.case_studies.k1.description') }}"
                     image="{{ asset('images/edulanding/k1.webp') }}"
-                    url="#"
+                    url="{{ route('edulanding.k1') }}"
                 />
                 <x-edulanding.card-with-image
                     title="{{ __('edulanding.case_studies.erasmus.title') }}"
                     description="{{ __('edulanding.case_studies.erasmus.description') }}"
                     image="{{ asset('images/edulanding/erasmus.webp') }}"
-                    url="#"
+                    url="{{ route('edulanding.erasmus') }}"
                 />
             </div>
         </div>

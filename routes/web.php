@@ -6,6 +6,7 @@ use Blumilk\Website\Http\Controllers\AboutController;
 use Blumilk\Website\Http\Controllers\CareerController;
 use Blumilk\Website\Http\Controllers\CompanyDataController;
 use Blumilk\Website\Http\Controllers\ContactController;
+use Blumilk\Website\Http\Controllers\EdulandingContactController;
 use Blumilk\Website\Http\Controllers\HomeController;
 use Blumilk\Website\Http\Controllers\LogoController;
 use Blumilk\Website\Http\Controllers\NewsController;
@@ -46,6 +47,7 @@ $router->domain("edulanding.$url")
         $router->get("/", [HomeController::class, "eduLanding"])->name("home");
         $router->get("/erasmus", [HomeController::class, "eduLandingErasmus"])->name("erasmus");
         $router->get("/k1", [HomeController::class, "eduLandingK1"])->name("k1");
+        $router->post("/contact", [EdulandingContactController::class, "store"])->name("contact.create");
     });
 
 $router->fallback(FallbackController::class);

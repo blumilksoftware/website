@@ -26,45 +26,45 @@
             <p class="leading-6 text-sm sm:text-md text-edu-gray-dark max-w-2xl text-center">
                 {{ $description }}
             </p>
-            <form action="#" method="POST" class="flex flex-col gap-y-4 justify-between mt-2">
+            <form action="{{ route('edulanding.contact.create') }}" method="POST" class="flex flex-col gap-y-4 justify-between mt-2">
                 @csrf
                 <input type="hidden" name="g-recaptcha-response" id="{{ $fieldId ?? 'g-recaptcha-response' }}"/>
                 <div class="grid gap-y-3">
                     <div class="flex flex-col md:flex-row gap-y-2 lg:gap-x-4">
-                        <div class="relative flex-1">
+                        <div class="relative flex-1 text-left">
                             <input
-                                name="name"
-                                id="name"
-                                value="{{ old('name') }}"
-                                placeholder="{{ __('edulanding.contact.name') }}"
+                                name="full_name"
+                                id="full_name"
+                                value="{{ old('full_name') }}"
+                                placeholder="{{ __('edulanding.contact.full_name') }}"
                                 class="block w-full h-12 pl-10 pr-3 border-0 px-3.5 py-2 text-edu-gray-dark text-md ring-1 ring-inset ring-gray-extra-dark placeholder:text-edu-gray focus:ring-1 focus:ring-edu-gray sm:text-sm sm:leading-6 rounded-2xl shadow-sm/5"
                             />
                             <span
-                                class="absolute left-3 top-1/2 -translate-y-1/2 text-edu-gray-dark pointer-events-none">
+                                class="absolute left-3 top-3 text-edu-gray-dark pointer-events-none">
                                     <i class="ti ti-user text-lg"></i>
                             </span>
-                            @error('name')
+                            @error('full_name')
                             <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
                             @enderror
                         </div>
-                        <div class="relative flex-1">
+                        <div class="relative flex-1 text-left">
                             <input
-                                name="company"
-                                id="company"
-                                value="{{ old('company') }}"
-                                placeholder="{{ __('edulanding.contact.company') }}"
+                                name="company_name"
+                                id="company_name"
+                                value="{{ old('company_name') }}"
+                                placeholder="{{ __('edulanding.contact.company_name') }}"
                                 class="block w-full h-12 pl-10 pr-3 border-0 px-3.5 py-2 text-edu-gray-dark text-md ring-1 ring-inset ring-gray-extra-dark placeholder:text-edu-gray focus:ring-1 focus:ring-edu-gray sm:text-sm sm:leading-6 rounded-2xl shadow-sm/5"
                             />
                             <span
-                                class="absolute left-3 top-1/2 -translate-y-1/2 text-edu-gray-dark pointer-events-none">
+                                class="absolute left-3 top-3 text-edu-gray-dark pointer-events-none">
                                     <i class="ti ti-building text-lg"></i>
                             </span>
-                            @error('company')
+                            @error('company_name')
                             <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
                             @enderror
                         </div>
                     </div>
-                    <div class="relative flex-1">
+                    <div class="relative flex flex-col text-left">
                         <input
                             name="email"
                             id="email"
@@ -73,14 +73,14 @@
                             class="block w-full h-12 pl-10 pr-3 border-0 px-3.5 py-2 text-edu-gray-dark text-md ring-1 ring-inset ring-gray-extra-dark placeholder:text-edu-gray focus:ring-1 focus:ring-edu-gray sm:text-sm sm:leading-6 rounded-2xl shadow-sm/5"
                         />
                         <span
-                            class="absolute left-3 top-1/2 -translate-y-1/2 text-edu-gray-dark pointer-events-none">
+                            class="absolute left-3 top-3 text-edu-gray-dark pointer-events-none">
                                     <i class="ti ti-at text-lg"></i>
                             </span>
                         @error('email')
                         <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
                         @enderror
                     </div>
-                    <div class="relative">
+                    <div class="relative text-left">
                       <textarea
                           name="message"
                           id="message"
@@ -97,7 +97,7 @@
                         @enderror
                     </div>
                 </div>
-                <div class="flex items-center mt-2">
+                <div class="flex flex-col text-left mt-2">
                     <label for="consents" class="flex items-center">
                         <input type="checkbox" name="consents" id="consents"
                                class="w-4 h-4 rounded-xs border-edu-gray focus:ring-0 checked:text-edu-gray-dark" />
@@ -109,6 +109,9 @@
                              {{ __('content.contact.policy.part_3') }}
                         </span>
                     </label>
+                    @error('consents')
+                    <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
+                    @enderror
                 </div>
                 <div class="mt-3 flex justify-center">
                     <button type="submit"
@@ -123,3 +126,13 @@
         </div>
     </div>
 </section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        grecaptcha.ready(function() {
+            grecaptcha.execute('{{ $siteKey }}', {action: 'contact'}).then(function(token) {
+                document.getElementById('{{ $fieldId }}').value = token;
+            });
+        });
+    })
+</script>

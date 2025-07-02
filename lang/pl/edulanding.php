@@ -75,8 +75,8 @@ return [
     "contact" => [
         "title" => "Porozmawiajmy o Twoim projekcie",
         "description" => "Szukasz zaufanego partnera IT, który zna realia edukacji, a nie tylko deklaruje to w ofercie? Wypełnij formularz kontaktowy - skontaktujemy się z Tobą i porozmawiamy o rozwiązaniu idealnie dopasowanym do potrzeb Twojej instytucji.",
-        "name" => "Imię i nazwisko",
-        "company" => "Nazwa firmy",
+        "full_name" => "Imię i nazwisko",
+        "company_name" => "Nazwa firmy",
         "email" => "E-mail",
         "message" => "Treść wiadomości",
         "button" => "Wyślij wiadomość",

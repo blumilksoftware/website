@@ -2,10 +2,12 @@
 
 declare(strict_types=1);
 
+use App\Providers\TelescopeServiceProvider;
 use Blumilk\Website\Providers\AppServiceProvider;
 use Blumilk\Website\Providers\Filament\AdminPanelProvider;
 
 return [
-    AdminPanelProvider::class,
+    TelescopeServiceProvider::class,
     AppServiceProvider::class,
+    AdminPanelProvider::class,
 ];
