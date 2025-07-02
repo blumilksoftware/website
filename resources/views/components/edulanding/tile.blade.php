@@ -20,7 +20,7 @@
 
         <div class="text-left mt-2">
             <div @class([
-                "font-normal text-tile-content text-xs sm:text-sm leading-relaxed" => isset($description),
+                "font-normal text-edu-gray text-xs sm:text-sm leading-relaxed" => isset($description),
                 "hidden" => !isset($description)
             ])>
                 {!! $description !!}
