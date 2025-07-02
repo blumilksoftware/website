@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 return [
     "meta" => [
-      "title" => "Edulanding",
-      "description" => "Edulanding — rozwiązania cyfrowe dla nowoczesnej edukacji. Dla szkół, uczelni i instytucji. Prosto. Skutecznie. Bezpiecznie.",
+        "title" => "Edulanding",
+        "description" => "Edulanding — rozwiązania cyfrowe dla nowoczesnej edukacji. Dla szkół, uczelni i instytucji. Prosto. Skutecznie. Bezpiecznie.",
     ],
     "navigation" => [
         "key_benefits" => "Korzyści",
