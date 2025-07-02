@@ -1,6 +1,13 @@
 @php
     use Illuminate\Support\Facades\Route;
+
     $current = substr(Route::currentRouteName(), 3);
+
+    function sectionLink(string $anchor): string {
+        return Route::currentRouteName() === 'edulanding.home'
+            ? "#{$anchor}"
+            : route('edulanding.home') . "#{$anchor}";
+    }
 @endphp
 
 <nav x-data="{ openLang: false, openMobileMenu: false, openCaseStudies: false}"
@@ -17,10 +24,10 @@
         </div>
         <div class="tablet:flex hidden justify-end items-center text-base text-edu-gray">
             <div class="font-normal flex items-center text-center gap-2">
-                <a href="#key_benefits" class="hover:text-edu-gray-dark px-4">
+                <a href="{{ sectionLink('key_benefits') }}" class="hover:text-edu-gray-dark px-4">
                     {{ __("edulanding.navigation.key_benefits") }}
                 </a>
-                <a href="#our_solutions" class="hover:text-edu-gray-dark px-4">
+                <a href="{{ sectionLink('our_solutions') }}" class="hover:text-edu-gray-dark px-4">
                     {{ __("edulanding.navigation.our_solutions") }}
                 </a>
                 <div class="relative text-start">
@@ -66,15 +73,15 @@
                          :class="{'block': openLang, 'hidden': ! openLang}"
                          class="hidden absolute right-0 z-10 w-full mt-2 origin-top-right bg-white shadow-lg ring-1 ring-gray-200 ring-opacity-5 rounded-lg focus:outline-hidden"
                          tabindex="-1">
-                            <div class="text-start" role="none">
-                                @foreach( LocaleConfig::getLocales() as $locale )
-                                    <a href="{{ route(Route::currentRouteName(), Route::getCurrentRoute()->parameters(), true, $locale) }}"
-                                       class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-light uppercase"
-                                       role="menuitem" tabindex="-1">
-                                        {{ $locale }}
-                                    </a>
-                                @endforeach
-                            </div>
+                        <div class="text-start" role="none">
+                            @foreach( LocaleConfig::getLocales() as $locale )
+                                <a href="{{ route(Route::currentRouteName(), Route::getCurrentRoute()->parameters(), true, $locale) }}"
+                                   class="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-light uppercase"
+                                   role="menuitem" tabindex="-1">
+                                    {{ $locale }}
+                                </a>
+                            @endforeach
+                        </div>
                     </div>
                 </div>
             </div>
@@ -100,17 +107,17 @@
                 </button>
             </div>
             <div class="font-semibold flex flex-col gap-8 text-lg sm:text-xl text-edu-gray">
-                <a href="#key_benefits" class="hover:text-edu-gray-dark mt-4" @click="openMobileMenu = false">
+                <a href="{{ sectionLink('key_benefits') }}" class="hover:text-edu-gray-dark mt-4" @click="openMobileMenu = false">
                     {{ __("edulanding.navigation.key_benefits") }}
                 </a>
-                <a href="#our_solutions" class="hover:text-edu-gray-dark" @click="openMobileMenu = false">
+                <a href="{{ sectionLink('our_solutions') }}" class="hover:text-edu-gray-dark" @click="openMobileMenu = false">
                     {{ __("edulanding.navigation.our_solutions") }}
                 </a>
                 <button type="button"
                         @click="openCaseStudies = ! openCaseStudies"
                         class="flex w-full h-full justify-between items-center place-content-center text-lg sm:text-xl font-semibold text-edu-gray hover:text-edu-gray-dark"
                         id="mobileCaseStudiesButton" aria-expanded="true" aria-haspopup="true">
-                     {{ __("edulanding.navigation.case_studies") }}
+                    {{ __("edulanding.navigation.case_studies") }}
                     <i :class="{'rotate-0': openCaseStudies, 'rotate-180': ! openCaseStudies}" class="ti ti-chevron-up"></i>
                 </button>
                 <div id="mobileCaseStudiesMenu"
