@@ -3,13 +3,16 @@
 declare(strict_types=1);
 
 return [
+    "meta" => [
+        "title" => "Edulanding",
+        "description" => "EduLanding — Comprehensive digital solutions for modern education. Supporting schools, universities, and educational institutions. Simple. Effective. Secure.",
+    ],
     "navigation" => [
         "key_benefits" => "Key benefits",
         "our_solutions" => "Our solutions",
         "case_studies" => "Case studies",
         "contact" => "Contact",
     ],
-
     "hero_section" => [
         "title_1" => "Driving",
         "title_2" => "the digital transformation",
@@ -83,6 +86,10 @@ return [
         "button" => "Send message",
     ],
     "erasmus" => [
+        "meta" => [
+            "title" => "Erasmus",
+            "description" => "A comprehensive platform for managing international student and staff exchanges, fully integrated with Erasmus Without Papers (EWP).",
+        ],
         "hero_section" => [
             "title_1" => "Erasmus",
             "title_2" => "- case study",
@@ -142,6 +149,10 @@ return [
         ],
     ],
     "k1" => [
+        "meta" => [
+            "title" => "K1",
+            "description" => "A software management system for university computers with license, rule, and schedule control.",
+        ],
         "hero_section" => [
             "title_1" => "K1",
             "title_2" => "- case study",

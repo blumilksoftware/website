@@ -3,6 +3,10 @@
 declare(strict_types=1);
 
 return [
+    "meta" => [
+      "title" => "Edulanding",
+      "description" => "Edulanding — rozwiązania cyfrowe dla nowoczesnej edukacji. Dla szkół, uczelni i instytucji. Prosto. Skutecznie. Bezpiecznie.",
+    ],
     "navigation" => [
         "key_benefits" => "Korzyści",
         "our_solutions" => "Co oferujemy?",
@@ -82,6 +86,10 @@ return [
         "button" => "Wyślij wiadomość",
     ],
     "erasmus" => [
+        "meta" => [
+            "title" => "Erasmus",
+            "description" => "Kompleksowa platforma do zarządzania międzynarodową mobilnością studentów i kadry, w pełni zintegrowana z Erasmus Without Papers (EWP).",
+        ],
         "hero_section" => [
             "title_1" => "Erasmus",
             "title_2" => "- case study",
@@ -141,6 +149,10 @@ return [
         ],
     ],
     "k1" => [
+        "meta" => [
+            "title" => "K1",
+            "description" => "System do zarządzania oprogramowaniem na komputerach uczelnianych z uwzględnieniem licencji, reguł i harmonogramów.",
+        ],
         "hero_section" => [
             "title_1" => "K1",
             "title_2" => "- case study",
