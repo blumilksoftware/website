@@ -3,8 +3,12 @@
     $siteKey = config("recaptchav3.sitekey");
 @endphp
 
-
 <section class="relative overflow-hidden" id="contact">
+
+    @if( Session('success') )
+        <x-toast type="success" position="top-right">{{ Session::get('success') }}</x-toast>
+    @endif
+
     <img src="{{ asset('images/edulanding/plus-icons.svg') }}"
          class="absolute z-0 hidden xl:block top-20 -left-27" alt=""/>
     <img src="{{ asset('images/edulanding/plus-icons.svg') }}"
