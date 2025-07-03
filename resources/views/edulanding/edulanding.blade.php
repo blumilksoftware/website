@@ -35,8 +35,11 @@
                     </h2>
                 </div>
                 <div class="flex flex-col items-center xl:items-start">
-                    <p class="text-sm sm:text-lg text-center xl:text-start pb-8 tablet:pb-16 text-edu-gray">
-                        <span class="leading-7"> {{ __("edulanding.hero_section.description") }}</span>
+                    <p class="text-sm sm:text-lg text-center xl:text-start pb-8 tablet:pb-16 text-edu-gray leading-7">
+                        <span class=""> {{ __("edulanding.hero_section.description_1") }}</span>
+                        <span class="font-semibold">
+                    {{ __("edulanding.hero_section.description_2") }}
+                    </span>
                     </p>
                     <x-edulanding.button href="#contact"
                                          class="w-full sm:w-auto py-3 px-9">{{ __("edulanding.hero_section.button")}}
@@ -53,7 +56,7 @@
             </div>
         </section>
         <section class="relative">
-            <div class="mx-[10%] 2xl:max-w-[1200px] 2xl:mx-auto space-y-10 pt-8 sm:pt-20 lg:pt-40 lg:pb-28 pb-10">
+            <div class="mx-[10%] 2xl:max-w-[1200px] 2xl:mx-auto space-y-10 pt-8 sm:pt-20 lg:pt-28 lg:pb-28 pb-10">
                 <div class="pb-6 flex text-center flex-col items-center gap-y-6">
                     <div class="text-3xl md:text-5xl lg:text-6xl text-center">
                         <h2 class="font-semibold text-edu-gray-dark leading-7 md:leading-tight">
@@ -95,7 +98,7 @@
                     <span class="font-semibold">
                     {{ __("edulanding.our_solutions.description_2") }}
                     </span>
-                    </p>
+                 </p>
             </div>
             <div class="grid md:grid-cols-2 gap-4 xl:place-items-stretch max-w-4xl mx-auto lg:mt-20">
                 <x-edulanding.card title="{{ __('edulanding.our_solutions.tile_1') }}">
@@ -151,7 +154,7 @@
     </section>
     <section class="relative">
         <div class="px-4 sm:px-6 lg:px-12 lg:max-w-[1200px] mx-auto space-y-10 lg:space-y-24 py-8">
-            <div class="absolute -z-10 hidden lg:block top-12">
+            <div class="absolute -z-10 hidden xl:block bottom-26 left-90">
                 <img src="{{ asset('images/edulanding/plus-icons.svg') }}"
                      aria-hidden="true"/>
             </div>
@@ -215,7 +218,7 @@
                         <span class="inline"> {{ __("edulanding.security.title_2") }} </span>
                     </h2>
                 </div>
-                <p class="leading-7 text-sm sm:text-lg text-edu-gray max-w-2xl text-center">
+                <p class="leading-7 text-sm sm:text-lg lg:text-xl text-edu-gray max-w-2xl text-center">
                     {{ __("edulanding.security.description") }}
                 </p>
             </div>

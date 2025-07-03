@@ -17,7 +17,8 @@ return [
         "title_1" => "Driving",
         "title_2" => "the digital transformation",
         "title_3" => "of education",
-        "description" => "The future of education starts with well-designed systems. We create solutions that truly improve educational institutions' day-to-day operations.",
+        "description_1" => "The future of education starts with well-designed systems.",
+        "description_2" => "We create solutions that truly improve educational institutions' day-to-day operations.",
         "button" => "Learn more",
     ],
     "intro_section" => [
@@ -51,7 +52,7 @@ return [
     ],
     "case_studies" => [
         "title" => "Case studies",
-        "description" => "We know how universities work - we create solutions that move with them? Our expertise is built on long-term partnerships with educational institutions, not isolated projects. That's why we know how to advise, design and deliver precisely what you need. Check out some of our recent projects.",
+        "description" => "Our expertise is built on long-term partnerships with educational institutions, not isolated projects. That's why we know how to advise, design and deliver precisely what you need. Check out some of our recent projects.",
         "k1" => [
             "title" => "K1",
             "description" => "Software management system on university computers.",

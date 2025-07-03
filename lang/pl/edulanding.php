@@ -17,14 +17,15 @@ return [
         "title_1" => "Współtworzymy",
         "title_2" => "cyfrową przyszłość",
         "title_3" => "edukacji",
-        "description" => "Przyszłość edukacji zaczyna się od dobrze zaprojektowanego systemu. Tworzymy narzędzia, które realnie usprawniają codzienne funkcjonowanie placówek oświatowych.",
+        "description_1" => "Przyszłość edukacji zaczyna się od dobrze zaprojektowanego systemu.",
+        "description_2" => "Tworzymy narzędzia, które realnie usprawniają codzienne funkcjonowanie placówek oświatowych.",
         "button" => "Dowiedz się więcej",
     ],
     "intro_section" => [
         "title_1" => "Dedykowane",
         "title_2" => "rozwiązania IT",
         "title_3" => "dla uczelni, szkół i instytucji edukacyjnych",
-        "description" => "Tworzymy systemy, które realnie usprawniają codzienne funkcjonowanie uczelni - od automatyzacji procesów po bezpieczeństwo danych.",
+        "description" => "Tworzymy systemy, które realnie usprawniają codzienne funkcjonowanie placówek - od automatyzacji procesów po bezpieczeństwo danych.",
         "tile_1" => [
             "title" => "Skrócenie czasu realizacji procesów",
             "description" => "Dzięki cyfryzacji i automatyzacji kluczowych zadań administracyjnych (np. rekrutacji, zarządzania oprogramowaniem, obiegu dokumentów), czas realizacji pojedynczego procesu skraca się nawet o 80%. Pracownicy mogą szybciej reagować na potrzeby studentów i kadry.",
@@ -51,7 +52,7 @@ return [
     ],
     "case_studies" => [
         "title" => "Przykłady naszych realizacji",
-        "description" => "Znamy rytm uczelni - tworzymy rozwiązania, które z nim współgrają. Nasze doświadczenie to efekt lat współpracy z instytucjami edukacyjnymi, a nie jednorazowych projektów Dlatego potrafimy doradzić, zaprojektować i wdrożyć dokładnie takie rozwiązanie, jakiego potrzebujesz. Zobacz nasze przykładowe wdrożenia.",
+        "description" => "Nasze doświadczenie to efekt lat współpracy z instytucjami edukacyjnymi, a nie jednorazowych projektów Dlatego potrafimy doradzić, zaprojektować i wdrożyć dokładnie takie rozwiązanie, jakiego potrzebujesz. Sprawdź nasze przykładowe wdrożenia.",
         "k1" => [
             "title" => "K1",
             "description" => "System zarządzania oprogramowaniem na uczelnianych komputerach.",
@@ -76,7 +77,7 @@ return [
     "security" => [
         "title_1" => "Bezpieczeństwo",
         "title_2" => "przede wszystkim",
-        "description" => "Tworzymy systemy, które realnie usprawniają codzienne funkcjonowanie uczelni - od automatyzacji procesów po bezpieczeństwo danych.",
+        "description" => "Tworzymy systemy, które realnie usprawniają codzienne funkcjonowanie placówek - od automatyzacji procesów po bezpieczeństwo danych.",
     ],
     "contact" => [
         "title" => "Porozmawiajmy o Twoim projekcie",

@@ -6,7 +6,7 @@
     ]) }}>
         {{ $slot }}
     </div>
-    <h3 class="text-edu-gray-dark text-xl lg:text-2xl leading-snug max-w-lg">
+    <h3 class="text-edu-gray-dark text-xl lg:text-2xl leading-snug max-w-lg font-medium">
         {!! $title !!}
     </h3>
 </div>
