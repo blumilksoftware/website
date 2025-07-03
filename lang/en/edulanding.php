@@ -25,7 +25,7 @@ return [
         "title_1" => "IT solutions",
         "title_2" => "tailored to ",
         "title_3" => "universities, schools and educational institutions",
-        "description" => "We create systems that enhance the everyday functioning of universities, covering everything from process automation to data protection.",
+        "description" => "We create systems that enhance the everyday functioning of institutions, covering everything from process automation to data protection.",
         "tile_1" => [
             "title" => "Shorten process time",
             "description" => "By digitizing and automating key administrative tasks such as recruitment, software management and document workflows, process times - can be reduced by up to 80%. This allows staff to respond more quickly to the needs of students and faculty.",

@@ -154,10 +154,6 @@
     </section>
     <section class="relative">
         <div class="px-4 sm:px-6 lg:px-12 lg:max-w-[1200px] mx-auto space-y-10 lg:space-y-24 py-8">
-            <div class="absolute -z-10 hidden xl:block bottom-26 left-90">
-                <img src="{{ asset('images/edulanding/plus-icons.svg') }}"
-                     aria-hidden="true"/>
-            </div>
             <div class="flex text-center flex-col items-center gap-y-6 lg:gap-y-12">
                 <div class="text-3xl md:text-5xl lg:text-6xl text-center">
                     <h2 class="font-semibold text-edu-gray-dark leading-7 md:leading-tight">
@@ -170,8 +166,13 @@
             </div>
             <div class="grid grid-cols-1 tablet:grid-cols-2 gap-12 items-center">
                 <div class="hidden tablet:flex flex-col tablet:flex-row gap-4 h-auto tablet:h-[400px] justify-between">
-                    <div class="rounded-3xl overflow-hidden self-auto tablet:self-end">
-                        <img src="{{ asset('images/edulanding/audience1.webp') }}" aria-hidden="true" class="w-full tablet:w-auto object-cover" />
+                    <div class="relative">
+                        <div class="rounded-3xl overflow-hidden self-auto tablet:self-end">
+                            <img  src="{{ asset('images/edulanding/audience1.webp') }}" aria-hidden="true" class="w-full tablet:w-auto object-cover" />
+                        </div>
+                        <div class="absolute -z-10 -top-12 -left-4 hidden lg:block">
+                            <img src="{{ asset('images/edulanding/plus-icons.svg') }}" aria-hidden="true"/>
+                        </div>
                     </div>
                     <div class="rounded-3xl overflow-hidden self-auto tablet:self-start">
                         <img src="{{ asset('images/edulanding/audience2.webp') }}" aria-hidden="true" class="w-full tablet:w-auto object-cover" />
