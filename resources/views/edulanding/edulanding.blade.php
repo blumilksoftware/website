@@ -137,14 +137,14 @@
                     description="{{ __('edulanding.case_studies.k1.description') }}"
                     image="{{ asset('images/edulanding/k1.webp') }}"
                     url="{{ route('edulanding.k1') }}"
-                    alt="{{ __('edulanding.case_studies.k1.alt') }}"
+                    alt="{{ __('edulanding.case_studies.k1.image_alt') }}"
                 />
                 <x-edulanding.card-with-image
                     title="{{ __('edulanding.case_studies.erasmus.title') }}"
                     description="{{ __('edulanding.case_studies.erasmus.description') }}"
                     image="{{ asset('images/edulanding/erasmus.webp') }}"
                     url="{{ route('edulanding.erasmus') }}"
-                    alt="{{ __('edulanding.case_studies.erasmus.alt') }}"
+                    alt="{{ __('edulanding.case_studies.erasmus.image_alt') }}"
                 />
             </div>
         </div>
@@ -153,7 +153,7 @@
         <div class="px-4 sm:px-6 lg:px-12 lg:max-w-[1200px] mx-auto space-y-10 lg:space-y-24 py-8">
             <div class="absolute -z-10 hidden lg:block top-12">
                 <img src="{{ asset('images/edulanding/plus-icons.svg') }}"
-                     alt=""/>
+                     aria-hidden="true"/>
             </div>
             <div class="flex text-center flex-col items-center gap-y-6 lg:gap-y-12">
                 <div class="text-3xl md:text-5xl lg:text-6xl text-center">
@@ -168,13 +168,13 @@
             <div class="grid grid-cols-1 tablet:grid-cols-2 gap-12 items-center">
                 <div class="hidden tablet:flex flex-col tablet:flex-row gap-4 h-auto tablet:h-[400px] justify-between">
                     <div class="rounded-3xl overflow-hidden self-auto tablet:self-end">
-                        <img src="{{ asset('images/edulanding/audience1.webp') }}" alt="" class="w-full tablet:w-auto object-cover" />
+                        <img src="{{ asset('images/edulanding/audience1.webp') }}" aria-hidden="true" class="w-full tablet:w-auto object-cover" />
                     </div>
                     <div class="rounded-3xl overflow-hidden self-auto tablet:self-start">
-                        <img src="{{ asset('images/edulanding/audience2.webp') }}" alt="" class="w-full tablet:w-auto object-cover" />
+                        <img src="{{ asset('images/edulanding/audience2.webp') }}" aria-hidden="true" class="w-full tablet:w-auto object-cover" />
                     </div>
                     <div class="rounded-3xl overflow-hidden self-auto tablet:self-center">
-                        <img src="{{ asset('images/edulanding/audience3.webp') }}" alt="" class="w-full tablet:w-auto object-cover" />
+                        <img src="{{ asset('images/edulanding/audience3.webp') }}" aria-hidden="true" class="w-full tablet:w-auto object-cover" />
                     </div>
                 </div>
                 <div class="space-y-6">

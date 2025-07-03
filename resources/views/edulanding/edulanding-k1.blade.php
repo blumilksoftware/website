@@ -33,7 +33,7 @@
                 {{ __("edulanding.k1.hero_section.description") }}
             </p>
             <div class="border border-gray-extra-dark shadow-md rounded-2xl">
-                <img src="{{ asset('images/edulanding/k1-desktop.webp') }}" alt="" class="object-cover mx-auto rounded-2xl"/>
+                <img src="{{ asset('images/edulanding/k1-desktop.webp') }}" alt="{{ __("edulanding.k1.hero_section.image_alt") }}" class="object-cover mx-auto rounded-2xl"/>
             </div>
 
         </div>
@@ -91,20 +91,20 @@
             </div>
             <div class="grid md:grid-cols-2 gap-4 xl:place-items-stretch max-w-4xl mx-auto lg:mt-20">
                 <x-edulanding.card title="{{ __('edulanding.k1.features.tile_1') }}" class="bg-k1-light">
-                    <i class="ti ti-device-desktop text-2xl text-k1"></i>
+                    <i class="ti ti-device-desktop text-2xl text-k1" aria-hidden="true"></i>
                 </x-edulanding.card>
                 <x-edulanding.card title="{{ __('edulanding.k1.features.tile_2') }}" class="bg-k1-light">
-                    <i class="ti ti-database text-2xl text-k1"></i>
+                    <i class="ti ti-database text-2xl text-k1" aria-hidden="true"></i>
                 </x-edulanding.card>
                 <x-edulanding.card title="{{ __('edulanding.k1.features.tile_3') }}" class="bg-k1-light">
-                    <i class="ti ti-robot text-2xl text-k1"></i>
+                    <i class="ti ti-robot text-2xl text-k1" aria-hidden="true"></i>
                 </x-edulanding.card>
                 <x-edulanding.card title="{{ __('edulanding.k1.features.tile_4') }}" class="bg-k1-light">
-                    <i class="ti ti-info-square text-2xl text-k1"></i>
+                    <i class="ti ti-info-square text-2xl text-k1" aria-hidden="true"></i>
                 </x-edulanding.card>
                 <div class="md:col-span-2">
                     <x-edulanding.card title="{{ __('edulanding.k1.features.tile_5') }}" class="bg-k1-light">
-                    <i class="ti ti-calendar-week text-2xl text-k1"></i>
+                    <i class="ti ti-calendar-week text-2xl text-k1" aria-hidden="true"></i>
                     </x-edulanding.card>
                 </div>
             </div>
@@ -142,10 +142,10 @@
             </div>
         </section>
         <section>
-            <img src="{{ asset('images/edulanding/k1-laptop.webp') }}" alt="" class="w-full object-cover h-auto"/>
+            <img src="{{ asset('images/edulanding/k1-laptop.webp') }}" alt="{{ __('edulanding.k1.benefits.image_alt') }}" class="w-full object-cover h-auto"/>
         </section>
         <section class="mt-8 lg:mt-48 lg:mb-8">
-            <img src="{{ asset('images/edulanding/k1-architecture-'.$locale.'.webp') }}" alt="" class="h-auto mx-auto"/>
+            <img src="{{ asset('images/edulanding/k1-architecture-'.$locale.'.webp') }}" alt="{{ __('edulanding.k1.benefits.architecture_image_alt') }}" class="h-auto mx-auto"/>
         </section>
 
         <x-edulanding.security-tile

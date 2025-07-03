@@ -33,7 +33,7 @@
                 {{ __("edulanding.erasmus.hero_section.description") }}
             </p>
             <div class="rounded-xl p-2 border border-gray-extra-dark shadow-md mt-2 lg:mt-8">
-                <img src="{{ asset('images/edulanding/erasmus-desktop.webp') }}" alt="" class="w-full max-w-4xl aspect-[3/2] object-cover mx-auto"/>
+                <img src="{{ asset('images/edulanding/erasmus-desktop.webp') }}" alt="{{ __("edulanding.erasmus.hero_section.image_alt") }}" class="w-full max-w-4xl aspect-[3/2] object-cover mx-auto"/>
             </div>
         </div>
     </section>
@@ -81,22 +81,22 @@
             </div>
             <div class="grid md:grid-cols-2 gap-4 xl:place-items-stretch max-w-4xl mx-auto lg:mt-20">
                 <x-edulanding.card title="{{ __('edulanding.erasmus.features.tile_1') }}">
-                    <i class="ti ti-device-mobile text-2xl text-edu-dark"></i>
+                    <i class="ti ti-device-mobile text-2xl text-edu-dark" aria-hidden="true"></i>
                 </x-edulanding.card>
                 <x-edulanding.card title="{{ __('edulanding.erasmus.features.tile_2') }}">
-                    <i class="ti ti-info-square text-2xl text-edu-dark"></i>
+                    <i class="ti ti-info-square text-2xl text-edu-dark" aria-hidden="true"></i>
                 </x-edulanding.card>
                 <x-edulanding.card title="{{ __('edulanding.erasmus.features.tile_3') }}">
-                    <i class="ti ti-clipboard text-2xl text-edu-dark"></i>
+                    <i class="ti ti-clipboard text-2xl text-edu-dark" aria-hidden="true"></i>
                 </x-edulanding.card>
                 <x-edulanding.card title="{{ __('edulanding.erasmus.features.tile_4') }}">
-                    <i class="ti ti-database text-2xl text-edu-dark"></i>
+                    <i class="ti ti-database text-2xl text-edu-dark" aria-hidden="true"></i>
                 </x-edulanding.card>
                 <x-edulanding.card title="{{ __('edulanding.erasmus.features.tile_5') }}">
-                    <i class="ti ti-device-desktop text-2xl text-edu-dark"></i>
+                    <i class="ti ti-device-desktop text-2xl text-edu-dark" aria-hidden="true"></i>
                 </x-edulanding.card>
                 <x-edulanding.card title="{{ __('edulanding.erasmus.features.tile_6') }}">
-                    <i class="ti ti-refresh text-2xl text-edu-dark"></i>
+                    <i class="ti ti-refresh text-2xl text-edu-dark" aria-hidden="true"></i>
                 </x-edulanding.card>
             </div>
         </div>
@@ -133,7 +133,7 @@
             </div>
         </section>
         <section>
-            <img src="{{ asset('images/edulanding/erasmus-mobile.webp') }}" alt="" class="w-full object-cover h-auto"/>
+            <img src="{{ asset('images/edulanding/erasmus-mobile.webp') }}" alt="{{ __('edulanding.erasmus.benefits.image_alt') }}" class="w-full object-cover h-auto"/>
         </section>
         <section>
             <div class="mx-[10%] 2xl:max-w-[1200px] 2xl:mx-auto space-y-10 lg:space-x-32 pt-8 mt-16 md:mt-48 lg:mt-54 flex flex-col lg:flex-row items-stretch">

@@ -55,12 +55,12 @@ return [
         "k1" => [
             "title" => "K1",
             "description" => "Software management system on university computers.",
-            "alt" => "Three smartphones with different K1 app screens",
+            "image_alt" => "Three smartphones with different K1 app screens",
         ],
         "erasmus" => [
             "title" => "Erasmus",
             "description" => "A comprehensive platform for managing international student and staff mobility.",
-            "alt" => "Erasmus interface shown on smartphone screen",
+            "image_alt" => "Erasmus application interface shown on smartphone screen",
         ],
         "button" => "Explore case study",
     ],
@@ -91,6 +91,7 @@ return [
         "meta" => [
             "title" => "Erasmus",
             "description" => "A comprehensive platform for managing international student and staff exchanges, fully integrated with Erasmus Without Papers (EWP).",
+            "image_alt" => "Screenshot from Erasmus application - student data form in draft version.",
         ],
         "hero_section" => [
             "title_1" => "Erasmus",
@@ -133,6 +134,7 @@ return [
             "tile_3" => "Reduction in paper-based documentation",
             "tile_4" => "GDPR compliance and full data security",
             "tile_5" => "Complete control over data and access permissions",
+            "image_alt" => "Screenshot from Erasmus application – dashboard on smartphone.",
         ],
         "scientific_publication" => [
             "label" => "Scientific publication",
@@ -159,6 +161,7 @@ return [
             "title_1" => "K1",
             "title_2" => "- case study",
             "description" => "A system for managing software located on university computers based on defined rules and schedules, taking into account software licenses.",
+            "image_alt" => "Screenshot from K1 application - creating schedule.",
         ],
         "challenges" => [
             "title" => "Challenges",
@@ -202,6 +205,8 @@ return [
             "tile_3" => "Fewer manual operations",
             "tile_4" => "Increase in security level",
             "tile_5" => "Full control over software and licensing",
+            "image_alt" => "Screenshot showing K1 application on laptop - scheduling module.",
+            "architecture_image_alt" => "Architecture schema of the K1 system.",
         ],
         "security" => [
             "title" => "Security by design",

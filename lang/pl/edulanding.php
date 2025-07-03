@@ -55,12 +55,12 @@ return [
         "k1" => [
             "title" => "K1",
             "description" => "System zarządzania oprogramowaniem na uczelnianych komputerach.",
-            "alt" => "Trzy smartfony z różnymi ekranami aplikacji K1",
+            "image_alt" => "Trzy smartfony z różnymi ekranami aplikacji K1.",
         ],
         "erasmus" => [
             "title" => "Erasmus",
             "description" => "Kompleksowa platforma do obsługi międzynarodowej wymiany studentów oraz kadry akademickiej.",
-            "alt" => "Interfejs Erasmusa widoczny na ekranie smartfona",
+            "image_alt" => "Interfejs aplikacji Erasmus widoczny na ekranie smartfona.",
         ],
         "button" => "Zobacz case study",
     ],
@@ -91,6 +91,7 @@ return [
         "meta" => [
             "title" => "Erasmus",
             "description" => "Kompleksowa platforma do zarządzania międzynarodową mobilnością studentów i kadry, w pełni zintegrowana z Erasmus Without Papers (EWP).",
+            "image_alt" => "Zrzut ekranu z aplikacji Erasmus – formularz danych studenta w wersji roboczej.",
         ],
         "hero_section" => [
             "title_1" => "Erasmus",
@@ -133,6 +134,7 @@ return [
             "tile_3" => "Redukcja dokumentacji papierowej",
             "tile_4" => "Zgodność RODO i pełne bezpieczeństwo danych",
             "tile_5" => "Pełna kontrola nad danymi i dostępami",
+            "image_alt" => "Zrzut ekranu z aplikacji Erasmus - strona główna na ekranie mobilnym.",
         ],
         "scientific_publication" => [
             "label" => "Publikacja naukowa",
@@ -159,7 +161,7 @@ return [
             "title_1" => "K1",
             "title_2" => "- case study",
             "description" => "System do zarządzania oprogramowaniem znajdującym się na komputerach uczelnianych na podstawie zdefiniowanych reguł i harmonogramów, z uwzględnieniem licencji oprogramowania.",
-            "alt" => "Zrzut ekranu z aplikacji K1 - tworzenie harmonogramu",
+            "image_alt" => "Zrzut ekranu z aplikacji K1 - tworzenie harmonogramu.",
         ],
         "challenges" => [
             "title" => "Wyzwania",
@@ -203,6 +205,8 @@ return [
             "tile_3" => "Mniej operacji manualnych",
             "tile_4" => "Wzrost poziomu zabezpieczeń",
             "tile_5" => "Pełna kontrola nad licencjami i oprogramowaniem",
+            "image_alt" => "Zrzut ekranu przedstawiający aplikację K1 na laptopie – moduł tworzenia harmonogramu.",
+            "architecture_image_alt" => "Schemat architektury systemu k1.",
         ],
         "security" => [
             "title" => "Bezpieczeństwo w standardzie",
