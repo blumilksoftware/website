@@ -170,7 +170,7 @@
                         <div class="rounded-3xl overflow-hidden self-auto tablet:self-end">
                             <img  src="{{ asset('images/edulanding/audience1.webp') }}" aria-hidden="true" class="w-full tablet:w-auto object-cover" />
                         </div>
-                        <div class="absolute -z-10 -top-12 -left-4 hidden lg:block">
+                        <div class="absolute -z-10 -top-12 -left-8 hidden lg:block">
                             <img src="{{ asset('images/edulanding/plus-icons.svg') }}" aria-hidden="true"/>
                         </div>
                     </div>
