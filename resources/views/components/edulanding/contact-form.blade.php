@@ -10,17 +10,17 @@
     @endif
 
     <img src="{{ asset('images/edulanding/plus-icons.svg') }}"
-         class="absolute z-0 hidden xl:block top-20 -left-27" alt=""/>
+         class="absolute z-0 hidden xl:block top-20 -left-27" aria-hidden="true"/>
     <img src="{{ asset('images/edulanding/plus-icons.svg') }}"
-         class="absolute z-0 hidden xl:block top-80 -right-27" alt=""/>
+         class="absolute z-0 hidden xl:block top-80 -right-27" aria-hidden="true"/>
     <div
         class="px-4 sm:px-6 lg:px-12 mx-auto space-y-10 py-8 sm:pt-20 lg:pb-28 bg-edu-gray-dark  flex items-center justify-center">
         <div>
             <img src="{{ asset('images/edulanding/plus-icons.svg') }}"
-                 class="absolute z-0 hidden xl:block top-0 left-1/2 -translate-x-1/2" alt=""/>
+                 class="absolute z-0 hidden xl:block top-0 left-1/2 -translate-x-1/2" aria-hidden="true"/>
         </div>
         <img src="{{ asset('images/edulanding/plus-icons.svg') }}"
-             class="absolute z-0 hidden xl:block -bottom-8 right-110" alt=""/>
+             class="absolute z-0 hidden xl:block -bottom-8 right-110" aria-hidden="true"/>
         <div class="flex text-center flex-col items-center gap-y-4 bg-white max-w-4xl rounded-2xl py-12 px-6 lg:px-24 z-10">
             <div class="text-3xl md:text-4xl text-center">
                 <h2 class="font-medium text-edu-gray-dark leading-7 md:leading-tight">
@@ -45,7 +45,7 @@
                             />
                             <span
                                 class="absolute left-3 top-3 text-edu-gray-dark pointer-events-none">
-                                    <i class="ti ti-user text-lg"></i>
+                                    <i class="ti ti-user text-lg" aria-hidden="true"></i>
                             </span>
                             @error('full_name')
                             <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
@@ -61,7 +61,7 @@
                             />
                             <span
                                 class="absolute left-3 top-3 text-edu-gray-dark pointer-events-none">
-                                    <i class="ti ti-building text-lg"></i>
+                                    <i class="ti ti-building text-lg" aria-hidden="true"></i>
                             </span>
                             @error('company_name')
                             <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
@@ -78,7 +78,7 @@
                         />
                         <span
                             class="absolute left-3 top-3 text-edu-gray-dark pointer-events-none">
-                                    <i class="ti ti-at text-lg"></i>
+                                    <i class="ti ti-at text-lg" aria-hidden="true"></i>
                             </span>
                         @error('email')
                         <p class="mt-2 text-xs text-red-600">{{ $message }}</p>
@@ -94,7 +94,7 @@
                           class="block w-full border-0 px-10 py-2 text-edu-gray-dark ring-1 ring-inset ring-gray-extra-dark placeholder:text-edu-gray placeholder:pt-1 placeholder:text-sm placeholder:leading-none focus:ring-1 focus:ring-edu-gray sm:text-sm rounded-2xl shadow-sm"
                       >{{ old('message') }}</textarea>
                         <span class="absolute left-3 top-2.5 text-edu-gray-dark pointer-events-none flex items-center">
-                            <i class="ti ti-mail text-lg"></i>
+                            <i class="ti ti-mail text-lg" aria-hidden="true"></i>
                         </span>
                         @error('message')
                         <p class="mt-2 text-xs text-red-600">{{ $message }}</p>

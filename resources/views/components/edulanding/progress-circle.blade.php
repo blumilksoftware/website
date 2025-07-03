@@ -9,7 +9,7 @@
 @endphp
 
 <div class="relative {{ $size }}">
-    <svg class="w-full h-full -rotate-90 origin-center" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
+    <svg class="w-full h-full -rotate-90 origin-center" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <circle cx="18" cy="18" r="16" fill="none"
                 class="stroke-current text-gray-extra-dark"
                 stroke-width="4" />

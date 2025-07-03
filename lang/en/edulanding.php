@@ -55,10 +55,12 @@ return [
         "k1" => [
             "title" => "K1",
             "description" => "Software management system on university computers.",
+            "alt" => "Three smartphones with different K1 app screens",
         ],
         "erasmus" => [
             "title" => "Erasmus",
             "description" => "A comprehensive platform for managing international student and staff mobility.",
+            "alt" => "Erasmus interface shown on smartphone screen",
         ],
         "button" => "Explore case study",
     ],

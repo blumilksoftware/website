@@ -5,12 +5,13 @@
     'buttonText' => __('edulanding.case_studies.button'),
     'url' => '#',
     'class' => '',
+    'alt' => '',
 ])
 
 <div {{ $attributes->merge([
     'class' => "bg-white rounded-2xl flex flex-col h-full $class"
 ]) }}>
-    <img src="{{ $image }}" alt="{{ $title }}" class="w-full h-72 object-cover rounded-xl shadow-lg/10">
+    <img src="{{ $image }}" alt="{{ $alt }}" class="w-full h-72 object-cover rounded-xl shadow-lg/10">
     <div class="flex flex-col flex-1 gap-y-4">
         <h2 class="font-semibold text-edu-gray-dark mb-2 text-2xl md:text-4xl mt-4">
             {{ $title  }}

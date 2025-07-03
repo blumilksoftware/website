@@ -40,13 +40,13 @@
                     </p>
                     <x-edulanding.button href="#contact"
                                          class="w-full sm:w-auto py-3 px-9">{{ __("edulanding.hero_section.button")}}
-                        <i class="ti ti-arrow-right"></i>
+                        <i class="ti ti-arrow-right" aria-hidden="true"></i>
                     </x-edulanding.button>
                 </div>
             </div>
             <div class="flex basis-4/7 relative overflow-visible self-center pb-8 xl:pb-4 xl:left-16">
                 <img src="{{ asset('images/edulanding/plus-icons.svg') }}"
-                     class="absolute z-0 hidden xl:block xl:bottom-[-100px] xl:right-[-60px]" alt=""/>
+                     class="absolute z-0 hidden xl:block xl:bottom-[-100px] xl:right-[-60px]" aria-hidden="true"/>
                 <img src="{{ asset('images/edulanding/hero-section.webp') }}"
                      class=" h-[200px] xs:h-[230px] w-[350px] tablet:h-[400px] tablet:w-[600px] lg:h-[500px] lg:w-[750px] aspect-auto object-center rounded-[32px] z-10"
                      alt=""/>
@@ -99,22 +99,22 @@
             </div>
             <div class="grid md:grid-cols-2 gap-4 xl:place-items-stretch max-w-4xl mx-auto lg:mt-20">
                 <x-edulanding.card title="{{ __('edulanding.our_solutions.tile_1') }}">
-                    <i class="ti ti-device-desktop text-2xl text-edu-dark"></i>
+                    <i class="ti ti-device-desktop text-2xl text-edu-dark" aria-hidden="true"></i>
                 </x-edulanding.card>
                 <x-edulanding.card title="{{ __('edulanding.our_solutions.tile_2') }}">
-                    <i class="ti ti-database text-2xl text-edu-dark"></i>
+                    <i class="ti ti-database text-2xl text-edu-dark" aria-hidden="true"></i>
                 </x-edulanding.card>
                 <x-edulanding.card title="{{ __('edulanding.our_solutions.tile_3') }}">
-                    <i class="ti ti-robot text-2xl text-edu-dark"></i>
+                    <i class="ti ti-robot text-2xl text-edu-dark" aria-hidden="true"></i>
                 </x-edulanding.card>
                 <x-edulanding.card title="{{ __('edulanding.our_solutions.tile_4') }}">
-                    <i class="ti ti-info-square text-2xl text-edu-dark"></i>
+                    <i class="ti ti-info-square text-2xl text-edu-dark" aria-hidden="true"></i>
                 </x-edulanding.card>
                 <x-edulanding.card title="{{ __('edulanding.our_solutions.tile_5') }}">
-                    <i class="ti ti-shield text-2xl text-edu-dark"></i>
+                    <i class="ti ti-shield text-2xl text-edu-dark" aria-hidden="true"></i>
                 </x-edulanding.card>
                 <x-edulanding.card title="{{ __('edulanding.our_solutions.tile_6') }}">
-                    <i class="ti ti-app-window text-2xl text-edu-dark"></i>
+                    <i class="ti ti-app-window text-2xl text-edu-dark" aria-hidden="true"></i>
                 </x-edulanding.card>
             </div>
         </div>
@@ -137,12 +137,14 @@
                     description="{{ __('edulanding.case_studies.k1.description') }}"
                     image="{{ asset('images/edulanding/k1.webp') }}"
                     url="{{ route('edulanding.k1') }}"
+                    alt="{{ __('edulanding.case_studies.k1.alt') }}"
                 />
                 <x-edulanding.card-with-image
                     title="{{ __('edulanding.case_studies.erasmus.title') }}"
                     description="{{ __('edulanding.case_studies.erasmus.description') }}"
                     image="{{ asset('images/edulanding/erasmus.webp') }}"
                     url="{{ route('edulanding.erasmus') }}"
+                    alt="{{ __('edulanding.case_studies.erasmus.alt') }}"
                 />
             </div>
         </div>
@@ -178,7 +180,7 @@
                 <div class="space-y-6">
                     <div class="flex items-center bg-white rounded-xl shadow-lg/5 p-5 gap-4 border border-gray-light">
                         <div class="size-16 flex items-center justify-center bg-edu-light text-edu-normal rounded-2xl">
-                            <i class="ti ti-school text-3xl"></i>
+                            <i class="ti ti-school text-3xl" aria-hidden="true"></i>
                         </div>
                         <span class="text-edu-gray-dark font-medium text-xl">
                         {{ __("edulanding.audience.groups.higher_education") }}
@@ -186,7 +188,7 @@
                     </div>
                     <div class="flex items-center bg-white rounded-xl shadow-lg/5 p-5 gap-4 border border-gray-light">
                         <div class="size-16 flex items-center justify-center bg-[#FFEED2] text-[#FF9900] rounded-2xl">
-                            <i class="ti ti-backpack text-3xl"></i>
+                            <i class="ti ti-backpack text-3xl" aria-hidden="true"></i>
                         </div>
                         <span class="text-edu-gray-dark font-medium text-xl">
                         {{ __("edulanding.audience.groups.secondary_schools") }}
@@ -194,7 +196,7 @@
                     </div>
                     <div class="flex items-center bg-white rounded-xl shadow-lg/5 p-5 gap-4 border border-gray-light">
                         <div class="size-16 flex items-center justify-center bg-[#F6E2FF] text-[#AA16EF] rounded-2xl">
-                            <i class="ti ti-microscope text-3xl"></i>
+                            <i class="ti ti-microscope text-3xl" aria-hidden="true"></i>
                         </div>
                         <span class="text-edu-gray-dark font-medium text-xl">
                         {{ __("edulanding.audience.groups.training_research_institutions") }}

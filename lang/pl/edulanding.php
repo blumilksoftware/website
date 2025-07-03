@@ -55,10 +55,12 @@ return [
         "k1" => [
             "title" => "K1",
             "description" => "System zarządzania oprogramowaniem na uczelnianych komputerach.",
+            "alt" => "Trzy smartfony z różnymi ekranami aplikacji K1",
         ],
         "erasmus" => [
             "title" => "Erasmus",
             "description" => "Kompleksowa platforma do obsługi międzynarodowej wymiany studentów oraz kadry akademickiej.",
+            "alt" => "Interfejs Erasmusa widoczny na ekranie smartfona",
         ],
         "button" => "Zobacz case study",
     ],
@@ -157,6 +159,7 @@ return [
             "title_1" => "K1",
             "title_2" => "- case study",
             "description" => "System do zarządzania oprogramowaniem znajdującym się na komputerach uczelnianych na podstawie zdefiniowanych reguł i harmonogramów, z uwzględnieniem licencji oprogramowania.",
+            "alt" => "Zrzut ekranu z aplikacji K1 - tworzenie harmonogramu"
         ],
         "challenges" => [
             "title" => "Wyzwania",
