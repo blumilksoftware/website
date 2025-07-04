@@ -23,7 +23,7 @@
 <body class="font-outfit flex flex-col h-screen justify-between">
 <div class="relative z-20">
     @include('edulanding.navigation')
-    <section class="relative flex flex-col xl:flex-row items-center justify-center pt-8 xl:pt-24 pb-16 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:gap-6">
+    <section class="relative flex flex-col xl:flex-row items-center justify-center pt-8 xl:pt-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:gap-6">
         <div class="text-4xl flex flex-col md:text-5xl lg:text-6xl text-center justify-center items-center gap-y-4 lg:gap-y-6">
             <h2 class="font-semibold text-edu-gray-dark leading-7 md:leading-tight">
                 <span class="text-k1 inline">{{ __("edulanding.k1.hero_section.title_1") }}</span>
@@ -90,20 +90,20 @@
                 </p>
             </div>
             <div class="grid md:grid-cols-2 gap-4 xl:place-items-stretch max-w-4xl mx-auto lg:mt-20">
-                <x-edulanding.card title="{{ __('edulanding.k1.features.tile_1') }}" class="bg-k1-light">
+                <x-edulanding.card title="{{ __('edulanding.k1.features.tile_1') }}" iconBg="bg-k1-light">
                     <i class="ti ti-device-desktop text-2xl text-k1" aria-hidden="true"></i>
                 </x-edulanding.card>
-                <x-edulanding.card title="{{ __('edulanding.k1.features.tile_2') }}" class="bg-k1-light">
+                <x-edulanding.card title="{{ __('edulanding.k1.features.tile_2') }}" iconBg="bg-k1-light">
                     <i class="ti ti-database text-2xl text-k1" aria-hidden="true"></i>
                 </x-edulanding.card>
-                <x-edulanding.card title="{{ __('edulanding.k1.features.tile_3') }}" class="bg-k1-light">
+                <x-edulanding.card title="{{ __('edulanding.k1.features.tile_3') }}" iconBg="bg-k1-light">
                     <i class="ti ti-robot text-2xl text-k1" aria-hidden="true"></i>
                 </x-edulanding.card>
-                <x-edulanding.card title="{{ __('edulanding.k1.features.tile_4') }}" class="bg-k1-light">
+                <x-edulanding.card title="{{ __('edulanding.k1.features.tile_4') }}" iconBg="bg-k1-light">
                     <i class="ti ti-info-square text-2xl text-k1" aria-hidden="true"></i>
                 </x-edulanding.card>
                 <div class="md:col-span-2">
-                    <x-edulanding.card title="{{ __('edulanding.k1.features.tile_5') }}" class="bg-k1-light">
+                    <x-edulanding.card title="{{ __('edulanding.k1.features.tile_5') }}" iconBg="bg-k1-light">
                     <i class="ti ti-calendar-week text-2xl text-k1" aria-hidden="true"></i>
                     </x-edulanding.card>
                 </div>
@@ -131,7 +131,6 @@
                     <x-edulanding.tile title="{{ __('edulanding.k1.benefits.tile_3') }}" class="xl:col-span-2">
                         <x-edulanding.progress-circle :value="90" color="text-k1"/>
                     </x-edulanding.tile>
-
                     <x-edulanding.tile title="{{ __('edulanding.k1.benefits.tile_4') }}" class="xl:col-span-3">
                         <x-edulanding.progress-circle :value="100" color="text-k1"/>
                     </x-edulanding.tile>

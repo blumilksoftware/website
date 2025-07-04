@@ -24,7 +24,7 @@
 <div class="relative z-10">
     @include('edulanding.navigation')
     <section class="relative overflow-hidden">
-        <section id="key_benefits"
+        <section
                  class="flex flex-col-reverse xl:flex-row pt-8 xl:pt-24 pb-16 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:gap-6">
             <div class="flex basis-3/7 relative flex-col self-center justify-between gap-5">
                 <div class="text-3xl md:text-5xl lg:text-6xl text-center xl:justify-start xl:text-start">
@@ -41,7 +41,7 @@
                     {{ __("edulanding.hero_section.description_2") }}
                     </span>
                     </p>
-                    <x-edulanding.button href="#contact"
+                    <x-edulanding.button href="#our_solutions"
                                          class="w-full sm:w-auto py-3 px-9">{{ __("edulanding.hero_section.button")}}
                         <i class="ti ti-arrow-right" aria-hidden="true"></i>
                     </x-edulanding.button>
@@ -55,7 +55,7 @@
                      alt=""/>
             </div>
         </section>
-        <section class="relative">
+        <section class="relative" id="key_benefits">
             <div class="mx-[10%] 2xl:max-w-[1200px] 2xl:mx-auto space-y-10 pt-8 sm:pt-20 lg:pt-28 lg:pb-28 pb-10">
                 <div class="pb-6 flex text-center flex-col items-center gap-y-6">
                     <div class="text-3xl md:text-5xl lg:text-6xl text-center">
@@ -86,7 +86,7 @@
         </section>
     </section>
     <section class="relative" id="our_solutions">
-        <div class="px-4 sm:px-6 lg:px-12 2xl:max-w-[1200px] mx-auto space-y-10 py-8 sm:pt-20 lg:pb-28 bg-edu-light rounded-3xl lg:mb-12">
+        <div class="px-4 sm:px-6 lg:px-12 2xl:max-w-[1200px] mx-auto space-y-10 py-8 sm:pt-20 lg:pb-28 lg:mb-12">
             <div class="flex text-center flex-col items-center gap-y-6 lg:gap-y-12">
                 <div class="text-3xl md:text-5xl lg:text-6xl text-center">
                     <h2 class="font-semibold text-edu-gray-dark leading-7 md:leading-tight">
@@ -100,24 +100,24 @@
                     </span>
                  </p>
             </div>
-            <div class="grid md:grid-cols-2 gap-4 xl:place-items-stretch max-w-4xl mx-auto lg:mt-20">
+            <div class="grid md:grid-cols-2 gap-4 xl:place-items-stretch max-w-4xl mx-auto lg:mt-20" >
                 <x-edulanding.card title="{{ __('edulanding.our_solutions.tile_1') }}">
-                    <i class="ti ti-device-desktop text-2xl text-edu-dark" aria-hidden="true"></i>
+                    <i class="ti ti-device-desktop text-2xl" aria-hidden="true"></i>
                 </x-edulanding.card>
-                <x-edulanding.card title="{{ __('edulanding.our_solutions.tile_2') }}">
-                    <i class="ti ti-database text-2xl text-edu-dark" aria-hidden="true"></i>
+                <x-edulanding.card title="{{ __('edulanding.our_solutions.tile_2') }}" iconBg="bg-[#FFEED2]" iconColor="text-[#FF9900]">
+                    <i class="ti ti-database text-2xl" aria-hidden="true"></i>
                 </x-edulanding.card>
-                <x-edulanding.card title="{{ __('edulanding.our_solutions.tile_3') }}">
-                    <i class="ti ti-robot text-2xl text-edu-dark" aria-hidden="true"></i>
+                <x-edulanding.card title="{{ __('edulanding.our_solutions.tile_3') }}" iconBg="bg-[#F6E2FF]" iconColor="text-[#AC1BF0]">
+                    <i class="ti ti-robot text-2xl" aria-hidden="true"></i>
                 </x-edulanding.card>
                 <x-edulanding.card title="{{ __('edulanding.our_solutions.tile_4') }}">
-                    <i class="ti ti-info-square text-2xl text-edu-dark" aria-hidden="true"></i>
+                    <i class="ti ti-info-square text-2xl" aria-hidden="true"></i>
                 </x-edulanding.card>
                 <x-edulanding.card title="{{ __('edulanding.our_solutions.tile_5') }}">
-                    <i class="ti ti-shield text-2xl text-edu-dark" aria-hidden="true"></i>
+                    <i class="ti ti-shield text-2xl" aria-hidden="true"></i>
                 </x-edulanding.card>
-                <x-edulanding.card title="{{ __('edulanding.our_solutions.tile_6') }}">
-                    <i class="ti ti-app-window text-2xl text-edu-dark" aria-hidden="true"></i>
+                <x-edulanding.card title="{{ __('edulanding.our_solutions.tile_6') }}" iconBg="bg-k1-light" iconColor="text-k1">
+                    <i class="ti ti-app-window text-2xl" aria-hidden="true"></i>
                 </x-edulanding.card>
             </div>
         </div>
@@ -211,7 +211,7 @@
         </div>
     </section>
     <section class="relative z-20">
-        <div class="px-4 sm:px-6 lg:px-12 lg:max-w-[1200px] mx-auto space-y-10 py-12 lg:py-48">
+        <div class="px-4 sm:px-6 lg:px-12 lg:max-w-[1200px] mx-auto space-y-10 py-12 lg:py-24 lg:mb-12">
             <div class="flex text-center flex-col items-center gap-y-6 lg:gap-y-10">
                 <div class="text-3xl md:text-5xl lg:text-6xl text-center">
                     <h2 class="font-semibold text-edu-gray-dark leading-7 md:leading-tight">
@@ -225,10 +225,15 @@
             </div>
         </div>
     </section>
-    <x-edulanding.contact-form
-        :title="__('edulanding.contact.title')"
-        :description="__('edulanding.contact.description')"
-    />
+    <x-edulanding.contact-form>
+        <x-slot name="title">
+            {{ __('edulanding.contact.title') }}
+        </x-slot>
+        <x-slot name="description">
+            <span class="block">{{ __('edulanding.contact.description_1') }}</span>
+            <span>{{ __('edulanding.contact.description_2') }}</span>
+        </x-slot>
+    </x-edulanding.contact-form>
 </div>
 @include('layout.footer')
 @include('components.cookies')

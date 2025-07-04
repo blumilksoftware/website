@@ -14,7 +14,7 @@ return [
     "k1" => [
         "title_1" => "System zarządzania",
         "title_2" => "licencjami i dystrybucji oprogramowania",
-        "project_description" => "System do zarządzania oprogramowaniem na komputerach uczelnianych, oparty na zdefiniowanych regułach i harmonogramach, z uwzględnieniem licencji oprogramowania.",
+        "project_description" => "System do zarządzania oprogramowaniem na komputerach uczelnianych, oparty na zdefiniowanych regułach i harmonogramach z uwzględnieniem licencji oprogramowania.",
         "challenges" => [
             "challenge_1" => [
                 "title" => "Bezpieczeństwo danych",

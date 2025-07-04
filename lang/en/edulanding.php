@@ -22,17 +22,17 @@ return [
         "button" => "Learn more",
     ],
     "intro_section" => [
-        "title_1" => "IT solutions",
-        "title_2" => "tailored to ",
-        "title_3" => "universities, schools and educational institutions",
-        "description" => "We create systems that enhance the everyday functioning of institutions, covering everything from process automation to data protection.",
+        "title_1" => "Tailored",
+        "title_2" => "IT solutions",
+        "title_3" => "for universities, schools and educational institutions",
+        "description" => "We create systems that enhance the everyday functioning of institutions. Covering everything from process automation to data protection.",
         "tile_1" => [
             "title" => "Shorten process time",
             "description" => "By digitizing and automating key administrative tasks such as recruitment, software management and document workflows, process times - can be reduced by up to 80%. This allows staff to respond more quickly to the needs of students and faculty.",
         ],
         "tile_2" => [
             "title" => "Increased operational efficiency",
-            "description" => "Eliminating manual data entry, duplicate inputs and unnecessary steps enables universities to increase operational efficiency by up to 70%. Staff can accomplish more in less time – without compromising quality.",
+            "description" => "Eliminating manual data entry, duplicate inputs and unnecessary steps enables universities to increase operational efficiency by up to 70%. Staff can accomplish more in less time - without compromising quality.",
         ],
         "tile_3" => [
             "title" => "Reduced paperwork",
@@ -41,12 +41,12 @@ return [
     ],
     "our_solutions" => [
         "title" => "Our solutions",
-        "description_1" => "We understand the challenges faced by university administration, including data protection, recruitment, system integration and AI implementation. These aren't just 'features' to us; they are real, daily challenges we",
+        "description_1" => "We understand the challenges faced by university administration, including data protection, recruitment, system integration and AI implementation. For us, these aren't just 'features', they are real, daily challenges we",
         "description_2" => "understand and solve.",
         "tile_1" => "IT systems tailored to the education sector",
         "tile_2" => "Secure integration with databases and university systems",
-        "tile_3" => "AI-Driven and automated solutions",
-        "tile_4" => "Modern recruitment and information platforms",
+        "tile_3" => "AI-driven and automated solutions",
+        "tile_4" => "Recruitment platforms",
         "tile_5" => "GDPR compliance & top-level data security",
         "tile_6" => "Systems for managing research and teaching",
     ],
@@ -77,7 +77,7 @@ return [
     "security" => [
         "title_1" => "Security",
         "title_2" => "comes first",
-        "description" => "We develop systems that genuinely improve the daily operations of universities – from process automation to data security.",
+        "description" => "We develop systems that genuinely improve the daily operations of institutions. From process automation to data security.",
     ],
     "contact" => [
         "title" => "Let’s talk about your project",
@@ -107,12 +107,12 @@ return [
                 "description" => "Handling international exchanges requires collaboration across multiple departments, manual completion of documents, coordination of deadlines and communication with partner universities. Without a unified tool, every change requires extra time and effort.",
             ],
             "tile_2" => [
-                "title" => "Lack of automation and data consistency",
+                "title" => "Low automation, unreliable data",
                 "description" => "Information is spread between different systems. There is no single source of truth, making it difficult to quickly access up-to-date data and generate reports. Automation is non-existent or insufficient, resulting in many tasks being repeated manually.",
             ],
             "tile_3" => [
                 "title" => "Risk of manual errors",
-                "description" => "Manual data entry and document handling increase the risk of mistakes. Errors in student data, deadlines, or documentation can lead to delays, funding issues, and non-compliance with exchange requirements.",
+                "description" => "Manual data entry and document handling significantly increase the risk of costly mistakes. Errors in student data, deadlines, or documentation can lead to serious delays, funding issues, and non-compliance with exchange requirements.",
             ],
         ],
         "features" => [
@@ -120,10 +120,10 @@ return [
             "description_1" => "We understand the challenges faced by the administration, from data protection and recruitment to system integration and AI implementation. These aren’t just “features” for us, they’re everyday challenges that we",
             "description_2" => "recognize and solve.",
             "tile_1" => "Mobile support",
-            "tile_2" => "Digitally available documents and procedures",
-            "tile_3" => "Integration with the university's internal systems",
-            "tile_4" => "Online recruitment",
-            "tile_5" => "Knowledge base with exchange places",
+            "tile_2" => "Online recruitment",
+            "tile_3" => "Digitally available documents and procedures",
+            "tile_4" => "Knowledge base with exchange places",
+            "tile_5" => "Integration with the university's internal systems",
             "tile_6" => "Automation synchronization and process standardization",
         ],
         "benefits" => [

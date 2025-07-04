@@ -1,3 +1,4 @@
+@props(['title' => null, 'description' => null])
 @php
     $fieldId = uniqid("g-recaptcha-response");
     $siteKey = config("recaptchav3.sitekey");
@@ -24,11 +25,11 @@
         <div class="flex text-center flex-col items-center gap-y-4 bg-white max-w-4xl rounded-2xl py-12 px-6 lg:px-24 z-10">
             <div class="text-3xl md:text-4xl text-center">
                 <h2 class="font-medium text-edu-gray-dark leading-7 md:leading-tight">
-                    <span class="inline">{{ $title }}</span>
+                    <span class="inline">{{ $title ?? '' }}</span>
                 </h2>
             </div>
             <p class="leading-6 text-sm sm:text-md text-edu-gray-dark max-w-2xl text-center">
-                {{ $description }}
+                {{ $description ?? '' }}
             </p>
             <form action="{{ route('edulanding.contact.create') }}" method="POST" class="flex flex-col gap-y-4 justify-between mt-2">
                 @csrf

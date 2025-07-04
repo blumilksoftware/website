@@ -23,7 +23,7 @@
 <body class="font-outfit flex flex-col h-screen justify-between">
 <div class="relative z-20">
     @include('edulanding.navigation')
-    <section class="relative flex flex-col xl:flex-row items-center justify-center pt-8 xl:pt-24 pb-16 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:gap-6">
+    <section class="relative flex flex-col xl:flex-row items-center justify-center pt-8 xl:pt-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:gap-6">
         <div class="text-4xl flex flex-col md:text-5xl lg:text-6xl text-center justify-center items-center gap-y-3 lg:gap-y-6">
             <h2 class="font-semibold text-edu-gray-dark leading-7 md:leading-tight">
                 <span class="text-edu-normal inline">{{ __("edulanding.erasmus.hero_section.title_1") }}</span>
@@ -101,7 +101,7 @@
             </div>
         </div>
         <section class="relative">
-            <div class="mx-[10%] 2xl:max-w-[1200px] 2xl:mx-auto space-y-10 pt-8 sm:pt-20 lg:pt-40 lg:pb-28 pb-10">
+            <div class="mx-[10%] 2xl:max-w-[1200px] 2xl:mx-auto space-y-10 pt-8 lg:pb-28 pb-10">
                 <div class="pb-6 flex text-center flex-col items-center gap-y-6">
                     <div class="text-3xl md:text-5xl lg:text-6xl text-center">
                         <h2 class="font-semibold text-edu-gray-dark leading-7 md:leading-tight">
@@ -133,7 +133,7 @@
             </div>
         </section>
         <section>
-            <img src="{{ asset('images/edulanding/erasmus-mobile.webp') }}" alt="{{ __('edulanding.erasmus.benefits.image_alt') }}" class="w-full object-cover h-auto"/>
+            <img src="{{ asset('images/edulanding/erasmus-mobile.webp') }}" alt="{{ __('edulanding.erasmus.benefits.image_alt') }}" class="w-full "/>
         </section>
         <section>
             <div class="mx-[10%] 2xl:max-w-[1200px] 2xl:mx-auto space-y-10 lg:space-x-32 pt-8 mt-16 md:mt-48 lg:mt-54 flex flex-col lg:flex-row items-stretch">
