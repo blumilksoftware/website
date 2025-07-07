@@ -14,9 +14,9 @@ return [
         "contact" => "Kontakt",
     ],
     "hero_section" => [
-        "title_1" => "Wprowadzamy",
-        "title_2" => "edukację w cyfrową",
-        "title_3" => "erę",
+        "title_1" => "Tworzymy",
+        "title_2" => "cyfrową przyszłość",
+        "title_3" => "edukacji",
         "description_1" => "Przyszłość edukacji zaczyna się od dobrze zaprojektowanego systemu.",
         "description_2" => "Tworzymy narzędzia, które realnie usprawniają codzienne funkcjonowanie placówek oświatowych.",
         "button" => "Dowiedz się więcej",
@@ -32,7 +32,7 @@ return [
         ],
         "tile_2" => [
             "title" => "Wzrost wydajności operacyjnej",
-            "description" => "Wyeliminowanie ręcznego wprowadzania danych, podwójnych wpisów i zbędnych etapów pozwala uczelniom osiągnąć wzrost efektywności operacyjnej nawet o 70%. Pracownicy wykonują więcej zadań w krótszym czasie — bez utraty jakości.",
+            "description" => "Wyeliminowanie ręcznego wprowadzania danych, podwójnych wpisów i zbędnych etapów pozwala uczelniom osiągnąć wzrost efektywności operacyjnej nawet o 70%. Pracownicy wykonują więcej zadań w krótszym czasie - bez utraty jakości.",
         ],
         "tile_3" => [
             "title" => "Ograniczenie dokumentacji papierowej",
