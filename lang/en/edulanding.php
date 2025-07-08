@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 return [
     "meta" => [
-        "title" => "Edulanding",
-        "description" => "EduLanding — Comprehensive digital solutions for modern education. Supporting schools, universities, and educational institutions. Simple. Effective. Secure.",
+        "title" => "Digitalization of education",
+        "description" => "Comprehensive digital solutions for modern education. Supporting schools, universities, and educational institutions. Simple. Effective. Secure.",
     ],
     "navigation" => [
         "key_benefits" => "Key benefits",
