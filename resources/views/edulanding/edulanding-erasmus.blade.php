@@ -46,7 +46,7 @@
                     </h2>
                 </div>
                 <div
-                    class="font-light leading-7 text-sm sm:text-md lg:text-lg text-edu-gray max-w-4xl">{{ __("edulanding.erasmus.challenges.description") }}</div>
+                    class="font-light leading-6 lg:leading-7 text-sm sm:text-md lg:text-lg text-edu-gray max-w-4xl">{{ __("edulanding.erasmus.challenges.description") }}</div>
             </div>
             <div class="grid xl:grid-cols-3 gap-4 2xl:gap-12 xl:place-items-stretch">
                 <x-edulanding.tile title="{{ __('edulanding.erasmus.challenges.tile_1.title') }}"
@@ -72,7 +72,7 @@
                         <span class="inline">{{ __("edulanding.erasmus.features.title") }}</span>
                     </h2>
                 </div>
-                <p class="leading-7 text-sm sm:text-lg text-edu-gray max-w-4xl text-center">
+                <p class="leading-6 lg:leading-7 text-sm sm:text-lg text-edu-gray max-w-4xl text-center">
                     {{ __("edulanding.erasmus.features.description_1") }}
                     <span class="font-semibold">
                     {{ __("edulanding.erasmus.features.description_2") }}
@@ -110,7 +110,7 @@
                         </h2>
                     </div>
                     <div
-                        class="font-light leading-7 text-sm sm:text-md lg:text-lg text-edu-gray max-w-3xl">{{ __("edulanding.erasmus.benefits.description") }}</div>
+                        class="font-light leading-6 lg:leading-7 text-sm sm:text-md lg:text-lg text-edu-gray max-w-3xl">{{ __("edulanding.erasmus.benefits.description") }}</div>
                 </div>
                 <div class="grid md:grid-cols-2 xl:grid-cols-6 gap-4 2xl:gap-12 xl:place-items-stretch">
                     <x-edulanding.tile title="{{ __('edulanding.erasmus.benefits.tile_1') }}" class="xl:col-span-2">
@@ -143,7 +143,7 @@
                 <div class="flex flex-col gap-y-4 my-auto">
                  <div class="uppercase text-edu-normal font-bold">{{ __('edulanding.erasmus.scientific_publication.label') }}</div>
                     <h2 class="text-3xl md:text-5xl lg:text-6xl font-semibold text-edu-gray-dark leading-7 md:leading-tight">{{ __('edulanding.erasmus.scientific_publication.title') }}</h2>
-                <div class="leading-7 text-sm sm:text-lg text-edu-gray lg:max-w-xl">
+                <div class="leading-6 lg:leading-7 text-sm sm:text-lg text-edu-gray lg:max-w-xl">
                     <span class="font-semibold"> {{ __('edulanding.erasmus.scientific_publication.description_1') }}</span>
                      {{ __('edulanding.erasmus.scientific_publication.description_2') }}
                 </div>

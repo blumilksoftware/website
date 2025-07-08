@@ -29,7 +29,7 @@
                 <span class="text-k1 inline">{{ __("edulanding.k1.hero_section.title_1") }}</span>
                 <span class="inline"> {{ __("edulanding.k1.hero_section.title_2") }} </span>
             </h2>
-            <p class="leading-6 sm:leading-7 font-light text-sm sm:text-md tablet:text-lg lg:text-xl text-edu-gray max-w-4xl text-center">
+            <p class="leading-6 lg:leading-7 font-light text-sm sm:text-md tablet:text-lg lg:text-xl text-edu-gray max-w-4xl text-center">
                 {{ __("edulanding.k1.hero_section.description") }}
             </p>
             <div class="border border-gray-extra-dark shadow-md rounded-2xl">
@@ -47,7 +47,7 @@
                     </h2>
                 </div>
                 <div
-                    class="font-light leading-7 text-sm sm:text-md lg:text-lg text-edu-gray max-w-4xl">{{ __("edulanding.k1.challenges.description") }}</div>
+                    class="font-light leading-6 lg:leading-7 text-sm sm:text-md lg:text-lg text-edu-gray max-w-4xl">{{ __("edulanding.k1.challenges.description") }}</div>
             </div>
             <div class="flex flex-col gap-4 2xl:gap-12">
                 <div class="flex flex-col xl:flex-row xl:justify-between gap-4 2xl:gap-12">
@@ -85,7 +85,7 @@
                         <span class="inline">{{ __("edulanding.k1.features.title") }}</span>
                     </h2>
                 </div>
-                <p class="leading-7 text-sm sm:text-lg text-edu-gray max-w-4xl text-center">
+                <p class="leading-6 lg:leading-7 text-sm sm:text-lg text-edu-gray max-w-4xl text-center">
                     {{ __("edulanding.k1.features.description") }}
                 </p>
             </div>
@@ -119,7 +119,7 @@
                         </h2>
                     </div>
                     <div
-                        class="font-light leading-7 text-sm sm:text-md lg:text-lg text-edu-gray max-w-3xl">{{ __("edulanding.k1.benefits.description") }}</div>
+                        class="font-light leading-6 lg:leading-7 text-sm sm:text-md lg:text-lg text-edu-gray max-w-3xl">{{ __("edulanding.k1.benefits.description") }}</div>
                 </div>
                 <div class="grid md:grid-cols-2 xl:grid-cols-6 gap-4 2xl:gap-12 xl:place-items-stretch">
                     <x-edulanding.tile title="{{ __('edulanding.k1.benefits.tile_1') }}" class="xl:col-span-2">

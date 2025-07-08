@@ -35,7 +35,7 @@
                     </h2>
                 </div>
                 <div class="flex flex-col items-center xl:items-start">
-                    <p class="text-sm sm:text-lg text-center xl:text-start pb-8 tablet:pb-16 text-edu-gray leading-7">
+                    <p class="text-sm sm:text-lg text-center xl:text-start pb-8 tablet:pb-16 text-edu-gray leading-relaxed xl:leading-7">
                         <span class=""> {{ __("edulanding.hero_section.description_1") }}</span>
                         <span class="font-semibold">
                     {{ __("edulanding.hero_section.description_2") }}
@@ -66,7 +66,7 @@
                         </h2>
                     </div>
                     <div
-                        class="font-light leading-7 text-sm sm:text-md lg:text-lg text-edu-gray max-w-2xl">{{ __("edulanding.intro_section.description") }}</div>
+                        class="font-light leading-relaxed lg:leading-7 text-sm sm:text-md lg:text-lg text-edu-gray max-w-2xl">{{ __("edulanding.intro_section.description") }}</div>
                 </div>
                 <div class="grid xl:grid-cols-3 gap-4 2xl:gap-12 xl:place-items-stretch">
                     <x-edulanding.tile title="{{ __('edulanding.intro_section.tile_1.title') }}"
@@ -93,7 +93,7 @@
                         <span class="inline">{{ __("edulanding.our_solutions.title") }}</span>
                     </h2>
                 </div>
-                 <p class="leading-7 text-sm sm:text-lg text-edu-gray max-w-4xl text-center">
+                 <p class="leading-relaxed lg:leading-7 text-sm sm:text-lg text-edu-gray max-w-4xl text-center">
                     {{ __("edulanding.our_solutions.description_1") }}
                     <span class="font-semibold">
                     {{ __("edulanding.our_solutions.description_2") }}
@@ -130,7 +130,7 @@
                         <span class="inline">{{ __("edulanding.case_studies.title") }}</span>
                     </h2>
                 </div>
-                <p class="leading-7 text-sm sm:text-lg text-edu-gray max-w-4xl text-center">
+                <p class="leading-relaxed lg:leading-7 text-sm sm:text-lg text-edu-gray max-w-4xl text-center">
                     {{ __("edulanding.case_studies.description") }}
                 </p>
             </div>
@@ -153,14 +153,14 @@
         </div>
     </section>
     <section class="relative">
-        <div class="px-4 sm:px-6 lg:px-12 lg:max-w-[1200px] mx-auto space-y-10 lg:space-y-24 py-8">
+        <div class="px-4 sm:px-6 lg:px-12 lg:max-w-[1200px] mx-auto space-y-10 lg:space-y-24 py-12">
             <div class="flex text-center flex-col items-center gap-y-6 lg:gap-y-12">
                 <div class="text-3xl md:text-5xl lg:text-6xl text-center">
                     <h2 class="font-semibold text-edu-gray-dark leading-7 md:leading-tight">
                         <span class="inline">{{ __("edulanding.audience.title") }}</span>
                     </h2>
                 </div>
-                <p class="leading-7 text-sm sm:text-lg text-edu-gray max-w-4xl text-center">
+                <p class="leading-relaxed lg:leading-7 text-sm sm:text-lg text-edu-gray max-w-4xl text-center">
                     {{ __("edulanding.audience.description") }}
                 </p>
             </div>
@@ -219,7 +219,7 @@
                         <span class="inline"> {{ __("edulanding.security.title_2") }} </span>
                     </h2>
                 </div>
-                <p class="leading-7 text-sm sm:text-lg lg:text-xl text-edu-gray max-w-2xl text-center">
+                <p class="leading-relaxed lg:leading-7 text-sm sm:text-lg lg:text-xl text-edu-gray max-w-2xl text-center">
                     {{ __("edulanding.security.description") }}
                 </p>
             </div>

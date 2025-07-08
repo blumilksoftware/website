@@ -28,7 +28,7 @@
                     <span class="inline">{{ $title ?? '' }}</span>
                 </h2>
             </div>
-            <p class="leading-6 text-sm sm:text-md text-edu-gray-dark max-w-2xl text-center">
+            <p class="leading-6 lg:leading-7 text-sm sm:text-md text-edu-gray-dark max-w-2xl text-center">
                 {{ $description ?? '' }}
             </p>
             <form action="{{ route('edulanding.contact.create') }}" method="POST" class="flex flex-col gap-y-4 justify-between mt-2">
