@@ -65,7 +65,7 @@
         </div>
     </section>
     <section class="relative">
-        <div class="px-4 sm:px-6 lg:px-12 2xl:max-w-[1200px] mx-auto space-y-10 py-8 sm:pt-20 lg:pb-28">
+        <div class="px-4 sm:px-6 lg:px-12 2xl:max-w-[1200px] mx-auto space-y-10 py-8 pt-12  sm:pt-20 lg:pb-28">
             <div class="flex text-center flex-col items-center gap-y-6 lg:gap-y-12">
                 <div class="text-3xl md:text-5xl lg:text-6xl text-center">
                     <h2 class="font-semibold text-edu-gray-dark leading-7 md:leading-tight">
@@ -113,20 +113,20 @@
                         class="font-light leading-6 lg:leading-7 text-sm sm:text-md lg:text-lg text-edu-gray max-w-3xl">{{ __("edulanding.erasmus.benefits.description") }}</div>
                 </div>
                 <div class="grid md:grid-cols-2 xl:grid-cols-6 gap-4 2xl:gap-12 xl:place-items-stretch">
-                    <x-edulanding.tile title="{{ __('edulanding.erasmus.benefits.tile_1') }}" class="xl:col-span-2">
+                    <x-edulanding.tile title="{{ __('edulanding.erasmus.benefits.tile_1') }}" class="xl:col-span-2 items-start xl:items-center">
                         <x-edulanding.progress-circle :value="80"/>
                     </x-edulanding.tile>
-                    <x-edulanding.tile title="{{ __('edulanding.erasmus.benefits.tile_2') }}" class="xl:col-span-2">
+                    <x-edulanding.tile title="{{ __('edulanding.erasmus.benefits.tile_2') }}" class="xl:col-span-2 items-start xl:items-center">
                         <x-edulanding.progress-circle :value="70"/>
                     </x-edulanding.tile>
-                    <x-edulanding.tile title="{{ __('edulanding.erasmus.benefits.tile_3') }}" class="xl:col-span-2">
+                    <x-edulanding.tile title="{{ __('edulanding.erasmus.benefits.tile_3') }}" class="xl:col-span-2 items-start xl:items-center">
                         <x-edulanding.progress-circle :value="90"/>
                     </x-edulanding.tile>
 
-                    <x-edulanding.tile title="{{ __('edulanding.erasmus.benefits.tile_4') }}" class="xl:col-span-3">
+                    <x-edulanding.tile title="{{ __('edulanding.erasmus.benefits.tile_4') }}" class="xl:col-span-3 items-start xl:items-center">
                         <x-edulanding.progress-circle :value="100"/>
                     </x-edulanding.tile>
-                    <x-edulanding.tile title="{{ __('edulanding.erasmus.benefits.tile_5') }}" class="xl:col-span-3">
+                    <x-edulanding.tile title="{{ __('edulanding.erasmus.benefits.tile_5') }}" class="xl:col-span-3 items-start xl:items-center">
                         <x-edulanding.progress-circle :value="100"/>
                     </x-edulanding.tile>
                 </div>

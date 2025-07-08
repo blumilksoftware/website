@@ -122,19 +122,19 @@
                         class="font-light leading-6 lg:leading-7 text-sm sm:text-md lg:text-lg text-edu-gray max-w-3xl">{{ __("edulanding.k1.benefits.description") }}</div>
                 </div>
                 <div class="grid md:grid-cols-2 xl:grid-cols-6 gap-4 2xl:gap-12 xl:place-items-stretch">
-                    <x-edulanding.tile title="{{ __('edulanding.k1.benefits.tile_1') }}" class="xl:col-span-2">
+                    <x-edulanding.tile title="{{ __('edulanding.k1.benefits.tile_1') }}" class="xl:col-span-2 items-start xl:items-center">
                         <x-edulanding.progress-circle :value="80" color="text-k1"/>
                     </x-edulanding.tile>
-                    <x-edulanding.tile title="{{ __('edulanding.k1.benefits.tile_2') }}" class="xl:col-span-2">
+                    <x-edulanding.tile title="{{ __('edulanding.k1.benefits.tile_2') }}" class="xl:col-span-2 items-start xl:items-center">
                         <x-edulanding.progress-circle :value="70" color="text-k1"/>
                     </x-edulanding.tile>
-                    <x-edulanding.tile title="{{ __('edulanding.k1.benefits.tile_3') }}" class="xl:col-span-2">
+                    <x-edulanding.tile title="{{ __('edulanding.k1.benefits.tile_3') }}" class="xl:col-span-2 items-start xl:items-center">
                         <x-edulanding.progress-circle :value="90" color="text-k1"/>
                     </x-edulanding.tile>
-                    <x-edulanding.tile title="{{ __('edulanding.k1.benefits.tile_4') }}" class="xl:col-span-3">
+                    <x-edulanding.tile title="{{ __('edulanding.k1.benefits.tile_4') }}" class="xl:col-span-3 items-start xl:items-center">
                         <x-edulanding.progress-circle :value="100" color="text-k1"/>
                     </x-edulanding.tile>
-                    <x-edulanding.tile title="{{ __('edulanding.k1.benefits.tile_5') }}" class="xl:col-span-3">
+                    <x-edulanding.tile title="{{ __('edulanding.k1.benefits.tile_5') }}" class="xl:col-span-3 items-start xl:items-center">
                         <x-edulanding.progress-circle :value="100" color="text-k1"/>
                     </x-edulanding.tile>
                 </div>
@@ -143,7 +143,7 @@
         <section>
             <img src="{{ asset('images/edulanding/k1-laptop.webp') }}" alt="{{ __('edulanding.k1.benefits.image_alt') }}" class="w-full object-cover h-auto"/>
         </section>
-        <section class="mt-8 lg:mt-48 lg:mb-8">
+        <section class="mt-8 lg:mt-48 lg:mb-8 mx-[5%]">
             <img src="{{ asset('images/edulanding/k1-architecture-'.$locale.'.webp') }}" alt="{{ __('edulanding.k1.benefits.architecture_image_alt') }}" class="h-auto mx-auto"/>
         </section>
 

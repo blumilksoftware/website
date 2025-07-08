@@ -130,7 +130,7 @@
                         <span class="inline">{{ __("edulanding.case_studies.title") }}</span>
                     </h2>
                 </div>
-                <p class="leading-relaxed lg:leading-7 text-sm sm:text-lg text-edu-gray max-w-4xl text-center">
+                <p class="leading-relaxed lg:leading-7 text-sm sm:text-lg text-edu-gray max-w-4xl text-center hidden md:block">
                     {{ __("edulanding.case_studies.description") }}
                 </p>
             </div>
@@ -160,7 +160,7 @@
                         <span class="inline">{{ __("edulanding.audience.title") }}</span>
                     </h2>
                 </div>
-                <p class="leading-relaxed lg:leading-7 text-sm sm:text-lg text-edu-gray max-w-4xl text-center">
+                <p class="leading-relaxed lg:leading-7 text-sm sm:text-lg text-edu-gray max-w-4xl text-center hidden md:block">
                     {{ __("edulanding.audience.description") }}
                 </p>
             </div>
