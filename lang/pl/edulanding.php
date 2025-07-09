@@ -51,7 +51,7 @@ return [
         "tile_6" => "Systemy do zarządzania projektami naukowymi i dydaktyką",
     ],
     "case_studies" => [
-        "title" => "Przykłady naszych realizacji",
+        "title" => "Nasze realizacje",
         "description" => "Nasze doświadczenie to efekt lat współpracy z instytucjami edukacyjnymi, a nie jednorazowych projektów Dlatego potrafimy doradzić, zaprojektować i wdrożyć dokładnie takie rozwiązanie, jakiego potrzebujesz. Sprawdź nasze przykładowe wdrożenia.",
         "k1" => [
             "title" => "K1",

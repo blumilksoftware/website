@@ -167,17 +167,17 @@
             <div class="grid grid-cols-1 tablet:grid-cols-2 gap-12 items-center">
                 <div class="hidden tablet:flex flex-col tablet:flex-row gap-4 h-auto tablet:h-[400px] justify-between">
                     <div class="relative">
-                        <div class="rounded-3xl overflow-hidden self-auto tablet:self-end">
+                        <div class="rounded-3xl overflow-hidden self-auto tablet:self-start">
                             <img  src="{{ asset('images/edulanding/audience1.webp') }}" aria-hidden="true" class="w-full tablet:w-auto object-cover" />
                         </div>
                         <div class="absolute -z-10 -top-12 -left-8 hidden lg:block">
                             <img src="{{ asset('images/edulanding/plus-icons.svg') }}" aria-hidden="true"/>
                         </div>
                     </div>
-                    <div class="rounded-3xl overflow-hidden self-auto tablet:self-start">
+                    <div class="rounded-3xl overflow-hidden self-auto tablet:self-center">
                         <img src="{{ asset('images/edulanding/audience2.webp') }}" aria-hidden="true" class="w-full tablet:w-auto object-cover" />
                     </div>
-                    <div class="rounded-3xl overflow-hidden self-auto tablet:self-center">
+                    <div class="rounded-3xl overflow-hidden self-auto tablet:self-start">
                         <img src="{{ asset('images/edulanding/audience3.webp') }}" aria-hidden="true" class="w-full tablet:w-auto object-cover" />
                     </div>
                 </div>

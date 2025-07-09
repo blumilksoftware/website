@@ -110,7 +110,7 @@
             </div>
         </div>
         <section class="relative">
-            <div class="mx-[10%] 2xl:max-w-[1200px] 2xl:mx-auto space-y-10 pt-8 sm:pt-20 lg:pt-40 lg:pb-28 pb-10">
+            <div class="mx-[10%] 2xl:max-w-[1200px] 2xl:mx-auto space-y-10 pt-8 sm:pt-20 lg:pb-28 pb-10">
                 <div class="pb-6 flex text-center flex-col items-center gap-y-6">
                     <div class="text-3xl md:text-5xl lg:text-6xl text-center">
                         <h2 class="font-semibold text-edu-gray-dark leading-7 md:leading-tight">
