@@ -128,5 +128,7 @@ return [
         "message" => "wiadomość",
         "consents" => "zgody",
         "email" => "e-mail",
+        "full_name" => "imię i nazwisko",
+        "company_name" => "nazwa firmy",
     ],
 ];

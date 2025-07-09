@@ -20,4 +20,22 @@ class HomeController extends Controller
             ->with("references", $references)
             ->with("clients", $clients);
     }
+
+    public function eduLanding(): View
+    {
+        return view("edulanding/edulanding");
+    }
+
+    public function eduLandingErasmus(): View
+    {
+        return view("edulanding/edulanding-erasmus");
+    }
+
+    public function eduLandingK1(): View
+    {
+        $locale = app()->getLocale();
+
+        return view("edulanding/edulanding-k1")
+            ->with("locale", $locale);
+    }
 }

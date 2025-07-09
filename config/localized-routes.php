@@ -15,7 +15,7 @@ use CodeZero\LocalizedRoutes\Middleware\Stores\CookieStore;
 use CodeZero\LocalizedRoutes\Middleware\Stores\SessionStore;
 
 return [
-    "supported_locales" => ["en", "pl"],
+    "supported_locales" => ["en", "pl", "de"],
     "fallback_locale" => "en",
     "omitted_locale" => null,
     "redirect_to_localized_urls" => true,

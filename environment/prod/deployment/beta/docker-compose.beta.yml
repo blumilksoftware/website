@@ -30,11 +30,11 @@ services:
           memory: 512M
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.blumilk-website-beta-app.rule=Host(`${BLUMILK_WEBSITE_HOST_NAME}`)"
+      - "traefik.http.routers.blumilk-website-beta-app.rule=Host(`${BLUMILK_WEBSITE_HOST_NAME}`) || Host(`edulanding.${BLUMILK_WEBSITE_HOST_NAME}`)"
       - "traefik.http.routers.blumilk-website-beta-app.entrypoints=websecure"
       - "traefik.http.routers.blumilk-website-beta-app.tls=true"
       - "traefik.http.routers.blumilk-website-beta-app.tls.certresolver=lets-encrypt-resolver"
-      - "traefik.http.routers.blumilk-website-beta-app.middlewares=authelia@file,response-gzip-compress@file"
+      - "traefik.http.routers.blumilk-website-beta-app.middlewares=response-gzip-compress@file"
     depends_on:
       blumilk-website-beta-database:
         condition: service_healthy

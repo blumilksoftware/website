@@ -21,12 +21,8 @@ services:
         labels:
             - "traefik.enable=true"
             - "traefik.blumilk.local.environment=true"
-            # HTTP
-            - "traefik.http.routers.website-http-router.rule=Host(`${APP_DOCKER_HOST_NAME}`)"
-            - "traefik.http.routers.website-http-router.entrypoints=web"
-            - "traefik.http.routers.website-http-router.service=website-app"
             # HTTPS
-            - "traefik.http.routers.website-https-router.rule=Host(`${APP_DOCKER_HOST_NAME}`)"
+            - "traefik.http.routers.website-https-router.rule=Host(`edulanding.${APP_DOCKER_HOST_NAME}`) || Host(`${APP_DOCKER_HOST_NAME}`)"
             - "traefik.http.routers.website-https-router.entrypoints=websecure"
             - "traefik.http.routers.website-https-router.tls=true"
             - "traefik.http.routers.website-https-router.service=website-app"
