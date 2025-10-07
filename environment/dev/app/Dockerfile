@@ -1,5 +1,5 @@
 # https://hub.docker.com/_/alpine
-FROM alpine:3.22.0@sha256:8a1f59ffb675680d47db6337b49d22281a139e9d709335b492be023728e11715 AS secops-tools
+FROM alpine:3.22.1@sha256:4bcff63911fcb4448bd4fdacec207030997caf25e9bea4045fa6c8c44de311d1 AS secops-tools
 
 # https://github.com/FiloSottile/age/releases
 ARG AGE_VERSION="1.1.1"
@@ -15,13 +15,13 @@ RUN wget --output-document age.tar.gz "https://github.com/FiloSottile/age/releas
     && chmod +x /usr/local/bin/sops
 
 # For other versions check: https://hub.docker.com/_/composer/tags
-FROM composer/composer:2.8.9-bin@sha256:c9bda63056674836406cacfbbdd8ef770fb4692ac419c967034225213c64e11b AS composer-bin
+FROM composer/composer:2.8.12-bin@sha256:c735b6a52ea118693178babc601984dbbbd07f1d31ec87eaa881173622b467ed AS composer-bin
 
 # For other versions check: https://hub.docker.com/_/node/tags
-FROM node:22.17.0-bullseye-slim@sha256:98663a445a21da13827b841d8df7b4d8743d5133e0d7a4e28ec0852140aa1abe AS node
+FROM node:22.17.1-bullseye-slim@sha256:741a60f76e79ab4080ebb10d24ec0c2aa4527fc44e33a8d609c416cc351b4fff AS node
 
 # For other versions check: https://hub.docker.com/_/php/tags
-FROM php:8.4.7-fpm-bookworm@sha256:66305ffab7428447e9a88648a5aab0558f1570eaff14c2c82fc71dff33ad84c7
+FROM php:8.4.13-fpm-bookworm@sha256:c7fff1a9facdb4d4e05a9959e4f52d95c8880c70ac3f7592988a5b36ed5c71fc
 
 COPY --from=composer-bin ./composer /usr/bin/composer
 COPY --from=secops-tools /usr/local/bin/age /usr/local/bin/age
@@ -88,7 +88,7 @@ RUN apt-get update \
 
 # For other versions check: https://pecl.php.net/package/xdebug
 # renovate: datasource=github-tags depName=xdebug/xdebug
-ARG XDEBUG_VERSION=3.4.4
+ARG XDEBUG_VERSION=3.4.5
 ARG INSTALL_XDEBUG=true
 
 RUN if [ ${INSTALL_XDEBUG} = true ]; then \
