@@ -144,13 +144,11 @@
   }
 }
 
-/* Ukryj tekst i linki w invisible reCAPTCHA */
 .rc-anchor-invisible-text,
 .rc-anchor-pt {
   display: none !important;
 }
 
-/* Wymuś pozycję kwadratu w lewym dolnym rogu */
 .grecaptcha-badge {
   right: auto !important;
   left: 10px !important;
