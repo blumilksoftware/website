@@ -146,10 +146,7 @@
 
 .grecaptcha-badge {
   right: auto !important;
-  left: 10px !important;
   bottom: 10px !important;
   width: 70px !important;
   height: 60px !important;
-  overflow: hidden !important;
-  background: transparent;
 }
