@@ -143,3 +143,20 @@
     animation-timing-function: cubic-bezier(0.5, 0.5, 1, 1);
   }
 }
+
+/* Ukryj tekst i linki w invisible reCAPTCHA */
+.rc-anchor-invisible-text,
+.rc-anchor-pt {
+  display: none !important;
+}
+
+/* Wymuś pozycję kwadratu w lewym dolnym rogu */
+.grecaptcha-badge {
+  right: auto !important;
+  left: 10px !important;
+  bottom: 10px !important;
+  width: 70px !important;
+  height: 60px !important;
+  overflow: hidden !important;
+  background: transparent;
+}
