@@ -143,3 +143,10 @@
     animation-timing-function: cubic-bezier(0.5, 0.5, 1, 1);
   }
 }
+
+.grecaptcha-badge {
+  right: auto !important;
+  bottom: 10px !important;
+  width: 70px !important;
+  height: 60px !important;
+}
