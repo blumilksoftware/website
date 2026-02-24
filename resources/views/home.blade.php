@@ -15,7 +15,6 @@
                     <h2 class="font-semibold text-gray-900 leading-7 md:leading-snug">
                         <span class="inline">{{ __("content.home.section_1.title_1") }}</span>
                         <span class="text-blue-normal inline"> {{ __("content.home.section_1.title_2") }} </span>
-                        <span class="inline">{{ __("content.home.section_1.title_3") }}</span>
                     </h2>
                 </div>
                 <div class="flex flex-col items-center xl:items-start">
@@ -23,8 +22,8 @@
                         <span class="leading-7">{{ __("content.home.section_1.subtitle_1") }}</span>
                         <span class="font-semibold leading-7">{{ __("content.home.section_1.subtitle_2") }}</span>
                     </p>
-                    <x-primary-button href="{{ route('about') }}"
-                                      class="w-full sm:w-auto sm:px-12 -ml-1 shadow-xl bg-blue-normal">{{ __("buttons.about") }}</x-primary-button>
+                    <x-primary-button href="{{ route('offer') }}"
+                                      class="w-full sm:w-auto sm:px-12 -ml-1 shadow-xl bg-blue-normal">{{ __("buttons.see_how_we_can_help") }}</x-primary-button>
                 </div>
             </div>
             <div class="flex basis-3/5 relative self-center pb-8 md:pb-24 xl:pb-4 xl:left-16">
@@ -48,6 +47,18 @@
             </div>
         </section>
 
+        <section class="mx-[10%] 2xl:max-w-[1400px] 2xl:mx-auto">
+            <div class="grid md:grid-cols-2 gap-6 xl:gap-8">
+                <x-simple-tile
+                    title="Kim jesteśmy?"
+                    description="Blumilk to zespół inżynierów, badaczy i konsultantów specjalizujących się w projektowaniu zaawansowanych systemów AI oraz cyfryzacji procesów w wymagających branżach." />
+
+                <x-simple-tile
+                    title="Nie tylko używamy AI - my je tworzymy."
+                    description="Nasz zespół, w tym doktoranci i specjaliści zajmujący się AI/ML, projektuje algorytmy, systemy eksperckie i architektury, które rozwiązują problemy zbyt złożone dla gotowych narzędzi." />
+            </div>
+        </section>
+
         <section class="relative">
             <div class="mx-[10%] 2xl:max-w-[1400px] 2xl:mx-auto space-y-10 pt-8 sm:pt-20 lg:pt-40 lg:pb-28">
                 <div class="pb-6 lg:pb-14 text-center">
@@ -55,31 +66,34 @@
                     <span class="font-light leading-7 text-sm sm:text-md lg:text-lg relative">{{ __("content.home.section_3.subtitle_1") }}</span>
                 </div>
                 <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-12 xl:place-items-stretch">
-                    <x-tile title="{{ __('content.home.section_3.tile_1.title') }}"
-                            description="{{ __('content.home.section_3.tile_1.subtitle') }}">
-                        <x-icons.app-window accent="stroke-website-normal"/>
-                    </x-tile>
-
                     <x-tile title="{{ __('content.home.section_3.tile_2.title') }}"
                             description="{{ __('content.home.section_3.tile_2.subtitle') }}">
                         <x-icons.desktop-analytics accent="stroke-website-normal"/>
+                    </x-tile>
+
+                    <x-tile title="{{ __('content.home.section_3.tile_6.title') }}"
+                            description="{{ __('content.home.section_3.tile_6.subtitle') }}">
+                        <x-icons.robot accent="stroke-website-normal"/>
+                    </x-tile>
+
+                    <x-tile title="{{ __('content.home.section_3.tile_4.title') }}"
+                            description="{{ __('content.home.section_3.tile_4.subtitle') }}">
+                        <x-icons.search accent="stroke-black"/>
+                    </x-tile>
+
+                    <x-tile title="{{ __('content.home.section_3.tile_1.title') }}"
+                            description="{{ __('content.home.section_3.tile_1.subtitle') }}">
+                        <x-icons.app-window accent="stroke-website-normal"/>
                     </x-tile>
 
                     <x-tile title="{{ __('content.home.section_3.tile_3.title') }}"
                             description="{{ __('content.home.section_3.tile_3.subtitle') }}">
                         <x-icons.report-search accent="stroke-website-normal"/>
                     </x-tile>
-                    <x-tile title="{{ __('content.home.section_3.tile_4.title') }}"
-                            description="{{ __('content.home.section_3.tile_4.subtitle') }}">
-                        <x-icons.search accent="stroke-black"/>
-                    </x-tile>
+
                     <x-tile title="{{ __('content.home.section_3.tile_5.title') }}"
                             description="{{ __('content.home.section_3.tile_5.subtitle') }}">
                         <x-icons.photo-scan accent="stroke-website-normal"/>
-                    </x-tile>
-                    <x-tile title="{{ __('content.home.section_3.tile_6.title') }}"
-                            description="{{ __('content.home.section_3.tile_6.subtitle') }}">
-                        <x-icons.robot accent="stroke-website-normal"/>
                     </x-tile>
                 </div>
             </div>
@@ -110,7 +124,7 @@
                     </div>
                 </div>
                 <div class="flex md:gap-2 justify-center flex-col sm:flex-row">
-                    <x-small-primary-button href="{{ route('projects') }}" class="px-10 justify-center">{{ __("buttons.see_more_projects") }}</x-small-primary-button>
+                    <x-small-primary-button href="{{ route('projects') }}" class="px-10 justify-center">{{ __("buttons.see_our_projects") }}</x-small-primary-button>
                 </div>
             </div>
         </section>

@@ -20,17 +20,31 @@
             </div>
         </div>
     </div>
-    <div class="h-auto w-auto bg-blue-normal-neon text-white text-sm text-center place-self-center py-3 px-6 font-normal rounded-3xl absolute hidden lg:flex lg:-right-32 xl:-right-44 2xl:-right-52 top-72">
-        {{ __('content.home.section_4.badge') }}
+    <div class="w-80 bg-white rounded-2xl absolute shadow-lg border-gray-100 border-2 hidden lg:block lg:-right-36 2xl:-right-52 bottom-20">
+        <div class="divide-y divide-gray-200 overflow-hidden">
+            <div class="py-3 px-6 text-center font-semibold text-md">
+                {{ __('content.home.section_4.tile_2.title_1') }}
+            </div>
+            <div class="p-5 text-sm text-center text-gray-500">
+                {{ __('content.home.section_4.tile_2.description_1') }}
+            </div>
+        </div>
     </div>
-    <div class="h-36 lg:flex items-center bg-white rounded-2xl absolute hidden lg:-left-36 xl:-left-48 2xl:-left-64 shadow-lg border-gray-100 border-2 bottom-8">
+    <div class="h-54 lg:flex items-center bg-white rounded-2xl absolute hidden lg:-left-36 xl:-left-48 2xl:-left-64 shadow-lg border-gray-100 border-2 bottom-8">
         <div class="flex items-center align-middle gap-x-9 ml-6">
             <div class="shadow-md bg-white p-4 rounded-full size-16">
                 <x-icons.window/>
             </div>
             <div>
-                <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">{{ __('content.home.section_4.tile_2.title_1') }}</h3>
-                <p class="font-normal leading-6 w-80 text-sm text-gray-500">{{ __('content.home.section_4.tile_2.description_1') }}</p>
+                <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">
+                    {{ __('content.home.section_4.tile_3.title_1') }}
+                </h3>
+                <ul class="list-disc list-inside space-y-1 mt-2 text-sm text-gray-500 font-normal leading-6 w-80">
+                    <li>{{ __('content.home.section_4.tile_3.description_1') }}</li>
+                    <li>{{ __('content.home.section_4.tile_3.description_2') }}</li>
+                    <li>{{ __('content.home.section_4.tile_3.description_3') }}</li>
+                    <li>{{ __('content.home.section_4.tile_3.description_4') }}</li>
+                </ul>
             </div>
         </div>
     </div>

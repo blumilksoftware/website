@@ -14,12 +14,12 @@
             </div>
             <div class="items-center 2xl:items-start text-sm md:text-lg max-w-[886px]">
                 <p class="font-normal text-center 2xl:text-start pb-8 leading-7">
-                    {{ __("content.about.section_1.subtitle_1") }}
-                    <span class="font-semibold">{{ __("content.about.section_1.subtitle_2") }}</span>
-                    <span class="leading-7">{{ __("content.about.section_1.subtitle_3") }}</span>
+                    <span class="font-semibold">{{ __("content.about.section_1.subtitle_1") }}</span>
+                    {{ __("content.about.section_1.subtitle_2") }}
                 </p>
-                <p class="font-normal text-center 2xl:text-start leading-7">
-                    <span class="font-semibold">{{ __("content.about.section_1.subtitle_4") }}</span>
+                <p class="font-normal text-center 2xl:text-start pb-8 leading-7">
+                    {{ __("content.about.section_1.subtitle_3") }}
+                    <span class="font-semibold"> {{ __("content.about.section_1.subtitle_4") }}</span>
                     {{ __("content.about.section_1.subtitle_5") }}
                 </p>
             </div>
@@ -39,13 +39,13 @@
             </div>
             <div>
                 <dl class="flex flex-col gap-4">
-                    <dd class="order-first text-6xl font-semibold">155</dd>
+                    <dd class="order-first text-6xl font-semibold">175</dd>
                     <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_2") }}</dt>
                 </dl>
             </div>
             <div>
                 <dl class="flex flex-col gap-4">
-                    <dd class="order-first text-6xl font-semibold">100</dd>
+                    <dd class="order-first text-6xl font-semibold">118</dd>
                     <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_3") }}</dt>
                 </dl>
             </div>

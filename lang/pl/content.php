@@ -12,11 +12,10 @@ return [
     ],
     "home" => [
         "section_1" => [
-            "title_1" => "Oprogramowanie dopasowane do",
-            "title_2" => "Twoich",
-            "title_3" => "potrzeb",
-            "subtitle_1" => "Pomagamy klientom w transformacji cyfrowej i tworzymy złożone aplikacje web/mobile oraz zaawansowane projekty B+R.",
-            "subtitle_2" => "Zmieniamy koncepcje w działające rozwiązania.",
+            "title_1" => " Cyfryzacja i AI dla",
+            "title_2" => " efektywnej transformacji biznesu",
+            "subtitle_1" => "Przekształcamy dane i procesy w przewagę operacyjną klientów.",
+            "subtitle_2" => "Tworzymy technologie, które realnie skracają czas pracy, eliminują koszty, podnoszą jakość decyzji i redukują ryzyka.",
         ],
         "section_2" => [
             "title_1" => "Dołącz do grona",
@@ -47,7 +46,7 @@ return [
             ],
             "tile_6" => [
                 "title" => "Rozwiązania AI",
-                "subtitle" => "Proponujemy klientom optymalizację działań z wykorzystaniem AI.",
+                "subtitle" => "Budujemy modele AI, które optymalizują skomplikowane procesy.",
             ],
         ],
         "section_4" => [
@@ -55,14 +54,20 @@ return [
             "subtitle_1" => "Dowiedz się, jak nasze realizacje przekształciły pomysły klientów w",
             "subtitle_2" => "skuteczne rozwiązania.",
             "tile_1" => [
-                "title_1" => "Cel projektu",
-                "description_1" => "Stworzenie aplikacji do zamawiania usług medycznych z dedykowanym panelem dla pracowników i klientów.",
+                "title_1" => "Wyzwanie",
+                "description_1" => "Czasochłonny proces zgłaszania i oceny pomysłów (ok. 1h i 10 stron dokumentów per pomysł).",
             ],
             "tile_2" => [
-                "title_1" => "Zarządzaj swoimi wizytami",
-                "description_1" => "Bezpieczny i intuicyjny proces zamawiania oraz płatności za wybrane usługi.",
+                "title_1" => "Rozwiązanie",
+                "description_1" => "Warsztaty i aplikacja wspierana AI, która automatyzuje zgłaszanie, ocenę i weryfikację pomysłów.",
             ],
-            "badge" => "Design wpasowujący się w specyfikę branży",
+            "tile_3" => [
+                "title_1" => "Efekty:",
+                "description_1" => "Czas zgłoszenia: 1h → 5 min",
+                "description_2" => "Liczba pomysłów: 500 → 2500 rocznie",
+                "description_3" => "Automatyczna weryfikacja duplikatów przez AI",
+                "description_4" => "Potencjalne oszczędności: ~10 mln zł rocznie",
+            ],
         ],
         "section_5" => [
             "title_1" => "Opinie klientów",
@@ -76,13 +81,14 @@ return [
     ],
     "about" => [
         "section_1" => [
-            "title_1" => "Blumilk",
-            "title_2" => "to przede wszystkim ludzie",
-            "subtitle_1" => "Nasz zespół to ponad",
-            "subtitle_2" => "25 wyjątkowych pasjonatów technologii",
-            "subtitle_3" => "- programiści, testerzy, devopsi, graficy, kierownicy projektów i specjaliści o bogatych doświadczeniach.",
-            "subtitle_4" => "Pracujemy w trybie stacjonarnym i hybrydowym",
-            "subtitle_5" => "z Legnicy, łącząc elastyczność z efektywnością.",
+            "title_1" => "Partner technologiczny",
+            "title_2" => "Twojej cyfryzacji",
+            "subtitle_1" => "Firmy potrzebują partnera, który zrozumie ich procesy, ryzyka i dane,",
+            "subtitle_2" => "a następnie zaprojektuje i wdroży rozwiązania realnie usprawniające sposób działania organizacji.",
+            "subtitle_3" => "Blumilk to zespół inżynierów, badaczy i konsultantów, którzy projektują i wdrażają",
+            "subtitle_4" => "zaawansowane systemy AI,",
+            "subtitle_5" => "wspierające cyfryzację i transformację procesów biznesowych.
+",
         ],
         "section_2" => [
             "stat_1" => "osób w zespole",
