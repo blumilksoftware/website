@@ -108,8 +108,17 @@ return [
             "content_6" => "Nasze produkty są nie tylko funkcjonalne, ale również wydajne i zgodne z najnowszymi standardami. Dbamy o każdy detal, doskonalimy procesy oraz stosujemy innowacyjne podejście.",
         ],
         "section_4" => [
-            "title_1" => "Nasza misja",
-            "subtitle_1" => "Promujemy kulturę innowacji, współpracy i nieustannego rozwoju w branży IT.",
+            "title_1" => "Realne zaplecze naukowe",
+            "subtitle_1" => "Część zespołu Blumilk prowadzi działalność naukowo-badawczą w obszarach AI, ML, NLP, systemów decyzyjnych oraz inżynierii oprogramowania, równolegle współpracując z uczelniami wyższymi przy kształceniu przyszłych specjalistów.",
+            "benefits" => [
+              "title_1" => "Dzięki temu:",
+              "benefit_1" => "mamy stały dostęp do najnowszej wiedzy akademickiej,",
+              "benefit_2" => "rozwijamy własne algorytmy, modele i prototypy w środowisku badawczo-rozwojowym,",
+              "benefit_3" => "realizujemy projekty we współpracy z jednostkami naukowymi,",
+              "benefit_4" => "wspieramy klientów w przygotowaniu i realizacji projektów B+R,",
+              "benefit_5" => "uczestniczymy w tworzeniu wniosków o finansowanie cyfryzacji i innowacji.",
+              "description" => "Dla Ciebie oznacza to współpracę z zespołem, który potrafi projektować i budować AI, a nie tylko ją wdrażać.",
+            ],
             "activity_1" => [
                 "title" => "Projekty badawczo-rozwojowe (B+R)",
                 "subtitle" => "Dzięki doświadczeniu i&nbsp;wiedzy zdobytej przez członków naszego zespołu, jesteśmy w&nbsp;stanie skutecznie zarządzać i realizować projekty B+R, zapewniając naszym klientom najwyższą jakość i innowacyjność w każdym etapie współpracy.",
@@ -130,6 +139,49 @@ return [
         "section_5" => [
             "title_1" => "Blumilk po godzinach",
             "subtitle_1" => "Mamy to niesamowite szczęście, że lubimy spędzać ze sobą czas, nie tylko w biurze!",
+        ],
+        "section_6" => [
+            "title_1" => "Co dostaje klient, który z nami pracuje?",
+            "benefit_1" => [
+                "title" => "Zaawansowane systemy AI dopasowane do specyficznych procesów firmy",
+                "subtitle" => "Nie integrujemy cudzych „gotowców”.
+Projektujemy algorytmy i systemy uczone na danych klienta, zgodne z regulacjami i wymaganiami branżowymi.",
+            ],
+            "benefit_2" => [
+                "title" => "Cyfryzacja trudnych, manualnych i rozproszonych procesów",
+                "subtitle" => "Od analizy ryzyka, przez dokumenty, po komunikację i operacje - projektujemy cyfrowe środowiska pracy.",
+            ],
+            "benefit_3" => [
+                "title" => "Eksperckie zespoły B+R",
+                "subtitle" => "Prowadzimy projekty badawczo-rozwojowe w modelu grantowym, we współpracy z firmami konsultingowymi dla największych instytucji publicznych i przedsiębiorstw.",
+            ],
+            "benefit_4" => [
+                "title" => "Audyty i due diligence technologiczne",
+                "subtitle" => "Analizujemy istniejące systemy, procesy i dane.
+Pomagamy podjąć decyzję - czy naprawiać, przebudować, czy stworzyć od nowa.",
+            ],
+            "benefit_5" => [
+                "title" => "Wytwarzanie oprogramowania tam, gdzie jest potrzebne",
+                "subtitle" => "Tworzymy nowoczesne, skalowalne systemy, mikroserwisy, integracje i platformy, jako element większej zmiany cyfrowej.",
+            ],
+        ],
+        "section_7" => [
+            "title_1" => "Wspieramy rozwój polskiego i europejskiego ekosystemu technologicznego",
+            "column_1" => [
+                "text_1" => "Jesteśmy organizatorami",
+                "text_2" => "Legnickiego Meetupu Technologicznego,",
+                "text_3" => "wydarzenia, które łączy programistów, naukowców, specjalistów AI oraz liderów branży, tworząc przestrzeń do wymiany wiedzy i prezentacji swoich doświadczeń w branży IT.",
+            ],
+            "column_2" => [
+                "text_1" => "Nasi eksperci",
+                "text_2" => "występują na konferencjach branżowych i naukowych,",
+                "text_3" => "w tym międzynarodowych wydarzeniach poświęconych AI, automatyzacji i cyfryzacji procesów. Regularnie dzielimy się wynikami badań, doświadczeniami projektowymi i najlepszymi praktykami we wdrażaniu systemów opartych na danych.",
+            ],
+            "column_3" => [
+                "text_1" => "Jako partner w rozwoju regionalnym uczestniczymy również w",
+                "text_2" => "misjach gospodarczych organizowanych przez Urząd Marszałkowski Województwa Dolnośląskiego (UMWD),",
+                "text_3" => "reprezentując dolnośląski sektor nowych technologii na rynkach międzynarodowych. Współpracujemy z samorządami, uczelniami i biznesem, promując nowoczesne podejście do cyfryzacji i automatyzacji.",
+            ],
         ],
     ],
     "case_studies" => [
