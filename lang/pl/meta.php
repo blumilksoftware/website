@@ -15,6 +15,10 @@ return [
         "title" => "Projekty",
         "description" => "Zobacz, jakie projekty udało nam się zrealizować.",
     ],
+    "offer" => [
+        "title" => "Oferta",
+        "description" => "Sprawdź, co możemy dla Ciebie zrobić.",
+    ],
     "career" => [
         "title" => "Kariera",
         "description" => "Dołącz do naszego zespołu!",

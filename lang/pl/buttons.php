@@ -21,4 +21,5 @@ return [
     "accept_all" => "Akceptuj wszystkie",
     "download" => "Pobierz",
     "see_how_we_can_help" => "Sprawdź, jak możemy Ci pomóc",
+    "schedule_free_consultation" => "Umów się na bezpłatną konsultację",
 ];

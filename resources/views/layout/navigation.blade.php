@@ -27,6 +27,11 @@
                         'hover:text-blue-normal rounded-3xl px-2',
                         'text-blue-normal' => Str::contains($current, 'projects')])>{{ __("content.pages.projects") }}
                 </a>
+                <a href="{{ route('offer') }}"
+                    @class([
+                         'hover:text-blue-normal rounded-3xl px-2',
+                         'text-blue-normal' => Str::contains($current, 'offer')])>{{ __("content.pages.offer") }}
+                </a>
                 <a href="{{ route('career') }}"
                    @class([
                         'hover:text-blue-normal rounded-3xl px-2',
@@ -108,6 +113,13 @@
                 'text-blue-normal' => Str::contains($current, 'projects')])>
                 <a href="{{ route('projects') }}" class="my-4 p-2">
                     {{ __("content.pages.projects") }}
+                </a>
+            </div>
+            <div @class([
+                'w-full group hover:text-blue-normal py-4 text-lg sm:text-xl text-start',
+                'text-blue-normal' => Str::contains($current, 'offer')])>
+                <a href="{{ route('offer') }}" class="my-4 p-2">
+                    {{ __("content.pages.offer") }}
                 </a>
             </div>
             <div @class([
