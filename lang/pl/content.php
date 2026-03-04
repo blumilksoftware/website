@@ -230,14 +230,38 @@ Pomagamy podjąć decyzję - czy naprawiać, przebudować, czy stworzyć od nowa
         ],
         "section_4" => [
             "title_1" => "Tworzymy dostosowane systemy cyfryzacji i AI, które odpowiadają na konkretne potrzeby operacyjne",
-            "item_1" => "Document Intelligence",
-            "item_2" => "Expert Operations",
-            "item_3" => "Fraud & Risk Prevention",
-            "item_4" => "Logistics & Cost Optimization",
-            "item_5" => "Administrative Process Automation",
-            "item_6" => "Smart Communication Systems",
-            "item_7" => "Quality & Kaizen Tools",
-            "item_8" => "Advanced Problem Solving",
+            "item_1" => [
+                "title" => "Document Intelligence",
+                "subtitle" => "Automatyzacja przetwarzania dokumentów: klasyfikacja, ekstrakcja danych, obieg, archiwizacja.",
+            ],
+            "item_2" => [
+                "title" => "Expert Operations",
+                "subtitle" => "Wsparcie pracy ekspertów: obsługa wniosków, decyzje, bazy wiedzy.",
+            ],
+            "item_3" => [
+                "title" => "Fraud & Risk Prevention",
+                "subtitle" => "Wykrywanie anomalii, nadużyć i ocena ryzyka operacyjnego.",
+            ],
+            "item_4" => [
+                "title" => "Logistics & Cost Optimization",
+                "subtitle" => "Planowanie tras, alokacja zasobów, analizy kosztowe.",
+            ],
+            "item_5" => [
+                "title" => "Administrative Process Automation",
+                "subtitle" => "Automatyzacja licencji, rezerwacji, dokumentacji i compliance.",
+            ],
+            "item_6" => [
+                "title" => "Smart Communication Systems",
+                "subtitle" => "Automatyczne notyfikacje, alerty i komunikacja wewnętrzna.",
+            ],
+            "item_7" => [
+                "title" => "Quality & Kaizen Tools",
+                "subtitle" => "Narzędzia TQM, Lean/Kaizen, sugestie pracownicze.",
+            ],
+            "item_8" => [
+                "title" => "Advanced Problem Solving",
+                "subtitle" => "Rozwiązywanie niestandardowych wyzwań biznesowych w modelu badawczo-rozwojowych i inżynieryjnym.",
+            ],
         ],
         "section_5" => [
             "title_1" => "Wspieramy klientów w osiąganiu",

@@ -29,7 +29,7 @@
             <div class="pb-10 md:pb-14 text-center">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.offer.section_2.title_1") }}</h2>
             </div>
-            <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-4 2xl:gap-12 xl:place-items-stretch">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 2xl:gap-12">
                 <div class="bg-gray-extra-light rounded-xl px-6">
                     <div class="flex flex-row gap-5 py-6 h-full items-center">
                         <div class="shrink-0">
@@ -60,7 +60,7 @@
             </span>
                     </div>
                 </div>
-                <div class="bg-gray-extra-light rounded-xl px-6 xl:col-start-2">
+                <div class="bg-gray-extra-light rounded-xl px-6">
                     <div class="flex flex-row gap-5 py-6 h-full items-center">
                         <div class="shrink-0">
                             <x-icons.treadmill accent="text-website-normal" class="size-12" />
@@ -148,86 +148,46 @@
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.offer.section_4.title_1") }}</h2>
             </div>
             <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-4 2xl:gap-12 xl:place-items-stretch">
-                <div class="bg-gray-extra-light rounded-xl px-6">
-                    <div class="flex flex-row gap-5 py-6 h-full items-center">
-                        <div class="shrink-0">
-                            <x-icons.clock accent="text-website-normal" class="size-12" />
-                        </div>
-                        <span class="font-semibold text-lg leading-7">
-                {{ __("content.offer.section_4.item_1") }}
-            </span>
-                    </div>
-                </div>
-                <div class="bg-gray-extra-light rounded-xl px-6">
-                    <div class="flex flex-row gap-5 py-6 h-full items-center">
-                        <div class="shrink-0">
-                            <x-icons.school accent="text-website-normal" class="size-12" />
-                        </div>
-                        <span class="font-semibold text-lg leading-7">
-                {{ __("content.offer.section_4.item_2") }}
-            </span>
-                    </div>
-                </div>
-                <div class="bg-gray-extra-light rounded-xl px-6">
-                    <div class="flex flex-row gap-5 py-6 h-full items-center">
-                        <div class="shrink-0">
-                            <x-icons.stethoscope accent="text-website-normal" class="size-12" />
-                        </div>
-                        <span class="font-semibold text-lg leading-7">
-                {{ __("content.offer.section_4.item_3") }}
-            </span>
-                    </div>
-                </div>
-                <div class="bg-gray-extra-light rounded-xl px-6">
-                    <div class="flex flex-row gap-5 py-6 h-full items-center">
-                        <div class="shrink-0">
-                            <x-icons.stethoscope accent="text-website-normal" class="size-12" />
-                        </div>
-                        <span class="font-semibold text-lg leading-7">
-                {{ __("content.offer.section_4.item_4") }}
-            </span>
-                    </div>
-                </div>
-                <div class="bg-gray-extra-light rounded-xl px-6">
-                    <div class="flex flex-row gap-5 py-6 h-full items-center">
-                        <div class="shrink-0">
-                            <x-icons.stethoscope accent="text-website-normal" class="size-12" />
-                        </div>
-                        <span class="font-semibold text-lg leading-7">
-                {{ __("content.offer.section_4.item_5") }}
-            </span>
-                    </div>
-                </div>
-                <div class="bg-gray-extra-light rounded-xl px-6">
-                    <div class="flex flex-row gap-5 py-6 h-full items-center">
-                        <div class="shrink-0">
-                            <x-icons.stethoscope accent="text-website-normal" class="size-12" />
-                        </div>
-                        <span class="font-semibold text-lg leading-7">
-                {{ __("content.offer.section_4.item_6") }}
-            </span>
-                    </div>
-                </div>
-                <div class="bg-gray-extra-light rounded-xl px-6">
-                    <div class="flex flex-row gap-5 py-6 h-full items-center">
-                        <div class="shrink-0">
-                            <x-icons.stethoscope accent="text-website-normal" class="size-12" />
-                        </div>
-                        <span class="font-semibold text-lg leading-7">
-                {{ __("content.offer.section_4.item_7") }}
-            </span>
-                    </div>
-                </div>
-                <div class="bg-gray-extra-light rounded-xl px-6">
-                    <div class="flex flex-row gap-5 py-6 h-full items-center">
-                        <div class="shrink-0">
-                            <x-icons.stethoscope accent="text-website-normal" class="size-12" />
-                        </div>
-                        <span class="font-semibold text-lg leading-7">
-                {{ __("content.offer.section_4.item_8") }}
-            </span>
-                    </div>
-                </div>
+                <x-tile-top-icon title="{{ __('content.offer.section_4.item_1.title') }}"
+                                 description="{{ __('content.offer.section_4.item_1.subtitle') }}"
+                                 class="2xl:place-items-start">
+                    <x-icons.heart-code accent="stroke-blue-normal-neon" />
+                </x-tile-top-icon>
+                <x-tile-top-icon title="{{ __('content.offer.section_4.item_2.title') }}"
+                                 description="{{ __('content.offer.section_4.item_2.subtitle') }}"
+                                 class="2xl:place-items-start">
+                    <x-icons.heart-code accent="stroke-blue-normal-neon" />
+                </x-tile-top-icon>
+                <x-tile-top-icon title="{{ __('content.offer.section_4.item_3.title') }}"
+                                 description="{{ __('content.offer.section_4.item_3.subtitle') }}"
+                                 class="2xl:place-items-start">
+                    <x-icons.heart-code accent="stroke-blue-normal-neon" />
+                </x-tile-top-icon>
+                <x-tile-top-icon title="{{ __('content.offer.section_4.item_4.title') }}"
+                                 description="{{ __('content.offer.section_4.item_4.subtitle') }}"
+                                 class="2xl:place-items-start">
+                    <x-icons.heart-code accent="stroke-blue-normal-neon" />
+                </x-tile-top-icon>
+                <x-tile-top-icon title="{{ __('content.offer.section_4.item_5.title') }}"
+                                 description="{{ __('content.offer.section_4.item_5.subtitle') }}"
+                                 class="2xl:place-items-start">
+                    <x-icons.heart-code accent="stroke-blue-normal-neon" />
+                </x-tile-top-icon>
+                <x-tile-top-icon title="{{ __('content.offer.section_4.item_6.title') }}"
+                                 description="{{ __('content.offer.section_4.item_6.subtitle') }}"
+                                 class="2xl:place-items-start">
+                    <x-icons.heart-code accent="stroke-blue-normal-neon" />
+                </x-tile-top-icon>
+                <x-tile-top-icon title="{{ __('content.offer.section_4.item_7.title') }}"
+                                 description="{{ __('content.offer.section_4.item_7.subtitle') }}"
+                                 class="2xl:place-items-start">
+                    <x-icons.heart-code accent="stroke-blue-normal-neon" />
+                </x-tile-top-icon>
+                <x-tile-top-icon title="{{ __('content.offer.section_4.item_8.title') }}"
+                                 description="{{ __('content.offer.section_4.item_8.subtitle') }}"
+                                 class="2xl:place-items-start">
+                    <x-icons.heart-code accent="stroke-blue-normal-neon" />
+                </x-tile-top-icon>
             </div>
         </div>
     </section>
@@ -260,7 +220,7 @@
                 <div class="text-center xl:justify-start xl:text-start pb-5 xl:pb-10">
                     <h2 class="font-semibold text-gray-900 leading-12 text-md md:text-4xl lg:text-5xl mb-4 md:mb-10">{{ __("content.offer.section_6.title_1") }}</h2>
                     <p class="font-normal text-center 2xl:text-start pb-8 leading-7">
-                        {{ __("content.offer.section_1.subtitle_1") }}
+                        {{ __("content.offer.section_6.subtitle_1") }}
                         <span class="font-semibold">{{ __("content.offer.section_6.subtitle_2") }} </span>
                         {{ __("content.offer.section_6.subtitle_3") }}
                     </p>
