@@ -13,10 +13,9 @@ return [
     ],
     "home" => [
         "section_1" => [
-            "title_1" => " Cyfryzacja i AI dla",
-            "title_2" => " efektywnej transformacji biznesu",
-            "subtitle_1" => "Przekształcamy dane i procesy w przewagę operacyjną klientów.",
-            "subtitle_2" => "Tworzymy technologie, które realnie skracają czas pracy, eliminują koszty, podnoszą jakość decyzji i redukują ryzyka.",
+            "title_1" => " Cyfryzacja i AI",
+            "title_2" => " wspierające rozwój Twojego biznesu",
+            "subtitle_1" => "Tworzymy technologie, które realnie skracają czas pracy, eliminują koszty, podnoszą jakość decyzji i redukują ryzyka.",
         ],
         "section_2" => [
             "title_1" => "Dołącz do grona",
@@ -24,7 +23,7 @@ return [
         ],
         "section_3" => [
             "title_1" => "Co możemy dla Ciebie zrobić?",
-            "subtitle_1" => "Twój biznes potrzebuje transformacji cyfrowej? Jesteś we właściwym miejscu.",
+            "subtitle_1" => "Nie tylko używamy AI - my je tworzymy. Nasz zespół, w tym doktoranci i specjaliści zajmujący się AI/ML, projektuje algorytmy, systemy eksperckie i architektury, które rozwiązują problemy zbyt złożone dla gotowych narzędzi.",
             "tile_1" => [
                 "title" => "Aplikacje mobilne i webowe",
                 "subtitle" => "Tworzymy dedykowane oprogramowanie w formie aplikacji mobilnych i webowych.",
@@ -56,23 +55,22 @@ return [
             "subtitle_2" => "skuteczne rozwiązania.",
             "tile_1" => [
                 "title_1" => "Wyzwanie",
-                "description_1" => "Czasochłonny proces zgłaszania i oceny pomysłów (ok. 1h i 10 stron dokumentów per pomysł).",
+                "description_1" => "Czasochłonny proces zgłaszania i oceny wniosków (ok. 1h i 10 stron dokumentów per wniosek).",
             ],
             "tile_2" => [
                 "title_1" => "Rozwiązanie",
-                "description_1" => "Warsztaty i aplikacja wspierana AI, która automatyzuje zgłaszanie, ocenę i weryfikację pomysłów.",
+                "description_1" => "Warsztaty i aplikacja wspierana AI, która automatyzuje zgłaszanie, ocenę i weryfikację wniosków.",
             ],
             "tile_3" => [
                 "title_1" => "Efekty:",
                 "description_1" => "Czas zgłoszenia: 1h → 5 min",
-                "description_2" => "Liczba pomysłów: 500 → 2500 rocznie",
+                "description_2" => "Liczba wniosków: 500 → 2500 rocznie",
                 "description_3" => "Automatyczna weryfikacja duplikatów przez AI",
                 "description_4" => "Potencjalne oszczędności: ~10 mln zł rocznie",
             ],
         ],
         "section_5" => [
             "title_1" => "Opinie klientów",
-            "subtitle_1" => "Opinie naszych klientów są bardzo ważne, świadczą o jakości naszych usług i inspirują nas do nieustannego doskonalenia.",
         ],
         "section_6" => [
             "title_1" => "Zainteresowany współpracą?",
@@ -112,14 +110,14 @@ return [
             "title_1" => "Realne zaplecze naukowe",
             "subtitle_1" => "Część zespołu Blumilk prowadzi działalność naukowo-badawczą w obszarach AI, ML, NLP, systemów decyzyjnych oraz inżynierii oprogramowania, równolegle współpracując z uczelniami wyższymi przy kształceniu przyszłych specjalistów.",
             "benefits" => [
-                "title_1" => "Dzięki temu:",
-                "benefit_1" => "mamy stały dostęp do najnowszej wiedzy akademickiej,",
-                "benefit_2" => "rozwijamy własne algorytmy, modele i prototypy w środowisku badawczo-rozwojowym,",
-                "benefit_3" => "realizujemy projekty we współpracy z jednostkami naukowymi,",
-                "benefit_4" => "wspieramy klientów w przygotowaniu i realizacji projektów B+R,",
-                "benefit_5" => "uczestniczymy w tworzeniu wniosków o finansowanie cyfryzacji i innowacji.",
-                "description" => "Dla Ciebie oznacza to współpracę z zespołem, który potrafi projektować i budować AI, a nie tylko ją wdrażać.",
+                "benefit_1" => "Stały dostęp do najnowszej wiedzy akademickiej",
+                "benefit_2" => "Rozwijamy własne algorytmy, modele i prototypy w środowisku badawczo-rozwojowym",
+                "benefit_3" => "Realizujemy projekty we współpracy z jednostkami naukowymi",
+                "benefit_4" => "Wspieramy klientów w przygotowaniu i realizacji projektów B+R",
+                "benefit_5" => "Uczestniczymy w tworzeniu wniosków o finansowanie cyfryzacji i innowacji",
+                "description" => "Dla Ciebie oznacza to współpracę z zespołem, który potrafi projektować i budować AI, a nie tylko ją wdrażać",
             ],
+            "slogan" => "Dla Ciebie oznacza to współpracę z zespołem, który potrafi projektować i budować AI, a nie tylko ją wdrażać.",
             "activity_1" => [
                 "title" => "Projekty badawczo-rozwojowe (B+R)",
                 "subtitle" => "Dzięki doświadczeniu i&nbsp;wiedzy zdobytej przez członków naszego zespołu, jesteśmy w&nbsp;stanie skutecznie zarządzać i realizować projekty B+R, zapewniając naszym klientom najwyższą jakość i innowacyjność w każdym etapie współpracy.",
@@ -179,8 +177,8 @@ Pomagamy podjąć decyzję - czy naprawiać, przebudować, czy stworzyć od nowa
                 "text_3" => "w tym międzynarodowych wydarzeniach poświęconych AI, automatyzacji i cyfryzacji procesów. Regularnie dzielimy się wynikami badań, doświadczeniami projektowymi i najlepszymi praktykami we wdrażaniu systemów opartych na danych.",
             ],
             "column_3" => [
-                "text_1" => "Jako partner w rozwoju regionalnym uczestniczymy również w",
-                "text_2" => "misjach gospodarczych organizowanych przez Urząd Marszałkowski Województwa Dolnośląskiego (UMWD),",
+                "text_1" => "Jako partner w rozwoju regionalnym uczestniczymy w",
+                "text_2" => "misjach gospodarczych organizowanych przez Urząd Marszałkowski Województwa Dolnośląskiego,",
                 "text_3" => "reprezentując dolnośląski sektor nowych technologii na rynkach międzynarodowych. Współpracujemy z samorządami, uczelniami i biznesem, promując nowoczesne podejście do cyfryzacji i automatyzacji.",
             ],
         ],
@@ -215,14 +213,14 @@ Pomagamy podjąć decyzję - czy naprawiać, przebudować, czy stworzyć od nowa
             "subtitle_2" => "Dział Innowacji i Badań (R&D) i Dział Produktowy i Wdrożeniowy",
         ],
         "section_2" => [
-            "title_1" => "Specjalizujemy się w rozwiązaniach stworzonych dla organizacji, których działalność wymaga:",
+            "title_1" => "Specjalizujemy się w rozwiązaniach stworzonych dla organizacji, których działalność wymaga",
             "requirement_1" => "wysokiego poziomu automatyzacji",
             "requirement_2" => "inteligentnego przetwarzania informacji",
             "requirement_3" => "pracy na dużych wolumenach danych",
             "requirement_4" => "działania w środowiskach regulowanych",
         ],
         "section_3" => [
-            "title_1" => "Projektujemy systemy AI wspierające:",
+            "title_1" => "Projektujemy systemy AI wspierające",
             "item_1" => "przetwarzanie dokumentów",
             "item_2" => "podejmowanie decyzji eksperckich",
             "item_3" => "wykrywanie nadużyć i analizę ryzyka",
@@ -231,7 +229,7 @@ Pomagamy podjąć decyzję - czy naprawiać, przebudować, czy stworzyć od nowa
             "item_6" => "zarządzanie jakością i innowacjami",
         ],
         "section_4" => [
-            "title_1" => "Tworzymy dostosowane systemy cyfryzacji i AI, które odpowiadają na konkretne potrzeby operacyjne:",
+            "title_1" => "Tworzymy dostosowane systemy cyfryzacji i AI, które odpowiadają na konkretne potrzeby operacyjne",
             "item_1" => "Document Intelligence",
             "item_2" => "Expert Operations",
             "item_3" => "Fraud & Risk Prevention",
@@ -242,7 +240,7 @@ Pomagamy podjąć decyzję - czy naprawiać, przebudować, czy stworzyć od nowa
             "item_8" => "Advanced Problem Solving",
         ],
         "section_5" => [
-            "title_1" => "Wspieramy klientów w osiąganiu:",
+            "title_1" => "Wspieramy klientów w osiąganiu",
             "goal_1" => "pełnej automatyzacji procesów,",
             "goal_2" => "lepszego podejmowania decyzji,",
             "goal_3" => "redukcji kosztów operacyjnych,",

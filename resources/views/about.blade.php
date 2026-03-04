@@ -130,19 +130,17 @@
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.about.section_4.title_1") }}</h2>
                 <span class="font-normal leading-7 text-sm md:text-lg">{{ __("content.about.section_4.subtitle_1") }}</span>
             </div>
-            <div class="flex justify-center">
-                <div class="2xl:mt-2 text-left ml-4">
-        <span class="font-semibold text-sm md:text-lg block pb-2 -ml-4">
-            {{ __("content.about.section_4.benefits.title_1") }}
-        </span>
-                    <ul class="list-square font-normal text-gray-600 text-xs md:text-sm">
-                        @for($stackListItem = 1; $stackListItem <= 5; $stackListItem++)
-                            <li class="text-md leading-7">
-                                {{ __("content.about.section_4.benefits.benefit_$stackListItem") }}
-                            </li>
-                        @endfor
-                    </ul>
-                </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-4">
+                @for($stackListItem = 1; $stackListItem <= 5; $stackListItem++)
+                    <div class="bg-white rounded-xl px-6 py-4">
+            <span class="font-semibold text-sm md:text-base leading-7">
+                {{ __("content.about.section_4.benefits.benefit_$stackListItem") }}
+            </span>
+                    </div>
+                @endfor
+            </div>
+            <div class="text-center mt-4 md:mt-8">
+                <h4 class="text-lg md:text-xl lg:text-2xl font-semibold pb-8">{{ __("content.about.section_4.slogan") }}</h4>
             </div>
         </div>
     </section>
@@ -152,15 +150,33 @@
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8 text-center">{{ __("content.about.section_7.title_1") }}</h2>
             </div>
             <div class="grid xl:grid-cols-3 gap-10">
-                @for($col = 1; $col <= 3; $col++)
-                    <div>
-                        <p class="text-md md:text-lg">
-                            {{ __("content.about.section_7.column_{$col}.text_1") }}
-                            <span class="font-semibold">{{ __("content.about.section_7.column_{$col}.text_2") }}</span>
-                            {{ __("content.about.section_7.column_{$col}.text_3") }}
-                        </p>
+                <div>
+                    <div class="mb-4">
+                        <img src="{{ asset('graphics/logos/dolny_slask.jpg') }}" alt="" class="h-16" />
                     </div>
-                @endfor
+                    <p class="text-md md:text-lg">
+                        {{ __("content.about.section_7.column_1.text_1") }}
+                        <span class="font-semibold">{{ __("content.about.section_7.column_1.text_2") }}</span>
+                        {{ __("content.about.section_7.column_1.text_3") }}
+                    </p>
+                </div>
+                <div class="xl:mt-20">
+                    <p class="text-md md:text-lg">
+                        {{ __("content.about.section_7.column_2.text_1") }}
+                        <span class="font-semibold">{{ __("content.about.section_7.column_2.text_2") }}</span>
+                        {{ __("content.about.section_7.column_2.text_3") }}
+                    </p>
+                </div>
+                <div>
+                    <div class="mb-4">
+                        <img src="{{ asset('graphics/logos/lmt.png') }}" alt="" class="h-16" />
+                    </div>
+                    <p class="text-md md:text-lg">
+                        {{ __("content.about.section_7.column_3.text_1") }}
+                        <span class="font-semibold">{{ __("content.about.section_7.column_3.text_2") }}</span>
+                        {{ __("content.about.section_7.column_3.text_3") }}
+                    </p>
+                </div>
             </div>
         </div>
     </section>

@@ -20,7 +20,6 @@
                 <div class="flex flex-col items-center xl:items-start">
                     <p class="text-sm sm:text-lg lg:text-xl font-light text-center xl:text-start pb-10">
                         <span class="leading-7">{{ __("content.home.section_1.subtitle_1") }}</span>
-                        <span class="font-semibold leading-7">{{ __("content.home.section_1.subtitle_2") }}</span>
                     </p>
                     <x-primary-button href="{{ route('offer') }}"
                                       class="w-full sm:w-auto sm:px-12 -ml-1 shadow-xl bg-blue-normal">{{ __("buttons.see_how_we_can_help") }}</x-primary-button>
@@ -44,18 +43,6 @@
                              alt="{{ $client['alt'] }}"/>
                     </div>
                 @endforeach
-            </div>
-        </section>
-
-        <section class="mx-[10%] 2xl:max-w-[1400px] 2xl:mx-auto">
-            <div class="grid md:grid-cols-2 gap-6 xl:gap-8">
-                <x-simple-tile
-                    title="Kim jesteśmy?"
-                    description="Blumilk to zespół inżynierów, badaczy i konsultantów specjalizujących się w projektowaniu zaawansowanych systemów AI oraz cyfryzacji procesów w wymagających branżach." />
-
-                <x-simple-tile
-                    title="Nie tylko używamy AI - my je tworzymy."
-                    description="Nasz zespół, w tym doktoranci i specjaliści zajmujący się AI/ML, projektuje algorytmy, systemy eksperckie i architektury, które rozwiązują problemy zbyt złożone dla gotowych narzędzi." />
             </div>
         </section>
 
@@ -134,7 +121,6 @@
                 <img src="{{ asset('graphics/shadow.svg') }}" alt=""/>
             </div>
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">{{ __("content.home.section_5.title_1") }}</h2>
-            <span class="font-normal text-sm sm:text-md lg:text-lg">{{ __("content.home.section_5.subtitle_1") }}</span>
             <div class="relative">
                 <div class="mx-auto max-w-[1900px]">
                     @includeWhen( count($references), 'components.references.references', ['references' => $references] )
