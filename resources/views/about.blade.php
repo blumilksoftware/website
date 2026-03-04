@@ -152,7 +152,7 @@
             <div class="grid xl:grid-cols-3 gap-10">
                 <div>
                     <div class="mb-4">
-                        <img src="{{ asset('graphics/logos/dolny_slask.jpg') }}" alt="" class="h-16" />
+                        <img src="{{ asset('graphics/logos/lmt.png') }}" alt="" class="h-16" />
                     </div>
                     <p class="text-md md:text-lg">
                         {{ __("content.about.section_7.column_1.text_1") }}
@@ -169,7 +169,7 @@
                 </div>
                 <div>
                     <div class="mb-4">
-                        <img src="{{ asset('graphics/logos/lmt.png') }}" alt="" class="h-16" />
+                        <img src="{{ asset('graphics/logos/dolny_slask.jpg') }}" alt="" class="h-16" />
                     </div>
                     <p class="text-md md:text-lg">
                         {{ __("content.about.section_7.column_3.text_1") }}

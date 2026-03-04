@@ -147,7 +147,7 @@ return [
 Projektujemy algorytmy i systemy uczone na danych klienta, zgodne z regulacjami i wymaganiami branżowymi.",
             ],
             "benefit_2" => [
-                "title" => "Cyfryzacja trudnych, manualnych i rozproszonych procesów",
+                "title" => "Cyfryzację trudnych, manualnych i rozproszonych procesów",
                 "subtitle" => "Od analizy ryzyka, przez dokumenty, po komunikację i operacje - projektujemy cyfrowe środowiska pracy.",
             ],
             "benefit_3" => [
