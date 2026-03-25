@@ -9,6 +9,9 @@ on:
       - edited
       - synchronize
 
+permissions:
+  pull-requests: read
+
 jobs:
   check-pr-title:
     name: Check the PR title

@@ -4,6 +4,9 @@ concurrency:
   group: deploy-prod
   cancel-in-progress: true
 
+permissions:
+  contents: read
+
 on:
   push:
     tags:
