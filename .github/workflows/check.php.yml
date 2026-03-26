@@ -10,7 +10,10 @@ on:
       - 'composer.lock'
       - 'phpunit.xml'
       - '.env.ci'
-      - 'check.php.yml'
+      - '.github/workflows/check.php.yml'
+
+permissions:
+  contents: read
 
 jobs:
   test-and-lint-php:

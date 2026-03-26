@@ -4,6 +4,9 @@ concurrency:
   group: deploy-beta
   cancel-in-progress: true
 
+permissions:
+  contents: read
+
 on:
   workflow_dispatch:
 
