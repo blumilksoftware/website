@@ -12,6 +12,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
+use Override;
 
 /**
  * @poperty int $id
@@ -50,7 +51,7 @@ class User extends Authenticatable implements FilamentUser
         "role" => Role::class,
     ];
 
-    #[\Override]
+    #[Override]
     public function canAccessPanel(Panel $panel): bool
     {
         return $this->active && ($this->isAdmin() || $this->isModerator());

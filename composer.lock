@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8e0c1996218a9f0fcafaf37647a5c756",
+    "content-hash": "587b47d2ad341c91c6a40f2ac8469103",
     "packages": [
         {
             "name": "anourvalar/eloquent-serialize",
@@ -8142,16 +8142,16 @@
         },
         {
             "name": "symfony/process",
-            "version": "v7.4.3",
+            "version": "v7.4.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
-                "reference": "2f8e1a6cdf590ca63715da4d3a7a3327404a523f"
+                "reference": "60f19cd3badc8de688421e21e4305eba50f8089a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/process/zipball/2f8e1a6cdf590ca63715da4d3a7a3327404a523f",
-                "reference": "2f8e1a6cdf590ca63715da4d3a7a3327404a523f",
+                "url": "https://api.github.com/repos/symfony/process/zipball/60f19cd3badc8de688421e21e4305eba50f8089a",
+                "reference": "60f19cd3badc8de688421e21e4305eba50f8089a",
                 "shasum": ""
             },
             "require": {
@@ -8183,7 +8183,7 @@
             "description": "Executes commands in sub-processes",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/process/tree/v7.4.3"
+                "source": "https://github.com/symfony/process/tree/v7.4.8"
             },
             "funding": [
                 {
@@ -8203,7 +8203,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-12-19T10:00:43+00:00"
+            "time": "2026-03-24T13:12:05+00:00"
         },
         {
             "name": "symfony/psr-http-message-bridge",
@@ -9111,27 +9111,27 @@
     "packages-dev": [
         {
             "name": "blumilksoftware/codestyle",
-            "version": "v4.1.0",
+            "version": "v5.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/blumilksoftware/codestyle.git",
-                "reference": "7ade607cd8b749ccd80de4733161d72b3343a23b"
+                "reference": "2683452e264e9d481336ec6385f3153dcc88754a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/blumilksoftware/codestyle/zipball/7ade607cd8b749ccd80de4733161d72b3343a23b",
-                "reference": "7ade607cd8b749ccd80de4733161d72b3343a23b",
+                "url": "https://api.github.com/repos/blumilksoftware/codestyle/zipball/2683452e264e9d481336ec6385f3153dcc88754a",
+                "reference": "2683452e264e9d481336ec6385f3153dcc88754a",
                 "shasum": ""
             },
             "require": {
-                "friendsofphp/php-cs-fixer": "^3.70",
-                "kubawerlos/php-cs-fixer-custom-fixers": "^3.23",
-                "php": "^8.2"
+                "friendsofphp/php-cs-fixer": "^3.80.0",
+                "kubawerlos/php-cs-fixer-custom-fixers": "^3.30.0",
+                "php": "^8.3"
             },
             "require-dev": {
-                "jetbrains/phpstorm-attributes": "^1.1",
-                "phpunit/phpunit": "^11.2",
-                "symfony/console": "^7.0"
+                "jetbrains/phpstorm-attributes": "^1.2",
+                "phpunit/phpunit": "^11.5.26",
+                "symfony/console": "^7.3.1"
             },
             "bin": [
                 "bin/codestyle"
@@ -9155,9 +9155,9 @@
             "description": "Blumilk codestyle configurator",
             "support": {
                 "issues": "https://github.com/blumilksoftware/codestyle/issues",
-                "source": "https://github.com/blumilksoftware/codestyle/tree/v4.1.0"
+                "source": "https://github.com/blumilksoftware/codestyle/tree/v5.1.1"
             },
-            "time": "2025-03-03T07:17:00+00:00"
+            "time": "2025-09-17T11:23:47+00:00"
         },
         {
             "name": "clue/ndjson-react",
@@ -13012,5 +13012,5 @@
         "ext-pdo": "*"
     },
     "platform-dev": {},
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.9.0"
 }
