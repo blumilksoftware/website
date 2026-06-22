@@ -180,7 +180,7 @@
                     <div class="footer-top">
                         <div class="footer-logo">
                             <a href="{{ config('app.url') }}" class="social-link" target="_blank">
-                                <img src="{{ asset('identification/logo.png') }}" alt="Blumilk logo"/>
+                                <img src="{{ asset('identification/logo.png') }}" alt="Blumilk"/>
                             </a>
                         </div>
                     </div>

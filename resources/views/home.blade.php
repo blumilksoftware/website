@@ -12,11 +12,11 @@
         <section class="flex flex-col-reverse xl:flex-row pt-8 xl:pt-24 pb-16 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:gap-5">
             <div class="flex basis-2/5 relative flex-col self-center gap-5">
                 <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:justify-start xl:text-start">
-                    <h2 class="font-semibold text-gray-900 leading-7 md:leading-snug">
+                    <h1 class="font-semibold text-gray-900 leading-7 md:leading-snug">
                         <span class="inline">{{ __("content.home.section_1.title_1") }}</span>
                         <span class="text-blue-normal inline"> {{ __("content.home.section_1.title_2") }} </span>
                         <span class="inline">{{ __("content.home.section_1.title_3") }}</span>
-                    </h2>
+                    </h1>
                 </div>
                 <div class="flex flex-col items-center xl:items-start">
                     <p class="text-sm sm:text-lg lg:text-xl font-light text-center xl:text-start pb-10">

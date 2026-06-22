@@ -33,10 +33,10 @@
              class="flex items-center justify-between px-14 md:px-6 2xl:px-0 py-8 relative mx-auto max-w-7xl">
             <div>
                 <a class="tablet:hidden lg:block items-start" href="{{ route('home') }}">
-                    <img class="w-32 shrink-0" src="{{ asset('identification/logo.svg') }}" alt="Blumilk logo"/>
+                    <img class="w-32 shrink-0" src="{{ asset('identification/logo.svg') }}" alt="Blumilk"/>
                 </a>
                 <a class="hidden tablet:block lg:hidden items-start" href="{{ route('home') }}">
-                    <img class="h-8" src="{{ asset('identification/sygnet.svg') }}" alt="Blumilk logo"/>
+                    <img class="h-8" src="{{ asset('identification/sygnet.svg') }}" alt="Blumilk"/>
                 </a>
             </div>
             <div class="tablet:flex hidden justify-center items-center text-sm 3xl:text-md">
@@ -99,7 +99,7 @@
             <div class="w-full">
                 <div class="flex items-center justify-between left-0 right-0 py-8 xl:px-[15%] relative">
                     <a class="items-start" href="{{ route('home') }}">
-                        <img class="w-32 shrink-0" src="{{ asset('identification/logo.svg') }}" alt="Blumilk"/>
+                        <img class="w-32 shrink-0" src="{{ asset('identification/logo.svg') }}" alt={{ __('alt.blumilk_homepage') }}/>
                     </a>
                     <button @click="openMobileMenu = ! openMobileMenu">
                         <i :class="{'block': openMobileMenu, 'hidden': ! openMobileMenu}"

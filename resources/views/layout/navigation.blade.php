@@ -9,10 +9,10 @@
          class="flex items-center justify-between px-14 md:px-6 2xl:px-0 py-8 relative mx-auto max-w-7xl">
         <div>
             <a class="tablet:hidden lg:block items-start" href="{{ route("home") }}">
-                <img class="w-[128px] h-[32px] shrink-0" src="{{ asset('identification/logo.svg') }}" alt="Blumilk logo"/>
+                <img class="w-[128px] h-[32px] shrink-0" src="{{ asset('identification/logo.svg') }}" alt="Blumilk "/>
             </a>
             <a class="hidden tablet:block lg:hidden items-start" href="{{ route("home") }}">
-                <img class="h-[32px] w-[26px]" src="{{ asset('identification/sygnet.svg') }}" alt="Blumilk logo"/>
+                <img class="h-[32px] w-[26px]" src="{{ asset('identification/sygnet.svg') }}" alt="Blumilk "/>
             </a>
         </div>
         <div class="tablet:flex hidden justify-center items-center text-sm 3xl:text-md">
@@ -91,9 +91,9 @@
                 <a class="items-start" href="{{ route("home") }}">
                     <img class="w-32 shrink-0" src="{{ asset('identification/logo.svg') }}" alt="Blumilk"/>
                 </a>
-                <button @click="openMobileMenu = ! openMobileMenu">
+                <button @click="openMobileMenu = ! openMobileMenu" aria-label="{{ __('alt.closeMenu') }}">
                     <i :class="{'block': openMobileMenu, 'hidden': ! openMobileMenu}"
-                       class="fa-solid fa-xmark text-2xl text-black hidden" aria-label="{{ __('alt.closeMenu') }}"></i>
+                       class="fa-solid fa-xmark text-2xl text-black hidden"></i>
                 </button>
             </div>
             <div @class([
