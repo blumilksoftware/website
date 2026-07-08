@@ -14,16 +14,26 @@ return [
     "home" => [
         "section_1" => [
             "title_1" => " Cyfryzacja i AI",
-            "title_2" => " wspierające rozwój Twojego biznesu",
-            "subtitle_1" => "Tworzymy technologie, które realnie skracają czas pracy, eliminują koszty, podnoszą jakość decyzji i redukują ryzyka.",
+            "title_2" => " dla",
+            "title_3" => " efektywnej",
+            "title_4" => "transformacji biznesu",
+            "subtitle_1" => "Przekształcamy dane i procesy w przewagę operacyjną klientów.",
+            "subtitle_2" => "Tworzymy technologie, które realnie skracają czas pracy, eliminują koszty, podnoszą jakość decyzji i redukują ryzyka.",
         ],
         "section_2" => [
             "title_1" => "Dołącz do grona",
             "title_2" => "zadowolonych klientów Blumilk",
         ],
         "section_3" => [
+            "title_1" => "Kim jesteśmy?",
+            "subtitle_1" => "Blumilk to zespół inżynierów, badaczy i konsultantów specjalizujących się w projektowaniu zaawansowanych systemów AI oraz cyfryzacji procesów w wymagających branżach.",
+            "subtitle_2" => "Nie tylko używamy AI -",
+            "subtitle_3" => "my je tworzymy.",
+            "subtitle_4" => "Nasz zespół, w tym doktoranci i specjaliści zajmujący się AI/ML, projektuje algorytmy, systemy eksperckie i architektury, które rozwiązują problemy zbyt złożone dla gotowych narzędzi.",
+        ],
+        "section_4" => [
             "title_1" => "Co możemy dla Ciebie zrobić?",
-            "subtitle_1" => "Nie tylko używamy AI - my je tworzymy. Nasz zespół, w tym doktoranci i specjaliści zajmujący się AI/ML, projektuje algorytmy, systemy eksperckie i architektury, które rozwiązują problemy zbyt złożone dla gotowych narzędzi.",
+            "subtitle_1" => "Twój biznes potrzebuje transformacji cyfrowej? Jesteś we właściwym miejscu.",
             "tile_1" => [
                 "title" => "Aplikacje mobilne i webowe",
                 "subtitle" => "Tworzymy dedykowane oprogramowanie w formie aplikacji mobilnych i webowych.",
@@ -45,34 +55,43 @@ return [
                 "subtitle" => "Projektujemy intuicyjne interfejsy, które sprawiają, że korzystanie z nich jest łatwe i przyjemne.",
             ],
             "tile_6" => [
-                "title" => "Rozwiązania AI",
+                "title" => "Wykorzystanie AI",
                 "subtitle" => "Budujemy modele AI, które optymalizują skomplikowane procesy.",
             ],
         ],
-        "section_4" => [
+        "section_5" => [
             "title_1" => "Case study",
             "subtitle_1" => "Dowiedz się, jak nasze realizacje przekształciły pomysły klientów w",
             "subtitle_2" => "skuteczne rozwiązania.",
             "tile_1" => [
                 "title_1" => "Wyzwanie",
-                "description_1" => "Czasochłonny proces zgłaszania i oceny wniosków (ok. 1h i 10 stron dokumentów per wniosek).",
+                "description_1" => "Czasochłonny proces zgłaszania i oceny wniosków.",
             ],
             "tile_2" => [
                 "title_1" => "Rozwiązanie",
                 "description_1" => "Warsztaty i aplikacja wspierana AI, która automatyzuje zgłaszanie, ocenę i weryfikację wniosków.",
             ],
             "tile_3" => [
-                "title_1" => "Efekty:",
-                "description_1" => "Czas zgłoszenia: 1h → 5 min",
-                "description_2" => "Liczba wniosków: 500 → 2500 rocznie",
-                "description_3" => "Automatyczna weryfikacja duplikatów przez AI",
-                "description_4" => "Potencjalne oszczędności: ~10 mln zł rocznie",
+                "title_1" => "Czas zgłoszenia: ",
+                "title_2" => "1h → 5 min",
+            ],
+            "tile_4" => [
+                "title_1" => "Liczba wniosków: ",
+                "title_2" => "500 → 2500 rocznie",
+            ],
+            "tile_5" => [
+                "title_1" => "Automatyczna ",
+                "title_2" => "weryfikacja duplikatów przez AI",
+            ],
+            "tile_6" => [
+                "title_1" => "Potencjalne oszczędności: ",
+                "title_2" => "~10 mln zł rocznie",
             ],
         ],
-        "section_5" => [
+        "section_6" => [
             "title_1" => "Opinie klientów",
         ],
-        "section_6" => [
+        "section_7" => [
             "title_1" => "Zainteresowany współpracą?",
             "subtitle_1" => "Pozwól nam przekształcić Twoją wizję w rzeczywistość. Masz pomysł na aplikację web/mobile, potrzebujesz transformacji cyfrowej lub planujesz projekt badawczo-rozwojowy?",
             "subtitle_2" => "Zrób to z nami!",
