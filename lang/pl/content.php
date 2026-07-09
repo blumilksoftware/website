@@ -101,8 +101,9 @@ return [
     ],
     "about" => [
         "section_1" => [
-            "title_1" => "Partner technologiczny",
-            "title_2" => "Twojej cyfryzacji",
+            "title_1" => "Partner",
+            "title_2" => "technologiczny",
+            "title_3" => "Twojej cyfryzacji",
             "subtitle_1" => "Firmy potrzebują partnera, który zrozumie ich procesy, ryzyka i dane,",
             "subtitle_2" => "a następnie zaprojektuje i wdroży rozwiązania realnie usprawniające sposób działania organizacji.",
             "subtitle_3" => "Blumilk to zespół inżynierów, badaczy i konsultantów, którzy projektują i wdrażają",
@@ -117,73 +118,50 @@ return [
             "stat_4" => "linii kodu tygodniowo",
         ],
         "section_3" => [
-            "title_1" => "Nasze wartości",
-            "subtitle_1" => "",
-            "subtitle_2" => "W codziennej pracy stawiamy na innowacyjność i doskonałość techniczną.",
-            "content_1" => "Pasja",
-            "content_2" => "Działamy z pasją do technologii, angażując się w tworzenie nowatorskich rozwiązań, które nie tylko spełniają oczekiwania klientów, ale także inspirują do dalszego rozwoju.",
-            "content_3" => "Innowacyjność",
-            "content_4" => "Nieustannie poszukujemy nowych technologii i rozwiązań, aby wyprzedzać oczekiwania rynku i dostarczać klientom produkty o najwyższej jakości, zapewniając im przewagę konkurencyjną.",
-            "content_5" => "Doskonałość techniczna",
-            "content_6" => "Nasze produkty są nie tylko funkcjonalne, ale również wydajne i zgodne z najnowszymi standardami. Dbamy o każdy detal, doskonalimy procesy oraz stosujemy innowacyjne podejście.",
-        ],
-        "section_4" => [
-            "title_1" => "Realne zaplecze naukowe",
-            "subtitle_1" => "Część zespołu Blumilk prowadzi działalność naukowo-badawczą w obszarach AI, ML, NLP, systemów decyzyjnych oraz inżynierii oprogramowania, równolegle współpracując z uczelniami wyższymi przy kształceniu przyszłych specjalistów.",
-            "benefits" => [
-                "benefit_1" => "Stały dostęp do najnowszej wiedzy akademickiej",
-                "benefit_2" => "Rozwijamy własne algorytmy, modele i prototypy w środowisku badawczo-rozwojowym",
-                "benefit_3" => "Realizujemy projekty we współpracy z jednostkami naukowymi",
-                "benefit_4" => "Wspieramy klientów w przygotowaniu i realizacji projektów B+R",
-                "benefit_5" => "Uczestniczymy w tworzeniu wniosków o finansowanie cyfryzacji i innowacji",
-                "description" => "Dla Ciebie oznacza to współpracę z zespołem, który potrafi projektować i budować AI, a nie tylko ją wdrażać",
-            ],
-            "slogan" => "Dla Ciebie oznacza to współpracę z zespołem, który potrafi projektować i budować AI, a nie tylko ją wdrażać.",
-            "activity_1" => [
-                "title" => "Projekty badawczo-rozwojowe (B+R)",
-                "subtitle" => "Dzięki doświadczeniu i&nbsp;wiedzy zdobytej przez członków naszego zespołu, jesteśmy w&nbsp;stanie skutecznie zarządzać i realizować projekty B+R, zapewniając naszym klientom najwyższą jakość i innowacyjność w każdym etapie współpracy.",
-            ],
-            "activity_2" => [
-                "title" => "Łączymy społeczność technologiczną w Legnicy",
-                "subtitle" => "Organizujemy Legnickie Meetupy Technologiczne, na których chętne osoby prezentują w dowolnej formie swoje doświadczenia i przemyślenia z branży IT. Spotkania są dostępne dla każdego, bez względu na stopień doświadczenia zawodowego czy wykorzystywaną technologię.",
-            ],
-            "activity_3" => [
-                "title" => "Środowisko akademickie",
-                "subtitle" => "Prowadzimy zajęcia na kierunkach Informatyka i Inżynieria Produkcji i Logistyki w Collegium Witelona Uczelnia Państwowa w Legnicy. Organizujemy także otwarty program praktyk dla studentów kierunków informatycznych oraz jesteśmy partnerami w&nbsp;naukowych konferencjach.",
-            ],
-            "activity_4" => [
-                "title" => "SoDA (Software Development Association Poland)",
-                "subtitle" => "Należymy do grona założycieli prawdopodobnie największej grupy badawczej w obszarze sztucznej inteligencji w Polsce - SoDA AI Research Group. Udzielamy eksperckich komentarzy do raportów branżowych oraz w mediach. Szkolimy także sektor publiczny ze sposobów wykorzystywania AI.",
-            ],
-        ],
-        "section_5" => [
-            "title_1" => "Blumilk po godzinach",
-            "subtitle_1" => "Mamy to niesamowite szczęście, że lubimy spędzać ze sobą czas, nie tylko w biurze!",
-        ],
-        "section_6" => [
             "title_1" => "Co dostaje klient, który z nami pracuje?",
             "benefit_1" => [
-                "title" => "Zaawansowane systemy AI dopasowane do specyficznych procesów firmy",
+                "title" => "Dedykowane systemy AI",
                 "subtitle" => "Nie integrujemy cudzych „gotowców”.
 Projektujemy algorytmy i systemy uczone na danych klienta, zgodne z regulacjami i wymaganiami branżowymi.",
             ],
             "benefit_2" => [
-                "title" => "Cyfryzację trudnych, manualnych i rozproszonych procesów",
+                "title" => "Cyfryzacja procesów",
                 "subtitle" => "Od analizy ryzyka, przez dokumenty, po komunikację i operacje - projektujemy cyfrowe środowiska pracy.",
             ],
             "benefit_3" => [
-                "title" => "Eksperckie zespoły B+R",
+                "title" => "Zespół ekspertów B+R",
                 "subtitle" => "Prowadzimy projekty badawczo-rozwojowe w modelu grantowym, we współpracy z firmami konsultingowymi dla największych instytucji publicznych i przedsiębiorstw.",
             ],
             "benefit_4" => [
-                "title" => "Audyty i due diligence technologiczne",
+                "title" => "Audyty technologiczne",
                 "subtitle" => "Analizujemy istniejące systemy, procesy i dane.
 Pomagamy podjąć decyzję - czy naprawiać, przebudować, czy stworzyć od nowa.",
             ],
             "benefit_5" => [
-                "title" => "Wytwarzanie oprogramowania tam, gdzie jest potrzebne",
+                "title" => "Software development",
                 "subtitle" => "Tworzymy nowoczesne, skalowalne systemy, mikroserwisy, integracje i platformy, jako element większej zmiany cyfrowej.",
             ],
+        ],
+        "section_4" => [
+            "paragraph_1" => [
+                "item_1" => "Jesteśmy organizatorami ",
+                "item_2" => " Legnickiego Meetupu Technologicznego, ",
+                "item_3" => " wydarzenia, które łączy programistów, naukowców, specjalistów AI oraz liderów branży, tworząc przestrzeń do wymiany wiedzy i prezentacji swoich doświadczeń w branży IT.",
+            ],
+            "paragraph_2" => [
+                "item_1" => "Nasi eksperci ",
+                "item_2" => "występują na konferencjach branżowych i naukowych,",
+                "item_3" => "w tym międzynarodowych wydarzeniach poświęconych AI, automatyzacji i cyfryzacji procesów. Regularnie dzielimy się wynikami badań, doświadczeniami projektowymi i najlepszymi praktykami we wdrażaniu systemów opartych na danych.",
+            ],
+            "paragraph_3" => [
+              "item_1" => "Jako partner w rozwoju regionalnym uczestniczymy w",
+              "item_2" => "misjach gospodarczych organizowanych przez Urząd Marszałkowski Województwa Dolnośląskiego, ",
+              "item_3" => "reprezentując dolnośląski sektor nowych technologii na rynkach międzynarodowych. Współpracujemy z samorządami, uczelniami i biznesem, promując nowoczesne podejście do cyfryzacji i automatyzacji.",
+            ],
+            ],
+        "section_5" => [
+            "title_1" => "Blumilk po godzinach",
+            "subtitle_1" => "Mamy to niesamowite szczęście, że lubimy spędzać ze sobą czas, nie tylko w biurze!",
         ],
         "section_7" => [
             "title_1" => "Wspieramy rozwój polskiego i europejskiego ekosystemu technologicznego",

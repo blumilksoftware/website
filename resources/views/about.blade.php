@@ -5,14 +5,14 @@
 
 @section("content")
     <section class="relative flex flex-col-reverse 2xl:flex-row pt-12 pb-0 md:pb-14 md:pt-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto place-items-center">
-        <div class="flex basis-2/5 flex-col self-center">
+        <div class="flex basis-3/5 flex-col self-center">
             <div class="text-3xl md:text-4xl xl:text-5xl text-center 2xl:justify-start 2xl:text-start pb-4 pt-4 md:pt-0">
                 <h2 class="font-semibold text-gray-900 leading-snug">
-                    <span class="text-blue-normal"> {{ __("content.about.section_1.title_1") }}</span>
-                    {{ __("content.about.section_1.title_2") }}
+                    {{ __("content.about.section_1.title_1") }} <span class="text-blue-normal"> {{ __("content.about.section_1.title_2") }}</span>
+                    {{ __("content.about.section_1.title_3") }}
                 </h2>
             </div>
-            <div class="items-center 2xl:items-start text-sm md:text-lg max-w-[886px]">
+            <div class="items-center 2xl:items-start text-sm md:text-lg max-w-[540px]">
                 <p class="font-normal text-center 2xl:text-start pb-8 leading-7">
                     <span class="font-semibold">{{ __("content.about.section_1.subtitle_1") }}</span>
                     {{ __("content.about.section_1.subtitle_2") }}
@@ -24,8 +24,8 @@
                 </p>
             </div>
         </div>
-        <div class="flex basis-3/5">
-            <img src="{{ asset('graphics/about.webp') }}" class="size-full align-middle m-4 relative 2xl:left-24"
+        <div class="flex basis-2/5">
+            <img src="{{ asset('graphics/about.webp') }}" class="h-[250px] w-[350px] tablet:h-[550px] tablet:w-[700px] aspect-auto object-center shrink-0"
                  alt=""/>
         </div>
     </section>
@@ -45,7 +45,7 @@
             </div>
             <div>
                 <dl class="flex flex-col gap-4">
-                    <dd class="order-first text-6xl font-semibold">118</dd>
+                    <dd class="order-first text-6xl font-semibold">126</dd>
                     <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_3") }}</dt>
                 </dl>
             </div>
@@ -58,128 +58,137 @@
         </div>
     </section>
     <section class="relative pt-14 pb-12 md:pb-24 text-center">
-        <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:space-y-10">
+        <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-[1580px] 2xl:mx-auto md:space-y-10">
             <div class="pb-14 max-w-[886px] mx-auto">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.about.section_3.title_1") }}</h2>
-                <span class="font-normal leading-7 text-sm md:text-lg md:block">{{ __("content.about.section_3.subtitle_1") }}</span>
-                <span class="font-normal leading-7 text-sm md:text-lg">{{ __("content.about.section_3.subtitle_2") }}</span>
             </div>
-            <div class="grid xl:grid-cols-3 gap-4 2xl:gap-10 place-items-center xl:place-items-stretch">
-                <x-tile title="{{ __('content.about.section_3.content_1') }}"
-                        description="{{ __('content.about.section_3.content_2') }}"
-                        class="size-full 2xl:place-items-start">
-                    <x-icons.heart-code accent="stroke-blue-normal-neon" />
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 2xl:flex 2xl:flex-wrap 2xl:gap-10 2xl:justify-center 2xl:items-stretch">
+                <x-tile title="{{ __('content.about.section_3.benefit_1.title') }}"
+                        description="{{ __('content.about.section_3.benefit_1.subtitle') }}"
+                        class="2xl:w-[500px] 2xl:shrink-0 2xl:grow-0">
+                    <x-icons.user-robot accent="stroke-blue-normal-neon"/>
                 </x-tile>
-                <x-tile title="{{ __('content.about.section_3.content_3') }}"
-                        description="{{ __('content.about.section_3.content_4') }}"
-                        class="size-full 2xl:place-items-start">
-                    <x-icons.bulb accent="stroke-blue-normal-neon" />
+                <x-tile title="{{ __('content.about.section_3.benefit_2.title') }}"
+                        description="{{ __('content.about.section_3.benefit_2.subtitle') }}"
+                        class="2xl:w-[500px] 2xl:shrink-0 2xl:grow-0">
+                    <x-icons.site-alt accent="stroke-blue-normal-neon"/>
                 </x-tile>
-                <x-tile title="{{ __('content.about.section_3.content_5') }}"
-                        description="{{ __('content.about.section_3.content_6') }}"
-                        class="size-full 2xl:place-items-start">
-                    <x-icons.diamond accent="stroke-blue-normal-neon" />
+                <x-tile title="{{ __('content.about.section_3.benefit_3.title') }}"
+                        description="{{ __('content.about.section_3.benefit_3.subtitle') }}"
+                        class="2xl:w-[500px] 2xl:shrink-0 2xl:grow-0">
+                    <x-icons.magnifier-chart accent="stroke-blue-normal-neon"/>
                 </x-tile>
-            </div>
-        </div>
-    </section>
-    <section class="relative pt-14 pb-12 md:pb-24 text-center">
-        <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:space-y-10">
-            <div class="pb-14 max-w-[886px] mx-auto">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.about.section_6.title_1") }}</h2>
-            </div>
-            <div class="flex flex-col gap-4 2xl:gap-10">
-            <div class="flex flex-col xl:flex-row gap-4 2xl:gap-10 justify-center">
-                <x-tile-top-icon title="{{ __('content.about.section_6.benefit_1.title') }}"
-                                 description="{{ __('content.about.section_6.benefit_1.subtitle') }}"
-                                 class="2xl:place-items-start">
-                    <x-icons.heart-code accent="stroke-blue-normal-neon" />
-                </x-tile-top-icon>
-                <x-tile-top-icon title="{{ __('content.about.section_6.benefit_2.title') }}"
-                                 description="{{ __('content.about.section_6.benefit_2.subtitle') }}"
-                                 class="flex flex-col items-center text-center gap-4">
-                    <x-icons.bulb accent="stroke-blue-normal-neon" />
-                </x-tile-top-icon>
-                <x-tile-top-icon title="{{ __('content.about.section_6.benefit_3.title') }}"
-                                 description="{{ __('content.about.section_6.benefit_3.subtitle') }}"
-                                 class="2xl:place-items-start">
-                    <x-icons.diamond accent="stroke-blue-normal-neon" />
-                </x-tile-top-icon>
-            </div>
-            <div class="flex flex-col xl:flex-row gap-4 2xl:gap-10 justify-center">
-                <x-tile-top-icon title="{{ __('content.about.section_6.benefit_4.title') }}"
-                                 description="{{ __('content.about.section_6.benefit_4.subtitle') }}"
-                                 class="2xl:place-items-start">
-                    <x-icons.diamond accent="stroke-blue-normal-neon" />
-                </x-tile-top-icon>
-                <x-tile-top-icon title="{{ __('content.about.section_6.benefit_5.title') }}"
-                                 description="{{ __('content.about.section_6.benefit_5.subtitle') }}"
-                                 class="2xl:place-items-start">
-                    <x-icons.diamond accent="stroke-blue-normal-neon" />
-                </x-tile-top-icon>
-            </div>
+                <x-tile title="{{ __('content.about.section_3.benefit_4.title') }}"
+                        description="{{ __('content.about.section_3.benefit_4.subtitle') }}"
+                        class="2xl:w-[500px] 2xl:shrink-0 2xl:grow-0">
+                    <x-icons.audit accent="stroke-blue-normal-neon"/>
+                </x-tile>
+                <x-tile title="{{ __('content.about.section_3.benefit_5.title') }}"
+                        description="{{ __('content.about.section_3.benefit_5.subtitle') }}"
+                        class="2xl:w-[500px] 2xl:shrink-0 2xl:grow-0">
+                    <x-icons.window-alt accent="stroke-blue-normal-neon"/>
+                </x-tile>
             </div>
         </div>
     </section>
     <section class="relative overflow-hidden pt-10 pb-14 md:pt-14 md:pb-28">
-        <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="absolute -z-10 -right-96 -bottom-0"/>
+        <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="absolute -z-10 -right-96 bottom-0"/>
         <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="absolute -z-10 -left-[800px] -bottom-64"/>
 
         <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
-            <div class="pb-14 text-center max-w-[886px] mx-auto">
+            <div class="pb-14 text-center max-w-7xl mx-auto">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.about.section_4.title_1") }}</h2>
                 <span class="font-normal leading-7 text-sm md:text-lg">{{ __("content.about.section_4.subtitle_1") }}</span>
             </div>
+
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-4">
-                @for($stackListItem = 1; $stackListItem <= 5; $stackListItem++)
-                    <div class="bg-white rounded-xl px-6 py-4">
-            <span class="font-semibold text-sm md:text-base leading-7">
-                {{ __("content.about.section_4.benefits.benefit_$stackListItem") }}
-            </span>
-                    </div>
-                @endfor
-            </div>
-            <div class="text-center mt-4 md:mt-8">
-                <h4 class="text-lg md:text-xl lg:text-2xl font-semibold pb-8">{{ __("content.about.section_4.slogan") }}</h4>
-            </div>
-        </div>
-    </section>
-    <section class="relative overflow-hidden pt-10 pb-14 md:pt-14 md:pb-28">
-        <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:space-y-10">
-            <div class="pb-14 max-w-[886px] mx-auto">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8 text-center">{{ __("content.about.section_7.title_1") }}</h2>
-            </div>
-            <div class="grid xl:grid-cols-3 gap-10">
-                <div>
-                    <div class="mb-4">
-                        <img src="{{ asset('graphics/logos/lmt.png') }}" alt="" class="h-16" />
-                    </div>
-                    <p class="text-md md:text-lg">
-                        {{ __("content.about.section_7.column_1.text_1") }}
-                        <span class="font-semibold">{{ __("content.about.section_7.column_1.text_2") }}</span>
-                        {{ __("content.about.section_7.column_1.text_3") }}
-                    </p>
+                <div class="bg-white rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
+                    <img src="{{ asset('graphics/stack/education.svg') }}"
+                         alt="{{ __('content.about.section_4.benefits.benefit_1') }}"
+                         class="h-32 w-32 object-contain"/>
+                    <span class="font-semibold text-sm md:text-base leading-7">
+                    {{ __('content.about.section_4.benefits.benefit_1') }}
+                </span>
                 </div>
-                <div class="xl:mt-20">
-                    <p class="text-md md:text-lg">
-                        {{ __("content.about.section_7.column_2.text_1") }}
-                        <span class="font-semibold">{{ __("content.about.section_7.column_2.text_2") }}</span>
-                        {{ __("content.about.section_7.column_2.text_3") }}
-                    </p>
+
+                <div class="bg-white rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
+                    <img src="{{ asset('graphics/stack/ai-tile.svg') }}"
+                         alt="{{ __('content.about.section_4.benefits.benefit_2') }}"
+                         class="h-32 w-32 object-contain"/>
+                    <span class="font-semibold text-sm md:text-base leading-7">
+                    {{ __('content.about.section_4.benefits.benefit_2') }}
+                </span>
                 </div>
-                <div>
-                    <div class="mb-4">
-                        <img src="{{ asset('graphics/logos/dolny_slask.jpg') }}" alt="" class="h-16" />
-                    </div>
-                    <p class="text-md md:text-lg">
-                        {{ __("content.about.section_7.column_3.text_1") }}
-                        <span class="font-semibold">{{ __("content.about.section_7.column_3.text_2") }}</span>
-                        {{ __("content.about.section_7.column_3.text_3") }}
-                    </p>
+
+                <div class="bg-white rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
+                    <img src="{{ asset('graphics/stack/books.svg') }}"
+                         alt="{{ __('content.about.section_4.benefits.benefit_3') }}"
+                         class="h-32 w-32 object-contain"/>
+                    <span class="font-semibold text-sm md:text-base leading-7">
+                    {{ __('content.about.section_4.benefits.benefit_3') }}
+                </span>
+                </div>
+
+                <div class="bg-white rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
+                    <img src="{{ asset('graphics/stack/magnifier.svg') }}"
+                         alt="{{ __('content.about.section_4.benefits.benefit_4') }}"
+                         class="h-32 w-32 object-contain"/>
+                    <span class="font-semibold text-sm md:text-base leading-7">
+                    {{ __('content.about.section_4.benefits.benefit_4') }}
+                </span>
+                </div>
+
+                <div class="bg-white rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
+                    <img src="{{ asset('graphics/stack/documents.svg') }}"
+                         alt="{{ __('content.about.section_4.benefits.benefit_5') }}"
+                         class="h-32 w-32 object-contain"/>
+                    <span class="font-semibold text-sm md:text-base leading-7">
+                    {{ __('content.about.section_4.benefits.benefit_5') }}
+                </span>
                 </div>
             </div>
         </div>
     </section>
+    <section class="flex flex-col-reverse xl:flex-row pt-8 xl:pt-24 pb-16 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:gap-5">
+        <div class="flex basis-2/5 relative self-center pb-8 md:pb-24 xl:pb-4 xl:right-16">
+            <img
+                src="{{ asset('graphics/about_2.webp') }}"
+                class="h-[250px] w-[350px] tablet:h-[500px] tablet:w-[720px] aspect-auto object-center shrink-0"
+                alt=""
+            />
+        </div>
+
+        <div class="flex basis-3/5 relative flex-col self-center gap-5">
+            <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:text-start">
+                <h2 class="font-semibold text-gray-900 leading-7 md:leading-snug">
+                    {{ __('content.home.section_3.title_1') }}
+                </h2>
+            </div>
+
+            <div class="flex flex-col items-center xl:items-start text-sm sm:text-lg lg:text-xl font-light text-center xl:text-start">
+
+                <p class="leading-7 pb-4">
+                    {{ __('content.about.section_4.paragraph_1.item_1') }}
+                    <span class="font-semibold">{{ __('content.about.section_4.paragraph_1.item_2') }}</span>
+                    {{ __('content.about.section_4.paragraph_1.item_3') }}
+                </p>
+
+                <p class="leading-7 pb-4">
+                    {{ __('content.about.section_4.paragraph_2.item_1') }}
+                    <span class="font-semibold">{{ __('content.about.section_4.paragraph_2.item_2') }}</span>
+                    {{ __('content.about.section_4.paragraph_2.item_3') }}
+                </p>
+
+                <p class="leading-7 pb-4">
+                    {{ __('content.about.section_4.paragraph_3.item_1') }}
+                    <span class="font-semibold">{{ __('content.about.section_4.paragraph_3.item_2') }}</span>
+                    {{ __('content.about.section_4.paragraph_3.item_3') }}
+                </p>
+            </div>
+        </div>
+    </section>
+
     <section class="relative md:pb-16 pt-14 md:pt-28 sm:pt-32 mx-[8%] lg:mx-[15%] 2xl:mx-auto 2xl:max-w-7xl px-6 lg:px-8">
         <div x-data="{
     imageGalleryOpened: false,

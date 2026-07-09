@@ -1,8 +1,8 @@
-@props([ 'title', 'description' => null ])
+@props(['title', 'description' => null])
 
-<div class="bg-tile-background rounded-xl px-4 md:px-8">
-    <div class="{{$attributes->get('class')}} flex place-items-start flex-row leading-7 lg:text-lg py-6 w-fit h-full">
-        <div class="bg-white shadow-md rounded-full mr-5 p-4 size-16 aspect-square">
+<div {{ $attributes->class(['bg-tile-background rounded-xl px-4 md:px-8 h-full']) }}>
+    <div class="flex place-items-start flex-row leading-7 lg:text-lg py-6 w-full h-full">
+        <div class="bg-white shadow-md rounded-full mr-5 p-4 size-16 aspect-square shrink-0">
             {{ $slot }}
         </div>
 
@@ -11,10 +11,11 @@
                 {!! $title !!}
             </span>
             <div @class([
-                "font-normal text-tile-content text-xs sm:text-sm leading-5" => isset( $description ),
-                "hidden" => !isset( $description )])>
-            {!! $description !!}
-        </div>
+                "font-normal text-tile-content text-xs sm:text-sm leading-5" => isset($description),
+                "hidden" => !isset($description),
+            ])>
+                {!! $description !!}
+            </div>
         </div>
     </div>
 </div>
