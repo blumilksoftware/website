@@ -154,7 +154,7 @@
         <div class="flex basis-2/5 relative self-center pb-8 md:pb-24 xl:pb-4 xl:right-16">
             <img
                 src="{{ asset('graphics/about_2.webp') }}"
-                class="h-[250px] w-[350px] tablet:h-[500px] tablet:w-[720px] aspect-auto object-center shrink-0"
+                class="h-[250px] w-[350px] tablet:h-[500px] tablet:w-[700px] aspect-auto object-center shrink-0"
                 alt=""
             />
         </div>
@@ -162,28 +162,28 @@
         <div class="flex basis-3/5 relative flex-col self-center gap-5">
             <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:text-start">
                 <h2 class="font-semibold text-gray-900 leading-7 md:leading-snug">
-                    {{ __('content.home.section_3.title_1') }}
+                    {{ __('content.about.section_5.title_1') }}
                 </h2>
             </div>
 
             <div class="flex flex-col items-center xl:items-start text-sm sm:text-lg lg:text-xl font-light text-center xl:text-start">
 
                 <p class="leading-7 pb-4">
-                    {{ __('content.about.section_4.paragraph_1.item_1') }}
-                    <span class="font-semibold">{{ __('content.about.section_4.paragraph_1.item_2') }}</span>
-                    {{ __('content.about.section_4.paragraph_1.item_3') }}
+                    {{ __('content.about.section_5.paragraph_1.text_1') }}
+                    <span class="font-semibold">{{ __('content.about.section_5.paragraph_1.text_2') }}</span>
+                    {{ __('content.about.section_5.paragraph_1.text_3') }}
                 </p>
 
                 <p class="leading-7 pb-4">
-                    {{ __('content.about.section_4.paragraph_2.item_1') }}
-                    <span class="font-semibold">{{ __('content.about.section_4.paragraph_2.item_2') }}</span>
-                    {{ __('content.about.section_4.paragraph_2.item_3') }}
+                    {{ __('content.about.section_5.paragraph_2.text_1') }}
+                    <span class="font-semibold">{{ __('content.about.section_5.paragraph_2.text_2') }}</span>
+                    {{ __('content.about.section_5.paragraph_2.text_3') }}
                 </p>
 
                 <p class="leading-7 pb-4">
-                    {{ __('content.about.section_4.paragraph_3.item_1') }}
-                    <span class="font-semibold">{{ __('content.about.section_4.paragraph_3.item_2') }}</span>
-                    {{ __('content.about.section_4.paragraph_3.item_3') }}
+                    {{ __('content.about.section_5.paragraph_3.text_1') }}
+                    <span class="font-semibold">{{ __('content.about.section_5.paragraph_3.text_2') }}</span>
+                    {{ __('content.about.section_5.paragraph_3.text_3') }}
                 </p>
             </div>
         </div>
@@ -268,8 +268,8 @@
              @keyup.left.window="imageGalleryPrev();"
              class="w-full h-full select-none">
             <div class="pb-2 text-center">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.about.section_5.title_1") }}</h2>
-                <span class="font-normal leading-7 text-sm md:text-lg relative">{{ __("content.about.section_5.subtitle_1") }}</span>
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.about.section_6.title_1") }}</h2>
+                <span class="font-normal leading-7 text-sm md:text-lg relative">{{ __("content.about.section_6.subtitle_1") }}</span>
             </div>
             <div class="mx-auto mt-8 md:mt-16 grid max-w-2xl grid-cols-1 grid-rows-1 gap-8 text-sm leading-7 text-gray-900 sm:mt-20 sm:grid-cols-2 xl:mx-0 xl:max-w-none xl:grid-flow-col xl:grid-cols-4">
                 <figure class="rounded-2xl bg-white shadow-lg ring-1 ring-gray-900/5 sm:col-span-2 xl:col-start-2 xl:row-end-1">

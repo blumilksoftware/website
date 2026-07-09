@@ -143,43 +143,55 @@ Pomagamy podjąć decyzję - czy naprawiać, przebudować, czy stworzyć od nowa
             ],
         ],
         "section_4" => [
-            "paragraph_1" => [
-                "item_1" => "Jesteśmy organizatorami ",
-                "item_2" => " Legnickiego Meetupu Technologicznego, ",
-                "item_3" => " wydarzenia, które łączy programistów, naukowców, specjalistów AI oraz liderów branży, tworząc przestrzeń do wymiany wiedzy i prezentacji swoich doświadczeń w branży IT.",
+            "title_1" => "Realne zaplecze naukowe",
+            "subtitle_1" => "Część zespołu Blumilk prowadzi działalność naukowo-badawczą w obszarach AI, ML, NLP, systemów decyzyjnych oraz inżynierii oprogramowania, równolegle współpracując z uczelniami wyższymi przy kształceniu przyszłych specjalistów.",
+            "benefits" => [
+                "benefit_1" => "Stały dostęp do najnowszej wiedzy akademickiej",
+                "benefit_2" => "Rozwijamy własne algorytmy, modele i prototypy w środowisku badawczo-rozwojowym",
+                "benefit_3" => "Realizujemy projekty we współpracy z jednostkami naukowymi",
+                "benefit_4" => "Wspieramy klientów w przygotowaniu i realizacji projektów B+R",
+                "benefit_5" => "Uczestniczymy w tworzeniu wniosków o finansowanie cyfryzacji i innowacji",
+                "description" => "Dla Ciebie oznacza to współpracę z zespołem, który potrafi projektować i budować AI, a nie tylko ją wdrażać",
             ],
-            "paragraph_2" => [
-                "item_1" => "Nasi eksperci ",
-                "item_2" => "występują na konferencjach branżowych i naukowych,",
-                "item_3" => "w tym międzynarodowych wydarzeniach poświęconych AI, automatyzacji i cyfryzacji procesów. Regularnie dzielimy się wynikami badań, doświadczeniami projektowymi i najlepszymi praktykami we wdrażaniu systemów opartych na danych.",
+            "slogan" => "Dla Ciebie oznacza to współpracę z zespołem, który potrafi projektować i budować AI, a nie tylko ją wdrażać.",
+            "activity_1" => [
+                "title" => "Projekty badawczo-rozwojowe (B+R)",
+                "subtitle" => "Dzięki doświadczeniu i&nbsp;wiedzy zdobytej przez członków naszego zespołu, jesteśmy w&nbsp;stanie skutecznie zarządzać i realizować projekty B+R, zapewniając naszym klientom najwyższą jakość i innowacyjność w każdym etapie współpracy.",
             ],
-            "paragraph_3" => [
-              "item_1" => "Jako partner w rozwoju regionalnym uczestniczymy w",
-              "item_2" => "misjach gospodarczych organizowanych przez Urząd Marszałkowski Województwa Dolnośląskiego, ",
-              "item_3" => "reprezentując dolnośląski sektor nowych technologii na rynkach międzynarodowych. Współpracujemy z samorządami, uczelniami i biznesem, promując nowoczesne podejście do cyfryzacji i automatyzacji.",
+            "activity_2" => [
+                "title" => "Łączymy społeczność technologiczną w Legnicy",
+                "subtitle" => "Organizujemy Legnickie Meetupy Technologiczne, na których chętne osoby prezentują w dowolnej formie swoje doświadczenia i przemyślenia z branży IT. Spotkania są dostępne dla każdego, bez względu na stopień doświadczenia zawodowego czy wykorzystywaną technologię.",
             ],
+            "activity_3" => [
+                "title" => "Środowisko akademickie",
+                "subtitle" => "Prowadzimy zajęcia na kierunkach Informatyka i Inżynieria Produkcji i Logistyki w Collegium Witelona Uczelnia Państwowa w Legnicy. Organizujemy także otwarty program praktyk dla studentów kierunków informatycznych oraz jesteśmy partnerami w&nbsp;naukowych konferencjach.",
             ],
-        "section_5" => [
-            "title_1" => "Blumilk po godzinach",
-            "subtitle_1" => "Mamy to niesamowite szczęście, że lubimy spędzać ze sobą czas, nie tylko w biurze!",
+            "activity_4" => [
+                "title" => "SoDA (Software Development Association Poland)",
+                "subtitle" => "Należymy do grona założycieli prawdopodobnie największej grupy badawczej w obszarze sztucznej inteligencji w Polsce - SoDA AI Research Group. Udzielamy eksperckich komentarzy do raportów branżowych oraz w mediach. Szkolimy także sektor publiczny ze sposobów wykorzystywania AI.",
+            ],
         ],
-        "section_7" => [
-            "title_1" => "Wspieramy rozwój polskiego i europejskiego ekosystemu technologicznego",
-            "column_1" => [
+        "section_5" => [
+            "title_1" => "Wspieramy rozwój ekosystemu technologicznego",
+            "paragraph_1" => [
                 "text_1" => "Jesteśmy organizatorami",
                 "text_2" => "Legnickiego Meetupu Technologicznego,",
                 "text_3" => "wydarzenia, które łączy programistów, naukowców, specjalistów AI oraz liderów branży, tworząc przestrzeń do wymiany wiedzy i prezentacji swoich doświadczeń w branży IT.",
             ],
-            "column_2" => [
+            "paragraph_2" => [
                 "text_1" => "Nasi eksperci",
                 "text_2" => "występują na konferencjach branżowych i naukowych,",
                 "text_3" => "w tym międzynarodowych wydarzeniach poświęconych AI, automatyzacji i cyfryzacji procesów. Regularnie dzielimy się wynikami badań, doświadczeniami projektowymi i najlepszymi praktykami we wdrażaniu systemów opartych na danych.",
             ],
-            "column_3" => [
+            "paragraph_3" => [
                 "text_1" => "Jako partner w rozwoju regionalnym uczestniczymy w",
                 "text_2" => "misjach gospodarczych organizowanych przez Urząd Marszałkowski Województwa Dolnośląskiego,",
                 "text_3" => "reprezentując dolnośląski sektor nowych technologii na rynkach międzynarodowych. Współpracujemy z samorządami, uczelniami i biznesem, promując nowoczesne podejście do cyfryzacji i automatyzacji.",
             ],
+        ],
+        "section_6" => [
+            "title_1" => "Blumilk po godzinach",
+            "subtitle_1" => "Mamy to niesamowite szczęście, że lubimy spędzać ze sobą czas, nie tylko w biurze!",
         ],
     ],
     "case_studies" => [
