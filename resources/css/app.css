@@ -150,3 +150,22 @@
   width: 70px !important;
   height: 60px !important;
 }
+
+@keyframes scroll-vertical {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-scroll-vertical {
+  animation: scroll-vertical 35s linear infinite;
+  will-change: transform;
+}
+
+.animate-scroll-vertical:hover,
+.animate-scroll-vertical:active {
+  animation-play-state: paused;
+}

@@ -89,7 +89,9 @@ return [
             ],
         ],
         "section_6" => [
-            "title_1" => "Opinie klientów",
+            "tag" => "opinie",
+            "title_1" => "Co o nas mówią inni",
+            "subtitle_1" => "Opinie naszych klientów są bardzo ważne, świadczą o jakości naszych usług i inspirują nas do nieustannego doskonalenia.",
         ],
         "section_7" => [
             "title_1" => "Zainteresowany współpracą?",

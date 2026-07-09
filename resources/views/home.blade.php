@@ -149,14 +149,37 @@
             </div>
         </section>
 
-        <section @class([ 'hidden' => $references->isEmpty(), 'px-[10%] md:px-[15%] text-center items-center sm:pb-16 relative' ])>
-            <div class="absolute -z-10 -right-80 -bottom-64">
-                <img src="{{ asset('graphics/shadow.svg') }}" alt=""/>
-            </div>
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">{{ __("content.home.section_6.title_1") }}</h2>
-            <div class="relative">
-                <div class="mx-auto max-w-[1900px]">
-                    @includeWhen( count($references), 'components.references.references', ['references' => $references] )
+        <section @class([
+    'hidden' => $references->isEmpty(),
+    'px-[10%] md:px-[15%] items-center sm:pb-16 relative overflow-hidden'
+])>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center text-left  bg-blue-light lg:p-8 rounded-3xl">
+
+                <div>
+            <span class="inline-block rounded-full bg-[#EEF2FF] text-website-normal text-xs font-semibold px-3 py-2 mb-4 uppercase">
+                {{ __('content.home.section_6.tag') }}
+            </span>
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">
+                        {{ __('content.home.section_6.title_1') }}
+                    </h2>
+                    <p class="text-tile-content text-base md:text-lg mb-8 max-w-md">
+                        {{ __('content.home.section_6.subtitle_1') }}
+                    </p>
+                    <a href="{{ route('contact') }}"
+                       class="inline-block bg-website-normal text-white font-semibold rounded-lg px-6 py-3 hover:bg-website-dark transition">
+                        {{ __('buttons.join_happy_customers') }}
+                    </a>
+                </div>
+
+                <div class="relative h-[600px] overflow-y-hidden px-4 mask-[linear-gradient(to_bottom,transparent,black_8%,black_92%,transparent)]">
+                    <div class="flex flex-col gap-4 animate-scroll-vertical">
+                        @foreach ($references as $reference)
+                            <x-references.review-card :reference="$reference"/>
+                        @endforeach
+                        @foreach ($references as $reference)
+                            <x-references.review-card :reference="$reference" aria-hidden="true"/>
+                        @endforeach
+                    </div>
                 </div>
             </div>
         </section>
