@@ -153,7 +153,7 @@
     'hidden' => $references->isEmpty(),
     'px-[10%] md:px-[15%] items-center sm:pb-16 relative overflow-hidden'
 ])>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center text-left  bg-blue-light lg:p-8 rounded-3xl">
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-4 items-center text-center xl:text-left  bg-blue-light p-4 lg:p-8 rounded-3xl">
 
                 <div>
             <span class="inline-block rounded-full bg-[#EEF2FF] text-website-normal text-xs font-semibold px-3 py-2 mb-4 uppercase">
@@ -162,11 +162,11 @@
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-gray-900 mb-6">
                         {{ __('content.home.section_6.title_1') }}
                     </h2>
-                    <p class="text-tile-content text-base md:text-lg mb-8 max-w-md">
+                    <p class="text-tile-content text-base md:text-lg mb-8 max-w-md mx-auto xl:mx-0">
                         {{ __('content.home.section_6.subtitle_1') }}
                     </p>
                     <a href="{{ route('contact') }}"
-                       class="inline-block bg-website-normal text-white font-semibold rounded-lg px-6 py-3 hover:bg-website-dark transition">
+                       class="inline-block bg-website-normal text-white font-semibold rounded-lg px-6 py-3 hover:bg-website-dark transition mb-6 lg:mb-0">
                         {{ __('buttons.join_happy_customers') }}
                     </a>
                 </div>
