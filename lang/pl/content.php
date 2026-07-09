@@ -224,11 +224,11 @@ Pomagamy podjąć decyzję - czy naprawiać, przebudować, czy stworzyć od nowa
             "subtitle_2" => "Dział Innowacji i Badań (R&D) i Dział Produktowy i Wdrożeniowy",
         ],
         "section_2" => [
-            "title_1" => "Specjalizujemy się w rozwiązaniach stworzonych dla organizacji, których działalność wymaga",
-            "requirement_1" => "wysokiego poziomu automatyzacji",
-            "requirement_2" => "inteligentnego przetwarzania informacji",
-            "requirement_3" => "pracy na dużych wolumenach danych",
-            "requirement_4" => "działania w środowiskach regulowanych",
+            "title_1" => "Specjalizujemy się w rozwiązaniach stworzonych dla organizacji, których działalność wymaga:",
+            "requirement_1" => "Wysokiego poziomu automatyzacji",
+            "requirement_2" => "Inteligentnego przetwarzania informacji",
+            "requirement_3" => "Pracy na dużych wolumenach danych",
+            "requirement_4" => "Działania w środowiskach regulowanych",
         ],
         "section_3" => [
             "title_1" => "Projektujemy systemy AI wspierające",
