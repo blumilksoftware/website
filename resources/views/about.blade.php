@@ -92,8 +92,9 @@
             </div>
         </div>
     </section>
-    <section class="relative overflow-hidden pt-10 pb-14 md:pt-14 md:pb-28">
+    <section class="relative pt-10 pb-14 md:pt-14 md:pb-28">
         <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="absolute -z-10 -right-96 bottom-0"/>
+        <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="absolute -z-10 right-50">
         <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="absolute -z-10 -left-[800px] -bottom-64"/>
 
         <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
@@ -103,7 +104,7 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-4">
-                <div class="bg-white rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
+                <div class="bg-white shadow-lg rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
                     <img src="{{ asset('graphics/stack/education.svg') }}"
                          alt="{{ __('content.about.section_4.benefits.benefit_1') }}"
                          class="h-32 w-32 object-contain"/>
@@ -112,7 +113,7 @@
                 </span>
                 </div>
 
-                <div class="bg-white rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
+                <div class="bg-white shadow-lg rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
                     <img src="{{ asset('graphics/stack/ai-tile.svg') }}"
                          alt="{{ __('content.about.section_4.benefits.benefit_2') }}"
                          class="h-32 w-32 object-contain"/>
@@ -121,7 +122,7 @@
                 </span>
                 </div>
 
-                <div class="bg-white rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
+                <div class="bg-white shadow-lg rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
                     <img src="{{ asset('graphics/stack/books.svg') }}"
                          alt="{{ __('content.about.section_4.benefits.benefit_3') }}"
                          class="h-32 w-32 object-contain"/>
@@ -130,7 +131,7 @@
                 </span>
                 </div>
 
-                <div class="bg-white rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
+                <div class="bg-white shadow-lg rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
                     <img src="{{ asset('graphics/stack/magnifier.svg') }}"
                          alt="{{ __('content.about.section_4.benefits.benefit_4') }}"
                          class="h-32 w-32 object-contain"/>
@@ -139,7 +140,7 @@
                 </span>
                 </div>
 
-                <div class="bg-white rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
+                <div class="bg-white shadow-lg rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
                     <img src="{{ asset('graphics/stack/documents.svg') }}"
                          alt="{{ __('content.about.section_4.benefits.benefit_5') }}"
                          class="h-32 w-32 object-contain"/>

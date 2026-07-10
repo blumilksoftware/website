@@ -53,69 +53,42 @@
         </div>
     </section>
     <section class="relative">
-        <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:space-y-10 pt-28 pb-20 md:pb-36">
-            <div class="pb-10 md:pb-14 text-center">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.offer.section_3.title_1") }}</h2>
-            </div>
-            <div class="grid md:grid-cols-2 gap-4 2xl:gap-12 xl:place-items-stretch">
-                <div class="bg-gray-extra-light rounded-xl px-6">
-                    <div class="flex flex-row gap-5 py-6 h-full items-center">
-                        <div class="shrink-0">
-                            <x-icons.clock accent="text-website-normal" class="size-12" />
-                        </div>
-                        <span class="font-semibold text-lg leading-7">
-                {{ __("content.offer.section_3.item_1") }}
-            </span>
-                    </div>
+        <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="absolute -z-10 left-1/2  top-0"/>
+        <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="absolute -z-10 -right-96 bottom-0"/>
+        <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="absolute -z-10 -left-96 top-0"/>
+
+        <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto pt-28 pb-20 md:pb-36">
+            <div class="flex flex-col xl:flex-row gap-10 xl:gap-16 items-center">
+                <div class="flex basis-2/5 justify-center">
+                    <img src="{{ asset('graphics/about.webp') }}"
+                         class="h-[250px] w-[350px] tablet:h-[550px] tablet:w-[700px] aspect-auto object-center shrink-0"
+                         alt=""/>
                 </div>
-                <div class="bg-gray-extra-light rounded-xl px-6">
-                    <div class="flex flex-row gap-5 py-6 h-full items-center">
-                        <div class="shrink-0">
-                            <x-icons.school accent="text-website-normal" class="size-12" />
-                        </div>
-                        <span class="font-semibold text-lg leading-7">
-                {{ __("content.offer.section_3.item_2") }}
-            </span>
+
+                <div class="flex basis-3/5 flex-col gap-4 w-full">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">
+                    <span class="md:whitespace-nowrap">
+                        {{ __("content.offer.section_3.title_1") }}<span class="text-blue-normal">{{ __("content.offer.section_3.title_2") }}</span>
+                    </span>
+                        {{ __("content.offer.section_3.title_3") }}
+                    </h2>
+                    <div class="bg-white rounded-xl px-6 py-5 shadow-sm">
+                        <span class="font-semibold text-lg leading-7">{{ __("content.offer.section_3.item_1") }}</span>
                     </div>
-                </div>
-                <div class="bg-gray-extra-light rounded-xl px-6">
-                    <div class="flex flex-row gap-5 py-6 h-full items-center">
-                        <div class="shrink-0">
-                            <x-icons.stethoscope accent="text-website-normal" class="size-12" />
-                        </div>
-                        <span class="font-semibold text-lg leading-7">
-                {{ __("content.offer.section_3.item_3") }}
-            </span>
+                    <div class="bg-white rounded-xl px-6 py-5 shadow-sm">
+                        <span class="font-semibold text-lg leading-7">{{ __("content.offer.section_3.item_2") }}</span>
                     </div>
-                </div>
-                <div class="bg-gray-extra-light rounded-xl px-6">
-                    <div class="flex flex-row gap-5 py-6 h-full items-center">
-                        <div class="shrink-0">
-                            <x-icons.stethoscope accent="text-website-normal" class="size-12" />
-                        </div>
-                        <span class="font-semibold text-lg leading-7">
-                {{ __("content.offer.section_3.item_4") }}
-            </span>
+                    <div class="bg-white rounded-xl px-6 py-5 shadow-sm">
+                        <span class="font-semibold text-lg leading-7">{{ __("content.offer.section_3.item_3") }}</span>
                     </div>
-                </div>
-                <div class="bg-gray-extra-light rounded-xl px-6">
-                    <div class="flex flex-row gap-5 py-6 h-full items-center">
-                        <div class="shrink-0">
-                            <x-icons.stethoscope accent="text-website-normal" class="size-12" />
-                        </div>
-                        <span class="font-semibold text-lg leading-7">
-                {{ __("content.offer.section_3.item_5") }}
-            </span>
+                    <div class="bg-white rounded-xl px-6 py-5 shadow-sm">
+                        <span class="font-semibold text-lg leading-7">{{ __("content.offer.section_3.item_4") }}</span>
                     </div>
-                </div>
-                <div class="bg-gray-extra-light rounded-xl px-6">
-                    <div class="flex flex-row gap-5 py-6 h-full items-center">
-                        <div class="shrink-0">
-                            <x-icons.stethoscope accent="text-website-normal" class="size-12" />
-                        </div>
-                        <span class="font-semibold text-lg leading-7">
-                {{ __("content.offer.section_3.item_6") }}
-            </span>
+                    <div class="bg-white rounded-xl px-6 py-5 shadow-sm">
+                        <span class="font-semibold text-lg leading-7">{{ __("content.offer.section_3.item_5") }}</span>
+                    </div>
+                    <div class="bg-white rounded-xl px-6 py-5 shadow-sm">
+                        <span class="font-semibold text-lg leading-7">{{ __("content.offer.section_3.item_6") }}</span>
                     </div>
                 </div>
             </div>
@@ -126,47 +99,31 @@
             <div class="pb-10 md:pb-14 text-center">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.offer.section_4.title_1") }}</h2>
             </div>
-            <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-4 2xl:gap-12 xl:place-items-stretch">
-                <x-tile-top-icon title="{{ __('content.offer.section_4.item_1.title') }}"
-                                 description="{{ __('content.offer.section_4.item_1.subtitle') }}"
-                                 class="2xl:place-items-start">
-                    <x-icons.heart-code accent="stroke-blue-normal-neon" />
-                </x-tile-top-icon>
-                <x-tile-top-icon title="{{ __('content.offer.section_4.item_2.title') }}"
-                                 description="{{ __('content.offer.section_4.item_2.subtitle') }}"
-                                 class="2xl:place-items-start">
-                    <x-icons.heart-code accent="stroke-blue-normal-neon" />
-                </x-tile-top-icon>
-                <x-tile-top-icon title="{{ __('content.offer.section_4.item_3.title') }}"
-                                 description="{{ __('content.offer.section_4.item_3.subtitle') }}"
-                                 class="2xl:place-items-start">
-                    <x-icons.heart-code accent="stroke-blue-normal-neon" />
-                </x-tile-top-icon>
-                <x-tile-top-icon title="{{ __('content.offer.section_4.item_4.title') }}"
-                                 description="{{ __('content.offer.section_4.item_4.subtitle') }}"
-                                 class="2xl:place-items-start">
-                    <x-icons.heart-code accent="stroke-blue-normal-neon" />
-                </x-tile-top-icon>
-                <x-tile-top-icon title="{{ __('content.offer.section_4.item_5.title') }}"
-                                 description="{{ __('content.offer.section_4.item_5.subtitle') }}"
-                                 class="2xl:place-items-start">
-                    <x-icons.heart-code accent="stroke-blue-normal-neon" />
-                </x-tile-top-icon>
-                <x-tile-top-icon title="{{ __('content.offer.section_4.item_6.title') }}"
-                                 description="{{ __('content.offer.section_4.item_6.subtitle') }}"
-                                 class="2xl:place-items-start">
-                    <x-icons.heart-code accent="stroke-blue-normal-neon" />
-                </x-tile-top-icon>
-                <x-tile-top-icon title="{{ __('content.offer.section_4.item_7.title') }}"
-                                 description="{{ __('content.offer.section_4.item_7.subtitle') }}"
-                                 class="2xl:place-items-start">
-                    <x-icons.heart-code accent="stroke-blue-normal-neon" />
-                </x-tile-top-icon>
-                <x-tile-top-icon title="{{ __('content.offer.section_4.item_8.title') }}"
-                                 description="{{ __('content.offer.section_4.item_8.subtitle') }}"
-                                 class="2xl:place-items-start">
-                    <x-icons.heart-code accent="stroke-blue-normal-neon" />
-                </x-tile-top-icon>
+            <div class="flex flex-wrap justify-center gap-4 2xl:gap-12">
+                <x-tile title="{{ __('content.offer.section_4.item_1.title') }}" class="w-full items-center justify-center md:w-[340px] xl:w-[380px]">
+                    <x-icons.audit accent="stroke-blue-normal-neon"/>
+                </x-tile>
+                <x-tile title="{{ __('content.offer.section_4.item_2.title') }}" class="w-full items-center justify-center md:w-[340px] xl:w-[380px]">
+                    <x-icons.magnifier-chart accent="stroke-blue-normal-neon"/>
+                </x-tile>
+                <x-tile title="{{ __('content.offer.section_4.item_3.title') }}" class="w-full items-center justify-center md:w-[340px] xl:w-[380px]">
+                    <x-icons.alert-triangle accent="stroke-blue-normal-neon"/>
+                </x-tile>
+                <x-tile title="{{ __('content.offer.section_4.item_4.title') }}" class="w-full items-center justify-center md:w-[340px] xl:w-[380px]">
+                    <x-icons.math-max-min accent="stroke-blue-normal-neon"/>
+                </x-tile>
+                <x-tile title="{{ __('content.offer.section_4.item_5.title') }}" class="w-full items-center justify-center md:w-[340px] xl:w-[380px]">
+                    <x-icons.automation accent="stroke-blue-normal-neon"/>
+                </x-tile>
+                <x-tile title="{{ __('content.offer.section_4.item_6.title') }}" class="w-full items-center justify-center md:w-[340px] xl:w-[380px]">
+                    <x-icons.brand-wechat accent="stroke-blue-normal-neon"/>
+                </x-tile>
+                <x-tile title="{{ __('content.offer.section_4.item_7.title') }}" class="w-full items-center justify-center md:w-[340px] xl:w-[380px]">
+                    <x-icons.shield accent="stroke-blue-normal-neon"/>
+                </x-tile>
+                <x-tile title="{{ __('content.offer.section_4.item_8.title') }}" class="w-full items-center justify-center md:w-[340px] xl:w-[380px]">
+                    <x-icons.checks accent="stroke-blue-normal-neon"/>
+                </x-tile>
             </div>
         </div>
     </section>
@@ -180,7 +137,7 @@
                         <span class="font-semibold">{{ __("content.offer.section_6.subtitle_2") }} </span>
                         {{ __("content.offer.section_6.subtitle_3") }}
                     </p>
-                    <x-primary-button href="{{ route('contact') }}" class="w-full md:w-auto md:px-16 py-4 bg-blue-normal font-semibold">
+                    <x-primary-button href="{{ route('contact') }}" class="w-full md:w-fit md:px-16 py-4 bg-blue-normal font-semibold">
                         {{ __("buttons.schedule_free_consultation") }}
                     </x-primary-button>
                 </div>
