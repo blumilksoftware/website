@@ -52,7 +52,7 @@
             </div>
         </div>
     </section>
-    <section class="relative">
+    <section class="relative overflow-x-clip overflow-y-visible">
         <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="absolute -z-10 left-1/2  top-0"/>
         <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="absolute -z-10 -right-96 bottom-0"/>
         <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="absolute -z-10 -left-96 top-0"/>
@@ -131,7 +131,7 @@
         <div class="flex flex-col md:mt-10 md:pb-5 xl:flex-row mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto gap-x-8">
             <div class="flex basis-1/2 relative flex-col justify-center md:pb-24 xl:pb-0">
                 <div class="text-center xl:justify-start xl:text-start pb-5 xl:pb-10">
-                    <h2 class="font-semibold text-gray-900 leading-12 text-md md:text-4xl lg:text-5xl mb-4 md:mb-10">{{ __("content.offer.section_6.title_1") }}</h2>
+                    <h2 class="font-semibold text-gray-900 leading-12 text-3xl md:text-4xl lg:text-5xl mb-4 md:mb-10">{{ __("content.offer.section_6.title_1") }}</h2>
                     <p class="font-normal text-center 2xl:text-start pb-8 leading-7 max-w-[450px]">
                         {{ __("content.offer.section_6.subtitle_1") }}
                         <span class="font-semibold">{{ __("content.offer.section_6.subtitle_2") }} </span>

@@ -92,7 +92,7 @@
             </div>
         </div>
     </section>
-    <section class="relative pt-10 pb-14 md:pt-14 md:pb-28">
+    <section class="relative pt-10 pb-14 md:pt-14 md:pb-28 overflow-x-clip overflow-y-visible">
         <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="absolute -z-10 -right-96 bottom-0"/>
         <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="absolute -z-10 right-50">
         <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="absolute -z-10 -left-[800px] -bottom-64"/>
