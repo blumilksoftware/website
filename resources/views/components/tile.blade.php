@@ -1,7 +1,7 @@
 @props(['title', 'description' => null])
 
 <div {{ $attributes->class([
-    'bg-tile-background rounded-xl px-4 md:px-8 h-full flex flex-row place-items-start gap-5 leading-7 lg:text-lg py-6',
+    'bg-tile-background rounded-xl px-4 md:px-8 h-full flex flex-row items-center gap-5 leading-7 lg:text-lg py-6',
 ]) }}>
     <div class="bg-white shadow-md rounded-full p-4 size-16 aspect-square shrink-0">
         {{ $slot }}

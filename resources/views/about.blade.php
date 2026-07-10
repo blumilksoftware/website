@@ -12,7 +12,7 @@
                     {{ __("content.about.section_1.title_3") }}
                 </h2>
             </div>
-            <div class="items-center 2xl:items-start text-sm md:text-lg max-w-[540px]">
+            <div class="items-center 2xl:items-start text-sm md:text-lg max-w-[540px] mx-auto 2xl:mx-0">
                 <p class="font-normal text-center 2xl:text-start pb-8 leading-7">
                     <span class="font-semibold">{{ __("content.about.section_1.subtitle_1") }}</span>
                     {{ __("content.about.section_1.subtitle_2") }}
@@ -25,38 +25,41 @@
             </div>
         </div>
         <div class="flex basis-2/5">
-            <img src="{{ asset('graphics/about.webp') }}" class="h-[250px] w-[350px] tablet:h-[550px] tablet:w-[700px] aspect-auto object-center shrink-0"
+            <img src="{{ asset('graphics/about.webp') }}"
+                 class="w-full max-w-[280px] sm:max-w-[350px] tablet:max-w-[700px] h-auto object-contain mx-auto"
                  alt=""/>
         </div>
     </section>
+
     <section class="bg-white py-12 sm:pt-16 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
-        <div class="mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:flex xl:justify-between overflow-hidden text-center text-[#0E0B3D] gap-16 md:gap-8">
+        <div class="mt-8 sm:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:flex xl:justify-between overflow-hidden text-center text-[#0E0B3D] gap-10 sm:gap-16 md:gap-8">
             <div>
                 <dl class="flex flex-col gap-4">
-                    <dd class="order-first text-6xl font-semibold">+25</dd>
+                    <dd class="order-first text-5xl sm:text-6xl font-semibold">+25</dd>
                     <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_1") }}</dt>
                 </dl>
             </div>
             <div>
                 <dl class="flex flex-col gap-4">
-                    <dd class="order-first text-6xl font-semibold">175</dd>
+                    <dd class="order-first text-5xl sm:text-6xl font-semibold">175</dd>
                     <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_2") }}</dt>
                 </dl>
             </div>
             <div>
                 <dl class="flex flex-col gap-4">
-                    <dd class="order-first text-6xl font-semibold">126</dd>
+                    <dd class="order-first text-5xl sm:text-6xl font-semibold">126</dd>
                     <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_3") }}</dt>
                 </dl>
             </div>
             <div>
                 <dl class="flex flex-col gap-4">
-                    <dd class="order-first text-6xl font-semibold">1000+</dd>
+                    <dd class="order-first text-5xl sm:text-6xl font-semibold">1000+</dd>
                     <dt class="text-md font-normal leading-6">{{ __("content.about.section_2.stat_4") }}</dt>
                 </dl>
             </div>
         </div>
     </section>
+
     <section class="relative pt-14 pb-12 md:pb-24 text-center">
         <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-[1580px] 2xl:mx-auto md:space-y-10">
             <div class="pb-14 max-w-[886px] mx-auto">
@@ -92,9 +95,10 @@
             </div>
         </div>
     </section>
+
     <section class="relative pt-10 pb-14 md:pt-14 md:pb-28 overflow-x-clip overflow-y-visible">
         <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="absolute -z-10 -right-96 bottom-0"/>
-        <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="absolute -z-10 right-50">
+        <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="absolute -z-10 left-1/2 -translate-x-1/2 top-0"/>
         <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="absolute -z-10 -left-[800px] -bottom-64"/>
 
         <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
@@ -109,8 +113,8 @@
                          alt="{{ __('content.about.section_4.benefits.benefit_1') }}"
                          class="h-32 w-32 object-contain"/>
                     <span class="font-semibold text-sm md:text-base leading-7">
-                    {{ __('content.about.section_4.benefits.benefit_1') }}
-                </span>
+                        {{ __('content.about.section_4.benefits.benefit_1') }}
+                    </span>
                 </div>
 
                 <div class="bg-white shadow-lg rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
@@ -118,8 +122,8 @@
                          alt="{{ __('content.about.section_4.benefits.benefit_2') }}"
                          class="h-32 w-32 object-contain"/>
                     <span class="font-semibold text-sm md:text-base leading-7">
-                    {{ __('content.about.section_4.benefits.benefit_2') }}
-                </span>
+                        {{ __('content.about.section_4.benefits.benefit_2') }}
+                    </span>
                 </div>
 
                 <div class="bg-white shadow-lg rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
@@ -127,8 +131,8 @@
                          alt="{{ __('content.about.section_4.benefits.benefit_3') }}"
                          class="h-32 w-32 object-contain"/>
                     <span class="font-semibold text-sm md:text-base leading-7">
-                    {{ __('content.about.section_4.benefits.benefit_3') }}
-                </span>
+                        {{ __('content.about.section_4.benefits.benefit_3') }}
+                    </span>
                 </div>
 
                 <div class="bg-white shadow-lg rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
@@ -136,8 +140,8 @@
                          alt="{{ __('content.about.section_4.benefits.benefit_4') }}"
                          class="h-32 w-32 object-contain"/>
                     <span class="font-semibold text-sm md:text-base leading-7">
-                    {{ __('content.about.section_4.benefits.benefit_4') }}
-                </span>
+                        {{ __('content.about.section_4.benefits.benefit_4') }}
+                    </span>
                 </div>
 
                 <div class="bg-white shadow-lg rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
@@ -145,17 +149,18 @@
                          alt="{{ __('content.about.section_4.benefits.benefit_5') }}"
                          class="h-32 w-32 object-contain"/>
                     <span class="font-semibold text-sm md:text-base leading-7">
-                    {{ __('content.about.section_4.benefits.benefit_5') }}
-                </span>
+                        {{ __('content.about.section_4.benefits.benefit_5') }}
+                    </span>
                 </div>
             </div>
         </div>
     </section>
+
     <section class="flex flex-col-reverse xl:flex-row pt-8 xl:pt-24 pb-16 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:gap-5">
         <div class="flex basis-2/5 relative self-center pb-8 md:pb-24 xl:pb-4 xl:right-16">
             <img
                 src="{{ asset('graphics/about_2.webp') }}"
-                class="h-[250px] w-[350px] tablet:h-[500px] tablet:w-[700px] aspect-auto object-center shrink-0"
+                class="w-full max-w-[280px] sm:max-w-[350px] tablet:max-w-[700px] h-auto object-contain mx-auto"
                 alt=""
             />
         </div>

@@ -24,8 +24,9 @@
                  alt=""/>
         </div>
     </section>
+
     <section class="relative">
-        <div class="mx-[10%] lg:mx-[15%] md:space-y-10 pt-28 pb-20 md:pb-36">
+        <div class="mx-[10%] lg:mx-[15%] md:space-y-10 pt-14 md:pt-28 pb-20 md:pb-36">
             <div class="pb-10 md:pb-14 text-center max-w-7xl mx-auto">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.offer.section_2.title_1") }}</h2>
             </div>
@@ -52,24 +53,25 @@
             </div>
         </div>
     </section>
+
     <section class="relative overflow-x-clip overflow-y-visible">
-        <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="absolute -z-10 left-1/2  top-0"/>
+        <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="absolute -z-10 left-1/2 top-0"/>
         <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="absolute -z-10 -right-96 bottom-0"/>
         <img src="{{ asset('graphics/shadow.svg') }}" alt="" class="absolute -z-10 -left-96 top-0"/>
 
-        <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto pt-28 pb-20 md:pb-36">
+        <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto pt-14 md:pt-28 pb-20 md:pb-36">
             <div class="flex flex-col xl:flex-row gap-10 xl:gap-16 items-center">
                 <div class="flex basis-2/5 justify-center">
                     <img src="{{ asset('graphics/about.webp') }}"
-                         class="h-[250px] w-[350px] tablet:h-[550px] tablet:w-[700px] aspect-auto object-center shrink-0"
+                         class="w-full max-w-[280px] sm:max-w-[350px] tablet:max-w-[700px] h-auto object-contain mx-auto"
                          alt=""/>
                 </div>
 
                 <div class="flex basis-3/5 flex-col gap-4 w-full">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">
-                    <span class="md:whitespace-nowrap">
-                        {{ __("content.offer.section_3.title_1") }}<span class="text-blue-normal">{{ __("content.offer.section_3.title_2") }}</span>
-                    </span>
+                        <span class="md:whitespace-nowrap">
+                            {{ __("content.offer.section_3.title_1") }}<span class="text-blue-normal">{{ __("content.offer.section_3.title_2") }}</span>
+                        </span>
                         {{ __("content.offer.section_3.title_3") }}
                     </h2>
                     <div class="bg-white rounded-xl px-6 py-5 shadow-sm">
@@ -94,45 +96,47 @@
             </div>
         </div>
     </section>
+
     <section class="relative">
-        <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:space-y-10 pt-28 pb-20 md:pb-36">
+        <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:space-y-10 pt-14 md:pt-28 pb-20 md:pb-36">
             <div class="pb-10 md:pb-14 text-center">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.offer.section_4.title_1") }}</h2>
             </div>
             <div class="flex flex-wrap justify-center gap-4 2xl:gap-12">
-                <x-tile title="{{ __('content.offer.section_4.item_1.title') }}" class="w-full items-center justify-center md:w-[340px] xl:w-[380px]">
+                <x-tile title="{{ __('content.offer.section_4.item_1.title') }}" class="w-full md:w-[340px] xl:w-[380px]">
                     <x-icons.audit accent="stroke-blue-normal-neon"/>
                 </x-tile>
-                <x-tile title="{{ __('content.offer.section_4.item_2.title') }}" class="w-full items-center justify-center md:w-[340px] xl:w-[380px]">
+                <x-tile title="{{ __('content.offer.section_4.item_2.title') }}" class="w-full md:w-[340px] xl:w-[380px]">
                     <x-icons.magnifier-chart accent="stroke-blue-normal-neon"/>
                 </x-tile>
-                <x-tile title="{{ __('content.offer.section_4.item_3.title') }}" class="w-full items-center justify-center md:w-[340px] xl:w-[380px]">
+                <x-tile title="{{ __('content.offer.section_4.item_3.title') }}" class="w-full md:w-[340px] xl:w-[380px]">
                     <x-icons.alert-triangle accent="stroke-blue-normal-neon"/>
                 </x-tile>
-                <x-tile title="{{ __('content.offer.section_4.item_4.title') }}" class="w-full items-center justify-center md:w-[340px] xl:w-[380px]">
+                <x-tile title="{{ __('content.offer.section_4.item_4.title') }}" class="w-full md:w-[340px] xl:w-[380px]">
                     <x-icons.math-max-min accent="stroke-blue-normal-neon"/>
                 </x-tile>
-                <x-tile title="{{ __('content.offer.section_4.item_5.title') }}" class="w-full items-center justify-center md:w-[340px] xl:w-[380px]">
+                <x-tile title="{{ __('content.offer.section_4.item_5.title') }}" class="w-full md:w-[340px] xl:w-[380px]">
                     <x-icons.automation accent="stroke-blue-normal-neon"/>
                 </x-tile>
-                <x-tile title="{{ __('content.offer.section_4.item_6.title') }}" class="w-full items-center justify-center md:w-[340px] xl:w-[380px]">
+                <x-tile title="{{ __('content.offer.section_4.item_6.title') }}" class="w-full md:w-[340px] xl:w-[380px]">
                     <x-icons.brand-wechat accent="stroke-blue-normal-neon"/>
                 </x-tile>
-                <x-tile title="{{ __('content.offer.section_4.item_7.title') }}" class="w-full items-center justify-center md:w-[340px] xl:w-[380px]">
+                <x-tile title="{{ __('content.offer.section_4.item_7.title') }}" class="w-full md:w-[340px] xl:w-[380px]">
                     <x-icons.shield accent="stroke-blue-normal-neon"/>
                 </x-tile>
-                <x-tile title="{{ __('content.offer.section_4.item_8.title') }}" class="w-full items-center justify-center md:w-[340px] xl:w-[380px]">
+                <x-tile title="{{ __('content.offer.section_4.item_8.title') }}" class="w-full md:w-[340px] xl:w-[380px]">
                     <x-icons.checks accent="stroke-blue-normal-neon"/>
                 </x-tile>
             </div>
         </div>
     </section>
+
     <section class="relative">
-        <div class="flex flex-col md:mt-10 md:pb-5 xl:flex-row mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto gap-x-8">
+        <div class="flex flex-col-reverse xl:flex-row md:mt-10 md:pb-5 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto gap-x-8 gap-y-8">
             <div class="flex basis-1/2 relative flex-col justify-center md:pb-24 xl:pb-0">
                 <div class="text-center xl:justify-start xl:text-start pb-5 xl:pb-10">
                     <h2 class="font-semibold text-gray-900 leading-12 text-3xl md:text-4xl lg:text-5xl mb-4 md:mb-10">{{ __("content.offer.section_6.title_1") }}</h2>
-                    <p class="font-normal text-center 2xl:text-start pb-8 leading-7 max-w-[450px]">
+                    <p class="font-normal text-center 2xl:text-start pb-8 leading-7 max-w-[450px] mx-auto 2xl:mx-0">
                         {{ __("content.offer.section_6.subtitle_1") }}
                         <span class="font-semibold">{{ __("content.offer.section_6.subtitle_2") }} </span>
                         {{ __("content.offer.section_6.subtitle_3") }}
@@ -143,10 +147,12 @@
                 </div>
             </div>
             <div class="self-center basis-1/2">
-                <img src="{{ asset('graphics/career_3.webp') }}" class="h-[250px] w-[350px] tablet:h-[500px] tablet:w-[700px] aspect-auto object-center shrink-0"
+                <img src="{{ asset('graphics/career_3.webp') }}"
+                     class="w-full max-w-[280px] sm:max-w-[350px] tablet:max-w-[700px] h-auto object-contain mx-auto"
                      alt=""/>
             </div>
         </div>
     </section>
+
     <x-text-us-section></x-text-us-section>
 @endsection
