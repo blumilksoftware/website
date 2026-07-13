@@ -98,40 +98,6 @@
     </section>
 
     <section class="relative">
-        <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:space-y-10 pt-14 md:pt-28 pb-20 md:pb-36">
-            <div class="pb-10 md:pb-14 text-center">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.offer.section_4.title_1") }}</h2>
-            </div>
-            <div class="flex flex-wrap justify-center gap-4 2xl:gap-12">
-                <x-tile title="{{ __('content.offer.section_4.item_1.title') }}" class="w-full md:w-[340px] xl:w-[380px]">
-                    <x-icons.audit accent="stroke-blue-normal-neon"/>
-                </x-tile>
-                <x-tile title="{{ __('content.offer.section_4.item_2.title') }}" class="w-full md:w-[340px] xl:w-[380px]">
-                    <x-icons.magnifier-chart accent="stroke-blue-normal-neon"/>
-                </x-tile>
-                <x-tile title="{{ __('content.offer.section_4.item_3.title') }}" class="w-full md:w-[340px] xl:w-[380px]">
-                    <x-icons.alert-triangle accent="stroke-blue-normal-neon"/>
-                </x-tile>
-                <x-tile title="{{ __('content.offer.section_4.item_4.title') }}" class="w-full md:w-[340px] xl:w-[380px]">
-                    <x-icons.math-max-min accent="stroke-blue-normal-neon"/>
-                </x-tile>
-                <x-tile title="{{ __('content.offer.section_4.item_5.title') }}" class="w-full md:w-[340px] xl:w-[380px]">
-                    <x-icons.automation accent="stroke-blue-normal-neon"/>
-                </x-tile>
-                <x-tile title="{{ __('content.offer.section_4.item_6.title') }}" class="w-full md:w-[340px] xl:w-[380px]">
-                    <x-icons.brand-wechat accent="stroke-blue-normal-neon"/>
-                </x-tile>
-                <x-tile title="{{ __('content.offer.section_4.item_7.title') }}" class="w-full md:w-[340px] xl:w-[380px]">
-                    <x-icons.shield accent="stroke-blue-normal-neon"/>
-                </x-tile>
-                <x-tile title="{{ __('content.offer.section_4.item_8.title') }}" class="w-full md:w-[340px] xl:w-[380px]">
-                    <x-icons.checks accent="stroke-blue-normal-neon"/>
-                </x-tile>
-            </div>
-        </div>
-    </section>
-
-    <section class="relative">
         <div class="flex flex-col-reverse xl:flex-row md:mt-10 md:pb-5 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto gap-x-8 gap-y-8">
             <div class="flex basis-1/2 relative flex-col justify-center md:pb-24 xl:pb-0">
                 <div class="text-center xl:justify-start xl:text-start pb-5 xl:pb-10">

@@ -224,7 +224,7 @@ Pomagamy podjąć decyzję - czy naprawiać, przebudować, czy stworzyć od nowa
             "subtitle_2" => "Dział Innowacji i Badań (R&D) i Dział Produktowy i Wdrożeniowy",
         ],
         "section_2" => [
-            "title_1" => "Specjalizujemy się w rozwiązaniach stworzonych dla organizacji, których działalność wymaga:",
+            "title_1" => "Specjalizujemy się w rozwiązaniach:",
             "requirement_1" => "Wysokiego poziomu automatyzacji",
             "requirement_2" => "Inteligentnego przetwarzania informacji",
             "requirement_3" => "Pracy na dużych wolumenach danych",

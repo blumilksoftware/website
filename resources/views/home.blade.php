@@ -10,10 +10,10 @@
 @section("content")
     <section class="relative overflow-hidden">
         <section class="flex flex-col-reverse xl:flex-row pt-8 xl:pt-24 pb-16 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:gap-5">
-            <div class="flex basis-3/5 relative flex-col self-center gap-5">
+            <div class="flex basis-2/5 relative flex-col self-center gap-5">
                 <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:justify-start xl:text-start">
                     <h2 class="font-semibold text-gray-900 leading-7 md:leading-snug">
-                        <span class="inline">{{ __("content.home.section_1.title_1") }} <br/></span>
+                        <span class="inline">{{ __("content.home.section_1.title_1") }} </span>
                         <span class="inline">{{ __("content.home.section_1.title_2") }}  <span class="text-blue-normal inline"> {{ __("content.home.section_1.title_3") }} </span></span>
                         <span class="inline"> {{ __("content.home.section_1.title_4") }} </span>
                     </h2>
@@ -26,8 +26,8 @@
                                       class="w-full sm:w-auto sm:px-12 -ml-1 shadow-xl bg-blue-normal">{{ __("buttons.see_how_we_can_help") }}</x-primary-button>
                 </div>
             </div>
-            <div class="flex basis-2/5 relative self-center pb-8 md:pb-24 xl:pb-4 xl:left-16">
-                <img src="{{ asset('graphics/home.webp') }}" class="h-[250px] w-[350px] tablet:h-[550px] tablet:w-[700px] aspect-auto object-center shrink-0"
+            <div class="flex basis-3/5 relative self-center pb-8 md:pb-24 xl:pb-4 xl:left-16">
+                <img src="{{ asset('graphics/home.webp') }}" class="h-[250px] w-[350px] tablet:h-[550px] tablet:w-[750px] aspect-auto object-center shrink-0"
                      alt=""/>
             </div>
         </section>
@@ -46,16 +46,16 @@
                 @endforeach
             </div>
         </section>
-        <section class="flex flex-col-reverse xl:flex-row pt-8 xl:pt-24 pb-16 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:gap-5">
-            <div class="flex basis-2/5 relative self-center pb-8 md:pb-24 xl:pb-4 xl:right-16">
+        <section class="flex flex-col-reverse xl:flex-row pt-8 xl:pt-24 pb-12 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:gap-5">
+            <div class="flex basis-3/5 relative self-center xl:right-16 pt-8 xl:pt-0">
                 <img
                     src="{{ asset('graphics/home_2.webp') }}"
-                    class="h-[250px] w-[350px] tablet:h-[500px] tablet:w-[700px] aspect-auto object-center shrink-0"
+                    class="h-[250px] w-[350px] tablet:h-[500px] tablet:w-[750px] aspect-auto object-center shrink-0"
                     alt=""
                 />
             </div>
 
-            <div class="flex basis-3/5 relative flex-col self-center gap-5">
+            <div class="flex basis-2/5 relative flex-col self-center gap-5">
                 <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:text-start">
                     <h2 class="font-semibold text-gray-900 leading-7 md:leading-snug">
                         {{ __('content.home.section_3.title_1') }}
@@ -153,7 +153,7 @@
     'hidden' => $references->isEmpty(),
     'px-[10%] md:px-[15%] items-center sm:pb-16 relative overflow-hidden'
 ])>
-            <div class="grid grid-cols-1 xl:grid-cols-2 gap-4 items-center text-center xl:text-left  bg-blue-light p-4 lg:p-8 rounded-3xl">
+            <div class="grid grid-cols-1 xl:grid-cols-2 gap-4 items-center text-center xl:text-left bg-blue-light p-4 lg:p-8 rounded-3xl 2xl:max-w-7xl 2xl:mx-auto">
 
                 <div>
             <span class="inline-block rounded-full bg-[#EEF2FF] text-website-normal text-xs font-semibold px-3 py-2 mb-4 uppercase">
