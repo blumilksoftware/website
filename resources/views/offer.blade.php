@@ -4,23 +4,23 @@
 @section("description", __("meta.offer.description"))
 
 @section("content")
-    <section class="relative flex flex-col-reverse 2xl:flex-row pt-12 pb-0 md:pb-14 md:pt-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto place-items-center">
+    <section class="relative flex flex-col-reverse xl:flex-row pt-12 pb-0 md:pb-14 md:pt-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto place-items-center">
         <div class="flex basis-2/5 flex-col self-center">
-            <div class="text-3xl md:text-4xl xl:text-5xl text-center 2xl:justify-start 2xl:text-start pb-4 pt-4 md:pt-0">
+            <div class="text-3xl md:text-4xl xl:text-5xl text-center xl:justify-start xl:text-start pb-4 pt-4 md:pt-0">
                 <h2 class="font-semibold text-gray-900 leading-snug">
                     {{ __("content.offer.section_1.title_1") }}
                     <span class="text-blue-normal"> {{ __("content.offer.section_1.title_2") }} </span>
                 </h2>
             </div>
-            <div class="items-center 2xl:items-start text-sm md:text-lg max-w-[500px] mx-auto 2xl:mx-0">
-                <p class="font-normal text-center 2xl:text-start pb-8 leading-7">
+            <div class="items-center xl:items-start text-sm md:text-lg max-w-[500px] mx-auto xl:mx-0">
+                <p class="font-normal text-center xl:text-start pb-8 leading-7">
                     {{ __("content.offer.section_1.subtitle_1") }}
                     <span class="font-semibold"> {{ __("content.offer.section_1.subtitle_2") }} </span>
                 </p>
             </div>
         </div>
         <div class="flex basis-3/5">
-            <img src="{{ asset('graphics/offer_2.webp') }}" class="size-full align-middle m-4 relative 2xl:left-24"
+            <img src="{{ asset('graphics/offer_2.webp') }}" class="w-full max-w-[280px] sm:max-w-[350px] tablet:max-w-[700px] h-auto object-contain mx-auto xl:m-4 xl:max-w-none xl:size-full xl:relative xl:left-24"
                  alt=""/>
         </div>
     </section>
@@ -30,7 +30,7 @@
             <div class="pb-10 md:pb-14 text-center max-w-7xl mx-auto">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.offer.section_2.title_1") }}</h2>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 2xl:gap-12 2xl:max-w-[1580px] 2xl:mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-4 2xl:gap-12 2xl:max-w-[1580px] 2xl:mx-auto">
                 <x-tile title="{{ __('content.offer.section_2.requirement_1') }}"
                         class="bg-gray-extra-light">
                     <x-icons.automation accent="text-website-normal"/>
@@ -102,7 +102,7 @@
             <div class="flex basis-1/2 relative flex-col justify-center md:pb-24 xl:pb-0">
                 <div class="text-center xl:justify-start xl:text-start pb-5 xl:pb-10">
                     <h2 class="font-semibold text-gray-900 leading-12 text-3xl md:text-4xl lg:text-5xl mb-4 md:mb-10">{{ __("content.offer.section_6.title_1") }}</h2>
-                    <p class="font-normal text-center 2xl:text-start pb-8 leading-7 max-w-[450px] mx-auto 2xl:mx-0">
+                    <p class="font-normal text-center xl:text-start pb-8 leading-7 max-w-[450px] mx-auto xl:mx-0">
                         {{ __("content.offer.section_6.subtitle_1") }}
                         <span class="font-semibold">{{ __("content.offer.section_6.subtitle_2") }} </span>
                         {{ __("content.offer.section_6.subtitle_3") }}

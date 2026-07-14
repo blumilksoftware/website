@@ -4,27 +4,27 @@
 @section("description", __("meta.about.description"))
 
 @section("content")
-    <section class="relative flex flex-col-reverse 2xl:flex-row pt-12 pb-0 md:pb-14 md:pt-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto place-items-center">
-        <div class="flex basis-3/5 flex-col self-center">
-            <div class="text-3xl md:text-4xl xl:text-5xl text-center 2xl:justify-start 2xl:text-start pb-4 pt-4 md:pt-0">
+    <section class="relative flex flex-col-reverse xl:flex-row pt-12 pb-0 md:pb-14 md:pt-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto place-items-center">
+        <div class="flex basis-2/5 flex-col self-center">
+            <div class="text-3xl md:text-4xl xl:text-5xl text-center xl:justify-start xl:text-start pb-4 pt-4 md:pt-0">
                 <h2 class="font-semibold text-gray-900 leading-snug">
                     {{ __("content.about.section_1.title_1") }} <span class="text-blue-normal"> {{ __("content.about.section_1.title_2") }}</span>
                     {{ __("content.about.section_1.title_3") }}
                 </h2>
             </div>
-            <div class="items-center 2xl:items-start text-sm md:text-lg max-w-[540px] mx-auto 2xl:mx-0">
-                <p class="font-normal text-center 2xl:text-start pb-8 leading-7">
+            <div class="items-center xl:items-start text-sm md:text-lg max-w-[540px] mx-auto xl:mx-0">
+                <p class="font-normal text-center xl:text-start pb-8 leading-7">
                     <span class="font-semibold">{{ __("content.about.section_1.subtitle_1") }}</span>
                     {{ __("content.about.section_1.subtitle_2") }}
                 </p>
-                <p class="font-normal text-center 2xl:text-start pb-8 leading-7">
+                <p class="font-normal text-center xl:text-start pb-8 leading-7">
                     {{ __("content.about.section_1.subtitle_3") }}
                     <span class="font-semibold"> {{ __("content.about.section_1.subtitle_4") }}</span>
                     {{ __("content.about.section_1.subtitle_5") }}
                 </p>
             </div>
         </div>
-        <div class="flex basis-2/5">
+        <div class="flex basis-3/5">
             <img src="{{ asset('graphics/about.webp') }}"
                  class="w-full max-w-[280px] sm:max-w-[350px] tablet:max-w-[700px] h-auto object-contain mx-auto"
                  alt=""/>
@@ -107,57 +107,57 @@
                 <span class="font-normal leading-7 text-sm md:text-lg">{{ __("content.about.section_4.subtitle_1") }}</span>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-4">
-                <div class="bg-white shadow-lg rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
+            <div class="grid grid-cols-1 2xl:grid-cols-5 gap-4">
+                <div class="bg-white shadow-lg rounded-xl px-6 py-4 2xl:py-8 flex flex-row 2xl:flex-col items-center gap-4 text-left 2xl:text-center">
                     <img src="{{ asset('graphics/stack/education.svg') }}"
                          alt="{{ __('content.about.section_4.benefits.benefit_1') }}"
-                         class="h-32 w-32 object-contain"/>
+                         class="h-16 w-16 2xl:h-32 2xl:w-32 object-contain shrink-0"/>
                     <span class="font-semibold text-sm md:text-base leading-7">
-                        {{ __('content.about.section_4.benefits.benefit_1') }}
-                    </span>
+            {{ __('content.about.section_4.benefits.benefit_1') }}
+        </span>
                 </div>
 
-                <div class="bg-white shadow-lg rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
+                <div class="bg-white shadow-lg rounded-xl px-6 py-4 2xl:py-8 flex flex-row 2xl:flex-col items-center gap-4 text-left 2xl:text-center">
                     <img src="{{ asset('graphics/stack/ai-tile.svg') }}"
                          alt="{{ __('content.about.section_4.benefits.benefit_2') }}"
-                         class="h-32 w-32 object-contain"/>
+                         class="h-16 w-16 2xl:h-32 2xl:w-32 object-contain shrink-0"/>
                     <span class="font-semibold text-sm md:text-base leading-7">
-                        {{ __('content.about.section_4.benefits.benefit_2') }}
-                    </span>
+            {{ __('content.about.section_4.benefits.benefit_2') }}
+        </span>
                 </div>
 
-                <div class="bg-white shadow-lg rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
+                <div class="bg-white shadow-lg rounded-xl px-6 py-4 2xl:py-8 flex flex-row 2xl:flex-col items-center gap-4 text-left 2xl:text-center">
                     <img src="{{ asset('graphics/stack/books.svg') }}"
                          alt="{{ __('content.about.section_4.benefits.benefit_3') }}"
-                         class="h-32 w-32 object-contain"/>
+                         class="h-16 w-16 2xl:h-32 2xl:w-32 object-contain shrink-0"/>
                     <span class="font-semibold text-sm md:text-base leading-7">
-                        {{ __('content.about.section_4.benefits.benefit_3') }}
-                    </span>
+            {{ __('content.about.section_4.benefits.benefit_3') }}
+        </span>
                 </div>
 
-                <div class="bg-white shadow-lg rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
+                <div class="bg-white shadow-lg rounded-xl px-6 py-4 2xl:py-8 flex flex-row 2xl:flex-col items-center gap-4 text-left 2xl:text-center">
                     <img src="{{ asset('graphics/stack/magnifier.svg') }}"
                          alt="{{ __('content.about.section_4.benefits.benefit_4') }}"
-                         class="h-32 w-32 object-contain"/>
+                         class="h-16 w-16 2xl:h-32 2xl:w-32 object-contain shrink-0"/>
                     <span class="font-semibold text-sm md:text-base leading-7">
-                        {{ __('content.about.section_4.benefits.benefit_4') }}
-                    </span>
+            {{ __('content.about.section_4.benefits.benefit_4') }}
+        </span>
                 </div>
 
-                <div class="bg-white shadow-lg rounded-xl px-6 py-8 flex flex-col items-center text-center gap-4">
+                <div class="bg-white shadow-lg rounded-xl px-6 py-4 2xl:py-8 flex flex-row 2xl:flex-col items-center gap-4 text-left 2xl:text-center">
                     <img src="{{ asset('graphics/stack/documents.svg') }}"
                          alt="{{ __('content.about.section_4.benefits.benefit_5') }}"
-                         class="h-32 w-32 object-contain"/>
+                         class="h-16 w-16 2xl:h-32 2xl:w-32 object-contain shrink-0"/>
                     <span class="font-semibold text-sm md:text-base leading-7">
-                        {{ __('content.about.section_4.benefits.benefit_5') }}
-                    </span>
+            {{ __('content.about.section_4.benefits.benefit_5') }}
+        </span>
                 </div>
             </div>
         </div>
     </section>
 
     <section class="flex flex-col-reverse xl:flex-row pt-8 xl:pt-24 pb-16 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:gap-5">
-        <div class="flex basis-2/5 relative self-center pb-8 md:pb-24 xl:pb-4 xl:right-16">
+        <div class="flex basis-3/5 relative self-center pb-8 md:pb-24 xl:pb-4 xl:right-16">
             <img
                 src="{{ asset('graphics/about_2.webp') }}"
                 class="w-full max-w-[280px] sm:max-w-[350px] tablet:max-w-[700px] h-auto object-contain mx-auto"
@@ -165,7 +165,7 @@
             />
         </div>
 
-        <div class="flex basis-3/5 relative flex-col self-center gap-5">
+        <div class="flex basis-2/5 relative flex-col self-center gap-5">
             <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:text-start">
                 <h2 class="font-semibold text-gray-900 leading-7 md:leading-snug">
                     {{ __('content.about.section_5.title_1') }}

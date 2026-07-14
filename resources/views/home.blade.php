@@ -27,7 +27,8 @@
                 </div>
             </div>
             <div class="flex basis-3/5 relative self-center pb-8 md:pb-24 xl:pb-4 xl:left-16">
-                <img src="{{ asset('graphics/home.webp') }}" class="h-[250px] w-[350px] tablet:h-[550px] tablet:w-[750px] aspect-auto object-center shrink-0"
+                <img src="{{ asset('graphics/home.webp') }}"
+                     class="w-full max-w-[280px] sm:max-w-[350px] tablet:max-w-[750px] h-auto object-contain mx-auto"
                      alt=""/>
             </div>
         </section>
@@ -48,11 +49,9 @@
         </section>
         <section class="flex flex-col-reverse xl:flex-row pt-8 xl:pt-24 pb-12 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:gap-5">
             <div class="flex basis-3/5 relative self-center xl:right-16 pt-8 xl:pt-0">
-                <img
-                    src="{{ asset('graphics/home_2.webp') }}"
-                    class="h-[250px] w-[350px] tablet:h-[500px] tablet:w-[750px] aspect-auto object-center shrink-0"
-                    alt=""
-                />
+                <img src="{{ asset('graphics/home_2.webp') }}"
+                     class="w-full max-w-[280px] sm:max-w-[350px] tablet:max-w-[750px] h-auto object-contain mx-auto"
+                     alt=""/>
             </div>
 
             <div class="flex basis-2/5 relative flex-col self-center gap-5">
