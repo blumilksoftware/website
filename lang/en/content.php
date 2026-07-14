@@ -224,7 +224,7 @@ We help you decide whether to fix, rebuild, or start from scratch.",
             "subtitle_2" => "the Innovation and Research (R&D) Department and the Product and Implementation Department",
         ],
         "section_2" => [
-            "title_1" => "We specialize in solutions built for organizations whose operations require:",
+            "title_1" => "We specialize in solutions:",
             "requirement_1" => "A high level of automation",
             "requirement_2" => "Intelligent information processing",
             "requirement_3" => "Working with large volumes of data",
