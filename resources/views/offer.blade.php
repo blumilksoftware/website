@@ -4,8 +4,8 @@
 @section("description", __("meta.offer.description"))
 
 @section("content")
-    <section class="relative flex flex-col-reverse xl:flex-row pt-12 pb-0 md:pb-14 md:pt-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto place-items-center">
-        <div class="flex basis-2/5 flex-col self-center">
+    <section class="relative flex flex-col-reverse xl:flex-row pt-12 pb-0 md:pb-14 md:pt-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto place-items-start gap-8 xl:gap-16">
+        <div class="flex basis-2/5 xl:flex-1 flex-col">
             <div class="text-3xl md:text-4xl xl:text-5xl text-center xl:justify-start xl:text-start pb-4 pt-4 md:pt-0">
                 <h2 class="font-semibold text-gray-900 leading-snug">
                     {{ __("content.offer.section_1.title_1") }}
@@ -19,8 +19,9 @@
                 </p>
             </div>
         </div>
-        <div class="flex basis-3/5">
-            <img src="{{ asset('graphics/offer_2.webp') }}" class="w-full max-w-[280px] sm:max-w-[350px] tablet:max-w-[700px] h-auto object-contain mx-auto xl:m-4 xl:max-w-none xl:size-full xl:relative xl:left-24"
+        <div class="flex basis-3/5 xl:basis-auto xl:flex-none">
+            <img src="{{ asset('graphics/offer_2.webp') }}"
+                 class="w-full max-w-[280px] sm:max-w-[350px] tablet:max-w-[700px] xl:max-w-[550px] h-auto object-contain mx-auto xl:mx-0"
                  alt=""/>
         </div>
     </section>
@@ -30,7 +31,7 @@
             <div class="pb-10 md:pb-14 text-center max-w-7xl mx-auto">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.offer.section_2.title_1") }}</h2>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-4 2xl:gap-12 2xl:max-w-[1580px] 2xl:mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 min-[1900px]:grid-cols-4 gap-4 2xl:gap-12 2xl:max-w-[1580px] 2xl:mx-auto">
                 <x-tile title="{{ __('content.offer.section_2.requirement_1') }}"
                         class="bg-gray-extra-light">
                     <x-icons.automation accent="text-website-normal"/>
@@ -67,31 +68,39 @@
                          alt=""/>
                 </div>
 
-                <div class="flex basis-3/5 flex-col gap-4 w-full">
+                <div class="flex basis-3/5 flex-col gap-4 w-full" x-data="{ openIndex: null }">
                     <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">
-                        <span class="md:whitespace-nowrap">
-                            {{ __("content.offer.section_3.title_1") }}<span class="text-blue-normal">{{ __("content.offer.section_3.title_2") }}</span>
-                        </span>
+        <span class="md:whitespace-nowrap">
+            {{ __("content.offer.section_3.title_1") }}<span class="text-blue-normal">{{ __("content.offer.section_3.title_2") }}</span>
+        </span>
                         {{ __("content.offer.section_3.title_3") }}
                     </h2>
-                    <div class="bg-white rounded-xl px-6 py-5 shadow-sm">
-                        <span class="font-semibold text-lg leading-7">{{ __("content.offer.section_3.item_1") }}</span>
-                    </div>
-                    <div class="bg-white rounded-xl px-6 py-5 shadow-sm">
-                        <span class="font-semibold text-lg leading-7">{{ __("content.offer.section_3.item_2") }}</span>
-                    </div>
-                    <div class="bg-white rounded-xl px-6 py-5 shadow-sm">
-                        <span class="font-semibold text-lg leading-7">{{ __("content.offer.section_3.item_3") }}</span>
-                    </div>
-                    <div class="bg-white rounded-xl px-6 py-5 shadow-sm">
-                        <span class="font-semibold text-lg leading-7">{{ __("content.offer.section_3.item_4") }}</span>
-                    </div>
-                    <div class="bg-white rounded-xl px-6 py-5 shadow-sm">
-                        <span class="font-semibold text-lg leading-7">{{ __("content.offer.section_3.item_5") }}</span>
-                    </div>
-                    <div class="bg-white rounded-xl px-6 py-5 shadow-sm">
-                        <span class="font-semibold text-lg leading-7">{{ __("content.offer.section_3.item_6") }}</span>
-                    </div>
+
+                    @for ($i = 1; $i <= 6; $i++)
+                        <div class="bg-white rounded-xl shadow-sm border border-[#8D8D8D] overflow-hidden">
+                            <button
+                                type="button"
+                                @click="openIndex = (openIndex === {{ $i }}) ? null : {{ $i }}"
+                                class="w-full flex items-center justify-between gap-4 px-6 py-5 text-left"
+                            >
+                                <span class="font-semibold text-lg leading-7">{{ __("content.offer.section_3.item_$i.title") }}</span>
+                                <svg
+                                    class="size-5 shrink-0 transition-transform duration-300"
+                                    :class="{ 'rotate-180': openIndex === {{ $i }} }"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"
+                                >
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </button>
+                            <div
+                                x-show="openIndex === {{ $i }}"
+                                x-collapse
+                                class="px-6 pb-5 text-sm text-gray-600 leading-6"
+                            >
+                                {{ __("content.offer.section_3.item_{$i}.description") }}
+                            </div>
+                        </div>
+                    @endfor
                 </div>
             </div>
         </div>

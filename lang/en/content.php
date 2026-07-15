@@ -13,10 +13,8 @@ return [
     ],
     "home" => [
         "section_1" => [
-            "title_1" => " Digitalization and AI",
-            "title_2" => " for",
-            "title_3" => " effective",
-            "title_4" => "business transformation",
+            "title_1" => " Digitalization and AI,",
+            "title_2" => "that boost your business efficiency",
             "subtitle_1" => "We turn data and processes into our clients' operational advantage.",
             "subtitle_2" => "We build technologies that genuinely reduce working time, cut costs, improve decision quality, and reduce risk.",
         ],
@@ -234,12 +232,30 @@ We help you decide whether to fix, rebuild, or start from scratch.",
             "title_1" => "We design ",
             "title_2" => "AI systems",
             "title_3" => "that support:",
-            "item_1" => "Document processing",
-            "item_2" => "Expert decision-making",
-            "item_3" => "Fraud detection and risk analysis",
-            "item_4" => "Logistics optimization",
-            "item_5" => "Automation of administrative processes and communication",
-            "item_6" => "Quality and innovation management",
+            "item_1" => [
+                "title" => "Document processing",
+                "description" => "Intelligent OCR, document classification, data extraction, document workflow automation, contract and invoice analysis.",
+            ],
+            "item_2" => [
+                "title" => "Expert decision-making",
+                "description" => "AI assistants for specialists, recommendation systems, operational decision support, compliance and risk analysis, expert knowledge bases.",
+            ],
+            "item_3" => [
+                "title" => "Fraud detection and risk analysis",
+                "description" => "Fraud detection systems, transaction monitoring, credibility assessment, anomaly detection, user behavior analysis.",
+            ],
+            "item_4" => [
+                "title" => "Logistics optimization",
+                "description" => "Route planning, demand forecasting, resource utilization optimization, fleet management, process scheduling.",
+            ],
+            "item_5" => [
+                "title" => "Automation of administrative processes and communication",
+                "description" => "Chatbots and voicebots, automated request handling, document generation, correspondence automation, digital employee assistants.",
+            ],
+            "item_6" => [
+                "title" => "Quality and innovation management",
+                "description" => "AI-supported quality control, root cause analysis, production issue prediction, R&D process support, analysis of ideas and innovation initiatives.",
+            ],
         ],
         "section_4" => [
             "title_1" => "We build tailored digitalization and AI systems that address specific operational needs:",
@@ -507,7 +523,7 @@ We help you decide whether to fix, rebuild, or start from scratch.",
     ],
     "at" => "at",
     "logo" => [
-        "title_1" => "Download",
-        "title_2" => "materials",
+        "title_1" => "Materials",
+        "title_2" => "to download",
     ],
 ];

@@ -13,9 +13,8 @@
             <div class="flex basis-2/5 relative flex-col self-center gap-5">
                 <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:justify-start xl:text-start">
                     <h2 class="font-semibold text-gray-900 leading-7 md:leading-snug">
-                        <span class="inline">{{ __("content.home.section_1.title_1") }} </span>
-                        <span class="inline">{{ __("content.home.section_1.title_2") }}  <span class="text-blue-normal inline"> {{ __("content.home.section_1.title_3") }} </span></span>
-                        <span class="inline"> {{ __("content.home.section_1.title_4") }} </span>
+                        <span class="inline text-blue-normal">{{ __("content.home.section_1.title_1") }} </span>
+                        <span class="inline">{{ __("content.home.section_1.title_2") }}</span>
                     </h2>
                 </div>
                 <div class="flex flex-col items-center xl:items-start">
@@ -154,7 +153,7 @@
 ])>
             <div class="grid grid-cols-1 xl:grid-cols-2 gap-4 items-center text-center xl:text-left bg-blue-light p-4 lg:p-8 rounded-3xl 2xl:max-w-7xl 2xl:mx-auto">
 
-                <div>
+                <div class="px-4">
             <span class="inline-block rounded-full bg-[#EEF2FF] text-website-normal text-xs font-semibold px-3 py-2 mb-4 uppercase">
                 {{ __('content.home.section_6.tag') }}
             </span>

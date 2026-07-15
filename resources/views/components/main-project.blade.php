@@ -13,10 +13,10 @@
     <div class="w-80 bg-white rounded-2xl absolute shadow-lg border-gray-100 border-2 hidden lg:block lg:-right-36 2xl:-right-52 top-20">
         <div class="divide-y divide-gray-200 overflow-hidden">
             <div class="py-3 px-6 text-center font-semibold text-md">
-                {{ __('content.home.section_5.tile_1.title_1') }}
+                {{ __('content.home.section_5.tile_2.title_1') }}
             </div>
             <div class="p-5 text-sm text-center text-gray-500">
-                {{ __('content.home.section_5.tile_1.description_1') }}
+                {{ __('content.home.section_5.tile_2.description_1') }}
             </div>
         </div>
     </div>
@@ -61,10 +61,10 @@
             </div>
             <div>
                 <div class="text-base font-semibold leading-7 tracking-tight text-gray-900">
-                    {{ __('content.home.section_5.tile_2.title_1') }}
+                    {{ __('content.home.section_5.tile_1.title_1') }}
                 </div>
                 <div class="mt-1 text-sm text-gray-500">
-                    {{ __('content.home.section_5.tile_2.description_1') }}
+                    {{ __('content.home.section_5.tile_1.description_1') }}
                 </div>
             </div>
         </div>

@@ -13,10 +13,8 @@ return [
     ],
     "home" => [
         "section_1" => [
-            "title_1" => " Cyfryzacja i AI",
-            "title_2" => " dla",
-            "title_3" => " efektywnej",
-            "title_4" => "transformacji biznesu",
+            "title_1" => " Cyfryzacja i AI,",
+            "title_2" => "które zwiększają efektywność Twojego biznesu",
             "subtitle_1" => "Przekształcamy dane i procesy w przewagę operacyjną klientów.",
             "subtitle_2" => "Tworzymy technologie, które realnie skracają czas pracy, eliminują koszty, podnoszą jakość decyzji i redukują ryzyka.",
         ],
@@ -234,12 +232,30 @@ Pomagamy podjąć decyzję - czy naprawiać, przebudować, czy stworzyć od nowa
             "title_1" => "Projektujemy ",
             "title_2" => "systemy AI",
             "title_3" => "wspierające:",
-            "item_1" => "Przetwarzanie dokumentów",
-            "item_2" => "Podejmowanie decyzji eksperckich",
-            "item_3" => "Wykrywanie nadużyć i analizę ryzyka",
-            "item_4" => "Optymalizację logistyki",
-            "item_5" => "Automatyzację procesów administracyjnych i komunikacji",
-            "item_6" => "Zarządzanie jakością i innowacjami",
+            "item_1" => [
+                "title" => "Przetwarzanie dokumentów",
+                "description" => "Inteligentne OCR, klasyfikacja dokumentów, ekstrakcja danych, automatyzacja obiegu dokumentów, analiza umów i faktur.",
+            ],
+            "item_2" => [
+                "title" => "Podejmowanie decyzji eksperckich",
+                "description" => "Asystenci AI dla specjalistów, systemy rekomendacyjne, wspomaganie decyzji operacyjnych, analiza zgodności i ryzyka, eksperckie bazy wiedzy.",
+            ],
+            "item_3" => [
+                "title" => "Wykrywanie nadużyć i analizę ryzyka",
+                "description" => "Systemy Fraud Detection, monitoring transakcji, ocena wiarygodności, wykrywanie anomalii, analiza zachowań użytkowników.",
+            ],
+            "item_4" => [
+                "title" => "Optymalizację logistyki",
+                "description" => "Planowanie tras, prognozowanie popytu, optymalizacja wykorzystania zasobów, zarządzanie flotą, harmonogramowanie procesów.",
+            ],
+            "item_5" => [
+                "title" => "Automatyzację procesów administracyjnych i komunikacji",
+                "description" => "Chatboty i voiceboty, automatyczna obsługa zgłoszeń, generowanie dokumentów, automatyzacja korespondencji, cyfrowi asystenci pracowników.",
+            ],
+            "item_6" => [
+                "title" => "Zarządzanie jakością i innowacjami",
+                "description" => "Kontrola jakości wspierana AI, analiza przyczyn błędów, predykcja problemów produkcyjnych, wsparcie procesów R&D, analiza pomysłów i inicjatyw innowacyjnych.",
+            ],
         ],
         "section_4" => [
             "title_1" => "Tworzymy dostosowane systemy cyfryzacji i AI, które odpowiadają na konkretne potrzeby operacyjne:",
