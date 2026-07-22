@@ -32,7 +32,7 @@
     </section>
 
     <section class="bg-white py-12 sm:pt-16 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
-        <div class="mt-8 sm:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:flex xl:justify-between overflow-hidden text-center text-[#0E0B3D] gap-10 sm:gap-16 md:gap-8">
+        <div class="mt-8 sm:mt-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:flex xl:justify-between overflow-hidden text-center text-gray-900 gap-10 sm:gap-16 md:gap-8">
             <div>
                 <dl class="flex flex-col gap-4">
                     <dd class="order-first text-5xl sm:text-6xl font-semibold">+25</dd>
