@@ -170,7 +170,7 @@ Pomagamy podjąć decyzję - czy naprawiać, przebudować, czy stworzyć od nowa
             ],
         ],
         "section_5" => [
-            "title_1" => "Wspieramy rozwój ekosystemu technologicznego",
+            "title_1" => "Wspieramy ekosystem technologiczny",
             "paragraph_1" => [
                 "text_1" => "Jesteśmy organizatorami",
                 "text_2" => "Legnickiego Meetupu Technologicznego,",

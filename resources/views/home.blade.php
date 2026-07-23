@@ -141,7 +141,7 @@
                         <x-bubble size="40"/>
                     </div>
                 </div>
-                <div class="flex md:gap-2 justify-center flex-col sm:flex-row">
+                <div class="flex md:gap-2 justify-center flex-col sm:flex-row md:pt-8">
                     <x-small-primary-button href="{{ route('projects') }}" class="px-10 justify-center">{{ __("buttons.see_our_projects") }}</x-small-primary-button>
                 </div>
             </div>

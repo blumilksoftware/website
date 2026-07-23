@@ -156,29 +156,23 @@
         </div>
     </section>
 
-    <section class="flex flex-col-reverse xl:flex-row pt-8 xl:pt-24 pb-16 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto md:gap-5 xl:gap-16">
-        <div class="flex basis-3/5 relative self-center pb-8 md:pb-24 xl:pb-4">
+    <section class="flex flex-col-reverse xl:flex-row pt-8 xl:pt-24 pb-16 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-[1400px] 2xl:mx-auto md:gap-5">
+        <div class="w-full xl:w-[670px] shrink-0 flex relative self-center pb-8 md:pb-24 xl:pb-4">
             <img
                 src="{{ asset('graphics/about_2.webp') }}"
-                class="w-full max-w-[280px] sm:max-w-[350px] tablet:max-w-[700px] h-auto object-contain mx-auto"
+                class="w-full max-w-[280px] sm:max-w-[400px] tablet:max-w-[670px] h-auto object-contain mx-auto xl:mx-0"
                 alt=""
             />
         </div>
 
-        <div class="flex basis-2/5 relative flex-col self-center gap-5">
+        <div class="flex-1 flex relative flex-col self-center gap-5">
             <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:text-start">
                 <h2 class="font-semibold text-gray-900 leading-7 md:leading-snug">
                     {{ __('content.about.section_5.title_1') }}
                 </h2>
             </div>
 
-            <div class="flex flex-col items-center xl:items-start text-sm sm:text-lg lg:text-xl font-light text-center xl:text-start">
-
-                <p class="leading-7 pb-4">
-                    {{ __('content.about.section_5.paragraph_1.text_1') }}
-                    <span class="font-semibold">{{ __('content.about.section_5.paragraph_1.text_2') }}</span>
-                    {{ __('content.about.section_5.paragraph_1.text_3') }}
-                </p>
+            <div class="flex flex-col items-center xl:items-start text-sm md:text-lg text-center xl:text-start">
 
                 <p class="leading-7 pb-4">
                     {{ __('content.about.section_5.paragraph_2.text_1') }}
@@ -186,11 +180,27 @@
                     {{ __('content.about.section_5.paragraph_2.text_3') }}
                 </p>
 
-                <p class="leading-7 pb-4">
-                    {{ __('content.about.section_5.paragraph_3.text_1') }}
-                    <span class="font-semibold">{{ __('content.about.section_5.paragraph_3.text_2') }}</span>
-                    {{ __('content.about.section_5.paragraph_3.text_3') }}
-                </p>
+                <div class="bg-gray-extra-light rounded-2xl sm:py-2 sm:px-4 md:py-6 md:px-12 mb-4 w-full text-left">
+                    <div class="flex items-center gap-3 mb-3">
+                        <img src="{{ asset('graphics/logos/lmt.png') }}" alt="" class="h-12 w-auto"/>
+                    </div>
+                    <p class="leading-7 text-sm md:text-base">
+                        {{ __('content.about.section_5.paragraph_1.text_1') }}
+                        <span class="font-semibold">{{ __('content.about.section_5.paragraph_1.text_2') }}</span>
+                        {{ __('content.about.section_5.paragraph_1.text_3') }}
+                    </p>
+                </div>
+
+                <div class="bg-gray-extra-light rounded-2xl sm:py-2 sm:px-4 md:py-6 md:px-12 mb-4 w-full text-left">
+                    <div class="flex items-center gap-3 mb-3">
+                        <img src="{{ asset('graphics/logos/dolny_slask.jpg') }}" alt="" class="h-18 w-auto"/>
+                    </div>
+                    <p class="leading-7 text-sm md:text-base">
+                        {{ __('content.about.section_5.paragraph_3.text_1') }}
+                        <span class="font-semibold">{{ __('content.about.section_5.paragraph_3.text_2') }}</span>
+                        {{ __('content.about.section_5.paragraph_3.text_3') }}
+                    </p>
+                </div>
             </div>
         </div>
     </section>
