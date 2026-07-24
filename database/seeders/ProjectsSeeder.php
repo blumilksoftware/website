@@ -41,7 +41,7 @@ class ProjectsSeeder extends Seeder
                 "photo" => "factory/case_study.jpg",
                 "published" => true,
                 "template" => "vita",
-            ]
+            ],
         );
     }
 
@@ -66,7 +66,7 @@ class ProjectsSeeder extends Seeder
                 "photo" => "factory/case_study.jpg",
                 "published" => true,
                 "template" => "getthebox",
-            ]
+            ],
         );
     }
 
@@ -91,7 +91,7 @@ class ProjectsSeeder extends Seeder
                 "photo" => "factory/case_study.jpg",
                 "published" => true,
                 "template" => "k1",
-            ]
+            ],
         );
     }
 
@@ -116,7 +116,7 @@ class ProjectsSeeder extends Seeder
                 "photo" => "factory/case_study.jpg",
                 "published" => true,
                 "template" => "carbon",
-            ]
+            ],
         );
     }
 
@@ -141,7 +141,7 @@ class ProjectsSeeder extends Seeder
                 "photo" => "factory/case_study.jpg",
                 "published" => true,
                 "template" => "employee-requests",
-            ]
+            ],
         );
     }
 }
