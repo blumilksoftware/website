@@ -15,6 +15,7 @@ class ProjectsSeeder extends Seeder
         $this->seedGetTheBox();
         $this->seedK1();
         $this->seedCarbon();
+        $this->seedEmployeeRequests();
 
         Project::factory()->count(12)->create();
     }
@@ -110,4 +111,27 @@ class ProjectsSeeder extends Seeder
             "template" => "carbon",
         ]);
     }
+    private function seedEmployeeRequests(): void
+    {
+        Project::factory()->create([
+            "name_first_part" => [
+                "pl" => "System do zarządzania wnioskami zgłaszanymi przez pracowników firmy",
+                "en" => "A system for managing requests submitted by company employees",
+            ],
+            "name_second_part" => [
+                "pl" => null,
+                "en" => null,
+            ],
+            "name_third_part" => [
+                "pl" => null,
+                "en" => null,
+            ],
+            "color" => "#000000",
+            "photo" => "factory/case_study.jpg",
+            "published" => true,
+            "slug" => "employee-requests",
+            "template" => "employee-requests",
+        ]);
+    }
+
 }

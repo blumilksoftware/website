@@ -156,11 +156,11 @@
         </div>
     </section>
 
-    <section class="flex flex-col-reverse xl:flex-row pt-8 xl:pt-24 pb-16 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-[1400px] 2xl:mx-auto md:gap-5">
+    <section class="flex flex-col-reverse xl:flex-row pt-8 xl:pt-24 pb-8 sm:pb-24 mx-[10%] lg:mx-[15%] 2xl:max-w-[1400px] 2xl:mx-auto gap-6 md:gap-5">
         <div class="w-full xl:w-[670px] shrink-0 flex relative self-center pb-8 md:pb-24 xl:pb-4">
             <img
                 src="{{ asset('graphics/about_2.webp') }}"
-                class="w-full max-w-[280px] sm:max-w-[400px] tablet:max-w-[670px] h-auto object-contain mx-auto xl:mx-0"
+                class="w-full max-w-[320px] sm:max-w-[400px] tablet:max-w-[670px] h-auto object-contain mx-auto xl:mx-0"
                 alt=""
             />
         </div>
@@ -180,9 +180,9 @@
                     {{ __('content.about.section_5.paragraph_2.text_3') }}
                 </p>
 
-                <div class="bg-gray-extra-light rounded-2xl sm:py-2 sm:px-4 md:py-6 md:px-12 mb-4 w-full text-left">
+                <div class="bg-gray-extra-light rounded-2xl p-4 sm:px-5 md:py-6 md:px-12 mb-4 w-full text-left">
                     <div class="flex items-center gap-3 mb-3">
-                        <img src="{{ asset('graphics/logos/lmt.png') }}" alt="" class="h-12 w-auto"/>
+                        <img src="{{ asset('graphics/logos/lmt.png') }}" alt="" class="h-10 md:h-12 w-auto"/>
                     </div>
                     <p class="leading-7 text-sm md:text-base">
                         {{ __('content.about.section_5.paragraph_1.text_1') }}
@@ -191,9 +191,9 @@
                     </p>
                 </div>
 
-                <div class="bg-gray-extra-light rounded-2xl sm:py-2 sm:px-4 md:py-6 md:px-12 mb-4 w-full text-left">
+                <div class="bg-gray-extra-light rounded-2xl p-4 sm:px-5 md:py-6 md:px-12 mb-4 w-full text-left">
                     <div class="flex items-center gap-3 mb-3">
-                        <img src="{{ asset('graphics/logos/dolny_slask.jpg') }}" alt="" class="h-18 w-auto"/>
+                        <img src="{{ asset('graphics/logos/dolny_slask.jpg') }}" alt="" class="h-14 md:h-18 w-auto"/>
                     </div>
                     <p class="leading-7 text-sm md:text-base">
                         {{ __('content.about.section_5.paragraph_3.text_1') }}

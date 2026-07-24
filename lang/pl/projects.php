@@ -257,4 +257,66 @@ return [
             "monitor" => "monitor na żółtym tle z aplikacją",
         ],
     ],
+    "employee_requests" => [
+        "title_1" => "System do zarządzania wnioskami zgłaszanymi przez pracowników firmy",
+        "project_description" => "Pracownicy dodają swoje wnioski, a osoby odpowiedzialne za ich ocenę zapoznają się z nimi, oceniają ich zasadność i możliwość wdrożenia oraz wdrażają je. Za zrealizowane wnioski wnioskodawcy otrzymują punkty oraz poddawane są dodatkowej ocenie, w której mogą otrzymać dodatkowo określone w puli nagrody.",
+        "challenges" => [
+            "challenge_1" => [
+                "title" => "Szczegółowe statystyki",
+                "description" => "dostarczające informacji na wielu różnych poziomach",
+            ],
+            "challenge_2" => [
+                "title" => "Prowadzenie historii zmian",
+                "description" => "przejrzyste dokumentowanie akcji w systemie",
+            ],
+            "challenge_3" => [
+                "title" => "Czytelny i intuicyjny interfejs",
+                "description" => "dopasowany do wymagań i wpisujący się w estetykę firmy",
+            ],
+            "challenge_4" => [
+                "title" => "Zaawansowany system ról",
+                "description" => "umożliwiający pracę w systemie na wielu poziomach",
+            ],
+            "challenge_5" => [
+                "title" => "Integracja z zewnętrznym systemem uwierzytelniania",
+                "description" => "gwarantująca dostęp wyłącznie pracownikom danej firmy",
+            ],
+        ],
+        "functionalities" => [
+            "functionality_1" => [
+                "title" => "Zgłaszanie wniosków",
+                "description" => "wypełnianie szczegółowego formularza",
+            ],
+            "functionality_2" => [
+                "title" => "Statusowanie wniosków",
+                "description" => "na każdym etapie ich weryfikacji i realizacji",
+            ],
+            "functionality_3" => [
+                "title" => "System punktowy",
+                "description" => "złożony system przyznawania punktów",
+            ],
+            "functionality_4" => [
+                "title" => "Sklep z nagrodami",
+                "description" => "wymiana zdobytych punktów na nagrody",
+            ],
+            "functionality_5" => [
+                "title" => "Ranking wniosków",
+                "description" => "ranking najlepszych wniosków w wybranych przedziałach czasowych",
+            ],
+            "functionality_6" => [
+                "title" => "Zaawansowane zarządzanie systemem",
+                "description" => "w kontekście użytkowników, wniosków, realizacji i nagradzania",
+            ],
+        ],
+        "testimonial" => [
+            "name" => "Artur Gadowski",
+            "company" => "Continuous Improvement Manager",
+            "description" => "Aplikacja, która została wypracowana wspólnie z Blumilk sprawdza się rewelacyjnie. Sam proces tworzenia aplikacji przebiegł bardzo sprawnie dzięki kreatywnemu oraz elastycznemu podejściu firmy. Na pewno będziemy jeszcze współpracować.",
+        ],
+        "alt" => [
+            "laptop_1" => "laptop ze stroną aplikacji",
+            "laptop_2" => "laptop stojący na biurku z otwartą aplikacją",
+            "phone" => "telefon ze stroną aplikacji",
+        ],
+    ],
 ];
