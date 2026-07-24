@@ -54,33 +54,33 @@
         <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("projects.key_functionalities") }}</h2>
         <div class="flex place-content-center flex-wrap gap-4 pb-24">
             <x-tile description="{{ __('projects.employee_requests.functionalities.functionality_1.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start">
+                    class="max-w-[370px] 2xl:place-items-start">
                 <x-slot:title><span class="pr-20">{{ __('projects.employee_requests.functionalities.functionality_1.title') }}</span></x-slot:title>
                 <x-icons.file-invoice />
             </x-tile>
             <x-tile description="{{ __('projects.employee_requests.functionalities.functionality_2.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start">
+                    class="max-w-[370px] 2xl:place-items-start">
                 <x-slot:title><span class="pr-24">{{ __('projects.employee_requests.functionalities.functionality_2.title') }}</span></x-slot:title>
                 <x-icons.notification />
             </x-tile>
             <x-tile description="{{ __('projects.employee_requests.functionalities.functionality_3.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start">
+                    class="max-w-[370px] 2xl:place-items-start">
                 <x-slot:title><span class="pr-24">{{ __('projects.employee_requests.functionalities.functionality_3.title') }}</span></x-slot:title>
                 <x-icons.carambola />
             </x-tile>
             <x-tile description="{{ __('projects.employee_requests.functionalities.functionality_4.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start">
+                    class="max-w-[370px] 2xl:place-items-start">
                 <x-slot:title><span class="pr-24">{{ __('projects.employee_requests.functionalities.functionality_4.title') }}</span></x-slot:title>
                 <x-icons.building-store />
             </x-tile>
             <x-tile title="{{ __('projects.employee_requests.functionalities.functionality_5.title') }}"
                     description="{{ __('projects.employee_requests.functionalities.functionality_5.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start pr-4">
+                    class="max-w-[370px] 2xl:place-items-start pr-4">
                 <x-icons.chart-bar-popular />
             </x-tile>
             <x-tile title="{{ __('projects.employee_requests.functionalities.functionality_6.title') }}"
                     description="{{ __('projects.employee_requests.functionalities.functionality_6.description') }}"
-                    class="max-w-[350px] 2xl:place-items-start pr-4">
+                    class="max-w-[370px] 2xl:place-items-start pr-4">
                 <x-icons.device-desktop-cog />
             </x-tile>
         </div>
