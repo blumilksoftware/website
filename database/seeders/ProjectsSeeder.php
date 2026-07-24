@@ -111,6 +111,7 @@ class ProjectsSeeder extends Seeder
             "template" => "carbon",
         ]);
     }
+
     private function seedEmployeeRequests(): void
     {
         Project::factory()->create([
@@ -133,5 +134,4 @@ class ProjectsSeeder extends Seeder
             "template" => "employee-requests",
         ]);
     }
-
 }
