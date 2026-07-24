@@ -78,8 +78,8 @@
                     class="max-w-[350px] 2xl:place-items-start pr-4">
                 <x-icons.chart-bar-popular />
             </x-tile>
-            <x-tile title="{{ __('projects.employee_requests.functionalities.functionality_5.title') }}"
-                    description="{{ __('projects.employee_requests.functionalities.functionality_5.description') }}"
+            <x-tile title="{{ __('projects.employee_requests.functionalities.functionality_6.title') }}"
+                    description="{{ __('projects.employee_requests.functionalities.functionality_6.description') }}"
                     class="max-w-[350px] 2xl:place-items-start pr-4">
                 <x-icons.device-desktop-cog />
             </x-tile>
