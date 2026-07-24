@@ -257,4 +257,66 @@ return [
             "monitor" => "monitor on yellow background with application",
         ],
     ],
+    "employee_requests" => [
+        "title_1" => "A system for managing requests submitted by company employees",
+        "project_description" => "Employees submit their requests, and the people responsible for evaluating them review them, assess their validity and feasibility, and implement them. For completed requests, applicants receive points and are subject to an additional evaluation, in which they can also receive rewards defined in the prize pool.",
+        "challenges" => [
+            "challenge_1" => [
+                "title" => "Detailed statistics",
+                "description" => "providing information at many different levels",
+            ],
+            "challenge_2" => [
+                "title" => "Maintaining a change history",
+                "description" => "transparent documentation of actions in the system",
+            ],
+            "challenge_3" => [
+                "title" => "Clear and intuitive interface",
+                "description" => "tailored to requirements and matching the company's aesthetic",
+            ],
+            "challenge_4" => [
+                "title" => "Advanced role system",
+                "description" => "enabling work in the system on many levels",
+            ],
+            "challenge_5" => [
+                "title" => "Integration with an external authentication system",
+                "description" => "guaranteeing access only to employees of a given company",
+            ],
+        ],
+        "functionalities" => [
+            "functionality_1" => [
+                "title" => "Submitting requests",
+                "description" => "filling out a detailed form",
+            ],
+            "functionality_2" => [
+                "title" => "Request status tracking",
+                "description" => "at every stage of their verification and implementation",
+            ],
+            "functionality_3" => [
+                "title" => "Points system",
+                "description" => "a complex points-awarding system",
+            ],
+            "functionality_4" => [
+                "title" => "Rewards shop",
+                "description" => "exchanging earned points for rewards",
+            ],
+            "functionality_5" => [
+                "title" => "Request ranking",
+                "description" => "ranking of the best requests within selected time periods",
+            ],
+            "functionality_6" => [
+                "title" => "Advanced system management",
+                "description" => "in the context of users, requests, implementation, and rewarding",
+            ],
+        ],
+        "testimonial" => [
+            "name" => "Artur Gadowski",
+            "company" => "Continuous Improvement Manager",
+            "description" => "The application developed together with Blumilk works great. The development process itself went very smoothly thanks to the company's creative and flexible approach. We will definitely work together again.",
+        ],
+        "alt" => [
+            "laptop_1" => "laptop with the application website",
+            "laptop_2" => "laptop on a desk with open application website",
+            "phone" => "phone with the application website",
+        ],
+    ],
 ];
