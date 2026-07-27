@@ -28,20 +28,20 @@
                 <x-icons.document-clock accent="stroke-employee-requests"/>
             </x-tile>
 
-            <x-tile description="{{ __('projects.employee_requests.challenges.challenge_3.description') }}"
-                    class="max-w-[430px] pr-6 md:pr-4">
-                <x-slot:title><span class="md:pr-12">{{ __('projects.employee_requests.challenges.challenge_3.title') }}</span></x-slot:title>
-                <x-icons.image-sparkle accent="fill-employee-requests"/>
-            </x-tile>
-
             <x-tile title="{{ __('projects.employee_requests.challenges.challenge_4.title') }}"
                     description="{{ __('projects.employee_requests.challenges.challenge_4.description') }}"
                     class="max-w-[430px] pr-4">
                 <x-icons.users accent="stroke-employee-requests"/>
             </x-tile>
 
+            <x-tile description="{{ __('projects.employee_requests.challenges.challenge_3.description') }}"
+                    class="max-w-[430px] pr-6 md:pr-4">
+                <x-slot:title><span class="md:pr-12">{{ __('projects.employee_requests.challenges.challenge_3.title') }}</span></x-slot:title>
+                <x-icons.image-sparkle accent="fill-employee-requests"/>
+            </x-tile>
+
             <x-tile description="{{ __('projects.employee_requests.challenges.challenge_5.description') }}"
-                    class="max-w-[430px]">
+                    class="max-w-[450px]">
                 <x-slot:title><span class="pr-12">{{ __('projects.employee_requests.challenges.challenge_5.title') }}</span></x-slot:title>
                 <x-icons.shield-check accent="stroke-employee-requests"/>
             </x-tile>
@@ -73,9 +73,11 @@
                 <x-slot:title><span class="pr-24">{{ __('projects.employee_requests.functionalities.functionality_4.title') }}</span></x-slot:title>
                 <x-icons.building-store />
             </x-tile>
-            <x-tile title="{{ __('projects.employee_requests.functionalities.functionality_5.title') }}"
-                    description="{{ __('projects.employee_requests.functionalities.functionality_5.description') }}"
+            <x-tile description="{{ __('projects.employee_requests.functionalities.functionality_5.description') }}"
                     class="max-w-[370px] 2xl:place-items-start pr-4">
+                <x-slot:title>
+                    <span class="inline-block max-w-[80px]">{{ __('projects.employee_requests.functionalities.functionality_5.title') }}</span>
+                </x-slot:title>
                 <x-icons.chart-bar-popular />
             </x-tile>
             <x-tile title="{{ __('projects.employee_requests.functionalities.functionality_6.title') }}"

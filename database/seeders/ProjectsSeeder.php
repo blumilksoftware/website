@@ -16,13 +16,11 @@ class ProjectsSeeder extends Seeder
         $this->seedK1();
         $this->seedCarbon();
         $this->seedEmployeeRequests();
-
-        Project::factory()->count(12)->create();
     }
 
     private function seedVita(): void
     {
-        Project::firstOrCreate(
+        Project::updateOrCreate(
             ["slug" => "vita"],
             [
                 "name_first_part" => [
@@ -47,7 +45,7 @@ class ProjectsSeeder extends Seeder
 
     private function seedGetTheBox(): void
     {
-        Project::firstOrCreate(
+        Project::updateOrCreate(
             ["slug" => "getthebox"],
             [
                 "name_first_part" => [
@@ -72,7 +70,7 @@ class ProjectsSeeder extends Seeder
 
     private function seedK1(): void
     {
-        Project::firstOrCreate(
+        Project::updateOrCreate(
             ["slug" => "k1"],
             [
                 "name_first_part" => [
@@ -97,16 +95,16 @@ class ProjectsSeeder extends Seeder
 
     private function seedCarbon(): void
     {
-        Project::firstOrCreate(
+        Project::updateOrCreate(
             ["slug" => "carbon"],
             [
                 "name_first_part" => [
-                    "pl" => "Aplikacja do zbierania danych i generowania raportów",
-                    "en" => "Application for collecting data and generating reports",
+                    "pl" => "Aplikacja do kalkulacji śladu węglowego i generowania",
+                    "en" => "An app for calculating carbon footprints and generating",
                 ],
                 "name_second_part" => [
-                    "pl" => "dotyczących śladu węglowego",
-                    "en" => "regarding carbon footprint",
+                    "pl" => "raportów emisji CO₂",
+                    "en" => "CO₂ emissions reports",
                 ],
                 "name_third_part" => [
                     "pl" => null,
@@ -122,7 +120,7 @@ class ProjectsSeeder extends Seeder
 
     private function seedEmployeeRequests(): void
     {
-        Project::firstOrCreate(
+        Project::updateOrCreate(
             ["slug" => "employee-requests"],
             [
                 "name_first_part" => [

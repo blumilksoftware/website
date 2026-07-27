@@ -65,7 +65,7 @@
                         {{ __('content.home.section_3.subtitle_1') }}
                     </p>
 
-                    <p class="leading-7">
+                    <p class="leading-7 mb-4">
                         {{ __('content.home.section_3.subtitle_2') }}
                         <span class="font-semibold">{{ __('content.home.section_3.subtitle_3') }}</span>
                     </p>

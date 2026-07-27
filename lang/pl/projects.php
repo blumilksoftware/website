@@ -211,16 +211,16 @@ return [
         ],
     ],
     "carbon" => [
-        "title_1" => "Aplikacja do zbierania danych i generowania raportów",
-        "title_2" => "dotyczących śladu węglowego",
-        "project_description" => "Narzędzie pozwala użytkownikom na samodzielne wyliczenie emisyjności CO2, dostarczając duży zasób wskaźników będących podstawą wyliczeń.",
+        "title_1" => "Aplikacja do kalkulacji śladu węglowego i generowania ",
+        "title_2" => "raportów emisji CO₂",
+        "project_description" => "Narzędzie, które umożliwia samodzielne wyliczanie śladu węglowego dla procesów, lokalizacji i produktów, a jednocześnie zapewnia spójność danych oraz transparentność całego procesu raportowania. Dzięki automatyzacji obliczeń i raportowania użytkownicy mogą szybciej przygotowywać analizy, podejmować decyzje związane z redukcją emisji oraz skuteczniej realizować cele z zakresu zrównoważonego rozwoju i ESG. ",
         "challenges" => [
             "challenge_1" => [
                 "title" => "Zaawansowany system ról",
                 "description" => "umożliwiający pracę w systemie na wielu poziomach",
             ],
             "challenge_2" => [
-                "title" => "Implementacja algorytmów do obliczania emisji CO2",
+                "title" => "Implementacja algorytmów do obliczania emisji CO₂",
                 "description" => "oraz zrozumienie złożoności tych wyliczeń",
             ],
             "challenge_3" => [
@@ -238,7 +238,7 @@ return [
                 "description" => "globalna oraz indywidualna lista użytkownika",
             ],
             "functionality_3" => [
-                "title" => "Kalkulator emisji CO2",
+                "title" => "Kalkulator emisji CO₂",
                 "description" => "dla całego procesu na podstawie wskaźników",
             ],
             "functionality_4" => [
@@ -259,7 +259,7 @@ return [
     ],
     "employee_requests" => [
         "title_1" => "System do zarządzania wnioskami zgłaszanymi przez pracowników firmy",
-        "project_description" => "Pracownicy dodają swoje wnioski, a osoby odpowiedzialne za ich ocenę zapoznają się z nimi, oceniają ich zasadność i możliwość wdrożenia oraz wdrażają je. Za zrealizowane wnioski wnioskodawcy otrzymują punkty oraz poddawane są dodatkowej ocenie, w której mogą otrzymać dodatkowo określone w puli nagrody.",
+        "project_description" => "Kompleksowy system do zarządzania wnioskami pracowniczymi, wspierający cały proces - od zgłoszenia inicjatywy aż po jej realizację i nagrodzenie autora. Wspiera wieloetapowy proces oceny, pozwalając na przypisywanie statusów, prowadzenie dyskusji, dodawanie komentarzy oraz śledzenie postępów realizacji. Dzięki temu zarówno autorzy wniosków, jak i osoby zarządzające programem innowacji mają pełną transparentność procesu.",
         "challenges" => [
             "challenge_1" => [
                 "title" => "Szczegółowe statystyki",
@@ -301,11 +301,11 @@ return [
             ],
             "functionality_5" => [
                 "title" => "Ranking wniosków",
-                "description" => "ranking najlepszych wniosków w wybranych przedziałach czasowych",
+                "description" => "ranking najlepszych wniosków w wybranych kategoriach",
             ],
             "functionality_6" => [
                 "title" => "Zaawansowane zarządzanie systemem",
-                "description" => "w kontekście użytkowników, wniosków, realizacji i nagradzania",
+                "description" => "w kontekście użytkowników, wniosków i nagradzania",
             ],
         ],
         "testimonial" => [

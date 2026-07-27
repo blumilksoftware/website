@@ -15,30 +15,30 @@ return [
         "section_1" => [
             "title_1" => " Digitalization and AI,",
             "title_2" => "that boost your business efficiency",
-            "subtitle_1" => "We turn data and processes into our clients' operational advantage.",
+            "subtitle_1" => "",
             "subtitle_2" => "We build technologies that genuinely reduce working time, cut costs, improve decision quality, and reduce risk.",
         ],
         "section_2" => [
-            "title_1" => "Join the ranks of",
-            "title_2" => "satisfied Blumilk clients",
+            "title_1" => "Join",
+            "title_2" => "Blumilk's satisfied clients",
         ],
         "section_3" => [
-            "title_1" => "Who are we?",
-            "subtitle_1" => "Blumilk is a team of engineers, researchers, and consultants specializing in designing advanced AI systems and digitizing processes in demanding industries.",
+            "title_1" => "Who we are",
+            "subtitle_1" => "Blumilk is a team of engineers, researchers, and consultants specializing in creating advanced AI systems and digitizing of processes across demanding industries.",
             "subtitle_2" => "We don't just use AI -",
             "subtitle_3" => "we create it.",
-            "subtitle_4" => "Our team, including PhD candidates and AI/ML specialists, designs algorithms, expert systems, and architectures that solve problems too complex for off-the-shelf tools.",
+            "subtitle_4" => "Our team, including PhD researchers and specialists in AI and ML designs algorithms, expert systems, and architectures that solve problems too complex for off-the-shelf tools.",
         ],
         "section_4" => [
-            "title_1" => "What can we do for you?",
-            "subtitle_1" => "Does your business need digital transformation? You're in the right place.",
+            "title_1" => "What can we offer you?",
+            "subtitle_1" => "Does your company need digital transformation? You've come to the right place.",
             "tile_1" => [
                 "title" => "Web and mobile applications",
-                "subtitle" => "We create dedicated software in the form of mobile and web applications.",
+                "subtitle" => "We develop custom software in the form of mobile and web applications.",
             ],
             "tile_2" => [
                 "title" => "Digitization of business and processes",
-                "subtitle" => "We help clients navigate digital transformation in their companies.",
+                "subtitle" => "We help clients implement digital transformation in their companies.",
             ],
             "tile_3" => [
                 "title" => "Audits of IT solutions",
@@ -46,20 +46,20 @@ return [
             ],
             "tile_4" => [
                 "title" => "R&D projects",
-                "subtitle" => "We engage in a wide range of popular research topics.",
+                "subtitle" => "We cover a wide range of popular research topics.",
             ],
             "tile_5" => [
                 "title" => "UI/UX",
                 "subtitle" => "We design intuitive interfaces that make them easy and enjoyable to use.",
             ],
             "tile_6" => [
-                "title" => "AI solutions",
-                "subtitle" => "We build AI models that optimize complex processes.",
+                "title" => "AI-based solutions",
+                "subtitle" => "We create AI models that optimize complex processes.",
             ],
         ],
         "section_5" => [
             "title_1" => "Case study",
-            "subtitle_1" => "Find out how our implementations turned clients' ideas into",
+            "subtitle_1" => "Find out how our implementations transformed clients' ideas into",
             "subtitle_2" => "effective solutions.",
             "tile_1" => [
                 "title_1" => "Challenge",
@@ -67,14 +67,14 @@ return [
             ],
             "tile_2" => [
                 "title_1" => "Solution",
-                "description_1" => "Workshops and an AI-powered application that automates the submission, evaluation, and verification of applications.",
+                "description_1" => "Workshops and an AI-powered application that automates the process of submitting, evaluating, and verifying applications.",
             ],
             "tile_3" => [
                 "title_1" => "Submission time: ",
                 "title_2" => "1h → 5 min",
             ],
             "tile_4" => [
-                "title_1" => "Number of applications: ",
+                "title_1" => "Applications: ",
                 "title_2" => "500 → 2,500 per year",
             ],
             "tile_5" => [
@@ -87,12 +87,12 @@ return [
             ],
         ],
         "section_6" => [
-            "tag" => "testimonials",
-            "title_1" => "What others say about us",
+            "tag" => "clients feedback",
+            "title_1" => "What our clients say",
             "subtitle_1" => "Our clients' opinions matter a great deal - they reflect the quality of our services and inspire us to keep improving.",
         ],
         "section_7" => [
-            "title_1" => "Interested in working together?",
+            "title_1" => "Interested in collaborating?",
             "subtitle_1" => "Let us turn your vision into reality. Do you have an idea for a web/mobile application, need digital transformation, or are you planning an R&D project?",
             "subtitle_2" => "Do it with us!",
         ],

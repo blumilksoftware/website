@@ -211,9 +211,9 @@ return [
         ],
     ],
     "carbon" => [
-        "title_1" => "Web application for collecting data and generating reports",
-        "title_2" => "regarding carbon footprint",
-        "project_description" => "The tool allows users to independently calculate CO2 emissions, providing a large set of indicators that are the basis for calculations.",
+        "title_1" => "An app for calculating carbon footprints and generating",
+        "title_2" => "CO₂ emissions reports",
+        "project_description" => "A tool that enables the independent calculation of carbon footprints for processes, locations and products, while ensuring data consistency and transparency throughout the reporting process. By automating calculations and reporting, users can prepare analyses more quickly, make decisions regarding emission reductions and more effectively achieve their sustainability and ESG goals.",
         "challenges" => [
             "challenge_1" => [
                 "title" => "Advanced role system",
