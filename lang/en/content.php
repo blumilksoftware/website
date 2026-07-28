@@ -13,8 +13,8 @@ return [
     ],
     "home" => [
         "section_1" => [
-            "title_1" => " Digitalization and AI,",
-            "title_2" => "that boost your business efficiency",
+            "title_1" => " Digitalization and AI",
+            "title_2" => "that boost your business",
             "subtitle_1" => "",
             "subtitle_2" => "We build technologies that genuinely reduce working time, cut costs, improve decision quality and reduce risk.",
         ],
