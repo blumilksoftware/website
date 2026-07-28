@@ -106,28 +106,5 @@
         </div>
     </section>
 
-    <section class="relative">
-        <div class="flex flex-col-reverse xl:flex-row md:mt-10 md:pb-5 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto gap-x-8 gap-y-8">
-            <div class="flex basis-1/2 relative flex-col justify-center md:pb-24 xl:pb-0">
-                <div class="text-center xl:justify-start xl:text-start pb-5 xl:pb-10">
-                    <h2 class="font-semibold text-gray-900 leading-12 text-3xl md:text-4xl lg:text-5xl mb-4 md:mb-10">{{ __("content.offer.section_6.title_1") }}</h2>
-                    <p class="font-normal text-center xl:text-start pb-8 leading-7 max-w-[450px] mx-auto xl:mx-0">
-                        {{ __("content.offer.section_6.subtitle_1") }}
-                        <span class="font-semibold">{{ __("content.offer.section_6.subtitle_2") }} </span>
-                        {{ __("content.offer.section_6.subtitle_3") }}
-                    </p>
-                    <x-primary-button href="{{ route('contact') }}" class="w-full md:w-fit md:px-16 py-4 bg-blue-normal font-semibold">
-                        {{ __("buttons.schedule_free_consultation") }}
-                    </x-primary-button>
-                </div>
-            </div>
-            <div class="self-center basis-1/2">
-                <img src="{{ asset('graphics/career_3.webp') }}"
-                     class="w-full max-w-[280px] sm:max-w-[350px] tablet:max-w-[700px] h-auto object-contain mx-auto"
-                     alt=""/>
-            </div>
-        </div>
-    </section>
-
     <x-text-us-section></x-text-us-section>
 @endsection

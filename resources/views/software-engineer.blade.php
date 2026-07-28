@@ -7,7 +7,7 @@
     <section class="flex flex-col-reverse xl:flex-row pt-8 md:pt-28 pb-6 md:pb-10 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
         <div class="flex basis-2/5 relative flex-col self-center gap-5">
             <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:justify-start xl:text-start">
-                <h2 class="font-semibold text-gray-900 leading-7">
+                <h2 class="font-semibold text-gray-900 leading-7 leading-snug">
                     {{ __("content.software_engineer.section_1.title_1") }}
                     <span class="text-website-normal">{{ __("content.software_engineer.section_1.title_2") }}</span>
                 </h2>
@@ -59,5 +59,8 @@
             </div>
         </div>
     </section>
-    <x-text-us-section/>
+    <x-text-us-section :title="__('content.career.section_5.title')"
+                       :subtitle="__('content.career.section_5.subtitle_1')"
+                       :subtitle-bold="__('content.career.section_5.subtitle_2')"
+    />
 @endsection
