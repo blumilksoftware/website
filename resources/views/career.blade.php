@@ -7,10 +7,10 @@
     <section class="flex flex-col-reverse xl:flex-row pt-8 md:pt-28 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto gap-16">
         <div class="flex basis-2/5 relative flex-col self-center gap-5">
             <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:justify-start xl:text-start">
-                <h2 class="font-semibold text-gray-900 leading-7">
+                <h1 class="font-semibold text-gray-900 leading-7">
                     <span class="text-blue-normal">{{ __("content.career.section_1.title_1") }}</span>
                     {{ __("content.career.section_1.title_2") }}
-                </h2>
+                </h1>
             </div>
             <div class="flex flex-col items-center xl:items-start">
                 <p class="text-sm md:text-lg font-normal text-center xl:text-start pb-12 md:pb-12">

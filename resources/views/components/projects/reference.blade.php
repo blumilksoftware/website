@@ -5,7 +5,7 @@
     <figcaption class="flex items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-8 md:px-16 py-8 sm:flex-nowrap">
         <img class="size-16 flex-none rounded-full bg-gray-50"
              src="{{ asset($photo) }}"
-             alt="{{ __('alt.reference') . " " . $name }}">
+             alt="{{ $name }}">
         <div class="text-sm md:text-md md:text-xl">
             <div class="font-semibold text-left break-words block">{{ $name }}</div>
             <div class="text-gray-600 text-left">{{ $company }}</div>

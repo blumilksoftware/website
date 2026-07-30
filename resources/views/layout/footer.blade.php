@@ -1,7 +1,7 @@
 <footer class="bg-white">
     <div class="mx-16 w-auto py-6 md:py-12 flex flex-col md:flex-row gap-4 items-center place-items-center justify-between md:border-t-2 md:border-gray-100">
         <div class="">
-            <img class="w-24 md:w-32 shrink-0 mx-auto" src="{{ asset('identification/logo.svg') }}" alt="Blumilk logo"/>
+            <img class="w-24 md:w-32 shrink-0 mx-auto" src="{{ asset('identification/logo.svg') }}" alt="Blumilk"/>
         </div>
         <div class="flex justify-center items-center space-x-4 md:space-x-6">
             <a href="https://clutch.co/profile/blumilk-0" class="text-gray-500 hover:text-gray-600 leading-none" target="_blank" data-umami-event="clutch-profile-link-click" data-umami-event-url="https://clutch.co/profile/blumilk-0">
