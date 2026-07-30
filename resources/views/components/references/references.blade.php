@@ -119,7 +119,7 @@
                     class="flex items-center gap-x-4 gap-y-4 md:border-t md:border-gray-900/10 px-6 py-4 sm:flex-nowrap">
                     <img class="h-10 w-10 flex-none rounded-full bg-gray-50"
                          src="{{ $references[$main]->getPhotoPath() }}"
-                         alt="{{ __('alt.reference') . " " . $references[$main]->creator_name }}">
+                         alt="{{ $references[$main]->creator_name }}">
                     <div class="flex-auto">
                         <div class="font-semibold text-left">{{ $references[$main]->creator_name }}</div>
                         <div class="text-gray-600 text-left break-words">
@@ -139,7 +139,7 @@
                     class="flex flex-wrap items-center gap-x-4 gap-y-4 md:border-t md:border-gray-900/10 px-6 py-4 sm:flex-nowrap">
                     <img class="h-10 w-10 flex-none rounded-full bg-gray-50"
                          src="{{ $references[$main2]->getPhotoPath() }}"
-                         alt="{{ __('alt.reference') . " " . $references[$main2]->creator_name }}">
+                         alt="{{ $references[$main2]->creator_name }}">
                     <div class="flex-auto">
                         <div class="font-semibold text-left">{{ $references[$main2]->creator_name }}</div>
                         <div class="text-gray-600 text-left">
