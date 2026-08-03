@@ -14,7 +14,7 @@ return [
     "k1" => [
         "title_1" => "System zarządzania",
         "title_2" => "licencjami i dystrybucji oprogramowania",
-        "project_description" => "System do zarządzania oprogramowaniem na komputerach uczelnianych, oparty na zdefiniowanych regułach i harmonogramach, z uwzględnieniem licencji oprogramowania.",
+        "project_description" => "System do zarządzania oprogramowaniem w środowisku akademickim, umożliwiający automatyczne udostępnianie aplikacji na komputerach uczelnianych na podstawie zdefiniowanych reguł i harmonogramów. Narzędzie integruje dane dotyczące sal, komputerów oraz planów zajęć, dzięki czemu odpowiednie oprogramowanie może być udostępniane dokładnie wtedy, gdy jest potrzebne.",
         "challenges" => [
             "challenge_1" => [
                 "title" => "Bezpieczeństwo danych",
@@ -144,7 +144,7 @@ return [
     "gtb" => [
         "title_1" => "Aplikacja shared economy do",
         "title_2" => "przewozów przesyłek",
-        "project_description" => "Aplikacja typu shared economy do przewozu przesyłek. Użytkownik w roli nadawcy dodaje paczki do przewiezienia, samodzielnie ustalając cenę za usługę. Z kolei kierowca wyszukuje paczki na trasie, którą planuje przejechać i zarabia na ich dostarczeniu.",
+        "project_description" => "Aplikacja oparta na modelu shared economy, umożliwiająca organizację transportu przesyłek pomiędzy użytkownikami platformy.Nadawca może dodać przesyłkę do systemu, określając jej parametry oraz proponowaną stawkę za transport. Kierowcy planujący przejazd na danej trasie mogą wyszukiwać dostępne zlecenia i realizować dostawy, generując dodatkowy dochód.",
         "challenges" => [
             "challenge_1" => [
                 "title" => "Progresywna aplikacja internetowa",
@@ -213,7 +213,7 @@ return [
     "carbon" => [
         "title_1" => "Aplikacja do kalkulacji śladu węglowego i generowania ",
         "title_2" => "raportów emisji CO₂",
-        "project_description" => "Narzędzie, które umożliwia samodzielne wyliczanie śladu węglowego dla procesów, lokalizacji i produktów, a jednocześnie zapewnia spójność danych oraz transparentność całego procesu raportowania. Dzięki automatyzacji obliczeń i raportowania użytkownicy mogą szybciej przygotowywać analizy, podejmować decyzje związane z redukcją emisji oraz skuteczniej realizować cele z zakresu zrównoważonego rozwoju i ESG. ",
+        "project_description" => "Narzędzie, które umożliwia samodzielne wyliczanie śladu węglowego dla procesów, lokalizacji i produktów, a jednocześnie zapewnia spójność danych oraz transparentność całego procesu raportowania. Dzięki automatyzacji obliczeń i raportowania użytkownicy mogą szybciej przygotowywać analizy, podejmować decyzje związane z redukcją emisji oraz skuteczniej realizować cele z zakresu zrównoważonego rozwoju i ESG.",
         "challenges" => [
             "challenge_1" => [
                 "title" => "Zaawansowany system ról",

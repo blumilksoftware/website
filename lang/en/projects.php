@@ -14,7 +14,7 @@ return [
     "k1" => [
         "title_1" => "License and software",
         "title_2" => " distribution management system",
-        "project_description" => "A system for managing software on university computers, based on defined rules and schedules, taking into account software licenses.",
+        "project_description" => "A software management system for academic environments that enables the automatic deployment of applications to university computers based on defined rules and schedules. The tool integrates data on rooms, computers and class schedules, ensuring that the appropriate software is made available exactly when needed.",
         "challenges" => [
             "challenge_1" => [
                 "title" => "Data security",
@@ -144,7 +144,7 @@ return [
     "gtb" => [
         "title_1" => "Shared economy web application for",
         "title_2" => "shipment transportation",
-        "project_description" => "A shared economy application for parcel transportation. The user in the role of shipper adds parcels to be transported, setting the price for the service himself. On the other hand, the driver searches for parcels along the route he plans to take and earns money for delivering them.",
+        "project_description" => "An app based on the sharing economy model that enables the organization of shipment transport between platform users. A sender can add a shipment to the system, specifying its details and a proposed transport rate. Drivers planning a trip along a specific route can search for available orders and carry out deliveries, thereby generating additional income.",
         "challenges" => [
             "challenge_1" => [
                 "title" => "Progressive web application",
