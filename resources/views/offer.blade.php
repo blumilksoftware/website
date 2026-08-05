@@ -4,7 +4,7 @@
 @section("description", __("meta.offer.description"))
 
 @section("content")
-    <section class="relative flex flex-col-reverse xl:flex-row pt-12 pb-0 md:pb-14 md:pt-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto place-items-start gap-8 xl:gap-16">
+    <section class="relative flex flex-col-reverse xl:flex-row pt-12 pb-0 md:pb-14 md:pt-24 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto  gap-8 xl:gap-16">
         <div class="flex basis-2/5 xl:flex-1 flex-col">
             <div class="text-3xl md:text-4xl xl:text-5xl text-center xl:justify-start xl:text-start pb-4 pt-4 md:pt-0">
                 <h2 class="font-semibold text-gray-900 leading-snug">
@@ -31,7 +31,7 @@
             <div class="pb-10 md:pb-14 text-center max-w-7xl mx-auto">
                 <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">{{ __("content.offer.section_2.title_1") }}</h2>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 min-[1900px]:grid-cols-4 gap-4 2xl:gap-12 2xl:max-w-[1580px] 2xl:mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-4 gap-4 2xl:gap-12 2xl:max-w-[1580px] 2xl:mx-auto">
                 <x-tile title="{{ __('content.offer.section_2.requirement_1') }}"
                         class="bg-gray-extra-light">
                     <x-icons.automation accent="text-website-normal"/>
@@ -69,7 +69,7 @@
                 </div>
 
                 <div class="flex basis-3/5 flex-col gap-4 w-full" x-data="{ openIndex: null }">
-                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold pb-8 text-center xl:text-start">
         <span class="md:whitespace-nowrap">
             {{ __("content.offer.section_3.title_1") }}<span class="text-blue-normal">{{ __("content.offer.section_3.title_2") }}</span>
         </span>
