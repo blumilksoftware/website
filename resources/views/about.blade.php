@@ -193,7 +193,7 @@
 
                 <div class="bg-gray-extra-light rounded-2xl p-4 sm:px-5 md:py-6 md:px-12 mb-4 w-full text-left">
                     <div class="flex items-center gap-3 mb-3">
-                        <img src="{{ asset('graphics/logos/dolny_slask.jpg') }}" alt="" class="h-14 md:h-18 w-auto"/>
+                        <img src="{{ asset('graphics/logos/dolny_slask.webp') }}" alt="" class="h-12 md:h-14 w-auto"/>
                     </div>
                     <p class="leading-7 text-sm md:text-base">
                         {{ __('content.about.section_5.paragraph_3.text_1') }}
