@@ -48,7 +48,6 @@
   --color-vita: #9676f9;
   --color-gtb: #f9c83b;
   --color-carbon: #f39200;
-  --color-employee-requests: #C2C7CD;
 
   --font-sora: Sora, sans-serif;
   --font-montserrat: Montserrat;
@@ -150,28 +149,4 @@
   bottom: 10px !important;
   width: 70px !important;
   height: 60px !important;
-}
-
-@keyframes scroll-vertical {
-  from {
-    transform: translateY(0);
-  }
-  to {
-    transform: translateY(-50%);
-  }
-}
-
-.animate-scroll-vertical {
-  animation: scroll-vertical 35s linear infinite;
-  will-change: transform;
-}
-
-.animate-scroll-vertical.paused {
-  animation-play-state: paused;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .animate-scroll-vertical:hover {
-    animation-play-state: paused;
-  }
 }

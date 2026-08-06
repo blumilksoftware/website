@@ -1,12 +1,11 @@
-@props(['reference'])
+@if(isset($reference->position))
+    {{ $reference->position }}
+@endif
 
-@php
-    $parts = array_filter([
-        $reference->position,
-        $reference->company,
-    ], fn ($value) => filled($value));
-@endphp
+@if(isset($reference->position) && isset($reference->company))
+    {{ __('content.at') }}
+@endif
 
-@if (count($parts))
-    {{ implode(' ' . __('content.at') . ' ', $parts) }}
+@if(isset($reference->company))
+    {{ $reference->company }}
 @endif

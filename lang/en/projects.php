@@ -14,7 +14,7 @@ return [
     "k1" => [
         "title_1" => "License and software",
         "title_2" => " distribution management system",
-        "project_description" => "A software management system for academic environments that enables the automatic deployment of applications to university computers based on defined rules and schedules. The tool integrates data on rooms, computers and class schedules, ensuring that the appropriate software is made available exactly when needed.",
+        "project_description" => "A system for managing software on university computers, based on defined rules and schedules, taking into account software licenses.",
         "challenges" => [
             "challenge_1" => [
                 "title" => "Data security",
@@ -144,7 +144,7 @@ return [
     "gtb" => [
         "title_1" => "Shared economy web application for",
         "title_2" => "shipment transportation",
-        "project_description" => "An app based on the sharing economy model that enables the organization of shipment transport between platform users. A sender can add a shipment to the system, specifying its details and a proposed transport rate. Drivers planning a trip along a specific route can search for available orders and carry out deliveries, thereby generating additional income.",
+        "project_description" => "A shared economy application for parcel transportation. The user in the role of shipper adds parcels to be transported, setting the price for the service himself. On the other hand, the driver searches for parcels along the route he plans to take and earns money for delivering them.",
         "challenges" => [
             "challenge_1" => [
                 "title" => "Progressive web application",
@@ -211,9 +211,9 @@ return [
         ],
     ],
     "carbon" => [
-        "title_1" => "An app for calculating carbon footprints and generating",
-        "title_2" => "CO₂ emissions reports",
-        "project_description" => "A tool that enables the independent calculation of carbon footprints for processes, locations and products, while ensuring data consistency and transparency throughout the reporting process. By automating calculations and reporting, users can prepare analyses more quickly, make decisions regarding emission reductions and more effectively achieve their sustainability and ESG goals.",
+        "title_1" => "Web application for collecting data and generating reports",
+        "title_2" => "regarding carbon footprint",
+        "project_description" => "The tool allows users to independently calculate CO2 emissions, providing a large set of indicators that are the basis for calculations.",
         "challenges" => [
             "challenge_1" => [
                 "title" => "Advanced role system",
@@ -255,68 +255,6 @@ return [
             "laptop_2" => "laptop standing on a desk with an open application",
             "sitemap" => "sitemap",
             "monitor" => "monitor on yellow background with application",
-        ],
-    ],
-    "employee_requests" => [
-        "title_1" => "A system for managing requests submitted by company employees",
-        "project_description" => "Employees submit their requests, and the people responsible for evaluating them review them, assess their validity and feasibility, and implement them. For completed requests, applicants receive points and are subject to an additional evaluation, in which they can also receive rewards defined in the prize pool.",
-        "challenges" => [
-            "challenge_1" => [
-                "title" => "Detailed statistics",
-                "description" => "providing information at many different levels",
-            ],
-            "challenge_2" => [
-                "title" => "Maintaining a change history",
-                "description" => "transparent documentation of actions in the system",
-            ],
-            "challenge_3" => [
-                "title" => "Clear and intuitive interface",
-                "description" => "tailored to requirements and matching the company's aesthetic",
-            ],
-            "challenge_4" => [
-                "title" => "Advanced role system",
-                "description" => "enabling work in the system on many levels",
-            ],
-            "challenge_5" => [
-                "title" => "Integration with an external authentication system",
-                "description" => "guaranteeing access only to employees of a given company",
-            ],
-        ],
-        "functionalities" => [
-            "functionality_1" => [
-                "title" => "Submitting requests",
-                "description" => "filling out a detailed form",
-            ],
-            "functionality_2" => [
-                "title" => "Request status tracking",
-                "description" => "at every stage of their verification and implementation",
-            ],
-            "functionality_3" => [
-                "title" => "Points system",
-                "description" => "a complex points-awarding system",
-            ],
-            "functionality_4" => [
-                "title" => "Rewards shop",
-                "description" => "exchanging earned points for rewards",
-            ],
-            "functionality_5" => [
-                "title" => "Request ranking",
-                "description" => "ranking of the best requests within selected time periods",
-            ],
-            "functionality_6" => [
-                "title" => "Advanced system management",
-                "description" => "in the context of users, requests, implementation, and rewarding",
-            ],
-        ],
-        "testimonial" => [
-            "name" => "Artur Gadowski",
-            "company" => "Continuous Improvement Manager",
-            "description" => "The application developed together with Blumilk works great. The development process itself went very smoothly thanks to the company's creative and flexible approach. We will definitely work together again.",
-        ],
-        "alt" => [
-            "laptop_1" => "laptop with the application website",
-            "laptop_2" => "laptop on a desk with open application website",
-            "phone" => "phone with the application website",
         ],
     ],
 ];
