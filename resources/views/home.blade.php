@@ -170,7 +170,11 @@
                 </div>
 
                 <div class="relative h-[600px] overflow-y-hidden px-4 mask-[linear-gradient(to_bottom,transparent,black_8%,black_92%,transparent)]">
-                    <div class="flex flex-col gap-4 animate-scroll-vertical">
+                    <div class="flex flex-col gap-4 animate-scroll-vertical"
+                         x-data="{}"
+                         @touchstart.passive="$el.classList.add('paused')"
+                         @touchend="$el.classList.remove('paused')"
+                         @touchcancel="$el.classList.remove('paused')">
                         @foreach ($references as $reference)
                             <x-references.review-card :reference="$reference"/>
                         @endforeach

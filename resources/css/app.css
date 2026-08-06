@@ -167,6 +167,6 @@
 }
 
 .animate-scroll-vertical:hover,
-.animate-scroll-vertical:active {
+.animate-scroll-vertical.paused {
   animation-play-state: paused;
 }
