@@ -9,7 +9,6 @@ use Blumilk\Website\Http\Controllers\ContactController;
 use Blumilk\Website\Http\Controllers\HomeController;
 use Blumilk\Website\Http\Controllers\LogoController;
 use Blumilk\Website\Http\Controllers\NewsController;
-use Blumilk\Website\Http\Controllers\OfferController;
 use Blumilk\Website\Http\Controllers\PolicyController;
 use Blumilk\Website\Http\Controllers\ProjectsController;
 use CodeZero\LocalizedRoutes\Controllers\FallbackController;
@@ -35,7 +34,5 @@ $router->get($uri->translate("logo"), LogoController::class)->name("logo");
 $router->get($uri->translate("news"), [NewsController::class, "index"])->name("news");
 $router->get($uri->translate("news/{slug}"), [NewsController::class, "get"])->name("news.entry");
 $router->get($uri->translate("company-data"), CompanyDataController::class)->name("data");
-
-$router->get($uri->translate("offer"), OfferController::class)->name("offer");
 
 $router->fallback(FallbackController::class);

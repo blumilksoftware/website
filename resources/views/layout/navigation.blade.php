@@ -4,7 +4,6 @@
 @endphp
 
 <nav x-data="{ openLang: false, openMobileMenu: false}"
-     x-cloak
      class="w-auto">
     <div :class="{'flex': ! openMobileMenu, 'hidden': openMobileMenu}"
          class="flex items-center justify-between px-14 md:px-6 2xl:px-0 py-8 relative mx-auto max-w-7xl">
@@ -27,11 +26,6 @@
                    @class([
                         'hover:text-blue-normal rounded-3xl px-2',
                         'text-blue-normal' => Str::contains($current, 'projects')])>{{ __("content.pages.projects") }}
-                </a>
-                <a href="{{ route('offer') }}"
-                    @class([
-                         'hover:text-blue-normal rounded-3xl px-2',
-                         'text-blue-normal' => Str::contains($current, 'offer')])>{{ __("content.pages.offer") }}
                 </a>
                 <a href="{{ route('career') }}"
                    @class([
@@ -59,13 +53,10 @@
                     @if ( App::isLocale($locale) )
                         <button type="button"
                                 @click="openLang = ! openLang"
-                                class="flex rounded-lg h-full items-center place-content-center gap-x-1.5 bg-white px-4 py-2 text-sm 3xl:text-md font-semibold text-gray-500 shadow-xs ring-1 ring-inset ring-gray-300 hover:bg-gray-50 uppercase min-w-[76px]"
+                                class="flex rounded-lg h-full items-center place-content-center gap-x-1.5 bg-white px-4 py-2 text-sm 3xl:text-md font-semibold text-gray-500 shadow-xs ring-1 ring-inset ring-gray-300 hover:bg-gray-50 uppercase"
                                 id="desktopLocalesButton" aria-expanded="true" aria-haspopup="true">
                             {{ $locale }}
-                            <x-icons.chevron-down
-                                class="w-4 h-4 text-gray-500 shrink-0 transition-transform duration-150"
-                                x-bind:class="{ 'rotate-180': openLang }"
-                            />
+                            <i :class="{'rotate-0': openLang, 'rotate-180': ! openLang}" class="fa-solid fa-chevron-up text-gray-500"></i>
                         </button>
                     @endif
                 @endforeach
@@ -121,13 +112,6 @@
             </div>
             <div @class([
                 'w-full group hover:text-blue-normal py-4 text-lg sm:text-xl text-start',
-                'text-blue-normal' => Str::contains($current, 'offer')])>
-                <a href="{{ route('offer') }}" class="my-4 p-2">
-                    {{ __("content.pages.offer") }}
-                </a>
-            </div>
-            <div @class([
-                'w-full group hover:text-blue-normal py-4 text-lg sm:text-xl text-start',
                 'text-blue-normal' => Str::contains($current, 'career')])>
                 <a href="{{ route('career') }}" class="my-4 p-2">
                     {{ __("content.pages.career") }}
@@ -156,10 +140,7 @@
                                     class="flex w-full h-full justify-between items-center place-content-center gap-x-1.5 mt-4 text-lg sm:text-xl font-semibold text-black hover:text-blue-normal uppercase"
                                     id="mobileLocalesButton" aria-expanded="true" aria-haspopup="true">
                                 {{ $locale }}
-                                <x-icons.chevron-down
-                                    class="w-4 h-4 text-gray-500 shrink-0 transition-transform duration-150"
-                                    x-bind:class="{ 'rotate-180': openLang }"
-                                />
+                                <i :class="{'rotate-0': openLang, 'rotate-180': ! openLang}" class="fa-solid fa-chevron-up text-gray-500"></i>
                             </button>
                         @endif
                     @endforeach

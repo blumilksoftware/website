@@ -13,59 +13,24 @@
     <div class="w-80 bg-white rounded-2xl absolute shadow-lg border-gray-100 border-2 hidden lg:block lg:-right-36 2xl:-right-52 top-20">
         <div class="divide-y divide-gray-200 overflow-hidden">
             <div class="py-3 px-6 text-center font-semibold text-md">
-                {{ __('content.home.section_5.tile_2.title_1') }}
+                {{ __('content.home.section_4.tile_1.title_1') }}
             </div>
             <div class="p-5 text-sm text-center text-gray-500">
-                {{ __('content.home.section_5.tile_2.description_1') }}
+                {{ __('content.home.section_4.tile_1.description_1') }}
             </div>
         </div>
     </div>
-    <div class="absolute hidden lg:block lg:-right-46 2xl:-right-56 top-75 space-y-2">
-        <div class="w-96 bg-gray-900 rounded-full shadow-lg">
-            <div class="overflow-hidden text-white">
-                <div class="py-2 px-4 text-center text-sm">
-                    {{ __('content.home.section_5.tile_3.title_1') }}
-                    <span class="font-semibold">{{ __('content.home.section_5.tile_3.title_2') }}</span>
-                </div>
-            </div>
-        </div>
-        <div class="w-96 bg-gray-900 rounded-full shadow-lg">
-            <div class="overflow-hidden text-white">
-                <div class="py-2 px-4 text-center text-sm">
-                    {{ __('content.home.section_5.tile_4.title_1') }}
-                    <span class="font-semibold">{{ __('content.home.section_5.tile_4.title_2') }}</span>
-                </div>
-            </div>
-        </div>
-        <div class="w-96 bg-gray-900 rounded-full shadow-lg">
-            <div class="overflow-hidden text-white">
-                <div class="py-2 px-4 text-center text-sm">
-                    {{ __('content.home.section_5.tile_5.title_1') }}
-                    <span class="font-semibold">{{ __('content.home.section_5.tile_5.title_2') }}</span>
-                </div>
-            </div>
-        </div>
-        <div class="w-96 bg-gray-900 rounded-full shadow-lg">
-            <div class="overflow-hidden text-white">
-                <div class="py-2 px-4 text-center text-sm">
-                    {{ __('content.home.section_5.tile_6.title_1') }}
-                    <span class="font-semibold">{{ __('content.home.section_5.tile_6.title_2') }}</span>
-                </div>
-            </div>
-        </div>
+    <div class="h-auto w-auto bg-blue-normal-neon text-white text-sm text-center place-self-center py-3 px-6 font-normal rounded-3xl absolute hidden lg:flex lg:-right-32 xl:-right-44 2xl:-right-52 top-72">
+        {{ __('content.home.section_4.badge') }}
     </div>
-    <div class="h-36 lg:flex items-center bg-white rounded-2xl absolute hidden lg:-left-36 xl:-left-48 2xl:-left-64 shadow-lg border-gray-100 border-2 bottom-8 w-[26rem]">
-        <div class="flex items-center align-middle gap-x-6 ml-6 mr-6">
-            <div class="shadow-md bg-white p-4 rounded-full size-16 shrink-0">
+    <div class="h-36 lg:flex items-center bg-white rounded-2xl absolute hidden lg:-left-36 xl:-left-48 2xl:-left-64 shadow-lg border-gray-100 border-2 bottom-8">
+        <div class="flex items-center align-middle gap-x-9 ml-6">
+            <div class="shadow-md bg-white p-4 rounded-full size-16">
                 <x-icons.window/>
             </div>
             <div>
-                <div class="text-base font-semibold leading-7 tracking-tight text-gray-900">
-                    {{ __('content.home.section_5.tile_1.title_1') }}
-                </div>
-                <div class="mt-1 text-sm text-gray-500">
-                    {{ __('content.home.section_5.tile_1.description_1') }}
-                </div>
+                <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">{{ __('content.home.section_4.tile_2.title_1') }}</h3>
+                <p class="font-normal leading-6 w-80 text-sm text-gray-500">{{ __('content.home.section_4.tile_2.description_1') }}</p>
             </div>
         </div>
     </div>
