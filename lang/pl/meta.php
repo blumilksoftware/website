@@ -5,15 +5,19 @@ declare(strict_types=1);
 return [
     "home" => [
         "title" => "Strona główna",
-        "description" => "Oprogramowanie dostosowane do Twoich potrzeb. Zobacz, jak możemy Ci pomóc!",
+        "description" => "Cyfryzacja i AI dla efektywnej transformacji biznesu. Zobacz, jak możemy Ci pomóc!",
     ],
     "about" => [
         "title" => "O firmie",
-        "description" => "Jesteśmy pasjonatami tworzenia aplikacji web/mobile oraz zaawansowanych projektów B+R. Zmieniamy koncepcje w działające rozwiązania.",
+        "description" => "Partner technologiczny Twojej cyfryzacji. Projektujemy i wdrażamy zaawansowane systemy AI wspierające transformację procesów biznesowych.",
     ],
     "case-studies" => [
         "title" => "Projekty",
         "description" => "Zobacz, jakie projekty udało nam się zrealizować.",
+    ],
+    "offer" => [
+        "title" => "Oferta",
+        "description" => "Sprawdź, co możemy dla Ciebie zrobić.",
     ],
     "career" => [
         "title" => "Kariera",
