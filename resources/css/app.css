@@ -166,7 +166,12 @@
   will-change: transform;
 }
 
-.animate-scroll-vertical:hover,
 .animate-scroll-vertical.paused {
   animation-play-state: paused;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .animate-scroll-vertical:hover {
+    animation-play-state: paused;
+  }
 }
