@@ -160,18 +160,3 @@
     transform: translateY(-50%);
   }
 }
-
-.animate-scroll-vertical {
-  animation: scroll-vertical 35s linear infinite;
-  will-change: transform;
-}
-
-.animate-scroll-vertical.paused {
-  animation-play-state: paused;
-}
-
-@media (hover: hover) and (pointer: fine) {
-  .animate-scroll-vertical:hover {
-    animation-play-state: paused;
-  }
-}

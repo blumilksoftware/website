@@ -170,12 +170,17 @@
                 </div>
 
                 <div class="relative h-[600px] overflow-y-hidden px-4 mask-[linear-gradient(to_bottom,transparent,black_8%,black_92%,transparent)]">
-                    <div class="flex flex-col gap-4 animate-scroll-vertical"
-                         x-data="{}"
-                         @pointerdown="$el.classList.add('paused')"
-                         @pointerup="$el.classList.remove('paused')"
-                         @pointercancel="$el.classList.remove('paused')"
-                         @pointerleave="$el.classList.remove('paused')">
+                    <div
+                        class="flex flex-col gap-4 cursor-grab active:cursor-grabbing select-none touch-none"
+                        x-data="verticalScroller()"
+                        x-init="init($el)"
+                        :style="{ transform: `translateY(${-position}px)` }"
+                        @pointerdown="onPointerDown"
+                        @pointermove="onPointerMove"
+                        @pointerup="onPointerUp"
+                        @pointercancel="onPointerUp"
+                        @pointerleave="onPointerUp"
+                    >
                         @foreach ($references as $reference)
                             <x-references.review-card :reference="$reference"/>
                         @endforeach

@@ -338,7 +338,7 @@ return [
             "subtitle_1" => "We are looking for programmers with professional experience in the design and development of web applications. Our basic technology is PHP and Laravel, but we are open to intertechnological dialogue.",
         ],
         "section_5" => [
-            "title" => "Join the Blumilk team.",
+            "title" => "Join the Blumilk team",
             "subtitle_1" => "If you want to develop your skills, work on interesting projects and be part of a team that values ​​knowledge, collaboration and initiative -",
             "subtitle_2" => "we look forward to hearing from you!",
         ],

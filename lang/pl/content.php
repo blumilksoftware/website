@@ -14,7 +14,7 @@ return [
     "home" => [
         "section_1" => [
             "title_1" => " Cyfryzacja i AI,",
-            "title_2" => "które zwiększają efektywność Twojego biznesu",
+            "title_2" => "które zwiększą efektywność Twojego biznesu",
             "subtitle_1" => "Przekształcamy dane i procesy w przewagę operacyjną klientów.",
             "subtitle_2" => "Tworzymy technologie, które realnie skracają czas pracy, eliminują koszty, podnoszą jakość decyzji i redukują ryzyka.",
         ],
@@ -119,8 +119,7 @@ return [
             "title_1" => "Co dostaje klient, który z nami pracuje?",
             "benefit_1" => [
                 "title" => "Dedykowane systemy AI",
-                "subtitle" => "Nie integrujemy cudzych „gotowców”.
-Projektujemy algorytmy i systemy uczone na danych klienta, zgodne z regulacjami i wymaganiami branżowymi.",
+                "subtitle" => "Nie integrujemy cudzych \"gotowców\". Projektujemy algorytmy i systemy uczone na danych klienta, zgodne z regulacjami i wymaganiami branżowymi.",
             ],
             "benefit_2" => [
                 "title" => "Cyfryzacja procesów",
@@ -338,6 +337,11 @@ Pomagamy podjąć decyzję - czy naprawiać, przebudować, czy stworzyć od nowa
         "section_4" => [
             "title_1" => "Inżynier oprogramowania",
             "subtitle_1" => "Poszukujemy programistów z doświadczeniem zawodowym w dziedzinie  projektowania i wytwarzania aplikacji internetowych. Naszą podstawową  technologią jest PHP i Laravel, ale jesteśmy otwarci na  intertechnologiczny dialog.",
+        ],
+        "section_5" => [
+            "title" => "Dołącz do zespołu Blumilk",
+            "subtitle_1" => "Jeśli chcesz rozwijać swoje umiejętności, pracować nad ciekawymi projektami i być częścią zespołu, który ceni wiedzę, współpracę i inicjatywę, to",
+            "subtitle_2" => "czekamy na Twoją wiadomość!",
         ],
     ],
     "software_engineer" => [
