@@ -6,23 +6,30 @@ return [
     "pages" => [
         "about" => "O firmie",
         "projects" => "Projekty",
+        "offer" => "Oferta",
         "career" => "Kariera",
         "news" => "Aktualności",
         "contact" => "Kontakt",
     ],
     "home" => [
         "section_1" => [
-            "title_1" => "Oprogramowanie dopasowane do",
-            "title_2" => "Twoich",
-            "title_3" => "potrzeb",
-            "subtitle_1" => "Pomagamy klientom w transformacji cyfrowej i tworzymy złożone aplikacje web/mobile oraz zaawansowane projekty B+R.",
-            "subtitle_2" => "Zmieniamy koncepcje w działające rozwiązania.",
+            "title_1" => " Cyfryzacja i AI,",
+            "title_2" => "które zwiększą efektywność Twojego biznesu",
+            "subtitle_1" => "Przekształcamy dane i procesy w przewagę operacyjną klientów.",
+            "subtitle_2" => "Tworzymy technologie, które realnie skracają czas pracy, eliminują koszty, podnoszą jakość decyzji i redukują ryzyka.",
         ],
         "section_2" => [
             "title_1" => "Dołącz do grona",
             "title_2" => "zadowolonych klientów Blumilk",
         ],
         "section_3" => [
+            "title_1" => "Kim jesteśmy?",
+            "subtitle_1" => "Blumilk to zespół inżynierów, badaczy i konsultantów specjalizujących się w projektowaniu zaawansowanych systemów AI oraz cyfryzacji procesów w wymagających branżach.",
+            "subtitle_2" => "Nie tylko używamy AI -",
+            "subtitle_3" => "my je tworzymy.",
+            "subtitle_4" => "Nasz zespół, w tym doktoranci i specjaliści zajmujący się AI/ML, projektuje algorytmy, systemy eksperckie i architektury, które rozwiązują problemy zbyt złożone dla gotowych narzędzi.",
+        ],
+        "section_4" => [
             "title_1" => "Co możemy dla Ciebie zrobić?",
             "subtitle_1" => "Twój biznes potrzebuje transformacji cyfrowej? Jesteś we właściwym miejscu.",
             "tile_1" => [
@@ -46,29 +53,45 @@ return [
                 "subtitle" => "Projektujemy intuicyjne interfejsy, które sprawiają, że korzystanie z nich jest łatwe i przyjemne.",
             ],
             "tile_6" => [
-                "title" => "Rozwiązania AI",
-                "subtitle" => "Proponujemy klientom optymalizację działań z wykorzystaniem AI.",
+                "title" => "Wykorzystanie AI",
+                "subtitle" => "Budujemy modele AI, które optymalizują skomplikowane procesy.",
             ],
         ],
-        "section_4" => [
+        "section_5" => [
             "title_1" => "Case study",
             "subtitle_1" => "Dowiedz się, jak nasze realizacje przekształciły pomysły klientów w",
             "subtitle_2" => "skuteczne rozwiązania.",
             "tile_1" => [
-                "title_1" => "Cel projektu",
-                "description_1" => "Stworzenie aplikacji do zamawiania usług medycznych z dedykowanym panelem dla pracowników i klientów.",
+                "title_1" => "Wyzwanie",
+                "description_1" => "Czasochłonny proces zgłaszania i oceny wniosków.",
             ],
             "tile_2" => [
-                "title_1" => "Zarządzaj swoimi wizytami",
-                "description_1" => "Bezpieczny i intuicyjny proces zamawiania oraz płatności za wybrane usługi.",
+                "title_1" => "Rozwiązanie",
+                "description_1" => "Warsztaty i aplikacja wspierana AI, która automatyzuje zgłaszanie, ocenę i weryfikację wniosków.",
             ],
-            "badge" => "Design wpasowujący się w specyfikę branży",
-        ],
-        "section_5" => [
-            "title_1" => "Opinie klientów",
-            "subtitle_1" => "Opinie naszych klientów są bardzo ważne, świadczą o jakości naszych usług i inspirują nas do nieustannego doskonalenia.",
+            "tile_3" => [
+                "title_1" => "Czas zgłoszenia: ",
+                "title_2" => "1h → 5 min",
+            ],
+            "tile_4" => [
+                "title_1" => "Liczba wniosków: ",
+                "title_2" => "500 → 2500 rocznie",
+            ],
+            "tile_5" => [
+                "title_1" => "Automatyczna ",
+                "title_2" => "weryfikacja duplikatów przez AI",
+            ],
+            "tile_6" => [
+                "title_1" => "Potencjalne oszczędności: ",
+                "title_2" => "~10 mln zł rocznie",
+            ],
         ],
         "section_6" => [
+            "tag" => "opinie",
+            "title_1" => "Co o nas mówią inni",
+            "subtitle_1" => "Opinie naszych klientów są bardzo ważne, świadczą o jakości naszych usług i inspirują nas do nieustannego doskonalenia.",
+        ],
+        "section_7" => [
             "title_1" => "Zainteresowany współpracą?",
             "subtitle_1" => "Pozwól nam przekształcić Twoją wizję w rzeczywistość. Masz pomysł na aplikację web/mobile, potrzebujesz transformacji cyfrowej lub planujesz projekt badawczo-rozwojowy?",
             "subtitle_2" => "Zrób to z nami!",
@@ -76,13 +99,15 @@ return [
     ],
     "about" => [
         "section_1" => [
-            "title_1" => "Blumilk",
-            "title_2" => "to przede wszystkim ludzie",
-            "subtitle_1" => "Nasz zespół to ponad",
-            "subtitle_2" => "25 wyjątkowych pasjonatów technologii",
-            "subtitle_3" => "- programiści, testerzy, devopsi, graficy, kierownicy projektów i specjaliści o bogatych doświadczeniach.",
-            "subtitle_4" => "Pracujemy w trybie stacjonarnym i hybrydowym",
-            "subtitle_5" => "z Legnicy, łącząc elastyczność z efektywnością.",
+            "title_1" => "Partner",
+            "title_2" => "technologiczny",
+            "title_3" => "Twojej cyfryzacji",
+            "subtitle_1" => "Firmy potrzebują partnera, który zrozumie ich procesy, ryzyka i dane,",
+            "subtitle_2" => "a następnie zaprojektuje i wdroży rozwiązania realnie usprawniające sposób działania organizacji.",
+            "subtitle_3" => "Blumilk to zespół inżynierów, badaczy i konsultantów, którzy projektują i wdrażają",
+            "subtitle_4" => "zaawansowane systemy AI,",
+            "subtitle_5" => "wspierające cyfryzację i transformację procesów biznesowych.
+",
         ],
         "section_2" => [
             "stat_1" => "osób w zespole",
@@ -91,19 +116,41 @@ return [
             "stat_4" => "linii kodu tygodniowo",
         ],
         "section_3" => [
-            "title_1" => "Nasze wartości",
-            "subtitle_1" => "",
-            "subtitle_2" => "W codziennej pracy stawiamy na innowacyjność i doskonałość techniczną.",
-            "content_1" => "Pasja",
-            "content_2" => "Działamy z pasją do technologii, angażując się w tworzenie nowatorskich rozwiązań, które nie tylko spełniają oczekiwania klientów, ale także inspirują do dalszego rozwoju.",
-            "content_3" => "Innowacyjność",
-            "content_4" => "Nieustannie poszukujemy nowych technologii i rozwiązań, aby wyprzedzać oczekiwania rynku i dostarczać klientom produkty o najwyższej jakości, zapewniając im przewagę konkurencyjną.",
-            "content_5" => "Doskonałość techniczna",
-            "content_6" => "Nasze produkty są nie tylko funkcjonalne, ale również wydajne i zgodne z najnowszymi standardami. Dbamy o każdy detal, doskonalimy procesy oraz stosujemy innowacyjne podejście.",
+            "title_1" => "Co dostaje klient, który z nami pracuje?",
+            "benefit_1" => [
+                "title" => "Dedykowane systemy AI",
+                "subtitle" => "Nie integrujemy cudzych \"gotowców\". Projektujemy algorytmy i systemy uczone na danych klienta, zgodne z regulacjami i wymaganiami branżowymi.",
+            ],
+            "benefit_2" => [
+                "title" => "Cyfryzacja procesów",
+                "subtitle" => "Od analizy ryzyka, przez dokumenty, po komunikację i operacje - projektujemy cyfrowe środowiska pracy.",
+            ],
+            "benefit_3" => [
+                "title" => "Zespół ekspertów B+R",
+                "subtitle" => "Prowadzimy projekty badawczo-rozwojowe w modelu grantowym, we współpracy z firmami konsultingowymi dla największych instytucji publicznych i przedsiębiorstw.",
+            ],
+            "benefit_4" => [
+                "title" => "Audyty technologiczne",
+                "subtitle" => "Analizujemy istniejące systemy, procesy i dane.
+Pomagamy podjąć decyzję - czy naprawiać, przebudować, czy stworzyć od nowa.",
+            ],
+            "benefit_5" => [
+                "title" => "Software development",
+                "subtitle" => "Tworzymy nowoczesne, skalowalne systemy, mikroserwisy, integracje i platformy, jako element większej zmiany cyfrowej.",
+            ],
         ],
         "section_4" => [
-            "title_1" => "Nasza misja",
-            "subtitle_1" => "Promujemy kulturę innowacji, współpracy i nieustannego rozwoju w branży IT.",
+            "title_1" => "Realne zaplecze naukowe",
+            "subtitle_1" => "Część zespołu Blumilk prowadzi działalność naukowo-badawczą w obszarach AI, ML, NLP, systemów decyzyjnych oraz inżynierii oprogramowania, równolegle współpracując z uczelniami wyższymi przy kształceniu przyszłych specjalistów.",
+            "benefits" => [
+                "benefit_1" => "Stały dostęp do najnowszej wiedzy akademickiej",
+                "benefit_2" => "Rozwijamy własne algorytmy, modele i prototypy w środowisku badawczo-rozwojowym",
+                "benefit_3" => "Realizujemy projekty we współpracy z jednostkami naukowymi",
+                "benefit_4" => "Wspieramy klientów w przygotowaniu i realizacji projektów B+R",
+                "benefit_5" => "Uczestniczymy w tworzeniu wniosków o finansowanie cyfryzacji i innowacji",
+                "description" => "Dla Ciebie oznacza to współpracę z zespołem, który potrafi projektować i budować AI, a nie tylko ją wdrażać",
+            ],
+            "slogan" => "Dla Ciebie oznacza to współpracę z zespołem, który potrafi projektować i budować AI, a nie tylko ją wdrażać.",
             "activity_1" => [
                 "title" => "Projekty badawczo-rozwojowe (B+R)",
                 "subtitle" => "Dzięki doświadczeniu i&nbsp;wiedzy zdobytej przez członków naszego zespołu, jesteśmy w&nbsp;stanie skutecznie zarządzać i realizować projekty B+R, zapewniając naszym klientom najwyższą jakość i innowacyjność w każdym etapie współpracy.",
@@ -122,6 +169,24 @@ return [
             ],
         ],
         "section_5" => [
+            "title_1" => "Wspieramy ekosystem technologiczny",
+            "paragraph_1" => [
+                "text_1" => "Jesteśmy organizatorami",
+                "text_2" => "Legnickiego Meetupu Technologicznego,",
+                "text_3" => "wydarzenia, które łączy programistów, naukowców, specjalistów AI oraz liderów branży, tworząc przestrzeń do wymiany wiedzy i prezentacji swoich doświadczeń w branży IT.",
+            ],
+            "paragraph_2" => [
+                "text_1" => "Nasi eksperci",
+                "text_2" => "występują na konferencjach branżowych i naukowych,",
+                "text_3" => "w tym międzynarodowych wydarzeniach poświęconych AI, automatyzacji i cyfryzacji procesów. Regularnie dzielimy się wynikami badań, doświadczeniami projektowymi i najlepszymi praktykami we wdrażaniu systemów opartych na danych.",
+            ],
+            "paragraph_3" => [
+                "text_1" => "Jako partner w rozwoju regionalnym uczestniczymy w",
+                "text_2" => "misjach gospodarczych organizowanych przez Urząd Marszałkowski Województwa Dolnośląskiego,",
+                "text_3" => "reprezentując dolnośląski sektor nowych technologii na rynkach międzynarodowych. Współpracujemy z samorządami, uczelniami i biznesem, promując nowoczesne podejście do cyfryzacji i automatyzacji.",
+            ],
+        ],
+        "section_6" => [
             "title_1" => "Blumilk po godzinach",
             "subtitle_1" => "Mamy to niesamowite szczęście, że lubimy spędzać ze sobą czas, nie tylko w biurze!",
         ],
@@ -146,6 +211,105 @@ return [
             "title_2" => "swój pomysł",
             "title_3" => "",
             "subtitle_1" => "Pozwól nam przekształcić Twoją wizję w rzeczywistość. Masz pomysł na aplikację web/mobile, potrzebujesz transformacji cyfrowej lub planujesz projekt badawczo-rozwojowy? Zrób to z nami!",
+        ],
+    ],
+    "offer" => [
+        "section_1" => [
+            "title_1" => "Dwa filary, jeden cel:",
+            "title_2" => "inteligentna cyfryzacja procesów",
+            "subtitle_1" => "Działamy w oparciu o dwa uzupełniające się działy:",
+            "subtitle_2" => "Dział Innowacji i Badań (R&D) i Dział Produktowy i Wdrożeniowy",
+        ],
+        "section_2" => [
+            "title_1" => "Specjalizujemy się w rozwiązaniach:",
+            "requirement_1" => "Wysokiego poziomu automatyzacji",
+            "requirement_2" => "Inteligentnego przetwarzania informacji",
+            "requirement_3" => "Pracy na dużych wolumenach danych",
+            "requirement_4" => "Działania w środowiskach regulowanych",
+        ],
+        "section_3" => [
+            "title_1" => "Projektujemy ",
+            "title_2" => "systemy AI",
+            "title_3" => "wspierające:",
+            "item_1" => [
+                "title" => "Przetwarzanie dokumentów",
+                "description" => "Inteligentne OCR, klasyfikacja dokumentów, ekstrakcja danych, automatyzacja obiegu dokumentów, analiza umów i faktur.",
+            ],
+            "item_2" => [
+                "title" => "Podejmowanie decyzji eksperckich",
+                "description" => "Asystenci AI dla specjalistów, systemy rekomendacyjne, wspomaganie decyzji operacyjnych, analiza zgodności i ryzyka, eksperckie bazy wiedzy.",
+            ],
+            "item_3" => [
+                "title" => "Wykrywanie nadużyć i analizę ryzyka",
+                "description" => "Systemy Fraud Detection, monitoring transakcji, ocena wiarygodności, wykrywanie anomalii, analiza zachowań użytkowników.",
+            ],
+            "item_4" => [
+                "title" => "Optymalizację logistyki",
+                "description" => "Planowanie tras, prognozowanie popytu, optymalizacja wykorzystania zasobów, zarządzanie flotą, harmonogramowanie procesów.",
+            ],
+            "item_5" => [
+                "title" => "Automatyzację procesów administracyjnych i komunikacji",
+                "description" => "Chatboty i voiceboty, automatyczna obsługa zgłoszeń, generowanie dokumentów, automatyzacja korespondencji, cyfrowi asystenci pracowników.",
+            ],
+            "item_6" => [
+                "title" => "Zarządzanie jakością i innowacjami",
+                "description" => "Kontrola jakości wspierana AI, analiza przyczyn błędów, predykcja problemów produkcyjnych, wsparcie procesów R&D, analiza pomysłów i inicjatyw innowacyjnych.",
+            ],
+        ],
+        "section_4" => [
+            "title_1" => "Tworzymy dostosowane systemy cyfryzacji i AI, które odpowiadają na konkretne potrzeby operacyjne:",
+            "item_1" => [
+                "title" => "Document Intelligence",
+                "subtitle" => "Automatyzacja przetwarzania dokumentów: klasyfikacja, ekstrakcja danych, obieg, archiwizacja.",
+            ],
+            "item_2" => [
+                "title" => "Expert Operations",
+                "subtitle" => "Wsparcie pracy ekspertów: obsługa wniosków, decyzje, bazy wiedzy.",
+            ],
+            "item_3" => [
+                "title" => "Fraud & Risk Prevention",
+                "subtitle" => "Wykrywanie anomalii, nadużyć i ocena ryzyka operacyjnego.",
+            ],
+            "item_4" => [
+                "title" => "Logistics & Cost Optimization",
+                "subtitle" => "Planowanie tras, alokacja zasobów, analizy kosztowe.",
+            ],
+            "item_5" => [
+                "title" => "Administrative Process Automation",
+                "subtitle" => "Automatyzacja licencji, rezerwacji, dokumentacji i compliance.",
+            ],
+            "item_6" => [
+                "title" => "Smart Communication Systems",
+                "subtitle" => "Automatyczne notyfikacje, alerty i komunikacja wewnętrzna.",
+            ],
+            "item_7" => [
+                "title" => "Quality & Kaizen Tools",
+                "subtitle" => "Narzędzia TQM, Lean/Kaizen, sugestie pracownicze.",
+            ],
+            "item_8" => [
+                "title" => "Advanced Problem Solving",
+                "subtitle" => "Rozwiązywanie niestandardowych wyzwań biznesowych w modelu badawczo-rozwojowych i inżynieryjnym.",
+            ],
+        ],
+        "section_5" => [
+            "title_1" => "Wspieramy klientów w osiąganiu",
+            "goal_1" => "pełnej automatyzacji procesów,",
+            "goal_2" => "lepszego podejmowania decyzji,",
+            "goal_3" => "redukcji kosztów operacyjnych,",
+            "goal_4" => "skrócenia czasu realizacji zadań,",
+            "goal_5" => "większej odporności organizacyjnej,",
+            "goal_6" => "lepszej jakości danych i informacji.",
+            "slogan" => "Nasze podejście to przewaga operacyjna Twojej organizacji",
+        ],
+        "section_6" => [
+            "title_1" => "Pracujemy w systemie Time & Material",
+            "subtitle_1" => "Rozliczamy projekty w modelu",
+            "subtitle_2" => "Time & Material,",
+            "subtitle_3" => " dzięki czemu płacisz tylko za realnie wykonaną pracę. Ten elastyczny sposób współpracy pozwala na bieżąco modyfikować zakres zadań, zachować pełną kontrolę nad budżetem i szybko reagować na zmieniające się potrzeby projektu.",
+        ],
+        "section_7" => [
+            "title" => "Umów się na konsultację",
+            "subtitle" => "Nasze systemy działają w środowiskach o wysokiej złożoności, zapewniając bezpieczeństwo, skalowalność i zgodność z regulacjami.",
         ],
     ],
     "career" => [
@@ -173,6 +337,11 @@ return [
         "section_4" => [
             "title_1" => "Inżynier oprogramowania",
             "subtitle_1" => "Poszukujemy programistów z doświadczeniem zawodowym w dziedzinie  projektowania i wytwarzania aplikacji internetowych. Naszą podstawową  technologią jest PHP i Laravel, ale jesteśmy otwarci na  intertechnologiczny dialog.",
+        ],
+        "section_5" => [
+            "title" => "Dołącz do zespołu Blumilk",
+            "subtitle_1" => "Jeśli chcesz rozwijać swoje umiejętności, pracować nad ciekawymi projektami i być częścią zespołu, który ceni wiedzę, współpracę i inicjatywę, to",
+            "subtitle_2" => "czekamy na Twoją wiadomość!",
         ],
     ],
     "software_engineer" => [
