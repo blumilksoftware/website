@@ -124,12 +124,12 @@ class ProjectsSeeder extends Seeder
             ["slug" => "employee-requests"],
             [
                 "name_first_part" => [
-                    "pl" => "System do zarządzania wnioskami zgłaszanymi przez pracowników firmy",
-                    "en" => "A system for managing requests submitted by company employees",
+                    "pl" => "System do zarządzania wnioskami",
+                    "en" => "A system for managing requests",
                 ],
                 "name_second_part" => [
-                    "pl" => null,
-                    "en" => null,
+                    "pl" => "zgłaszanymi przez pracowników firmy",
+                    "en" => "submitted by company employees",
                 ],
                 "name_third_part" => [
                     "pl" => null,
