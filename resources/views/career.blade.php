@@ -7,10 +7,10 @@
     <section class="flex flex-col-reverse xl:flex-row pt-8 md:pt-28 mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto gap-16">
         <div class="flex basis-2/5 relative flex-col self-center gap-5">
             <div class="text-3xl md:text-4xl lg:text-5xl text-center xl:justify-start xl:text-start">
-                <h2 class="font-semibold text-gray-900 leading-7">
+                <h1 class="font-semibold text-gray-900 leading-7">
                     <span class="text-blue-normal">{{ __("content.career.section_1.title_1") }}</span>
                     {{ __("content.career.section_1.title_2") }}
-                </h2>
+                </h1>
             </div>
             <div class="flex flex-col items-center xl:items-start">
                 <p class="text-sm md:text-lg font-normal text-center xl:text-start pb-12 md:pb-12">
@@ -132,7 +132,7 @@
         <div class="mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto flex flex-col-reverse xl:flex-row gap-x-24 md:pt-5 md:mb-16 xl:mb-44">
             <div class="flex xl:basis-2/5 flex-col justify-start xl:justify-center overflow-visible">
                 <div class="text-center xl:justify-start xl:text-start pb-5 xl:pb-10">
-                    <h2 class="font-semibold text-gray-900 leading-7 text-md md:text-4xl lg:text-5xl mb-4 md:mb-10">{{ __("content.career.section_3.title_1") }}</h2>
+                    <h2 class="font-semibold text-gray-900 leading-7 text-md md:text-4xl lg:text-5xl mb-4 md:mb-10 md:leading-snug">{{ __("content.career.section_3.title_1") }}</h2>
                     <p class="text-xs md:text-lg font-normal text-center xl:text-start text-gray-500 leading-7 mx-8 md:mx-0">{{ __("content.career.section_3.subtitle_1") }}</p>
                 </div>
                 <x-primary-button href="https://praktyki.blumilk.pl/" target="_blank"
@@ -145,5 +145,8 @@
             </div>
         </div>
     </section>
-    <x-text-us-section/>
+    <x-text-us-section :title="__('content.career.section_5.title')"
+                       :subtitle="__('content.career.section_5.subtitle_1')"
+                       :subtitle-bold="__('content.career.section_5.subtitle_2')"
+    />
 @endsection

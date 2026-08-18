@@ -9,7 +9,10 @@ on:
       - '**.ts'
       - '**.vue'
       - 'package.json'
-      - 'package.lock'
+      - 'package-lock.json'
+
+permissions:
+  contents: read
 
 jobs:
   test-and-lint-js:
@@ -17,21 +20,24 @@ jobs:
     timeout-minutes: 10
     if: github.event.pull_request.draft == false
     runs-on: ubuntu-latest
+    env:
+      # renovate: datasource=node-version depName=node
+      NODE_VERSION: 22.23.2
 
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2 # https://github.com/actions/checkout
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1 # https://github.com/actions/checkout
 
       - name: Cache dependencies
-        uses: actions/cache@5a3ec84eff668545956fd18022155c47e93e2684 # v4.2.3 # https://github.com/actions/cache
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0 # https://github.com/actions/cache
         with:
           path: node_modules
-          key: ${{ runner.os }}-npm-dependencies-${{ hashFiles('package.lock') }}
+          key: ${{ runner.os }}-npm-dependencies-${{ hashFiles('package-lock.json') }}
           restore-keys: ${{ runner.os }}-npm-dependencies
 
       - name: Set up node
-        uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e # v4.3.0 # https://github.com/actions/setup-node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0 # https://github.com/actions/setup-node
         with:
-          node-version: 22
+          node-version: ${{ env.NODE_VERSION }}
 
       - name: Instal npm dependencies
         run: npm clean-install

@@ -10,7 +10,6 @@
                     <span style="color: {{ $project->color }}">{{ $project->name_second_part }}</span>
                     {{ $project->name_third_part }}
                 </span>
-
             </h3>
         </a>
     </div>

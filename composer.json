@@ -11,27 +11,27 @@
         "ext-intl": "*",
         "ext-pdo": "*",
         "codezero/laravel-unique-translation": "^4.3.1",
-        "filament/filament": "^3.3.7",
-        "filament/spatie-laravel-translatable-plugin": "^3.3.7",
-        "guzzlehttp/guzzle": "^7.9.3",
-        "intervention/image-laravel": "^1.5.5",
-        "josiasmontag/laravel-recaptchav3": "^1.0",
-        "laravel/framework": "^12.17.0",
-        "laravel/sanctum": "^4.0.8",
-        "laravel/tinker": "^2.10.1",
+        "filament/filament": "^3.3.54",
+        "filament/spatie-laravel-translatable-plugin": "^3.3.54",
+        "guzzlehttp/guzzle": "^7.10.6",
+        "intervention/image-laravel": "^1.5.9",
+        "josiasmontag/laravel-recaptchav3": "^1.0.5",
+        "laravel/framework": "^12.65.0",
+        "laravel/sanctum": "^4.3.3",
+        "laravel/tinker": "^2.11.1",
         "mvenghaus/filament-plugin-translatable-inline": "^3.0.8",
-        "nesbot/carbon": "^3.8.6",
-        "opgginc/codezero-laravel-localized-routes": "^5.1",
-        "sentry/sentry-laravel": "^4.13.0"
+        "nesbot/carbon": "^3.13.2",
+        "opgginc/codezero-laravel-localized-routes": "^5.1.1",
+        "sentry/sentry-laravel": "^4.25.1"
     },
     "require-dev": {
-        "blumilksoftware/codestyle": "^4.1.0",
+        "blumilksoftware/codestyle": "^5.1.1",
         "fakerphp/faker": "^1.24.1",
         "mockery/mockery": "^1.6.12",
-        "nunomaduro/collision": "^8.7.0",
-        "larastan/larastan": "^3.2.0",
-        "phpunit/phpunit": "^12.2.0",
-        "spatie/laravel-ignition": "^2.9.1"
+        "nunomaduro/collision": "^8.9.5",
+        "larastan/larastan": "^3.10.0",
+        "phpunit/phpunit": "^12.5.33",
+        "spatie/laravel-ignition": "^2.12.0"
     },
     "autoload": {
         "psr-4": {

@@ -1,5 +1,5 @@
 # https://hub.docker.com/_/alpine
-FROM alpine:3.21.3@sha256:a8560b36e8b8210634f77d9f7f9efd7ffa463e380b75e2e74aff4511df3ef88c AS secops-tools
+FROM alpine:3.22.5@sha256:14358309a308569c32bdc37e2e0e9694be33a9d99e68afb0f5ff33cc1f695dce AS secops-tools
 
 # https://github.com/FiloSottile/age/releases
 ARG AGE_VERSION="1.1.1"
@@ -15,13 +15,13 @@ RUN wget --output-document age.tar.gz "https://github.com/FiloSottile/age/releas
     && chmod +x /usr/local/bin/sops
 
 # For other versions check: https://hub.docker.com/_/composer/tags
-FROM composer/composer:2.8.6-bin@sha256:989ad47cea06cb9365afda43d7431a238c6abf913d631b9cf043eb0d43f783ae AS composer-bin
+FROM composer/composer:2.9.8-bin@sha256:2cde59fd0009d0b4f0fa8532a189290352d9fe3d80fbcc3a887ac69b9eeeef27 AS composer-bin
 
 # For other versions check: https://hub.docker.com/_/node/tags
-FROM node:22.14.0-bullseye-slim@sha256:d69b7c7ea65e223e1837a03784c6caa987e50bd2f1fcc174156554adfbe7ca6e AS node
+FROM node:22.22.3-bullseye-slim@sha256:f81e523790f0a2c86827ff6356a28fad2edbe0fe36bc3c4275a4d1e16304bf43 AS node
 
 # For other versions check: https://hub.docker.com/_/php/tags
-FROM php:8.4.5-fpm-bookworm@sha256:182b3466ea500120199794457bc7563dfc599f742f6833722dc7d3ca3f69a328
+FROM php:8.4.24-fpm-bookworm@sha256:c5fb7a0c02f4efe280691910c8b734995fa83598cdcf3115ef5dcb2e4617681c
 
 COPY --from=composer-bin ./composer /usr/bin/composer
 COPY --from=secops-tools /usr/local/bin/age /usr/local/bin/age
@@ -57,7 +57,7 @@ RUN mv "${PHP_INI_DIR}/php.ini-development" "${PHP_INI_DIR}/php.ini"
 ARG NGINX_VERSION="1.27.3-1~bookworm"
 # For other versions check: https://pecl.php.net/package/redis
 # renovate: datasource=github-tags depName=phpredis/phpredis
-ARG PHPREDIS_VERSION=6.2.0
+ARG PHPREDIS_VERSION=6.3.0
 
 RUN apt-get update \
     && apt-get install --assume-yes gpg \
@@ -88,7 +88,7 @@ RUN apt-get update \
 
 # For other versions check: https://pecl.php.net/package/xdebug
 # renovate: datasource=github-tags depName=xdebug/xdebug
-ARG XDEBUG_VERSION=3.4.2
+ARG XDEBUG_VERSION=3.5.3
 ARG INSTALL_XDEBUG=true
 
 RUN if [ ${INSTALL_XDEBUG} = true ]; then \

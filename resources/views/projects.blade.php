@@ -6,9 +6,9 @@
 @section("content")
     <section class="py-12 text-center mx-[10%] lg:mx-[15%] 2xl:max-w-7xl 2xl:mx-auto">
         <div class="pb-24">
-            <h2 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-black my-6 break-words">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-semibold text-black my-6 break-words">
                 <span class="text-blue-normal">{{ __("content.case_studies.section_1.title_1") }}</span>
-                {{ __("content.case_studies.section_1.title_2") }}</h2>
+                {{ __("content.case_studies.section_1.title_2") }}</h1>
             <span
                 class="font-light leading-7 text-xl block">{{ __("content.case_studies.section_1.subtitle_1") }}</span>
             <span

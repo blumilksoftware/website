@@ -14,7 +14,7 @@ return [
     "k1" => [
         "title_1" => "System zarządzania",
         "title_2" => "licencjami i dystrybucji oprogramowania",
-        "project_description" => "System do zarządzania oprogramowaniem na komputerach uczelnianych, oparty na zdefiniowanych regułach i harmonogramach, z uwzględnieniem licencji oprogramowania.",
+        "project_description" => "System do zarządzania oprogramowaniem w środowisku akademickim, umożliwiający automatyczne udostępnianie aplikacji na komputerach uczelnianych na podstawie zdefiniowanych reguł i harmonogramów. Narzędzie integruje dane dotyczące sal, komputerów oraz planów zajęć, dzięki czemu odpowiednie oprogramowanie może być udostępniane dokładnie wtedy, gdy jest potrzebne.",
         "challenges" => [
             "challenge_1" => [
                 "title" => "Bezpieczeństwo danych",
@@ -144,7 +144,7 @@ return [
     "gtb" => [
         "title_1" => "Aplikacja shared economy do",
         "title_2" => "przewozów przesyłek",
-        "project_description" => "Aplikacja typu shared economy do przewozu przesyłek. Użytkownik w roli nadawcy dodaje paczki do przewiezienia, samodzielnie ustalając cenę za usługę. Z kolei kierowca wyszukuje paczki na trasie, którą planuje przejechać i zarabia na ich dostarczeniu.",
+        "project_description" => "Aplikacja oparta na modelu shared economy, umożliwiająca organizację transportu przesyłek pomiędzy użytkownikami platformy.Nadawca może dodać przesyłkę do systemu, określając jej parametry oraz proponowaną stawkę za transport. Kierowcy planujący przejazd na danej trasie mogą wyszukiwać dostępne zlecenia i realizować dostawy, generując dodatkowy dochód.",
         "challenges" => [
             "challenge_1" => [
                 "title" => "Progresywna aplikacja internetowa",
@@ -211,16 +211,16 @@ return [
         ],
     ],
     "carbon" => [
-        "title_1" => "Aplikacja do zbierania danych i generowania raportów",
-        "title_2" => "dotyczących śladu węglowego",
-        "project_description" => "Narzędzie pozwala użytkownikom na samodzielne wyliczenie emisyjności CO2, dostarczając duży zasób wskaźników będących podstawą wyliczeń.",
+        "title_1" => "Aplikacja do kalkulacji śladu węglowego i generowania ",
+        "title_2" => "raportów emisji CO₂",
+        "project_description" => "Narzędzie, które umożliwia samodzielne wyliczanie śladu węglowego dla procesów, lokalizacji i produktów, a jednocześnie zapewnia spójność danych oraz transparentność całego procesu raportowania. Dzięki automatyzacji obliczeń i raportowania użytkownicy mogą szybciej przygotowywać analizy, podejmować decyzje związane z redukcją emisji oraz skuteczniej realizować cele z zakresu zrównoważonego rozwoju i ESG.",
         "challenges" => [
             "challenge_1" => [
                 "title" => "Zaawansowany system ról",
                 "description" => "umożliwiający pracę w systemie na wielu poziomach",
             ],
             "challenge_2" => [
-                "title" => "Implementacja algorytmów do obliczania emisji CO2",
+                "title" => "Implementacja algorytmów do obliczania emisji CO₂",
                 "description" => "oraz zrozumienie złożoności tych wyliczeń",
             ],
             "challenge_3" => [
@@ -238,7 +238,7 @@ return [
                 "description" => "globalna oraz indywidualna lista użytkownika",
             ],
             "functionality_3" => [
-                "title" => "Kalkulator emisji CO2",
+                "title" => "Kalkulator emisji CO₂",
                 "description" => "dla całego procesu na podstawie wskaźników",
             ],
             "functionality_4" => [
@@ -255,6 +255,68 @@ return [
             "laptop_2" => "laptop stojący na biurku z otwartą aplikacją",
             "sitemap" => "mapa aplikacji",
             "monitor" => "monitor na żółtym tle z aplikacją",
+        ],
+    ],
+    "employee_requests" => [
+        "title_1" => "System do zarządzania wnioskami zgłaszanymi przez pracowników firmy",
+        "project_description" => "Kompleksowy system do zarządzania wnioskami pracowniczymi, wspierający cały proces - od zgłoszenia inicjatywy aż po jej realizację i nagrodzenie autora. Wspiera wieloetapowy proces oceny, pozwalając na przypisywanie statusów, prowadzenie dyskusji, dodawanie komentarzy oraz śledzenie postępów realizacji. Dzięki temu zarówno autorzy wniosków, jak i osoby zarządzające programem innowacji mają pełną transparentność procesu.",
+        "challenges" => [
+            "challenge_1" => [
+                "title" => "Szczegółowe statystyki",
+                "description" => "dostarczające informacji na wielu różnych poziomach",
+            ],
+            "challenge_2" => [
+                "title" => "Prowadzenie historii zmian",
+                "description" => "przejrzyste dokumentowanie akcji w systemie",
+            ],
+            "challenge_3" => [
+                "title" => "Czytelny i intuicyjny interfejs",
+                "description" => "dopasowany do wymagań i wpisujący się w estetykę firmy",
+            ],
+            "challenge_4" => [
+                "title" => "Zaawansowany system ról",
+                "description" => "umożliwiający pracę w systemie na wielu poziomach",
+            ],
+            "challenge_5" => [
+                "title" => "Integracja z zewnętrznym systemem uwierzytelniania",
+                "description" => "gwarantująca dostęp wyłącznie pracownikom danej firmy",
+            ],
+        ],
+        "functionalities" => [
+            "functionality_1" => [
+                "title" => "Zgłaszanie wniosków",
+                "description" => "wypełnianie szczegółowego formularza",
+            ],
+            "functionality_2" => [
+                "title" => "Statusowanie wniosków",
+                "description" => "na każdym etapie ich weryfikacji i realizacji",
+            ],
+            "functionality_3" => [
+                "title" => "System punktowy",
+                "description" => "złożony system przyznawania punktów",
+            ],
+            "functionality_4" => [
+                "title" => "Sklep z nagrodami",
+                "description" => "wymiana zdobytych punktów na nagrody",
+            ],
+            "functionality_5" => [
+                "title" => "Ranking wniosków",
+                "description" => "ranking najlepszych wniosków w wybranych kategoriach",
+            ],
+            "functionality_6" => [
+                "title" => "Zaawansowane zarządzanie systemem",
+                "description" => "w kontekście użytkowników, wniosków i nagradzania",
+            ],
+        ],
+        "testimonial" => [
+            "name" => "Artur Gadowski",
+            "company" => "Continuous Improvement Manager",
+            "description" => "Aplikacja, która została wypracowana wspólnie z Blumilk sprawdza się rewelacyjnie. Sam proces tworzenia aplikacji przebiegł bardzo sprawnie dzięki kreatywnemu oraz elastycznemu podejściu firmy. Na pewno będziemy jeszcze współpracować.",
+        ],
+        "alt" => [
+            "laptop_1" => "laptop ze stroną aplikacji",
+            "laptop_2" => "laptop stojący na biurku z otwartą aplikacją",
+            "phone" => "telefon ze stroną aplikacji",
         ],
     ],
 ];

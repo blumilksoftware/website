@@ -48,6 +48,7 @@
   --color-vita: #9676f9;
   --color-gtb: #f9c83b;
   --color-carbon: #f39200;
+  --color-employee-requests: #C2C7CD;
 
   --font-sora: Sora, sans-serif;
   --font-montserrat: Montserrat;
@@ -141,5 +142,21 @@
   50% {
     transform: translateY(0);
     animation-timing-function: cubic-bezier(0.5, 0.5, 1, 1);
+  }
+}
+
+.grecaptcha-badge {
+  right: auto !important;
+  bottom: 10px !important;
+  width: 70px !important;
+  height: 60px !important;
+}
+
+@keyframes scroll-vertical {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-50%);
   }
 }
