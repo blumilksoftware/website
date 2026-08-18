@@ -6,6 +6,7 @@ return [
     "about" => "o-firmie",
     "projects" => "projekty",
     "projects/{slug}" => "projekty/{slug}",
+    "offer" => "oferta",
     "career" => "kariera",
     "contact" => "kontakt",
     "news" => "aktualnosci",
