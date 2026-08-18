@@ -1,5 +1,5 @@
 # https://taskfile.dev
-version: "3.42.1"
+version: "3"
 
 silent: true
 
@@ -15,8 +15,8 @@ dotenv:
   - .env
 
 includes:
-  secops: ./environment/secops-Taskfile.yml
-  devops: ./environment/devops-Taskfile.yml
+  secops: ./environment/Taskfile-secops.yml
+  devops: ./environment/Taskfile-devops.yml
 
 tasks:
   default:

@@ -1,5 +1,5 @@
-FROM registry.blumilk.pl/internal-public/secops-tools-bin:v1.0.0 AS secops-tools-bin
-FROM composer:2.8.6 AS composer
+FROM registry.blumilk.pl/internal-public/secops-tools-bin:v1.3.0@sha256:7bfcc9b09c994da1cb00f7b25e13c4d71081e5494c16f2e89b55a28b673fd79f AS secops-tools-bin
+FROM composer:2.9.8@sha256:b09bccd91a78fe8a9ab4b33d707b862e8fe54fec17782e32683ad2a69c46867d AS composer
 FROM node:22.14.0-bullseye-slim AS node
 
 FROM php:8.4.5-fpm-bookworm AS base
@@ -7,18 +7,18 @@ FROM php:8.4.5-fpm-bookworm AS base
 COPY --from=composer /usr/bin/composer /usr/bin/composer
 
 # For other versions check: http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx/
-ARG NGINX_VERSION="1.27.3-1~bookworm"
+ARG NGINX_VERSION="1.31.3"
 
 # https://pecl.php.net/package/redis
 # renovate: datasource=github-tags depName=phpredis/phpredis
-ARG PHPREDIS_VERSION=6.1.0
+ARG PHPREDIS_VERSION=6.3.0
 
 RUN apt-get update \
     && apt-get install --assume-yes gpg \
     && curl https://nginx.org/keys/nginx_signing.key | gpg --dearmour --output /etc/apt/trusted.gpg.d/apt.nginx.org.gpg > /dev/null \
     && echo "deb https://nginx.org/packages/mainline/debian bookworm nginx" | tee /etc/apt/sources.list.d/nginx.list \
     && apt-get update && apt-get install --assume-yes \
-        nginx=${NGINX_VERSION} \
+        nginx=${NGINX_VERSION}-1~bookworm \
         libzip-dev \
         libpq-dev \
         libicu-dev \
