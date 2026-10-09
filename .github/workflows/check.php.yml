@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       # renovate: datasource=github-releases depName=php packageName=containerbase/php-prebuild
-      PHP_VERSION: 8.4.24
+      PHP_VERSION: 8.4.26
     services:
       postgres:
         image: postgres:16.3-alpine3.18@sha256:64e18e8fb3e9c9aac89ac590c5dd8306b862478404f76cd9b5f7720d012b4c47 # https://hub.docker.com/_/postgres
