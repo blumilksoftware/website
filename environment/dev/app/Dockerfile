@@ -1,5 +1,5 @@
 # https://hub.docker.com/_/alpine
-FROM alpine:3.22.5@sha256:14358309a308569c32bdc37e2e0e9694be33a9d99e68afb0f5ff33cc1f695dce AS secops-tools
+FROM alpine:3.22.6@sha256:5291449c3df73caf6ed85e649dec1b9e818b39a5d8c871e97afc13e9cd5e8fa8 AS secops-tools
 
 # https://github.com/FiloSottile/age/releases
 ARG AGE_VERSION="1.1.1"
@@ -15,13 +15,13 @@ RUN wget --output-document age.tar.gz "https://github.com/FiloSottile/age/releas
     && chmod +x /usr/local/bin/sops
 
 # For other versions check: https://hub.docker.com/_/composer/tags
-FROM composer/composer:2.9.8-bin@sha256:2cde59fd0009d0b4f0fa8532a189290352d9fe3d80fbcc3a887ac69b9eeeef27 AS composer-bin
+FROM composer/composer:2.10.2-bin@sha256:020cd64e22a251eae7a0cf839907119df2055a42237300697d3023d1306c12d8 AS composer-bin
 
 # For other versions check: https://hub.docker.com/_/node/tags
-FROM node:22.22.3-bullseye-slim@sha256:f81e523790f0a2c86827ff6356a28fad2edbe0fe36bc3c4275a4d1e16304bf43 AS node
+FROM node:22.23.2-bullseye-slim@sha256:5736e7ef1f3f2109be7ef8aea0cbdf931804aee9a18c6760507b8ded078b25a9 AS node
 
 # For other versions check: https://hub.docker.com/_/php/tags
-FROM php:8.4.24-fpm-bookworm@sha256:c5fb7a0c02f4efe280691910c8b734995fa83598cdcf3115ef5dcb2e4617681c
+FROM php:8.4.26-fpm-bookworm@sha256:6bfef8e416977aa41f48e3e42a40c1e08050d24e4a938c6edb421400bff24601
 
 COPY --from=composer-bin ./composer /usr/bin/composer
 COPY --from=secops-tools /usr/local/bin/age /usr/local/bin/age
