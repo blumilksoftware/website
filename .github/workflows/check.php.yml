@@ -23,7 +23,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       # renovate: datasource=github-releases depName=php packageName=containerbase/php-prebuild
-      PHP_VERSION: 8.4.24
+      PHP_VERSION: 8.4.26
     services:
       postgres:
         image: postgres:16.3-alpine3.18@sha256:64e18e8fb3e9c9aac89ac590c5dd8306b862478404f76cd9b5f7720d012b4c47 # https://hub.docker.com/_/postgres
@@ -54,7 +54,7 @@ jobs:
           restore-keys: ${{ runner.os }}-composer-dependencies
 
       - name: Setup PHP
-        uses: shivammathur/setup-php@f3e473d116dcccaddc5834248c87452386958240 # 2.37.2 # https://github.com/shivammathur/setup-php
+        uses: shivammathur/setup-php@eb7c497e18156a6bbabfef1d3a82760b9eda3962 # 2.40.0 # https://github.com/shivammathur/setup-php
         with:
           php-version: ${{ env.PHP_VERSION }}
           extensions: dom, curl, libxml, mbstring, zip, pcntl, pdo, pdo_pgsql, intl
