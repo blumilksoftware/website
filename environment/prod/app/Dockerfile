@@ -32,7 +32,7 @@ RUN npm run build
 
 ### APPLICATION ###
 # https://hub.docker.com/_/php/tags
-FROM php:8.4.24-fpm-bookworm@sha256:c5fb7a0c02f4efe280691910c8b734995fa83598cdcf3115ef5dcb2e4617681c AS app
+FROM php:8.4.27RC1-fpm-bookworm@sha256:b86b2345a41e64cd3dc147b88824546ecd0b913810ed10416c1c811b43647d62 AS app
 
 COPY --from=vendor /usr/bin/composer /usr/local/bin/composer
 
