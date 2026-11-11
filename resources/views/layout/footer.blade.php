@@ -40,7 +40,9 @@
                 <span class="hidden md:inline">|</span>
                 <a href="{{ route('privacy-policy') }}" class="block md:inline font-normal whitespace-normal px-1">{{ __('footer.policy') }}</a>
                 <span class="hidden md:inline">|</span>
-                <a href="{{ route('data') }}" class="block md:inline pl-1">{{ __('footer.data') }}</a></p>
+                <a href="{{ route('data') }}" class="block md:inline px-1">{{ __('footer.data') }}</a>
+                <span class="hidden md:inline">|</span>
+                <button type="button" x-data x-on:click="$dispatch('cookie-consent-open')" class="block md:inline mx-auto md:mx-0 pl-1 cursor-pointer">{{ __('footer.cookies') }}</button></p>
         </div>
     </div>
 </footer>

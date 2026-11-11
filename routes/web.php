@@ -6,6 +6,7 @@ use Blumilk\Website\Http\Controllers\AboutController;
 use Blumilk\Website\Http\Controllers\CareerController;
 use Blumilk\Website\Http\Controllers\CompanyDataController;
 use Blumilk\Website\Http\Controllers\ContactController;
+use Blumilk\Website\Http\Controllers\CookieConsentController;
 use Blumilk\Website\Http\Controllers\HomeController;
 use Blumilk\Website\Http\Controllers\LogoController;
 use Blumilk\Website\Http\Controllers\NewsController;
@@ -37,5 +38,7 @@ $router->get($uri->translate("news/{slug}"), [NewsController::class, "get"])->na
 $router->get($uri->translate("company-data"), CompanyDataController::class)->name("data");
 
 $router->get($uri->translate("offer"), OfferController::class)->name("offer");
+
+$router->post("cookie-consent", CookieConsentController::class)->name("cookie-consent");
 
 $router->fallback(FallbackController::class);
