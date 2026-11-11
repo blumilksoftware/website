@@ -6,4 +6,5 @@ return [
     "code" => "Source code",
     "policy" => "Privacy policy",
     "data" => " Company data",
+    "cookies" => "Cookie settings",
 ];
