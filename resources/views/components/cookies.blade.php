@@ -85,14 +85,14 @@
 </script>
 
 <section class="z-10 fixed max-w-3xl p-4 bg-white border border-gray-200 sm:gap-x-4 mx-12 bottom-16 dark:bg-gray-900 sm:flex sm:items-center dark:border-gray-700 rounded-2xl" x-data="cookieConsent" x-bind="dialogue" x-cloak @if ($cookieConsent !== "unknown") style="display: none" @endif>
-    <div class="flex items-center gap-x-4">
-        <span class="inline-flex p-2 text-website-normal rounded-lg shrink-0 dark:bg-gray-800 bg-website-light/30 show">
+    <div class="flex items-center gap-4">
+        <span class="hidden sm:inline-flex p-2 text-website-normal rounded-lg shrink-0 dark:bg-gray-800 bg-website-light/30 show">
             <i class="ti ti-cookie text-4xl"></i>
         </span>
         <p class="text-xs text-gray-600 dark:text-gray-300">{{ __("content.cookies.text_1") }}<a href="{{ route("privacy-policy") }}" class="text-blue-500 hover:underline"> {{ __("content.cookies.text_2") }}</a>
         </p>
     </div>
-    <div class="flex flex-col sm:flex-row items-stretch gap-2 shrink-0 mt-6 sm:mt-0">
+    <div class="flex flex-col md:flex-row items-stretch gap-2 shrink-0 mt-6 sm:mt-0">
         <button x-bind="decline" type="button"
                 class="text-xs w-full sm:w-auto font-medium border border-gray-300 rounded-lg hover:bg-gray-100 text-gray-700 px-4 py-2.5 duration-300 transition-colors focus:outline-hidden">
             {{ __("buttons.decline_all") }}
