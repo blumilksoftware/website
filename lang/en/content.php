@@ -521,7 +521,7 @@ return [
         "subtitle_3" => "or use the menu to find what you need.",
     ],
     "cookies" => [
-        "text_1" => "We use cookies on our website to ensure the best possible quality of services and to adapt the website to your needs. By clicking „Accept all”, you agree to our use of cookies. To learn more, check out our",
+        "text_1" => "We use cookies on our website to ensure the best possible quality of services and to adapt the website to your needs. By clicking „Accept all”, you agree to our use of cookies. You can also decline them and change your choice at any time in the page footer. To learn more, check out our",
         "text_2" => "privacy policy.",
     ],
     "at" => "at",

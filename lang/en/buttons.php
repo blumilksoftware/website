@@ -19,6 +19,7 @@ return [
     "apply_now" => "Apply now!",
     "back_to_portfolio" => "Back to portfolio",
     "accept_all" => "Accept all",
+    "decline_all" => "Decline all",
     "download" => "Download",
     "see_how_we_can_help" => "How can we help you",
     "schedule_free_consultation" => "Schedule a free consultation",
