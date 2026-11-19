@@ -54,7 +54,7 @@ RUN ln --symbolic /usr/local/lib/node_modules/npm/bin/npm-cli.js /usr/local/bin/
 RUN mv "${PHP_INI_DIR}/php.ini-development" "${PHP_INI_DIR}/php.ini"
 
 # For other versions check: http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx/
-ARG NGINX_VERSION="1.27.3-1~bookworm"
+ARG NGINX_VERSION="1.31.9-1~bookworm"
 # For other versions check: https://pecl.php.net/package/redis
 # renovate: datasource=github-tags depName=phpredis/phpredis
 ARG PHPREDIS_VERSION=6.3.0

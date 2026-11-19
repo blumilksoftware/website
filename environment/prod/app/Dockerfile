@@ -37,7 +37,7 @@ FROM php:8.4.27-fpm-bookworm@sha256:6d2c08c2ce0548e9bc55e21aab68f5a2613e635e4225
 COPY --from=vendor /usr/bin/composer /usr/local/bin/composer
 
 # For other versions check: http://nginx.org/packages/mainline/debian/pool/nginx/n/nginx/
-ARG NGINX_VERSION="1.27.3-1~bookworm"
+ARG NGINX_VERSION="1.31.9-1~bookworm"
 # For other versions check: https://pecl.php.net/package/redis
 ARG PHPREDIS_VERSION=6.1.0
 
